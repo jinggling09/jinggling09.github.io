@@ -25,6 +25,7 @@ Presseartikel und Beratungs-Blogs dienen höchstens als Hinweis, wo die Primärq
 ## Lizenzen der Daten
 
 - UBA-Daten: [Datenlizenz Deutschland – Namensnennung 2.0](https://www.govdata.de/dl-de/by-2-0)
+- Energy-Charts (Fraunhofer ISE): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), Quelle: Energy-Charts.info
 - Weitere Lizenzen werden beim jeweiligen Datensatz genannt.
 
 ## Fehler gefunden?

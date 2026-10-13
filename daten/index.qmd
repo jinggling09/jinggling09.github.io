@@ -2,38 +2,182 @@
 title: "Modul 2 · Wind, Solar & Geothermie: Deutschland und China"
 ---
 
-::: {.callout-note}
-**In Planung.** Diese Seite beschreibt den geplanten Aufbau. Diagramme folgen, sobald die Datenpipeline steht — es werden keine Platzhalterzahlen gezeigt.
+::: {.stand}
+```{ojs}
+//| echo: false
+md`Daten Deutschland: Energy-Charts (Fraunhofer ISE), abgerufen am ${meta.abgerufen} · letzter vollständiger Monat: ${meta.letzter_monat} · Lizenz CC BY 4.0`
+```
 :::
 
-## Fragestellung
+Der deutsche Teil wird monatlich automatisch aus der [Energy-Charts-API](https://api.energy-charts.info/) des Fraunhofer ISE aktualisiert. Der chinesische Teil folgt (siehe [Datenquellen](#geplante-datenquellen)).
 
-Wie entwickeln sich Ausbau und Erzeugung von Wind-, Solar- und Geothermie-Energie in Deutschland und China — absolut und relativ zum Strombedarf?
+## Deutschland: Installierte Leistung und Ausbaupfad
 
-## Geplante Indikatoren
+Durchgezogene Linien zeigen den Bestand, gestrichelte Linien den gesetzlichen Ausbaupfad (EEG 2023 für Wind an Land und Photovoltaik, WindSeeG für Wind auf See), wie ihn Energy-Charts ausweist. Photovoltaik als Modulleistung (DC). Der Wert des laufenden Jahres ist ein Zwischenstand.
 
-| Indikator | Einheit | Takt |
-|---|---|---|
-| Installierte Leistung Wind (an Land / auf See) | GW | monatlich |
-| Installierte Leistung Photovoltaik | GW | monatlich |
-| Stromerzeugung Wind, Solar | TWh | monatlich |
-| Anteil am Stromverbrauch bzw. an der Erzeugung | % | monatlich |
-| Geothermie: Leistung und Wärmebereitstellung | MW / GWh | jährlich |
+```{ojs}
+//| echo: false
+Plot.plot({
+  width,
+  height: 380,
+  marginRight: 110,
+  style: {fontSize: "13px", fontFamily: "inherit"},
+  x: {label: null, tickFormat: "d", domain: [2010, 2030]},
+  y: {label: "GW", grid: true, nice: true},
+  color: {domain: reihen, range: farben, legend: true},
+  marks: [
+    Plot.ruleY([0], {stroke: "#c3c2b7"}),
+    Plot.line(installedPlot, {x: "jahr", y: "gw", z: d => d.reihe + d.art, stroke: "reihe",
+      strokeWidth: 2, strokeDasharray: d => d.art === "Ziel" ? "5,4" : null}),
+    Plot.dot(installedPlot.filter(d => d.art === "Ist"), {x: "jahr", y: "gw", fill: "reihe", r: 2.5}),
+    Plot.text(letzteIst, {x: "jahr", y: "gw", text: d => `${d.reihe} ${fmt1(d.gw)} GW`,
+      dx: 8, textAnchor: "start", fill: "#52514e"}),
+    Plot.tip(installedPlot, Plot.pointer({x: "jahr", y: "gw",
+      title: d => `${d.reihe} · ${d.art === "Ziel" ? "Ausbaupfad" : "Bestand"}\n${d.jahr}: ${fmt1(d.gw)} GW`}))
+  ]
+})
+```
+
+## Deutschland: Monatliche Stromerzeugung aus Wind und Sonne
+
+Öffentliche Nettostromerzeugung in TWh je Monat (ohne Eigenverbrauch der Industrie), berechnet aus den Viertelstundenwerten.
+
+```{ojs}
+//| echo: false
+Plot.plot({
+  width,
+  height: 360,
+  marginRight: 110,
+  style: {fontSize: "13px", fontFamily: "inherit"},
+  x: {label: null, type: "utc"},
+  y: {label: "TWh", grid: true, nice: true},
+  color: {domain: reihen, range: farben, legend: true},
+  marks: [
+    Plot.ruleY([0], {stroke: "#c3c2b7"}),
+    Plot.line(erzeugung3, {x: "datum", y: "twh", stroke: "reihe", strokeWidth: 2}),
+    Plot.text(letzteErzeugung, {x: "datum", y: "twh", text: "reihe", dx: 8, textAnchor: "start", fill: "#52514e"}),
+    Plot.tip(erzeugung3, Plot.pointerX({x: "datum", y: "twh",
+      title: d => `${d.reihe}\n${d.monat}: ${fmt1(d.twh)} TWh`}))
+  ]
+})
+```
+
+## Deutschland: Anteil von Wind und Sonne an der Last
+
+Summe aus Wind an Land, Wind auf See und Photovoltaik geteilt durch die Last (Stromverbrauch im öffentlichen Netz), je Monat.
+
+```{ojs}
+//| echo: false
+Plot.plot({
+  width,
+  height: 300,
+  style: {fontSize: "13px", fontFamily: "inherit"},
+  x: {label: null, type: "utc"},
+  y: {label: "%", grid: true, domain: [0, 100]},
+  marks: [
+    Plot.ruleY([0], {stroke: "#c3c2b7"}),
+    Plot.line(anteil, {x: "datum", y: "prozent", stroke: "#1f5f4a", strokeWidth: 2}),
+    Plot.tip(anteil, Plot.pointerX({x: "datum", y: "prozent",
+      title: d => `${d.monat}: ${fmt1(d.prozent)} %`}))
+  ]
+})
+```
+
+```{ojs}
+//| echo: false
+md`**Geothermie:** Die öffentliche Nettostromerzeugung aus Geothermie lag ${geoJahr.jahr} bei **${fmt2(geoJahr.twh)} TWh** – rund ${fmt2(geoJahr.anteil)} % der Last. Ihre Bedeutung liegt in Deutschland vor allem in der Wärmeversorgung; diese wird hier nicht abgebildet.`
+```
+
+```{ojs}
+//| echo: false
+lueckenHinweis
+```
+
+<details><summary>Tabellenansicht der Monatswerte</summary>
+
+```{ojs}
+//| echo: false
+Inputs.table(erzeugungBreit, {rows: 14, layout: "auto"})
+```
+
+[Rohdaten als CSV](data/de_generation_monthly.csv) · [Installierte Leistung als CSV](data/de_installed_yearly.csv)
+
+</details>
+
+## China
+
+*Folgt.* Für China gibt es keine öffentliche Schnittstelle; die Nationale Energieverwaltung (NEA) veröffentlicht Leistungs- und das Statistikamt (NBS) Erzeugungsdaten monatlich als Bekanntmachungen. Diese werden mit Quellenlink je Wert in eine Tabelle übernommen.
 
 ## Geplante Datenquellen
 
 | Land | Quelle | Art | Status |
 |---|---|---|---|
-| DE | Bundesnetzagentur – SMARD | amtlich, API | zu prüfen |
-| DE | Fraunhofer ISE – Energy-Charts | wissenschaftlich, API | zu prüfen |
-| DE | AGEE-Stat / Umweltbundesamt | amtlich, Jahreswerte (inkl. Geothermie) | zu prüfen |
-| CN | Nationale Energieverwaltung (国家能源局, NEA) | amtlich, monatliche Bekanntmachungen | zu prüfen |
-| CN | Nationales Statistikamt (国家统计局, NBS) | amtlich, monatliche Erzeugung | zu prüfen |
-| beide | Ember | Sekundärquelle für einheitliche Abgrenzung | nur zum Abgleich |
+| DE | Fraunhofer ISE – Energy-Charts | wissenschaftlich, API, CC BY 4.0 | **live** |
+| DE | Bundesnetzagentur – SMARD | amtlich, Abgleich | geplant |
+| DE | AGEE-Stat / Umweltbundesamt | amtlich, Jahreswerte inkl. Geothermie-Wärme | geplant |
+| CN | Nationale Energieverwaltung (国家能源局, NEA) | amtlich, monatliche Bekanntmachungen | geplant |
+| CN | Nationales Statistikamt (国家统计局, NBS) | amtlich, monatliche Erzeugung | geplant |
+| beide | Ember | Sekundärquelle, nur zum Abgleich | geplant |
 
 ## Methodische Hinweise
 
-- **Unterschiedliche Aktualität:** Für Deutschland liegen Viertelstundenwerte vor, für China in der Regel Monatswerte. Der Vergleich erfolgt daher auf **Monatsbasis**.
-- **Abgrenzung:** Leistungs- und Erzeugungsdefinitionen (z. B. netto/brutto, Eigenverbrauch) werden je Quelle dokumentiert, bevor Werte nebeneinander stehen.
-- **Geothermie** spielt in beiden Ländern vor allem in der Wärmeversorgung eine Rolle und wird deshalb getrennt und jährlich dargestellt.
-- **Aktualisierung:** automatisch per GitHub Action; Abrufdatum steht an jedem Diagramm.
+- **Unterschiedliche Aktualität:** Für Deutschland liegen Viertelstundenwerte vor, für China in der Regel Monatswerte. Der Ländervergleich erfolgt daher auf Monatsbasis.
+- **Abgrenzung:** „Öffentliche Nettostromerzeugung“ nach Energy-Charts enthält keine Eigenerzeugung der Industrie. Für China werden die Abgrenzungen der NEA/NBS je Wert dokumentiert, bevor Werte nebeneinander stehen.
+- **Nachkorrekturen:** Die letzten drei Monate werden bei jeder Aktualisierung neu berechnet, ältere Monate bleiben unverändert und sind in der Versionsgeschichte des Repositorys nachvollziehbar.
+- **Code:** [scripts/fetch_energy_charts.py](https://github.com/jinggling09/jinggling09.github.io/blob/main/scripts/fetch_energy_charts.py)
+
+```{ojs}
+//| echo: false
+//| output: false
+meta = FileAttachment("data/de_meta.json").json()
+installed = (await FileAttachment("data/de_installed_yearly.csv").csv())
+  .map(d => ({jahr: +d.jahr, reihe: d.reihe, art: d.art, gw: +d.gw}))
+// bewusst ohne typed: true – sonst würde "2021-01" als Datum geparst
+generation = (await FileAttachment("data/de_generation_monthly.csv").csv())
+  .map(d => ({monat: d.monat, reihe: d.reihe, twh: +d.twh, abdeckung: +d.abdeckung}))
+
+reihen = ["Wind an Land", "Wind auf See", "Photovoltaik"]
+farben = ["#2a78d6", "#eb6834", "#1baf7a"]
+fmt1 = d3.format(",.1~f")
+fmt2 = d3.format(",.2~f")
+parseMonat = s => new Date(s + "-01T00:00:00Z")
+
+installedPlot = installed.filter(d => d.jahr >= 2010 && reihen.includes(d.reihe))
+letzteIst = reihen.map(r => {
+  const ist = installedPlot.filter(d => d.reihe === r && d.art === "Ist")
+  return ist[ist.length - 1]
+}).filter(Boolean)
+
+erzeugung = generation.map(d => ({...d, datum: parseMonat(d.monat)}))
+erzeugung3 = erzeugung.filter(d => reihen.includes(d.reihe))
+letzteErzeugung = reihen.map(r => {
+  const xs = erzeugung3.filter(d => d.reihe === r)
+  return xs[xs.length - 1]
+}).filter(Boolean)
+
+anteil = d3.rollups(erzeugung, v => {
+  const last = d3.sum(v.filter(d => d.reihe === "Last"), d => d.twh)
+  const ws = d3.sum(v.filter(d => reihen.includes(d.reihe)), d => d.twh)
+  return last > 0 ? ws / last * 100 : null
+}, d => d.monat).map(([monat, prozent]) => ({monat, prozent, datum: parseMonat(monat)}))
+  .filter(d => d.prozent !== null)
+
+geoJahr = {
+  const jahre = d3.groups(erzeugung, d => d.monat.slice(0, 4)).filter(([, v]) => new Set(v.map(d => d.monat)).size === 12)
+  const [jahr, v] = jahre[jahre.length - 1]
+  const twh = d3.sum(v.filter(d => d.reihe === "Geothermie"), d => d.twh)
+  const last = d3.sum(v.filter(d => d.reihe === "Last"), d => d.twh)
+  return {jahr, twh, anteil: twh / last * 100}
+}
+
+lueckenHinweis = {
+  const luecken = erzeugung.filter(d => d.abdeckung < 0.95)
+  return luecken.length
+    ? md`*Hinweis: In ${new Set(luecken.map(d => d.monat)).size} Monaten fehlen mehr als 5 % der Viertelstundenwerte einer Reihe; die Monatssumme ist dort unterschätzt.*`
+    : md``
+}
+
+erzeugungBreit = d3.rollups(erzeugung, v => Object.fromEntries(v.map(d => [d.reihe + " (TWh)", d.twh])), d => d.monat)
+  .map(([Monat, werte]) => ({Monat, ...werte}))
+  .reverse()
+```

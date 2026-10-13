@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - "daten/data/*.csv"
+    - "daten/data/*.json"
 
 lang: de
 

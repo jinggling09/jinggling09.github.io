@@ -10,8 +10,10 @@ Live: https://jinggling09.github.io
 |---|---|
 | `index.qmd` | Startseite |
 | `wissen/` | Modul 1 – China-ETS, EU-ETS/ETS 2/BEHG, CBAM, Schnittstellen, Emissionen DE |
-| `daten/` | Modul 2 – Wind/Solar/Geothermie DE vs. CN (in Planung) |
+| `daten/` | Modul 2 – Wind/Solar/Geothermie DE vs. CN |
 | `projekte/` | Projekte |
+| `scripts/fetch_energy_charts.py` | Datenabruf Deutschland (Energy-Charts-API), läuft in GitHub Actions |
+| `daten/data/` | Abgerufene Daten (CSV) – werden vom Workflow aktualisiert und committet |
 | `references.bib` | Alle Quellen (zitiert mit `[@schluessel]`) |
 | `styles/custom.scss` | Gestaltung |
 
