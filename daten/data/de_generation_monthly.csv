@@ -1,0 +1,346 @@
+monat,reihe,twh,abdeckung
+2021-01,Geothermie,0.0151,1.0
+2021-01,Last,45.6314,1.0
+2021-01,Photovoltaik,0.6616,1.0
+2021-01,Wind an Land,9.2626,1.0
+2021-01,Wind auf See,2.2638,1.0
+2021-02,Geothermie,0.016,1.0
+2021-02,Last,41.7589,1.0
+2021-02,Photovoltaik,1.9361,1.0
+2021-02,Wind an Land,8.5178,1.0
+2021-02,Wind auf See,2.7435,1.0
+2021-03,Geothermie,0.0171,0.999
+2021-03,Last,44.8809,0.999
+2021-03,Photovoltaik,3.9872,0.999
+2021-03,Wind an Land,9.1242,0.999
+2021-03,Wind auf See,2.357,0.999
+2021-04,Geothermie,0.0128,1.0
+2021-04,Last,41.0556,1.0
+2021-04,Photovoltaik,5.3128,1.0
+2021-04,Wind an Land,7.7707,1.0
+2021-04,Wind auf See,1.7761,1.0
+2021-05,Geothermie,0.015,1.0
+2021-05,Last,40.2353,1.0
+2021-05,Photovoltaik,5.7686,1.0
+2021-05,Wind an Land,8.8614,1.0
+2021-05,Wind auf See,1.288,1.0
+2021-06,Geothermie,0.01,1.0
+2021-06,Last,39.486,1.0
+2021-06,Photovoltaik,6.8597,1.0
+2021-06,Wind an Land,3.3762,1.0
+2021-06,Wind auf See,1.0506,1.0
+2021-07,Geothermie,0.0101,1.0
+2021-07,Last,40.6333,1.0
+2021-07,Photovoltaik,5.9353,1.0
+2021-07,Wind an Land,4.723,1.0
+2021-07,Wind auf See,1.2577,1.0
+2021-08,Geothermie,0.0121,1.0
+2021-08,Last,39.3986,1.0
+2021-08,Photovoltaik,5.1574,1.0
+2021-08,Wind an Land,6.2197,1.0
+2021-08,Wind auf See,1.9068,1.0
+2021-09,Geothermie,0.0121,1.0
+2021-09,Last,39.5042,1.0
+2021-09,Photovoltaik,4.6366,1.0
+2021-09,Wind an Land,4.4884,1.0
+2021-09,Wind auf See,1.3563,1.0
+2021-10,Geothermie,0.0176,1.0
+2021-10,Last,43.2188,1.0
+2021-10,Photovoltaik,3.1147,1.0
+2021-10,Wind an Land,10.2313,1.0
+2021-10,Wind auf See,2.9236,1.0
+2021-11,Geothermie,0.0184,1.0
+2021-11,Last,43.8947,1.0
+2021-11,Photovoltaik,1.1431,1.0
+2021-11,Wind an Land,7.8647,1.0
+2021-11,Wind auf See,2.5336,1.0
+2021-12,Geothermie,0.0179,1.0
+2021-12,Last,44.9037,1.0
+2021-12,Photovoltaik,0.7979,1.0
+2021-12,Wind an Land,9.8301,1.0
+2021-12,Wind auf See,2.5561,1.0
+2022-01,Geothermie,0.0139,1.0
+2022-01,Last,46.2871,1.0
+2022-01,Photovoltaik,1.1539,1.0
+2022-01,Wind an Land,12.473,1.0
+2022-01,Wind auf See,3.1345,1.0
+2022-02,Geothermie,0.0128,1.0
+2022-02,Last,42.3179,1.0
+2022-02,Photovoltaik,2.468,1.0
+2022-02,Wind an Land,17.0168,1.0
+2022-02,Wind auf See,2.9853,1.0
+2022-03,Geothermie,0.0148,0.999
+2022-03,Last,43.9233,0.999
+2022-03,Photovoltaik,5.3207,0.999
+2022-03,Wind an Land,6.5145,0.999
+2022-03,Wind auf See,1.4034,0.999
+2022-04,Geothermie,0.0143,1.0
+2022-04,Last,40.1319,1.0
+2022-04,Photovoltaik,5.6922,1.0
+2022-04,Wind an Land,9.1633,1.0
+2022-04,Wind auf See,1.9177,1.0
+2022-05,Geothermie,0.0133,1.0
+2022-05,Last,39.8803,1.0
+2022-05,Photovoltaik,7.2771,1.0
+2022-05,Wind an Land,6.1943,1.0
+2022-05,Wind auf See,1.4823,1.0
+2022-06,Geothermie,0.0114,1.0
+2022-06,Last,37.3604,1.0
+2022-06,Photovoltaik,7.6651,1.0
+2022-06,Wind an Land,4.2357,1.0
+2022-06,Wind auf See,1.1643,1.0
+2022-07,Geothermie,0.0092,1.0
+2022-07,Last,38.3598,1.0
+2022-07,Photovoltaik,7.5513,1.0
+2022-07,Wind an Land,5.2841,1.0
+2022-07,Wind auf See,1.7732,1.0
+2022-08,Geothermie,0.0107,1.0
+2022-08,Last,37.4484,1.0
+2022-08,Photovoltaik,6.8934,1.0
+2022-08,Wind an Land,3.381,1.0
+2022-08,Wind auf See,1.0183,1.0
+2022-09,Geothermie,0.0115,1.0
+2022-09,Last,37.3541,1.0
+2022-09,Photovoltaik,4.5433,1.0
+2022-09,Wind an Land,5.9407,1.0
+2022-09,Wind auf See,1.9106,1.0
+2022-10,Geothermie,0.0118,1.0
+2022-10,Last,38.5452,1.0
+2022-10,Photovoltaik,3.4028,1.0
+2022-10,Wind an Land,8.2741,1.0
+2022-10,Wind auf See,2.4663,1.0
+2022-11,Geothermie,0.0136,1.0
+2022-11,Last,39.7746,1.0
+2022-11,Photovoltaik,1.6772,1.0
+2022-11,Wind an Land,9.7054,1.0
+2022-11,Wind auf See,2.8192,1.0
+2022-12,Geothermie,0.0149,1.0
+2022-12,Last,40.9129,1.0
+2022-12,Photovoltaik,0.6826,1.0
+2022-12,Wind an Land,9.0221,1.0
+2022-12,Wind auf See,2.677,1.0
+2023-01,Geothermie,0.0145,1.0
+2023-01,Last,42.153,1.0
+2023-01,Photovoltaik,0.8444,1.0
+2023-01,Wind an Land,13.8404,1.0
+2023-01,Wind auf See,2.7322,1.0
+2023-02,Geothermie,0.0136,1.0
+2023-02,Last,38.1381,1.0
+2023-02,Photovoltaik,2.2377,1.0
+2023-02,Wind an Land,10.0567,1.0
+2023-02,Wind auf See,1.6404,1.0
+2023-03,Geothermie,0.0125,0.999
+2023-03,Last,40.878,0.999
+2023-03,Photovoltaik,3.5842,0.999
+2023-03,Wind an Land,11.5503,0.999
+2023-03,Wind auf See,2.4358,0.999
+2023-04,Geothermie,0.011,1.0
+2023-04,Last,36.1561,1.0
+2023-04,Photovoltaik,5.3176,1.0
+2023-04,Wind an Land,8.2644,1.0
+2023-04,Wind auf See,1.7359,1.0
+2023-05,Geothermie,0.0128,1.0
+2023-05,Last,36.3233,1.0
+2023-05,Photovoltaik,7.6879,1.0
+2023-05,Wind an Land,6.4721,1.0
+2023-05,Wind auf See,1.5815,1.0
+2023-06,Geothermie,0.0094,1.0
+2023-06,Last,35.4751,1.0
+2023-06,Photovoltaik,8.5112,1.0
+2023-06,Wind an Land,4.7794,1.0
+2023-06,Wind auf See,1.1912,1.0
+2023-07,Geothermie,0.0082,1.0
+2023-07,Last,36.2535,1.0
+2023-07,Photovoltaik,7.4383,1.0
+2023-07,Wind an Land,8.2644,1.0
+2023-07,Wind auf See,1.7955,1.0
+2023-08,Geothermie,0.0082,1.0
+2023-08,Last,36.3073,1.0
+2023-08,Photovoltaik,6.371,1.0
+2023-08,Wind an Land,5.6756,1.0
+2023-08,Wind auf See,1.1936,1.0
+2023-09,Geothermie,0.0087,1.0
+2023-09,Last,35.8126,1.0
+2023-09,Photovoltaik,6.4332,1.0
+2023-09,Wind an Land,5.2773,1.0
+2023-09,Wind auf See,1.3359,1.0
+2023-10,Geothermie,0.0114,1.0
+2023-10,Last,38.7949,1.0
+2023-10,Photovoltaik,3.2782,1.0
+2023-10,Wind an Land,11.5503,1.0
+2023-10,Wind auf See,2.5788,1.0
+2023-11,Geothermie,0.0143,1.0
+2023-11,Last,41.0908,1.0
+2023-11,Photovoltaik,1.4017,1.0
+2023-11,Wind an Land,14.1391,1.0
+2023-11,Wind auf See,2.3209,1.0
+2023-12,Geothermie,0.0143,1.0
+2023-12,Last,40.9991,1.0
+2023-12,Photovoltaik,0.8019,1.0
+2023-12,Wind an Land,16.031,1.0
+2023-12,Wind auf See,2.9925,1.0
+2024-01,Geothermie,0.0138,1.0
+2024-01,Last,44.0955,1.0
+2024-01,Photovoltaik,1.3884,1.0
+2024-01,Wind an Land,15.288,1.0
+2024-01,Wind auf See,3.0384,1.0
+2024-02,Geothermie,0.0138,1.0
+2024-02,Last,39.9569,1.0
+2024-02,Photovoltaik,2.1614,1.0
+2024-02,Wind an Land,13.818,1.0
+2024-02,Wind auf See,2.782,1.0
+2024-03,Geothermie,0.0147,0.999
+2024-03,Last,40.1926,0.999
+2024-03,Photovoltaik,4.6032,0.999
+2024-03,Wind an Land,9.212,0.999
+2024-03,Wind auf See,2.7384,0.999
+2024-04,Geothermie,0.0129,1.0
+2024-04,Last,37.731,1.0
+2024-04,Photovoltaik,6.2284,1.0
+2024-04,Wind an Land,9.506,1.0
+2024-04,Wind auf See,2.1873,1.0
+2024-05,Geothermie,0.0112,1.0
+2024-05,Last,35.9835,1.0
+2024-05,Photovoltaik,8.0773,1.0
+2024-05,Wind an Land,6.174,1.0
+2024-05,Wind auf See,1.5292,1.0
+2024-06,Geothermie,0.0078,1.0
+2024-06,Last,35.7046,1.0
+2024-06,Photovoltaik,8.2804,1.0
+2024-06,Wind an Land,5.684,1.0
+2024-06,Wind auf See,1.5538,1.0
+2024-07,Geothermie,0.008,1.0
+2024-07,Last,36.9737,1.0
+2024-07,Photovoltaik,8.6816,1.0
+2024-07,Wind an Land,5.488,1.0
+2024-07,Wind auf See,1.6369,1.0
+2024-08,Geothermie,0.0101,1.0
+2024-08,Last,36.9218,1.0
+2024-08,Photovoltaik,8.3923,1.0
+2024-08,Wind an Land,5.096,1.0
+2024-08,Wind auf See,1.427,1.0
+2024-09,Geothermie,0.0115,1.0
+2024-09,Last,36.6462,1.0
+2024-09,Photovoltaik,5.8927,1.0
+2024-09,Wind an Land,8.428,1.0
+2024-09,Wind auf See,1.8231,1.0
+2024-10,Geothermie,0.0136,1.0
+2024-10,Last,38.5374,1.0
+2024-10,Photovoltaik,3.4017,1.0
+2024-10,Wind an Land,8.33,1.0
+2024-10,Wind auf See,2.2628,1.0
+2024-11,Geothermie,0.0139,1.0
+2024-11,Last,41.3765,1.0
+2024-11,Photovoltaik,1.5325,1.0
+2024-11,Wind an Land,10.094,1.0
+2024-11,Wind auf See,2.2348,1.0
+2024-12,Geothermie,0.0167,1.0
+2024-12,Last,41.3831,1.0
+2024-12,Photovoltaik,1.067,1.0
+2024-12,Wind an Land,13.524,1.0
+2024-12,Wind auf See,2.4683,1.0
+2025-01,Geothermie,0.0164,1.0
+2025-01,Last,44.1707,1.0
+2025-01,Photovoltaik,1.5465,1.0
+2025-01,Wind an Land,12.8554,1.0
+2025-01,Wind auf See,2.5274,1.0
+2025-02,Geothermie,0.0147,1.0
+2025-02,Last,40.0673,1.0
+2025-02,Photovoltaik,2.9072,1.0
+2025-02,Wind an Land,7.0655,1.0
+2025-02,Wind auf See,2.2491,1.0
+2025-03,Geothermie,0.0153,0.999
+2025-03,Last,40.5636,0.999
+2025-03,Photovoltaik,6.5201,0.999
+2025-03,Wind an Land,6.5749,0.999
+2025-03,Wind auf See,1.8799,0.999
+2025-04,Geothermie,0.014,1.0
+2025-04,Last,36.3417,1.0
+2025-04,Photovoltaik,8.5252,1.0
+2025-04,Wind an Land,5.888,1.0
+2025-04,Wind auf See,1.0755,1.0
+2025-05,Geothermie,0.0117,1.0
+2025-05,Last,36.2647,1.0
+2025-05,Photovoltaik,9.7699,1.0
+2025-05,Wind an Land,7.7525,1.0
+2025-05,Wind auf See,1.8524,1.0
+2025-06,Geothermie,0.0093,1.0
+2025-06,Last,35.2783,1.0
+2025-06,Photovoltaik,10.0395,1.0
+2025-06,Wind an Land,8.5375,1.0
+2025-06,Wind auf See,1.8399,1.0
+2025-07,Geothermie,0.0077,1.0
+2025-07,Last,37.0358,1.0
+2025-07,Photovoltaik,8.3758,1.0
+2025-07,Wind an Land,5.888,1.0
+2025-07,Wind auf See,1.5536,1.0
+2025-08,Geothermie,0.0099,1.0
+2025-08,Last,35.3734,1.0
+2025-08,Photovoltaik,9.1559,1.0
+2025-08,Wind an Land,5.6917,1.0
+2025-08,Wind auf See,1.6908,1.0
+2025-09,Geothermie,0.0108,1.0
+2025-09,Last,36.4717,1.0
+2025-09,Photovoltaik,6.1666,1.0
+2025-09,Wind an Land,9.1263,1.0
+2025-09,Wind auf See,2.3988,1.0
+2025-10,Geothermie,0.0139,1.0
+2025-10,Last,40.4755,1.0
+2025-10,Photovoltaik,3.54,1.0
+2025-10,Wind an Land,13.6404,1.0
+2025-10,Wind auf See,2.8877,1.0
+2025-11,Geothermie,0.0146,1.0
+2025-11,Last,41.4703,1.0
+2025-11,Photovoltaik,2.1337,1.0
+2025-11,Wind an Land,9.7151,1.0
+2025-11,Wind auf See,2.7031,1.0
+2025-12,Geothermie,0.0167,1.0
+2025-12,Last,42.3045,1.0
+2025-12,Photovoltaik,1.443,1.0
+2025-12,Wind an Land,12.3647,1.0
+2025-12,Wind auf See,3.4087,1.0
+2026-01,Geothermie,0.0165,1.0
+2026-01,Last,46.2917,1.0
+2026-01,Photovoltaik,1.6342,1.0
+2026-01,Wind an Land,12.7132,1.0
+2026-01,Wind auf See,3.7235,1.0
+2026-02,Geothermie,0.0132,1.0
+2026-02,Last,40.8425,1.0
+2026-02,Photovoltaik,2.5338,1.0
+2026-02,Wind an Land,11.1485,1.0
+2026-02,Wind auf See,3.6899,1.0
+2026-03,Geothermie,0.0138,0.999
+2026-03,Last,40.5633,0.999
+2026-03,Photovoltaik,7.2991,0.999
+2026-03,Wind an Land,9.2904,0.999
+2026-03,Wind auf See,2.3202,0.999
+2026-04,Geothermie,0.0122,1.0
+2026-04,Last,36.8143,1.0
+2026-04,Photovoltaik,10.0436,1.0
+2026-04,Wind an Land,7.8235,1.0
+2026-04,Wind auf See,1.8345,1.0
+2026-05,Geothermie,0.0108,1.0
+2026-05,Last,35.6403,1.0
+2026-05,Photovoltaik,11.5446,1.0
+2026-05,Wind an Land,5.4764,1.0
+2026-05,Wind auf See,1.5375,1.0
+2026-06,Geothermie,0.0079,1.0
+2026-06,Last,36.1895,1.0
+2026-06,Photovoltaik,11.6284,1.0
+2026-06,Wind an Land,6.3664,1.0
+2026-06,Wind auf See,1.5029,1.0
+2026-07,Geothermie,0.0084,1.0
+2026-07,Last,37.4952,1.0
+2026-07,Photovoltaik,12.01,1.0
+2026-07,Wind an Land,8.1155,1.0
+2026-07,Wind auf See,1.9959,1.0
+2026-08,Geothermie,0.01,1.0
+2026-08,Last,35.4286,1.0
+2026-08,Photovoltaik,10.9314,1.0
+2026-08,Wind an Land,7.5409,1.0
+2026-08,Wind auf See,1.8241,1.0
+2026-09,Geothermie,0.0095,1.0
+2026-09,Last,36.822,1.0
+2026-09,Photovoltaik,8.5674,1.0
+2026-09,Wind an Land,9.3769,1.0
+2026-09,Wind auf See,2.0652,1.0

@@ -1,0 +1,78 @@
+jahr,reihe,art,gw
+2002,Photovoltaik,Ist,0.29
+2003,Photovoltaik,Ist,0.434
+2004,Photovoltaik,Ist,1.086
+2005,Photovoltaik,Ist,2.007
+2006,Photovoltaik,Ist,2.85
+2007,Photovoltaik,Ist,4.102
+2008,Photovoltaik,Ist,6.076
+2009,Photovoltaik,Ist,10.51
+2010,Photovoltaik,Ist,18.09
+2011,Photovoltaik,Ist,26.067
+2012,Photovoltaik,Ist,32.922
+2013,Photovoltaik,Ist,36.053
+2014,Photovoltaik,Ist,37.818
+2015,Photovoltaik,Ist,39.235
+2016,Photovoltaik,Ist,40.734
+2017,Photovoltaik,Ist,42.403
+2018,Photovoltaik,Ist,45.406
+2019,Photovoltaik,Ist,49.415
+2020,Photovoltaik,Ist,54.555
+2021,Photovoltaik,Ist,60.264
+2022,Photovoltaik,Ist,67.84
+2023,Photovoltaik,Ist,83.298
+2024,Photovoltaik,Ist,100.785
+2025,Photovoltaik,Ist,118.067
+2026,Photovoltaik,Ist,130.361
+2024,Photovoltaik,Ziel,88.0
+2026,Photovoltaik,Ziel,128.0
+2028,Photovoltaik,Ziel,172.0
+2030,Photovoltaik,Ziel,215.0
+2002,Wind an Land,Ist,11.976
+2003,Wind an Land,Ist,14.381
+2004,Wind an Land,Ist,16.419
+2005,Wind an Land,Ist,18.248
+2006,Wind an Land,Ist,20.474
+2007,Wind an Land,Ist,22.116
+2008,Wind an Land,Ist,22.794
+2009,Wind an Land,Ist,25.697
+2010,Wind an Land,Ist,26.823
+2011,Wind an Land,Ist,28.579
+2012,Wind an Land,Ist,30.556
+2013,Wind an Land,Ist,32.969
+2014,Wind an Land,Ist,37.621
+2015,Wind an Land,Ist,41.297
+2016,Wind an Land,Ist,45.283
+2017,Wind an Land,Ist,50.174
+2018,Wind an Land,Ist,52.328
+2019,Wind an Land,Ist,53.193
+2020,Wind an Land,Ist,54.414
+2021,Wind an Land,Ist,56.046
+2022,Wind an Land,Ist,58.014
+2023,Wind an Land,Ist,61.013
+2024,Wind an Land,Ist,63.589
+2025,Wind an Land,Ist,68.179
+2026,Wind an Land,Ist,71.274
+2024,Wind an Land,Ziel,69.0
+2026,Wind an Land,Ziel,84.0
+2028,Wind an Land,Ziel,99.0
+2030,Wind an Land,Ziel,115.0
+2009,Wind auf See,Ist,0.035
+2010,Wind auf See,Ist,0.082
+2011,Wind auf See,Ist,0.196
+2012,Wind auf See,Ist,0.284
+2013,Wind auf See,Ist,0.548
+2014,Wind auf See,Ist,1.049
+2015,Wind auf See,Ist,3.382
+2016,Wind auf See,Ist,4.237
+2017,Wind auf See,Ist,5.523
+2018,Wind auf See,Ist,6.513
+2019,Wind auf See,Ist,7.655
+2020,Wind auf See,Ist,7.874
+2021,Wind auf See,Ist,7.874
+2022,Wind auf See,Ist,8.216
+2023,Wind auf See,Ist,8.473
+2024,Wind auf See,Ist,9.215
+2025,Wind auf See,Ist,9.733
+2026,Wind auf See,Ist,11.434
+2030,Wind auf See,Ziel,30.0
