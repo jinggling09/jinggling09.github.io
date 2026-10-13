@@ -1,0 +1,25 @@
+---
+title: "EU-ETS, ETS 2 & BEHG"
+---
+
+::: {.stand}
+Stand: 13.10.2026
+:::
+
+## EU-ETS (ETS 1)
+
+Das EU-Emissionshandelssystem ist ein Cap-and-Trade-System für Energieerzeugung, energieintensive Industrie, Luft- und Seeverkehr. Rechtsgrundlage ist die Richtlinie 2003/87/EG in ihrer jeweils geltenden Fassung [@eu_ets_richtlinie].
+
+## ETS 2: Start verschoben auf 2028
+
+Der zweite Emissionshandel für **Gebäude, Straßenverkehr und weitere Sektoren** sollte ursprünglich 2027 starten. Mit der Änderung des Europäischen Klimagesetzes wurde der Start auf **2028** verschoben [@eu_klimagesetz_2026, Art. 2]. Dieselbe Verordnung legt das verbindliche EU-Zwischenziel von **−90 % Netto-THG-Emissionen bis 2040** (gegenüber 1990) fest [@eu_klimagesetz_2026].
+
+## Deutschland: Brennstoffemissionshandel (BEHG)
+
+Deutschland bepreist CO₂ aus Brennstoffen in Wärme und Verkehr bereits national über das Brennstoffemissionshandelsgesetz [@behg]. Mit dem Start des ETS 2 geht dieser Bereich in das EU-System über.
+
+<!-- TODO: Preispfad BEHG 2021–2027 und Übergangsregelung nach BEHG-Novelle (Primärquelle: gesetze-im-internet.de / DEHSt) -->
+
+## Bezug zum Klimaschutzgesetz
+
+Der nationale Rahmen mit dem Ziel der Treibhausgasneutralität 2045 ist im Bundes-Klimaschutzgesetz festgelegt [@ksg]. Die Entwicklung der Emissionen zeigt das [Dashboard](emissionen-de.qmd).

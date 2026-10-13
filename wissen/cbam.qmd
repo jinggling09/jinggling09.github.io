@@ -1,0 +1,33 @@
+---
+title: "CBAM – CO₂-Grenzausgleichssystem"
+---
+
+::: {.stand}
+Stand: 13.10.2026
+:::
+
+## Worum es geht
+
+Der CBAM belegt den Import bestimmter emissionsintensiver Waren in die EU mit einem CO₂-Preis, der sich am EU-Emissionshandel orientiert. Rechtsgrundlage ist die Verordnung (EU) 2023/956 [@eu_cbam_2023], geändert durch die Omnibus-Verordnung (EU) 2025/2083 [@eu_cbam_omnibus_2025].
+
+**Erfasste Warengruppen:** Zement, Eisen und Stahl, Aluminium, Düngemittel, Wasserstoff, Strom [@eu_cbam_2023, Anhang I].
+
+## Phasen
+
+| Phase | Zeitraum | Pflichten |
+|---|---|---|
+| Übergangsphase | 2023 – 2025 | Vierteljährliche Berichte über eingebettete Emissionen, keine Zahlung [@eu_cbam_2023] |
+| Definitive Phase | ab 01.01.2026 | Importe begründen eine Zertifikatspflicht [@eu_cbam_omnibus_2025] |
+
+## Was die Omnibus-Verordnung 2025 geändert hat
+
+| Regel | Neu | Beleg |
+|---|---|---|
+| Verkauf der CBAM-Zertifikate | ab **01.02.2027** über eine zentrale Plattform | [@eu_cbam_omnibus_2025, Art. 20 Abs. 1] |
+| Jährliche CBAM-Erklärung und Abgabe der Zertifikate | bis **30.09.** des Folgejahres, erstmals 2027 für 2026 | [@eu_cbam_omnibus_2025, Art. 6 Abs. 1, Art. 22 Abs. 1] |
+| Mindestbestand am Quartalsende | **50 %** der seit Jahresbeginn eingeführten eingebetteten Emissionen (statt 80 %) | [@eu_cbam_omnibus_2025, Art. 22 Abs. 2] |
+| Mengenschwelle (De-minimis) | Massenschwelle, zunächst **50 t** pro Jahr | [@eu_cbam_omnibus_2025, Erwägungsgrund 3, Art. 2a, Anhang VII] |
+
+## Im Ausland gezahlter CO₂-Preis
+
+Wurde für die eingebetteten Emissionen im Ursprungsland tatsächlich ein CO₂-Preis gezahlt, kann die Zahl der abzugebenden CBAM-Zertifikate entsprechend verringert werden [@eu_cbam_2023, Art. 9]. Was das für Importe aus China bedeutet, steht unter [Schnittstelle China ↔ CBAM](schnittstellen.qmd).

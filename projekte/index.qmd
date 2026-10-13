@@ -1,0 +1,24 @@
+---
+title: "Projekte"
+toc: false
+---
+
+::: {.karten}
+
+::: {.karte}
+### [Klima-Dashboard Deutschland](../wissen/emissionen-de.qmd)
+Interaktive Auswertung der nationalen THG-Inventare des Umweltbundesamts: Gesamtemissionen mit KSG-Zielpfad, Sektortrends, Sektoranteile. Automatische Aktualisierung aus dem UBA-DataCube.
+
+[Live]{.status} · [Code](https://github.com/jinggling09/germany-climate-dashboard)
+:::
+
+::: {.karte}
+### Produkt-CO₂-Fußabdruck im Vergleich (openLCA)
+Vergleich zweier Produktvarianten mit openLCA; Wirkungsabschätzung u. a. mit IPCC 2021 GWP100 und ReCiPe 2016.
+
+[In Arbeit]{.status}
+:::
+
+:::
+
+<!-- TODO: Nach Abschluss des openLCA-Projekts: Systemgrenzen, funktionelle Einheit, Ergebnis in einem Satz, Link zum Repository -->

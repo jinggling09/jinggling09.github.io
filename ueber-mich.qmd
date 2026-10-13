@@ -1,0 +1,30 @@
+---
+title: "Über mich"
+---
+
+Ich bin Umweltwissenschaftlerin und habe vier Jahre beim **Beijing Climate Change Management Center** gearbeitet, einer behördennahen Einrichtung der Stadt Peking für Klimaschutz. Seit Oktober 2025 lebe ich in Stuttgart und suche eine Stelle in Klimaschutz, THG-Bilanzierung oder Nachhaltigkeit.
+
+## Schwerpunkte
+
+- **THG-Inventare & Klimaschutzstrategien** — Mitarbeit an Forschungsprojekten der Stadt Peking
+- **Low-Carbon-Projektmanagement** — Koordination eines Pilotprogramms für innovative Low-Carbon-Technologien
+- **Internationale Klimakooperation** — Organisation von Fachkonferenzen, Betreuung internationaler Delegationen, Dolmetschen zwischen Fachleuten und Regierungsvertretern
+- **Daten & Methoden** — R, Python, GIS, LCA (openLCA)
+
+## Werdegang
+
+| Zeitraum | Station |
+|---|---|
+| 10/2021 – 10/2025 | Climate Change Specialist, Beijing Climate Change Management Center |
+| 04 – 09/2021 | Research Assistant, Projekt zur nachhaltigen Stadtentwicklung |
+| 2018 – 2021 | M.Sc. Environmental Science (EnvEuro), Universität Hohenheim & Universität Kopenhagen |
+| 2013 – 2017 | B.Sc. Environmental Science, Beijing University of Technology |
+
+## Sprachen
+
+Chinesisch (Muttersprache) · Deutsch (C1) · Englisch (C1)
+
+## Kontakt
+
+<!-- TODO Jing: LinkedIn-Profil-URL eintragen; E-Mail nur ergänzen, wenn sie öffentlich sichtbar sein soll -->
+[LinkedIn](#) · [GitHub](https://github.com/jinggling09)

@@ -1,0 +1,39 @@
+---
+title: "Modul 2 · Wind, Solar & Geothermie: Deutschland und China"
+---
+
+::: {.callout-note}
+**In Planung.** Diese Seite beschreibt den geplanten Aufbau. Diagramme folgen, sobald die Datenpipeline steht — es werden keine Platzhalterzahlen gezeigt.
+:::
+
+## Fragestellung
+
+Wie entwickeln sich Ausbau und Erzeugung von Wind-, Solar- und Geothermie-Energie in Deutschland und China — absolut und relativ zum Strombedarf?
+
+## Geplante Indikatoren
+
+| Indikator | Einheit | Takt |
+|---|---|---|
+| Installierte Leistung Wind (an Land / auf See) | GW | monatlich |
+| Installierte Leistung Photovoltaik | GW | monatlich |
+| Stromerzeugung Wind, Solar | TWh | monatlich |
+| Anteil am Stromverbrauch bzw. an der Erzeugung | % | monatlich |
+| Geothermie: Leistung und Wärmebereitstellung | MW / GWh | jährlich |
+
+## Geplante Datenquellen
+
+| Land | Quelle | Art | Status |
+|---|---|---|---|
+| DE | Bundesnetzagentur – SMARD | amtlich, API | zu prüfen |
+| DE | Fraunhofer ISE – Energy-Charts | wissenschaftlich, API | zu prüfen |
+| DE | AGEE-Stat / Umweltbundesamt | amtlich, Jahreswerte (inkl. Geothermie) | zu prüfen |
+| CN | Nationale Energieverwaltung (国家能源局, NEA) | amtlich, monatliche Bekanntmachungen | zu prüfen |
+| CN | Nationales Statistikamt (国家统计局, NBS) | amtlich, monatliche Erzeugung | zu prüfen |
+| beide | Ember | Sekundärquelle für einheitliche Abgrenzung | nur zum Abgleich |
+
+## Methodische Hinweise
+
+- **Unterschiedliche Aktualität:** Für Deutschland liegen Viertelstundenwerte vor, für China in der Regel Monatswerte. Der Vergleich erfolgt daher auf **Monatsbasis**.
+- **Abgrenzung:** Leistungs- und Erzeugungsdefinitionen (z. B. netto/brutto, Eigenverbrauch) werden je Quelle dokumentiert, bevor Werte nebeneinander stehen.
+- **Geothermie** spielt in beiden Ländern vor allem in der Wärmeversorgung eine Rolle und wird deshalb getrennt und jährlich dargestellt.
+- **Aktualisierung:** automatisch per GitHub Action; Abrufdatum steht an jedem Diagramm.

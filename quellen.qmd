@@ -1,0 +1,36 @@
+---
+title: "Quellen & Methodik"
+---
+
+## Grundsatz
+
+Jede Sachaussage auf dieser Seite ist mit einer Quelle verlinkt. Wo möglich ist das eine **Primärquelle** — der Rechtstext selbst oder die amtliche Statistik. Eigene Einordnungen sind als solche gekennzeichnet.
+
+## Quellenhierarchie
+
+| Rang | Art | Beispiele |
+|---|---|---|
+| 1 | Rechtstexte im Original | EUR-Lex, gesetze-im-internet.de, Bekanntmachungen des MEE (mee.gov.cn) |
+| 2 | Amtliche Daten | Umweltbundesamt (UBA), Bundesnetzagentur (SMARD), Nationale Energieverwaltung Chinas (NEA), Nationales Statistikamt Chinas (NBS) |
+| 3 | Wissenschaftliche Datenaufbereitung | Fraunhofer ISE (Energy-Charts) |
+| 4 | Sekundärquellen | z. B. ICAP, Ember — nur gekennzeichnet und nur, wenn keine Primärquelle zugänglich ist |
+
+Presseartikel und Beratungs-Blogs dienen höchstens als Hinweis, wo die Primärquelle zu finden ist — sie werden nicht als Beleg zitiert.
+
+## Aktualität
+
+- Jede Seite trägt ein **Stand-Datum**. Rechtsänderungen nach diesem Datum sind nicht berücksichtigt.
+- Datenseiten werden automatisch neu erzeugt (GitHub Actions); das Abrufdatum steht beim jeweiligen Diagramm.
+
+## Lizenzen der Daten
+
+- UBA-Daten: [Datenlizenz Deutschland – Namensnennung 2.0](https://www.govdata.de/dl-de/by-2-0)
+- Weitere Lizenzen werden beim jeweiligen Datensatz genannt.
+
+## Fehler gefunden?
+
+Hinweise gerne über [GitHub Issues](https://github.com/jinggling09/jinggling09.github.io/issues).
+
+::: {.callout-note}
+Diese Seite ist eine persönliche Wissenssammlung und keine Rechtsberatung.
+:::

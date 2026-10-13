@@ -1,0 +1,44 @@
+---
+pagetitle: "Jing Hu · Klima & CO₂-Märkte"
+page-layout: full
+toc: false
+title-block-banner: false
+---
+
+::: {.hero}
+# Jing Hu
+[Climate Change Specialist · Stuttgart]{.rolle}
+
+Wissensbasis zu CO₂-Bepreisung, CBAM und Energiewende — mit Fokus auf die Schnittstelle **China ↔ EU/Deutschland**. Jede Aussage ist mit einer Primärquelle belegt.
+:::
+
+::: {.karten}
+
+::: {.karte}
+### [Modul 1 · CO₂-Märkte & CBAM](wissen/index.qmd)
+Chinas nationaler Emissionshandel, EU-ETS, ETS 2/BEHG und der CO₂-Grenzausgleich — und wo sie sich berühren.
+
+[Im Aufbau]{.status}
+:::
+
+::: {.karte}
+### [Modul 2 · Erneuerbare im Vergleich](daten/index.qmd)
+Wind, Solar und Geothermie in Deutschland und China — automatisch aktualisierte Daten aus amtlichen Quellen.
+
+[In Planung]{.status}
+:::
+
+::: {.karte}
+### [Projekte](projekte/index.qmd)
+Klima-Dashboard Deutschland (UBA-Daten) und ein Produkt-CO₂-Fußabdruck-Vergleich mit openLCA.
+
+[1 live · 1 in Arbeit]{.status}
+:::
+
+:::
+
+## Warum diese Seite?
+
+Unternehmen in Deutschland und der EU stehen zunehmend vor Fragen, die sich nur mit Kenntnis **beider** Regulierungswelten beantworten lassen — etwa, wie der chinesische Emissionshandel mit dem CBAM zusammenspielt. Diese Seite bündelt die Rechtsgrundlagen und Daten dazu, nachvollziehbar und mit Stand-Datum.
+
+[→ Wie ich Quellen auswähle und belege](quellen.qmd)

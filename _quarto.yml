@@ -1,0 +1,65 @@
+project:
+  type: website
+  output-dir: _site
+
+lang: de
+
+website:
+  title: "Jing Hu · Klima & CO₂-Märkte"
+  description: "Wissensbasis zu CO₂-Bepreisung, CBAM und Energiewende an der Schnittstelle China – EU/Deutschland."
+  site-url: https://jinggling09.github.io
+  repo-url: https://github.com/jinggling09/jinggling09.github.io
+  repo-actions: [issue]
+  page-navigation: true
+  back-to-top-navigation: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Start
+      - text: Wissen
+        menu:
+          - href: wissen/index.qmd
+            text: "Modul 1 – Überblick & Zeitleiste"
+          - href: wissen/china-ets.qmd
+            text: "Chinas nationaler Emissionshandel"
+          - href: wissen/eu-ets.qmd
+            text: "EU-ETS, ETS 2 & BEHG"
+          - href: wissen/cbam.qmd
+            text: "CBAM"
+          - href: wissen/schnittstellen.qmd
+            text: "Schnittstelle China ↔ CBAM"
+          - href: wissen/emissionen-de.qmd
+            text: "THG-Emissionen Deutschland"
+      - href: daten/index.qmd
+        text: Daten
+      - href: projekte/index.qmd
+        text: Projekte
+      - href: ueber-mich.qmd
+        text: Über mich
+    right:
+      - href: quellen.qmd
+        text: Quellen & Methodik
+      - icon: github
+        href: https://github.com/jinggling09
+        aria-label: GitHub
+  page-footer:
+    left: "© 2026 Jing Hu"
+    right: "Alle Angaben mit Quellenbeleg · [Quellen & Methodik](/quellen.qmd)"
+
+format:
+  html:
+    theme:
+      light: [litera, styles/custom.scss]
+    toc: true
+    toc-title: "Auf dieser Seite"
+    toc-depth: 2
+    smooth-scroll: true
+    link-external-newwindow: true
+    citations-hover: true
+    reference-location: margin
+
+bibliography: references.bib
+link-citations: true
+
+execute:
+  freeze: auto

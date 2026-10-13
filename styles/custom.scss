@@ -1,0 +1,63 @@
+/*-- scss:defaults --*/
+$primary: #1f5f4a;          // tiefes Grün
+$link-color: #1f5f4a;
+$body-color: #1d2521;
+$navbar-bg: #ffffff;
+$navbar-fg: #1d2521;
+$navbar-hl: #1f5f4a;
+$font-family-sans-serif: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: "Source Serif 4", Georgia, serif;
+$footer-bg: #f4f6f4;
+
+/*-- scss:rules --*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:wght@600&display=swap");
+
+body, p, li, td, th, blockquote, .csl-entry {
+  font-family: $font-family-sans-serif;
+}
+
+.navbar {
+  border-bottom: 1px solid #e3e8e5;
+}
+
+.hero {
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 1px solid #e3e8e5;
+  margin-bottom: 2rem;
+  h1 { font-size: 2.3rem; margin-bottom: .3rem; }
+  .rolle { color: #5b6b63; font-size: 1.15rem; }
+}
+
+.karten {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.karte {
+  border: 1px solid #e3e8e5;
+  border-radius: 8px;
+  padding: 1.1rem 1.2rem;
+  background: #fbfcfb;
+  h3 { font-size: 1.1rem; margin-top: 0; }
+  p { margin-bottom: .4rem; color: #3f4b45; }
+  .status { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: #8a6d1f; }
+}
+
+.stand {
+  font-size: .9rem;
+  color: #5b6b63;
+  border-left: 3px solid #1f5f4a;
+  padding-left: .7rem;
+  margin-bottom: 1.5rem;
+}
+
+.einordnung {
+  background: #f4f6f4;
+  border-radius: 6px;
+  padding: .8rem 1rem;
+}
+
+table { font-size: .95rem; }

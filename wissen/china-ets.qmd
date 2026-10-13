@@ -1,0 +1,40 @@
+---
+title: "Chinas nationaler Emissionshandel"
+---
+
+::: {.stand}
+Stand: 13.10.2026
+:::
+
+## Überblick
+
+Der nationale Emissionshandel Chinas (全国碳排放权交易市场) wurde im Juli 2021 mit dem Stromsektor gestartet [@mee_qa_2025]. Zuständig ist das Ministerium für Ökologie und Umwelt (MEE).
+
+## Erweiterung 2025: Stahl, Zement, Aluminium
+
+Mit dem Arbeitsplan vom März 2025 werden drei Industriesektoren einbezogen [@mee_2025]:
+
+| Sektor | Erfasste Gase |
+|---|---|
+| Stahl | CO₂ |
+| Zement | CO₂ |
+| Aluminiumverhüttung | CO₂, CF₄, C₂F₆ |
+
+Laut MEE kommen damit rund **1.500 Unternehmen** und rund **3 Mrd. t** Emissionen hinzu; der Markt deckt danach **über 60 % der nationalen CO₂-Emissionen** ab [@mee_qa_2025].
+
+### Zuteilung und Phasen
+
+| Zeitraum | Regel |
+|---|---|
+| 2024 (erstes Kontrolljahr) | Zuteilung in Höhe der verifizierten Ist-Emissionen |
+| 2025 – 2026 | Zuteilung über Intensitäts-Benchmarks (produktionsbezogen) |
+| 2024 – 2026 | Startphase: Datenqualität, Emissionsmanagement, Marktverständnis |
+| ab 2027 | Vertiefungsphase: präzisere Zuteilung, schrittweise Verknappung der Sektor-Gesamtmengen |
+
+Quelle: [@mee_2025]
+
+::: {.einordnung}
+**Eigene Einordnung:** Weil die Zuteilung für 2024 den tatsächlichen Emissionen entspricht, mussten die neuen Sektoren für dieses Jahr im Saldo kaum Zertifikate zukaufen. Das ist für die [CBAM-Anrechnung](schnittstellen.qmd) relevant.
+:::
+
+<!-- TODO: Preisentwicklung (Quelle: Shanghai Environment and Energy Exchange), CCER-Neustart 2024, Pilot-ETS (u. a. Peking) -->

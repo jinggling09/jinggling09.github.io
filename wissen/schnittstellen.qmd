@@ -1,0 +1,39 @@
+---
+title: "Schnittstelle China ↔ CBAM"
+subtitle: "Kann ein in China gezahlter CO₂-Preis auf CBAM angerechnet werden?"
+---
+
+::: {.stand}
+Stand: 13.10.2026
+:::
+
+## Ausgangslage
+
+Drei Sektoren stehen seit 2025 **sowohl** im chinesischen Emissionshandel **als auch** im Geltungsbereich des CBAM:
+
+| Sektor | China-ETS [@mee_2025] | CBAM [@eu_cbam_2023, Anhang I] |
+|---|:-:|:-:|
+| Stahl / Eisen und Stahl | ✓ | ✓ |
+| Zement | ✓ | ✓ |
+| Aluminium | ✓ | ✓ |
+
+## Was Art. 9 der CBAM-Verordnung verlangt
+
+Die Zahl der abzugebenden CBAM-Zertifikate kann um einen im Ursprungsland gezahlten CO₂-Preis verringert werden — unter Bedingungen [@eu_cbam_2023, Art. 9]:
+
+1. Der CO₂-Preis muss für die erklärten Emissionen **tatsächlich gezahlt** worden sein.
+2. **Rückerstattungen oder Kompensationen** im Ursprungsland, die den Preis senken, sind abzuziehen.
+3. Die Zahlung ist zu **dokumentieren**, und die Unterlagen müssen von einer **unabhängigen Person** bescheinigt werden — unabhängig vom Anmelder und von den Behörden des Ursprungslandes.
+4. Einzelheiten (Umrechnung des Jahresdurchschnittspreises, Wechselkurs, Nachweise) regelt die Kommission in Durchführungsrechtsakten.
+
+## Eigene Einordnung
+
+::: {.einordnung}
+- **Kostenfreie Zuteilung zählt nicht als Zahlung.** Im ersten Kontrolljahr 2024 entsprach die Zuteilung in China den verifizierten Ist-Emissionen [@mee_2025]. Für viele Anlagen dürfte der effektiv gezahlte Preis daher nahe null liegen — und damit auch die mögliche Anrechnung.
+- **Mit der Verknappung ab 2027** [@mee_2025] kann ein tatsächlich gezahlter Preis entstehen. Dann wird die Frage relevant, wie er pro Tonne Produkt nachgewiesen und umgerechnet wird.
+- **Nachweise sind der Engpass.** Die Bescheinigung durch unabhängige Dritte schafft Bedarf an Verifizierung, die chinesische Daten und Regeln versteht — und auf EU-Seite an Personen, die beide Systeme lesen können.
+
+Diese Einordnung ist keine Rechtsberatung.
+:::
+
+<!-- TODO: Durchführungsrechtsakte der Kommission zu Art. 9 prüfen und verlinken; Abgleich Default-Werte für China -->
