@@ -17,10 +17,23 @@ Live: https://jinggling09.github.io
 | `references.bib` | Alle Quellen (zitiert mit `[@schluessel]`) |
 | `styles/custom.scss` | Gestaltung |
 
+## Sprachen
+
+| Sprache | Quelle | URL |
+|---|---|---|
+| Deutsch (Referenzfassung) | Stammverzeichnis | https://jinggling09.github.io/ |
+| Englisch | `en/` (eigenes Quarto-Projekt) | https://jinggling09.github.io/en/ |
+| Chinesisch | `zh/` (eigenes Quarto-Projekt) | https://jinggling09.github.io/zh/ |
+
+- Alle drei Fassungen haben dieselben Dateinamen; das Sprachmenü (`_includes/lang-switch.html`) springt so auf dieselbe Seite in der anderen Sprache.
+- Inhaltliche Änderungen zuerst in der deutschen Fassung, dann in `en/` und `zh/` nachziehen.
+- Die Diagrammlogik der Daten-Seite steht nur einmal in `_shared/daten.qmd`; die Sprachseiten liefern nur Texte und Zahlenformat (`L`).
+- Gemeinsam genutzt: `styles/custom.scss`, `references.bib`, `daten/data/`.
+
 ## Lokal bauen
 
 ```bash
-quarto preview
+bash scripts/build.sh   # baut alle drei Sprachen nach _site/
 ```
 
 ## Veröffentlichung
