@@ -13,29 +13,37 @@ Der deutsche Teil wird monatlich automatisch aus der [Energy-Charts-API](https:/
 
 ## Deutschland: Installierte Leistung und Ausbaupfad
 
-Durchgezogene Linien zeigen den Bestand, gestrichelte Linien den gesetzlichen Ausbaupfad (EEG 2023 für Wind an Land und Photovoltaik, WindSeeG für Wind auf See), wie ihn Energy-Charts ausweist. Photovoltaik als Modulleistung (DC). Der Wert des laufenden Jahres ist ein Zwischenstand.
+Durchgezogene Linien zeigen den Bestand, gestrichelte Linien und Kreise den gesetzlichen Ausbaupfad (EEG 2023 für Wind an Land und Photovoltaik; für Wind auf See nennt das WindSeeG nur das Ziel 2030), wie ihn Energy-Charts ausweist. Photovoltaik als Modulleistung (DC). Der Wert des laufenden Jahres ist ein Zwischenstand.
 
 ```{ojs}
 //| echo: false
 Plot.plot({
   width,
   height: 380,
-  marginRight: 110,
+  marginRight: schmal ? 14 : 120,
   style: {fontSize: "13px", fontFamily: "inherit"},
-  x: {label: null, tickFormat: "d", domain: [2010, 2030]},
+  x: {label: null, tickFormat: "d", domain: [2010, 2030], ticks: schmal ? 4 : 10},
   y: {label: "GW", grid: true, nice: true},
   color: {domain: reihen, range: farben, legend: true},
   marks: [
     Plot.ruleY([0], {stroke: "#c3c2b7"}),
-    Plot.line(installedPlot, {x: "jahr", y: "gw", z: d => d.reihe + d.art, stroke: "reihe",
-      strokeWidth: 2, strokeDasharray: d => d.art === "Ziel" ? "5,4" : null}),
-    Plot.dot(installedPlot.filter(d => d.art === "Ist"), {x: "jahr", y: "gw", fill: "reihe", r: 2.5}),
-    Plot.text(letzteIst, {x: "jahr", y: "gw", text: d => `${d.reihe} ${fmt1(d.gw)} GW`,
-      dx: 8, textAnchor: "start", fill: "#52514e"}),
+    Plot.line(ist, {x: "jahr", y: "gw", z: "reihe", stroke: "reihe", strokeWidth: 2}),
+    Plot.line(ziel, {x: "jahr", y: "gw", z: "reihe", stroke: "reihe", strokeWidth: 2, strokeDasharray: "5,4"}),
+    Plot.dot(ziel, {x: "jahr", y: "gw", stroke: "reihe", fill: "white", r: 4, strokeWidth: 2}),
+    schmal ? null : Plot.text(ziel2030, {x: "jahr", y: "gw", text: d => `${fmt0(d.gw)} GW (Ziel)`,
+      dx: 10, textAnchor: "start", fill: "#52514e"}),
     Plot.tip(installedPlot, Plot.pointer({x: "jahr", y: "gw",
       title: d => `${d.reihe} · ${d.art === "Ziel" ? "Ausbaupfad" : "Bestand"}\n${d.jahr}: ${fmt1(d.gw)} GW`}))
   ]
 })
+```
+
+```{ojs}
+//| echo: false
+md`<span class="legende-art">━ Bestand &nbsp; ╍ Ausbaupfad &nbsp; ○ Zielwert</span>
+
+**Bestand ${letzteIst[0].jahr} (Zwischenstand):** ${letzteIst.map(d => `${d.reihe} ${fmt1(d.gw)} GW`).join(" · ")}<br>
+**Ziele 2030:** ${ziel2030.map(d => `${d.reihe} ${fmt0(d.gw)} GW`).join(" · ")}`
 ```
 
 ## Deutschland: Monatliche Stromerzeugung aus Wind und Sonne
@@ -47,15 +55,15 @@ Plot.plot({
 Plot.plot({
   width,
   height: 360,
-  marginRight: 110,
+  marginRight: schmal ? 14 : 110,
   style: {fontSize: "13px", fontFamily: "inherit"},
-  x: {label: null, type: "utc"},
+  x: {label: null, type: "utc", ticks: schmal ? 4 : 8},
   y: {label: "TWh", grid: true, nice: true},
   color: {domain: reihen, range: farben, legend: true},
   marks: [
     Plot.ruleY([0], {stroke: "#c3c2b7"}),
     Plot.line(erzeugung3, {x: "datum", y: "twh", stroke: "reihe", strokeWidth: 2}),
-    Plot.text(letzteErzeugung, {x: "datum", y: "twh", text: "reihe", dx: 8, textAnchor: "start", fill: "#52514e"}),
+    schmal ? null : Plot.text(letzteErzeugung, {x: "datum", y: "yLabel", text: "reihe", dx: 8, textAnchor: "start", fill: "#52514e"}),
     Plot.tip(erzeugung3, Plot.pointerX({x: "datum", y: "twh",
       title: d => `${d.reihe}\n${d.monat}: ${fmt1(d.twh)} TWh`}))
   ]
@@ -72,7 +80,7 @@ Plot.plot({
   width,
   height: 300,
   style: {fontSize: "13px", fontFamily: "inherit"},
-  x: {label: null, type: "utc"},
+  x: {label: null, type: "utc", ticks: schmal ? 4 : 8},
   y: {label: "%", grid: true, domain: [0, 100]},
   marks: [
     Plot.ruleY([0], {stroke: "#c3c2b7"}),
@@ -85,12 +93,7 @@ Plot.plot({
 
 ```{ojs}
 //| echo: false
-md`**Geothermie:** Die öffentliche Nettostromerzeugung aus Geothermie lag ${geoJahr.jahr} bei **${fmt2(geoJahr.twh)} TWh** – rund ${fmt2(geoJahr.anteil)} % der Last. Ihre Bedeutung liegt in Deutschland vor allem in der Wärmeversorgung; diese wird hier nicht abgebildet.`
-```
-
-```{ojs}
-//| echo: false
-lueckenHinweis
+md`**Geothermie:** Die öffentliche Nettostromerzeugung aus Geothermie lag ${geoJahr.jahr} bei **${fmt2(geoJahr.twh)} TWh** – rund ${fmt2(geoJahr.anteil)} % der Last. Ihre Bedeutung liegt in Deutschland vor allem in der Wärmeversorgung; diese wird hier nicht abgebildet.${lueckenHinweis}`
 ```
 
 <details><summary>Tabellenansicht der Monatswerte</summary>
@@ -138,22 +141,34 @@ generation = (await FileAttachment("data/de_generation_monthly.csv").csv())
 
 reihen = ["Wind an Land", "Wind auf See", "Photovoltaik"]
 farben = ["#2a78d6", "#eb6834", "#1baf7a"]
-fmt1 = d3.format(",.1~f")
-fmt2 = d3.format(",.2~f")
+de = d3.formatLocale({decimal: ",", thousands: ".", grouping: [3], currency: ["", " €"]})
+fmt0 = de.format(",.0f")
+fmt1 = de.format(",.1~f")
+fmt2 = de.format(",.2~f")
+schmal = width < 560
 parseMonat = s => new Date(s + "-01T00:00:00Z")
 
 installedPlot = installed.filter(d => d.jahr >= 2010 && reihen.includes(d.reihe))
+ist = installedPlot.filter(d => d.art === "Ist")
+ziel = installedPlot.filter(d => d.art === "Ziel")
 letzteIst = reihen.map(r => {
-  const ist = installedPlot.filter(d => d.reihe === r && d.art === "Ist")
-  return ist[ist.length - 1]
+  const xs = ist.filter(d => d.reihe === r)
+  return xs[xs.length - 1]
 }).filter(Boolean)
+ziel2030 = ziel.filter(d => d.jahr === 2030)
 
 erzeugung = generation.map(d => ({...d, datum: parseMonat(d.monat)}))
 erzeugung3 = erzeugung.filter(d => reihen.includes(d.reihe))
-letzteErzeugung = reihen.map(r => {
-  const xs = erzeugung3.filter(d => d.reihe === r)
-  return xs[xs.length - 1]
-}).filter(Boolean)
+letzteErzeugung = {
+  // Endlabels vertikal entzerren, damit sie sich nicht überlagern
+  const pts = reihen.map(r => {
+    const xs = erzeugung3.filter(d => d.reihe === r)
+    return {...xs[xs.length - 1]}
+  }).filter(d => d.reihe).sort((a, b) => b.twh - a.twh)
+  const gap = d3.max(erzeugung3, d => d.twh) * 0.08
+  pts.forEach((d, i) => { d.yLabel = i === 0 ? d.twh : Math.min(d.twh, pts[i - 1].yLabel - gap) })
+  return pts
+}
 
 anteil = d3.rollups(erzeugung, v => {
   const last = d3.sum(v.filter(d => d.reihe === "Last"), d => d.twh)
@@ -173,8 +188,8 @@ geoJahr = {
 lueckenHinweis = {
   const luecken = erzeugung.filter(d => d.abdeckung < 0.95)
   return luecken.length
-    ? md`*Hinweis: In ${new Set(luecken.map(d => d.monat)).size} Monaten fehlen mehr als 5 % der Viertelstundenwerte einer Reihe; die Monatssumme ist dort unterschätzt.*`
-    : md``
+    ? ` *Hinweis: In ${new Set(luecken.map(d => d.monat)).size} Monaten fehlen mehr als 5 % der Viertelstundenwerte einer Reihe; die Monatssumme ist dort unterschätzt.*`
+    : ""
 }
 
 erzeugungBreit = d3.rollups(erzeugung, v => Object.fromEntries(v.map(d => [d.reihe + " (TWh)", d.twh])), d => d.monat)
