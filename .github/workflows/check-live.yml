@@ -1,0 +1,50 @@
+name: Live-Seite prüfen (temporär)
+on:
+  push:
+    branches: [ci-check]
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright && python -m playwright install --with-deps chromium
+      - name: Screenshots
+        run: |
+          cat > shot.py <<'PY'
+          from playwright.sync_api import sync_playwright
+          B = "https://jinggling09.github.io/"
+          pages = [("de_daten", B + "daten/", 1280), ("en_daten", B + "en/daten/", 1280), ("zh_daten", B + "zh/daten/", 1280),
+                   ("zh_daten_mobil", B + "zh/daten/", 390), ("en_start", B + "en/", 1280), ("zh_start_mobil", B + "zh/", 390),
+                   ("zh_schnitt", B + "zh/wissen/schnittstellen.html", 1280), ("en_cbam_mobil", B + "en/wissen/cbam.html", 390)]
+          with sync_playwright() as p:
+              b = p.chromium.launch()
+              for name, url, w in pages:
+                  pg = b.new_page(viewport={"width": w, "height": 900})
+                  errs = []
+                  pg.on("console", lambda m, e=errs: e.append(m.text[:300]) if m.type == "error" else None)
+                  pg.on("pageerror", lambda x, e=errs: e.append(str(x)[:300]))
+                  resp = pg.goto(url, wait_until="networkidle"); pg.wait_for_timeout(4000)
+                  pg.screenshot(path=f"{name}.png", full_page=True)
+                  sw = pg.evaluate("document.documentElement.scrollWidth")
+                  langlinks = pg.evaluate("""[...document.querySelectorAll('#quarto-header a[hreflang]')].map(a => a.textContent.trim() + ' -> ' + a.getAttribute('href') + (a.classList.contains('active') ? ' (aktiv)' : ''))""")
+                  print(name, "HTTP", resp.status, "Seitenbreite:", sw, "/", w, "SVG:", pg.locator("svg[class*='plot']").count(), "Fehler:", errs)
+                  print("   Sprachmenü:", langlinks)
+              pg = b.new_page(viewport={"width": 1280, "height": 900})
+              pg.goto(B + "en/wissen/cbam.html", wait_until="networkidle")
+              pg.click("#quarto-header .dropdown-toggle:has(.bi-translate)")
+              pg.click("#quarto-header a[hreflang='zh']")
+              pg.wait_for_load_state("networkidle")
+              print("Klicktest EN->ZH:", pg.url, "| Titel:", pg.title())
+              b.close()
+          PY
+          mkdir -p check && cd check && python ../shot.py | tee report.txt
+      - name: Ergebnis committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A check && git commit -m "Prüfergebnis" && git push origin HEAD:ci-check
