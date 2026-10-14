@@ -23,7 +23,7 @@ Plot.plot({
   marginRight: schmal ? 14 : 120,
   style: {fontSize: "13px", fontFamily: "inherit"},
   x: {label: null, tickFormat: "d", domain: [2010, 2030], ticks: schmal ? 4 : 10},
-  y: {label: "GW", grid: true, nice: true},
+  y: {label: "GW", grid: true, nice: true, tickFormat: de.format(",")},
   color: {domain: reihen, range: farben, legend: true},
   marks: [
     Plot.ruleY([0], {stroke: "#c3c2b7"}),
@@ -116,20 +116,24 @@ Jahresendwerte 2015–2025. **China:** Statistikkommuniqués des Nationalen Stat
 Plot.plot({
   width,
   height: schmal ? 560 : 360,
-  marginRight: schmal ? 90 : 110,
+  marginRight: 16,
+  marginTop: 30,
   style: {fontSize: "13px", fontFamily: "inherit"},
   x: {label: null, tickFormat: "d", ticks: schmal ? 4 : 6},
-  y: {label: "GW", grid: true, nice: true},
-  fx: schmal ? undefined : {label: null, domain: technik},
-  fy: schmal ? {label: null, domain: technik} : undefined,
+  y: {label: "GW", grid: true, nice: true, tickFormat: de.format(",")},
+  fx: schmal ? undefined : {label: null, domain: technik, axis: null},
+  fy: schmal ? {label: null, domain: technik, axis: null} : undefined,
   color: {domain: laender, range: landFarben, legend: true},
   marks: [
     Plot.ruleY([0], {stroke: "#c3c2b7"}),
+    Plot.text(technik, {[schmal ? "fy" : "fx"]: d => d, text: d => d, frameAnchor: "top-left",
+      dx: 6, dy: -22, fontWeight: 600, fontSize: 14, fill: "#1d2521"}),
     Plot.line(vergleich, {x: "jahr", y: "gw", z: "land", stroke: "land", strokeWidth: 2,
       [schmal ? "fy" : "fx"]: "reihe"}),
     Plot.dot(vergleich, {x: "jahr", y: "gw", fill: "land", r: 2.5, [schmal ? "fy" : "fx"]: "reihe"}),
     Plot.text(vergleichEnde, {x: "jahr", y: "gw", text: d => `${d.land} ${fmt0(d.gw)} GW`,
-      dx: 8, textAnchor: "start", fill: "#52514e", [schmal ? "fy" : "fx"]: "reihe"}),
+      dy: -12, textAnchor: "end", fill: "#52514e", stroke: "white", strokeWidth: 4, paintOrder: "stroke",
+      [schmal ? "fy" : "fx"]: "reihe"}),
     Plot.tip(vergleich, Plot.pointer({x: "jahr", y: "gw", [schmal ? "fy" : "fx"]: "reihe",
       title: d => `${d.land} · ${d.reihe}\n${d.jahr}: ${fmt1(d.gw)} GW`}))
   ]
@@ -138,11 +142,23 @@ Plot.plot({
 
 ```{ojs}
 //| echo: false
-md`| | Wind 2025 | Photovoltaik 2025 | Wind: Faktor seit 2015 | Photovoltaik: Faktor seit 2015 |
-|---|--:|--:|--:|--:|
-${kennzahlen.map(k => `| **${k.land}** | ${fmt0(k.wind)} GW | ${fmt0(k.pv)} GW | × ${fmt1(k.windFaktor)} | × ${fmt1(k.pvFaktor)} |`).join("\n")}
+{
+  const zeilen = [
+    ["Wind, Ende 2025", k => `${fmt0(k.wind)} GW`],
+    ["Photovoltaik, Ende 2025", k => `${fmt0(k.pv)} GW`],
+    ["Wind: Faktor seit 2015", k => `× ${fmt1(k.windFaktor)}`],
+    ["Photovoltaik: Faktor seit 2015", k => `× ${fmt1(k.pvFaktor)}`]
+  ]
+  return htl.html`<table class="table table-sm kennzahlen">
+    <thead><tr><th></th>${kennzahlen.map(k => htl.html`<th>${k.land}</th>`)}</tr></thead>
+    <tbody>${zeilen.map(([name, f]) => htl.html`<tr><th scope="row">${name}</th>${kennzahlen.map(k => htl.html`<td>${f(k)}</td>`)}</tr>`)}</tbody>
+  </table>`
+}
+```
 
-**Stromerzeugung 2025:** China – Wind ${fmt0(cnErz.Wind)} TWh, Photovoltaik ${fmt0(cnErz.Photovoltaik)} TWh (Statistikkommuniqué, Tabelle Energieproduktion). Deutschland – Wind ${fmt0(deErz.wind)} TWh, Photovoltaik ${fmt0(deErz.pv)} TWh (öffentliche Nettoerzeugung, Energy-Charts).`
+```{ojs}
+//| echo: false
+md`**Stromerzeugung 2025:** China – Wind ${fmt0(cnErz.Wind)} TWh, Photovoltaik ${fmt0(cnErz.Photovoltaik)} TWh (Statistikkommuniqué, Tabelle Energieproduktion). Deutschland – Wind ${fmt0(deErz.wind)} TWh, Photovoltaik ${fmt0(deErz.pv)} TWh (öffentliche Nettoerzeugung, Energy-Charts).`
 ```
 
 ::: {.callout-note collapse="true"}
