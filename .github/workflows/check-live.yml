@@ -32,7 +32,7 @@ jobs:
                   pg.screenshot(path=f"{name}.png", full_page=True)
                   sw = pg.evaluate("document.documentElement.scrollWidth")
                   langlinks = pg.evaluate("""[...document.querySelectorAll('#quarto-header a[hreflang]')].map(a => a.textContent.trim() + ' -> ' + a.getAttribute('href') + (a.classList.contains('active') ? ' (aktiv)' : ''))""")
-                  print(name, "HTTP", resp.status, "Seitenbreite:", sw, "/", w, "SVG:", pg.locator("svg[class*='plot']").count(), "Fehler:", errs)
+                  print(name, "HTTP", resp.status, "Seitenbreite:", sw, "/", w, "sichtbare Diagramme:", pg.locator("svg[class*='plot']:visible, figure:visible > svg").count(), "Inspector-Reste:", pg.locator(".observablehq--inspect:visible").count(), "Fehler:", errs)
                   print("   Sprachmenü:", langlinks)
               pg = b.new_page(viewport={"width": 1280, "height": 900})
               pg.goto(B + "en/wissen/cbam.html", wait_until="networkidle")
