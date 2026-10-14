@@ -96,10 +96,21 @@ html[lang|="zh"] h1, html[lang|="zh"] h2, html[lang|="zh"] h3 {
 
 /* kompakte Sprachumschaltung auf Mobilgeräten */
 .lang-mini {
+  font-family: "Source Sans 3", system-ui, sans-serif !important;
   font-size: .85rem;
   color: #898781;
-  margin-right: .6rem;
+  margin-right: .5rem;
   white-space: nowrap;
-  a { color: #52514e; text-decoration: none; padding: .35rem .15rem; }
+  display: flex;
+  align-items: center;
+  a { color: #52514e; text-decoration: none; padding: .35rem .2rem; }
+  a + a::before { content: "·"; color: #c3c2b7; margin-right: .4rem; }
   a.aktiv { color: #1f5f4a; font-weight: 600; }
+}
+@media (max-width: 991.98px) {
+  /* eine Zeile, solange das Menü geschlossen ist; Titel kürzt sich mit „…“ */
+  .navbar .navbar-container:not(:has(.navbar-collapse.show, .navbar-collapse.collapsing)) { flex-wrap: nowrap; }
+  .navbar .navbar-brand-container { flex: 1 1 0; min-width: 0; max-width: none; }
+  .navbar .lang-mini { order: 4; margin-left: .25rem; }
+  .navbar #quarto-search { order: 5; margin-left: 0; }
 }

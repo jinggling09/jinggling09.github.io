@@ -29,8 +29,7 @@
     var box = document.createElement("div");
     box.className = "lang-mini d-lg-none";
     box.setAttribute("aria-label", "Sprache / Language / 语言");
-    Object.keys(prefix).forEach(function (lang, i) {
-      if (i) box.appendChild(document.createTextNode(" · "));
+    Object.keys(prefix).forEach(function (lang) {
       var a = document.createElement("a");
       a.href = ziel(lang);
       a.hreflang = lang;
