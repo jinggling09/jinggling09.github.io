@@ -31,7 +31,7 @@ Durchgezogene Linien zeigen den Bestand, gestrichelte Linien und Kreise den gese
 
 ```{ojs}
 //| echo: false
-chartLeistung
+chartLeistung()
 ```
 
 ```{ojs}
@@ -48,7 +48,7 @@ md`<span class="legende-art">━ Bestand &nbsp; ╍ Ausbaupfad &nbsp; ○ Zielwe
 
 ```{ojs}
 //| echo: false
-chartErzeugung
+chartErzeugung()
 ```
 
 ## Deutschland: Anteil von Wind und Sonne an der Last
@@ -57,7 +57,7 @@ Summe aus Wind an Land, Wind auf See und Photovoltaik geteilt durch die Last (St
 
 ```{ojs}
 //| echo: false
-chartAnteil
+chartAnteil()
 ```
 
 ```{ojs}
@@ -69,7 +69,7 @@ md`**Geothermie:** Die öffentliche Nettostromerzeugung aus Geothermie lag ${geo
 
 ```{ojs}
 //| echo: false
-tabelleMonate
+tabelleMonate()
 ```
 
 [Rohdaten als CSV](data/de_generation_monthly.csv) · [Installierte Leistung als CSV](data/de_installed_yearly.csv)
@@ -82,12 +82,12 @@ Jahresendwerte 2015–2025. **China:** Statistikkommuniqués des Nationalen Stat
 
 ```{ojs}
 //| echo: false
-chartVergleich
+chartVergleich()
 ```
 
 ```{ojs}
 //| echo: false
-tabelleKennzahlen
+tabelleKennzahlen()
 ```
 
 ```{ojs}
@@ -108,7 +108,7 @@ md`**Stromerzeugung 2025:** China – Wind ${fmt0(cnErz.Wind)} TWh, Photovoltaik
 
 ```{ojs}
 //| echo: false
-tabelleCnQuellen
+tabelleCnQuellen()
 ```
 
 [Daten als CSV](data/cn_capacity_yearly.csv) · [Erzeugung China als CSV](data/cn_generation_yearly.csv)

@@ -32,7 +32,7 @@ md`德国数据：Energy-Charts（Fraunhofer ISE），获取日期 ${meta.abgeru
 
 ```{ojs}
 //| echo: false
-chartLeistung
+chartLeistung()
 ```
 
 ```{ojs}
@@ -49,7 +49,7 @@ md`<span class="legende-art">━ 已装机 &nbsp; ╍ 目标路径 &nbsp; ○ �
 
 ```{ojs}
 //| echo: false
-chartErzeugung
+chartErzeugung()
 ```
 
 ## 德国：风电与光伏占用电负荷的比例
@@ -58,7 +58,7 @@ chartErzeugung
 
 ```{ojs}
 //| echo: false
-chartAnteil
+chartAnteil()
 ```
 
 ```{ojs}
@@ -70,7 +70,7 @@ md`**地热：** ${geoJahr.jahr} 年德国地热发电的公共电网净发电�
 
 ```{ojs}
 //| echo: false
-tabelleMonate
+tabelleMonate()
 ```
 
 [原始数据 CSV](data/de_generation_monthly.csv) · [装机容量 CSV](data/de_installed_yearly.csv)
@@ -83,12 +83,12 @@ tabelleMonate
 
 ```{ojs}
 //| echo: false
-chartVergleich
+chartVergleich()
 ```
 
 ```{ojs}
 //| echo: false
-tabelleKennzahlen
+tabelleKennzahlen()
 ```
 
 ```{ojs}
@@ -109,7 +109,7 @@ md`**2025 年发电量：**中国——风电 ${fmt0(cnErz.Wind)} TWh，光伏 $
 
 ```{ojs}
 //| echo: false
-tabelleCnQuellen
+tabelleCnQuellen()
 ```
 
 [数据 CSV](data/cn_capacity_yearly.csv) · [中国发电量 CSV](data/cn_generation_yearly.csv)

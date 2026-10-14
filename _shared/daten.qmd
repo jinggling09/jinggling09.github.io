@@ -4,7 +4,8 @@
     L.locale  – d3.formatLocale-Definition
     L.n       – Übersetzungen der Datenbezeichnungen (Schlüssel = deutsche Werte aus den CSV-Dateien)
     L.t       – sonstige Beschriftungen
-  und setzt die Diagramme (chartLeistung, chartErzeugung, …) an die passenden Stellen.
+  und ruft die Diagramm-Funktionen (chartLeistung(), chartErzeugung(), …) an den passenden Stellen auf.
+  Funktionen statt fertiger Elemente: ein DOM-Element kann nur an einer Stelle angezeigt werden.
 -->
 
 ```{ojs}
@@ -109,7 +110,7 @@ erzeugungBreit = d3.rollups(erzeugung, v => Object.fromEntries(v.map(d => [`${d.
 ```{ojs}
 //| echo: false
 //| output: false
-chartLeistung = Plot.plot({
+chartLeistung = () => Plot.plot({
   width,
   height: 380,
   marginRight: schmal ? 14 : 120,
@@ -129,7 +130,7 @@ chartLeistung = Plot.plot({
   ]
 })
 
-chartErzeugung = Plot.plot({
+chartErzeugung = () => Plot.plot({
   width,
   height: 360,
   marginRight: schmal ? 14 : 110,
@@ -146,7 +147,7 @@ chartErzeugung = Plot.plot({
   ]
 })
 
-chartAnteil = Plot.plot({
+chartAnteil = () => Plot.plot({
   width,
   height: 300,
   style: {fontSize: "13px", fontFamily: "inherit"},
@@ -160,7 +161,7 @@ chartAnteil = Plot.plot({
   ]
 })
 
-chartVergleich = {
+chartVergleich = () => {
   const f = schmal ? "fy" : "fx"
   return Plot.plot({
     width,
@@ -187,7 +188,7 @@ chartVergleich = {
   })
 }
 
-tabelleKennzahlen = {
+tabelleKennzahlen = () => {
   const zeilen = [
     [L.t.windEnde, k => `${fmt0(k.wind)} GW`],
     [L.t.pvEnde, k => `${fmt0(k.pv)} GW`],
@@ -200,9 +201,9 @@ tabelleKennzahlen = {
   </table>`
 }
 
-tabelleMonate = Inputs.table(erzeugungBreit, {rows: 14, layout: "auto"})
+tabelleMonate = () => Inputs.table(erzeugungBreit, {rows: 14, layout: "auto"})
 
-tabelleCnQuellen = Inputs.table(cnCap.map(d => ({...d, technikName: n(d.reihe)})), {
+tabelleCnQuellen = () => Inputs.table(cnCap.map(d => ({...d, technikName: n(d.reihe)})), {
   columns: ["jahr", "technikName", "wert_10mw", "gw", "quelle"],
   header: {jahr: L.t.jahr, technikName: L.t.technologie, wert_10mw: L.t.wertQuelle, gw: "GW", quelle: L.t.quelle},
   format: {jahr: d => String(d), wert_10mw: d => loc.format(",")(d), gw: d => fmt1(d),

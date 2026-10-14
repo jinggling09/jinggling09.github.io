@@ -32,7 +32,7 @@ Solid lines show installed capacity, dashed lines and circles the statutory targ
 
 ```{ojs}
 //| echo: false
-chartLeistung
+chartLeistung()
 ```
 
 ```{ojs}
@@ -49,7 +49,7 @@ Public net electricity generation in TWh per month (excluding industrial self-su
 
 ```{ojs}
 //| echo: false
-chartErzeugung
+chartErzeugung()
 ```
 
 ## Germany: share of wind and solar in load
@@ -58,7 +58,7 @@ Onshore wind, offshore wind and solar PV divided by load (electricity consumptio
 
 ```{ojs}
 //| echo: false
-chartAnteil
+chartAnteil()
 ```
 
 ```{ojs}
@@ -70,7 +70,7 @@ md`**Geothermal:** Public net generation from geothermal power was **${fmt2(geoJ
 
 ```{ojs}
 //| echo: false
-tabelleMonate
+tabelleMonate()
 ```
 
 [Raw data as CSV](data/de_generation_monthly.csv) · [Installed capacity as CSV](data/de_installed_yearly.csv)
@@ -83,12 +83,12 @@ Year-end values 2015–2025. **China:** statistical communiqués of the National
 
 ```{ojs}
 //| echo: false
-chartVergleich
+chartVergleich()
 ```
 
 ```{ojs}
 //| echo: false
-tabelleKennzahlen
+tabelleKennzahlen()
 ```
 
 ```{ojs}
@@ -109,7 +109,7 @@ md`**Electricity generation 2025:** China — wind ${fmt0(cnErz.Wind)} TWh, sola
 
 ```{ojs}
 //| echo: false
-tabelleCnQuellen
+tabelleCnQuellen()
 ```
 
 [Data as CSV](data/cn_capacity_yearly.csv) · [China generation as CSV](data/cn_generation_yearly.csv)
