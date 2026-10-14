@@ -37,12 +37,12 @@ jobs:
               pg = b.new_page(viewport={"width": 1280, "height": 900})
               pg.goto(B + "en/wissen/cbam.html", wait_until="networkidle")
               pg.click("#quarto-header .dropdown-toggle:has(.bi-translate)")
-              pg.click("#quarto-header a[hreflang='zh']")
+              pg.click("#quarto-header .dropdown-menu a[hreflang='zh']")
               pg.wait_for_load_state("networkidle")
               print("Klicktest EN->ZH:", pg.url, "| Titel:", pg.title())
               b.close()
           PY
-          mkdir -p check && cd check && python ../shot.py | tee report.txt
+          mkdir -p check && cd check && set -o pipefail && python ../shot.py | tee report.txt
       - name: Ergebnis committen
         run: |
           git config user.name "github-actions[bot]"
