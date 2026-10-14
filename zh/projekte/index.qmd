@@ -1,0 +1,22 @@
+---
+title: "项目"
+toc: false
+---
+
+::: {.karten}
+
+::: {.karte}
+### [德国气候数据看板](../wissen/emissionen-de.qmd)
+基于德国联邦环境署国家温室气体清单的交互式分析：总排放与《联邦气候保护法》目标路径对比、分部门趋势和部门占比。数据从 UBA DataCube 自动更新。
+
+[已上线]{.status} · [代码](https://github.com/jinggling09/germany-climate-dashboard)
+:::
+
+::: {.karte}
+### 产品碳足迹对比（openLCA）
+用 openLCA 对比两种产品方案；影响评价方法包括 IPCC 2021 GWP100 和 ReCiPe 2016。
+
+[进行中]{.status}
+:::
+
+:::

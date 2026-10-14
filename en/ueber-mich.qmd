@@ -1,0 +1,30 @@
+---
+title: "About me"
+---
+
+I am an environmental scientist and spent four years at the **Beijing Climate Change Management Center**, a public body of the Beijing municipal government working on climate action. Since October 2025 I have been living in Stuttgart and am looking for a position in climate action, GHG accounting or sustainability.
+
+## Focus areas
+
+- **GHG inventories & climate strategies** — contributing to research projects for the City of Beijing
+- **Low-carbon project management** — coordinating a pilot programme for innovative low-carbon technologies
+- **International climate cooperation** — organising expert conferences, hosting international delegations, interpreting between experts and government representatives
+- **Data & methods** — R, Python, GIS, LCA (openLCA)
+
+## Career
+
+| Period | Position |
+|---|---|
+| 10/2021 – 10/2025 | Climate Change Specialist, Beijing Climate Change Management Center |
+| 04 – 09/2021 | Research Assistant, sustainable urban development project |
+| 2018 – 2021 | M.Sc. Environmental Science (EnvEuro), University of Hohenheim & University of Copenhagen |
+| 2013 – 2017 | B.Sc. Environmental Science, Beijing University of Technology |
+
+## Languages
+
+Chinese (native) · German (C1) · English (C1)
+
+## Contact
+
+<!-- TODO Jing: add LinkedIn URL; add e-mail only if it should be public -->
+[LinkedIn](#) · [GitHub](https://github.com/jinggling09)

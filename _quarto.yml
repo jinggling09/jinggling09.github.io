@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: _site
+  # Deutsch im Stammverzeichnis; en/ und zh/ sind eigene Quarto-Projekte (siehe scripts/build.sh)
+  render:
+    - "*.qmd"
+    - "wissen/*.qmd"
+    - "daten/*.qmd"
+    - "projekte/*.qmd"
   resources:
     - "daten/data/*.csv"
     - "daten/data/*.json"
@@ -42,6 +48,15 @@ website:
     right:
       - href: quellen.qmd
         text: Quellen & Methodik
+      - icon: translate
+        text: Deutsch
+        menu:
+          - text: Deutsch
+            href: https://jinggling09.github.io/
+          - text: English
+            href: https://jinggling09.github.io/en/
+          - text: 中文
+            href: https://jinggling09.github.io/zh/
       - icon: github
         href: https://github.com/jinggling09
         aria-label: GitHub
@@ -58,6 +73,8 @@ format:
     toc-depth: 2
     smooth-scroll: true
     link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/jinggling09\.github\.io\/'
+    include-after-body: _includes/lang-switch.html
     citations-hover: true
     reference-location: margin
 

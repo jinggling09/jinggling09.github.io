@@ -1,0 +1,23 @@
+---
+title: "EU ETS, ETS2 & BEHG"
+---
+
+::: {.stand}
+Last checked: 13 Oct 2026
+:::
+
+## EU ETS (ETS1)
+
+The EU Emissions Trading System is a cap-and-trade system for power generation, energy-intensive industry, aviation and maritime transport. Its legal basis is Directive 2003/87/EC as amended [@eu_ets_richtlinie].
+
+## ETS2: start postponed to 2028
+
+The second emissions trading system for **buildings, road transport and additional sectors** was originally due to start in 2027. The amendment to the European Climate Law postponed the start to **2028** [@eu_klimagesetz_2026, Art. 2]. The same regulation sets the binding EU intermediate target of **−90 % net GHG emissions by 2040** (compared with 1990) [@eu_klimagesetz_2026].
+
+## Germany: national fuel emissions trading (BEHG)
+
+Germany already prices CO₂ from fuels used for heating and transport nationally under the Fuel Emissions Trading Act (Brennstoffemissionshandelsgesetz, BEHG) [@behg]. When ETS2 starts, this area moves into the EU system.
+
+## Link to the Climate Protection Act
+
+The national framework, with the goal of greenhouse gas neutrality by 2045, is set out in the Federal Climate Protection Act (KSG) [@ksg]. The [dashboard](emissionen-de.qmd) shows how emissions have developed.

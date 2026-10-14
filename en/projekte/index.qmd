@@ -1,0 +1,22 @@
+---
+title: "Projects"
+toc: false
+---
+
+::: {.karten}
+
+::: {.karte}
+### [Germany climate dashboard](../wissen/emissionen-de.qmd)
+Interactive analysis of the national GHG inventories of the German Environment Agency: total emissions against the Climate Protection Act target path, sector trends and sector shares. Updated automatically from the UBA DataCube.
+
+[Live]{.status} · [Code](https://github.com/jinggling09/germany-climate-dashboard)
+:::
+
+::: {.karte}
+### Product carbon footprint comparison (openLCA)
+Comparison of two product variants in openLCA; impact assessment with IPCC 2021 GWP100 and ReCiPe 2016, among others.
+
+[In progress]{.status}
+:::
+
+:::

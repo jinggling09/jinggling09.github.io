@@ -1,0 +1,44 @@
+---
+pagetitle: "Jing Hu · Climate & Carbon Markets"
+page-layout: full
+toc: false
+title-block-banner: false
+---
+
+::: {.hero}
+# Jing Hu
+[Climate Change Specialist · Stuttgart]{.rolle}
+
+A knowledge base on carbon pricing, CBAM and the energy transition — focused on the interface between **China ↔ the EU/Germany**. Every statement is backed by a primary source.
+:::
+
+::: {.karten}
+
+::: {.karte}
+### [Module 1 · Carbon markets & CBAM](wissen/index.qmd)
+China's national emissions trading scheme, the EU ETS, ETS2/BEHG and the carbon border adjustment — and where they meet.
+
+[In progress]{.status}
+:::
+
+::: {.karte}
+### [Module 2 · Renewables compared](daten/index.qmd)
+Wind, solar and geothermal in Germany and China — updated automatically.
+
+[DE monthly · CN yearly]{.status}
+:::
+
+::: {.karte}
+### [Projects](projekte/index.qmd)
+Germany climate dashboard (UBA data) and a product carbon footprint comparison in openLCA.
+
+[1 live · 1 in progress]{.status}
+:::
+
+:::
+
+## Why this site?
+
+Companies in Germany and the EU increasingly face questions that can only be answered with knowledge of **both** regulatory worlds — for example, how China's emissions trading scheme interacts with CBAM. This site brings together the legal texts and data, traceable and with a "last checked" date.
+
+[→ How I select and cite sources](quellen.qmd)

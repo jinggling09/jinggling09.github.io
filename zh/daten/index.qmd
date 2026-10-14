@@ -1,0 +1,137 @@
+---
+title: "模块二 · 风电、光伏与地热：德国与中国"
+---
+
+```{ojs}
+//| echo: false
+//| output: false
+L = ({
+  locale: {decimal: ".", thousands: ",", grouping: [3], currency: ["", " 欧元"]},
+  n: {"Wind an Land": "陆上风电", "Wind auf See": "海上风电", "Photovoltaik": "光伏",
+      "Geothermie": "地热", "Last": "用电负荷", "Wind": "风电", "China": "中国", "Deutschland": "德国"},
+  t: {ziel: "目标", ausbaupfad: "目标路径", bestand: "已装机", monat: "月份",
+      windEnde: "风电，2025 年底", pvEnde: "光伏，2025 年底",
+      windFaktor: "风电：2015 年以来增长倍数", pvFaktor: "光伏：2015 年以来增长倍数",
+      jahr: "年份", technologie: "类型", wertQuelle: "原文数值（万千瓦）",
+      quelle: "来源", kommunique: "统计公报"}
+})
+```
+
+::: {.stand}
+```{ojs}
+//| echo: false
+md`德国数据：Energy-Charts（Fraunhofer ISE），获取日期 ${meta.abgerufen} · 最近完整月份：${meta.letzter_monat} · 许可 CC BY 4.0`
+```
+:::
+
+德国数据每月通过弗劳恩霍夫太阳能系统研究所的 [Energy-Charts 接口](https://api.energy-charts.info/) 自动更新。中国没有公开数据接口，年度数据取自国家统计局历年统计公报，每年新公报发布（2 月底）后补充，每个数值都附原文链接。
+
+## 德国：装机容量与扩建目标路径
+
+实线为已装机容量，虚线和圆点为法定扩建目标路径（陆上风电和光伏依据《可再生能源法》EEG 2023；海上风电依据《海上风电法》WindSeeG，仅规定了 2030 年目标），数据取自 Energy-Charts。光伏按组件容量（直流）计。当年数值为阶段性数据。
+
+```{ojs}
+//| echo: false
+chartLeistung
+```
+
+```{ojs}
+//| echo: false
+md`<span class="legende-art">━ 已装机 &nbsp; ╍ 目标路径 &nbsp; ○ 目标值</span>
+
+**${letzteIst[0].jahr} 年已装机（阶段性）：** ${letzteIst.map(d => `${d.name} ${fmt1(d.gw)} GW`).join(" · ")}<br>
+**2030 年目标：** ${ziel2030.map(d => `${d.name} ${fmt0(d.gw)} GW`).join(" · ")}`
+```
+
+## 德国：风电与光伏月度发电量
+
+公共电网净发电量（不含工业企业自发自用），单位 TWh，由 15 分钟数据累计得出。
+
+```{ojs}
+//| echo: false
+chartErzeugung
+```
+
+## 德国：风电与光伏占用电负荷的比例
+
+陆上风电、海上风电与光伏发电量之和除以用电负荷（公共电网用电量），按月计算。
+
+```{ojs}
+//| echo: false
+chartAnteil
+```
+
+```{ojs}
+//| echo: false
+md`**地热：** ${geoJahr.jahr} 年德国地热发电的公共电网净发电量为 **${fmt2(geoJahr.twh)} TWh**，约占用电负荷的 ${fmt2(geoJahr.anteil)}%。地热在德国主要用于供热，本页未包含供热数据。${lueckenMonate ? `*注：有 ${lueckenMonate} 个月某一数据系列缺失超过 5% 的 15 分钟数据，这些月份的月度合计偏低。*` : ""}`
+```
+
+<details><summary>月度数据表</summary>
+
+```{ojs}
+//| echo: false
+tabelleMonate
+```
+
+[原始数据 CSV](data/de_generation_monthly.csv) · [装机容量 CSV](data/de_installed_yearly.csv)
+
+</details>
+
+## 德国与中国：装机容量对比
+
+2015–2025 年年末数据。**中国：**国家统计局统计公报，均采用次年首次公布的数值。**德国：**Energy-Charts，风电 = 陆上 + 海上，光伏按组件容量（直流）计。单位均为 GW，同一类型使用相同刻度。
+
+```{ojs}
+//| echo: false
+chartVergleich
+```
+
+```{ojs}
+//| echo: false
+tabelleKennzahlen
+```
+
+```{ojs}
+//| echo: false
+md`**2025 年发电量：**中国——风电 ${fmt0(cnErz.Wind)} TWh，光伏 ${fmt0(cnErz.Photovoltaik)} TWh（统计公报能源产品产量表）。德国——风电 ${fmt0(deErz.wind)} TWh，光伏 ${fmt0(deErz.pv)} TWh（公共电网净发电量，Energy-Charts）。`
+```
+
+::: {.callout-note collapse="true"}
+## 对比时需要注意
+
+- **首次公布值：**统计公报公布的是初步数据，之后的修订只会在以后年份体现。本站有意采用每年首次公布的数值，确保每个数值都能对应到唯一来源。因此，公报中给出的增速可能与两年数值之差不完全一致。
+- **统计口径：**2024 年及以前的公报写的是"并网"装机容量，2025 年未加"并网"二字。来源未说明光伏按直流还是交流容量统计，因此两国数据只在数量级上可比，不宜精确到小数位。
+- **发电量：**中国发电量取自能源产品产量表；德国数据只含公共电网净发电量，不含工业企业自发自用。
+- **不含香港、澳门和台湾**（依据来源说明）。
+:::
+
+<details><summary>中国数据来源——每个数值附原文链接</summary>
+
+```{ojs}
+//| echo: false
+tabelleCnQuellen
+```
+
+[数据 CSV](data/cn_capacity_yearly.csv) · [中国发电量 CSV](data/cn_generation_yearly.csv)
+
+</details>
+
+## 数据来源
+
+| 国家 | 来源 | 类型 | 状态 |
+|---|---|---|---|
+| 德国 | Fraunhofer ISE – Energy-Charts | 科研机构，接口，CC BY 4.0 | **已上线** |
+| 德国 | 德国联邦网络局 – SMARD | 官方，交叉核对 | 计划中 |
+| 德国 | AGEE-Stat / 德国联邦环境署 | 官方，年度数据（含地热供热） | 计划中 |
+| 中国 | 国家统计局 – 统计公报 | 官方，年度数据，手动维护 | **已上线** |
+| 中国 | 国家能源局 | 官方，月度发布 | 计划中 |
+| 两国 | Ember | 二手来源，仅用于交叉核对 | 计划中 |
+
+## 方法说明
+
+- **更新频率不同：**德国有 15 分钟级数据；中国公开可得的主要是年度和月度数据，因此两国对比以年度为单位。
+- **统计口径：**Energy-Charts 的"公共电网净发电量"不含工业自发自用；中国数据按来源口径逐项说明。
+- **数据修订：**每次更新都会重新计算最近三个月，更早的月份保持不变，可在代码仓库的版本历史中追溯。
+- **代码：**[scripts/fetch_energy_charts.py](https://github.com/jinggling09/jinggling09.github.io/blob/main/scripts/fetch_energy_charts.py)
+
+{{< include ../../_shared/daten.qmd >}}

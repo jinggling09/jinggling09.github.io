@@ -1,0 +1,212 @@
+<!--
+  Gemeinsame Logik der Daten-Seite für alle Sprachen.
+  Jede Sprachseite definiert vorher eine OJS-Zelle `L` mit:
+    L.locale  – d3.formatLocale-Definition
+    L.n       – Übersetzungen der Datenbezeichnungen (Schlüssel = deutsche Werte aus den CSV-Dateien)
+    L.t       – sonstige Beschriftungen
+  und setzt die Diagramme (chartLeistung, chartErzeugung, …) an die passenden Stellen.
+-->
+
+```{ojs}
+//| echo: false
+//| output: false
+meta = FileAttachment("data/de_meta.json").json()
+installed = (await FileAttachment("data/de_installed_yearly.csv").csv())
+  .map(d => ({jahr: +d.jahr, reihe: d.reihe, art: d.art, gw: +d.gw}))
+// bewusst ohne typed: true – sonst würde "2021-01" als Datum geparst
+generation = (await FileAttachment("data/de_generation_monthly.csv").csv())
+  .map(d => ({monat: d.monat, reihe: d.reihe, twh: +d.twh, abdeckung: +d.abdeckung}))
+cnCap = (await FileAttachment("data/cn_capacity_yearly.csv").csv())
+  .map(d => ({jahr: +d.jahr, reihe: d.reihe, wert_10mw: +d.wert_10mw, gw: +d.gw, quelle: d.quelle}))
+cnGen = (await FileAttachment("data/cn_generation_yearly.csv").csv())
+  .map(d => ({jahr: +d.jahr, reihe: d.reihe, twh: +d.twh}))
+
+n = k => L.n[k] ?? k
+loc = d3.formatLocale(L.locale)
+fmt0 = loc.format(",.0f")
+fmt1 = loc.format(",.1~f")
+fmt2 = loc.format(",.2~f")
+schmal = width < 560
+parseMonat = s => new Date(s + "-01T00:00:00Z")
+
+reihen = ["Wind an Land", "Wind auf See", "Photovoltaik"]
+farben = ["#2a78d6", "#eb6834", "#1baf7a"]
+
+installedPlot = installed.filter(d => d.jahr >= 2010 && reihen.includes(d.reihe)).map(d => ({...d, name: n(d.reihe)}))
+ist = installedPlot.filter(d => d.art === "Ist")
+ziel = installedPlot.filter(d => d.art === "Ziel")
+letzteIst = reihen.map(r => {
+  const xs = ist.filter(d => d.reihe === r)
+  return xs[xs.length - 1]
+}).filter(Boolean)
+ziel2030 = ziel.filter(d => d.jahr === 2030)
+
+erzeugung = generation.map(d => ({...d, name: n(d.reihe), datum: parseMonat(d.monat)}))
+erzeugung3 = erzeugung.filter(d => reihen.includes(d.reihe))
+letzteErzeugung = {
+  // Endlabels vertikal entzerren, damit sie sich nicht überlagern
+  const pts = reihen.map(r => {
+    const xs = erzeugung3.filter(d => d.reihe === r)
+    return {...xs[xs.length - 1]}
+  }).filter(d => d.reihe).sort((a, b) => b.twh - a.twh)
+  const gap = d3.max(erzeugung3, d => d.twh) * 0.08
+  pts.forEach((d, i) => { d.yLabel = i === 0 ? d.twh : Math.min(d.twh, pts[i - 1].yLabel - gap) })
+  return pts
+}
+
+anteil = d3.rollups(erzeugung, v => {
+  const last = d3.sum(v.filter(d => d.reihe === "Last"), d => d.twh)
+  const ws = d3.sum(v.filter(d => reihen.includes(d.reihe)), d => d.twh)
+  return last > 0 ? ws / last * 100 : null
+}, d => d.monat).map(([monat, prozent]) => ({monat, prozent, datum: parseMonat(monat)}))
+  .filter(d => d.prozent !== null)
+
+geoJahr = {
+  const jahre = d3.groups(erzeugung, d => d.monat.slice(0, 4)).filter(([, v]) => new Set(v.map(d => d.monat)).size === 12)
+  const [jahr, v] = jahre[jahre.length - 1]
+  const twh = d3.sum(v.filter(d => d.reihe === "Geothermie"), d => d.twh)
+  const last = d3.sum(v.filter(d => d.reihe === "Last"), d => d.twh)
+  return {jahr, twh, anteil: twh / last * 100}
+}
+lueckenMonate = new Set(erzeugung.filter(d => d.abdeckung < 0.95).map(d => d.monat)).size
+
+technik = ["Wind", "Photovoltaik"]
+laender = ["China", "Deutschland"]
+landFarben = ["#e34948", "#6250d6"]
+
+deJahr = {
+  const out = []
+  for (const j of d3.range(2015, 2026)) {
+    const v = r => (ist.find(d => d.jahr === j && d.reihe === r) || {}).gw
+    const wind = (v("Wind an Land") ?? NaN) + (v("Wind auf See") ?? NaN)
+    const pv = v("Photovoltaik") ?? NaN
+    if (!isNaN(wind)) out.push({land: "Deutschland", reihe: "Wind", jahr: j, gw: wind})
+    if (!isNaN(pv)) out.push({land: "Deutschland", reihe: "Photovoltaik", jahr: j, gw: pv})
+  }
+  return out
+}
+vergleich = [...cnCap.map(d => ({land: "China", reihe: d.reihe, jahr: d.jahr, gw: d.gw})), ...deJahr]
+  .map(d => ({...d, landName: n(d.land), technikName: n(d.reihe)}))
+vergleichEnde = d3.groups(vergleich, d => d.land + d.reihe).map(([, v]) => d3.greatest(v, d => d.jahr))
+
+kennzahlen = laender.map(land => {
+  const g = (r, j) => (vergleich.find(d => d.land === land && d.reihe === r && d.jahr === j) || {}).gw
+  return {land, landName: n(land), wind: g("Wind", 2025), pv: g("Photovoltaik", 2025),
+    windFaktor: g("Wind", 2025) / g("Wind", 2015), pvFaktor: g("Photovoltaik", 2025) / g("Photovoltaik", 2015)}
+})
+cnErz = Object.fromEntries(cnGen.filter(d => d.jahr === 2025).map(d => [d.reihe, d.twh]))
+deErz = {
+  const j = erzeugung.filter(d => d.monat.startsWith("2025"))
+  return {wind: d3.sum(j.filter(d => d.reihe.startsWith("Wind")), d => d.twh),
+          pv: d3.sum(j.filter(d => d.reihe === "Photovoltaik"), d => d.twh)}
+}
+
+erzeugungBreit = d3.rollups(erzeugung, v => Object.fromEntries(v.map(d => [`${d.name} (TWh)`, d.twh])), d => d.monat)
+  .map(([monat, werte]) => ({[L.t.monat]: monat, ...werte}))
+  .reverse()
+```
+
+```{ojs}
+//| echo: false
+//| output: false
+chartLeistung = Plot.plot({
+  width,
+  height: 380,
+  marginRight: schmal ? 14 : 120,
+  style: {fontSize: "13px", fontFamily: "inherit"},
+  x: {label: null, tickFormat: "d", domain: [2010, 2030], ticks: schmal ? 4 : 10},
+  y: {label: "GW", grid: true, nice: true, tickFormat: loc.format(",")},
+  color: {domain: reihen.map(n), range: farben, legend: true},
+  marks: [
+    Plot.ruleY([0], {stroke: "#c3c2b7"}),
+    Plot.line(ist, {x: "jahr", y: "gw", z: "name", stroke: "name", strokeWidth: 2}),
+    Plot.line(ziel, {x: "jahr", y: "gw", z: "name", stroke: "name", strokeWidth: 2, strokeDasharray: "5,4"}),
+    Plot.dot(ziel, {x: "jahr", y: "gw", stroke: "name", fill: "white", r: 4, strokeWidth: 2}),
+    schmal ? null : Plot.text(ziel2030, {x: "jahr", y: "gw", text: d => `${fmt0(d.gw)} GW (${L.t.ziel})`,
+      dx: 10, textAnchor: "start", fill: "#52514e"}),
+    Plot.tip(installedPlot, Plot.pointer({x: "jahr", y: "gw",
+      title: d => `${d.name} · ${d.art === "Ziel" ? L.t.ausbaupfad : L.t.bestand}\n${d.jahr}: ${fmt1(d.gw)} GW`}))
+  ]
+})
+
+chartErzeugung = Plot.plot({
+  width,
+  height: 360,
+  marginRight: schmal ? 14 : 110,
+  style: {fontSize: "13px", fontFamily: "inherit"},
+  x: {label: null, type: "utc", ticks: schmal ? 4 : 8},
+  y: {label: "TWh", grid: true, nice: true},
+  color: {domain: reihen.map(n), range: farben, legend: true},
+  marks: [
+    Plot.ruleY([0], {stroke: "#c3c2b7"}),
+    Plot.line(erzeugung3, {x: "datum", y: "twh", stroke: "name", strokeWidth: 2}),
+    schmal ? null : Plot.text(letzteErzeugung, {x: "datum", y: "yLabel", text: "name", dx: 8, textAnchor: "start", fill: "#52514e"}),
+    Plot.tip(erzeugung3, Plot.pointerX({x: "datum", y: "twh",
+      title: d => `${d.name}\n${d.monat}: ${fmt1(d.twh)} TWh`}))
+  ]
+})
+
+chartAnteil = Plot.plot({
+  width,
+  height: 300,
+  style: {fontSize: "13px", fontFamily: "inherit"},
+  x: {label: null, type: "utc", ticks: schmal ? 4 : 8},
+  y: {label: "%", grid: true, domain: [0, 100]},
+  marks: [
+    Plot.ruleY([0], {stroke: "#c3c2b7"}),
+    Plot.line(anteil, {x: "datum", y: "prozent", stroke: "#1f5f4a", strokeWidth: 2}),
+    Plot.tip(anteil, Plot.pointerX({x: "datum", y: "prozent",
+      title: d => `${d.monat}: ${fmt1(d.prozent)} %`}))
+  ]
+})
+
+chartVergleich = {
+  const f = schmal ? "fy" : "fx"
+  return Plot.plot({
+    width,
+    height: schmal ? 560 : 360,
+    marginRight: 16,
+    marginTop: 30,
+    style: {fontSize: "13px", fontFamily: "inherit"},
+    x: {label: null, tickFormat: "d", ticks: schmal ? 4 : 6},
+    y: {label: "GW", grid: true, nice: true, tickFormat: loc.format(",")},
+    fx: schmal ? undefined : {label: null, domain: technik.map(n), axis: null},
+    fy: schmal ? {label: null, domain: technik.map(n), axis: null, padding: 0.22} : undefined,
+    color: {domain: laender.map(n), range: landFarben, legend: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#c3c2b7"}),
+      Plot.text(technik.map(n), {[f]: d => d, text: d => d, frameAnchor: "top-left",
+        dx: 6, dy: -22, fontWeight: 600, fontSize: 14, fill: "#1d2521"}),
+      Plot.line(vergleich, {x: "jahr", y: "gw", z: "landName", stroke: "landName", strokeWidth: 2, [f]: "technikName"}),
+      Plot.dot(vergleich, {x: "jahr", y: "gw", fill: "landName", r: 2.5, [f]: "technikName"}),
+      Plot.text(vergleichEnde, {x: "jahr", y: "gw", text: d => `${d.landName} ${fmt0(d.gw)} GW`,
+        dy: -12, textAnchor: "end", fill: "#52514e", stroke: "white", strokeWidth: 4, paintOrder: "stroke", [f]: "technikName"}),
+      Plot.tip(vergleich, Plot.pointer({x: "jahr", y: "gw", [f]: "technikName",
+        title: d => `${d.landName} · ${d.technikName}\n${d.jahr}: ${fmt1(d.gw)} GW`}))
+    ]
+  })
+}
+
+tabelleKennzahlen = {
+  const zeilen = [
+    [L.t.windEnde, k => `${fmt0(k.wind)} GW`],
+    [L.t.pvEnde, k => `${fmt0(k.pv)} GW`],
+    [L.t.windFaktor, k => `× ${fmt1(k.windFaktor)}`],
+    [L.t.pvFaktor, k => `× ${fmt1(k.pvFaktor)}`]
+  ]
+  return htl.html`<table class="table table-sm kennzahlen">
+    <thead><tr><th></th>${kennzahlen.map(k => htl.html`<th>${k.landName}</th>`)}</tr></thead>
+    <tbody>${zeilen.map(([name, f]) => htl.html`<tr><th scope="row">${name}</th>${kennzahlen.map(k => htl.html`<td>${f(k)}</td>`)}</tr>`)}</tbody>
+  </table>`
+}
+
+tabelleMonate = Inputs.table(erzeugungBreit, {rows: 14, layout: "auto"})
+
+tabelleCnQuellen = Inputs.table(cnCap.map(d => ({...d, technikName: n(d.reihe)})), {
+  columns: ["jahr", "technikName", "wert_10mw", "gw", "quelle"],
+  header: {jahr: L.t.jahr, technikName: L.t.technologie, wert_10mw: L.t.wertQuelle, gw: "GW", quelle: L.t.quelle},
+  format: {jahr: d => String(d), wert_10mw: d => loc.format(",")(d), gw: d => fmt1(d),
+    quelle: d => htl.html`<a href=${d} target="_blank" rel="noopener">${L.t.kommunique}</a>`},
+  rows: 12, layout: "auto"
+})
+```

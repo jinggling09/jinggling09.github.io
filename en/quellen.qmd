@@ -1,0 +1,37 @@
+---
+title: "Sources & method"
+---
+
+## Principle
+
+Every factual statement on this site links to a source. Wherever possible, that is a **primary source** — the legal text itself or the official statistics. My own assessments are labelled as such.
+
+## Source hierarchy
+
+| Rank | Type | Examples |
+|---|---|---|
+| 1 | Original legal texts | EUR-Lex, gesetze-im-internet.de, announcements of China's Ministry of Ecology and Environment (mee.gov.cn) |
+| 2 | Official data | German Environment Agency (UBA), Federal Network Agency (SMARD), National Energy Administration of China (NEA), National Bureau of Statistics of China (NBS) |
+| 3 | Scientific data processing | Fraunhofer ISE (Energy-Charts) |
+| 4 | Secondary sources | e.g. ICAP, Ember — labelled, and only when no primary source is accessible |
+
+Press articles and consultancy blogs serve at most as pointers to where the primary source can be found — they are not cited as evidence.
+
+## Timeliness
+
+- Every page carries a **"last checked" date**. Legal changes after that date are not reflected.
+- Data pages are regenerated automatically (GitHub Actions); the retrieval date is shown with each chart.
+
+## Data licences
+
+- UBA data: [Data licence Germany – attribution 2.0](https://www.govdata.de/dl-de/by-2-0)
+- Energy-Charts (Fraunhofer ISE): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), source: Energy-Charts.info
+- Other licences are stated with the respective dataset.
+
+## Found an error?
+
+Please let me know via [GitHub Issues](https://github.com/jinggling09/jinggling09.github.io/issues).
+
+::: {.callout-note}
+This site is a personal knowledge collection and not legal advice. The German version is the reference version.
+:::

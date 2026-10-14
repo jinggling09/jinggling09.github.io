@@ -1,0 +1,34 @@
+---
+title: "Module 1 · Carbon markets & CBAM: China ↔ EU/Germany"
+---
+
+::: {.stand}
+Last checked: 13 Oct 2026
+:::
+
+This module explains the three instruments that interact in supply chains between China and the EU: **China's national emissions trading scheme**, the **EU Emissions Trading System** (incl. ETS2 and Germany's national fuel ETS, BEHG) and the **Carbon Border Adjustment Mechanism (CBAM)**.
+
+## Pages in this module
+
+| Page | What it covers |
+|---|---|
+| [China's national ETS](china-ets.qmd) | Design; extension to steel, cement and aluminium in 2025 |
+| [EU ETS, ETS2 & BEHG](eu-ets.qmd) | EU emissions trading, ETS2 postponed to 2028, German national fuel ETS |
+| [CBAM](cbam.qmd) | Scope, phases, changes made by the 2025 Omnibus Regulation |
+| [Interface China ↔ CBAM](schnittstellen.qmd) | When a carbon price paid in China can be deducted under CBAM |
+| [GHG emissions in Germany](emissionen-de.qmd) | Interactive dashboard based on UBA inventory data |
+
+## Timeline
+
+| Date | Event | Source |
+|---|---|---|
+| July 2021 | Trading starts in China's national ETS, initially power generation only | [@mee_qa_2025] |
+| 16 May 2023 | CBAM Regulation published in the Official Journal of the EU | [@eu_cbam_2023] |
+| 2023 – 2025 | CBAM transitional period: reporting obligation, no payment | [@eu_cbam_2023] |
+| 26 Mar 2025 | China: work plan to include steel, cement and aluminium smelting | [@mee_2025; @mee_qa_2025] |
+| 20 Oct 2025 | CBAM Omnibus Regulation enters into force | [@eu_cbam_omnibus_2025] |
+| 1 Jan 2026 | Definitive CBAM period begins (costs for imports from 2026) | [@eu_cbam_omnibus_2025] |
+| 7 Apr 2026 | Amended European Climate Law in force: −90 % net by 2040 | [@eu_klimagesetz_2026] |
+| 1 Feb 2027 | Sale of CBAM certificates begins (for 2026 imports) | [@eu_cbam_omnibus_2025, Art. 20(1)] |
+| 30 Sep 2027 | First annual CBAM declaration due (for 2026) | [@eu_cbam_omnibus_2025, Art. 6(1)] |
+| 2028 | ETS2 starts (buildings, road transport, additional sectors) | [@eu_klimagesetz_2026, Art. 2] |

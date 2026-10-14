@@ -1,0 +1,137 @@
+---
+title: "Module 2 · Wind, solar & geothermal: Germany and China"
+---
+
+```{ojs}
+//| echo: false
+//| output: false
+L = ({
+  locale: {decimal: ".", thousands: ",", grouping: [3], currency: ["€", ""]},
+  n: {"Wind an Land": "Onshore wind", "Wind auf See": "Offshore wind", "Photovoltaik": "Solar PV",
+      "Geothermie": "Geothermal", "Last": "Load", "Wind": "Wind", "China": "China", "Deutschland": "Germany"},
+  t: {ziel: "target", ausbaupfad: "target path", bestand: "installed", monat: "Month",
+      windEnde: "Wind, end of 2025", pvEnde: "Solar PV, end of 2025",
+      windFaktor: "Wind: growth factor since 2015", pvFaktor: "Solar PV: growth factor since 2015",
+      jahr: "Year", technologie: "Technology", wertQuelle: "Value in source (万千瓦 = 10 MW)",
+      quelle: "Source", kommunique: "Statistical communiqué"}
+})
+```
+
+::: {.stand}
+```{ojs}
+//| echo: false
+md`Germany data: Energy-Charts (Fraunhofer ISE), retrieved ${meta.abgerufen} · latest complete month: ${meta.letzter_monat} · licence CC BY 4.0`
+```
+:::
+
+The German data are updated automatically every month from the [Energy-Charts API](https://api.energy-charts.info/) of Fraunhofer ISE. There is no public API for China; the annual values come from the statistical communiqués of the National Bureau of Statistics and are added after each new release (end of February) — with the original link for every value.
+
+## Germany: installed capacity and target path
+
+Solid lines show installed capacity, dashed lines and circles the statutory target path (EEG 2023 for onshore wind and solar PV; for offshore wind the WindSeeG only sets a 2030 target), as reported by Energy-Charts. Solar PV as module capacity (DC). The current-year value is provisional.
+
+```{ojs}
+//| echo: false
+chartLeistung
+```
+
+```{ojs}
+//| echo: false
+md`<span class="legende-art">━ installed &nbsp; ╍ target path &nbsp; ○ target value</span>
+
+**Installed ${letzteIst[0].jahr} (provisional):** ${letzteIst.map(d => `${d.name} ${fmt1(d.gw)} GW`).join(" · ")}<br>
+**2030 targets:** ${ziel2030.map(d => `${d.name} ${fmt0(d.gw)} GW`).join(" · ")}`
+```
+
+## Germany: monthly electricity generation from wind and sun
+
+Public net electricity generation in TWh per month (excluding industrial self-supply), calculated from 15-minute values.
+
+```{ojs}
+//| echo: false
+chartErzeugung
+```
+
+## Germany: share of wind and solar in load
+
+Onshore wind, offshore wind and solar PV divided by load (electricity consumption from the public grid), per month.
+
+```{ojs}
+//| echo: false
+chartAnteil
+```
+
+```{ojs}
+//| echo: false
+md`**Geothermal:** Public net generation from geothermal power was **${fmt2(geoJahr.twh)} TWh** in ${geoJahr.jahr} — about ${fmt2(geoJahr.anteil)} % of load. In Germany, geothermal energy matters mainly for heat supply, which is not shown here.${lueckenMonate ? ` *Note: in ${lueckenMonate} months more than 5 % of the 15-minute values of a series are missing; the monthly total is underestimated there.*` : ""}`
+```
+
+<details><summary>Table view of monthly values</summary>
+
+```{ojs}
+//| echo: false
+tabelleMonate
+```
+
+[Raw data as CSV](data/de_generation_monthly.csv) · [Installed capacity as CSV](data/de_installed_yearly.csv)
+
+</details>
+
+## Germany and China: installed capacity compared
+
+Year-end values 2015–2025. **China:** statistical communiqués of the National Bureau of Statistics (国家统计局), in each case the first publication in the following year. **Germany:** Energy-Charts, wind = onshore + offshore, solar PV as module capacity (DC). Both in GW, same scale per technology.
+
+```{ojs}
+//| echo: false
+chartVergleich
+```
+
+```{ojs}
+//| echo: false
+tabelleKennzahlen
+```
+
+```{ojs}
+//| echo: false
+md`**Electricity generation 2025:** China — wind ${fmt0(cnErz.Wind)} TWh, solar ${fmt0(cnErz.Photovoltaik)} TWh (statistical communiqué, energy production table). Germany — wind ${fmt0(deErz.wind)} TWh, solar ${fmt0(deErz.pv)} TWh (public net generation, Energy-Charts).`
+```
+
+::: {.callout-note collapse="true"}
+## Points to note when comparing
+
+- **First publication:** The statistics bureau publishes preliminary values. Later revisions only appear in subsequent years; this series deliberately uses the first published value, so that each value maps to exactly one source. Growth rates stated in the communiqué may therefore differ from the difference between two annual values.
+- **Definitions:** Up to 2024 the communiqué refers to "grid-connected" (并网) capacity, in 2025 without this qualifier. The source does not state whether solar PV is reported as DC or AC capacity. The values are therefore comparable in order of magnitude, not to the decimal place.
+- **Generation:** Chinese generation values come from the energy production table; German values cover only public net generation, excluding industrial self-supply.
+- **Excluding Hong Kong, Macao and Taiwan** (according to the source).
+:::
+
+<details><summary>Sources China — every value with original link</summary>
+
+```{ojs}
+//| echo: false
+tabelleCnQuellen
+```
+
+[Data as CSV](data/cn_capacity_yearly.csv) · [China generation as CSV](data/cn_generation_yearly.csv)
+
+</details>
+
+## Data sources
+
+| Country | Source | Type | Status |
+|---|---|---|---|
+| DE | Fraunhofer ISE – Energy-Charts | scientific, API, CC BY 4.0 | **live** |
+| DE | Federal Network Agency – SMARD | official, cross-check | planned |
+| DE | AGEE-Stat / German Environment Agency | official, annual values incl. geothermal heat | planned |
+| CN | National Bureau of Statistics (国家统计局) – statistical communiqué | official, annual values, maintained manually | **live** |
+| CN | National Energy Administration (国家能源局, NEA) | official, monthly releases | planned |
+| both | Ember | secondary source, for cross-checking only | planned |
+
+## Methodological notes
+
+- **Different update frequencies:** For Germany 15-minute values are available; for China mainly annual and monthly values are publicly accessible. The country comparison is therefore on an annual basis.
+- **Definitions:** "Public net generation" as defined by Energy-Charts excludes industrial self-supply. For China, the source's definitions are documented for each value.
+- **Revisions:** The last three months are recalculated at every update; older months stay unchanged and can be traced in the repository's version history.
+- **Code:** [scripts/fetch_energy_charts.py](https://github.com/jinggling09/jinggling09.github.io/blob/main/scripts/fetch_energy_charts.py)
+
+{{< include ../../_shared/daten.qmd >}}

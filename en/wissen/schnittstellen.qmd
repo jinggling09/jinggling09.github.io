@@ -1,0 +1,37 @@
+---
+title: "Interface China ↔ CBAM"
+subtitle: "Can a carbon price paid in China be deducted under CBAM?"
+---
+
+::: {.stand}
+Last checked: 13 Oct 2026
+:::
+
+## Starting point
+
+Since 2025, three sectors are covered **both** by China's emissions trading scheme **and** by CBAM:
+
+| Sector | China ETS [@mee_2025] | CBAM [@eu_cbam_2023, Annex I] |
+|---|:-:|:-:|
+| Steel / iron and steel | ✓ | ✓ |
+| Cement | ✓ | ✓ |
+| Aluminium | ✓ | ✓ |
+
+## What Article 9 of the CBAM Regulation requires
+
+The number of CBAM certificates to be surrendered can be reduced by a carbon price paid in the country of origin — subject to conditions [@eu_cbam_2023, Art. 9]:
+
+1. The carbon price must **actually have been paid** for the declared emissions.
+2. **Rebates or other compensation** in the country of origin that lower the price must be deducted.
+3. Payment must be **documented**, and the documentation certified by an **independent person** — independent of the declarant and of the authorities of the country of origin.
+4. Details (conversion of the annual average price, exchange rate, evidence) are set by the Commission in implementing acts.
+
+## My assessment
+
+::: {.einordnung}
+- **Free allocation does not count as payment.** In the first compliance year, 2024, allocation in China matched verified actual emissions [@mee_2025]. For many installations the price effectively paid is therefore likely close to zero — and so is any possible deduction.
+- **With the tightening from 2027** [@mee_2025], an actually paid price may arise. The question then becomes how it is evidenced and converted per tonne of product.
+- **Evidence is the bottleneck.** Certification by independent third parties creates demand for verification that understands Chinese data and rules — and, on the EU side, for people who can read both systems.
+
+This assessment is not legal advice.
+:::

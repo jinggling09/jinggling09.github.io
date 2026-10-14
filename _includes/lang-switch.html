@@ -1,0 +1,23 @@
+<script>
+/* Sprachumschaltung: verlinkt im Sprachmenü jeweils auf dieselbe Seite in der anderen Sprache.
+   Deutsch liegt im Stammverzeichnis, Englisch unter /en/, Chinesisch unter /zh/. */
+(function () {
+  var base = "https://jinggling09.github.io/";
+  var prefix = {de: "", en: "en/", zh: "zh/"};
+  var m = location.pathname.match(/^\/(en|zh)(\/|$)/);
+  var current = m ? m[1] : "de";
+  var rel = m ? location.pathname.slice(m[0].length) : location.pathname.replace(/^\//, "");
+  var onSite = location.hostname === "jinggling09.github.io";
+  document.querySelectorAll("#quarto-header a[href]").forEach(function (a) {
+    var href = a.getAttribute("href");
+    for (var lang in prefix) {
+      if (href === base + prefix[lang]) {
+        a.setAttribute("href", (onSite ? "/" : base) + prefix[lang] + rel);
+        a.removeAttribute("target");
+        a.setAttribute("hreflang", lang);
+        if (lang === current) { a.classList.add("active"); a.setAttribute("aria-current", "true"); }
+      }
+    }
+  });
+})();
+</script>

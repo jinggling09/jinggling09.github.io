@@ -1,0 +1,76 @@
+project:
+  type: website
+  output-dir: ../_site/en
+
+lang: en
+
+website:
+  title: "Jing Hu · Climate & Carbon Markets"
+  description: "Knowledge base on carbon pricing, CBAM and the energy transition at the interface between China and the EU/Germany."
+  site-url: https://jinggling09.github.io/en
+  repo-url: https://github.com/jinggling09/jinggling09.github.io
+  repo-actions: [issue]
+  page-navigation: true
+  back-to-top-navigation: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Knowledge
+        menu:
+          - href: wissen/index.qmd
+            text: "Module 1 – Overview & timeline"
+          - href: wissen/china-ets.qmd
+            text: "China's national ETS"
+          - href: wissen/eu-ets.qmd
+            text: "EU ETS, ETS2 & BEHG"
+          - href: wissen/cbam.qmd
+            text: "CBAM"
+          - href: wissen/schnittstellen.qmd
+            text: "Interface China ↔ CBAM"
+          - href: wissen/emissionen-de.qmd
+            text: "GHG emissions in Germany"
+      - href: daten/index.qmd
+        text: Data
+      - href: projekte/index.qmd
+        text: Projects
+      - href: ueber-mich.qmd
+        text: About
+    right:
+      - href: quellen.qmd
+        text: Sources & method
+      - icon: translate
+        text: English
+        menu:
+          - text: Deutsch
+            href: https://jinggling09.github.io/
+          - text: English
+            href: https://jinggling09.github.io/en/
+          - text: 中文
+            href: https://jinggling09.github.io/zh/
+      - icon: github
+        href: https://github.com/jinggling09
+        aria-label: GitHub
+  page-footer:
+    left: "© 2026 Jing Hu"
+    right: "Every statement is sourced · [Sources & method](/quellen.qmd)"
+
+format:
+  html:
+    theme:
+      light: [litera, ../styles/custom.scss]
+    toc: true
+    toc-title: "On this page"
+    toc-depth: 2
+    smooth-scroll: true
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/jinggling09\.github\.io\/'
+    include-after-body: ../_includes/lang-switch.html
+    citations-hover: true
+    reference-location: margin
+
+bibliography: ../references.bib
+link-citations: true
+
+execute:
+  freeze: auto

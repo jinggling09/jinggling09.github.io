@@ -1,3 +1,7 @@
 /.quarto/
 /_site/
 .DS_Store
+/en/daten/data/
+/zh/daten/data/
+/en/.quarto/
+/zh/.quarto/

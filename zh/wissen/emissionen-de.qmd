@@ -1,0 +1,16 @@
+---
+title: "德国温室气体排放"
+page-layout: full
+toc: false
+---
+
+交互式看板：总排放与《联邦气候保护法》目标路径对比、分部门趋势和部门占比。数据来自德国联邦环境署（UBA）国家温室气体清单 [@uba_thg]；目标值依据 KSG [@ksg]。看板本身为德语界面。
+
+```{=html}
+<iframe src="https://jinggling09.github.io/germany-climate-dashboard/"
+        title="德国气候数据看板"
+        style="width:100%; height:1400px; border:1px solid #e3e8e5; border-radius:8px;"
+        loading="lazy"></iframe>
+```
+
+[在新标签页打开看板](https://jinggling09.github.io/germany-climate-dashboard/) · 数据许可：[dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0)

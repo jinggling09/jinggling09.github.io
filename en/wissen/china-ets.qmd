@@ -1,0 +1,38 @@
+---
+title: "China's national emissions trading scheme"
+---
+
+::: {.stand}
+Last checked: 13 Oct 2026
+:::
+
+## Overview
+
+China's national emissions trading scheme (全国碳排放权交易市场) started trading in July 2021, covering the power sector [@mee_qa_2025]. It is administered by the Ministry of Ecology and Environment (MEE).
+
+## 2025 extension: steel, cement, aluminium
+
+The work plan of March 2025 brings three industrial sectors into the scheme [@mee_2025]:
+
+| Sector | Gases covered |
+|---|---|
+| Steel | CO₂ |
+| Cement | CO₂ |
+| Aluminium smelting | CO₂, CF₄, C₂F₆ |
+
+According to the MEE, this adds around **1,500 companies** and around **3 billion t** of emissions; the market then covers **more than 60 % of national CO₂ emissions** [@mee_qa_2025].
+
+### Allocation and phases
+
+| Period | Rule |
+|---|---|
+| 2024 (first compliance year) | Allocation equal to verified actual emissions |
+| 2025 – 2026 | Allocation via intensity benchmarks (output-based) |
+| 2024 – 2026 | Start-up phase: data quality, emissions management, market familiarisation |
+| from 2027 | Deepening phase: more precise allocation, gradual tightening of sector caps |
+
+Source: [@mee_2025]
+
+::: {.einordnung}
+**My assessment:** Because 2024 allocation matched actual emissions, the new sectors hardly needed to buy allowances on balance for that year. This matters for the [CBAM deduction](schnittstellen.qmd).
+:::

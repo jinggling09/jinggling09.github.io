@@ -1,0 +1,33 @@
+---
+title: "CBAM – Carbon Border Adjustment Mechanism"
+---
+
+::: {.stand}
+Last checked: 13 Oct 2026
+:::
+
+## What it is
+
+CBAM puts a carbon price, aligned with the EU Emissions Trading System, on imports of certain emission-intensive goods into the EU. The legal basis is Regulation (EU) 2023/956 [@eu_cbam_2023], amended by the Omnibus Regulation (EU) 2025/2083 [@eu_cbam_omnibus_2025].
+
+**Goods covered:** cement, iron and steel, aluminium, fertilisers, hydrogen, electricity [@eu_cbam_2023, Annex I].
+
+## Phases
+
+| Phase | Period | Obligations |
+|---|---|---|
+| Transitional period | 2023 – 2025 | Quarterly reports on embedded emissions, no payment [@eu_cbam_2023] |
+| Definitive period | from 1 Jan 2026 | Imports create an obligation to surrender certificates [@eu_cbam_omnibus_2025] |
+
+## What the 2025 Omnibus Regulation changed
+
+| Rule | New | Source |
+|---|---|---|
+| Sale of CBAM certificates | from **1 Feb 2027** via a common central platform | [@eu_cbam_omnibus_2025, Art. 20(1)] |
+| Annual CBAM declaration and surrender of certificates | by **30 Sep** of the following year, first in 2027 for 2026 | [@eu_cbam_omnibus_2025, Art. 6(1), Art. 22(1)] |
+| Minimum holding at end of each quarter | **50 %** of embedded emissions imported since the start of the year (instead of 80 %) | [@eu_cbam_omnibus_2025, Art. 22(2)] |
+| Quantity threshold (de minimis) | mass-based threshold, initially **50 t** per year | [@eu_cbam_omnibus_2025, Recital 3, Art. 2a, Annex VII] |
+
+## Carbon price paid abroad
+
+If a carbon price has actually been paid in the country of origin for the embedded emissions, the number of CBAM certificates to be surrendered can be reduced accordingly [@eu_cbam_2023, Art. 9]. What this means for imports from China is covered under [Interface China ↔ CBAM](schnittstellen.qmd).

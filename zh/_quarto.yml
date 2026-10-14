@@ -1,0 +1,76 @@
+project:
+  type: website
+  output-dir: ../_site/zh
+
+lang: zh
+
+website:
+  title: "Jing Hu · 气候与碳市场"
+  description: "聚焦中国与欧盟/德国接口的碳定价、CBAM 与能源转型知识库。"
+  site-url: https://jinggling09.github.io/zh
+  repo-url: https://github.com/jinggling09/jinggling09.github.io
+  repo-actions: [issue]
+  page-navigation: true
+  back-to-top-navigation: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: 首页
+      - text: 知识库
+        menu:
+          - href: wissen/index.qmd
+            text: "模块一 · 概览与时间轴"
+          - href: wissen/china-ets.qmd
+            text: "中国全国碳市场"
+          - href: wissen/eu-ets.qmd
+            text: "欧盟碳市场、ETS2 与德国 BEHG"
+          - href: wissen/cbam.qmd
+            text: "碳边境调节机制（CBAM）"
+          - href: wissen/schnittstellen.qmd
+            text: "中国碳市场 ↔ CBAM 接口"
+          - href: wissen/emissionen-de.qmd
+            text: "德国温室气体排放"
+      - href: daten/index.qmd
+        text: 数据
+      - href: projekte/index.qmd
+        text: 项目
+      - href: ueber-mich.qmd
+        text: 关于我
+    right:
+      - href: quellen.qmd
+        text: 来源与方法
+      - icon: translate
+        text: 中文
+        menu:
+          - text: Deutsch
+            href: https://jinggling09.github.io/
+          - text: English
+            href: https://jinggling09.github.io/en/
+          - text: 中文
+            href: https://jinggling09.github.io/zh/
+      - icon: github
+        href: https://github.com/jinggling09
+        aria-label: GitHub
+  page-footer:
+    left: "© 2026 Jing Hu"
+    right: "所有内容均注明来源 · [来源与方法](/quellen.qmd)"
+
+format:
+  html:
+    theme:
+      light: [litera, ../styles/custom.scss]
+    toc: true
+    toc-title: "本页目录"
+    toc-depth: 2
+    smooth-scroll: true
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/jinggling09\.github\.io\/'
+    include-after-body: ../_includes/lang-switch.html
+    citations-hover: true
+    reference-location: margin
+
+bibliography: ../references.bib
+link-citations: true
+
+execute:
+  freeze: auto

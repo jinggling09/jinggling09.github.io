@@ -52,7 +52,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Seite rendern
-        run: quarto render
+        run: bash scripts/build.sh
 
       - uses: actions/configure-pages@v5
 

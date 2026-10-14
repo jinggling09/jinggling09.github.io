@@ -1,0 +1,37 @@
+---
+title: "来源与方法"
+---
+
+## 原则
+
+本站每一条事实陈述都附有来源链接，并尽可能使用**一手来源**——即法律原文或官方统计数据。个人分析会明确标注。
+
+## 来源层级
+
+| 层级 | 类型 | 示例 |
+|---|---|---|
+| 1 | 法律原文 | EUR-Lex、gesetze-im-internet.de、生态环境部公告（mee.gov.cn） |
+| 2 | 官方数据 | 德国联邦环境署（UBA）、德国联邦网络局（SMARD）、国家能源局、国家统计局 |
+| 3 | 科研机构的数据整理 | 弗劳恩霍夫太阳能系统研究所（Fraunhofer ISE，Energy-Charts） |
+| 4 | 二手来源 | 如 ICAP、Ember——仅在无法获取一手来源时使用，并明确标注 |
+
+新闻报道和咨询公司博客最多只用来查找一手来源的线索，不作为引用依据。
+
+## 时效性
+
+- 每个页面都标有**核对日期**，此后的法律变化未纳入。
+- 数据页面通过 GitHub Actions 自动更新，每张图都注明数据获取日期。
+
+## 数据许可
+
+- UBA 数据：[德国数据许可——署名 2.0](https://www.govdata.de/dl-de/by-2-0)
+- Energy-Charts（Fraunhofer ISE）：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)，来源：Energy-Charts.info
+- 其他许可在相应数据集处注明。
+
+## 发现错误？
+
+欢迎通过 [GitHub Issues](https://github.com/jinggling09/jinggling09.github.io/issues) 告诉我。
+
+::: {.callout-note}
+本站为个人知识整理，不构成法律意见。以德语版为准。
+:::

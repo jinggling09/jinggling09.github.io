@@ -1,0 +1,16 @@
+---
+title: "GHG emissions in Germany"
+page-layout: full
+toc: false
+---
+
+Interactive dashboard: total emissions with the target path under the Climate Protection Act, sector trends and sector shares. Data are taken from the national greenhouse gas inventories of the German Environment Agency (UBA) [@uba_thg]; targets as set by the KSG [@ksg]. The dashboard itself is in German.
+
+```{=html}
+<iframe src="https://jinggling09.github.io/germany-climate-dashboard/"
+        title="Germany climate dashboard"
+        style="width:100%; height:1400px; border:1px solid #e3e8e5; border-radius:8px;"
+        loading="lazy"></iframe>
+```
+
+[Open dashboard in a new tab](https://jinggling09.github.io/germany-climate-dashboard/) · Data licence: [dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0)
