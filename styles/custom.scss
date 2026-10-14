@@ -93,3 +93,13 @@ html[lang|="zh"] p, html[lang|="zh"] li, html[lang|="zh"] td, html[lang|="zh"] t
 html[lang|="zh"] h1, html[lang|="zh"] h2, html[lang|="zh"] h3 {
   font-family: "Source Serif 4", "Songti SC", "Noto Serif SC", "Noto Serif CJK SC", serif;
 }
+
+/* kompakte Sprachumschaltung auf Mobilgeräten */
+.lang-mini {
+  font-size: .85rem;
+  color: #898781;
+  margin-right: .6rem;
+  white-space: nowrap;
+  a { color: #52514e; text-decoration: none; padding: .35rem .15rem; }
+  a.aktiv { color: #1f5f4a; font-weight: 600; }
+}

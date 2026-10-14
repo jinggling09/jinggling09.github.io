@@ -1,23 +1,44 @@
 <script>
 /* Sprachumschaltung: verlinkt im Sprachmenü jeweils auf dieselbe Seite in der anderen Sprache.
-   Deutsch liegt im Stammverzeichnis, Englisch unter /en/, Chinesisch unter /zh/. */
+   Deutsch liegt im Stammverzeichnis, Englisch unter /en/, Chinesisch unter /zh/.
+   Auf schmalen Bildschirmen zusätzlich eine kompakte Umschaltung oben rechts (neben der Suche). */
 (function () {
   var base = "https://jinggling09.github.io/";
   var prefix = {de: "", en: "en/", zh: "zh/"};
+  var kurz = {de: "DE", en: "EN", zh: "中"};
   var m = location.pathname.match(/^\/(en|zh)(\/|$)/);
   var current = m ? m[1] : "de";
   var rel = m ? location.pathname.slice(m[0].length) : location.pathname.replace(/^\//, "");
   var onSite = location.hostname === "jinggling09.github.io";
+  function ziel(lang) { return (onSite ? "/" : base) + prefix[lang] + rel; }
+
   document.querySelectorAll("#quarto-header a[href]").forEach(function (a) {
     var href = a.getAttribute("href");
     for (var lang in prefix) {
       if (href === base + prefix[lang]) {
-        a.setAttribute("href", (onSite ? "/" : base) + prefix[lang] + rel);
+        a.setAttribute("href", ziel(lang));
         a.removeAttribute("target");
         a.setAttribute("hreflang", lang);
         if (lang === current) { a.classList.add("active"); a.setAttribute("aria-current", "true"); }
       }
     }
   });
+
+  var suche = document.getElementById("quarto-search");
+  if (suche) {
+    var box = document.createElement("div");
+    box.className = "lang-mini d-lg-none";
+    box.setAttribute("aria-label", "Sprache / Language / 语言");
+    Object.keys(prefix).forEach(function (lang, i) {
+      if (i) box.appendChild(document.createTextNode(" · "));
+      var a = document.createElement("a");
+      a.href = ziel(lang);
+      a.hreflang = lang;
+      a.textContent = kurz[lang];
+      if (lang === current) { a.className = "aktiv"; a.setAttribute("aria-current", "true"); }
+      box.appendChild(a);
+    });
+    suche.parentNode.insertBefore(box, suche);
+  }
 })();
 </script>
