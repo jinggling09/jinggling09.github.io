@@ -9,7 +9,7 @@ md`Daten Deutschland: Energy-Charts (Fraunhofer ISE), abgerufen am ${meta.abgeru
 ```
 :::
 
-Der deutsche Teil wird monatlich automatisch aus der [Energy-Charts-API](https://api.energy-charts.info/) des Fraunhofer ISE aktualisiert. Der chinesische Teil folgt (siehe [Datenquellen](#geplante-datenquellen)).
+Der deutsche Teil wird monatlich automatisch aus der [Energy-Charts-API](https://api.energy-charts.info/) des Fraunhofer ISE aktualisiert. Für China gibt es keine öffentliche Schnittstelle; die Jahreswerte stammen aus den Statistikkommuniqués des Nationalen Statistikamts und werden nach jeder Neuerscheinung (Ende Februar) ergänzt – mit Originallink je Wert.
 
 ## Deutschland: Installierte Leistung und Ausbaupfad
 
@@ -107,9 +107,69 @@ Inputs.table(erzeugungBreit, {rows: 14, layout: "auto"})
 
 </details>
 
-## China
+## Deutschland und China: Installierte Leistung im Vergleich
 
-*Folgt.* Für China gibt es keine öffentliche Schnittstelle; die Nationale Energieverwaltung (NEA) veröffentlicht Leistungs- und das Statistikamt (NBS) Erzeugungsdaten monatlich als Bekanntmachungen. Diese werden mit Quellenlink je Wert in eine Tabelle übernommen.
+Jahresendwerte 2015–2025. **China:** Statistikkommuniqués des Nationalen Statistikamts (国家统计局), jeweils die Erstveröffentlichung des Folgejahres. **Deutschland:** Energy-Charts, Wind = an Land + auf See, Photovoltaik als Modulleistung (DC). Beide Achsen in GW, gleiche Skala je Technologie.
+
+```{ojs}
+//| echo: false
+Plot.plot({
+  width,
+  height: schmal ? 560 : 360,
+  marginRight: schmal ? 90 : 110,
+  style: {fontSize: "13px", fontFamily: "inherit"},
+  x: {label: null, tickFormat: "d", ticks: schmal ? 4 : 6},
+  y: {label: "GW", grid: true, nice: true},
+  fx: schmal ? undefined : {label: null, domain: technik},
+  fy: schmal ? {label: null, domain: technik} : undefined,
+  color: {domain: laender, range: landFarben, legend: true},
+  marks: [
+    Plot.ruleY([0], {stroke: "#c3c2b7"}),
+    Plot.line(vergleich, {x: "jahr", y: "gw", z: "land", stroke: "land", strokeWidth: 2,
+      [schmal ? "fy" : "fx"]: "reihe"}),
+    Plot.dot(vergleich, {x: "jahr", y: "gw", fill: "land", r: 2.5, [schmal ? "fy" : "fx"]: "reihe"}),
+    Plot.text(vergleichEnde, {x: "jahr", y: "gw", text: d => `${d.land} ${fmt0(d.gw)} GW`,
+      dx: 8, textAnchor: "start", fill: "#52514e", [schmal ? "fy" : "fx"]: "reihe"}),
+    Plot.tip(vergleich, Plot.pointer({x: "jahr", y: "gw", [schmal ? "fy" : "fx"]: "reihe",
+      title: d => `${d.land} · ${d.reihe}\n${d.jahr}: ${fmt1(d.gw)} GW`}))
+  ]
+})
+```
+
+```{ojs}
+//| echo: false
+md`| | Wind 2025 | Photovoltaik 2025 | Wind: Faktor seit 2015 | Photovoltaik: Faktor seit 2015 |
+|---|--:|--:|--:|--:|
+${kennzahlen.map(k => `| **${k.land}** | ${fmt0(k.wind)} GW | ${fmt0(k.pv)} GW | × ${fmt1(k.windFaktor)} | × ${fmt1(k.pvFaktor)} |`).join("\n")}
+
+**Stromerzeugung 2025:** China – Wind ${fmt0(cnErz.Wind)} TWh, Photovoltaik ${fmt0(cnErz.Photovoltaik)} TWh (Statistikkommuniqué, Tabelle Energieproduktion). Deutschland – Wind ${fmt0(deErz.wind)} TWh, Photovoltaik ${fmt0(deErz.pv)} TWh (öffentliche Nettoerzeugung, Energy-Charts).`
+```
+
+::: {.callout-note collapse="true"}
+## Was beim Vergleich zu beachten ist
+
+- **Erstveröffentlichung:** Das Statistikamt veröffentlicht vorläufige Werte. Spätere Korrekturen erscheinen erst in den Folgejahren; die hier gezeigte Zeitreihe nutzt bewusst jeweils den zuerst veröffentlichten Wert, damit jeder Wert genau einer Quelle zugeordnet ist. Die im Kommuniqué genannten Wachstumsraten können deshalb von der Differenz zweier Jahreswerte abweichen.
+- **Abgrenzung:** Bis 2024 spricht das Kommuniqué von „netzgekoppelter“ (并网) Leistung, 2025 ohne diesen Zusatz. Ob Photovoltaik als DC- oder AC-Leistung erfasst ist, gibt die Quelle nicht an. Die Werte sind daher in der Größenordnung, nicht auf die Nachkommastelle vergleichbar.
+- **Erzeugung:** Die chinesischen Erzeugungswerte stammen aus der Tabelle zur Energieproduktion; die deutschen Werte umfassen nur die öffentliche Nettoerzeugung ohne industriellen Eigenverbrauch.
+- **Ohne Hongkong, Macau und Taiwan** (laut Quelle).
+:::
+
+<details><summary>Quellen China – alle Werte mit Originallink</summary>
+
+```{ojs}
+//| echo: false
+Inputs.table(cnCap, {
+  columns: ["jahr", "reihe", "wert_10mw", "gw", "quelle"],
+  header: {jahr: "Jahr", reihe: "Technologie", wert_10mw: "Wert laut Quelle (万千瓦)", gw: "GW", quelle: "Quelle"},
+  format: {jahr: d => String(d), wert_10mw: d => de.format(",")(d), gw: d => fmt1(d),
+    quelle: d => htl.html`<a href=${d} target="_blank" rel="noopener">Statistikkommuniqué</a>`},
+  rows: 12, layout: "auto"
+})
+```
+
+[Daten als CSV](data/cn_capacity_yearly.csv) · [Erzeugung China als CSV](data/cn_generation_yearly.csv)
+
+</details>
 
 ## Geplante Datenquellen
 
@@ -118,13 +178,13 @@ Inputs.table(erzeugungBreit, {rows: 14, layout: "auto"})
 | DE | Fraunhofer ISE – Energy-Charts | wissenschaftlich, API, CC BY 4.0 | **live** |
 | DE | Bundesnetzagentur – SMARD | amtlich, Abgleich | geplant |
 | DE | AGEE-Stat / Umweltbundesamt | amtlich, Jahreswerte inkl. Geothermie-Wärme | geplant |
+| CN | Nationales Statistikamt (国家统计局) – Statistikkommuniqué | amtlich, Jahreswerte, manuell gepflegt | **live** |
 | CN | Nationale Energieverwaltung (国家能源局, NEA) | amtlich, monatliche Bekanntmachungen | geplant |
-| CN | Nationales Statistikamt (国家统计局, NBS) | amtlich, monatliche Erzeugung | geplant |
 | beide | Ember | Sekundärquelle, nur zum Abgleich | geplant |
 
 ## Methodische Hinweise
 
-- **Unterschiedliche Aktualität:** Für Deutschland liegen Viertelstundenwerte vor, für China in der Regel Monatswerte. Der Ländervergleich erfolgt daher auf Monatsbasis.
+- **Unterschiedliche Aktualität:** Für Deutschland liegen Viertelstundenwerte vor, für China öffentlich zugänglich vor allem Jahres- und Monatswerte. Der Ländervergleich erfolgt daher auf Jahresbasis.
 - **Abgrenzung:** „Öffentliche Nettostromerzeugung“ nach Energy-Charts enthält keine Eigenerzeugung der Industrie. Für China werden die Abgrenzungen der NEA/NBS je Wert dokumentiert, bevor Werte nebeneinander stehen.
 - **Nachkorrekturen:** Die letzten drei Monate werden bei jeder Aktualisierung neu berechnet, ältere Monate bleiben unverändert und sind in der Versionsgeschichte des Repositorys nachvollziehbar.
 - **Code:** [scripts/fetch_energy_charts.py](https://github.com/jinggling09/jinggling09.github.io/blob/main/scripts/fetch_energy_charts.py)
@@ -190,6 +250,41 @@ lueckenHinweis = {
   return luecken.length
     ? ` *Hinweis: In ${new Set(luecken.map(d => d.monat)).size} Monaten fehlen mehr als 5 % der Viertelstundenwerte einer Reihe; die Monatssumme ist dort unterschätzt.*`
     : ""
+}
+
+cnCap = (await FileAttachment("data/cn_capacity_yearly.csv").csv())
+  .map(d => ({jahr: +d.jahr, reihe: d.reihe, wert_10mw: +d.wert_10mw, gw: +d.gw, quelle: d.quelle}))
+cnGen = (await FileAttachment("data/cn_generation_yearly.csv").csv())
+  .map(d => ({jahr: +d.jahr, reihe: d.reihe, twh: +d.twh}))
+
+technik = ["Wind", "Photovoltaik"]
+laender = ["China", "Deutschland"]
+landFarben = ["#e34948", "#6250d6"]
+
+deJahr = {
+  const out = []
+  for (const j of d3.range(2015, 2026)) {
+    const v = r => (ist.find(d => d.jahr === j && d.reihe === r) || {}).gw
+    const wind = (v("Wind an Land") ?? NaN) + (v("Wind auf See") ?? NaN)
+    const pv = v("Photovoltaik") ?? NaN
+    if (!isNaN(wind)) out.push({land: "Deutschland", reihe: "Wind", jahr: j, gw: wind})
+    if (!isNaN(pv)) out.push({land: "Deutschland", reihe: "Photovoltaik", jahr: j, gw: pv})
+  }
+  return out
+}
+vergleich = [...cnCap.map(d => ({land: "China", reihe: d.reihe, jahr: d.jahr, gw: d.gw})), ...deJahr]
+vergleichEnde = d3.groups(vergleich, d => d.land + d.reihe).map(([, v]) => d3.greatest(v, d => d.jahr))
+
+kennzahlen = laender.map(land => {
+  const g = (r, j) => (vergleich.find(d => d.land === land && d.reihe === r && d.jahr === j) || {}).gw
+  return {land, wind: g("Wind", 2025), pv: g("Photovoltaik", 2025),
+    windFaktor: g("Wind", 2025) / g("Wind", 2015), pvFaktor: g("Photovoltaik", 2025) / g("Photovoltaik", 2015)}
+})
+cnErz = Object.fromEntries(cnGen.filter(d => d.jahr === 2025).map(d => [d.reihe, d.twh]))
+deErz = {
+  const j = erzeugung.filter(d => d.monat.startsWith("2025"))
+  return {wind: d3.sum(j.filter(d => d.reihe.startsWith("Wind")), d => d.twh),
+          pv: d3.sum(j.filter(d => d.reihe === "Photovoltaik"), d => d.twh)}
 }
 
 erzeugungBreit = d3.rollups(erzeugung, v => Object.fromEntries(v.map(d => [d.reihe + " (TWh)", d.twh])), d => d.monat)

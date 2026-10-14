@@ -1,0 +1,9 @@
+jahr,reihe,wert_100mio_kwh,twh,quelle
+2022,Wind,7626.7,762.67,https://www.stats.gov.cn/sj/zxfb/202302/t20230228_1919011.html
+2022,Photovoltaik,4272.7,427.27,https://www.stats.gov.cn/sj/zxfb/202302/t20230228_1919011.html
+2023,Wind,8858.7,885.87,https://www.stats.gov.cn/sj/zxfb/202402/t20240228_1947915.html
+2023,Photovoltaik,5841.5,584.15,https://www.stats.gov.cn/sj/zxfb/202402/t20240228_1947915.html
+2024,Wind,9970.4,997.04,https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html
+2024,Photovoltaik,8390.4,839.04,https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html
+2025,Wind,11279.2,1127.92,https://www.stats.gov.cn/sj/zxfb/202602/t20260228_1962662.html
+2025,Photovoltaik,11732.4,1173.24,https://www.stats.gov.cn/sj/zxfb/202602/t20260228_1962662.html

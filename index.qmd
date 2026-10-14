@@ -25,7 +25,7 @@ Chinas nationaler Emissionshandel, EU-ETS, ETS 2/BEHG und der CO₂-Grenzausglei
 ### [Modul 2 · Erneuerbare im Vergleich](daten/index.qmd)
 Wind, Solar und Geothermie in Deutschland und China — monatlich automatisch aktualisiert.
 
-[Deutschland live · China folgt]{.status}
+[DE monatlich · CN jährlich]{.status}
 :::
 
 ::: {.karte}
