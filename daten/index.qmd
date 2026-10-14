@@ -122,7 +122,7 @@ Plot.plot({
   x: {label: null, tickFormat: "d", ticks: schmal ? 4 : 6},
   y: {label: "GW", grid: true, nice: true, tickFormat: de.format(",")},
   fx: schmal ? undefined : {label: null, domain: technik, axis: null},
-  fy: schmal ? {label: null, domain: technik, axis: null} : undefined,
+  fy: schmal ? {label: null, domain: technik, axis: null, padding: 0.22} : undefined,
   color: {domain: laender, range: landFarben, legend: true},
   marks: [
     Plot.ruleY([0], {stroke: "#c3c2b7"}),

@@ -75,6 +75,7 @@ table { font-size: .95rem; }
 }
 
 .kennzahlen { max-width: 520px; }
+.kennzahlen td { white-space: nowrap; }
 
 @media (max-width: 576px) {
   main table:not(.kennzahlen) {
