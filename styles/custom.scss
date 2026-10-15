@@ -321,7 +321,8 @@ html[lang|="zh"] .eyebrow, html[lang|="zh"] .karte .status { letter-spacing: .04
 
 /* ---------- Ebene 1: Ziele ---------- */
 $spur-eu: #3c5a8a;
-$spur-de: $gruen;
+$spur-de: #b8860b;       /* Gold der Bundesflagge, abgedunkelt: Linien/Flächen (≥3:1 auf Weiß) */
+$spur-de-text: #8a6a00;  /* dunkleres Gold für Schrift (≥4,5:1) */
 $spur-cn: #b0412e;
 
 .quarto-title .subtitle { color: $grau; font-size: 1.15rem; margin-top: .3rem; }
@@ -347,7 +348,7 @@ $spur-cn: #b0412e;
   border-radius: 4px;
   padding: 1rem 1.2rem 1.1rem;
   &.eu { border-top-color: $spur-eu; .jahr { color: $spur-eu; } }
-  &.de { border-top-color: $spur-de; .jahr { color: $spur-de; } }
+  &.de { border-top-color: $spur-de; .jahr { color: $spur-de-text; } }
   &.cn { border-top-color: $spur-cn; .jahr { color: $spur-cn; } }
   .wer { display: block; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: $grau; }
   .jahr { display: block; font-family: $headings-font-family; font-size: 2.5rem; line-height: 1.1; margin: .3rem 0 .4rem; font-variant-numeric: tabular-nums; }
@@ -412,7 +413,7 @@ html[lang|="zh"] .spur, html[lang|="zh"] .status-chip { letter-spacing: .02em; }
 .ziel-leiste {
   margin-bottom: .6rem;
   > div:nth-child(1) .zahl { color: $spur-eu; }
-  > div:nth-child(2) .zahl { color: $spur-de; }
+  > div:nth-child(2) .zahl { color: $spur-de-text; }
   > div:nth-child(3) .zahl { color: $spur-cn; }
 }
 .leiste-link { display: block; font-size: .85rem; color: $grau; margin-bottom: 3rem; }
@@ -485,7 +486,7 @@ html[lang|="zh"] .ebene .frage { font-style: normal; }
 html[lang|="zh"] .ebene .gruppe { letter-spacing: .04em; }
 
 /* ---------- Ebene 3: Stromsektor-Diagramm ---------- */
-.strom-leiste { margin-bottom: 1.5rem; > div:nth-child(1) .zahl { color: $spur-de; } > div:nth-child(2) .zahl { color: $spur-cn; } }
+.strom-leiste { margin-bottom: 1.5rem; > div:nth-child(1) .zahl { color: $spur-de-text; } > div:nth-child(2) .zahl { color: $spur-cn; } }
 .strom-chart {
   display: block; width: 100%; max-width: 720px; height: auto; margin: .5rem 0 .4rem;
   .grid { stroke: $linie; stroke-width: 1; }
@@ -496,7 +497,7 @@ html[lang|="zh"] .ebene .gruppe { letter-spacing: .04em; }
   .punkt { stroke: $papier; stroke-width: 1.5; }
   .punkt.de { fill: $spur-de; } .punkt.cn { fill: $spur-cn; }
   .label { font-size: 12px; font-weight: 600; }
-  .label.de { fill: $spur-de; } .label.cn { fill: $spur-cn; }
+  .label.de { fill: $spur-de-text; } .label.cn { fill: $spur-cn; }
 }
 
 /* ---------- Startseite: Zielkarten (Kurzfassung) ---------- */
