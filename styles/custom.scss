@@ -464,3 +464,22 @@ html[lang|="zh"] .ebene .frage { font-style: normal; }
   .ebene { padding-left: 3.6rem; }
   .ebene .nr { left: 1rem; font-size: 2rem; }
 }
+
+/* ---------- Startseite: Gruppen und Kennzahlen in Ebene 2 ---------- */
+.ebene .gruppe {
+  display: block;
+  font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: $grau; margin: .7rem 0 .35rem;
+}
+.ee-zahlen {
+  display: grid; grid-template-columns: 1fr 1fr; gap: .8rem;
+  margin: .2rem 0 .5rem;
+  > div { border-left: 3px solid $gruen-hell; padding-left: .6rem; }
+  > div:nth-child(1) { border-left-color: $spur-de; }
+  > div:nth-child(2) { border-left-color: $spur-cn; }
+  .zahl { display: block; font-family: $headings-font-family; font-size: 1.6rem; line-height: 1.15; color: $tinte; font-variant-numeric: tabular-nums; }
+  .was { display: block; font-size: .8rem; line-height: 1.35; color: $grau; margin-top: .2rem; }
+  p { margin: 0; }
+  @media (max-width: 420px) { grid-template-columns: 1fr; }
+}
+html[lang|="zh"] .ebene .gruppe { letter-spacing: .04em; }

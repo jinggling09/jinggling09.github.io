@@ -65,11 +65,16 @@ title-block-banner: false
 
 [用什么去实现？]{.frage}
 
-两国的碳定价机制，以及可再生能源的建设进展。
+[碳定价]{.gruppe}
 
 - [中国全国碳市场](wissen/china-ets.qmd)
 - [欧盟碳市场、ETS2 与德国 BEHG](wissen/eu-ets.qmd)
-- [可再生能源：德国与中国](daten/index.qmd)
+
+[可再生能源]{.gruppe}
+
+{{< include daten/data/_ee_start_zh.md >}}
+
+- [装机与发电：德国与中国](daten/index.qmd)
 
 [建设中]{.status}
 :::

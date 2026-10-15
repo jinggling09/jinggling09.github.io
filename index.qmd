@@ -65,11 +65,16 @@ EU-Klimagesetz, Bundes-Klimaschutzgesetz und Chinas „Dual-Carbon“-Ziele mit 
 
 [Womit soll es erreicht werden?]{.frage}
 
-CO₂-Bepreisung in beiden Ländern und der Ausbau der erneuerbaren Energien.
+[CO₂-Bepreisung]{.gruppe}
 
 - [Chinas nationaler Emissionshandel](wissen/china-ets.qmd)
 - [EU-ETS, ETS 2 & BEHG](wissen/eu-ets.qmd)
-- [Erneuerbare: Deutschland & China](daten/index.qmd)
+
+[Erneuerbare Energien]{.gruppe}
+
+{{< include daten/data/_ee_start_de.md >}}
+
+- [Ausbau und Erzeugung: Deutschland & China](daten/index.qmd)
 
 [Im Aufbau]{.status}
 :::

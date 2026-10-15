@@ -8,6 +8,9 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 QUARTO="${QUARTO:-quarto}"
 
+# Kennzahlen für die Startseite aus den aktuellen Daten erzeugen
+python3 scripts/kennzahlen_start.py
+
 for lang in en zh; do
   rm -rf "$lang/daten/data"
   mkdir -p "$lang/daten/data"

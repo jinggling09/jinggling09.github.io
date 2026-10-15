@@ -65,11 +65,16 @@ The European Climate Law, Germany's Climate Protection Act and China's "dual car
 
 [How is it to be achieved?]{.frage}
 
-Carbon pricing in both countries and the build-out of renewable energy.
+[Carbon pricing]{.gruppe}
 
 - [China's national ETS](wissen/china-ets.qmd)
 - [EU ETS, ETS2 & BEHG](wissen/eu-ets.qmd)
-- [Renewables: Germany & China](daten/index.qmd)
+
+[Renewable energy]{.gruppe}
+
+{{< include daten/data/_ee_start_en.md >}}
+
+- [Build-out and generation: Germany & China](daten/index.qmd)
 
 [In progress]{.status}
 :::
