@@ -172,9 +172,10 @@ h2 {
   h3 {
     font-size: 1.15rem;
     margin: 0 0 .4rem;
-    a { color: $tinte; text-decoration: none; }
-    // gesamte Karte klickbar
-    a::after { content: ""; position: absolute; inset: 0; }
+    a { color: $tinte; text-decoration: none; font-weight: inherit; }
+    // gesamte Karte klickbar (nicht das automatische #-Anker-Symbol von Quarto)
+    a:not(.anchorjs-link)::after { content: ""; position: absolute; inset: 0; }
+    .anchorjs-link { display: none; }
   }
   &:hover h3 a { color: $gruen; }
   p { margin-bottom: .45rem; color: #3f4b45; font-size: .97rem; }
