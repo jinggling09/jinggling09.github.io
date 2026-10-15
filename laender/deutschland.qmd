@@ -1,0 +1,343 @@
+---
+title: "Deutschland: Klimaschutz im Überblick"
+subtitle: "Wer setzt die Ziele, wer setzt sie um, wer kontrolliert – und wo steht das Land?"
+---
+
+::: {.stand}
+Stand: 15.10.2026
+:::
+
+[Länderprofil · [Ziele im Vergleich](../ziele/index.qmd) · [EU-ETS & BEHG](../wissen/eu-ets.qmd) · [THG-Dashboard](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
+
+Deutschland hat sein Ziel der Treibhausgasneutralität **2045** gesetzlich festgeschrieben – fünf Jahre vor der EU. Diese Seite ordnet systematisch ein, **wer** in Deutschland für Klimaschutz zuständig ist, **woher das Geld** kommt, **welche Gesetze** gelten und **wo die einzelnen Sektoren** auf dem Weg zum Ziel stehen.
+
+## Steckbrief
+
+```{=html}
+<svg width="0" height="0" class="icon-defs" aria-hidden="true">
+ <symbol id="i-bev" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.6 2.7-6 6-6s6 2.4 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.6 14.3c.5-.2 1-.3 1.6-.3 2.7 0 4.8 2.2 4.8 5.2"/></symbol>
+ <symbol id="i-bip" viewBox="0 0 24 24"><path d="M3 20.5h18"/><rect x="5" y="14" width="3" height="6.5"/><rect x="10.5" y="11" width="3" height="9.5"/><rect x="16" y="8" width="3" height="12.5"/><path d="M4 9.5l5-3.6 3.5 2.4L19.5 3.5"/><path d="M16.2 3.5h3.3v3.3"/></symbol>
+ <symbol id="i-thg" viewBox="0 0 34 24"><path d="M.8 20.5h12"/><path d="M1.6 20.5v-7l3.2 2.2v-2.2l3.2 2.2V8.5h3v12"/><text x="13.6" y="17.2" stroke="none" fill="currentColor" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="13">CO<tspan dy="3" font-size="8.5">2</tspan></text></symbol>
+ <symbol id="i-kopf" viewBox="0 0 34 24"><circle cx="5" cy="7.4" r="2.8"/><path d="M.8 20c0-3.3 1.9-5.5 4.2-5.5s4.2 2.2 4.2 5.5"/><text x="11" y="17.2" stroke="none" fill="currentColor" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="13">CO<tspan dy="3" font-size="8.5">2</tspan></text></symbol>
+ <symbol id="i-int" viewBox="0 0 24 24"><path d="M3.5 17.5a8.5 8.5 0 0 1 17 0"/><path d="M6.3 11.2l1.1 1M12 8.5V10M17.7 11.2l-1.1 1"/><path d="M12 17.5l4.3-5" /><circle cx="12" cy="17.5" r="1.6"/><path d="M3.5 20.5h17"/></symbol>
+ <symbol id="i-ee" viewBox="0 0 24 24"><path d="M10.3 21l.9-9.2h1.6l.9 9.2"/><circle cx="12" cy="10.3" r="1.3"/><path d="M12 9V3.2M10.9 11l-4.9 2.9M13.1 11l4.9 2.9"/><path d="M7.5 21h9"/><circle cx="19.2" cy="4.8" r="2"/></symbol>
+ <symbol id="i-welt" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c-2.7 2.6-2.7 14.4 0 17M12 3.5c2.7 2.6 2.7 14.4 0 17"/></symbol>
+ <symbol id="i-preis" viewBox="0 0 24 24"><path d="M2.8 11.6V4.3a1.5 1.5 0 0 1 1.5-1.5h7.3l9.1 9.1a1.5 1.5 0 0 1 0 2.1l-7.2 7.2a1.5 1.5 0 0 1-2.1 0z"/><circle cx="7.2" cy="7.2" r="1.4"/><text x="10.2" y="16.6" stroke="none" fill="currentColor" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="8.5">€</text></symbol>
+</svg>
+```
+
+::: {.kennzahlen-leiste .steckbrief .de}
+::: {}
+`<svg class="ks-icon" aria-hidden="true"><use href="#i-bev"/></svg>`{=html}
+[83,5 Mio.]{.zahl}
+[Einwohner, Ende 2025]{.was}
+:::
+::: {}
+`<svg class="ks-icon" aria-hidden="true"><use href="#i-bip"/></svg>`{=html}
+[4.530 Mrd. €]{.zahl}
+[Bruttoinlandsprodukt 2025, nominal]{.was}
+:::
+::: {}
+`<svg class="ks-icon breit" aria-hidden="true"><use href="#i-thg"/></svg>`{=html}
+[649 Mio. t]{.zahl}
+[Treibhausgase 2025, −48,2 % ggü. 1990]{.was}
+:::
+::: {}
+`<svg class="ks-icon breit" aria-hidden="true"><use href="#i-kopf"/></svg>`{=html}
+[7,8 t]{.zahl}
+[Treibhausgase je Einwohner 2025^1^]{.was}
+:::
+::: {}
+`<svg class="ks-icon" aria-hidden="true"><use href="#i-int"/></svg>`{=html}
+[143 kg]{.zahl}
+[Treibhausgase je 1.000 € BIP 2025^1^]{.was}
+:::
+::: {}
+`<svg class="ks-icon" aria-hidden="true"><use href="#i-welt"/></svg>`{=html}
+[1,2 %]{.zahl}
+[Anteil an den weltweiten THG 2025]{.was}
+:::
+::: {}
+`<svg class="ks-icon" aria-hidden="true"><use href="#i-ee"/></svg>`{=html}
+[55,1 %]{.zahl}
+[Ökostrom-Anteil 2025, Ziel 2030: 80 %]{.was}
+:::
+::: {}
+`<svg class="ks-icon" aria-hidden="true"><use href="#i-preis"/></svg>`{=html}
+[74 € / t]{.zahl}
+[CO₂-Preis im EU-ETS, Ø 2025]{.was}
+:::
+:::
+
+::: {.belege}
+**Belege** · Einwohner [@destatis_bev_2026] · BIP [@destatis_bip_2026] · Emissionen in CO₂-Äquivalenten ohne Landnutzung (LULUCF) [@uba_thg; @uba_projektion_2026] · Ökostrom-Anteil = Anteil erneuerbarer Energien am Bruttostromverbrauch [@uba_ee_strom_2025; @eeg] · Weltanteil [@edgar_2026] · CO₂-Preis: durchschnittlicher Auktionspreis im EU-ETS 2025 (73,86 €), Festpreis im nationalen Brennstoffemissionshandel 55 € [@dehst_erloese_2025] · ^1^ Eigene Berechnung: 648,9 Mio. t geteilt durch 83,5 Mio. Einwohner bzw. 4.529,7 Mrd. € BIP. · Der Weltanteil stammt aus der EU-Datenbank EDGAR, die mit eigener Methodik für Deutschland 660 Mio. t ausweist; die amtliche deutsche Zahl des UBA ist 649 Mio. t.
+:::
+
+## Ziele und Pfad bis 2045
+
+Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 1990 fest: **mindestens −65 % bis 2030**, **−88 % bis 2040**, **Netto-Treibhausgasneutralität bis 2045** und negative Emissionen nach 2050 [§ 3 @ksg]. Zusätzlich muss der Landnutzungssektor (Wälder, Moore, Böden – „LULUCF") bis 2030 netto mindestens 25 Mio. t CO₂-Äq. aufnehmen, bis 2040 35 und bis 2045 40 Mio. t [§ 3a @ksg].
+
+```{=html}
+<figure class="pfad" aria-label="Treibhausgasemissionen Deutschlands: Ist-Werte, Ziele und Projektion in Millionen Tonnen CO2-Äquivalent">
+  <div class="pfad-zeile"><span class="pfad-jahr">1990</span><span class="pfad-balken ist" style="width:100%"></span><span class="pfad-wert">1.253</span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2025</span><span class="pfad-balken ist" style="width:51.8%"></span><span class="pfad-wert">649 <em>Ist</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2030</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:35%"></span><span class="pfad-balken projektion" style="width:37.4%"></span></span><span class="pfad-wert">≈ 438 <em>Ziel</em> · ≈ 469 <em>Projektion</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2040</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:12%"></span><span class="pfad-balken projektion" style="width:20%"></span></span><span class="pfad-wert">≈ 150 <em>Ziel</em> · ca. 250 <em>Projektion</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2045</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:0.6%"></span><span class="pfad-balken projektion" style="width:17%"></span></span><span class="pfad-wert">netto 0 <em>Ziel</em> · 212,5 <em>Projektion, brutto</em></span></div>
+  <figcaption>Treibhausgase in Mio. t CO₂-Äq. (ohne LULUCF). <span class="pfad-leg ist">Ist</span> <span class="pfad-leg ziel">Ziel nach KSG</span> <span class="pfad-leg projektion">Projektion mit bisherigen Maßnahmen</span> · Zielwerte rechnerisch aus den KSG-Prozentzielen; Projektion: UBA-Projektionsdaten 2026.</figcaption>
+</figure>
+```
+
+::: {.belege}
+**Belege** · Ist-Werte [@uba_thg] · Projektion 2030: −62,6 % ggü. 1990, Lücke zum 65-%-Ziel rund 30 Mio. t; 2040: ca. −80 %; 2045: 212,5 Mio. t Brutto-Restemissionen [@uba_projektion_2026]
+:::
+
+**Wie gemessen wird.** Seit der KSG-Novelle 2024 zählt nicht mehr, ob jeder Sektor sein Jahresziel erreicht, sondern ob die **Summe der Emissionen 2021–2030** im erlaubten Gesamtbudget bleibt [§§ 4, 8 @ksg]. 2025 lagen die Emissionen 12,5 Mio. t unter der zulässigen Jahresmenge [@uba_projektion_2026]. Über den ganzen Zeitraum 2021–2030 bleibt laut UBA-Projektion nur noch ein Puffer von **3,8 Mio. t** – im Vorjahr waren es noch rund 81 Mio. t [@uba_projektion_2026].
+
+**Landnutzung als Schwachstelle.** 2025 war der LULUCF-Sektor mit netto 26,9 Mio. t eine **Quelle** statt der gesetzlich verlangten Senke; nur der Wald nimmt mit −19,3 Mio. t wieder CO₂ auf. Die Projektion verfehlt das LULUCF-Ziel 2030 um knapp 50 Mio. t [@uba_projektion_2026].
+
+## Governance: Wer macht was?
+
+```{=html}
+<figure class="gov-diagramm">
+<div class="gov-scroll">
+<svg viewBox="0 0 960 740" role="img" aria-label="Governance-Diagramm der deutschen Klimapolitik">
+<defs>
+ <marker id="m-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1f5f4a"/></marker>
+ <marker id="m-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#3c5a8a"/></marker>
+ <marker id="m-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5b6b63"/></marker>
+ <marker id="m-o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b8860b"/></marker>
+ <style>
+  .t{font-size:14px;font-weight:700;fill:#1a2420}.s{font-size:11.5px;fill:#5b6b63}.band{font-size:11px;font-weight:700;letter-spacing:.12em;fill:#5b6b63}
+  .leg{fill:#fbf0dc;stroke:#a8741a}.exe{fill:#e8f0ec;stroke:#1f5f4a}.kon{fill:#eef0ef;stroke:#5b6b63}.geld{fill:#fff4d6;stroke:#b8860b}.eu{fill:#e6ecf5;stroke:#3c5a8a}
+  rect{stroke-width:1.4}
+  .a{fill:none;stroke-width:1.8}.ag{stroke:#1f5f4a}.ab{stroke:#3c5a8a}.ak{stroke:#5b6b63;stroke-dasharray:5 4}.ao{stroke:#b8860b;stroke-width:3}
+  .al{font-size:11px;fill:#5b6b63;font-style:italic}
+ </style>
+</defs>
+
+<!-- EU -->
+<rect x="10" y="10" width="940" height="108" rx="8" fill="#f3f6fb" stroke="none"/>
+<text x="24" y="30" class="band">EUROPÄISCHE UNION</text>
+<rect x="40" y="42" width="250" height="62" rx="6" class="eu"/><text x="165" y="68" text-anchor="middle" class="t">Europ. Parlament &amp; Rat</text><text x="165" y="88" text-anchor="middle" class="s">beschließen EU-Klimarecht</text>
+<rect x="355" y="42" width="250" height="62" rx="6" class="eu"/><text x="480" y="66" text-anchor="middle" class="t">EU-Rahmen</text><text x="480" y="86" text-anchor="middle" class="s">Klimagesetz · Lastenteilung (ESR) · EU-ETS</text>
+<rect x="670" y="42" width="250" height="62" rx="6" class="eu"/><text x="795" y="68" text-anchor="middle" class="t">EU-Kommission</text><text x="795" y="88" text-anchor="middle" class="s">überwacht Ziele und Fortschritt</text>
+<path d="M290 73H351" class="a ab" marker-end="url(#m-b)"/>
+
+<!-- BUND -->
+<rect x="10" y="132" width="940" height="430" rx="8" fill="#f7faf8" stroke="none"/>
+<text x="24" y="152" class="band">BUND</text>
+
+<rect x="40" y="166" width="250" height="70" rx="6" class="leg"/><text x="165" y="192" text-anchor="middle" class="t">Bundestag + Bundesrat</text><text x="165" y="211" text-anchor="middle" class="s">beschließen das Klimaschutzgesetz:</text><text x="165" y="226" text-anchor="middle" class="s">Ziele 2030 / 2040 / 2045, Budgets</text>
+<rect x="355" y="166" width="250" height="70" rx="6" class="exe"/><text x="480" y="192" text-anchor="middle" class="t">Bundesregierung (Kabinett)</text><text x="480" y="211" text-anchor="middle" class="s">Klimaschutzprogramm (§ 9 KSG)</text><text x="480" y="226" text-anchor="middle" class="s">Nachsteuern bei Verfehlung (§ 8)</text>
+<rect x="670" y="166" width="250" height="70" rx="6" class="kon"/><text x="795" y="192" text-anchor="middle" class="t">Expertenrat für Klimafragen</text><text x="795" y="211" text-anchor="middle" class="s">5 unabhängige Sachverständige,</text><text x="795" y="226" text-anchor="middle" class="s">prüfen Daten und Programme</text>
+
+<path d="M290 201H351" class="a ag" marker-end="url(#m-g)"/><text x="320" y="194" text-anchor="middle" class="al">Gesetz</text>
+<path d="M480 104V162" class="a ab" marker-end="url(#m-b)"/><text x="488" y="138" class="al">verpflichtet</text>
+<path d="M590 166V140H760V108" class="a ak" marker-end="url(#m-k)"/><text x="660" y="134" class="al">Berichte</text>
+
+<!-- Ministerien -->
+<rect x="40" y="286" width="210" height="76" rx="6" class="exe"/><text x="145" y="311" text-anchor="middle" class="t">BMUKN · Umwelt</text><text x="145" y="330" text-anchor="middle" class="s">Federführung Klimaschutz</text><text x="145" y="345" text-anchor="middle" class="s">KSG, internat. Klimapolitik</text>
+<rect x="265" y="286" width="210" height="76" rx="6" class="exe"/><text x="370" y="311" text-anchor="middle" class="t">BMWE · Wirtschaft &amp; Energie</text><text x="370" y="330" text-anchor="middle" class="s">Energiewende: EEG, Netze,</text><text x="370" y="345" text-anchor="middle" class="s">Strommarkt</text>
+<rect x="490" y="286" width="210" height="76" rx="6" class="exe"/><text x="595" y="311" text-anchor="middle" class="t">Fachressorts</text><text x="595" y="330" text-anchor="middle" class="s">Verkehr (BMV) · Bauen (BMWSB)</text><text x="595" y="345" text-anchor="middle" class="s">Landwirtschaft (BMLEH)</text>
+<path d="M480 236V262H145V282" class="a ag" marker-end="url(#m-g)"/><path d="M370 262V282" class="a ag" marker-end="url(#m-g)"/><path d="M480 262H595V282" class="a ag" marker-end="url(#m-g)"/><path d="M480 262V282" class="a ag"/><text x="160" y="256" class="al">beauftragt die Ministerien</text>
+
+<rect x="725" y="286" width="195" height="76" rx="6" class="kon"/><text x="822" y="311" text-anchor="middle" class="t">Gerichte</text><text x="822" y="330" text-anchor="middle" class="s">BVerfG 2021: Freiheitsrechte</text><text x="822" y="345" text-anchor="middle" class="s">BVerwG 2026: Programm nachschärfen</text>
+<path d="M780 286V250H590V240" class="a ak" marker-end="url(#m-k)"/><text x="788" y="270" class="al">Nachschärfen</text>
+
+<!-- Daten & Geld -->
+<rect x="40" y="410" width="290" height="120" rx="6" class="exe"/><text x="185" y="434" text-anchor="middle" class="t">Umweltbundesamt (UBA)</text><text x="185" y="453" text-anchor="middle" class="s">Emissionsdaten bis 15. März, Projektionen</text>
+<rect x="60" y="466" width="250" height="50" rx="5" class="exe" style="fill:#fff"/><text x="185" y="487" text-anchor="middle" class="t" style="font-size:13px">DEHSt (im UBA)</text><text x="185" y="505" text-anchor="middle" class="s">Emissionshandel: EU-ETS &amp; BEHG</text>
+<path d="M145 362V406" class="a ag" marker-end="url(#m-g)"/><text x="152" y="390" class="al">Fachaufsicht</text>
+
+<rect x="395" y="430" width="230" height="80" rx="6" class="geld"/><text x="510" y="456" text-anchor="middle" class="t">Klima- und Transformationsfonds</text><text x="510" y="475" text-anchor="middle" class="s">2025: 21,4 Mrd. € aus CO₂-Preisen</text><text x="510" y="491" text-anchor="middle" class="s">+ 100 Mrd. € Sondervermögen</text>
+<path d="M310 491H391" class="a ao" marker-end="url(#m-o)"/><text x="350" y="482" text-anchor="middle" class="al">Erlöse</text>
+<path d="M510 430V388H370V366" class="a ao" marker-end="url(#m-o)"/><path d="M370 388H232V366" class="a ao" marker-end="url(#m-o)"/><path d="M510 388H595V366" class="a ao" marker-end="url(#m-o)"/><text x="518" y="410" class="al">Förderprogramme</text>
+
+<path d="M330 420H712V240" class="a ak" marker-end="url(#m-k)"/><text x="634" y="414" class="al">Daten</text>
+<path d="M670 214H609" class="a ak" marker-end="url(#m-k)"/><text x="612" y="252" class="al" style="display:none"></text><text x="672" y="160" class="al">Prüfbericht an Regierung und Bundestag</text>
+
+<!-- Länder -->
+<rect x="10" y="576" width="940" height="76" rx="8" fill="#f7f7f4" stroke="none"/>
+<text x="24" y="596" class="band">LÄNDER &amp; KOMMUNEN</text>
+<rect x="250" y="604" width="460" height="40" rx="6" class="exe"/><text x="480" y="629" text-anchor="middle" class="s"><tspan class="t" style="font-size:13px">Landesregierungen &amp; Kommunen</tspan> · eigene Klimagesetze, kommunale Wärmeplanung</text>
+<path d="M665 362V600" class="a ag" marker-end="url(#m-g)"/><text x="672" y="560" class="al">Wärmeplanung (WPG)</text>
+
+<!-- Bürger -->
+<rect x="40" y="672" width="880" height="44" rx="6" fill="#f1f1ee" stroke="#c9cfcb"/><text x="480" y="699" text-anchor="middle" class="t" style="font-size:13px">Bürgerinnen und Bürger · Unternehmen · Verbände</text>
+<path d="M40 694H24V201H36" class="a ag" marker-end="url(#m-g)"/><text x="30" y="660" class="al" transform="rotate(-90 30 660)">wählen</text>
+<path d="M880 672V366" class="a ak" marker-end="url(#m-k)"/><text x="826" y="650" class="al">klagen</text>
+</svg>
+</div>
+<figcaption><span class="gl g">legt fest / beauftragt</span> <span class="gl b">EU-Vorgaben</span> <span class="gl k">berichtet / prüft</span> <span class="gl o">Geldfluss</span> · Kästen: <span class="gk leg">Gesetzgebung</span> <span class="gk exe">Regierung &amp; Verwaltung</span> <span class="gk kon">Kontrolle</span> <span class="gk geld">Finanzierung</span></figcaption>
+</figure>
+```
+
+::: {.belege}
+**Belege** · Zuständigkeiten [@ksg; @organisationserlass_2025] · Finanzierung [@dehst_erloese_2025; @gg_143h] · Gerichte [@bverfg_2021; @bmukn_ksp_2026] · Länder [@wpg] · Eigene Darstellung, angelehnt an das Schema der Staatsorgane, beschränkt auf Klima und Energie.
+:::
+
+Die sechs Rollen im Einzelnen:
+
+::: {.governance}
+
+::: {.rolle}
+[Ziele festlegen]{.frage}
+[Bundestag und Bundesrat]{.wer}
+Die Ziele stehen im Klimaschutzgesetz und lassen sich nur per Gesetz ändern [@ksg]. Den äußeren Rahmen setzt die EU: Europäisches Klimagesetz und Lastenteilung (ESR), die Deutschland bis 2030 −50 % gegenüber 2005 in Verkehr, Gebäuden, Landwirtschaft und Teilen der Industrie vorschreibt [@eu_klimagesetz_2021; @bmukn_ksp_2026].
+:::
+
+::: {.rolle}
+[Planen und umsetzen]{.frage}
+[Bundesregierung]{.wer}
+Spätestens zwölf Monate nach Beginn jeder Legislaturperiode beschließt sie ein **Klimaschutzprogramm** [§ 9 @ksg]. Federführend ist seit Mai 2025 das **Umweltministerium (BMUKN)** – es übernahm Klimaschutz vom Wirtschaftsministerium und die internationale Klimapolitik vom Auswärtigen Amt [@organisationserlass_2025]. Energie liegt beim **Wirtschafts- und Energieministerium (BMWE)**; Verkehr, Bauen und Landwirtschaft bei den Fachressorts. Länder und Kommunen setzen vor Ort um, etwa mit der Wärmeplanung [@wpg].
+:::
+
+::: {.rolle}
+[Bilanzieren]{.frage}
+[Umweltbundesamt (UBA)]{.wer}
+Legt bis **15. März** die Emissionen des Vorjahres vor und erstellt jährlich **Projektionen** bis 2045 [§§ 5, 5a @ksg]. Erfasst werden alle Kyoto-Gase (CO₂, Methan, Lachgas, F-Gase), umgerechnet in CO₂-Äquivalente und aufgeteilt auf die Sektoren des KSG.
+:::
+
+::: {.rolle}
+[Unabhängig prüfen]{.frage}
+[Expertenrat für Klimafragen]{.wer}
+Fünf Sachverständige verschiedener Disziplinen [§ 11 @ksg]. Sie prüfen die UBA-Daten innerhalb von zwei Monaten und bewerten Maßnahmen und Programme [§ 12 @ksg]. Dazu kommen der jährliche Klimaschutzbericht an den Bundestag [§ 10 @ksg], die Berichtspflichten gegenüber der EU-Kommission – und Gerichte: Das Bundesverfassungsgericht verlangte 2021, Minderungslasten nicht einseitig in die Zukunft zu verschieben [@bverfg_2021]; das Bundesverwaltungsgericht stellte Anfang 2026 klar, dass unzureichende Programme nachgeschärft werden müssen [@bmukn_ksp_2026].
+:::
+
+::: {.rolle}
+[Nachsteuern]{.frage}
+[Bundesregierung als Ganzes]{.wer}
+Zeigen die Projektionen **zwei Jahre in Folge**, dass das Budget 2021–2030 überschritten wird, muss die Regierung zusätzliche Maßnahmen beschließen [§ 8 @ksg]. Früher musste das zuständige Ministerium eines verfehlenden Sektors ein Sofortprogramm vorlegen; diese Sektorverantwortung wurde 2024 abgeschafft.
+:::
+
+::: {.rolle}
+[Finanzieren]{.frage}
+[Klima- und Transformationsfonds (KTF)]{.wer}
+Sondervermögen des Bundes, gespeist vor allem aus der CO₂-Bepreisung – Details im [nächsten Abschnitt](#klimafinanzierung-woher-kommt-das-geld).
+:::
+
+:::
+
+## Klimafinanzierung: Woher kommt das Geld?
+
+| Quelle | Umfang | Verwendung |
+|---|---|---|
+| **CO₂-Bepreisung** (EU-ETS und nationaler Emissionshandel) | **21,4 Mrd. €** im Jahr 2025: davon 5,4 Mrd. € aus dem EU-ETS und rund 16 Mrd. € aus dem nationalen Brennstoffemissionshandel [@dehst_erloese_2025] | fließt vollständig in den KTF |
+| **Sondervermögen Infrastruktur und Klimaneutralität** (Grundgesetzänderung 2025) | bis zu 500 Mrd. € Kredite, davon **100 Mrd. €** für den KTF [@gg_143h] | zusätzliche Investitionen für Klimaneutralität bis 2045 |
+| **Klimaschutzprogramm 2026** | **8 Mrd. €** zusätzlich 2027–2030 (KTF und Sondervermögen): 2,9 Mrd. € Industrie, 4,7 Mrd. € Landnutzung [@bmukn_ksp_2026] | neue Maßnahmen des Programms |
+
+: {tbl-colwidths="[28,44,28]"}
+
+
+Zu den wichtigsten Förderprogrammen gehören die **Bundesförderung für effiziente Gebäude (BEG)**, die **Bundesförderung für effiziente Wärmenetze (BEW)** – sie soll 2030 auf 2,7 Mrd. € jährlich wachsen –, Programme für Prozesswärme und Elektrifizierung in der Industrie einschließlich CO₂-Differenzverträgen sowie eine neue, sozial gestaffelte **E-Auto-Förderung** mit 3 Mrd. € für rund 800.000 Fahrzeuge [@bmukn_ksp_2026].
+
+## Rechtsrahmen: die wichtigsten Gesetze
+
+| Bereich | Gesetz | Was es regelt |
+|---|---|---|
+| Rahmen | **Bundes-Klimaschutzgesetz (KSG)** | Ziele 2030/2040/2045, Emissionsbudgets, Monitoring, Expertenrat [@ksg] |
+| Strom | **Erneuerbare-Energien-Gesetz (EEG)** | Ausbau und Vergütung von Wind- und Solarstrom über Ausschreibungen; Ziel 80 % Erneuerbare am Bruttostromverbrauch 2030 [§ 1 @eeg] |
+| | **Energiewirtschaftsgesetz (EnWG)** | Grundgesetz der Energiewirtschaft: Netze, Strom- und Gasmarkt, Versorgungssicherheit [@enwg] |
+| | **Energieeffizienzgesetz (EnEfG)** | Endenergieverbrauch bis 2030 um mindestens 26,5 % gegenüber 2008 senken; Pflichten für Unternehmen, Rechenzentren und öffentliche Stellen [§ 4 @enefg] |
+| Wärme & Gebäude | **Gebäudemodernisierungsgesetz (GModG, vormals GEG)** | Seit 29.07.2026: Die 65-%-Erneuerbaren-Pflicht für neue Heizungen entfällt; neue Gas- und Ölheizungen brauchen stattdessen steigende Anteile erneuerbarer oder klimaneutraler Brennstoffe – 10 % ab 2029 bis 60 % im Jahr 2040 [§ 43 @geg] |
+| | **Wärmeplanungsgesetz (WPG)** | Jede Kommune braucht einen Wärmeplan: Städte über 100.000 Einwohner bis 30.06.2026, alle übrigen bis 30.06.2028 [§ 4 @wpg] |
+| CO₂-Preis | **Treibhausgas-Emissionshandelsgesetz (TEHG)** | Umsetzung des EU-Emissionshandels in deutsches Recht (Kraftwerke, Industrie, Luft- und Seeverkehr) [@tehg] |
+| | **Brennstoffemissionshandelsgesetz (BEHG)** | Nationaler CO₂-Preis auf Heiz- und Kraftstoffe seit 2021: 25 € (2021) bis 55 € (2025), 2026 Korridor 55–65 €; Übergang in den EU-ETS 2, dessen Start auf 2028 verschoben wurde [§ 10 @behg; @eu_klimagesetz_2026] |
+| Verkehr | **Elektromobilitätsgesetz (EmoG)** | Sonderrechte für E-Fahrzeuge, z. B. beim Parken [@emog] |
+| | **Gebäude-Elektromobilitätsinfrastruktur-Gesetz (GEIG)** | Leitungs- und Ladepunktpflichten in Neubauten und großen Sanierungen [@geig] |
+| | **Regionalisierungsgesetz (RegG)** | Bundesmittel für den Regionalverkehr auf der Schiene, u. a. für das Deutschlandticket [@regg] |
+| Kreislauf & CO₂-Speicherung | **Kreislaufwirtschaftsgesetz (KrWG)** | Abfallvermeidung, Recycling, Produktverantwortung [@krwg] |
+| | **Kohlendioxid-Speicherungs- und -Transportgesetz (KSpTG)** | Seit 28.11.2025: Rechtsrahmen für CO₂-Pipelines und dauerhafte Speicherung, vor allem unter dem Meeresboden [@ksptg] |
+
+: {tbl-colwidths="[16,30,54]"}
+
+
+## Sektoren: Wo steht Deutschland?
+
+Grundlage sind die Emissionen 2025 und die UBA-Projektionen 2026. „Budget 2021–2030" zeigt, ob ein Sektor in der Summe dieser Jahre unter (**übererfüllt**) oder über (**verfehlt**) seinen erlaubten Mengen nach KSG liegt [@uba_projektion_2026]. Die Maßnahmen stammen aus dem Klimaschutzprogramm 2026 [@bmukn_ksp_2026].
+
+::: {.sektoren}
+
+::: {.sektor}
+### Energiewirtschaft
+[2025: **189,1 Mio. t** · 2030: 94 Mio. t (Projektion)]{.werte}
+[übererfüllt +193 Mio. t]{.status-chip .plus}
+
+Größter Sektor mit rund 29 % der Emissionen, aber auch größter Minderungsbeitrag. Der Puffer schrumpfte gegenüber dem Vorjahr um 67 Mio. t – wegen mehr Kohleverstromung, niedrigerem CO₂-Preis und verzögertem Offshore-Wind.
+
+**Maßnahmen:** zusätzliche Ausschreibung von 12 GW Wind an Land (rund 2.000 Anlagen, 6,5 Mio. t weniger CO₂ im Jahr 2030), Ziel 115 GW Wind an Land bis 2030; flexibleres Stromsystem, klimaneutrale Brennstoffe in Kraftwerken.
+:::
+
+::: {.sektor}
+### Industrie
+[2025: **144,1 Mio. t** · 2030: 116,5 Mio. t]{.werte}
+[übererfüllt +74,6 Mio. t]{.status-chip .plus}
+
+Der Rückgang 2025 (−3,8 %) folgt vor allem der schwachen Konjunktur: Die Primärstahlproduktion sank um über 10 %. Ohne zusätzliche Instrumente steigen die Emissionen nach der Projektion um 2040 wieder an.
+
+**Maßnahmen:** neues Förderprogramm für Prozesswärme und Elektrifizierung, z. B. Groß-Wärmepumpen (4,3 Mio. t im Jahr 2030), CO₂-Differenzverträge, Kreislaufwirtschaft, CO₂-Abscheidung und -Speicherung für unvermeidbare Emissionen.
+:::
+
+::: {.sektor}
+### Gebäude
+[2025: **103,4 Mio. t** (+3,4 %)]{.werte}
+[verfehlt −110,1 Mio. t]{.status-chip .minus}
+
+Der kalte Winter 2025 erhöhte den Gasverbrauch um 8 %. Gleichzeitig wurden 2025 erstmals mehr Wärmepumpen als Gasheizungen verkauft [@bmukn_ksp_2026]. Die Projektion rechnet noch mit der alten 65-%-Regel; die Wirkung des neuen Gebäudemodernisierungsgesetzes ist darin nicht enthalten [@erk_pruefbericht_2026].
+
+**Maßnahmen:** Fortführung der BEG, Ausbau der BEW auf 2,7 Mrd. € im Jahr 2030 (2,3 Mio. t), Förderprogramme für effizientes Bauen, kommunale Wärmeplanung.
+:::
+
+::: {.sektor}
+### Verkehr
+[2025: **146,3 Mio. t** (+1,5 %) · 2030: 115 Mio. t]{.werte}
+[verfehlt −186,9 Mio. t]{.status-chip .minus}
+
+Größte Lücke aller Sektoren, um 18 Mio. t gewachsen. Grund ist vor allem der langsamere Hochlauf der E-Mobilität: Für 2030 werden nur noch 7 Mio. E-Pkw erwartet, 1,7 Mio. weniger als im Vorjahr angenommen.
+
+**Maßnahmen:** E-Auto-Förderung (3 Mrd. €, rund 800.000 Fahrzeuge), Weiterentwicklung der Treibhausgasquote für Kraftstoffe (6,3 Mio. t im Jahr 2030), Deutschlandticket (1 Mio. t pro Jahr), Masterplan Ladeinfrastruktur 2030.
+:::
+
+::: {.sektor}
+### Landwirtschaft
+[2025: **60,8 Mio. t** · 2030: 58,2 Mio. t]{.werte}
+[übererfüllt +16,4 Mio. t]{.status-chip .plus}
+
+Emissionen stagnieren; die Bestände an Rindern und Schweinen sinken nicht mehr. Nach 2030 wirken die bestehenden Instrumente laut UBA nur noch wenig.
+
+**Maßnahmen:** u. a. Umstieg landwirtschaftlicher Maschinen von Diesel auf elektrische Antriebe.
+:::
+
+::: {.sektor}
+### Landnutzung, Wald, Moore (LULUCF)
+[2025: **+26,9 Mio. t** (Netto-Quelle) · Ziel 2030: −25 Mio. t]{.werte}
+[Ziel 2030 verfehlt um knapp 50 Mio. t]{.status-chip .minus}
+
+Nach Dürre- und Schadjahren seit 2018 erholt sich der Wald, doch organische Böden – vor allem entwässerte Moore – bleiben die größte Quelle.
+
+**Maßnahmen:** 23 Maßnahmen im natürlichen Klimaschutz mit 4,7 Mrd. €: Umbau zu klimastabilen Mischwäldern, Wiedervernässung von Mooren, Förderung „nasser" Landwirtschaft auf Moorflächen – zusammen 13,5 Mio. t Minderung.
+:::
+
+:::
+
+::: {.belege}
+Der kleinste Sektor, **Abfallwirtschaft und Sonstiges** (2025: 5,1 Mio. t), übererfüllt sein Budget um 17 Mio. t [@uba_projektion_2026].
+:::
+
+## Einordnung
+
+::: {.einordnung}
+**Starke Architektur, schwindender Puffer.** Deutschland hat mit verbindlichen Zielen, jährlicher Bilanz durch das UBA, unabhängiger Prüfung durch den Expertenrat und gerichtlicher Überprüfbarkeit eine der am klarsten geregelten Klima-Governance-Strukturen. Der Puffer bis 2030 ist aber nahezu verbraucht – und der Expertenrat hält selbst diesen Puffer für zu optimistisch: Er erwartet eine Überschreitung des Budgets 2021–2030 um etwa **60 bis 100 Mio. t** und sieht die Lücken durch das Klimaschutzprogramm 2026 nicht geschlossen [@erk_pruefbericht_2026].
+
+**Zwei Sektoren tragen, zwei bremsen.** Das Budget bis 2030 hält rechnerisch nur, weil Energiewirtschaft und Industrie ihre Mengen deutlich unterschreiten – in der Industrie zuletzt auch wegen Produktionsrückgängen, nicht allein durch Umbau [@uba_projektion_2026]. **Gebäude und Verkehr** verfehlen ihre Budgets zusammen um fast 300 Mio. t. Mit dem Wegfall der 65-%-Regel ist offen, ob die Wärmewende schneller oder langsamer wird.
+
+**EU-Pflichten als Kostenrisiko.** Nach der europäischen Lastenteilung droht bis 2030 eine Lücke von 255 Mio. t [@uba_projektion_2026]. Ohne Gegensteuern müsste Deutschland Emissionsrechte von anderen Mitgliedstaaten zukaufen – das KSG will genau das vermeiden [@bmukn_ksp_2026].
+:::
+
+## Weiterlesen
+
+- [Klimaziele im Vergleich: EU, Deutschland, China](../ziele/index.qmd)
+- [EU-ETS, ETS 2 & BEHG](../wissen/eu-ets.qmd)
+- [THG-Dashboard Deutschland](../wissen/emissionen-de.qmd)
+- [Stromsektor: Deutschland & China](../wissen/stromsektor.qmd)

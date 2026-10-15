@@ -33,6 +33,8 @@ Alle drei haben ein Langfristziel „netto null" bzw. Neutralität. Sie untersch
 [2045]{.jahr}
 [Netto-Treibhausgasneutralität, nach 2050 negative Emissionen]{.was}
 [Gesetz]{.status-chip .gesetz} § 3 Abs. 2 KSG [@ksg]
+
+[Länderprofil Deutschland →](../laender/deutschland.qmd)
 :::
 
 ::: {.zielkarte .cn}

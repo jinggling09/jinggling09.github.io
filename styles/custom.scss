@@ -589,3 +589,148 @@ html[lang|="zh"] .ebene .gruppe { letter-spacing: .04em; }
 }
 .zielkarte .karten-link { position: absolute; inset: 0; z-index: 2; font-size: 0; color: transparent; }
 .zielkarte .karten-link:focus-visible { outline: 2px solid $gruen; outline-offset: 2px; }
+
+/* ---------- Länderprofil ---------- */
+.steckbrief { margin-bottom: .6rem; }
+.steckbrief .zahl { font-size: 1.4rem; white-space: nowrap; }
+.steckbrief .was a { color: $grau; }
+
+/* Zielpfad als Balken: Ist (Gold) · Ziel (Grün, umrandet) · Projektion (Grau) */
+figure.pfad {
+  margin: 1.4rem 0 .6rem;
+  .pfad-zeile {
+    display: grid;
+    grid-template-columns: 3.2rem 1fr minmax(9rem, 34%);
+    align-items: center;
+    gap: .8rem;
+    padding: .35rem 0;
+    border-bottom: 1px solid $linie;
+  }
+  .pfad-jahr { font-weight: 700; font-variant-numeric: tabular-nums; }
+  .pfad-doppel { display: flex; flex-direction: column; gap: 3px; }
+  .pfad-balken { display: block; height: 14px; border-radius: 2px; min-width: 3px; }
+  .pfad-balken.ist { background: $spur-de; height: 22px; }
+  .pfad-balken.ziel { background: $gruen-hell; border: 1.5px solid $gruen; height: 10px; }
+  .pfad-balken.projektion { background: #9aa6a0; height: 10px; }
+  .pfad-wert { font-size: .9rem; font-variant-numeric: tabular-nums; em { font-style: normal; color: $grau; font-size: .82rem; } }
+  figcaption { font-size: .82rem; color: $grau; margin-top: .6rem; line-height: 1.5; }
+  .pfad-leg { white-space: nowrap; margin-right: .6rem; }
+  .pfad-leg::before { content: ""; display: inline-block; width: 12px; height: 9px; margin-right: .3rem; border-radius: 2px; vertical-align: baseline; }
+  .pfad-leg.ist::before { background: $spur-de; }
+  .pfad-leg.ziel::before { background: $gruen-hell; border: 1.5px solid $gruen; }
+  .pfad-leg.projektion::before { background: #9aa6a0; }
+}
+@media (max-width: 576px) {
+  figure.pfad .pfad-zeile { grid-template-columns: 2.8rem 1fr; }
+  figure.pfad .pfad-wert { grid-column: 2; }
+}
+
+/* Governance: sechs Rollen als nummerierte Kette */
+.governance {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+  counter-reset: rolle;
+}
+.rolle {
+  position: relative;
+  background: #fff;
+  border: 1px solid $linie;
+  border-top: 3px solid $gruen;
+  border-radius: 4px;
+  padding: .9rem 1.1rem 1rem;
+  font-size: .92rem;
+  line-height: 1.55;
+  counter-increment: rolle;
+  .frage {
+    display: block;
+    font-size: .74rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: $gruen;
+    &::before { content: counter(rolle) " · "; color: $grau; }
+  }
+  .wer { display: block; font-family: $headings-font-family; font-size: 1.15rem; font-weight: 600; margin: .2rem 0 .45rem; color: $tinte; }
+  p { margin: 0 0 .4rem; }
+}
+html[lang|="zh"] .rolle .frage { letter-spacing: .04em; }
+
+/* Sektor-Karten */
+.sektoren {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1rem;
+}
+.sektor {
+  background: #fff;
+  border: 1px solid $linie;
+  border-radius: 4px;
+  padding: 1rem 1.2rem .6rem;
+  font-size: .92rem;
+  line-height: 1.55;
+  h3 { font-size: 1.15rem; margin: 0 0 .3rem; }
+  .werte { display: block; color: $grau; font-variant-numeric: tabular-nums; margin-bottom: .45rem; strong { color: $tinte; } }
+  .status-chip { margin-bottom: .6rem; }
+  p { margin: 0 0 .55rem; }
+}
+.status-chip.plus  { background: $gruen-hell; color: $gruen; }
+.status-chip.minus { background: #f3e4e2; color: #7d2e2e; }
+
+/* Steckbrief-Icons: einfarbig grün, ohne Füllung */
+.icon-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.ks-icon {
+  display: block;
+  fill: none; stroke: $gruen; stroke-width: 1.3; color: $gruen; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* Kachel = zwei Blöcke nebeneinander: Icon genau so hoch wie Zahl + einzeilige Erläuterung;
+   feste Icon-Spalte, damit alle Zahlen auf derselben Linie beginnen */
+.steckbrief > div > p {
+  display: grid;
+  grid-template-columns: 4.05rem minmax(0, 1fr);
+  grid-template-rows: 1.5rem minmax(1.4rem, auto);   /* Zahl · Erläuterung (wächst, falls sie umbricht) */
+  column-gap: .8rem;
+  row-gap: .1rem;
+  align-items: center;
+  .ks-icon { grid-row: 1 / span 2; width: 2.85rem; height: 2.85rem; }
+  .ks-icon.breit { width: 4.05rem; }       /* Icons mit „CO₂" (Fabrik, Person): Format 34 × 24 */
+  .zahl { grid-column: 2; line-height: 1.5rem; }
+  .was  { grid-column: 2; margin-top: 0; font-size: 1rem; line-height: 1.4rem; }
+}
+@media (max-width: 576px) {
+  .steckbrief > div > p { grid-template-rows: 1.5rem auto; }
+}
+
+/* Länderfarbe im Steckbrief (Farbspuren der Website): Icons in der Spurfarbe, Zahlen in der dunkleren Schriftvariante */
+.steckbrief.de { .ks-icon { stroke: $spur-de; color: $spur-de; } .zahl { color: $spur-de-text; } }
+.steckbrief.eu { .ks-icon { stroke: $spur-eu; color: $spur-eu; } .zahl { color: $spur-eu; } }
+.steckbrief.cn { .ks-icon { stroke: $spur-cn; color: $spur-cn; } .zahl { color: $spur-cn; } }
+
+/* Steckbrief: zwei Spalten (am Handy eine), damit Icon und Text nebeneinander Platz haben */
+.kennzahlen-leiste.steckbrief {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  > div:nth-child(2n+1) { padding-left: 0; border-left: none; }
+  > div:nth-child(n+3) { border-top: 1px solid $linie; }
+}
+@media (max-width: 576px) {
+  .kennzahlen-leiste.steckbrief { grid-template-columns: 1fr; }
+  .kennzahlen-leiste.steckbrief > div { padding-left: 0 !important; border-left: none !important; }
+}
+
+/* Governance-Diagramm */
+figure.gov-diagramm {
+  margin: 1rem 0 .6rem;
+  background: #fff;
+  border: 1px solid $linie;
+  border-radius: 6px;
+  padding: .5rem;
+  .gov-scroll { overflow-x: auto; }
+  svg { display: block; width: 100%; min-width: 720px; height: auto; font-family: $font-family-sans-serif; }
+  figcaption { font-size: .82rem; color: $grau; margin: .5rem .3rem .1rem; line-height: 1.7; }
+  .gl { white-space: nowrap; margin-right: .5rem; }
+  .gl::before { content: ""; display: inline-block; width: 18px; height: 0; border-top: 2.5px solid; vertical-align: middle; margin-right: .3rem; }
+  .gl.g::before { border-color: $gruen; } .gl.b::before { border-color: $spur-eu; }
+  .gl.k::before { border-top: 2px dashed $grau; } .gl.o::before { border-color: $spur-de; border-top-width: 3.5px; }
+  .gk { white-space: nowrap; padding: 0 .35rem; border-radius: 3px; }
+  .gk.leg { background: #fbf0dc; } .gk.exe { background: $gruen-hell; } .gk.kon { background: #eef0ef; } .gk.geld { background: #fff4d6; }
+}

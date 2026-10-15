@@ -42,7 +42,7 @@ Von **Jing Hu** · Umweltwissenschaftlerin, Stuttgart · [Über mich →](ueber-
 [Deutschland]{.wer}
 [2045]{.jahr}
 [Netto-THG-neutral · gesetzlich]{.was}
-[Ziele im Vergleich: Deutschland](ziele/index.qmd){.karten-link}
+[Länderprofil Deutschland](laender/deutschland.qmd){.karten-link}
 :::
 
 ::: {.zielkarte .cn}

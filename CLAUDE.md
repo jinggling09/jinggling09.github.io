@@ -30,6 +30,7 @@ Lokal: aktuelles Quarto liegt in `~/opt/quarto/bin/quarto` (1.10.19) → `QUARTO
 | 2 Instrumente & CO₂-Bepreisung | `wissen/` | China-ETS, EU-ETS/ETS 2/BEHG, CBAM-Grundlagen, Schnittstelle China ↔ CBAM |
 | 3 Erneuerbare | `daten/` | Ausbau und Erzeugung DE vs. CN (Diagrammlogik nur in `_shared/daten.qmd`) |
 | 4 Emissionen | `wissen/emissionen-de.qmd`, `wissen/stromsektor.qmd` | THG-Dashboard Deutschland, Stromsektor DE/CN |
+| Länderprofile | `laender/` | Je Land: Steckbrief (Bevölkerung, BIP, THG gesamt/pro Kopf/pro BIP, EE-Strom, Weltanteil) → Ziele & Pfad → Governance (6 Rollen) → Finanzierung → Gesetze → Sektoren → Einordnung. Bisher nur `deutschland.qmd` (DE); Zielkarte auf Startseite und Ziele-Seite verlinkt dorthin |
 
 Startseite `index.qmd` = Navigations-Cockpit: Hero mit Klimastreifen → drei Neutralitäts-Karten (EU 2050 / DE 2045 / CN 2060) → vier Ebenen-Karten. Die Städte-Ebene (Stuttgart ↔ Peking) ist bewusst zurückgestellt.
 
@@ -64,14 +65,14 @@ Alle Skripte nur mit Python-Standardbibliothek. Erzeugte `_*.md`-Dateien **nie v
 - Eigene Einordnungen in `::: {.einordnung}`-Blöcke.
 - Keine erfundenen Zahlen – fehlen Daten, offen sagen und Platz lassen.
 
-## Aktueller Stand (15.10.2026, abends)
+## Aktueller Stand (15.10.2026, spät)
 
-Erledigt: Daten abgerufen (1901–2025). China-Quelle von Berkeley Earth auf CRU TS umgestellt (Jings Entscheidung), weil Berkeleys Länderdateien 2020 enden; CRU und Berkeley stimmen im Überlappungszeitraum gut überein. Plausibilisiert (Basis ≈ 0; DE 2024 +2,65 °C ≈ DWD-Angabe). Layout Desktop + Mobil in DE/EN/ZH geprüft und korrigiert.
-
-Klimastreifen committet (Jing pusht selbst).
+Klimastreifen live. **Committet (Jing pusht selbst):** Länderprofil Deutschland – `laender/deutschland.qmd`, Styles (`.governance`, `.sektoren`, `figure.pfad`, `.status-chip.plus/.minus` in `custom.scss`), `references.bib` (Quellen Länderprofil), `_quarto.yml` (Menü „Ziele" mit Unterpunkt, Render-Pfad `laender/`), `index.qmd` (DE-Karte verlinkt), `ziele/index.qmd` (Link).
 
 Nächste Schritte:
-1. **Vorschlag für Jing** (sie trägt ihn selbst in `publish.yml` ein, nach dem Schritt „Netto-null-Ziele abrufen“), damit die Daten monatlich aktualisiert werden:
+1. EN/ZH-Fassung des Länderprofils: **von Jing bewusst zurückgestellt** (Ausnahme von der Drei-Sprachen-Regel). Solange sie fehlt, steht `laender/` in `nurDeutsch` in `_includes/lang-switch.html` (EN/中 führen dort zur jeweiligen Startseite). Beim Übersetzen: Eintrag entfernen, Menü und Kartenlinks in en/zh nachziehen, Diagrammtexte übersetzen.
+2. Dieselbe Vorlage für EU und China (China-Weltanteil 29,5 % laut EDGAR 2026 bereits recherchiert).
+3. **Vorschlag für Jing** (sie trägt ihn selbst in `publish.yml` ein, nach dem Schritt „Netto-null-Ziele abrufen"), damit die Klimastreifen-Daten monatlich aktualisiert werden:
    ```yaml
          - name: Temperaturreihen abrufen (DWD, CRU)
            run: |
@@ -79,6 +80,12 @@ Nächste Schritte:
                echo "::warning::Abruf Temperaturreihen fehlgeschlagen – vorhandene Daten werden verwendet."
              fi
    ```
+
+**Notion-Notizen (Deutschland) sind teils veraltet – nicht ungeprüft übernehmen:** Klimaschutz liegt seit 06.05.2025 beim BMUKN (nicht BMWE); THG 2025 = 648,9 Mio. t (nicht 640); Sektorwerte stammen aus Projektionen 2025 statt 2026; GEG ist seit 29.07.2026 durch das Gebäudemodernisierungsgesetz (GModG) ersetzt, 65-%-Regel entfallen.
+
+**Länderprofil-Gestaltung (von Jing gewählt):** Steckbrief zweispaltig; Icons als `<symbol>` im Seitenkopf, einfarbig ohne Füllung; Icons und Zahlen in der Länderfarbe (Klasse `.de` / `.eu` / `.cn` am Steckbrief, z. B. DE: Icons `#b8860b`, Zahlen `#8a6a00`), Rest der Seite bleibt grün; Icon ganz links in fester Spalte, genau so hoch wie Zahl + einzeilige Erläuterung (Erläuterungen kurz halten, Details in die Belege-Zeile). Treibhausgase = Fabrik + „CO₂“, pro Kopf = Person + „CO₂“ (Klasse `breit`). Farben in Symbolen nur über Vererbung steuern – CSS-Selektoren erreichen `<use>`-Kopien nicht. Governance-Diagramm als Inline-SVG (EU / Bund / Länder, Pfeilarten: legt fest, EU-Vorgaben, berichtet/prüft, Geldfluss), darunter die sechs Rollen-Karten.
+
+**Zitieren von Paragrafen:** `[§ 3 @ksg]` schreiben, nicht `[@ksg, § 3]` – sonst macht der deutsche Zitierstil „Abschn. 3" daraus.
 
 ## Offene Ideen
 

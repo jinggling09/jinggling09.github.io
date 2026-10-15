@@ -5,6 +5,7 @@ project:
   render:
     - "*.qmd"
     - "ziele/*.qmd"
+    - "laender/*.qmd"
     - "wissen/*.qmd"
     - "daten/*.qmd"
     - "projekte/*.qmd"
@@ -27,8 +28,12 @@ website:
     left:
       - href: index.qmd
         text: "Start"
-      - href: ziele/index.qmd
-        text: "Ziele"
+      - text: "Ziele"
+        menu:
+          - href: ziele/index.qmd
+            text: "Ziele im Vergleich"
+          - href: laender/deutschland.qmd
+            text: "Länderprofil Deutschland"
       - text: "Instrumente"
         menu:
           - href: wissen/index.qmd
