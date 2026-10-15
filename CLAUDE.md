@@ -67,7 +67,7 @@ Alle Skripte nur mit Python-Standardbibliothek. Erzeugte `_*.md`-Dateien **nie v
 
 ## Aktueller Stand (15.10.2026, spät)
 
-Klimastreifen live. **Committet (Jing pusht selbst):** Länderprofil Deutschland – `laender/deutschland.qmd`, Styles (`.governance`, `.sektoren`, `figure.pfad`, `.status-chip.plus/.minus` in `custom.scss`), `references.bib` (Quellen Länderprofil), `_quarto.yml` (Menü „Ziele" mit Unterpunkt, Render-Pfad `laender/`), `index.qmd` (DE-Karte verlinkt), `ziele/index.qmd` (Link).
+Klimastreifen live. **Committet (Jing pusht selbst):** Länderprofil Deutschland – `laender/deutschland.qmd`, Styles (`.governance`, `.sektoren`, `figure.pfad`, `.status-chip.plus/.minus` in `custom.scss`), `references.bib` (Quellen Länderprofil), `_quarto.yml` (Menü „Start" mit Unterpunkten „Übersicht" und „Deutschland: Klimaschutz im Überblick", Render-Pfad `laender/`; überall derselbe Titel), `index.qmd` (DE-Karte verlinkt), `ziele/index.qmd` (Link).
 
 Nächste Schritte:
 1. EN/ZH-Fassung des Länderprofils: **von Jing bewusst zurückgestellt** (Ausnahme von der Drei-Sprachen-Regel). Solange sie fehlt, steht `laender/` in `nurDeutsch` in `_includes/lang-switch.html` (EN/中 führen dort zur jeweiligen Startseite). Beim Übersetzen: Eintrag entfernen, Menü und Kartenlinks in en/zh nachziehen, Diagrammtexte übersetzen.

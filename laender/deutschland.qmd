@@ -7,7 +7,7 @@ subtitle: "Wer setzt die Ziele, wer setzt sie um, wer kontrolliert – und wo st
 Stand: 15.10.2026
 :::
 
-[Länderprofil · [Ziele im Vergleich](../ziele/index.qmd) · [EU-ETS & BEHG](../wissen/eu-ets.qmd) · [THG-Dashboard](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
+[Länderüberblick · [Ziele im Vergleich](../ziele/index.qmd) · [EU-ETS & BEHG](../wissen/eu-ets.qmd) · [THG-Dashboard](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
 
 Deutschland hat sein Ziel der Treibhausgasneutralität **2045** gesetzlich festgeschrieben – fünf Jahre vor der EU. Diese Seite ordnet systematisch ein, **wer** in Deutschland für Klimaschutz zuständig ist, **woher das Geld** kommt, **welche Gesetze** gelten und **wo die einzelnen Sektoren** auf dem Weg zum Ziel stehen.
 

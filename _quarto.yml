@@ -26,14 +26,14 @@ website:
   navbar:
     title: "Jing Hu"
     left:
-      - href: index.qmd
-        text: "Start"
-      - text: "Ziele"
+      - text: "Start"
         menu:
-          - href: ziele/index.qmd
-            text: "Ziele im Vergleich"
+          - href: index.qmd
+            text: "Übersicht"
           - href: laender/deutschland.qmd
-            text: "Länderprofil Deutschland"
+            text: "Deutschland: Klimaschutz im Überblick"
+      - href: ziele/index.qmd
+        text: "Ziele"
       - text: "Instrumente"
         menu:
           - href: wissen/index.qmd
