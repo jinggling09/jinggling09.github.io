@@ -1,5 +1,5 @@
 ---
-pagetitle: "Jing Hu · Climate action compared"
+pagetitle: "Jing Hu · Climate Action Compared"
 page-layout: full
 toc: false
 title-block-banner: false
