@@ -1,66 +1,249 @@
 /*-- scss:defaults --*/
-$primary: #1f5f4a;          // tiefes Grün
-$link-color: #1f5f4a;
-$body-color: #1d2521;
-$navbar-bg: #ffffff;
-$navbar-fg: #1d2521;
-$navbar-hl: #1f5f4a;
+// Palette: tiefes Grün als Leitfarbe, warmes Ocker als Akzent, Papierweiß als Grund
+$gruen:        #1f5f4a;
+$gruen-dunkel: #123d30;
+$gruen-hell:   #e8f0ec;
+$ocker:        #a8741a;
+$tinte:        #1a2420;
+$grau:         #5b6b63;
+$linie:        #dfe5e1;
+$papier:       #fcfcfa;
+
+$primary: $gruen;
+$link-color: $gruen;
+$body-color: $tinte;
+$body-bg: $papier;
+$navbar-bg: $papier;
+$navbar-fg: $tinte;
+$navbar-hl: $gruen;
 $font-family-sans-serif: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
 $font-family-base: $font-family-sans-serif;
 $headings-font-family: "Source Serif 4", Georgia, serif;
-$footer-bg: #f4f6f4;
+$headings-font-weight: 600;
+$footer-bg: $gruen-dunkel;
+$footer-fg: #cfdcd5;
 
 /*-- scss:rules --*/
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap");
 
 body, p, li, td, th, blockquote, .csl-entry {
   font-family: $font-family-sans-serif;
 }
+body { font-size: 1.05rem; line-height: 1.65; }
 
+/* ---------- Navigation ---------- */
 .navbar {
-  border-bottom: 1px solid #e3e8e5;
+  border-bottom: 1px solid $linie;
+  box-shadow: none;
+  .navbar-title {
+    font-family: $headings-font-family;
+    font-weight: 600;
+    letter-spacing: -.01em;
+  }
+  .nav-link { font-size: .95rem; }
+  .nav-link.active { box-shadow: inset 0 -2px 0 $gruen; }
 }
 
+/* ---------- Überschriften & Titelblock ---------- */
+h1, h2, h3, .title { letter-spacing: -.012em; }
+h2 {
+  border-bottom: none;
+  margin-top: 2.6rem;
+  padding-top: 1rem;
+  border-top: 1px solid $linie;
+}
+#title-block-header {
+  margin-bottom: 1.5rem;
+  .title { font-size: 2.2rem; line-height: 1.2; }
+}
+
+/* Kleine Großbuchstaben-Zeile über Überschriften */
+.eyebrow {
+  display: block;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: $ocker;
+  margin-bottom: .6rem;
+}
+
+/* ---------- Startseite: Hero ---------- */
 .hero {
-  padding: 2.5rem 0 1.5rem;
-  border-bottom: 1px solid #e3e8e5;
-  margin-bottom: 2rem;
-  h1 { font-size: 2.3rem; margin-bottom: .3rem; }
-  .rolle { color: #5b6b63; font-size: 1.15rem; }
+  padding: 1.5rem 0 2.5rem;
+  margin-bottom: 0;
+  max-width: 820px;
+  h1 {
+    font-size: clamp(2.1rem, 4.6vw, 3.3rem);
+    line-height: 1.12;
+    font-weight: 600;
+    margin: 0 0 1.2rem;
+    border: none;
+  }
+  .lead { font-size: 1.2rem; color: #33403a; max-width: 680px; }
+  .autorin {
+    margin-top: 1.6rem;
+    font-size: .98rem;
+    color: $grau;
+    strong { color: $tinte; }
+  }
 }
 
+/* ---------- Kennzahlen-Leiste ---------- */
+.kennzahlen-leiste {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  border-top: 2px solid $tinte;
+  border-bottom: 1px solid $linie;
+  margin: 0 0 3rem;
+  > div {
+    padding: 1.2rem 1.2rem 1.1rem 0;
+    & + div { padding-left: 1.2rem; border-left: 1px solid $linie; }
+  }
+  .zahl {
+    display: block;
+    font-family: $headings-font-family;
+    font-size: 2.1rem;
+    line-height: 1.1;
+    color: $gruen;
+    font-variant-numeric: tabular-nums;
+  }
+  .was { display: block; font-size: .9rem; color: $grau; margin-top: .35rem; line-height: 1.4; }
+  p { margin: 0; }
+}
+@media (max-width: 576px) {
+  .kennzahlen-leiste > div,
+  .kennzahlen-leiste > div + div { padding-left: 0; border-left: none; border-top: 1px solid $linie; }
+  .kennzahlen-leiste > div:first-child { border-top: none; }
+}
+
+/* ---------- Zwei Spalten: Termine + Module ---------- */
+.zweispaltig {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 3rem;
+  margin-bottom: 2rem;
+  @media (max-width: 860px) { grid-template-columns: 1fr; gap: 1.5rem; }
+  h2 { margin-top: 0; border-top: none; padding-top: 0; font-size: 1.35rem; }
+}
+
+/* Termine / Zeitleiste */
+.termine {
+  ul { list-style: none; padding: 0; margin: 0; border-left: 2px solid $gruen-hell; }
+  li {
+    position: relative;
+    padding: 0 0 1.1rem 1.2rem;
+    line-height: 1.45;
+    &::before {
+      content: "";
+      position: absolute; left: -6px; top: .45rem;
+      width: 10px; height: 10px; border-radius: 50%;
+      background: $papier; border: 2px solid $gruen;
+    }
+  }
+  .datum {
+    display: block;
+    font-weight: 700;
+    font-size: .85rem;
+    letter-spacing: .04em;
+    color: $gruen;
+    font-variant-numeric: tabular-nums;
+  }
+  p:last-child { font-size: .92rem; }
+}
+
+/* ---------- Karten (Module / Projekte) ---------- */
 .karten {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
-  margin: 1.5rem 0;
+  margin: 1.2rem 0;
 }
+.zweispaltig .karten { grid-template-columns: 1fr; margin-top: 0; gap: .8rem; }
 
 .karte {
-  border: 1px solid #e3e8e5;
-  border-radius: 8px;
-  padding: 1.1rem 1.2rem;
-  background: #fbfcfb;
-  h3 { font-size: 1.1rem; margin-top: 0; }
-  p { margin-bottom: .4rem; color: #3f4b45; }
-  .status { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: #8a6d1f; }
+  position: relative;
+  border: 1px solid $linie;
+  border-radius: 4px;
+  padding: 1.1rem 1.3rem 1rem;
+  background: #fff;
+  transition: border-color .15s, box-shadow .15s, transform .15s;
+  &:hover { border-color: $gruen; box-shadow: 0 6px 18px rgba(18, 61, 48, .08); transform: translateY(-1px); }
+  h3 {
+    font-size: 1.15rem;
+    margin: 0 0 .4rem;
+    a { color: $tinte; text-decoration: none; }
+    // gesamte Karte klickbar
+    a::after { content: ""; position: absolute; inset: 0; }
+  }
+  &:hover h3 a { color: $gruen; }
+  p { margin-bottom: .45rem; color: #3f4b45; font-size: .97rem; }
+  .status {
+    display: inline-block;
+    font-size: .72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: $ocker;
+  }
+  // weitere Links (z. B. „Code") über dem Klickbereich halten
+  p a { position: relative; z-index: 1; }
 }
 
+/* ---------- Leitgedanke ---------- */
+.leitgedanke {
+  background: $gruen-hell;
+  border-left: 4px solid $gruen;
+  padding: 1.4rem 1.6rem;
+  margin: 2rem 0 1rem;
+  max-width: 860px;
+  h2 { margin: 0 0 .5rem; padding: 0; border: none; font-size: 1.3rem; }
+  p:last-child { margin-bottom: 0; }
+}
+
+/* ---------- Inhaltsseiten ---------- */
 .stand {
-  font-size: .9rem;
-  color: #5b6b63;
-  border-left: 3px solid #1f5f4a;
-  padding-left: .7rem;
-  margin-bottom: 1.5rem;
+  display: inline-block;
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .03em;
+  color: $gruen;
+  background: $gruen-hell;
+  border-radius: 999px;
+  padding: .15rem .8rem;
+  margin-bottom: 1.2rem;
+  p { margin: 0; }
 }
 
 .einordnung {
-  background: #f4f6f4;
-  border-radius: 6px;
-  padding: .8rem 1rem;
+  background: #fbf6ec;
+  border-left: 4px solid $ocker;
+  border-radius: 0 4px 4px 0;
+  padding: .9rem 1.2rem;
+  &::before {
+    content: "Einordnung";
+    display: block;
+    font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: $ocker; margin-bottom: .3rem;
+  }
 }
+html[lang|="en"] .einordnung::before { content: "Assessment"; }
+html[lang|="zh"] .einordnung::before { content: "作者评述"; letter-spacing: .04em; }
 
+/* Tabellen */
 table { font-size: .95rem; }
+main table {
+  border-top: 2px solid $tinte;
+  thead th {
+    font-size: .76rem;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    color: $grau;
+    border-bottom: 1px solid $tinte !important;
+  }
+  td { border-color: $linie; }
+  tbody tr:hover { background: rgba(31, 95, 74, .035); }
+}
 
 .legende-art {
   font-size: .85rem;
@@ -73,7 +256,6 @@ table { font-size: .95rem; }
   td, th { text-align: right; }
   th[scope="row"], thead th:first-child { text-align: left; }
 }
-
 .kennzahlen { max-width: 520px; }
 .kennzahlen td { white-space: nowrap; }
 
@@ -85,14 +267,35 @@ table { font-size: .95rem; }
   }
 }
 
-/* Chinesisch: CJK-Schrift bevorzugen */
+/* Inhaltsverzeichnis rechts */
+#TOC, nav#TOC {
+  #toc-title { font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; color: $grau; font-weight: 700; }
+  .nav-link { font-size: .85rem; }
+}
+
+/* Literatur */
+#refs, .references { font-size: .9rem; color: #3f4b45; }
+
+/* ---------- Footer ---------- */
+.nav-footer {
+  border-top: none;
+  color: $footer-fg;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  a { color: #fff; }
+  .nav-link, .toc-actions a { color: $footer-fg; }
+}
+
+/* ---------- Chinesisch: CJK-Schrift bevorzugen ---------- */
 html[lang|="zh"] body,
 html[lang|="zh"] p, html[lang|="zh"] li, html[lang|="zh"] td, html[lang|="zh"] th {
   font-family: "Source Sans 3", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Noto Sans CJK SC", sans-serif;
 }
-html[lang|="zh"] h1, html[lang|="zh"] h2, html[lang|="zh"] h3 {
+html[lang|="zh"] h1, html[lang|="zh"] h2, html[lang|="zh"] h3,
+html[lang|="zh"] .navbar-title, html[lang|="zh"] .zahl {
   font-family: "Source Serif 4", "Songti SC", "Noto Serif SC", "Noto Serif CJK SC", serif;
 }
+html[lang|="zh"] .eyebrow, html[lang|="zh"] .karte .status { letter-spacing: .04em; }
 
 /* kompakte Sprachumschaltung auf Mobilgeräten */
 .lang-mini {

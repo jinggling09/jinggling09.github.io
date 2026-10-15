@@ -6,11 +6,56 @@ title-block-banner: false
 ---
 
 ::: {.hero}
-# Jing Hu
-[Climate Change Specialist · Stuttgart]{.rolle}
+[Knowledge base · China ↔ EU/Germany]{.eyebrow}
 
-A knowledge base on carbon pricing, CBAM and the energy transition — focused on the interface between **China ↔ the EU/Germany**. Every statement is backed by a primary source.
+# Carbon markets, CBAM and the energy transition between China and Europe
+
+::: {.lead}
+How China's emissions trading scheme, the EU ETS and the carbon border adjustment interact — clearly explained, every statement backed by a primary source and a "last checked" date.
 :::
+
+::: {.autorin}
+By **Jing Hu** · Environmental scientist, Stuttgart · [About me →](ueber-mich.qmd)
+:::
+:::
+
+::: {.kennzahlen-leiste}
+::: {}
+[−90 %]{.zahl}
+[EU net GHG target for 2040 compared with 1990]{.was}
+:::
+::: {}
+[50 t]{.zahl}
+[CBAM mass threshold per importer and year]{.was}
+:::
+::: {}
+[3]{.zahl}
+[new sectors in China's ETS: steel, cement, aluminium]{.was}
+:::
+::: {}
+[2028]{.zahl}
+[Start of ETS2 for buildings and road transport]{.was}
+:::
+:::
+
+::: {.zweispaltig}
+
+::: {.termine}
+[Coming up]{.eyebrow}
+
+## Key dates
+
+- [01.02.2027]{.datum} Sale of CBAM certificates begins
+- [30.09.2027]{.datum} First annual CBAM declaration (for 2026)
+- [2028]{.datum} ETS2 starts
+
+[Full timeline →](wissen/index.qmd#timeline)
+:::
+
+::: {}
+[Contents]{.eyebrow}
+
+## Modules & projects
 
 ::: {.karten}
 
@@ -36,9 +81,14 @@ Germany climate dashboard (UBA data) and a product carbon footprint comparison i
 :::
 
 :::
+:::
 
+:::
+
+::: {.leitgedanke}
 ## Why this site?
 
 Companies in Germany and the EU increasingly face questions that can only be answered with knowledge of **both** regulatory worlds — for example, how China's emissions trading scheme interacts with CBAM. This site brings together the legal texts and data, traceable and with a "last checked" date.
 
 [→ How I select and cite sources](quellen.qmd)
+:::

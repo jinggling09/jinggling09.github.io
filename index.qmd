@@ -6,11 +6,56 @@ title-block-banner: false
 ---
 
 ::: {.hero}
-# Jing Hu
-[Climate Change Specialist · Stuttgart]{.rolle}
+[Wissensbasis · China ↔ EU/Deutschland]{.eyebrow}
 
-Wissensbasis zu CO₂-Bepreisung, CBAM und Energiewende — mit Fokus auf die Schnittstelle **China ↔ EU/Deutschland**. Jede Aussage ist mit einer Primärquelle belegt.
+# CO₂-Märkte, CBAM und Energiewende zwischen China und Europa
+
+::: {.lead}
+Wie Chinas Emissionshandel, der EU-ETS und der CO₂-Grenzausgleich zusammenspielen — nachvollziehbar aufbereitet, jede Aussage mit Primärquelle und Stand-Datum.
 :::
+
+::: {.autorin}
+Von **Jing Hu** · Umweltwissenschaftlerin, Stuttgart · [Über mich →](ueber-mich.qmd)
+:::
+:::
+
+::: {.kennzahlen-leiste}
+::: {}
+[−90 %]{.zahl}
+[Netto-THG-Ziel der EU für 2040 gegenüber 1990]{.was}
+:::
+::: {}
+[50 t]{.zahl}
+[CBAM-Mengenschwelle pro Importeur und Jahr]{.was}
+:::
+::: {}
+[3]{.zahl}
+[neue Sektoren im China-ETS: Stahl, Zement, Aluminium]{.was}
+:::
+::: {}
+[2028]{.zahl}
+[Start des ETS 2 für Gebäude und Straßenverkehr]{.was}
+:::
+:::
+
+::: {.zweispaltig}
+
+::: {.termine}
+[Als Nächstes]{.eyebrow}
+
+## Wichtige Termine
+
+- [01.02.2027]{.datum} Verkauf der CBAM-Zertifikate beginnt
+- [30.09.2027]{.datum} Erste jährliche CBAM-Erklärung (für 2026)
+- [2028]{.datum} Start des ETS 2
+
+[Vollständige Zeitleiste →](wissen/index.qmd#zeitleiste)
+:::
+
+::: {}
+[Inhalte]{.eyebrow}
+
+## Module & Projekte
 
 ::: {.karten}
 
@@ -36,9 +81,14 @@ Klima-Dashboard Deutschland (UBA-Daten) und ein Produkt-CO₂-Fußabdruck-Vergle
 :::
 
 :::
+:::
 
+:::
+
+::: {.leitgedanke}
 ## Warum diese Seite?
 
 Unternehmen in Deutschland und der EU stehen zunehmend vor Fragen, die sich nur mit Kenntnis **beider** Regulierungswelten beantworten lassen — etwa, wie der chinesische Emissionshandel mit dem CBAM zusammenspielt. Diese Seite bündelt die Rechtsgrundlagen und Daten dazu, nachvollziehbar und mit Stand-Datum.
 
 [→ Wie ich Quellen auswähle und belege](quellen.qmd)
+:::

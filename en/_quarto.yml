@@ -13,6 +13,7 @@ website:
   page-navigation: true
   back-to-top-navigation: true
   navbar:
+    title: "Jing Hu"
     left:
       - href: index.qmd
         text: Home
