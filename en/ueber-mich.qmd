@@ -21,7 +21,7 @@ toc: false
   <h1>Jing Hu</h1>
   <p class="profil-text">Environmental scientist with more than four years of professional experience in climate policy, carbon accounting and low-carbon project management. Based in Stuttgart since October 2025 and looking for a position in climate action, sustainability or the energy transition.</p>
   <div class="knoepfe">
-   <a class="knopf voll" href="https://www.linkedin.com/in/jing-hu-10a703182"><svg><use href="#s-in"/></svg>LinkedIn</a>
+   <a class="knopf" href="https://www.linkedin.com/in/jing-hu-10a703182"><svg><use href="#s-in"/></svg>LinkedIn</a>
    <a class="knopf" href="mailto:hujing1104@outlook.com"><svg><use href="#s-mail"/></svg>Email</a>
    <a class="knopf" href="../dokumente/Masterarbeit_Jing_Hu_2021.pdf"><svg><use href="#s-pdf"/></svg>Master's thesis (PDF)</a>
    <a class="knopf" href="https://github.com/jinggling09"><svg><use href="#s-code"/></svg>GitHub</a>

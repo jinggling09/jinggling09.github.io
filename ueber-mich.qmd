@@ -21,7 +21,7 @@ toc: false
   <h1>Jing Hu</h1>
   <p class="profil-text">Umweltwissenschaftlerin mit über vier Jahren Berufserfahrung in Klimapolitik, CO₂-Bilanzierung und Low-Carbon-Projektmanagement. Seit Oktober 2025 in Stuttgart – auf der Suche nach einer Stelle in Klimaschutz, Nachhaltigkeit oder Energiewende.</p>
   <div class="knoepfe">
-   <a class="knopf voll" href="https://www.linkedin.com/in/jing-hu-10a703182"><svg><use href="#s-in"/></svg>LinkedIn</a>
+   <a class="knopf" href="https://www.linkedin.com/in/jing-hu-10a703182"><svg><use href="#s-in"/></svg>LinkedIn</a>
    <a class="knopf" href="mailto:hujing1104@outlook.com"><svg><use href="#s-mail"/></svg>E-Mail</a>
    <a class="knopf" href="/dokumente/Masterarbeit_Jing_Hu_2021.pdf"><svg><use href="#s-pdf"/></svg>Masterarbeit (PDF)</a>
    <a class="knopf" href="https://github.com/jinggling09"><svg><use href="#s-code"/></svg>GitHub</a>

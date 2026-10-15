@@ -21,7 +21,7 @@ toc: false
   <h1>Jing Hu</h1>
   <p class="profil-text">环境科学背景，在气候政策、碳核算和低碳项目管理领域拥有四年以上工作经验。2025 年 10 月起定居斯图加特，正在寻找气候保护、可持续发展或能源转型方向的工作。</p>
   <div class="knoepfe">
-   <a class="knopf voll" href="https://www.linkedin.com/in/jing-hu-10a703182"><svg><use href="#s-in"/></svg>LinkedIn</a>
+   <a class="knopf" href="https://www.linkedin.com/in/jing-hu-10a703182"><svg><use href="#s-in"/></svg>LinkedIn</a>
    <a class="knopf" href="mailto:hujing1104@outlook.com"><svg><use href="#s-mail"/></svg>邮箱</a>
    <a class="knopf" href="../dokumente/Masterarbeit_Jing_Hu_2021.pdf"><svg><use href="#s-pdf"/></svg>硕士论文（PDF）</a>
    <a class="knopf" href="https://github.com/jinggling09"><svg><use href="#s-code"/></svg>GitHub</a>
