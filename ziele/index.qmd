@@ -41,7 +41,7 @@ Alle drei haben ein Langfristziel „netto null" bzw. Neutralität. Sie untersch
 ```
 [China]{.wer}
 [2060]{.jahr}
-[CO₂-Neutralität (碳中和) vor 2060; CO₂-Emissionsspitze vor 2030]{.was}
+[CO₂-Neutralität vor 2060; CO₂-Emissionsspitze vor 2030]{.was}
 [Politikdokument]{.status-chip .politik} [@cn_yijian_2021]
 :::
 
@@ -66,7 +66,7 @@ Gelesen von oben nach unten zeigt die Tabelle, wie sich die drei Zielpfade zeitl
 :::
 
 ::: {.belege}
-**Belege** · EU: Europäisches Klimagesetz, Art. 2 und 4 [@eu_klimagesetz_2021; @eu_klimagesetz_2026] · Deutschland: §§ 3, 3a KSG [@ksg] · China: 2025/2030 Aktionsplan [@cn_aktionsplan_2021], 2030 neu „十五五"-Klimaplan [@cn_15fyp_klima_2026], 2035 NDC [@cn_ndc_2035], 2060 [@cn_yijian_2021]
+**Belege** · EU: Europäisches Klimagesetz, Art. 2 und 4 [@eu_klimagesetz_2021; @eu_klimagesetz_2026] · Deutschland: §§ 3, 3a KSG [@ksg] · China: 2025/2030 Aktionsplan [@cn_aktionsplan_2021], 2030 neu Klimaplan zum 15. Fünfjahresplan [@cn_15fyp_klima_2026], 2035 NDC [@cn_ndc_2035], 2060 [@cn_yijian_2021]
 :::
 
 ## Was die Ziele unterscheidet

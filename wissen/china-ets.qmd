@@ -8,7 +8,7 @@ Stand: 13.10.2026
 
 ## Überblick
 
-Der nationale Emissionshandel Chinas (全国碳排放权交易市场) wurde im Juli 2021 mit dem Stromsektor gestartet [@mee_qa_2025]. Zuständig ist das Ministerium für Ökologie und Umwelt (MEE).
+Der nationale Emissionshandel Chinas wurde im Juli 2021 mit dem Stromsektor gestartet [@mee_qa_2025]. Zuständig ist das Ministerium für Ökologie und Umwelt (MEE).
 
 ## Erweiterung 2025: Stahl, Zement, Aluminium
 

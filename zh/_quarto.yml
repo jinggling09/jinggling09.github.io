@@ -74,7 +74,7 @@ format:
     citations-hover: true
     reference-location: margin
 
-bibliography: ../references.bib
+bibliography: references.bib
 link-citations: true
 
 execute:
