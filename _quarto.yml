@@ -15,8 +15,8 @@ project:
 lang: de
 
 website:
-  title: "Jing Hu · Klima & CO₂-Märkte"
-  description: "Wissensbasis zu CO₂-Bepreisung, CBAM und Energiewende an der Schnittstelle China – EU/Deutschland."
+  title: "Jing Hu · Klimaschutz im Vergleich"
+  description: "Klimaschutz in Deutschland und China im Vergleich, im Rahmen der EU-Klimapolitik: Ziele, Instrumente und Emissionen – mit Primärquellen."
   site-url: https://jinggling09.github.io
   repo-url: https://github.com/jinggling09/jinggling09.github.io
   repo-actions: [issue]

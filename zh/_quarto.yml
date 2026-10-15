@@ -5,8 +5,8 @@ project:
 lang: zh
 
 website:
-  title: "Jing Hu · 气候与碳市场"
-  description: "聚焦中国与欧盟/德国接口的碳定价、CBAM 与能源转型知识库。"
+  title: "Jing Hu · 中德气候行动对比"
+  description: "在欧盟气候政策框架下对比中德两国的气候行动：目标、政策工具与排放，均附一手来源。"
   site-url: https://jinggling09.github.io/zh
   repo-url: https://github.com/jinggling09/jinggling09.github.io
   repo-actions: [issue]

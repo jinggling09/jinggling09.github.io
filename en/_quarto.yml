@@ -5,8 +5,8 @@ project:
 lang: en
 
 website:
-  title: "Jing Hu · Climate & Carbon Markets"
-  description: "Knowledge base on carbon pricing, CBAM and the energy transition at the interface between China and the EU/Germany."
+  title: "Jing Hu · Climate Action Compared"
+  description: "Climate action in Germany and China compared, within the EU framework: targets, instruments and emissions – with primary sources."
   site-url: https://jinggling09.github.io/en
   repo-url: https://github.com/jinggling09/jinggling09.github.io
   repo-actions: [issue]

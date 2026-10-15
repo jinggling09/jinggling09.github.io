@@ -1,17 +1,19 @@
 ---
-pagetitle: "Jing Hu · Klima & CO₂-Märkte"
+pagetitle: "Jing Hu · Klimaschutz im Vergleich"
 page-layout: full
 toc: false
 title-block-banner: false
 ---
 
 ::: {.hero}
-[Wissensbasis · China ↔ EU/Deutschland]{.eyebrow}
+[Wissensbasis · Deutschland ↔ China]{.eyebrow}
 
-# CO₂-Märkte, CBAM und Energiewende zwischen China und Europa
+# Klimaschutz im Vergleich: Deutschland & China
+
+[im Rahmen der EU-Klimapolitik]{.hero-sub}
 
 ::: {.lead}
-Wie Chinas Emissionshandel, der EU-ETS und der CO₂-Grenzausgleich zusammenspielen — nachvollziehbar aufbereitet, jede Aussage mit Primärquelle und Stand-Datum.
+Was haben beide Länder versprochen, mit welchen Instrumenten wollen sie es erreichen – und was ist tatsächlich passiert? Drei Ebenen, jede Aussage mit Primärquelle und Stand-Datum.
 :::
 
 ::: {.autorin}
@@ -19,83 +21,115 @@ Von **Jing Hu** · Umweltwissenschaftlerin, Stuttgart · [Über mich →](ueber-
 :::
 :::
 
-::: {.kennzahlen-leiste}
+::: {.kennzahlen-leiste .ziel-leiste}
 ::: {}
-[−90 %]{.zahl}
-[Netto-THG-Ziel der EU für 2040 gegenüber 1990]{.was}
-:::
-::: {}
-[50 t]{.zahl}
-[CBAM-Mengenschwelle pro Importeur und Jahr]{.was}
+[2050]{.zahl}
+[EU · Netto null, gesetzlich]{.was}
 :::
 ::: {}
-[3]{.zahl}
-[neue Sektoren im China-ETS: Stahl, Zement, Aluminium]{.was}
+[2045]{.zahl}
+[Deutschland · Netto-THG-neutral, gesetzlich]{.was}
 :::
 ::: {}
-[2028]{.zahl}
-[Start des ETS 2 für Gebäude und Straßenverkehr]{.was}
+[2060]{.zahl}
+[China · CO₂-neutral, Politikdokument]{.was}
 :::
 :::
 
-::: {.zweispaltig}
+[Neutralitätsziele · [Ziele im Vergleich →](ziele/index.qmd)]{.leiste-link}
 
-::: {.termine}
-[Als Nächstes]{.eyebrow}
+[Übersicht]{.eyebrow}
 
-## Wichtige Termine
+## Vom Ziel zur Emission {.cockpit-titel}
 
-- [01.02.2027]{.datum} Verkauf der CBAM-Zertifikate beginnt
-- [30.09.2027]{.datum} Erste jährliche CBAM-Erklärung (für 2026)
-- [2028]{.datum} Start des ETS 2
+::: {.cockpit}
 
-[Vollständige Zeitleiste →](wissen/index.qmd#zeitleiste)
-:::
+::: {.ebene}
+[1]{.nr}
 
-::: {}
-[Inhalte]{.eyebrow}
+### [Ziele & Rechtsrahmen](ziele/index.qmd)
 
-## Vom Ziel zur Emission
+[Was wurde versprochen?]{.frage}
 
-::: {.karten}
+EU-Klimagesetz, Bundes-Klimaschutzgesetz und Chinas „Dual-Carbon“-Ziele mit Zieljahren, Zwischenzielen und Verbindlichkeit.
 
-::: {.karte}
-### [1 · Ziele](ziele/index.qmd)
-Netto-null-Ziele von EU, Deutschland und China: Zieljahre, Zwischenziele, Verbindlichkeit.
+- [Klimaziele im Vergleich](ziele/index.qmd)
 
 [Neu]{.status}
 :::
 
-::: {.karte}
-### [2 · Instrumente & Umsetzung](wissen/index.qmd)
-CO₂-Preise (China-ETS, EU-ETS, ETS 2/BEHG) und der Ausbau von Wind und Solar in beiden Ländern.
+::: {.ebene}
+[2]{.nr}
+
+### [Instrumente & Umsetzung](wissen/index.qmd)
+
+[Womit soll es erreicht werden?]{.frage}
+
+CO₂-Bepreisung in beiden Ländern und der Ausbau der erneuerbaren Energien.
+
+- [Chinas nationaler Emissionshandel](wissen/china-ets.qmd)
+- [EU-ETS, ETS 2 & BEHG](wissen/eu-ets.qmd)
+- [Erneuerbare: Deutschland & China](daten/index.qmd)
 
 [Im Aufbau]{.status}
 :::
 
-::: {.karte}
-### [3 · Emissionen](wissen/emissionen-de.qmd)
-Wie sich die Treibhausgasemissionen tatsächlich entwickeln – Deutschland nach Sektoren, China folgt.
+::: {.ebene}
+[3]{.nr}
+
+### [Emissionen](wissen/emissionen-de.qmd)
+
+[Was ist tatsächlich passiert?]{.frage}
+
+Entwicklung der Treibhausgasemissionen – gesamt und nach Sektoren.
+
+- [THG-Dashboard Deutschland](wissen/emissionen-de.qmd)
 
 [DE live · CN geplant]{.status}
 :::
 
-::: {.karte}
-### [Dossier · CBAM](wissen/cbam.qmd)
-Was der CO₂-Grenzausgleich für Importe aus China bedeutet – und wann ein chinesischer CO₂-Preis angerechnet wird.
+::: {.ebene .dossier}
+[D]{.nr}
+
+### [Dossier: CBAM & China](wissen/cbam.qmd)
+
+[Was bedeutet das für Lieferketten?]{.frage}
+
+Der CO₂-Grenzausgleich überträgt den EU-CO₂-Preis auf Importe – und rechnet einen in China gezahlten CO₂-Preis an.
+
+- [CBAM – Grundlagen](wissen/cbam.qmd)
+- [Schnittstelle China ↔ CBAM](wissen/schnittstellen.qmd)
 
 [Dossier]{.status}
 :::
 
 :::
-:::
 
+::: {.zweispaltig .unten}
+
+::: {.termine}
+[Als Nächstes]{.eyebrow}
+
+## Nächste Meilensteine
+
+- [01.02.2027]{.datum} EU: Verkauf der CBAM-Zertifikate beginnt
+- [2028]{.datum} EU: Start des ETS 2 für Gebäude und Verkehr
+- [2030]{.datum} China: CO₂-Spitze · Deutschland: −65 % · EU: −55 %
+- [2035]{.datum} China: Netto-THG −7 bis −10 % ggü. Gipfel
+
+[Alle Meilensteine bis 2060 →](ziele/index.qmd#meilensteine-bis-2060)
 :::
 
 ::: {.leitgedanke}
-## Warum diese Seite?
+## Warum dieser Vergleich?
 
-Unternehmen in Deutschland und der EU stehen zunehmend vor Fragen, die sich nur mit Kenntnis **beider** Regulierungswelten beantworten lassen — etwa, wie der chinesische Emissionshandel mit dem CBAM zusammenspielt. Diese Seite bündelt die Rechtsgrundlagen und Daten dazu, nachvollziehbar und mit Stand-Datum.
+Deutschland und China verfolgen ehrgeizige Klimaziele mit sehr unterschiedlichen Mitteln – Gesetz und CO₂-Preis hier, Fünfjahrespläne und Intensitätsziele dort. Über Lieferketten und den CO₂-Grenzausgleich sind beide Systeme zunehmend verbunden. Diese Seite stellt beides nebeneinander: nachvollziehbar, mit Primärquellen und Stand-Datum.
 
 [→ Wie ich Quellen auswähle und belege](quellen.qmd)
+:::
+
+:::
+
+::: {.mehr-leiste}
+[Projekte](projekte/index.qmd) · [Über mich](ueber-mich.qmd) · [Quellen & Methodik](quellen.qmd)
 :::

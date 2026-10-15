@@ -1,17 +1,19 @@
 ---
-pagetitle: "Jing Hu · 气候与碳市场"
+pagetitle: "Jing Hu · 中德气候行动对比"
 page-layout: full
 toc: false
 title-block-banner: false
 ---
 
 ::: {.hero}
-[知识库 · 中国 ↔ 欧盟/德国]{.eyebrow}
+[知识库 · 德国 ↔ 中国]{.eyebrow}
 
-# 中欧之间的碳市场、CBAM 与能源转型
+# 中德气候行动对比
+
+[置于欧盟气候政策框架之下]{.hero-sub}
 
 ::: {.lead}
-中国碳市场、欧盟碳排放交易体系与碳边境调节机制如何相互作用——清晰梳理，每条内容均附一手来源和核对日期。
+两国承诺了什么？用哪些政策工具去实现？实际排放又发生了什么变化？分三个层次梳理，每条内容均附一手来源和核对日期。
 :::
 
 ::: {.autorin}
@@ -19,83 +21,115 @@ title-block-banner: false
 :::
 :::
 
-::: {.kennzahlen-leiste}
+::: {.kennzahlen-leiste .ziel-leiste}
 ::: {}
-[−90 %]{.zahl}
-[欧盟 2040 年温室气体净减排目标（相对 1990 年）]{.was}
-:::
-::: {}
-[50 t]{.zahl}
-[CBAM 每个进口商每年的质量门槛]{.was}
+[2050]{.zahl}
+[欧盟 · 净零，写入法律]{.was}
 :::
 ::: {}
-[3]{.zahl}
-[全国碳市场新纳入行业：钢铁、水泥、铝冶炼]{.was}
+[2045]{.zahl}
+[德国 · 温室气体净中和，写入法律]{.was}
 :::
 ::: {}
-[2028]{.zahl}
-[ETS2 启动，覆盖建筑与道路交通]{.was}
+[2060]{.zahl}
+[中国 · 碳中和，政策文件]{.was}
 :::
 :::
 
-::: {.zweispaltig}
+[中和目标 · [目标对比 →](ziele/index.qmd)]{.leiste-link}
 
-::: {.termine}
-[即将到来]{.eyebrow}
+[总览]{.eyebrow}
 
-## 关键时间节点
+## 从目标到排放 {.cockpit-titel}
 
-- [2027.02.01]{.datum} CBAM 证书开始出售
-- [2027.09.30]{.datum} 首份 CBAM 年度申报（针对 2026 年）
-- [2028]{.datum} ETS2 启动
+::: {.cockpit}
 
-[完整时间轴 →](wissen/index.qmd)
-:::
+::: {.ebene}
+[1]{.nr}
 
-::: {}
-[内容]{.eyebrow}
+### [目标与法律框架](ziele/index.qmd)
 
-## 从目标到排放
+[承诺了什么？]{.frage}
 
-::: {.karten}
+《欧洲气候法》、德国《联邦气候保护法》与中国“双碳”目标：目标年份、中期目标与约束力。
 
-::: {.karte}
-### [1 · 目标](ziele/index.qmd)
-欧盟、德国和中国的净零目标：目标年份、中期目标与约束力。
+- [气候目标对比](ziele/index.qmd)
 
 [新]{.status}
 :::
 
-::: {.karte}
-### [2 · 政策工具与落实](wissen/index.qmd)
-碳定价（中国碳市场、欧盟碳市场、ETS2/BEHG）以及两国风电和光伏的建设进展。
+::: {.ebene}
+[2]{.nr}
+
+### [政策工具与落实](wissen/index.qmd)
+
+[用什么去实现？]{.frage}
+
+两国的碳定价机制，以及可再生能源的建设进展。
+
+- [中国全国碳市场](wissen/china-ets.qmd)
+- [欧盟碳市场、ETS2 与德国 BEHG](wissen/eu-ets.qmd)
+- [可再生能源：德国与中国](daten/index.qmd)
 
 [建设中]{.status}
 :::
 
-::: {.karte}
-### [3 · 排放](wissen/emissionen-de.qmd)
-温室气体排放的实际变化——德国分部门数据，中国数据待补充。
+::: {.ebene}
+[3]{.nr}
+
+### [排放](wissen/emissionen-de.qmd)
+
+[实际发生了什么？]{.frage}
+
+温室气体排放的变化——总量与分部门。
+
+- [德国温室气体看板](wissen/emissionen-de.qmd)
 
 [德国已上线 · 中国计划中]{.status}
 :::
 
-::: {.karte}
-### [专题 · CBAM](wissen/cbam.qmd)
-碳边境调节机制对中国出口产品意味着什么，以及中国碳价何时可以抵扣。
+::: {.ebene .dossier}
+[专]{.nr}
+
+### [专题：CBAM 与中国](wissen/cbam.qmd)
+
+[对供应链意味着什么？]{.frage}
+
+碳边境调节机制把欧盟碳价延伸到进口产品，并可抵扣在中国已支付的碳价。
+
+- [CBAM 基础](wissen/cbam.qmd)
+- [中国碳市场 ↔ CBAM 接口](wissen/schnittstellen.qmd)
 
 [专题]{.status}
 :::
 
 :::
-:::
 
+::: {.zweispaltig .unten}
+
+::: {.termine}
+[即将到来]{.eyebrow}
+
+## 下一批里程碑
+
+- [2027.02.01]{.datum} 欧盟：CBAM 证书开始出售
+- [2028]{.datum} 欧盟：ETS2 启动，覆盖建筑与交通
+- [2030]{.datum} 中国：碳达峰 · 德国：−65% · 欧盟：−55%
+- [2035]{.datum} 中国：温室气体净排放比峰值下降 7%–10%
+
+[2060 年前全部里程碑 →](ziele/index.qmd)
 :::
 
 ::: {.leitgedanke}
-## 为什么做这个网站？
+## 为什么做这个对比？
 
-德国和欧盟的企业越来越多地面对一类问题：只有同时了解**两套**监管体系才能回答——例如中国碳市场与 CBAM 如何相互作用。本站汇集相关法律文本和数据，可追溯，并注明核对日期。
+德国和中国都设定了雄心勃勃的气候目标，但手段差别很大：一边是法律和碳价，另一边是五年规划和强度目标。通过供应链和碳边境调节机制，两套体系的联系越来越紧密。本站把两者并列呈现：可追溯，附一手来源和核对日期。
 
 [→ 我如何选择和引用来源](quellen.qmd)
+:::
+
+:::
+
+::: {.mehr-leiste}
+[项目](projekte/index.qmd) · [关于我](ueber-mich.qmd) · [来源与方法](quellen.qmd)
 :::

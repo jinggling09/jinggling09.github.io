@@ -1,17 +1,19 @@
 ---
-pagetitle: "Jing Hu · Climate & Carbon Markets"
+pagetitle: "Jing Hu · Climate action compared"
 page-layout: full
 toc: false
 title-block-banner: false
 ---
 
 ::: {.hero}
-[Knowledge base · China ↔ EU/Germany]{.eyebrow}
+[Knowledge base · Germany ↔ China]{.eyebrow}
 
-# Carbon markets, CBAM and the energy transition between China and Europe
+# Climate action compared: Germany & China
+
+[within the EU climate policy framework]{.hero-sub}
 
 ::: {.lead}
-How China's emissions trading scheme, the EU ETS and the carbon border adjustment interact — clearly explained, every statement backed by a primary source and a "last checked" date.
+What have both countries committed to, which instruments are meant to deliver it – and what has actually happened? Three levels, every statement backed by a primary source and a "last checked" date.
 :::
 
 ::: {.autorin}
@@ -19,83 +21,115 @@ By **Jing Hu** · Environmental scientist, Stuttgart · [About me →](ueber-mic
 :::
 :::
 
-::: {.kennzahlen-leiste}
+::: {.kennzahlen-leiste .ziel-leiste}
 ::: {}
-[−90 %]{.zahl}
-[EU net GHG target for 2040 compared with 1990]{.was}
-:::
-::: {}
-[50 t]{.zahl}
-[CBAM mass threshold per importer and year]{.was}
+[2050]{.zahl}
+[EU · net zero, in law]{.was}
 :::
 ::: {}
-[3]{.zahl}
-[new sectors in China's ETS: steel, cement, aluminium]{.was}
+[2045]{.zahl}
+[Germany · net GHG neutral, in law]{.was}
 :::
 ::: {}
-[2028]{.zahl}
-[Start of ETS2 for buildings and road transport]{.was}
+[2060]{.zahl}
+[China · carbon neutral, policy document]{.was}
 :::
 :::
 
-::: {.zweispaltig}
+[Neutrality targets · [Targets compared →](ziele/index.qmd)]{.leiste-link}
 
-::: {.termine}
-[Coming up]{.eyebrow}
+[Overview]{.eyebrow}
 
-## Key dates
+## From targets to tonnes {.cockpit-titel}
 
-- [01.02.2027]{.datum} Sale of CBAM certificates begins
-- [30.09.2027]{.datum} First annual CBAM declaration (for 2026)
-- [2028]{.datum} ETS2 starts
+::: {.cockpit}
 
-[Full timeline →](wissen/index.qmd#timeline)
-:::
+::: {.ebene}
+[1]{.nr}
 
-::: {}
-[Contents]{.eyebrow}
+### [Targets & legal framework](ziele/index.qmd)
 
-## From targets to tonnes
+[What has been promised?]{.frage}
 
-::: {.karten}
+The European Climate Law, Germany's Climate Protection Act and China's "dual carbon" goals – target years, interim goals and legal force.
 
-::: {.karte}
-### [1 · Targets](ziele/index.qmd)
-Net-zero targets of the EU, Germany and China: target years, interim goals, legal force.
+- [Climate targets compared](ziele/index.qmd)
 
 [New]{.status}
 :::
 
-::: {.karte}
-### [2 · Instruments & implementation](wissen/index.qmd)
-Carbon prices (China ETS, EU ETS, ETS2/BEHG) and the build-out of wind and solar in both countries.
+::: {.ebene}
+[2]{.nr}
+
+### [Instruments & implementation](wissen/index.qmd)
+
+[How is it to be achieved?]{.frage}
+
+Carbon pricing in both countries and the build-out of renewable energy.
+
+- [China's national ETS](wissen/china-ets.qmd)
+- [EU ETS, ETS2 & BEHG](wissen/eu-ets.qmd)
+- [Renewables: Germany & China](daten/index.qmd)
 
 [In progress]{.status}
 :::
 
-::: {.karte}
-### [3 · Emissions](wissen/emissionen-de.qmd)
-How greenhouse gas emissions actually develop – Germany by sector, China to follow.
+::: {.ebene}
+[3]{.nr}
+
+### [Emissions](wissen/emissionen-de.qmd)
+
+[What has actually happened?]{.frage}
+
+How greenhouse gas emissions develop – in total and by sector.
+
+- [GHG dashboard Germany](wissen/emissionen-de.qmd)
 
 [DE live · CN planned]{.status}
 :::
 
-::: {.karte}
-### [Dossier · CBAM](wissen/cbam.qmd)
-What the carbon border adjustment means for imports from China – and when a Chinese carbon price can be deducted.
+::: {.ebene .dossier}
+[D]{.nr}
+
+### [Dossier: CBAM & China](wissen/cbam.qmd)
+
+[What does it mean for supply chains?]{.frage}
+
+The carbon border adjustment extends the EU carbon price to imports – and deducts a carbon price already paid in China.
+
+- [CBAM – the basics](wissen/cbam.qmd)
+- [Interface China ↔ CBAM](wissen/schnittstellen.qmd)
 
 [Dossier]{.status}
 :::
 
 :::
-:::
 
+::: {.zweispaltig .unten}
+
+::: {.termine}
+[Coming up]{.eyebrow}
+
+## Next milestones
+
+- [01.02.2027]{.datum} EU: sale of CBAM certificates begins
+- [2028]{.datum} EU: ETS2 starts for buildings and transport
+- [2030]{.datum} China: CO₂ peak · Germany: −65 % · EU: −55 %
+- [2035]{.datum} China: net GHG −7 to −10 % below peak
+
+[All milestones to 2060 →](ziele/index.qmd#milestones-to-2060)
 :::
 
 ::: {.leitgedanke}
-## Why this site?
+## Why this comparison?
 
-Companies in Germany and the EU increasingly face questions that can only be answered with knowledge of **both** regulatory worlds — for example, how China's emissions trading scheme interacts with CBAM. This site brings together the legal texts and data, traceable and with a "last checked" date.
+Germany and China pursue ambitious climate targets with very different tools – law and carbon prices in one, five-year plans and intensity targets in the other. Through supply chains and the carbon border adjustment, the two systems are increasingly connected. This site sets them side by side: traceable, with primary sources and dates.
 
 [→ How I select and cite sources](quellen.qmd)
+:::
+
+:::
+
+::: {.mehr-leiste}
+[Projects](projekte/index.qmd) · [About me](ueber-mich.qmd) · [Sources & method](quellen.qmd)
 :::
