@@ -72,7 +72,9 @@ format:
     smooth-scroll: true
     link-external-newwindow: true
     link-external-filter: '^(?:http:|https:)\/\/jinggling09\.github\.io\/'
-    include-after-body: ../_includes/lang-switch.html
+    include-after-body:
+      - ../_includes/lang-switch.html
+      - ../_includes/literatur-toggle.html
     citations-hover: true
     reference-location: margin
 

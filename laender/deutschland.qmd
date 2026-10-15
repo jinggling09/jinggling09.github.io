@@ -179,7 +179,7 @@ Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 
 
 Die sechs Rollen im Einzelnen:
 
-::: {.governance}
+::: {.governance .de}
 
 ::: {.rolle}
 [Ziele festlegen]{.frage}
