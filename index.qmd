@@ -55,29 +55,36 @@ Von **Jing Hu** · Umweltwissenschaftlerin, Stuttgart · [Über mich →](ueber-
 ::: {}
 [Inhalte]{.eyebrow}
 
-## Module & Projekte
+## Vom Ziel zur Emission
 
 ::: {.karten}
 
 ::: {.karte}
-### [Modul 1 · CO₂-Märkte & CBAM](wissen/index.qmd)
-Chinas nationaler Emissionshandel, EU-ETS, ETS 2/BEHG und der CO₂-Grenzausgleich — und wo sie sich berühren.
+### [1 · Ziele](ziele/index.qmd)
+Netto-null-Ziele von EU, Deutschland und China: Zieljahre, Zwischenziele, Verbindlichkeit.
+
+[Neu]{.status}
+:::
+
+::: {.karte}
+### [2 · Instrumente & Umsetzung](wissen/index.qmd)
+CO₂-Preise (China-ETS, EU-ETS, ETS 2/BEHG) und der Ausbau von Wind und Solar in beiden Ländern.
 
 [Im Aufbau]{.status}
 :::
 
 ::: {.karte}
-### [Modul 2 · Erneuerbare im Vergleich](daten/index.qmd)
-Wind, Solar und Geothermie in Deutschland und China — monatlich automatisch aktualisiert.
+### [3 · Emissionen](wissen/emissionen-de.qmd)
+Wie sich die Treibhausgasemissionen tatsächlich entwickeln – Deutschland nach Sektoren, China folgt.
 
-[DE monatlich · CN jährlich]{.status}
+[DE live · CN geplant]{.status}
 :::
 
 ::: {.karte}
-### [Projekte](projekte/index.qmd)
-Klima-Dashboard Deutschland (UBA-Daten) und ein Produkt-CO₂-Fußabdruck-Vergleich mit openLCA.
+### [Dossier · CBAM](wissen/cbam.qmd)
+Was der CO₂-Grenzausgleich für Importe aus China bedeutet – und wann ein chinesischer CO₂-Preis angerechnet wird.
 
-[1 live · 1 in Arbeit]{.status}
+[Dossier]{.status}
 :::
 
 :::

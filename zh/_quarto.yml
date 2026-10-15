@@ -16,29 +16,31 @@ website:
     title: "Jing Hu"
     left:
       - href: index.qmd
-        text: 首页
+        text: "首页"
       - href: ziele/index.qmd
-        text: 目标
-      - text: 知识库
+        text: "目标"
+      - text: "政策工具"
         menu:
           - href: wissen/index.qmd
-            text: "模块一 · 概览与时间轴"
+            text: "概览与时间轴"
           - href: wissen/china-ets.qmd
             text: "中国全国碳市场"
           - href: wissen/eu-ets.qmd
             text: "欧盟碳市场、ETS2 与德国 BEHG"
+          - href: daten/index.qmd
+            text: "可再生能源：德国与中国"
+      - href: wissen/emissionen-de.qmd
+        text: "排放"
+      - text: "CBAM"
+        menu:
           - href: wissen/cbam.qmd
-            text: "碳边境调节机制（CBAM）"
+            text: "CBAM 基础"
           - href: wissen/schnittstellen.qmd
             text: "中国碳市场 ↔ CBAM 接口"
-          - href: wissen/emissionen-de.qmd
-            text: "德国温室气体排放"
-      - href: daten/index.qmd
-        text: 数据
       - href: projekte/index.qmd
-        text: 项目
+        text: "项目"
       - href: ueber-mich.qmd
-        text: 关于我
+        text: "关于我"
     right:
       - href: quellen.qmd
         text: 来源与方法

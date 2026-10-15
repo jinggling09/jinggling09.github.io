@@ -1,5 +1,5 @@
 ---
-title: "Module 1 · Carbon markets & CBAM: China ↔ EU/Germany"
+title: "Instruments & implementation: overview and timeline"
 ---
 
 ::: {.stand}

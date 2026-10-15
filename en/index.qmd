@@ -55,29 +55,36 @@ By **Jing Hu** · Environmental scientist, Stuttgart · [About me →](ueber-mic
 ::: {}
 [Contents]{.eyebrow}
 
-## Modules & projects
+## From targets to tonnes
 
 ::: {.karten}
 
 ::: {.karte}
-### [Module 1 · Carbon markets & CBAM](wissen/index.qmd)
-China's national emissions trading scheme, the EU ETS, ETS2/BEHG and the carbon border adjustment — and where they meet.
+### [1 · Targets](ziele/index.qmd)
+Net-zero targets of the EU, Germany and China: target years, interim goals, legal force.
+
+[New]{.status}
+:::
+
+::: {.karte}
+### [2 · Instruments & implementation](wissen/index.qmd)
+Carbon prices (China ETS, EU ETS, ETS2/BEHG) and the build-out of wind and solar in both countries.
 
 [In progress]{.status}
 :::
 
 ::: {.karte}
-### [Module 2 · Renewables compared](daten/index.qmd)
-Wind, solar and geothermal in Germany and China — updated automatically.
+### [3 · Emissions](wissen/emissionen-de.qmd)
+How greenhouse gas emissions actually develop – Germany by sector, China to follow.
 
-[DE monthly · CN yearly]{.status}
+[DE live · CN planned]{.status}
 :::
 
 ::: {.karte}
-### [Projects](projekte/index.qmd)
-Germany climate dashboard (UBA data) and a product carbon footprint comparison in openLCA.
+### [Dossier · CBAM](wissen/cbam.qmd)
+What the carbon border adjustment means for imports from China – and when a Chinese carbon price can be deducted.
 
-[1 live · 1 in progress]{.status}
+[Dossier]{.status}
 :::
 
 :::

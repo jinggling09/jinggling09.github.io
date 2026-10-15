@@ -16,29 +16,31 @@ website:
     title: "Jing Hu"
     left:
       - href: index.qmd
-        text: Home
+        text: "Home"
       - href: ziele/index.qmd
-        text: Targets
-      - text: Knowledge
+        text: "Targets"
+      - text: "Instruments"
         menu:
           - href: wissen/index.qmd
-            text: "Module 1 – Overview & timeline"
+            text: "Overview & timeline"
           - href: wissen/china-ets.qmd
             text: "China's national ETS"
           - href: wissen/eu-ets.qmd
             text: "EU ETS, ETS2 & BEHG"
+          - href: daten/index.qmd
+            text: "Renewables: Germany & China"
+      - href: wissen/emissionen-de.qmd
+        text: "Emissions"
+      - text: "CBAM"
+        menu:
           - href: wissen/cbam.qmd
-            text: "CBAM"
+            text: "CBAM – the basics"
           - href: wissen/schnittstellen.qmd
             text: "Interface China ↔ CBAM"
-          - href: wissen/emissionen-de.qmd
-            text: "GHG emissions in Germany"
-      - href: daten/index.qmd
-        text: Data
       - href: projekte/index.qmd
-        text: Projects
+        text: "Projects"
       - href: ueber-mich.qmd
-        text: About
+        text: "About"
     right:
       - href: quellen.qmd
         text: Sources & method

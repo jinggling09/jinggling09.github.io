@@ -55,29 +55,36 @@ title-block-banner: false
 ::: {}
 [内容]{.eyebrow}
 
-## 模块与项目
+## 从目标到排放
 
 ::: {.karten}
 
 ::: {.karte}
-### [模块一 · 碳市场与 CBAM](wissen/index.qmd)
-中国全国碳市场、欧盟碳排放交易体系、ETS2 与德国 BEHG，以及碳边境调节机制——它们之间如何衔接。
+### [1 · 目标](ziele/index.qmd)
+欧盟、德国和中国的净零目标：目标年份、中期目标与约束力。
+
+[新]{.status}
+:::
+
+::: {.karte}
+### [2 · 政策工具与落实](wissen/index.qmd)
+碳定价（中国碳市场、欧盟碳市场、ETS2/BEHG）以及两国风电和光伏的建设进展。
 
 [建设中]{.status}
 :::
 
 ::: {.karte}
-### [模块二 · 可再生能源对比](daten/index.qmd)
-德国与中国的风电、光伏和地热——数据自动更新。
+### [3 · 排放](wissen/emissionen-de.qmd)
+温室气体排放的实际变化——德国分部门数据，中国数据待补充。
 
-[德国按月 · 中国按年]{.status}
+[德国已上线 · 中国计划中]{.status}
 :::
 
 ::: {.karte}
-### [项目](projekte/index.qmd)
-德国气候数据看板（UBA 数据），以及基于 openLCA 的产品碳足迹对比。
+### [专题 · CBAM](wissen/cbam.qmd)
+碳边境调节机制对中国出口产品意味着什么，以及中国碳价何时可以抵扣。
 
-[已上线 1 个 · 进行中 1 个]{.status}
+[专题]{.status}
 :::
 
 :::
