@@ -86,9 +86,10 @@ The European Climate Law, Germany's Climate Protection Act and China's "dual car
 
 [What has actually happened?]{.frage}
 
-How greenhouse gas emissions develop – in total and by sector.
+How greenhouse gas emissions develop – in total, by sector and in the power sector.
 
 - [GHG dashboard Germany](wissen/emissionen-de.qmd)
+- [Power sector: CO₂ per kilowatt-hour, DE & CN](wissen/stromsektor.qmd)
 
 [DE live · CN planned]{.status}
 :::

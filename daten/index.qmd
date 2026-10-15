@@ -25,6 +25,8 @@ md`Daten Deutschland: Energy-Charts (Fraunhofer ISE), abgerufen am ${meta.abgeru
 
 Der deutsche Teil wird monatlich automatisch aus der [Energy-Charts-API](https://api.energy-charts.info/) des Fraunhofer ISE aktualisiert. Für China gibt es keine öffentliche Schnittstelle; die Jahreswerte stammen aus den Statistikkommuniqués des Nationalen Statistikamts und werden nach jeder Neuerscheinung (Ende Februar) ergänzt – mit Originallink je Wert.
 
+[Welche Wirkung hat der Ausbau? → [Stromsektor: CO₂ je Kilowattstunde](../wissen/stromsektor.qmd)]{.ebenen-pfad}
+
 ## Deutschland: Installierte Leistung und Ausbaupfad
 
 Durchgezogene Linien zeigen den Bestand, gestrichelte Linien und Kreise den gesetzlichen Ausbaupfad (EEG 2023 für Wind an Land und Photovoltaik; für Wind auf See nennt das WindSeeG nur das Ziel 2030), wie ihn Energy-Charts ausweist. Photovoltaik als Modulleistung (DC). Der Wert des laufenden Jahres ist ein Zwischenstand.

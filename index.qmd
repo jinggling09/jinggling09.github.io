@@ -86,9 +86,10 @@ EU-Klimagesetz, Bundes-Klimaschutzgesetz und Chinas „Dual-Carbon“-Ziele mit 
 
 [Was ist tatsächlich passiert?]{.frage}
 
-Entwicklung der Treibhausgasemissionen – gesamt und nach Sektoren.
+Entwicklung der Treibhausgasemissionen – gesamt, nach Sektoren und im Stromsektor.
 
 - [THG-Dashboard Deutschland](wissen/emissionen-de.qmd)
+- [Stromsektor: CO₂ je Kilowattstunde, DE & CN](wissen/stromsektor.qmd)
 
 [DE live · CN geplant]{.status}
 :::

@@ -1,0 +1,60 @@
+---
+title: "电力部门：每千瓦时电含多少二氧化碳？"
+subtitle: "风电和光伏建设带来了什么——中德对比"
+---
+
+::: {.stand}
+核对日期：2026 年 10 月 15 日
+:::
+
+[第 3 层（共 3 层）· [目标](../ziele/index.qmd) → [政策工具与落实](index.qmd) → 排放]{.ebenen-pfad}
+
+第 2 层展示了[风电和光伏建了多少](../daten/index.qmd)。效果如何，要看这里：每发一千瓦时电排放多少二氧化碳。
+
+## 每千瓦时电的二氧化碳排放
+
+::: {.kennzahlen-leiste .ziel-leiste .strom-leiste}
+::: {}
+[−55%]{.zahl}
+[德国 1990 → 2025 年：从 765 降至 344 克/千瓦时]{.was}
+:::
+::: {}
+[−5%]{.zahl}
+[中国 2021 → 2023 年：从 557 降至 531 克/千瓦时]{.was}
+:::
+:::
+
+```{=html}
+<svg class="strom-chart" viewBox="0 0 680 330" role="img" aria-label="折线图：德国 1990–2025 年与中国 2021–2023 年电力二氧化碳排放因子"><line class="grid" x1="52" x2="560" y1="294.0" y2="294.0"/><text class="tick" x="44" y="298.0" text-anchor="end">0</text><line class="grid" x1="52" x2="560" y1="228.0" y2="228.0"/><text class="tick" x="44" y="232.0" text-anchor="end">200</text><line class="grid" x1="52" x2="560" y1="162.0" y2="162.0"/><text class="tick" x="44" y="166.0" text-anchor="end">400</text><line class="grid" x1="52" x2="560" y1="96.0" y2="96.0"/><text class="tick" x="44" y="100.0" text-anchor="end">600</text><line class="grid" x1="52" x2="560" y1="30.0" y2="30.0"/><text class="tick" x="44" y="34.0" text-anchor="end">800</text><text class="tick" x="52.0" y="318" text-anchor="middle">1990</text><text class="tick" x="193.1" y="318" text-anchor="middle">2000</text><text class="tick" x="334.2" y="318" text-anchor="middle">2010</text><text class="tick" x="475.3" y="318" text-anchor="middle">2020</text><text class="tick" x="44" y="28" text-anchor="end"></text><polyline class="linie de" points="52.0,41.5 193.1,80.8 263.7,91.4 334.2,109.5 404.8,119.4 447.1,137.9 461.2,159.0 475.3,173.5 489.4,160.0 503.6,151.1 517.7,168.9 531.8,177.5 545.9,180.5"/><circle class="punkt de" cx="52.0" cy="41.5" r="3.2"><title>1990: 765 g/kWh</title></circle><circle class="punkt de" cx="193.1" cy="80.8" r="3.2"><title>2000: 646 g/kWh</title></circle><circle class="punkt de" cx="263.7" cy="91.4" r="3.2"><title>2005: 614 g/kWh</title></circle><circle class="punkt de" cx="334.2" cy="109.5" r="3.2"><title>2010: 559 g/kWh</title></circle><circle class="punkt de" cx="404.8" cy="119.4" r="3.2"><title>2015: 529 g/kWh</title></circle><circle class="punkt de" cx="447.1" cy="137.9" r="3.2"><title>2018: 473 g/kWh</title></circle><circle class="punkt de" cx="461.2" cy="159.0" r="3.2"><title>2019: 409 g/kWh</title></circle><circle class="punkt de" cx="475.3" cy="173.5" r="3.2"><title>2020: 365 g/kWh</title></circle><circle class="punkt de" cx="489.4" cy="160.0" r="3.2"><title>2021: 406 g/kWh</title></circle><circle class="punkt de" cx="503.6" cy="151.1" r="3.2"><title>2022: 433 g/kWh</title></circle><circle class="punkt de" cx="517.7" cy="168.9" r="3.2"><title>2023: 379 g/kWh</title></circle><circle class="punkt de" cx="531.8" cy="177.5" r="3.2"><title>2024: 353 g/kWh</title></circle><circle class="punkt de" cx="545.9" cy="180.5" r="3.2"><title>2025: 344 g/kWh</title></circle><polyline class="linie cn" points="489.4,110.2 503.6,116.8 517.7,118.8"/><circle class="punkt cn" cx="489.4" cy="110.2" r="3.2"><title>2021: 557 g/kWh</title></circle><circle class="punkt cn" cx="503.6" cy="116.8" r="3.2"><title>2022: 537 g/kWh</title></circle><circle class="punkt cn" cx="517.7" cy="118.8" r="3.2"><title>2023: 531 g/kWh</title></circle><text class="label de" x="553.9" y="184.5">德国 344</text><text class="label cn" x="553.9" y="122.8">中国 531 (2023)</text><text class="einheit" x="44" y="12" text-anchor="start">克 CO₂/千瓦时</text></svg>
+```
+
+[单位：克二氧化碳/千瓦时；指每千瓦时电的直接二氧化碳排放，不含上游排放。德国：联邦环境署（UBA），2024 年为初步值，2025 年为估算值 [@uba_strommix_2026]。中国：生态环境部与国家统计局发布的全国电力平均二氧化碳排放因子，目前已发布 2021–2023 年 [@mee_ef_2021; @mee_ef_2022; @mee_ef_2023]。]{.legende-art}
+
+| 年份 | 德国 | 中国 |
+|---|---|---|
+| 1990 | 765 | – |
+| 2010 | 559 | – |
+| 2020 | 365 | – |
+| 2021 | 406 | 557 |
+| 2022 | 433 | 537 |
+| 2023 | 379 | 531 |
+| 2024 | 353（初步值） | 尚未发布 |
+| 2025 | 344（估算值） | 尚未发布 |
+
+## 可再生能源避免的排放
+
+德国联邦环境署每年计算可再生能源避免了多少排放：**2025 年为 2.65 亿吨二氧化碳当量**，其中约 **78% 来自电力部门** [@uba_vermiedene_2026]。
+
+中国目前没有类似的官方核算，本站因此不自行估算。
+
+## 对比时需要注意
+
+::: {.einordnung}
+**相近，但不完全相同。** 两组数据都是每千瓦时电的直接二氧化碳排放，不含上游排放。德国数值针对德国国内发电、可供终端消费的电量；中国因子是用于基于位置核算（如企业温室气体核算）的全国平均因子。
+
+**模型而非实测。** “避免的排放”是模型计算：假设如果没有可再生能源，会由哪些化石电厂发电。这无法直接测量。
+
+**时间滞后。** 中国的排放因子大约滞后两年发布，2023 年数值于 2025 年底公布。
+
+**德国数值为何在 2021–2022 年上升：** 这两年燃煤发电增加——2021 年风力偏弱，2022 年能源危机期间用煤替代天然气。
+:::

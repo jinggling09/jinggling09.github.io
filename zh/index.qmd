@@ -86,9 +86,10 @@ title-block-banner: false
 
 [实际发生了什么？]{.frage}
 
-温室气体排放的变化——总量与分部门。
+温室气体排放的变化——总量、分部门与电力部门。
 
 - [德国温室气体看板](wissen/emissionen-de.qmd)
+- [电力部门：每千瓦时碳排放，中德对比](wissen/stromsektor.qmd)
 
 [德国已上线 · 中国计划中]{.status}
 :::

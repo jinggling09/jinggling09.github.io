@@ -26,6 +26,8 @@ md`德国数据：Energy-Charts（Fraunhofer ISE），获取日期 ${meta.abgeru
 
 德国数据每月通过弗劳恩霍夫太阳能系统研究所的 [Energy-Charts 接口](https://api.energy-charts.info/) 自动更新。中国没有公开数据接口，年度数据取自国家统计局历年统计公报，每年新公报发布（2 月底）后补充，每个数值都附原文链接。
 
+[建设带来了什么效果？→ [电力部门：每千瓦时碳排放](../wissen/stromsektor.qmd)]{.ebenen-pfad}
+
 ## 德国：装机容量与扩建目标路径
 
 实线为已装机容量，虚线和圆点为法定扩建目标路径（陆上风电和光伏依据《可再生能源法》EEG 2023；海上风电依据《海上风电法》WindSeeG，仅规定了 2030 年目标），数据取自 Energy-Charts。光伏按组件容量（直流）计。当年数值为阶段性数据。

@@ -1,0 +1,60 @@
+---
+title: "Stromsektor: Wie viel CO₂ steckt in einer Kilowattstunde?"
+subtitle: "Was der Ausbau von Wind und Sonne bewirkt – Deutschland und China im Vergleich"
+---
+
+::: {.stand}
+Stand: 15.10.2026
+:::
+
+[Ebene 3 von 3 · [Ziele](../ziele/index.qmd) → [Instrumente & Umsetzung](index.qmd) → Emissionen]{.ebenen-pfad}
+
+Auf Ebene 2 steht, wie viel [Wind- und Solarleistung gebaut](../daten/index.qmd) wird. Ob das wirkt, zeigt sich hier: an den CO₂-Emissionen je erzeugter Kilowattstunde Strom.
+
+## CO₂ je Kilowattstunde
+
+::: {.kennzahlen-leiste .ziel-leiste .strom-leiste}
+::: {}
+[−55 %]{.zahl}
+[Deutschland 1990 → 2025: von 765 auf 344 g CO₂/kWh]{.was}
+:::
+::: {}
+[−5 %]{.zahl}
+[China 2021 → 2023: von 557 auf 531 g CO₂/kWh]{.was}
+:::
+:::
+
+```{=html}
+<svg class="strom-chart" viewBox="0 0 680 330" role="img" aria-label="Liniendiagramm: CO₂-Emissionsfaktor des Stroms in Deutschland 1990–2025 und China 2021–2023"><line class="grid" x1="52" x2="560" y1="294.0" y2="294.0"/><text class="tick" x="44" y="298.0" text-anchor="end">0</text><line class="grid" x1="52" x2="560" y1="228.0" y2="228.0"/><text class="tick" x="44" y="232.0" text-anchor="end">200</text><line class="grid" x1="52" x2="560" y1="162.0" y2="162.0"/><text class="tick" x="44" y="166.0" text-anchor="end">400</text><line class="grid" x1="52" x2="560" y1="96.0" y2="96.0"/><text class="tick" x="44" y="100.0" text-anchor="end">600</text><line class="grid" x1="52" x2="560" y1="30.0" y2="30.0"/><text class="tick" x="44" y="34.0" text-anchor="end">800</text><text class="tick" x="52.0" y="318" text-anchor="middle">1990</text><text class="tick" x="193.1" y="318" text-anchor="middle">2000</text><text class="tick" x="334.2" y="318" text-anchor="middle">2010</text><text class="tick" x="475.3" y="318" text-anchor="middle">2020</text><text class="tick" x="44" y="28" text-anchor="end"></text><polyline class="linie de" points="52.0,41.5 193.1,80.8 263.7,91.4 334.2,109.5 404.8,119.4 447.1,137.9 461.2,159.0 475.3,173.5 489.4,160.0 503.6,151.1 517.7,168.9 531.8,177.5 545.9,180.5"/><circle class="punkt de" cx="52.0" cy="41.5" r="3.2"><title>1990: 765 g/kWh</title></circle><circle class="punkt de" cx="193.1" cy="80.8" r="3.2"><title>2000: 646 g/kWh</title></circle><circle class="punkt de" cx="263.7" cy="91.4" r="3.2"><title>2005: 614 g/kWh</title></circle><circle class="punkt de" cx="334.2" cy="109.5" r="3.2"><title>2010: 559 g/kWh</title></circle><circle class="punkt de" cx="404.8" cy="119.4" r="3.2"><title>2015: 529 g/kWh</title></circle><circle class="punkt de" cx="447.1" cy="137.9" r="3.2"><title>2018: 473 g/kWh</title></circle><circle class="punkt de" cx="461.2" cy="159.0" r="3.2"><title>2019: 409 g/kWh</title></circle><circle class="punkt de" cx="475.3" cy="173.5" r="3.2"><title>2020: 365 g/kWh</title></circle><circle class="punkt de" cx="489.4" cy="160.0" r="3.2"><title>2021: 406 g/kWh</title></circle><circle class="punkt de" cx="503.6" cy="151.1" r="3.2"><title>2022: 433 g/kWh</title></circle><circle class="punkt de" cx="517.7" cy="168.9" r="3.2"><title>2023: 379 g/kWh</title></circle><circle class="punkt de" cx="531.8" cy="177.5" r="3.2"><title>2024: 353 g/kWh</title></circle><circle class="punkt de" cx="545.9" cy="180.5" r="3.2"><title>2025: 344 g/kWh</title></circle><polyline class="linie cn" points="489.4,110.2 503.6,116.8 517.7,118.8"/><circle class="punkt cn" cx="489.4" cy="110.2" r="3.2"><title>2021: 557 g/kWh</title></circle><circle class="punkt cn" cx="503.6" cy="116.8" r="3.2"><title>2022: 537 g/kWh</title></circle><circle class="punkt cn" cx="517.7" cy="118.8" r="3.2"><title>2023: 531 g/kWh</title></circle><text class="label de" x="553.9" y="184.5">Deutschland 344</text><text class="label cn" x="553.9" y="122.8">China 531 (2023)</text><text class="einheit" x="44" y="12" text-anchor="start">g CO₂/kWh</text></svg>
+```
+
+[Werte in g CO₂/kWh: direkte CO₂-Emissionen je Kilowattstunde, ohne Vorketten. Deutschland: Umweltbundesamt, 2024 vorläufig, 2025 geschätzt [@uba_strommix_2026]. China: amtliche nationale Durchschnittsfaktoren von MEE und Nationalem Statistikamt, bisher für 2021–2023 veröffentlicht [@mee_ef_2021; @mee_ef_2022; @mee_ef_2023].]{.legende-art}
+
+| Jahr | Deutschland | China |
+|---|---|---|
+| 1990 | 765 | – |
+| 2010 | 559 | – |
+| 2020 | 365 | – |
+| 2021 | 406 | 557 |
+| 2022 | 433 | 537 |
+| 2023 | 379 | 531 |
+| 2024 | 353 (vorläufig) | noch nicht veröffentlicht |
+| 2025 | 344 (geschätzt) | noch nicht veröffentlicht |
+
+## Vermiedene Emissionen durch erneuerbare Energien
+
+Für Deutschland berechnet das Umweltbundesamt jährlich, wie viele Emissionen die erneuerbaren Energien vermeiden: **2025 waren es 265 Mio. t CO₂-Äquivalente**, davon rund **78 % im Stromsektor** [@uba_vermiedene_2026].
+
+Für China gibt es keine vergleichbare amtliche Berechnung. Diese Seite schätzt sie deshalb nicht selbst.
+
+## Was beim Vergleich zu beachten ist
+
+::: {.einordnung}
+**Ähnlich, nicht identisch.** Beide Reihen messen direkte CO₂-Emissionen je Kilowattstunde ohne Vorketten. Das Umweltbundesamt bezieht sie auf den in Deutschland erzeugten und für den Endverbrauch verfügbaren Strom. Chinas Faktor ist der amtliche Durchschnittsfaktor für die standortbezogene Bilanzierung (z. B. in Unternehmens-THG-Bilanzen).
+
+**Modell statt Messung.** „Vermiedene Emissionen" sind eine Modellrechnung: Sie unterstellen, welche fossilen Kraftwerke ohne die Erneuerbaren Strom erzeugt hätten. Sie sind nicht direkt messbar.
+
+**Zeitverzug.** China veröffentlicht die Faktoren mit rund zwei Jahren Abstand; der Wert für 2023 erschien Ende 2025.
+
+**Warum der deutsche Wert 2021–2022 stieg:** In diesen Jahren wurde mehr Kohle verstromt – bei schwachem Wind 2021 und als Ersatz für Erdgas während der Energiekrise 2022.
+:::

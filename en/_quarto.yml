@@ -29,8 +29,12 @@ website:
             text: "EU ETS, ETS2 & BEHG"
           - href: daten/index.qmd
             text: "Renewables: Germany & China"
-      - href: wissen/emissionen-de.qmd
-        text: "Emissions"
+      - text: "Emissions"
+        menu:
+          - href: wissen/emissionen-de.qmd
+            text: "GHG dashboard Germany"
+          - href: wissen/stromsektor.qmd
+            text: "Power sector: Germany & China"
       - text: "CBAM"
         menu:
           - href: wissen/cbam.qmd

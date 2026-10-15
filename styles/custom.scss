@@ -483,3 +483,18 @@ html[lang|="zh"] .ebene .frage { font-style: normal; }
   @media (max-width: 420px) { grid-template-columns: 1fr; }
 }
 html[lang|="zh"] .ebene .gruppe { letter-spacing: .04em; }
+
+/* ---------- Ebene 3: Stromsektor-Diagramm ---------- */
+.strom-leiste { margin-bottom: 1.5rem; > div:nth-child(1) .zahl { color: $spur-de; } > div:nth-child(2) .zahl { color: $spur-cn; } }
+.strom-chart {
+  display: block; width: 100%; max-width: 720px; height: auto; margin: .5rem 0 .4rem;
+  .grid { stroke: $linie; stroke-width: 1; }
+  .tick { font-size: 11px; fill: $grau; font-variant-numeric: tabular-nums; }
+  .einheit { font-size: 11px; fill: $grau; }
+  .linie { fill: none; stroke-width: 2.4; stroke-linejoin: round; }
+  .linie.de { stroke: $spur-de; } .linie.cn { stroke: $spur-cn; }
+  .punkt { stroke: $papier; stroke-width: 1.5; }
+  .punkt.de { fill: $spur-de; } .punkt.cn { fill: $spur-cn; }
+  .label { font-size: 12px; font-weight: 600; }
+  .label.de { fill: $spur-de; } .label.cn { fill: $spur-cn; }
+}
