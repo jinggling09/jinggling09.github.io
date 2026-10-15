@@ -12,6 +12,8 @@ project:
   resources:
     - "daten/data/*.csv"
     - "daten/data/*.json"
+    - "images/*"
+    - "dokumente/*"
 
 lang: de
 

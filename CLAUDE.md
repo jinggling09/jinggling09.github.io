@@ -41,6 +41,8 @@ Startseite `index.qmd` = Navigations-Cockpit: Hero mit Klimastreifen → drei Ne
 - Auf DE- und EN-Seiten **keine chinesischen Zeichen** (einzige Ausnahme: „中文“ im Sprachmenü).
 - `zh/references.bib` ist eigenständig (chinesische Originaltitel); DE und EN teilen `references.bib`.
 - Gemeinsam genutzt: `styles/custom.scss`, `daten/data/`.
+- Bilder und Dokumente liegen nur einmal im Stamm (`images/`, `dokumente/`, als `resources` in `_quarto.yml`). Quarto macht aus `/pfad` einen projektrelativen Pfad → in `en/` und `zh/` immer `../images/…` bzw. `../dokumente/…` schreiben.
+- Über mich (Variante B, von Jing gewählt): Kopf mit Foto + Knöpfen (LinkedIn, E-Mail, Masterarbeit, GitHub), Schwerpunkte, Zeitleisten Beruf/Bildung, Karten Fähigkeiten/Sprachen/Zertifikate. Zeugnis/Diplom bewusst nicht veröffentlicht (Unterschriften); Lebenslauf-PDF vorerst nicht.
 
 ## Daten-Pipeline
 
