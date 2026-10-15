@@ -8,7 +8,7 @@ Last checked: 13 Oct 2026
 
 ## Overview
 
-China's national emissions trading scheme (全国碳排放权交易市场) started trading in July 2021, covering the power sector [@mee_qa_2025]. It is administered by the Ministry of Ecology and Environment (MEE).
+China's national emissions trading scheme started trading in July 2021, covering the power sector [@mee_qa_2025]. It is administered by the Ministry of Ecology and Environment (MEE).
 
 ## 2025 extension: steel, cement, aluminium
 

@@ -41,7 +41,7 @@ All three have a long-term "net zero" or neutrality goal. They differ in **when*
 ```
 [China]{.wer}
 [2060]{.jahr}
-[Carbon neutrality (碳中和) before 2060; CO₂ emissions peak before 2030]{.was}
+[Carbon neutrality before 2060; CO₂ emissions peak before 2030]{.was}
 [Policy document]{.status-chip .politik} [@cn_yijian_2021]
 :::
 

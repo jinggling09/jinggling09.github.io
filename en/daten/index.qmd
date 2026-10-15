@@ -12,7 +12,7 @@ L = ({
   t: {ziel: "target", ausbaupfad: "target path", bestand: "installed", monat: "Month",
       windEnde: "Wind, end of 2025", pvEnde: "Solar PV, end of 2025",
       windFaktor: "Wind: growth factor since 2015", pvFaktor: "Solar PV: growth factor since 2015",
-      jahr: "Year", technologie: "Technology", wertQuelle: "Value in source (万千瓦 = 10 MW)",
+      jahr: "Year", technologie: "Technology", wertQuelle: "Value in source (10 MW)",
       quelle: "Source", kommunique: "Statistical communiqué"}
 })
 ```
@@ -79,7 +79,7 @@ tabelleMonate()
 
 ## Germany and China: installed capacity compared
 
-Year-end values 2015–2025. **China:** statistical communiqués of the National Bureau of Statistics (国家统计局), in each case the first publication in the following year. **Germany:** Energy-Charts, wind = onshore + offshore, solar PV as module capacity (DC). Both in GW, same scale per technology.
+Year-end values 2015–2025. **China:** statistical communiqués of the National Bureau of Statistics (NBS), in each case the first publication in the following year. **Germany:** Energy-Charts, wind = onshore + offshore, solar PV as module capacity (DC). Both in GW, same scale per technology.
 
 ```{ojs}
 //| echo: false
@@ -100,7 +100,7 @@ md`**Electricity generation 2025:** China — wind ${fmt0(cnErz.Wind)} TWh, sola
 ## Points to note when comparing
 
 - **First publication:** The statistics bureau publishes preliminary values. Later revisions only appear in subsequent years; this series deliberately uses the first published value, so that each value maps to exactly one source. Growth rates stated in the communiqué may therefore differ from the difference between two annual values.
-- **Definitions:** Up to 2024 the communiqué refers to "grid-connected" (并网) capacity, in 2025 without this qualifier. The source does not state whether solar PV is reported as DC or AC capacity. The values are therefore comparable in order of magnitude, not to the decimal place.
+- **Definitions:** Up to 2024 the communiqué refers to "grid-connected" capacity, in 2025 without this qualifier. The source does not state whether solar PV is reported as DC or AC capacity. The values are therefore comparable in order of magnitude, not to the decimal place.
 - **Generation:** Chinese generation values come from the energy production table; German values cover only public net generation, excluding industrial self-supply.
 - **Excluding Hong Kong, Macao and Taiwan** (according to the source).
 :::
@@ -123,8 +123,8 @@ tabelleCnQuellen()
 | DE | Fraunhofer ISE – Energy-Charts | scientific, API, CC BY 4.0 | **live** |
 | DE | Federal Network Agency – SMARD | official, cross-check | planned |
 | DE | AGEE-Stat / German Environment Agency | official, annual values incl. geothermal heat | planned |
-| CN | National Bureau of Statistics (国家统计局) – statistical communiqué | official, annual values, maintained manually | **live** |
-| CN | National Energy Administration (国家能源局, NEA) | official, monthly releases | planned |
+| CN | National Bureau of Statistics (NBS) – statistical communiqué | official, annual values, maintained manually | **live** |
+| CN | National Energy Administration (NEA) | official, monthly releases | planned |
 | both | Ember | secondary source, for cross-checking only | planned |
 
 ## Methodological notes
