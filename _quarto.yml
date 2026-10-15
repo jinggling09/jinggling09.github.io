@@ -4,6 +4,7 @@ project:
   # Deutsch im Stammverzeichnis; en/ und zh/ sind eigene Quarto-Projekte (siehe scripts/build.sh)
   render:
     - "*.qmd"
+    - "ziele/*.qmd"
     - "wissen/*.qmd"
     - "daten/*.qmd"
     - "projekte/*.qmd"
@@ -26,6 +27,8 @@ website:
     left:
       - href: index.qmd
         text: Start
+      - href: ziele/index.qmd
+        text: Ziele
       - text: Wissen
         menu:
           - href: wissen/index.qmd

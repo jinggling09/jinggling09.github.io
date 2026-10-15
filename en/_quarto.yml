@@ -17,6 +17,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: ziele/index.qmd
+        text: Targets
       - text: Knowledge
         menu:
           - href: wissen/index.qmd

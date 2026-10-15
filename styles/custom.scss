@@ -318,3 +318,85 @@ html[lang|="zh"] .eyebrow, html[lang|="zh"] .karte .status { letter-spacing: .04
   .navbar .lang-mini { order: 4; margin-left: .25rem; }
   .navbar #quarto-search { order: 5; margin-left: 0; }
 }
+
+/* ---------- Ebene 1: Ziele ---------- */
+$spur-eu: #3c5a8a;
+$spur-de: $gruen;
+$spur-cn: #b0412e;
+
+.quarto-title .subtitle { color: $grau; font-size: 1.15rem; margin-top: .3rem; }
+
+.ebenen-pfad {
+  display: block;
+  font-size: .85rem;
+  color: $grau;
+  margin: -.4rem 0 1.4rem;
+  a { color: $grau; }
+}
+
+.zielkarten {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+.zielkarte {
+  background: #fff;
+  border: 1px solid $linie;
+  border-top: 4px solid $grau;
+  border-radius: 4px;
+  padding: 1rem 1.2rem 1.1rem;
+  &.eu { border-top-color: $spur-eu; .jahr { color: $spur-eu; } }
+  &.de { border-top-color: $spur-de; .jahr { color: $spur-de; } }
+  &.cn { border-top-color: $spur-cn; .jahr { color: $spur-cn; } }
+  .wer { display: block; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: $grau; }
+  .jahr { display: block; font-family: $headings-font-family; font-size: 2.5rem; line-height: 1.1; margin: .3rem 0 .4rem; font-variant-numeric: tabular-nums; }
+  .was { display: block; font-size: .95rem; line-height: 1.45; margin-bottom: .7rem; min-height: 2.8em; }
+  p { margin: 0; font-size: .85rem; color: $grau; }
+}
+
+.status-chip {
+  display: inline-block;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: .1rem .6rem;
+  margin-right: .3rem;
+  &.gesetz  { background: $gruen-hell; color: $gruen; }
+  &.politik { background: #fbf0dc; color: #8a5d12; }
+}
+
+.spur {
+  display: inline-flex; align-items: center; gap: .4rem;
+  &::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: $grau; }
+  &.eu::before { background: $spur-eu; }
+  &.de::before { background: $spur-de; }
+  &.cn::before { background: $spur-cn; }
+}
+html[lang|="zh"] .spur, html[lang|="zh"] .status-chip { letter-spacing: .02em; }
+
+.meilensteine table, .nzt-tabelle table {
+  table-layout: fixed;
+  width: 100%;
+  td { vertical-align: top; font-size: .9rem; line-height: 1.45; }
+  td:first-child, th:first-child { width: 4.5rem; }
+}
+.meilensteine td:not(:first-child):empty::after { content: "–"; color: #b5bdb8; }
+.nzt-tabelle table td:first-child, .nzt-tabelle table th:first-child { width: 30%; color: $grau; }
+.stand { display: block; width: fit-content; }
+.belege { font-size: .82rem; color: $grau; line-height: 1.5; margin-top: -.4rem; p { margin: 0; } }
+.zielkarte { position: relative; }
+.zielkarte .umriss {
+  position: absolute; top: 1rem; right: 1rem;
+  width: 76px; height: 76px;
+  fill: currentColor; opacity: .3;
+  pointer-events: none;
+}
+.zielkarte.eu .umriss { color: $spur-eu; }
+.zielkarte.de .umriss { color: $spur-de; }
+.zielkarte.cn .umriss { color: $spur-cn; }
+.zielkarte:hover .umriss { opacity: .5; transition: opacity .2s; }
+.zielkarte .umriss { z-index: 0; }
+.zielkarte .wer, .zielkarte .jahr, .zielkarte .was, .zielkarte p { position: relative; z-index: 1; }
