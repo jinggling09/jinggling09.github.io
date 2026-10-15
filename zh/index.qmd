@@ -13,7 +13,7 @@ title-block-banner: false
 [置于欧盟气候政策框架之下]{.hero-sub}
 
 ::: {.lead}
-两国承诺了什么？用哪些政策工具去实现？实际排放又发生了什么变化？分三个层次梳理，每条内容均附一手来源和核对日期。
+两国承诺了什么？用哪些政策工具去实现？实际排放又发生了什么变化？分四个层次梳理，每条内容均附一手来源和核对日期。
 :::
 
 ::: {.autorin}
@@ -61,26 +61,36 @@ title-block-banner: false
 ::: {.ebene}
 [2]{.nr}
 
-### [政策工具与落实](wissen/index.qmd)
+### [政策工具与碳定价](wissen/index.qmd)
 
 [用什么去实现？]{.frage}
 
-[碳定价]{.gruppe}
+中国和欧盟的碳排放交易体系、德国的燃料碳价，以及连接两者的碳边境调节机制。
 
 - [中国全国碳市场](wissen/china-ets.qmd)
 - [欧盟碳市场、ETS2 与德国 BEHG](wissen/eu-ets.qmd)
-
-[可再生能源]{.gruppe}
-
-{{< include daten/data/_ee_start_zh.md >}}
-
-- [装机与发电：德国与中国](daten/index.qmd)
+- [CBAM 基础](wissen/cbam.qmd)
+- [中国碳市场 ↔ CBAM 接口](wissen/schnittstellen.qmd)
 
 [建设中]{.status}
 :::
 
 ::: {.ebene}
 [3]{.nr}
+
+### [可再生能源](daten/index.qmd)
+
+[建了多少？]{.frage}
+
+{{< include daten/data/_ee_start_zh.md >}}
+
+- [装机与发电：德国与中国](daten/index.qmd)
+
+[德国按月 · 中国按年]{.status}
+:::
+
+::: {.ebene}
+[4]{.nr}
 
 ### [排放](wissen/emissionen-de.qmd)
 
@@ -92,21 +102,6 @@ title-block-banner: false
 - [电力部门：每千瓦时碳排放，中德对比](wissen/stromsektor.qmd)
 
 [德国已上线 · 中国计划中]{.status}
-:::
-
-::: {.ebene .dossier}
-[专]{.nr}
-
-### [专题：CBAM 与中国](wissen/cbam.qmd)
-
-[对供应链意味着什么？]{.frage}
-
-碳边境调节机制把欧盟碳价延伸到进口产品，并可抵扣在中国已支付的碳价。
-
-- [CBAM 基础](wissen/cbam.qmd)
-- [中国碳市场 ↔ CBAM 接口](wissen/schnittstellen.qmd)
-
-[专题]{.status}
 :::
 
 :::

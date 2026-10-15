@@ -7,9 +7,9 @@ subtitle: "Was der Ausbau von Wind und Sonne bewirkt – Deutschland und China i
 Stand: 15.10.2026
 :::
 
-[Ebene 3 von 3 · [Ziele](../ziele/index.qmd) → [Instrumente & Umsetzung](index.qmd) → Emissionen]{.ebenen-pfad}
+[Ebene 4 von 4 · [Ziele](../ziele/index.qmd) → [Instrumente](../wissen/index.qmd) → [Erneuerbare](../daten/index.qmd) → Emissionen]{.ebenen-pfad}
 
-Auf Ebene 2 steht, wie viel [Wind- und Solarleistung gebaut](../daten/index.qmd) wird. Ob das wirkt, zeigt sich hier: an den CO₂-Emissionen je erzeugter Kilowattstunde Strom.
+Auf Ebene 3 steht, wie viel [Wind- und Solarleistung gebaut](../daten/index.qmd) wird. Ob das wirkt, zeigt sich hier: an den CO₂-Emissionen je erzeugter Kilowattstunde Strom.
 
 ## CO₂ je Kilowattstunde
 

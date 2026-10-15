@@ -27,20 +27,18 @@ website:
             text: "中国全国碳市场"
           - href: wissen/eu-ets.qmd
             text: "欧盟碳市场、ETS2 与德国 BEHG"
-          - href: daten/index.qmd
-            text: "可再生能源：德国与中国"
+          - href: wissen/cbam.qmd
+            text: "CBAM 基础"
+          - href: wissen/schnittstellen.qmd
+            text: "中国碳市场 ↔ CBAM 接口"
+      - href: daten/index.qmd
+        text: "可再生能源"
       - text: "排放"
         menu:
           - href: wissen/emissionen-de.qmd
             text: "德国温室气体看板"
           - href: wissen/stromsektor.qmd
             text: "电力部门：德国与中国"
-      - text: "CBAM"
-        menu:
-          - href: wissen/cbam.qmd
-            text: "CBAM 基础"
-          - href: wissen/schnittstellen.qmd
-            text: "中国碳市场 ↔ CBAM 接口"
       - href: projekte/index.qmd
         text: "项目"
       - href: ueber-mich.qmd

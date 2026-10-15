@@ -27,20 +27,18 @@ website:
             text: "China's national ETS"
           - href: wissen/eu-ets.qmd
             text: "EU ETS, ETS2 & BEHG"
-          - href: daten/index.qmd
-            text: "Renewables: Germany & China"
+          - href: wissen/cbam.qmd
+            text: "CBAM – the basics"
+          - href: wissen/schnittstellen.qmd
+            text: "Interface China ↔ CBAM"
+      - href: daten/index.qmd
+        text: "Renewables"
       - text: "Emissions"
         menu:
           - href: wissen/emissionen-de.qmd
             text: "GHG dashboard Germany"
           - href: wissen/stromsektor.qmd
             text: "Power sector: Germany & China"
-      - text: "CBAM"
-        menu:
-          - href: wissen/cbam.qmd
-            text: "CBAM – the basics"
-          - href: wissen/schnittstellen.qmd
-            text: "Interface China ↔ CBAM"
       - href: projekte/index.qmd
         text: "Projects"
       - href: ueber-mich.qmd

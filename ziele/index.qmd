@@ -7,7 +7,7 @@ subtitle: "Was EU, Deutschland und China zugesagt haben – und wie verbindlich"
 Stand: 15.10.2026
 :::
 
-[Ebene 1 von 3 · Ziele → [Instrumente & Umsetzung](../wissen/index.qmd) → [Emissionen](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
+[Ebene 1 von 4 · Ziele → [Instrumente](../wissen/index.qmd) → [Erneuerbare](../daten/index.qmd) → [Emissionen](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
 
 Alle drei haben ein Langfristziel „netto null" bzw. Neutralität. Sie unterscheiden sich aber darin, **wann** es erreicht werden soll, **welche Gase** es umfasst, **woran** Zwischenziele gemessen werden – und ob es **gesetzlich einklagbar** ist.
 

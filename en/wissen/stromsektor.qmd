@@ -7,9 +7,9 @@ subtitle: "What the build-out of wind and solar achieves – Germany and China c
 Last checked: 15 Oct 2026
 :::
 
-[Level 3 of 3 · [Targets](../ziele/index.qmd) → [Instruments & implementation](index.qmd) → Emissions]{.ebenen-pfad}
+[Level 4 of 4 · [Targets](../ziele/index.qmd) → [Instruments](../wissen/index.qmd) → [Renewables](../daten/index.qmd) → Emissions]{.ebenen-pfad}
 
-Level 2 shows how much [wind and solar capacity is being built](../daten/index.qmd). Whether it works shows up here: in the CO₂ emissions per kilowatt-hour of electricity generated.
+Level 3 shows how much [wind and solar capacity is being built](../daten/index.qmd). Whether it works shows up here: in the CO₂ emissions per kilowatt-hour of electricity generated.
 
 ## CO₂ per kilowatt-hour
 

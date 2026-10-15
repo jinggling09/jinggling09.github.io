@@ -1,5 +1,5 @@
 ---
-title: "Instruments & implementation: overview and timeline"
+title: "Instruments & carbon pricing: overview and timeline"
 ---
 
 ::: {.stand}

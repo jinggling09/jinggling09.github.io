@@ -7,7 +7,7 @@ subtitle: "欧盟、德国和中国作出了哪些承诺——约束力有多强
 核对日期：2026 年 10 月 15 日
 :::
 
-[第 1 层（共 3 层）· 目标 → [政策工具与落实](../wissen/index.qmd) → [排放](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
+[第 1 层（共 4 层）· 目标 → [政策工具](../wissen/index.qmd) → [可再生能源](../daten/index.qmd) → [排放](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
 
 三方都设定了“净零”或“中和”的长期目标，但在以下几点上不同：**何时**实现、覆盖**哪些气体**、中期目标以**什么为基准**，以及是否具有**法律约束力**。
 

@@ -37,20 +37,18 @@ website:
             text: "Chinas nationaler Emissionshandel"
           - href: wissen/eu-ets.qmd
             text: "EU-ETS, ETS 2 & BEHG"
-          - href: daten/index.qmd
-            text: "Erneuerbare: Deutschland & China"
+          - href: wissen/cbam.qmd
+            text: "CBAM – Grundlagen"
+          - href: wissen/schnittstellen.qmd
+            text: "Schnittstelle China ↔ CBAM"
+      - href: daten/index.qmd
+        text: "Erneuerbare"
       - text: "Emissionen"
         menu:
           - href: wissen/emissionen-de.qmd
             text: "THG-Dashboard Deutschland"
           - href: wissen/stromsektor.qmd
             text: "Stromsektor: Deutschland & China"
-      - text: "CBAM"
-        menu:
-          - href: wissen/cbam.qmd
-            text: "CBAM – Grundlagen"
-          - href: wissen/schnittstellen.qmd
-            text: "Schnittstelle China ↔ CBAM"
       - href: projekte/index.qmd
         text: "Projekte"
       - href: ueber-mich.qmd

@@ -13,7 +13,7 @@ title-block-banner: false
 [within the EU climate policy framework]{.hero-sub}
 
 ::: {.lead}
-What have both countries committed to, which instruments are meant to deliver it – and what has actually happened? Three levels, every statement backed by a primary source and a "last checked" date.
+What have both countries committed to, which instruments are meant to deliver it – and what has actually happened? Four levels, every statement backed by a primary source and a "last checked" date.
 :::
 
 ::: {.autorin}
@@ -61,26 +61,36 @@ The European Climate Law, Germany's Climate Protection Act and China's "dual car
 ::: {.ebene}
 [2]{.nr}
 
-### [Instruments & implementation](wissen/index.qmd)
+### [Instruments & carbon pricing](wissen/index.qmd)
 
 [How is it to be achieved?]{.frage}
 
-[Carbon pricing]{.gruppe}
+Emissions trading in China and the EU, Germany's carbon price on fuels – and the carbon border adjustment as the bridge between them.
 
 - [China's national ETS](wissen/china-ets.qmd)
 - [EU ETS, ETS2 & BEHG](wissen/eu-ets.qmd)
-
-[Renewable energy]{.gruppe}
-
-{{< include daten/data/_ee_start_en.md >}}
-
-- [Build-out and generation: Germany & China](daten/index.qmd)
+- [CBAM – the basics](wissen/cbam.qmd)
+- [Interface China ↔ CBAM](wissen/schnittstellen.qmd)
 
 [In progress]{.status}
 :::
 
 ::: {.ebene}
 [3]{.nr}
+
+### [Renewable energy](daten/index.qmd)
+
+[What is being built?]{.frage}
+
+{{< include daten/data/_ee_start_en.md >}}
+
+- [Build-out and generation: Germany & China](daten/index.qmd)
+
+[DE monthly · CN yearly]{.status}
+:::
+
+::: {.ebene}
+[4]{.nr}
 
 ### [Emissions](wissen/emissionen-de.qmd)
 
@@ -92,21 +102,6 @@ How greenhouse gas emissions develop – in total, by sector and in the power se
 - [Power sector: CO₂ per kilowatt-hour, DE & CN](wissen/stromsektor.qmd)
 
 [DE live · CN planned]{.status}
-:::
-
-::: {.ebene .dossier}
-[D]{.nr}
-
-### [Dossier: CBAM & China](wissen/cbam.qmd)
-
-[What does it mean for supply chains?]{.frage}
-
-The carbon border adjustment extends the EU carbon price to imports – and deducts a carbon price already paid in China.
-
-- [CBAM – the basics](wissen/cbam.qmd)
-- [Interface China ↔ CBAM](wissen/schnittstellen.qmd)
-
-[Dossier]{.status}
 :::
 
 :::

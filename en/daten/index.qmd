@@ -1,5 +1,5 @@
 ---
-title: "Module 2 · Wind, solar & geothermal: Germany and China"
+title: "Renewable energy: wind, solar & geothermal in Germany and China"
 ---
 
 ```{ojs}
@@ -26,7 +26,7 @@ md`Germany data: Energy-Charts (Fraunhofer ISE), retrieved ${meta.abgerufen} · 
 
 The German data are updated automatically every month from the [Energy-Charts API](https://api.energy-charts.info/) of Fraunhofer ISE. There is no public API for China; the annual values come from the statistical communiqués of the National Bureau of Statistics and are added after each new release (end of February) — with the original link for every value.
 
-[What does the build-out achieve? → [Power sector: CO₂ per kilowatt-hour](../wissen/stromsektor.qmd)]{.ebenen-pfad}
+[Level 3 of 4 · [Targets](../ziele/index.qmd) → [Instruments](../wissen/index.qmd) → Renewables → [Emissions](../wissen/emissionen-de.qmd) · What does the build-out achieve? → [Power sector](../wissen/stromsektor.qmd)]{.ebenen-pfad}
 
 ## Germany: installed capacity and target path
 

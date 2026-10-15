@@ -1,5 +1,5 @@
 ---
-title: "Modul 2 · Wind, Solar & Geothermie: Deutschland und China"
+title: "Erneuerbare Energien: Wind, Solar & Geothermie in Deutschland und China"
 ---
 
 ```{ojs}
@@ -25,7 +25,7 @@ md`Daten Deutschland: Energy-Charts (Fraunhofer ISE), abgerufen am ${meta.abgeru
 
 Der deutsche Teil wird monatlich automatisch aus der [Energy-Charts-API](https://api.energy-charts.info/) des Fraunhofer ISE aktualisiert. Für China gibt es keine öffentliche Schnittstelle; die Jahreswerte stammen aus den Statistikkommuniqués des Nationalen Statistikamts und werden nach jeder Neuerscheinung (Ende Februar) ergänzt – mit Originallink je Wert.
 
-[Welche Wirkung hat der Ausbau? → [Stromsektor: CO₂ je Kilowattstunde](../wissen/stromsektor.qmd)]{.ebenen-pfad}
+[Ebene 3 von 4 · [Ziele](../ziele/index.qmd) → [Instrumente](../wissen/index.qmd) → Erneuerbare → [Emissionen](../wissen/emissionen-de.qmd) · Welche Wirkung hat der Ausbau? → [Stromsektor](../wissen/stromsektor.qmd)]{.ebenen-pfad}
 
 ## Deutschland: Installierte Leistung und Ausbaupfad
 

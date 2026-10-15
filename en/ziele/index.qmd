@@ -7,7 +7,7 @@ subtitle: "What the EU, Germany and China have committed to – and how binding 
 Last checked: 15 Oct 2026
 :::
 
-[Level 1 of 3 · Targets → [Instruments & implementation](../wissen/index.qmd) → [Emissions](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
+[Level 1 of 4 · Targets → [Instruments](../wissen/index.qmd) → [Renewables](../daten/index.qmd) → [Emissions](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
 
 All three have a long-term "net zero" or neutrality goal. They differ in **when** it is to be reached, **which gases** it covers, **what** interim targets are measured against – and whether it is **legally enforceable**.
 
