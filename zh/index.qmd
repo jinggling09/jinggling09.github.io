@@ -19,6 +19,8 @@ title-block-banner: false
 ::: {.autorin}
 作者 **Jing Hu** · 环境科学研究者，斯图加特 · [关于我 →](ueber-mich.qmd)
 :::
+
+{{< include daten/data/_klimastreifen_zh.md >}}
 :::
 
 ::: {.zielkarten .mini}

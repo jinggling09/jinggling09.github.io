@@ -70,9 +70,13 @@ h2 {
 
 /* ---------- Startseite: Hero ---------- */
 .hero {
+  position: relative;
   padding: 1.5rem 0 2.5rem;
   margin-bottom: 0;
-  max-width: 820px;
+  /* Quarto legt ab der Überschrift eine <section> um den Inhalt – die bleibt neutral,
+     damit sich die Streifen an der ganzen Hero-Fläche ausrichten */
+  > :not(.klimastreifen):not(section),
+  > section > :not(.klimastreifen) { position: relative; z-index: 1; max-width: 820px; }
   h1 {
     font-size: clamp(2.1rem, 4.6vw, 3.3rem);
     line-height: 1.12;
@@ -86,6 +90,76 @@ h2 {
     font-size: .98rem;
     color: $grau;
     strong { color: $tinte; }
+  }
+}
+
+/* Schwebe-Effekt: Titel mit weichem Schlagschatten, Fließtext mit Papier-Halo über den Streifen */
+.hero:has(.klimastreifen) {
+  h1 {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .9),
+                 0 4px 10px rgba(18, 61, 48, .16),
+                 0 14px 30px rgba(18, 61, 48, .12);
+  }
+  .eyebrow, .hero-sub, .lead, .autorin {
+    text-shadow: 0 0 14px $papier, 0 0 4px $papier, 0 3px 8px rgba(18, 61, 48, .10);
+  }
+}
+
+/* ---------- Klimastreifen (Hero, rechts) ---------- */
+figure.klimastreifen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 64%;
+  margin: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  .ks-flaeche {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.15) 22%, #000 62%);
+            mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.15) 22%, #000 62%);
+  }
+  svg { display: block; width: 100%; height: 100%; opacity: .78; }
+  rect { transition: opacity .15s; }
+  rect:hover { opacity: .55; }
+  .ks-label {
+    position: absolute;
+    right: .7rem;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .45);
+    pointer-events: none;
+  }
+  .ks-label-de { top: .55rem; }
+  .ks-label-cn { top: calc(51% + .55rem); }
+  .ks-quelle {
+    flex: none;
+    padding-top: .45rem;
+    font-size: .74rem;
+    line-height: 1.4;
+    color: $grau;
+    text-align: right;
+    a { color: $grau; text-decoration-color: $linie; }
+    a:hover { color: $gruen; }
+  }
+}
+
+/* Schmal: Streifen als eigenes Band unter dem Text statt im Hintergrund */
+@media (max-width: 767.98px) {
+  figure.klimastreifen {
+    position: static;
+    width: 100%;
+    margin-top: 1.8rem;
+    .ks-flaeche { height: 96px; flex: none; -webkit-mask-image: none; mask-image: none; }
+    svg { opacity: 1; }
+    .ks-quelle { text-align: left; }
   }
 }
 

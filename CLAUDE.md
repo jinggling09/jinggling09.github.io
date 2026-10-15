@@ -1,0 +1,90 @@
+# CLAUDE.md – jinggling09.github.io
+
+Persönliche Website von Jing Hu: **„Klimaschutz im Vergleich: Deutschland & China – im Rahmen der EU-Klimapolitik“**.
+Quarto-Website in drei Sprachen, veröffentlicht über GitHub Actions auf GitHub Pages.
+Live: https://jinggling09.github.io · Allgemeiner Aufbau siehe `README.md`.
+
+## Zusammenarbeit mit Jing
+
+- Jing schreibt meist auf **Chinesisch** → auf Chinesisch antworten. Website-Texte: Deutsch ist die Referenzfassung.
+- Jing ist Umweltwissenschaftlerin, keine Entwicklerin: Änderungen kurz und konkret erklären, Fachbegriffe der Technik vermeiden.
+- **Commits** nur auf Wunsch, Autor „Jing“ (bereits in `git config`). **Nicht pushen** – Jing pusht selbst über GitHub Desktop („Push origin“), außer sie sagt ausdrücklich etwas anderes.
+- **`.github/workflows/publish.yml` ist geschützt** – nicht ändern. Nötige Änderungen als Vorschlag formulieren; Jing trägt sie selbst ein.
+- Vor größeren Gestaltungsänderungen Varianten zeigen (lokale Vorschau/Screenshots) und Jing wählen lassen.
+
+## Befehle
+
+```bash
+bash scripts/build.sh        # baut DE + EN + ZH nach _site/ (kopiert vorher daten/data/ nach en/ und zh/)
+quarto preview               # Vorschau Deutsch (im Stammverzeichnis)
+cd en && quarto preview      # Vorschau Englisch – vorher einmal build.sh laufen lassen (Datenkopie)
+```
+
+Lokal: aktuelles Quarto liegt in `~/opt/quarto/bin/quarto` (1.10.19) → `QUARTO=~/opt/quarto/bin/quarto bash scripts/build.sh`. Das Quarto aus RStudio (0.9.80) ist zu alt (kennt `{{< include >}}` nicht). Python auf diesem Mac findet die SSL-Zertifikate nicht → Abrufskripte lokal mit `SSL_CERT_FILE=/etc/ssl/cert.pem` starten (auf GitHub nicht nötig).
+
+## Struktur (vier Ebenen)
+
+| Ebene | Pfad | Inhalt |
+|---|---|---|
+| 1 Ziele & Rechtsrahmen | `ziele/` | Zielkarten (mit Karten-Umriss; China-Karte inkl. Taiwan und Hainan), Meilenstein-Matrix, Net-Zero-Tracker-Tabelle |
+| 2 Instrumente & CO₂-Bepreisung | `wissen/` | China-ETS, EU-ETS/ETS 2/BEHG, CBAM-Grundlagen, Schnittstelle China ↔ CBAM |
+| 3 Erneuerbare | `daten/` | Ausbau und Erzeugung DE vs. CN (Diagrammlogik nur in `_shared/daten.qmd`) |
+| 4 Emissionen | `wissen/emissionen-de.qmd`, `wissen/stromsektor.qmd` | THG-Dashboard Deutschland, Stromsektor DE/CN |
+
+Startseite `index.qmd` = Navigations-Cockpit: Hero mit Klimastreifen → drei Neutralitäts-Karten (EU 2050 / DE 2045 / CN 2060) → vier Ebenen-Karten. Die Städte-Ebene (Stuttgart ↔ Peking) ist bewusst zurückgestellt.
+
+## Drei Sprachen
+
+- DE im Stammverzeichnis, `en/` und `zh/` sind **eigene Quarto-Projekte** mit denselben Dateinamen (Sprachmenü `_includes/lang-switch.html` springt auf dieselbe Seite).
+- Inhaltliche Änderungen zuerst auf Deutsch, dann in `en/` und `zh/` nachziehen – **immer alle drei**.
+- Auf DE- und EN-Seiten **keine chinesischen Zeichen** (einzige Ausnahme: „中文“ im Sprachmenü).
+- `zh/references.bib` ist eigenständig (chinesische Originaltitel); DE und EN teilen `references.bib`.
+- Gemeinsam genutzt: `styles/custom.scss`, `daten/data/`.
+
+## Daten-Pipeline
+
+Alle Skripte nur mit Python-Standardbibliothek. Erzeugte `_*.md`-Dateien **nie von Hand bearbeiten** – Skript ändern und neu erzeugen.
+
+| Skript | Quelle | Ausgabe | Läuft |
+|---|---|---|---|
+| `scripts/fetch_energy_charts.py` | Energy-Charts (Fraunhofer ISE) | `daten/data/de_*.csv` | Workflow |
+| `scripts/fetch_netzero.py` | Net Zero Tracker API | `daten/data/netzero.json`, `ziele/_nzt-tabelle.md` (+ en/zh) – DE-Zieljahr 2045 manuell gesetzt, mit Fußnote | Workflow |
+| `scripts/kennzahlen_start.py` | vorhandene CSVs | `daten/data/_ee_start_{de,en,zh}.md` | `build.sh` |
+| `scripts/fetch_klimastreifen.py` | DWD (Deutschland), CRU TS Ländermittel (China; neueste Version wird automatisch gesucht) | `daten/data/temperatur_de_cn.csv`, `daten/data/_klimastreifen_{de,en,zh}.md` | `build.sh` mit `--offline`; Abruf noch manuell (siehe unten) |
+
+## Gestaltung (`styles/custom.scss`)
+
+- Thinktank-Stil. Leitfarbe Dunkelgrün `#1f5f4a`, Akzent Ocker `#a8741a`, Papierweiß `#fcfcfa`; Schriften Source Serif 4 (Überschriften) / Source Sans 3.
+- **Farbspuren** (überall konsistent): EU Blau `#3c5a8a` · DE Gold `#b8860b` (Schrift `#8a6a00`) · CN Rot `#b0412e`.
+- **Hero / Klimastreifen:** zwei Bänder (oben DE, unten CN), 1901 (Beginn CRU) bis letztes Jahr in beiden Reihen (derzeit 2025), Abweichung vom Mittel 1961–1990, **gemeinsame °C-Skala** (bewusst anders als Hawkins’ Einzelskalen, damit vergleichbar). Desktop: rechts im Hintergrund, nach links ausgeblendet; Text mit Schwebe-Schatten (nur wenn Streifen vorhanden, `.hero:has(.klimastreifen)`). Achtung: Quarto legt ab dem `#`-Titel eine `<section>` um den Hero-Inhalt und gibt der Figur die Klasse `figure` → Selektoren `> section > …` und `figure.klimastreifen` nötig. Mobil (< 768 px): eigenes Band unter dem Text. Quellenzeile unter den Streifen.
+
+## Inhaltsregeln
+
+- Jede Sachaussage mit Beleg aus der `.bib`, vorrangig **Primärquellen**; jede Seite mit **Stand-Datum**.
+- Eigene Einordnungen in `::: {.einordnung}`-Blöcke.
+- Keine erfundenen Zahlen – fehlen Daten, offen sagen und Platz lassen.
+
+## Aktueller Stand (15.10.2026, abends)
+
+Erledigt: Daten abgerufen (1901–2025). China-Quelle von Berkeley Earth auf CRU TS umgestellt (Jings Entscheidung), weil Berkeleys Länderdateien 2020 enden; CRU und Berkeley stimmen im Überlappungszeitraum gut überein. Plausibilisiert (Basis ≈ 0; DE 2024 +2,65 °C ≈ DWD-Angabe). Layout Desktop + Mobil in DE/EN/ZH geprüft und korrigiert.
+
+Klimastreifen committet (Jing pusht selbst).
+
+Nächste Schritte:
+1. **Vorschlag für Jing** (sie trägt ihn selbst in `publish.yml` ein, nach dem Schritt „Netto-null-Ziele abrufen“), damit die Daten monatlich aktualisiert werden:
+   ```yaml
+         - name: Temperaturreihen abrufen (DWD, CRU)
+           run: |
+             if ! python scripts/fetch_klimastreifen.py; then
+               echo "::warning::Abruf Temperaturreihen fehlgeschlagen – vorhandene Daten werden verwendet."
+             fi
+   ```
+
+## Offene Ideen
+
+- Erst das Gerüst (Gestaltung, Struktur) verfeinern, dann Inhalte/Daten füllen – so will Jing vorgehen.
+- Ebene 4: China-Emissionen fehlen noch (Sektoren, pro Kopf) – größte Lücke im Vergleich.
+- CBAM-Seiten aktualisieren (Regelphase seit 1.1.2026).
+- Ziele-Seite: Governance-Vergleich „Wer kontrolliert die Ziele?“.
+- Ebene 2: Klimaschutzprogramm 2026 vs. Chinas „1+N“-Politiksystem (Quelle: Jings Notion-Notizen).
+- Beiger Chip „Politikdokument“ ist farblich nah am DE-Gold → ggf. auf Grau umstellen.

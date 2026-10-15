@@ -19,6 +19,8 @@ What have both countries committed to, which instruments are meant to deliver it
 ::: {.autorin}
 By **Jing Hu** · Environmental scientist, Stuttgart · [About me →](ueber-mich.qmd)
 :::
+
+{{< include daten/data/_klimastreifen_en.md >}}
 :::
 
 ::: {.zielkarten .mini}

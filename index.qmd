@@ -19,6 +19,8 @@ Was haben beide Länder versprochen, mit welchen Instrumenten wollen sie es erre
 ::: {.autorin}
 Von **Jing Hu** · Umweltwissenschaftlerin, Stuttgart · [Über mich →](ueber-mich.qmd)
 :::
+
+{{< include daten/data/_klimastreifen_de.md >}}
 :::
 
 ::: {.zielkarten .mini}

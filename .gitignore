@@ -5,3 +5,5 @@
 /zh/daten/data/
 /en/.quarto/
 /zh/.quarto/
+
+**/*.quarto_ipynb

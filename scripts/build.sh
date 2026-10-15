@@ -11,6 +11,9 @@ QUARTO="${QUARTO:-quarto}"
 # Kennzahlen für die Startseite aus den aktuellen Daten erzeugen
 python3 scripts/kennzahlen_start.py
 
+# Klimastreifen-Bausteine aus vorhandener CSV (Abruf: python3 scripts/fetch_klimastreifen.py)
+python3 scripts/fetch_klimastreifen.py --offline
+
 for lang in en zh; do
   rm -rf "$lang/daten/data"
   mkdir -p "$lang/daten/data"
