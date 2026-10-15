@@ -498,3 +498,19 @@ html[lang|="zh"] .ebene .gruppe { letter-spacing: .04em; }
   .label { font-size: 12px; font-weight: 600; }
   .label.de { fill: $spur-de; } .label.cn { fill: $spur-cn; }
 }
+
+/* ---------- Startseite: Zielkarten (Kurzfassung) ---------- */
+.zielkarten.mini { margin: .5rem 0 .6rem; }
+.zielkarten.mini .zielkarte {
+  padding: .9rem 1.1rem .9rem;
+  transition: border-color .15s, box-shadow .15s, transform .15s;
+  .umriss { width: 64px; height: 64px; top: .8rem; right: .9rem; }
+  .jahr { font-size: 2.2rem; margin: .2rem 0 .1rem; }
+  .was { min-height: 0; margin-bottom: 0; font-size: .9rem; }
+  &:hover { box-shadow: 0 6px 18px rgba(18, 61, 48, .1); transform: translateY(-2px); }
+  &.eu:hover { border-color: $spur-eu; }
+  &.de:hover { border-color: $spur-de; }
+  &.cn:hover { border-color: $spur-cn; }
+}
+.zielkarte .karten-link { position: absolute; inset: 0; z-index: 2; font-size: 0; color: transparent; }
+.zielkarte .karten-link:focus-visible { outline: 2px solid $gruen; outline-offset: 2px; }
