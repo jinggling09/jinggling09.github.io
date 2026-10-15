@@ -67,6 +67,12 @@ format:
     theme:
       light: [litera, ../styles/custom.scss]
     toc: true
+    toc-location: right
+    grid:
+      sidebar-width: 0px
+      body-width: 940px
+      margin-width: 260px
+      gutter-width: 2rem
     toc-title: "On this page"
     toc-depth: 2
     smooth-scroll: true

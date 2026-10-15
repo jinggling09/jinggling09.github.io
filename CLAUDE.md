@@ -55,6 +55,8 @@ Alle Skripte nur mit Python-Standardbibliothek. Erzeugte `_*.md`-Dateien **nie v
 
 ## Gestaltung (`styles/custom.scss`)
 
+- Inhaltsseiten (von Jing gewählt): breite Textspalte, Inhaltsverzeichnis rechts, keine leere linke Spalte – in allen drei `_quarto.yml`: `toc-location: right` + `grid: sidebar-width 0px, body-width 940px, margin-width 260px, gutter-width 2rem`.
+
 - Thinktank-Stil. Leitfarbe Dunkelgrün `#1f5f4a`, Akzent Ocker `#a8741a`, Papierweiß `#fcfcfa`; Schriften Source Serif 4 (Überschriften) / Source Sans 3.
 - **Farbspuren** (überall konsistent): EU Blau `#3c5a8a` · DE Gold `#b8860b` (Schrift `#8a6a00`) · CN Rot `#b0412e`.
 - **Hero / Klimastreifen:** zwei Bänder (oben DE, unten CN), 1901 (Beginn CRU) bis letztes Jahr in beiden Reihen (derzeit 2025), Abweichung vom Mittel 1961–1990, **gemeinsame °C-Skala** (bewusst anders als Hawkins’ Einzelskalen, damit vergleichbar). Desktop: rechts im Hintergrund, nach links ausgeblendet; Text mit Schwebe-Schatten (nur wenn Streifen vorhanden, `.hero:has(.klimastreifen)`). Achtung: Quarto legt ab dem `#`-Titel eine `<section>` um den Hero-Inhalt und gibt der Figur die Klasse `figure` → Selektoren `> section > …` und `figure.klimastreifen` nötig. Mobil (< 768 px): eigenes Band unter dem Text. Quellenzeile unter den Streifen.

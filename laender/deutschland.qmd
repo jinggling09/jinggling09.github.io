@@ -35,12 +35,12 @@ Deutschland hat sein Ziel der Treibhausgasneutralität **2045** gesetzlich festg
 ::: {}
 `<svg class="ks-icon" aria-hidden="true"><use href="#i-bip"/></svg>`{=html}
 [4.530 Mrd. €]{.zahl}
-[Bruttoinlandsprodukt 2025, nominal]{.was}
+[BIP 2025, nominal]{.was}
 :::
 ::: {}
 `<svg class="ks-icon breit" aria-hidden="true"><use href="#i-thg"/></svg>`{=html}
 [649 Mio. t]{.zahl}
-[Treibhausgase 2025, −48,2 % ggü. 1990]{.was}
+[THG 2025, −48,2 % ggü. 1990]{.was}
 :::
 ::: {}
 `<svg class="ks-icon breit" aria-hidden="true"><use href="#i-kopf"/></svg>`{=html}
@@ -70,7 +70,7 @@ Deutschland hat sein Ziel der Treibhausgasneutralität **2045** gesetzlich festg
 :::
 
 ::: {.belege}
-**Belege** · Einwohner [@destatis_bev_2026] · BIP [@destatis_bip_2026] · Emissionen in CO₂-Äquivalenten ohne Landnutzung (LULUCF) [@uba_thg; @uba_projektion_2026] · Ökostrom-Anteil = Anteil erneuerbarer Energien am Bruttostromverbrauch [@uba_ee_strom_2025; @eeg] · Weltanteil [@edgar_2026] · CO₂-Preis: durchschnittlicher Auktionspreis im EU-ETS 2025 (73,86 €), Festpreis im nationalen Brennstoffemissionshandel 55 € [@dehst_erloese_2025] · ^1^ Eigene Berechnung: 648,9 Mio. t geteilt durch 83,5 Mio. Einwohner bzw. 4.529,7 Mrd. € BIP. · Der Weltanteil stammt aus der EU-Datenbank EDGAR, die mit eigener Methodik für Deutschland 660 Mio. t ausweist; die amtliche deutsche Zahl des UBA ist 649 Mio. t.
+**Belege** · BIP = Bruttoinlandsprodukt, THG = Treibhausgase · Einwohner [@destatis_bev_2026] · BIP [@destatis_bip_2026] · Emissionen in CO₂-Äquivalenten ohne Landnutzung (LULUCF) [@uba_thg; @uba_projektion_2026] · Ökostrom-Anteil = Anteil erneuerbarer Energien am Bruttostromverbrauch [@uba_ee_strom_2025; @eeg] · Weltanteil [@edgar_2026] · CO₂-Preis: durchschnittlicher Auktionspreis im EU-ETS 2025 (73,86 €), Festpreis im nationalen Brennstoffemissionshandel 55 € [@dehst_erloese_2025] · ^1^ Eigene Berechnung: 648,9 Mio. t geteilt durch 83,5 Mio. Einwohner bzw. 4.529,7 Mrd. € BIP. · Der Weltanteil stammt aus der EU-Datenbank EDGAR, die mit eigener Methodik für Deutschland 660 Mio. t ausweist; die amtliche deutsche Zahl des UBA ist 649 Mio. t.
 :::
 
 ## Ziele und Pfad bis 2045
