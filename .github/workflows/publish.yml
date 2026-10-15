@@ -36,12 +36,16 @@ jobs:
               exit 1
             fi
           fi
-
+      - name: Netto-null-Ziele abrufen (Net Zero Tracker)
+        run: |
+          if ! python scripts/fetch_netzero.py; then
+            echo "::warning::Abruf Net Zero Tracker fehlgeschlagen – vorhandene Tabelle wird verwendet."
+          fi
       - name: Geänderte Daten committen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add daten/data
+          git add daten/data ziele/_nzt-tabelle.md en/ziele/_nzt-tabelle.md zh/ziele/_nzt-tabelle.md
           if ! git diff --cached --quiet; then
             git commit -m "Daten aktualisiert (Energy-Charts)"
             git pull --rebase origin main
