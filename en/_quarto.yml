@@ -13,13 +13,13 @@ website:
   page-navigation: true
   back-to-top-navigation: true
   navbar:
-    title: "Jing Hu"
+    title: false
     left:
       - href: index.qmd
         text: "Home"
       - href: ziele/index.qmd
         text: "Targets"
-      - text: "Instruments"
+      - text: "Carbon pricing"
         menu:
           - href: wissen/index.qmd
             text: "Overview & timeline"
