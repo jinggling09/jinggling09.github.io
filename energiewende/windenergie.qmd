@@ -1,0 +1,228 @@
+---
+title: "Windenergie"
+---
+
+::: {.technik-karte}
+{{< include ../daten/data/_kopf_wind.md >}}
+
+::: {.tk-text}
+`<h1 class="tk-titel">Windenergie</h1>`{=html}
+
+[Deutschland, EU und China im Vergleich: Wie viel Windstrom gibt es, welche Ziele gelten – und wie steuern die drei den Ausbau an Land und auf See?]{.tk-sub}
+
+[Stand: 16.10.2026]{.stand}
+:::
+:::
+
+[Energiewende · [Photovoltaik](photovoltaik.qmd) · **Windenergie** · [Ausbau-Daten Wind & Solar](../daten/index.qmd) · [Stromsektor](../wissen/stromsektor.qmd)]{.ebenen-pfad}
+
+```{=html}
+<svg width="0" height="0" class="icon-defs" aria-hidden="true">
+ <symbol id="t-ziel" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></symbol>
+ <symbol id="t-geld" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M15 8.6a3.6 3.6 0 1 0 0 6.8M7.5 11h5.5M7.5 13.2h5.5"/></symbol>
+ <symbol id="t-flaeche" viewBox="0 0 24 24"><path d="M3 19.5 8 5l4 8 3-5 6 11.5z"/><path d="M3 19.5h18"/></symbol>
+ <symbol id="t-meer" viewBox="0 0 24 24"><path d="M12 15V6.5M12 6.5l-4.8-2.6M12 6.5l4.8-2.6M12 6.5v5"/><circle cx="12" cy="6.5" r=".9"/><path d="M2.5 17.5c1.6 0 1.6-1.2 3.2-1.2s1.6 1.2 3.2 1.2 1.6-1.2 3.1-1.2 1.6 1.2 3.2 1.2 1.6-1.2 3.2-1.2 1.6 1.2 3.1 1.2M2.5 20.8c1.6 0 1.6-1.2 3.2-1.2s1.6 1.2 3.2 1.2 1.6-1.2 3.1-1.2 1.6 1.2 3.2 1.2 1.6-1.2 3.2-1.2 1.6 1.2 3.1 1.2"/></symbol>
+ <symbol id="t-fabrik" viewBox="0 0 24 24"><path d="M3 20.5h18M4.5 20.5v-9l5 3v-3l5 3v-3l5 3v6"/><path d="M6 11.5V4h2.5v5.5"/></symbol>
+</svg>
+```
+
+China hat 2025 fast achtmal so viel Windleistung zugebaut wie die gesamte EU und betreibt die mit Abstand größte Flotte – an Land wie auf See. Je Einwohner liegt Deutschland vorn. Bei der Windenergie auf See sind alle drei noch weit von ihren Zielen entfernt.
+
+## Auf einen Blick
+
+::: {.land-drei}
+
+::: {.land-karte .de}
+[Deutschland]{.land-name}
+
+[77,6 GW]{.gross}
+[installiert, Ende 2025]{.klein}
+
+| | |
+|---|---|
+| an Land · auf See | 68,1 · 9,5 GW |
+| Zubau 2025 | 4,9 GW |
+| Anteil am Strom | 25,4 %^1^ |
+
+`<div class="fortschritt" style="--wert:59%"><span></span></div>`{=html}
+[An Land: **59 %** von 115 GW (2030)]{.klein}
+
+`<div class="fortschritt" style="--wert:32%"><span></span></div>`{=html}
+[Auf See: **32 %** von 30 GW (2030)]{.klein}
+:::
+
+::: {.land-karte .eu}
+[Europäische Union]{.land-name}
+
+[246 GW]{.gross}
+[installiert, Ende 2025^2^]{.klein}
+
+| | |
+|---|---|
+| an Land · auf See | 224,5 · 21,5 GW |
+| Zubau 2025 | 15,1 GW^2^ |
+| Anteil am Strom | ≈ 17 %^1^ |
+
+`<div class="fortschritt" style="--wert:49%"><span></span></div>`{=html}
+[Gesamt: **49 %** von über 500 GW (2030)^3^]{.klein}
+
+`<div class="fortschritt" style="--wert:19%"><span></span></div>`{=html}
+[Auf See: **19 %** von ≈ 111 GW (2030)^3^]{.klein}
+:::
+
+::: {.land-karte .cn}
+[China]{.land-name}
+
+[640 GW]{.gross}
+[installiert, Ende 2025]{.klein}
+
+| | |
+|---|---|
+| an Land · auf See | 590 · 47 GW |
+| Zubau 2025 | 120 GW |
+| Anteil am Strom | 10,7 %^1^ |
+
+`<div class="fortschritt" style="--wert:51%"><span></span></div>`{=html}
+[Wind + Solar: **51 %** von 3.600 GW (2035)^4^]{.klein}
+
+`<div class="fortschritt" style="--wert:47%"><span></span></div>`{=html}
+[Auf See: **47 %** von 100 GW (2030)^4^]{.klein}
+:::
+
+:::
+
+::: {.belege}
+**Belege** · Deutschland: Bestand, Zubau [@bnetza_ee_2025], Ziele [§ 4 Nr. 1 @eeg; § 1 Abs. 2 @windseeg], Anteil [@uba_ee_2025] · EU: [@windeurope_2026; @ember_eer_2026; @ec_windaktionsplan_2023; @ec_offshore_ziele_2023] · China: [@nea_ee_2025; @nbs_2025; @cn_ndc_2035; @nea_offshore_2026] · ^1^ Unterschiedliche Bezugsgrößen: Deutschland am Bruttostromverbrauch (133,7 von 526,9 TWh), EU an der Stromerzeugung (Ember), China an der Stromerzeugung (1.128 von 10.575 TWh, eigene Berechnung). ^2^ Angaben des Branchenverbands WindEurope (Bruttozubau); amtlich weist Eurostat bisher nur 2024 aus: 231 GW, davon 20,7 GW auf See [@eurostat_pv_2026]. ^3^ Kein verbindliches EU-Windziel: Die Kommission beziffert den Bedarf für das Erneuerbaren-Ziel 2030 auf über 500 GW; für Windenergie auf See haben sich die Mitgliedstaaten 2023 unverbindlich auf rund 111 GW bis 2030 verständigt. ^4^ China nennt Wind und Solar nur zusammen (Ende 2025: 1.840 GW); das Ziel für Windenergie auf See (über 100 GW) steht im 15. Fünfjahresplan. Die Teilwerte an Land und auf See ergeben wegen Rundung nicht genau 640 GW.
+:::
+
+## Wer baut wie viel?
+
+::: {.balken-vergleich}
+
+[Zubau 2025, GW]{.bv-titel}
+
+`<div class="bv-zeile cn"><span class="bv-land">China</span><span class="bv-spur"><span style="width:100%"></span></span><span class="bv-wert">120</span></div><div class="bv-zeile eu"><span class="bv-land">EU</span><span class="bv-spur"><span style="width:12.6%"></span></span><span class="bv-wert">15,1</span></div><div class="bv-zeile de"><span class="bv-land">Deutschland</span><span class="bv-spur"><span style="width:4.1%"></span></span><span class="bv-wert">4,9</span></div>`{=html}
+
+[Installierte Leistung je Einwohner, Ende 2025, kW]{.bv-titel}
+
+`<div class="bv-zeile de"><span class="bv-land">Deutschland</span><span class="bv-spur"><span style="width:100%"></span></span><span class="bv-wert">0,93</span></div><div class="bv-zeile eu"><span class="bv-land">EU</span><span class="bv-spur"><span style="width:58%"></span></span><span class="bv-wert">0,54</span></div><div class="bv-zeile cn"><span class="bv-land">China</span><span class="bv-spur"><span style="width:49%"></span></span><span class="bv-wert">0,46</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Belege** · Werte wie oben; je Einwohner eigene Berechnung mit 83,5 Mio. (Deutschland), 452,0 Mio. (EU) und 1.404,9 Mio. (China) Einwohnern, siehe Länderüberblicke [Deutschland](../laender/deutschland.qmd), [EU](../laender/eu.qmd), [China](../laender/china.qmd).
+:::
+
+Anders als bei der Photovoltaik liegt China bei der Windenergie je Einwohner noch deutlich hinter der EU. Deutschland hat etwa doppelt so viel Windleistung je Einwohner wie China.
+
+## Wie wird der Ausbau gesteuert?
+
+::: {.matrix}
+
+```{=html}
+<div class="m-kopf"><span></span><span class="m-land de">Deutschland</span><span class="m-land eu">Europäische Union</span><span class="m-land cn">China</span></div>
+```
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-ziel"/></svg>`{=html}
+**Ziel**
+:::
+
+::: {.m-zelle .de}
+An Land **115 GW bis 2030** und **160 GW bis 2040** [§ 4 @eeg]. Auf See **30 GW bis 2030**, **40 GW bis 2035**, **70 GW bis 2045** [§ 1 @windseeg]. Für 2030 an Land wären im Schnitt 9,4 GW Zubau pro Jahr nötig – doppelt so viel wie 2025 [@bnetza_ee_2025].
+:::
+
+::: {.m-zelle .eu}
+Kein eigenes Windziel. Für 42,5 % erneuerbare Energien 2030 braucht es laut Kommission **über 500 GW** Windleistung, also im Schnitt 37 GW Zubau pro Jahr [@ec_windaktionsplan_2023] – 2025 waren es 15,1 GW.
+:::
+
+::: {.m-zelle .cn}
+Kein eigenes Windziel; Wind und Solar zusammen **3.600 GW bis 2035** [@cn_ndc_2035]. Auf See über **100 GW bis 2030** laut 15. Fünfjahresplan [@nea_offshore_2026].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-geld"/></svg>`{=html}
+**Vergütung**
+:::
+
+::: {.m-zelle .de}
+Marktprämie über **Ausschreibungen** der Bundesnetzagentur [@eeg]. Die Runde zum 01.05.2026 war mehr als doppelt überzeichnet: 6,4 GW Gebote für 2,5 GW, Zuschlag im Schnitt **5,06 ct/kWh** [@bnetza_wind_mai_2026].
+:::
+
+::: {.m-zelle .eu}
+Ab 17.07.2027 müssen neue staatliche Preisstützungen als **zweiseitige Differenzverträge** ausgestaltet sein [Art. 19d @eu_emd_2024].
+:::
+
+::: {.m-zelle .cn}
+Neue Windparks an Land erhalten seit 2021 keine zentrale Förderung mehr; für Windparks auf See legen die Provinzen die Preise fest [@ndrc_833_2021]. Seit 2025 wird Windstrom grundsätzlich **am Strommarkt verkauft**, mit Mechanismuspreis für Neuanlagen [@ndrc_136_2025].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-flaeche"/></svg>`{=html}
+**Fläche & Netz**
+:::
+
+::: {.m-zelle .de}
+Die Länder müssen Flächen für Windenergie ausweisen – feste **Flächenbeitragswerte** bis Ende 2027 und Ende 2032 [§ 3 @windbg]. 2025 wurden Anlagen mit knapp **20,8 GW** genehmigt [@bnetza_ee_2025].
+:::
+
+::: {.m-zelle .eu}
+Die Mitgliedstaaten weisen **Beschleunigungsgebiete** für erneuerbare Energien aus, in denen kürzere Genehmigungsfristen gelten [@eu_red3]. Netzengpässe und Genehmigungen bleiben laut Branche die größten Bremsen [@windeurope_2026].
+:::
+
+::: {.m-zelle .cn}
+Programm für **Windräder in Dörfern**: bis zu 20 MW je Verwaltungsdorf, Erträge werden zwischen Unternehmen und Dorfgemeinschaft geteilt [@ndrc_378_2024]. Nutzungsgrad 2025: **94 %** – rund 6 % des möglichen Windstroms wurden abgeregelt [@nea_ee_2025].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-meer"/></svg>`{=html}
+**Auf See**
+:::
+
+::: {.m-zelle .de}
+Im August 2025 gab es **erstmals keine Gebote** für zwei Flächen mit zusammen 2,5 GW [@bnetza_n10_2025]. Die Ausschreibungen für 2026 wurden auf **2027 verschoben**, das WindSeeG wird geändert [@bnetza_offshore_2027].
+:::
+
+::: {.m-zelle .eu}
+Die Offshore-Strategie von 2020 nannte 60 GW bis 2030; die Mitgliedstaaten haben dies 2023 auf rund **111 GW (2030)** und **317 GW (2050)** angehoben – unverbindlich, je Meeresbecken [@ec_offshore_ziele_2023].
+:::
+
+::: {.m-zelle .cn}
+Rund **47 GW** auf See, 2025 kamen 6,6 GW hinzu [@nea_ee_2025]. Geplant sind Offshore-Windbasen in Bohai, Gelbem Meer, Ostchinesischem und Südchinesischem Meer [@nea_offshore_2026].
+:::
+:::
+
+:::
+
+## Wer stellt die Anlagen her?
+
+::: {.lieferkette}
+`<svg class="m-icon gross"><use href="#t-fabrik"/></svg>`{=html}
+
+[60 %]{.lk-zahl .cn}
+
+[Chinas Anteil an der weltweiten Fertigungskapazität für Windkraft-Komponenten; rund die Hälfte der Exporte [@iea_etp_2023]]{.lk-text}
+
+[40 %]{.lk-zahl .eu}
+
+[Richtwert der EU: Bis 2030 sollen Fabriken in der EU mindestens 40 % des jährlichen Bedarfs an Netto-Null-Technologien decken können – auch Windkraft [@eu_nzia]]{.lk-text}
+:::
+
+Anders als bei der Photovoltaik gibt es in Europa noch eigene Hersteller von Windkraftanlagen. Die Kommission prüft seit 2024, ob chinesische Hersteller mit staatlichen Subventionen Ausschreibungen in der EU gewinnen; gegen **Goldwind** läuft seit Februar 2026 eine vertiefte Prüfung nach der Verordnung über drittstaatliche Subventionen [@ec_goldwind_2026].
+
+## Einordnung
+
+::: {.einordnung}
+**An Land kommt Bewegung hinein.** Deutschland hat 2025 fast doppelt so viel zugebaut wie im Vorjahr und gut viermal so viel Leistung genehmigt, wie gebaut wurde; die Ausschreibungen sind überzeichnet. Für 115 GW bis 2030 reicht das Tempo trotzdem noch nicht.
+
+**Auf See hakt es überall.** Deutschland und die EU sind bei rund einem Drittel bzw. einem Fünftel ihrer Ziele für 2030. Die gescheiterte Auktion 2025 deutet darauf hin, dass Ausschreibungen ohne Preisabsicherung bei gestiegenen Kosten und Zinsen nicht mehr tragen – ein Grund, warum zweiseitige Differenzverträge in den Mittelpunkt rücken.
+
+**Industriepolitik statt nur Ausbau.** Bei der Windkraft verteidigt die EU eine bestehende Industrie, statt wie bei der Photovoltaik eine verlorene zurückzuholen. Das erklärt, warum sie hier früh mit dem Subventionsrecht gegen Wettbewerber aus China vorgeht.
+:::

@@ -862,7 +862,7 @@ figure.pfad .pfad-ziel-text {
   &.cn { border-top-color: $spur-cn; .land-name, .gross { color: $spur-cn; } .fortschritt > span { background: $spur-cn; } }
 }
 .fortschritt {
-  height: 8px; border-radius: 4px; background: #eef1ef; overflow: hidden; margin-bottom: .35rem;
+  height: 8px; border-radius: 4px; background: #eef1ef; overflow: hidden; margin: .7rem 0 .35rem;
   > span { display: block; height: 100%; width: var(--wert); border-radius: 4px; }
 }
 
@@ -924,4 +924,36 @@ details.belege-klapp {
   }
   &[open] > summary::before { transform: rotate(90deg); }
   &[open] > summary { margin-bottom: .2rem; }
+}
+
+/* Kopfkarte der Technikseiten (Bild aus scripts/technik_kopf.py): Titel, Untertitel und Stand links,
+   rechts Strichzeichnung auf zwei Ausbaustreifen (oben DE, unten CN), darunter die Bildunterschrift */
+main.content:has(.technik-karte) #title-block-header { display: none; }
+.technik-karte {
+  position: relative; min-height: 250px; margin: .4rem 0 1.4rem;
+  border: 1px solid $linie; border-radius: 4px; overflow: hidden; background: $papier;
+  p { margin: 0; }
+  .tk-deko {
+    position: absolute; top: 0; right: 0; bottom: 24px; left: 40%; z-index: 0;
+    -webkit-mask-image: linear-gradient(to right, transparent, rgba(0,0,0,.35) 25%, #000 55%);
+            mask-image: linear-gradient(to right, transparent, rgba(0,0,0,.35) 25%, #000 55%);
+    svg { display: block; width: 100%; height: 100%; }
+    .tk-linie { fill: none; stroke: $gruen; stroke-width: 1.3px; stroke-linecap: round; stroke-linejoin: round; * { vector-effect: non-scaling-stroke; } }
+    rect:hover { opacity: .55; }
+  }
+  .tk-quelle { position: absolute; right: 12px; bottom: 5px; font-size: .72rem; color: $grau; z-index: 1; }
+  .tk-text { position: relative; z-index: 1; padding: 34px 36px 34px; max-width: 55%; }  /* endet vor der Zeichnung */
+  .tk-titel { font-family: $headings-font-family; font-weight: 600; font-size: 3rem; line-height: 1.1; margin: 0 0 .5rem; border: none; }
+  .tk-sub { display: block; font-size: 1.15rem; line-height: 1.5; color: $grau; margin-bottom: 1.2rem;
+            text-shadow: 0 0 12px $papier, 0 0 4px $papier; }
+  .stand { margin: 0; }
+}
+@media (max-width: 767.98px) {
+  .technik-karte {
+    .tk-deko { left: 0; opacity: .35; }
+    .tk-text { max-width: none; }
+    .tk-text { padding: 24px 20px 40px; }
+    .tk-titel { font-size: 2.2rem; }
+    .tk-quelle { left: 20px; text-align: left; }
+  }
 }

@@ -59,6 +59,8 @@ website:
             text: "Überblick: Ausbau Wind & Solar"
           - href: energiewende/photovoltaik.qmd
             text: "Photovoltaik"
+          - href: energiewende/windenergie.qmd
+            text: "Windenergie"
       - text: "Emissionen"
         menu:
           - href: wissen/emissionen-de.qmd

@@ -1,13 +1,20 @@
 ---
-title: "Photovoltaik: Deutschland, EU und China im Vergleich"
-subtitle: "Wie viel Solarstrom gibt es, welche Ziele gelten – und wie steuern die drei den Ausbau?"
+title: "Photovoltaik"
 ---
 
-::: {.stand}
-Stand: 16.10.2026
+::: {.technik-karte}
+{{< include ../daten/data/_kopf_photovoltaik.md >}}
+
+::: {.tk-text}
+`<h1 class="tk-titel">Photovoltaik</h1>`{=html}
+
+[Deutschland, EU und China im Vergleich: Wie viel Solarstrom gibt es, welche Ziele gelten – und wie steuern die drei den Ausbau?]{.tk-sub}
+
+[Stand: 16.10.2026]{.stand}
+:::
 :::
 
-[Energiewende · **Photovoltaik** · [Ausbau-Daten Wind & Solar](../daten/index.qmd) · [Stromsektor](../wissen/stromsektor.qmd)]{.ebenen-pfad}
+[Energiewende · **Photovoltaik** · [Windenergie](windenergie.qmd) · [Ausbau-Daten Wind & Solar](../daten/index.qmd) · [Stromsektor](../wissen/stromsektor.qmd)]{.ebenen-pfad}
 
 ```{=html}
 <svg width="0" height="0" class="icon-defs" aria-hidden="true">
