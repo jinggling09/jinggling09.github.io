@@ -1,0 +1,195 @@
+---
+title: "Wasserstoff"
+---
+
+::: {.technik-karte}
+{{< include ../daten/data/_kopf_wasserstoff.md >}}
+
+::: {.tk-text}
+`<h1 class="tk-titel">Wasserstoff</h1>`{=html}
+
+[Deutschland, EU und China im Vergleich: Wie viel grüner Wasserstoff wird erzeugt, welche Ziele gelten – und wer baut Netz, Nachfrage und Fabriken auf?]{.tk-sub}
+
+[Stand: 16.10.2026]{.stand}
+:::
+:::
+
+[Energiewende · [Photovoltaik](photovoltaik.qmd) · [Windenergie](windenergie.qmd) · [Wärmepumpen](waermepumpen.qmd) · **Wasserstoff**]{.ebenen-pfad}
+
+```{=html}
+<svg width="0" height="0" class="icon-defs" aria-hidden="true">
+ <symbol id="t-ziel" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></symbol>
+ <symbol id="t-netz" viewBox="0 0 24 24"><path d="M2.5 9.5h19M2.5 14.5h19"/><path d="M6 9.5v5M12 9.5v5M18 9.5v5"/></symbol>
+ <symbol id="t-geld" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M15 8.6a3.6 3.6 0 1 0 0 6.8M7.5 11h5.5M7.5 13.2h5.5"/></symbol>
+ <symbol id="t-fabrik" viewBox="0 0 24 24"><path d="M3 20.5h18M4.5 20.5v-9l5 3v-3l5 3v-3l5 3v6"/><path d="M6 11.5V4h2.5v5.5"/></symbol>
+</svg>
+```
+
+Wasserstoff ist kein Energieträger aus der Natur, sondern muss hergestellt werden. Klimafreundlich ist er nur, wenn er per Elektrolyse aus erneuerbarem Strom entsteht („grüner“ Wasserstoff). Gebraucht wird er dort, wo direkter Strom schwer einsetzbar ist – etwa in Stahl, Chemie und Raffinerien. Weltweit stammt bisher weniger als 1 % der Wasserstofferzeugung aus emissionsarmen Verfahren [@iea_ghr_2025].
+
+## Auf einen Blick
+
+::: {.land-drei}
+
+::: {.land-karte .de}
+[Deutschland]{.land-name}
+
+[181 MW]{.gross}
+[Elektrolyseleistung in Betrieb, Anfang 2026]{.klein}
+
+| | |
+|---|---|
+| im Bau oder beschlossen | 1,27 GW |
+| alle Ankündigungen bis 2030 | 8,7 GW |
+| Ziel 2030 | 10 GW |
+
+`<div class="fortschritt" style="--wert:1.8%"><span></span></div>`{=html}
+[**1,8 %** des Ziels für 2030]{.klein}
+:::
+
+::: {.land-karte .eu}
+[Europäische Union]{.land-name}
+
+[0,5–0,8 GW]{.gross}
+[Elektrolyseleistung Ende 2025 (Schätzung)]{.klein}
+
+| | |
+|---|---|
+| Fabriken für Elektrolyseure | 8,9 GW/Jahr |
+| 3. Auktion Wasserstoffbank | ≈ 1,1 GW |
+| Ziel 2030 | 40 GW |
+
+`<div class="fortschritt" style="--wert:1.6%"><span></span></div>`{=html}
+[**1–2 %** des Ziels für 2030]{.klein}
+:::
+
+::: {.land-karte .cn}
+[China]{.land-name}
+
+[39 Mio. t]{.gross}
+[Wasserstoff erzeugt 2025 – fast nur fossil^1^]{.klein}
+
+| | |
+|---|---|
+| erneuerbar, in Betrieb | über 250.000 t/Jahr |
+| erneuerbar, im Bau | über 900.000 t/Jahr |
+| Anteil an der Welt (erneuerbar) | 53 % |
+
+`<div class="fortschritt" style="--wert:100%"><span></span></div>`{=html}
+[Ziel 2025 von **100.000–200.000 t** übertroffen^2^]{.klein}
+:::
+
+:::
+
+::: {.belege}
+**Belege** · Deutschland: [@ewi_elektrolyse_2026; @bmwe_nws] · EU: [@jrc_elektrolyse_2025; @ec_ehb3_2026; @ec_h2strategie_2020] · China: [@nea_h2_2026; @ndrc_h2plan_2022] · ^1^ 2024 stammten von 36,5 Mio. t rund 57 % aus Kohle, 21 % aus Erdgas, 21 % als Nebenprodukt der Industrie und unter 1 % aus Elektrolyse – eigene Berechnung aus [@nea_h2_2025]. ^2^ Vergleich der Produktionskapazität (über 250.000 t/Jahr) mit dem Ziel für die erzeugte Menge erneuerbaren Wasserstoffs im Jahr 2025; die tatsächlich erzeugte Menge nennt der Bericht nicht. Die chinesischen Werte sind in Tonnen angegeben, die europäischen in Elektrolyseleistung – direkt vergleichbar sind sie nicht.
+:::
+
+## Wie weit sind die Ziele?
+
+::: {.balken-vergleich}
+
+[Erreichter Anteil am jeweiligen Ziel, %]{.bv-titel}
+
+`<div class="bv-zeile cn"><span class="bv-land">China</span><span class="bv-spur"><span style="width:100%"></span></span><span class="bv-wert">&gt; 100</span></div><div class="bv-zeile de"><span class="bv-land">Deutschland</span><span class="bv-spur"><span style="width:1.8%"></span></span><span class="bv-wert">1,8</span></div><div class="bv-zeile eu"><span class="bv-land">EU</span><span class="bv-spur"><span style="width:1.6%"></span></span><span class="bv-wert">1–2</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Belege** · China: erneuerbare Produktionskapazität gegenüber dem Ziel 2025 (Obergrenze 200.000 t); Deutschland: 181 MW von 10 GW; EU: 514–800 MW von 40 GW (Mitte des Schätzbereichs gezeigt), jeweils eigene Berechnung aus den oben genannten Quellen.
+:::
+
+China hat sein – vergleichsweise bescheidenes – Ziel für 2025 erreicht; Deutschland und die EU sind bei ihren deutlich höheren Zielen für 2030 erst am Anfang. Laut EWI würde Deutschland selbst dann unter 10 GW bleiben, wenn alle angekündigten Projekte gebaut würden [@ewi_elektrolyse_2026].
+
+## Wie wird der Hochlauf gesteuert?
+
+::: {.matrix}
+
+```{=html}
+<div class="m-kopf"><span></span><span class="m-land de">Deutschland</span><span class="m-land eu">Europäische Union</span><span class="m-land cn">China</span></div>
+```
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-ziel"/></svg>`{=html}
+**Ziel**
+:::
+
+::: {.m-zelle .de}
+Nationale Wasserstoffstrategie 2023: **mindestens 10 GW Elektrolyse bis 2030** im Inland, der Rest des Bedarfs über Importe [@bmwe_nws].
+:::
+
+::: {.m-zelle .eu}
+Wasserstoffstrategie 2020: **40 GW Elektrolyse bis 2030** [@ec_h2strategie_2020]. REPowerEU: je **10 Mio. t** erneuerbarer Wasserstoff aus eigener Erzeugung und aus Importen bis 2030 [@ec_repowereu_2022].
+:::
+
+::: {.m-zelle .cn}
+Plan 2021–2035: bis 2025 **100.000–200.000 t** erneuerbarer Wasserstoff pro Jahr und rund **50.000 Brennstoffzellenfahrzeuge** [@ndrc_h2plan_2022] – Ende 2025 waren es 32.000 [@nea_h2_2026]. Das Energiegesetz zählt Wasserstoff seit 2025 zu den Energieträgern [@cn_energiegesetz].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-netz"/></svg>`{=html}
+**Netz**
+:::
+
+::: {.m-zelle .de}
+**Wasserstoff-Kernnetz**: 9.040 km Leitungen bis 2032, rund 60 % umgestellte Erdgasleitungen, 18,9 Mrd. € [@bnetza_kernnetz_2024]. Seit 2026 soll ein eigenes Gesetz Zulassung und Vergabe für Wasserstoffanlagen beschleunigen [@h2_beschleunigung_2026].
+:::
+
+::: {.m-zelle .eu}
+REPowerEU verlangt Infrastruktur für Erzeugung, Einfuhr und Transport von **20 Mio. t** Wasserstoff bis 2030 [@ec_repowereu_2022].
+:::
+
+::: {.m-zelle .cn}
+Über **590 Wasserstofftankstellen** [@nea_h2_2026]. Die Projekte für erneuerbaren Wasserstoff liegen vor allem im Norden und Nordwesten [@nea_h2_2025].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-geld"/></svg>`{=html}
+**Förderung**
+:::
+
+::: {.m-zelle .de}
+**Klimaschutzverträge**: 2024 erhielten 15 Unternehmen zusammen bis zu 2,8 Mrd. € über 15 Jahre für den Umbau ihrer Produktion [@bmwk_ksv_2024]. Für neue Gasheizungen zählt Wasserstoff zur „Bio-Treppe“ [@gmodg].
+:::
+
+::: {.m-zelle .eu}
+**Europäische Wasserstoffbank**: Die dritte Auktion 2026 vergab 1,09 Mrd. € aus Emissionshandelserlösen an 9 Projekte mit fast 1,1 GW [@ec_ehb3_2026]. **Quote**: In der Industrie müssen 2030 mindestens **42 %**, 2035 **60 %** des Wasserstoffs erneuerbar sein [Art. 22a @eu_red3].
+:::
+
+::: {.m-zelle .cn}
+Der Plan setzt auf **Pilotanwendungen** in Verkehr, Energiespeicherung, Stromerzeugung und Industrie [@ndrc_h2plan_2022]. Erneuerbare Projekte mit über 1 Mio. t/Jahr sind in Betrieb oder im Bau [@nea_h2_2026].
+:::
+:::
+
+:::
+
+## Wer stellt die Elektrolyseure her?
+
+::: {.lieferkette}
+`<svg class="m-icon gross"><use href="#t-fabrik"/></svg>`{=html}
+
+[≈ 60 %]{.lk-zahl .cn}
+
+[Chinas Anteil an der weltweiten Fertigungskapazität für Elektrolyseure; zugleich 65 % der weltweit gebauten oder beschlossenen Elektrolyseleistung [@iea_ghr_2025]]{.lk-text}
+
+[8,9 GW]{.lk-zahl .eu}
+
+[jährliche Fertigungskapazität in der EU (Ende 2025) – weit mehr, als derzeit eingebaut wird [@jrc_elektrolyse_2025]]{.lk-text}
+:::
+
+Bei Elektrolyseuren hat Europa eigene Fabriken, aber zu wenig Nachfrage: Die Fertigungskapazität übersteigt den jährlichen Zubau um ein Vielfaches. In China wachsen Produktion und eigener Ausbau zugleich.
+
+## Einordnung
+
+::: {.einordnung}
+**Ehrgeizige Ziele, wenig Bau.** Deutschland und die EU haben früh hohe Ziele gesetzt, bauen aber kaum: Bis Ende 2030 bleiben gut vier Jahre für über 95 % der geplanten Leistung. Die Gründe – hohe Erzeugungskosten, geringe Zahlungsbereitschaft der Abnehmer und unsichere Regeln – nennt auch das EWI [@ewi_elektrolyse_2026].
+
+**China kehrt die Reihenfolge um.** Ausgangspunkt ist die größte fossile Wasserstoffproduktion der Welt; die Ziele für grünen Wasserstoff waren klein und wurden übertroffen. Entscheidend wird, ob China fossilen Wasserstoff tatsächlich verdrängt – bisher stammt weniger als 1 % aus Elektrolyse [@nea_h2_2025].
+
+**Netz vor Markt.** Deutschland baut mit dem Kernnetz die Infrastruktur, bevor es Erzeugung und Abnehmer gibt. Die EU-Quote für die Industrie ab 2030 soll diese Nachfrage schaffen; ob sie rechtzeitig wirkt, hängt von der nationalen Umsetzung ab.
+:::

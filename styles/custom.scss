@@ -938,7 +938,7 @@ main.content:has(.technik-karte) #title-block-header { display: none; }
     -webkit-mask-image: linear-gradient(to right, transparent, rgba(0,0,0,.35) 25%, #000 55%);
             mask-image: linear-gradient(to right, transparent, rgba(0,0,0,.35) 25%, #000 55%);
     svg { display: block; width: 100%; height: 100%; }
-    .tk-linie { fill: none; stroke: $gruen; stroke-width: 1.3px; stroke-linecap: round; stroke-linejoin: round; * { vector-effect: non-scaling-stroke; } }
+    .tk-linie { fill: none; stroke: $gruen; color: $gruen; stroke-width: 1.3px; stroke-linecap: round; stroke-linejoin: round; * { vector-effect: non-scaling-stroke; } }
     rect:hover { opacity: .55; }
   }
   .tk-quelle { position: absolute; right: 12px; bottom: 5px; font-size: .72rem; color: $grau; z-index: 1; }

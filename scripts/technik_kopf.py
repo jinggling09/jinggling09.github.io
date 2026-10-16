@@ -9,7 +9,7 @@ Eingabe (daten/data/):
                                 vergleichbare amtliche Jahresreihe, daher nur ein Streifen)
 
 Ausgabe (daten/data/, eingebunden per {{< include >}}):
-  _kopf_wind.md, _kopf_photovoltaik.md, _kopf_waermepumpen.md
+  _kopf_wind.md, _kopf_photovoltaik.md, _kopf_waermepumpen.md, _kopf_wasserstoff.md
 
 Wird von scripts/build.sh vor dem Rendern aufgerufen. Nur Standardbibliothek.
 """
@@ -118,6 +118,28 @@ def zeichnung_wp() -> str:
     return s
 
 
+def zeichnung_h2() -> str:
+    """Windrad und Solarmodule liefern Strom an einen Elektrolyseur; Wasserstoff geht in Tank und Leitung."""
+    s = '<path d="M0 262H900"/>'
+    s += turbine(400, 258, 120, 40)
+    for i in range(3):
+        x = 450 + i * 52
+        s += f'<path d="M{x} 258L{x + 44} 258L{x + 54} 238L{x + 10} 238Z"/><path d="M{x + 22} 258L{x + 32} 238" opacity=".6"/>'
+    s += '<path d="M600 250H640" opacity=".7"/><path d="M630 244l10 6-10 6" opacity=".7"/>'
+    # Elektrolyseur (Container) mit Wellenlinie
+    s += '<rect x="640" y="200" width="110" height="58" rx="3"/><path d="M652 214h86M652 244h86" opacity=".6"/>'
+    s += '<path d="M660 229c8-8 14 8 22 0s14 8 22 0s14 8 22 0" />'
+    # Leitung zum Tank
+    s += '<path d="M750 236H790"/><path d="M750 242H790" opacity=".6"/>'
+    # Tank (liegender Zylinder) mit H2-Beschriftung
+    s += '<path d="M800 210h70a12 24 0 0 1 0 48h-70a12 24 0 0 1 0-48z"/><path d="M800 210a12 24 0 0 0 0 48" opacity=".6"/>'
+    s += '<text x="835" y="240" text-anchor="middle" font-size="18" stroke="none" fill="currentColor">H₂</text>'
+    s += '<path d="M815 258v8M855 258v8"/>'
+    # Pipeline ins Bild hinein
+    s += '<path d="M590 278H900" opacity=".55"/><path d="M590 284H900" opacity=".55"/>'
+    return s
+
+
 def streifen(de: dict[int, float], cn: dict[int, float], technik: str) -> tuple[str, int]:
     jahre = [j for j in sorted(cn) if j >= START and j in de]
     x0, x1, y0, h = 300.0, 900.0, 262, 17
@@ -152,13 +174,14 @@ def baustein(zeichnung: str, de: dict[int, float], cn: dict[int, float], technik
     return karte(zeichnung, rechtecke, unterschrift)
 
 
-def karte(zeichnung: str, rechtecke: str, unterschrift: str) -> str:
+def karte(zeichnung: str, rechtecke: str, unterschrift: str, viewbox: str = "0 0 900 300") -> str:
     return ("<!-- Erzeugt von scripts/technik_kopf.py – nicht von Hand bearbeiten -->\n"
             "```{=html}\n"
-            f'<div class="tk-deko"><svg viewBox="0 0 900 300" preserveAspectRatio="xMaxYMax meet" '
-            f'role="img" aria-label="{unterschrift}">'
+            f'<div class="tk-deko"><svg viewBox="{viewbox}" preserveAspectRatio="xMaxYMax meet" '
+            f'role="img" aria-label="{unterschrift or "Strichzeichnung"}">'
             f'<g class="tk-linie" transform="translate(90 2) scale(.9)">{zeichnung}</g>'
-            f'{rechtecke}</svg></div><div class="tk-quelle">{unterschrift}</div>\n```\n')
+            f'{rechtecke}</svg></div>'
+            + (f'<div class="tk-quelle">{unterschrift}</div>' if unterschrift else '') + '\n```\n')
 
 
 def lade_wp_absatz() -> dict[int, float]:
@@ -174,6 +197,10 @@ def main() -> None:
         zeichnung_wp(), rechtecke,
         f"Streifen: Absatz von Heizungs-Wärmepumpen in Deutschland {START}–{bis} · je dunkler, desto mehr; "
         f"Höchstwert {rekord}"), encoding="utf-8")
+    # Wasserstoff: keine vergleichbare Jahresreihe für Deutschland und China – nur Zeichnung, keine Streifen
+    # ohne Streifen: Ausschnitt enger, damit die Zeichnung die Karte füllt
+    (DATA / "_kopf_wasserstoff.md").write_text(
+        karte(zeichnung_h2(), "", "", viewbox="330 70 570 215"), encoding="utf-8")
     (DATA / "_kopf_wind.md").write_text(
         baustein(zeichnung_wind(), r["de"]["wind"], r["cn"]["wind"], "Windenergie", "Windleistung"), encoding="utf-8")
     (DATA / "_kopf_photovoltaik.md").write_text(

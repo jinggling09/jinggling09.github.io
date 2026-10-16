@@ -63,6 +63,8 @@ website:
             text: "Windenergie"
           - href: energiewende/waermepumpen.qmd
             text: "Wärmepumpen"
+          - href: energiewende/wasserstoff.qmd
+            text: "Wasserstoff"
       - text: "Emissionen"
         menu:
           - href: wissen/emissionen-de.qmd

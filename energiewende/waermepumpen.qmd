@@ -14,7 +14,7 @@ title: "Wärmepumpen"
 :::
 :::
 
-[Energiewende · [Photovoltaik](photovoltaik.qmd) · [Windenergie](windenergie.qmd) · **Wärmepumpen** · [CO₂-Bepreisung: EU-ETS, ETS 2 & BEHG](../wissen/eu-ets.qmd)]{.ebenen-pfad}
+[Energiewende · [Photovoltaik](photovoltaik.qmd) · [Windenergie](windenergie.qmd) · **Wärmepumpen** · [Wasserstoff](wasserstoff.qmd) · [CO₂-Bepreisung: EU-ETS, ETS 2 & BEHG](../wissen/eu-ets.qmd)]{.ebenen-pfad}
 
 ```{=html}
 <svg width="0" height="0" class="icon-defs" aria-hidden="true">

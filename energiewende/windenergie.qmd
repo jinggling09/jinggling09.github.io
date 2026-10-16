@@ -14,7 +14,7 @@ title: "Windenergie"
 :::
 :::
 
-[Energiewende · [Photovoltaik](photovoltaik.qmd) · **Windenergie** · [Wärmepumpen](waermepumpen.qmd) · [Ausbau-Daten Wind & Solar](../daten/index.qmd) · [Stromsektor](../wissen/stromsektor.qmd)]{.ebenen-pfad}
+[Energiewende · [Photovoltaik](photovoltaik.qmd) · **Windenergie** · [Wärmepumpen](waermepumpen.qmd) · [Wasserstoff](wasserstoff.qmd) · [Ausbau-Daten Wind & Solar](../daten/index.qmd) · [Stromsektor](../wissen/stromsektor.qmd)]{.ebenen-pfad}
 
 ```{=html}
 <svg width="0" height="0" class="icon-defs" aria-hidden="true">
