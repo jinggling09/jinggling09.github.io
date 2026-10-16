@@ -82,8 +82,8 @@ Datenanalyse mit R und Python, GIS-Analyse, Carbon Management
 [Selbststudium und Eigenprojekte]{.org}
 
 - Deutsch bis C1-Niveau; Python für Datenanalyse (Harvard CS50P)
-- Aufbau dieser dreisprachigen Plattform zum Klimaschutzvergleich Deutschland–China: KI-gestützt entwickelt, Aussagen vorrangig mit Primärquellen belegt
-- Einarbeitung in Ökobilanzierung (OpenLCA) und GHG Protocol
+- Aufbau dieser Wissensplattform zu Klimaschutz und Energiewende
+- Einarbeitung in Ökobilanzierung (OpenLCA), GHG Protocol, Nachhaltigkeitsanalyse und -berichterstattung (u. a. CSRD)
 :::
 
 ::: {.zeit-l}
