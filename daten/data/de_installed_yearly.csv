@@ -1,29 +1,29 @@
 jahr,reihe,art,gw
 2002,Photovoltaik,Ist,0.29
 2003,Photovoltaik,Ist,0.434
-2004,Photovoltaik,Ist,1.086
+2004,Photovoltaik,Ist,1.085
 2005,Photovoltaik,Ist,2.007
 2006,Photovoltaik,Ist,2.85
 2007,Photovoltaik,Ist,4.102
 2008,Photovoltaik,Ist,6.076
-2009,Photovoltaik,Ist,10.51
-2010,Photovoltaik,Ist,18.09
-2011,Photovoltaik,Ist,26.067
-2012,Photovoltaik,Ist,32.922
-2013,Photovoltaik,Ist,36.053
-2014,Photovoltaik,Ist,37.818
-2015,Photovoltaik,Ist,39.235
-2016,Photovoltaik,Ist,40.734
-2017,Photovoltaik,Ist,42.403
-2018,Photovoltaik,Ist,45.406
-2019,Photovoltaik,Ist,49.415
-2020,Photovoltaik,Ist,54.555
-2021,Photovoltaik,Ist,60.264
-2022,Photovoltaik,Ist,67.84
-2023,Photovoltaik,Ist,83.298
-2024,Photovoltaik,Ist,100.785
-2025,Photovoltaik,Ist,118.067
-2026,Photovoltaik,Ist,130.361
+2009,Photovoltaik,Ist,10.511
+2010,Photovoltaik,Ist,18.091
+2011,Photovoltaik,Ist,26.068
+2012,Photovoltaik,Ist,32.923
+2013,Photovoltaik,Ist,36.055
+2014,Photovoltaik,Ist,37.82
+2015,Photovoltaik,Ist,39.237
+2016,Photovoltaik,Ist,40.736
+2017,Photovoltaik,Ist,42.405
+2018,Photovoltaik,Ist,45.409
+2019,Photovoltaik,Ist,49.418
+2020,Photovoltaik,Ist,54.558
+2021,Photovoltaik,Ist,60.267
+2022,Photovoltaik,Ist,67.844
+2023,Photovoltaik,Ist,83.304
+2024,Photovoltaik,Ist,100.797
+2025,Photovoltaik,Ist,118.09
+2026,Photovoltaik,Ist,131.096
 2024,Photovoltaik,Ziel,88.0
 2026,Photovoltaik,Ziel,128.0
 2028,Photovoltaik,Ziel,172.0
@@ -52,7 +52,7 @@ jahr,reihe,art,gw
 2023,Wind an Land,Ist,61.013
 2024,Wind an Land,Ist,63.589
 2025,Wind an Land,Ist,68.179
-2026,Wind an Land,Ist,71.274
+2026,Wind an Land,Ist,71.46
 2024,Wind an Land,Ziel,69.0
 2026,Wind an Land,Ziel,84.0
 2028,Wind an Land,Ziel,99.0
@@ -74,5 +74,5 @@ jahr,reihe,art,gw
 2023,Wind auf See,Ist,8.473
 2024,Wind auf See,Ist,9.215
 2025,Wind auf See,Ist,9.733
-2026,Wind auf See,Ist,11.434
+2026,Wind auf See,Ist,11.554
 2030,Wind auf See,Ziel,30.0
