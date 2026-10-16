@@ -38,7 +38,7 @@ toc: false
 
 ### GHG inventories & strategies
 
-Research projects on greenhouse gas inventories and climate strategies for the City of Beijing
+Forest carbon, waste incineration, carbon-neutrality pathways, CCUS
 :::
 
 ::: {.feld}
@@ -72,6 +72,20 @@ Data analysis with R and Python, GIS analysis, carbon management
 ::: {.lebenslauf}
 
 ::: {.zeit-l}
+10/2025 – present
+:::
+
+::: {.eintrag}
+### Relocation to Germany and professional development
+
+[Self-study and own projects]{.org}
+
+- German up to C1 level; Python for data analysis (Harvard CS50P)
+- Built this three-language platform comparing climate policy in Germany and China, using AI-assisted development and primary sources
+- Training in life cycle assessment (OpenLCA) and the GHG Protocol
+:::
+
+::: {.zeit-l}
 10/2021 – 10/2025
 :::
 
@@ -80,10 +94,11 @@ Data analysis with R and Python, GIS analysis, carbon management
 
 [Beijing Climate Change Management Center · Beijing]{.org}
 
-- Coordinated the pilot programme for innovative low-carbon technologies
-- Contributed to research projects on greenhouse gas inventories and the city's climate strategies
-- Organised international expert conferences, including the Beijing International Forum on Clean Air and Climate Action
-- Coordinated contacts with international partners and government delegations (including the UNFCCC and the Embassies of Switzerland and Denmark in China): planned and accompanied site visits to Beijing's low-carbon projects, interpreted
+- Coordinated the pilot programme for low-carbon technologies: advice to companies, expert reviews, site visits, release of funds, submission to the Ministry of Ecology and Environment
+- Co-developed a digital project database with interactive visualisation: digitised more than 240 paper project files and made them available in the cloud; software copyright as second author
+- GHG inventories and studies: forest carbon, waste incineration, carbon-neutrality pathways for two city districts, emissions peaking of the districts (Energy Foundation China), CCUS; article on the EU Emissions Trading System; edited the monthly climate bulletin
+- Organised international expert conferences (including the Beijing International Forum on Clean Air and Climate Action) and Beijing's National Low-Carbon Day; hosted and interpreted for guests, including a representative of the Berlin Senate administration
+- Hosted government delegations (including the UNFCCC, the UK, California, New Zealand and the Embassies of Switzerland and Denmark): visits to low-carbon projects, Chinese–English interpreting; organised official trips abroad (2023: 5 groups, 19 people)
 :::
 
 ::: {.zeit-l}

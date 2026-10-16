@@ -39,7 +39,7 @@ toc: false
 
 ### THG-Inventare & Strategien
 
-Forschungsprojekte zu Treibhausgasinventaren und Klimaschutzstrategien der Stadt Peking
+Waldkohlenstoff, Müllverbrennung, Klimaneutralitätspfade, CCUS
 :::
 
 ::: {.feld}
@@ -73,6 +73,20 @@ Datenanalyse mit R und Python, GIS-Analyse, Carbon Management
 ::: {.lebenslauf}
 
 ::: {.zeit-l}
+10/2025 – heute
+:::
+
+::: {.eintrag}
+### Umzug nach Deutschland und Weiterbildung
+
+[Selbststudium und Eigenprojekte]{.org}
+
+- Deutsch bis C1-Niveau; Python für Datenanalyse (Harvard CS50P)
+- Aufbau dieser dreisprachigen Plattform zum Klimaschutzvergleich Deutschland–China: KI-gestützt entwickelt, Aussagen vorrangig mit Primärquellen belegt
+- Einarbeitung in Ökobilanzierung (OpenLCA) und GHG Protocol
+:::
+
+::: {.zeit-l}
 10/2021 – 10/2025
 :::
 
@@ -81,10 +95,11 @@ Datenanalyse mit R und Python, GIS-Analyse, Carbon Management
 
 [Beijing Climate Change Management Center · Peking]{.org}
 
-- Koordination des Pilotprogramms für innovative Low-Carbon-Technologien
-- Mitwirkung an Forschungsprojekten zu Treibhausgasinventaren und Klimaschutzstrategien der Stadt
-- Organisation internationaler Fachkonferenzen, u. a. Beijing International Forum on Clean Air and Climate Action
-- Koordination der Kontakte zu internationalen Partnern und Regierungsdelegationen (u. a. UNFCCC, Botschaft der Schweiz und Botschaft von Dänemark in China): Planung und Begleitung von Fachbesuchen bei Pekinger Low-Carbon-Projekten, Dolmetschen
+- Koordination des Pilotprogramms für Low-Carbon-Technologien: Unternehmensberatung, Expertenbewertungen, Vor-Ort-Begehungen, Abstimmung der Mittelfreigabe, Einreichung beim Ministerium für Ökologie und Umwelt
+- Mitentwicklung einer Projektdatenbank mit interaktiver Visualisierung: mehr als 240 Projektunterlagen aus Papierakten digitalisiert und in der Cloud bereitgestellt; Software-Urheberrecht als Zweitautorin
+- Mitarbeit an THG-Inventaren und Studien: Waldkohlenstoff, Müllverbrennung, Klimaneutralitätspfade zweier Stadtbezirke, Emissionshöhepunkt der Bezirke (Energy Foundation China), CCUS; Fachartikel zum EU-Emissionshandel; Redaktion des monatlichen Klima-Bulletins
+- Organisation internationaler Fachkonferenzen (u. a. Beijing International Forum on Clean Air and Climate Action) und des Nationalen Low-Carbon-Tags Peking; Betreuung und Dolmetschen für Gäste, darunter ein Vertreter der Berliner Senatsverwaltung
+- Begleitung von Regierungsdelegationen (u. a. UNFCCC, Großbritannien, Kalifornien, Neuseeland, Botschaften der Schweiz und Dänemarks): Fachbesuche bei Low-Carbon-Projekten, Dolmetschen Chinesisch–Englisch; Organisation von Auslandsdienstreisen (2023: 5 Gruppen, 19 Personen)
 :::
 
 ::: {.zeit-l}
