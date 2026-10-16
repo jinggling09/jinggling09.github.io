@@ -1,0 +1,209 @@
+---
+title: "Wärmepumpen"
+---
+
+::: {.technik-karte}
+{{< include ../daten/data/_kopf_waermepumpen.md >}}
+
+::: {.tk-text}
+`<h1 class="tk-titel">Wärmepumpen</h1>`{=html}
+
+[Deutschland, EU und China im Vergleich: Wie viele Wärmepumpen werden eingebaut, welche Regeln gelten für neue Heizungen – und wer fördert den Umstieg?]{.tk-sub}
+
+[Stand: 16.10.2026]{.stand}
+:::
+:::
+
+[Energiewende · [Photovoltaik](photovoltaik.qmd) · [Windenergie](windenergie.qmd) · **Wärmepumpen** · [CO₂-Bepreisung: EU-ETS, ETS 2 & BEHG](../wissen/eu-ets.qmd)]{.ebenen-pfad}
+
+```{=html}
+<svg width="0" height="0" class="icon-defs" aria-hidden="true">
+ <symbol id="t-ziel" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></symbol>
+ <symbol id="t-regel" viewBox="0 0 24 24"><path d="M6 3.5h9l3.5 3.5v13.5H6z"/><path d="M14.5 3.5V7.5h4M9 11.5h6.5M9 14.5h6.5M9 17.5h4"/></symbol>
+ <symbol id="t-geld" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M15 8.6a3.6 3.6 0 1 0 0 6.8M7.5 11h5.5M7.5 13.2h5.5"/></symbol>
+ <symbol id="t-preis" viewBox="0 0 24 24"><path d="M2.8 11.6V4.3a1.5 1.5 0 0 1 1.5-1.5h7.3l9.1 9.1a1.5 1.5 0 0 1 0 2.1l-7.2 7.2a1.5 1.5 0 0 1-2.1 0z"/><circle cx="7.2" cy="7.2" r="1.4"/></symbol>
+ <symbol id="t-fabrik" viewBox="0 0 24 24"><path d="M3 20.5h18M4.5 20.5v-9l5 3v-3l5 3v-3l5 3v6"/><path d="M6 11.5V4h2.5v5.5"/></symbol>
+</svg>
+```
+
+Wärmepumpen sind keine erneuerbare Energiequelle im engeren Sinn, sondern eine Heiztechnik: Sie nutzen Strom, um Wärme aus Luft, Erde oder Wasser auf Heiztemperatur zu bringen. Mit wachsendem Ökostromanteil ersetzen sie Gas- und Ölheizungen. Anders als bei Wind und Solar gibt es keine einheitliche Statistik für alle drei; die Kennzahlen unten messen deshalb jeweils das, was amtlich oder verlässlich verfügbar ist.
+
+## Auf einen Blick
+
+::: {.land-drei}
+
+::: {.land-karte .de}
+[Deutschland]{.land-name}
+
+[299.000]{.gross}
+[Heizungs-Wärmepumpen verkauft, 2025]{.klein}
+
+| | |
+|---|---|
+| Anteil am Heizungsabsatz | 48 %^1^ |
+| Neue Wohngebäude 2025 | 73,6 % |
+| Förderzusagen 2025 | über 288.000 |
+
+`<div class="fortschritt" style="--wert:60%"><span></span></div>`{=html}
+[**60 %** des Ziels von 500.000 pro Jahr (2022)]{.klein}
+:::
+
+::: {.land-karte .eu}
+[Europa (21 Länder)]{.land-name}
+
+[2,88 Mio.]{.gross}
+[Wärmepumpen verkauft, 2025^2^]{.klein}
+
+| | |
+|---|---|
+| Bestand Ende 2025 | 29,3 Mio. |
+| gegenüber 2024 | +13 % |
+| EU-Ziel 2022–2027 | +10 Mio.^3^ |
+:::
+
+::: {.land-karte .cn}
+[China]{.land-name}
+
+[über 25 %]{.gross}
+[Anteil am weltweiten Wärmepumpen-Absatz (2023)]{.klein}
+
+| | |
+|---|---|
+| Weltproduktion (2022) | ≈ 35 % |
+| Anteil am Wärmebedarf der Gebäude | ≈ 4 % |
+| saubere Wärme im Norden (2024) | 83 %^4^ |
+:::
+
+:::
+
+::: {.belege}
+**Belege** · Deutschland: Absatz und Förderzusagen [@bwp_absatz_2026], Heizungsabsatz insgesamt 627.000 Anlagen [@bdh_2026], Neubau [@destatis_wp_2026], Ziel [@bmwk_wp_2022] · Europa: [@ehpa_2026; @ec_repowereu_2022] · China: [@iea_wp_china_2024; @nea_qingjie_2025] · ^1^ Eigene Berechnung: 299.000 von 627.000 verkauften Wärmeerzeugern. ^2^ Angaben des Branchenverbands EHPA für 21 europäische Länder einschließlich Norwegen, Schweiz und Vereinigtes Königreich – eine reine EU-Statistik gibt es nicht. ^3^ Der REPowerEU-Plan strebt eine Verdopplung des Ausbautempos an, „sodass in den nächsten fünf Jahren insgesamt 10 Millionen“ individuelle Wärmepumpen eingebaut werden; eine amtliche Fortschrittszahl liegt nicht vor. ^4^ Anteil sauberer Heizformen im Norden Chinas insgesamt, nicht nur Wärmepumpen. Für China gibt es keine öffentliche amtliche Absatzstatistik; die Anteile stammen von der IEA.
+:::
+
+## Wärmepumpen in Deutschland
+
+::: {.balken-vergleich}
+
+[Anteil der Wärmepumpe als Hauptheizung bzw. am Heizungsabsatz, %]{.bv-titel}
+
+`<div class="bv-zeile de"><span class="bv-land">Neubau 2015</span><span class="bv-spur"><span style="width:31.4%"></span></span><span class="bv-wert">31,4</span></div><div class="bv-zeile de"><span class="bv-land">Neubau 2025</span><span class="bv-spur"><span style="width:73.6%"></span></span><span class="bv-wert">73,6</span></div><div class="bv-zeile de"><span class="bv-land">Genehmigt 2025</span><span class="bv-spur"><span style="width:83%"></span></span><span class="bv-wert">83,0</span></div><div class="bv-zeile de"><span class="bv-land">Absatz 2025</span><span class="bv-spur"><span style="width:48%"></span></span><span class="bv-wert">48</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Belege** · Neubau = fertiggestellte Wohngebäude, Genehmigt = genehmigte Wohngebäude, jeweils mit Wärmepumpe als hauptsächlicher Heizung [@destatis_wp_2026]; Absatz = Anteil am Absatz aller Wärmeerzeuger [@bwp_absatz_2026; @bdh_2026].
+:::
+
+Im Neubau ist die Wärmepumpe längst Standard. Entscheidend ist aber der Bestand: Dort laufen noch rund 14,8 Millionen Gas- und 4,7 Millionen Ölheizungen [@schornsteinfeger_2026]. Und der Absatz hängt stark an Förderung und Regeln – 2024 brach er nach dem Rekordjahr 2023 fast um die Hälfte ein [@bwp_absatz_2026].
+
+## Wie wird der Umstieg gesteuert?
+
+::: {.matrix}
+
+```{=html}
+<div class="m-kopf"><span></span><span class="m-land de">Deutschland</span><span class="m-land eu">Europäische Union</span><span class="m-land cn">China</span></div>
+```
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-ziel"/></svg>`{=html}
+**Ziel**
+:::
+
+::: {.m-zelle .de}
+Kein gesetzliches Ziel. 2022 vereinbarten Bundesregierung und Branche **500.000 neue Wärmepumpen pro Jahr ab 2024** [@bmwk_wp_2022] – 2025 waren es 299.000.
+:::
+
+::: {.m-zelle .eu}
+REPowerEU: **Verdopplung des Ausbautempos**, 10 Millionen zusätzliche Wärmepumpen in fünf Jahren [@ec_repowereu_2022]. Die Gebäuderichtlinie verlangt nationale Pläne für den **Ausstieg aus fossilen Heizkesseln bis 2040** [Anh. II @eu_epbd].
+:::
+
+::: {.m-zelle .cn}
+Aktionsplan 2025 ohne Stückzahl-Ziel: Bis 2030 sollen wichtige Geräte **über 20 % effizienter** werden und Einsatz in Gebäuden, Industrie, Landwirtschaft und Verkehr wachsen [@ndrc_313_2025].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-regel"/></svg>`{=html}
+**Regeln**
+:::
+
+::: {.m-zelle .de}
+Seit 29.07.2026 gilt das **Gebäudemodernisierungsgesetz**: Die 65-%-Regel für erneuerbare Wärme entfällt. Neue Gas- und Ölheizungen müssen stattdessen steigende Anteile Biobrennstoff oder Wasserstoff nutzen – **10 % ab 2029, 15 % ab 2030, 30 % ab 2035, 60 % ab 2040** [@gmodg].
+:::
+
+::: {.m-zelle .eu}
+Seit 01.01.2025 dürfen die Mitgliedstaaten den Einbau **eigenständiger fossiler Heizkessel nicht mehr fördern** [Art. 17 Abs. 15 @eu_epbd].
+:::
+
+::: {.m-zelle .cn}
+Programm **saubere Wärme im Norden**: Ende 2024 lag der Anteil sauberer Heizung dort bei **83 %** [@nea_qingjie_2025]. Der Aktionsplan soll Wärmepumpen dort als feste Wärmequelle stärken [@ndrc_313_2025].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-geld"/></svg>`{=html}
+**Förderung**
+:::
+
+::: {.m-zelle .de}
+KfW-Zuschuss: **30 % Grundförderung**, dazu bis zu 16 % für den schnellen Tausch alter Heizungen und bis zu 40 % nach Einkommen; höchstens **70 %** (80 % bei geringem Einkommen) von bis zu 28.000 € [@kfw_458]. Seit 21.07.2026 sinken die Boni schrittweise.
+:::
+
+::: {.m-zelle .eu}
+Ab 2026 unterstützt der **Klima-Sozialfonds** einkommensschwache Haushalte, u. a. beim Heizungstausch [@eu_scf].
+:::
+
+::: {.m-zelle .cn}
+Zentrale Fördermittel für saubere Wärme gingen bisher an **88 Städte** [@nea_qingjie_2025].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-preis"/></svg>`{=html}
+**CO₂-Preis**
+:::
+
+::: {.m-zelle .de}
+Nationaler Emissionshandel: 2026 **55–65 €/t** [@behg]; für 2027 plant die Bundesregierung denselben Korridor [@bt_behg_2026].
+:::
+
+::: {.m-zelle .eu}
+Der **ETS 2** für Gebäude und Verkehr startet **2028** statt 2027 [@eu_ets_2023; @eu_klimagesetz_2026].
+:::
+
+::: {.m-zelle .cn}
+Der nationale Emissionshandel erfasst Kraftwerke sowie Stahl, Zement und Aluminium [@mee_2025] – das Heizen in Gebäuden wird nicht direkt bepreist.
+:::
+:::
+
+:::
+
+## Wer stellt die Geräte her?
+
+::: {.lieferkette}
+`<svg class="m-icon gross"><use href="#t-fabrik"/></svg>`{=html}
+
+[≈ 35 %]{.lk-zahl .cn}
+
+[Chinas Anteil an allen weltweit verkauften Wärmepumpen (Produktion 2022) [@iea_wp_china_2024]]{.lk-text}
+
+[40 %]{.lk-zahl .eu}
+
+[Richtwert der EU: Bis 2030 sollen Fabriken in der EU mindestens 40 % des jährlichen Bedarfs an Netto-Null-Technologien decken können – Wärmepumpen eingeschlossen [@eu_nzia]]{.lk-text}
+:::
+
+Anders als bei Solarmodulen ist China hier nicht dominant. Die Kommission zählt die EU bei Wärmepumpen-Technik zu den weltweit führenden, sieht aber steigende Einfuhren aus Asien [@ec_repowereu_2022]. Deutschland will die eigene Fertigung stärken – die KfW plant ab dem ersten Quartal 2027 eine geringere Grundförderung für Wärmepumpen, die außerhalb der EU und gleichgestellter Märkte hergestellt werden [@kfw_458].
+
+## Einordnung
+
+::: {.einordnung}
+**Deutschland lockert die Pflicht, hält aber den Preis.** Mit dem Gebäudemodernisierungsgesetz setzt Deutschland weniger auf Vorschriften für einzelne Heizungen und stärker auf CO₂-Preis und Förderung. Ob das reicht, hängt davon ab, wie verlässlich beides bleibt – der Einbruch 2024 zeigt, wie empfindlich der Markt auf Unsicherheit reagiert.
+
+**Die EU setzt den Rahmen, die Wirkung kommt später.** Förderverbot für fossile Kessel und ETS 2 wirken erst über nationale Umsetzung und ab 2028 über den Preis.
+
+**China denkt Wärmepumpen als Industrie.** Der Aktionsplan zielt auf Effizienz, Technik und Exporte, nicht auf Stückzahlen im eigenen Land. Weil das Heizen nicht im Emissionshandel ist, fehlt ein Preissignal, wie es Deutschland und die EU nutzen.
+:::

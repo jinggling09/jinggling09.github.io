@@ -61,6 +61,8 @@ website:
             text: "Photovoltaik"
           - href: energiewende/windenergie.qmd
             text: "Windenergie"
+          - href: energiewende/waermepumpen.qmd
+            text: "Wärmepumpen"
       - text: "Emissionen"
         menu:
           - href: wissen/emissionen-de.qmd

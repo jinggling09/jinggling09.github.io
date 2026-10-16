@@ -3,11 +3,13 @@
 Farbe = installierte Leistung im Verhältnis zum letzten Jahr der Reihe.
 
 Eingabe (daten/data/):
-  de_installed_yearly.csv – Energy-Charts (Fraunhofer ISE), Ist-Werte
-  cn_capacity_yearly.csv  – Nationales Statistikamt Chinas (NBS)
+  de_installed_yearly.csv     – Energy-Charts (Fraunhofer ISE), Ist-Werte
+  cn_capacity_yearly.csv      – Nationales Statistikamt Chinas (NBS)
+  de_waermepumpen_absatz.csv  – Bundesverband Wärmepumpe, Absatz je Jahr (für China gibt es keine
+                                vergleichbare amtliche Jahresreihe, daher nur ein Streifen)
 
 Ausgabe (daten/data/, eingebunden per {{< include >}}):
-  _kopf_wind.md, _kopf_photovoltaik.md
+  _kopf_wind.md, _kopf_photovoltaik.md, _kopf_waermepumpen.md
 
 Wird von scripts/build.sh vor dem Rendern aufgerufen. Nur Standardbibliothek.
 """
@@ -94,6 +96,28 @@ def zeichnung_pv() -> str:
     return s
 
 
+def zeichnung_wp() -> str:
+    s = '<path d="M0 262H900"/>'
+    # kleines Haus links
+    s += '<path d="M420 262V200L470 162L520 200V262M455 262V232H485V262"/>'
+    # großes Haus mit Heizkörper
+    s += '<path d="M560 262V176L660 106L760 176V262"/><path d="M540 190L660 104L780 190"/>'
+    s += '<path d="M590 200h40v30h-40zM610 200v30M590 215h40" opacity=".7"/>'
+    s += '<path d="M690 262V214H730V262"/>'
+    s += '<path d="M655 236v18M663 236v18M671 236v18M679 236v18M651 236h32M651 254h32" opacity=".7"/>'
+    # Außeneinheit mit Ventilator
+    s += '<rect x="790" y="206" width="80" height="52" rx="3"/><circle cx="822" cy="232" r="17"/>'
+    s += '<path d="M822 232l9-12M822 232l-14 3M822 232l6 14" opacity=".8"/><path d="M852 216v32" opacity=".6"/>'
+    # Leitung ins Haus und Wärmewellen
+    s += '<path d="M790 244H760" /><path d="M790 250H760" opacity=".6"/>'
+    for x in (612, 640, 668):
+        s += f'<path d="M{x} 96c-6-8 6-14 0-22s6-14 0-22" opacity=".55"/>'
+    # Luftstrom an der Außeneinheit
+    for y in (214, 232, 250):
+        s += f'<path d="M884 {y}c6-4 10 4 16 0" opacity=".5"/>'
+    return s
+
+
 def streifen(de: dict[int, float], cn: dict[int, float], technik: str) -> tuple[str, int]:
     jahre = [j for j in sorted(cn) if j >= START and j in de]
     x0, x1, y0, h = 300.0, 900.0, 262, 17
@@ -108,10 +132,27 @@ def streifen(de: dict[int, float], cn: dict[int, float], technik: str) -> tuple[
     return s, jahre[-1]
 
 
+def streifen_einzeln(reihe: dict[int, float], einheit: str) -> tuple[str, int, int]:
+    jahre = [j for j in sorted(reihe) if j >= START]
+    x0, x1, y0, h = 300.0, 900.0, 262, 36
+    w = (x1 - x0) / len(jahre)
+    hoechst = max(reihe[j] for j in jahre)
+    s = ""
+    for i, j in enumerate(jahre):
+        deckkraft = .12 + .88 * reihe[j] / hoechst
+        s += (f'<rect x="{x0 + i * w:.1f}" y="{y0}" width="{w + .4:.1f}" height="{h}" fill="{DE_FARBE}" '
+              f'opacity="{deckkraft:.2f}"><title>Deutschland {j}: {zahl(reihe[j])} {einheit}</title></rect>')
+    return s, jahre[-1], max(jahre, key=lambda j: reihe[j])
+
+
 def baustein(zeichnung: str, de: dict[int, float], cn: dict[int, float], technik: str, leistung: str) -> str:
     rechtecke, bis = streifen(de, cn, technik)
     unterschrift = (f"Streifen: installierte {leistung} {START}–{bis} · oben Deutschland, unten China"
                     f" · je dunkler, desto näher am Stand {bis}")
+    return karte(zeichnung, rechtecke, unterschrift)
+
+
+def karte(zeichnung: str, rechtecke: str, unterschrift: str) -> str:
     return ("<!-- Erzeugt von scripts/technik_kopf.py – nicht von Hand bearbeiten -->\n"
             "```{=html}\n"
             f'<div class="tk-deko"><svg viewBox="0 0 900 300" preserveAspectRatio="xMaxYMax meet" '
@@ -120,8 +161,19 @@ def baustein(zeichnung: str, de: dict[int, float], cn: dict[int, float], technik
             f'{rechtecke}</svg></div><div class="tk-quelle">{unterschrift}</div>\n```\n')
 
 
+def lade_wp_absatz() -> dict[int, float]:
+    with open(DATA / "de_waermepumpen_absatz.csv", encoding="utf-8") as f:
+        return {int(z["jahr"]): float(z["stueck"]) for z in csv.DictReader(f)}
+
+
 def main() -> None:
     r = lade_reihen()
+    wp = lade_wp_absatz()
+    rechtecke, bis, rekord = streifen_einzeln(wp, "Heizungs-Wärmepumpen verkauft")
+    (DATA / "_kopf_waermepumpen.md").write_text(karte(
+        zeichnung_wp(), rechtecke,
+        f"Streifen: Absatz von Heizungs-Wärmepumpen in Deutschland {START}–{bis} · je dunkler, desto mehr; "
+        f"Höchstwert {rekord}"), encoding="utf-8")
     (DATA / "_kopf_wind.md").write_text(
         baustein(zeichnung_wind(), r["de"]["wind"], r["cn"]["wind"], "Windenergie", "Windleistung"), encoding="utf-8")
     (DATA / "_kopf_photovoltaik.md").write_text(
