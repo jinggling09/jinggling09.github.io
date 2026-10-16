@@ -84,7 +84,7 @@ Datenanalyse mit R und Python, GIS-Analyse, Carbon Management
 - Koordination des Pilotprogramms für innovative Low-Carbon-Technologien
 - Mitwirkung an Forschungsprojekten zu Treibhausgasinventaren und Klimaschutzstrategien der Stadt
 - Organisation internationaler Fachkonferenzen und Betreuung ausländischer Delegationen im Bereich Klimaschutz, u. a. Beijing International Forum on Clean Air and Climate Action; Dolmetschen bei Fachgesprächen zwischen internationalen Experten und Regierungsvertretern
-- Unterstützung internationaler Zusammenarbeit und Regierungsdelegationen
+- Zusammenarbeit mit internationalen Partnern und Regierungsdelegationen, u. a. UNFCCC, Botschaft der Schweiz und Botschaft von Dänemark in China
 :::
 
 ::: {.zeit-l}
@@ -97,7 +97,7 @@ Datenanalyse mit R und Python, GIS-Analyse, Carbon Management
 [Zhongqinghuanxun]{.org}
 
 - Mitarbeit an einem Projekt zur nachhaltigen Stadtentwicklung
-- Ausarbeitung eines Konzepts für eine „Zero-Waste City" sowie Präsentation für Stakeholder
+- Ausarbeitung eines Konzepts für eine „Zero-Waste City“ sowie Präsentation für Stakeholder
 :::
 
 ::: {.zeit-l}
