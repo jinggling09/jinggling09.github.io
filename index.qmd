@@ -99,13 +99,15 @@ Emissionshandel in China und der EU, CO₂-Preis auf Brennstoffe in Deutschland 
 ::: {.ebene}
 [3]{.nr}
 
-### [Erneuerbare Energien](daten/index.qmd)
+### [Energiewende](energiewende/photovoltaik.qmd)
 
 [Was wird gebaut?]{.frage}
 
 {{< include daten/data/_ee_start_de.md >}}
 
-- [Ausbau und Erzeugung: Deutschland & China](daten/index.qmd)
+- [Photovoltaik](energiewende/photovoltaik.qmd) · [Windenergie](energiewende/windenergie.qmd)
+- [Wärmepumpen](energiewende/waermepumpen.qmd) · [Wasserstoff](energiewende/wasserstoff.qmd)
+- [Ausbau-Daten Wind & Solar: Deutschland & China](daten/index.qmd)
 
 [DE monatlich · CN jährlich]{.status}
 :::

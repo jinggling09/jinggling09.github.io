@@ -99,7 +99,7 @@ title-block-banner: false
 ::: {.ebene}
 [3]{.nr}
 
-### [可再生能源](daten/index.qmd)
+### [能源转型](daten/index.qmd)
 
 [建了多少？]{.frage}
 

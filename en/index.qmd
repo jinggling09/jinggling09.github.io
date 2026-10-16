@@ -99,7 +99,7 @@ Emissions trading in China and the EU, Germany's carbon price on fuels – and t
 ::: {.ebene}
 [3]{.nr}
 
-### [Renewable energy](daten/index.qmd)
+### [Energy transition](daten/index.qmd)
 
 [What is being built?]{.frage}
 
