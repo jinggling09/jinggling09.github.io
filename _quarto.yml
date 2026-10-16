@@ -34,6 +34,10 @@ website:
             text: "Übersicht"
           - href: laender/deutschland.qmd
             text: "Deutschland: Klimaschutz im Überblick"
+          - href: laender/eu.qmd
+            text: "Europäische Union: Klimaschutz im Überblick"
+          - href: laender/china.qmd
+            text: "China: Klimaschutz im Überblick"
       - href: ziele/index.qmd
         text: "Ziele"
       - text: "CO₂-Bepreisung"

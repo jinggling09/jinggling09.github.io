@@ -78,13 +78,13 @@ Deutschland hat sein Ziel der Treibhausgasneutralität **2045** gesetzlich festg
 Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 1990 fest: **mindestens −65 % bis 2030**, **−88 % bis 2040**, **Netto-Treibhausgasneutralität bis 2045** und negative Emissionen nach 2050 [§ 3 @ksg]. Zusätzlich muss der Landnutzungssektor (Wälder, Moore, Böden – „LULUCF") bis 2030 netto mindestens 25 Mio. t CO₂-Äq. aufnehmen, bis 2040 35 und bis 2045 40 Mio. t [§ 3a @ksg].
 
 ```{=html}
-<figure class="pfad" aria-label="Treibhausgasemissionen Deutschlands: Ist-Werte, Ziele und Projektion in Millionen Tonnen CO2-Äquivalent">
-  <div class="pfad-zeile"><span class="pfad-jahr">1990</span><span class="pfad-balken ist" style="width:100%"></span><span class="pfad-wert">1.253</span></div>
-  <div class="pfad-zeile"><span class="pfad-jahr">2025</span><span class="pfad-balken ist" style="width:51.8%"></span><span class="pfad-wert">649 <em>Ist</em></span></div>
-  <div class="pfad-zeile"><span class="pfad-jahr">2030</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:35%"></span><span class="pfad-balken projektion" style="width:37.4%"></span></span><span class="pfad-wert">≈ 438 <em>Ziel</em> · ≈ 469 <em>Projektion</em></span></div>
-  <div class="pfad-zeile"><span class="pfad-jahr">2040</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:12%"></span><span class="pfad-balken projektion" style="width:20%"></span></span><span class="pfad-wert">≈ 150 <em>Ziel</em> · ca. 250 <em>Projektion</em></span></div>
-  <div class="pfad-zeile"><span class="pfad-jahr">2045</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:0.6%"></span><span class="pfad-balken projektion" style="width:17%"></span></span><span class="pfad-wert">netto 0 <em>Ziel</em> · 212,5 <em>Projektion, brutto</em></span></div>
-  <figcaption>Treibhausgase in Mio. t CO₂-Äq. (ohne LULUCF). <span class="pfad-leg ist">Ist</span> <span class="pfad-leg ziel">Ziel nach KSG</span> <span class="pfad-leg projektion">Projektion mit bisherigen Maßnahmen</span> · Zielwerte rechnerisch aus den KSG-Prozentzielen; Projektion: UBA-Projektionsdaten 2026.</figcaption>
+<figure class="pfad" aria-label="Treibhausgasemissionen Deutschlands in Millionen Tonnen und im Vergleich zu 1990: Ist-Werte, Ziele und Projektion">
+  <div class="pfad-zeile"><span class="pfad-jahr">1990</span><span class="pfad-balken referenz" style="width:100%"></span><span class="pfad-wert">1.253 Mio. t · <em>Referenzjahr</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2025</span><span class="pfad-balken ist" style="width:51.8%"></span><span class="pfad-wert">649 Mio. t · −48 % <em>Ist</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2030</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:35%"></span><span class="pfad-balken projektion" style="width:37.4%"></span></span><span class="pfad-wert">≈ 438 · −65 % <em>Ziel</em> · ≈ 469 · −63 % <em>Projektion</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2040</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:12%"></span><span class="pfad-balken projektion" style="width:20%"></span></span><span class="pfad-wert">≈ 150 · −88 % <em>Ziel</em> · ≈ 250 · ca. −80 % <em>Projektion</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2045</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:0.6%"></span><span class="pfad-balken projektion" style="width:17%"></span></span><span class="pfad-wert">netto 0 <em>Ziel</em> · 212,5 · −83 % <em>Projektion, brutto</em></span></div>
+  <figcaption>Treibhausgase in Mio. t CO₂-Äq. (ohne LULUCF) und Veränderung gegenüber 1990. Werte mit „≈“ rechnerisch aus den Prozentzielen bzw. -projektionen. <span class="pfad-leg ist">Ist</span> <span class="pfad-leg ziel">Ziel nach KSG</span> <span class="pfad-leg projektion">Projektion mit bisherigen Maßnahmen</span> · Projektion: UBA-Projektionsdaten 2026.</figcaption>
 </figure>
 ```
 

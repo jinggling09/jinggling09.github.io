@@ -1,0 +1,277 @@
+---
+title: "China: Klimaschutz im Überblick"
+subtitle: "Wer setzt die Ziele, wer setzt sie um, wer kontrolliert – und wo steht China?"
+---
+
+::: {.stand}
+Stand: 16.10.2026
+:::
+
+[Länderüberblick · [Ziele im Vergleich](../ziele/index.qmd) · [Chinas Emissionshandel](../wissen/china-ets.qmd) · [Schnittstelle China ↔ CBAM](../wissen/schnittstellen.qmd)]{.ebenen-pfad}
+
+China ist der größte Emittent der Welt – und zugleich der größte Ausbauer von Wind- und Solarenergie. Anders als die EU und Deutschland steuert China bis 2030 über die **CO₂-Intensität** (Emissionen je Wirtschaftsleistung) und einen **Höchststand der CO₂-Emissionen vor 2030**; die **CO₂-Neutralität** soll vor **2060** erreicht sein. Diese Seite ordnet ein, **wer** zuständig ist, **woher das Geld** kommt, **welche Regeln** gelten und **wo die einzelnen Bereiche** stehen.
+
+## Steckbrief
+
+```{=html}
+<svg width="0" height="0" class="icon-defs" aria-hidden="true">
+ <symbol id="i-bev" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.6 2.7-6 6-6s6 2.4 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.6 14.3c.5-.2 1-.3 1.6-.3 2.7 0 4.8 2.2 4.8 5.2"/></symbol>
+ <symbol id="i-bip" viewBox="0 0 24 24"><path d="M3 20.5h18"/><rect x="5" y="14" width="3" height="6.5"/><rect x="10.5" y="11" width="3" height="9.5"/><rect x="16" y="8" width="3" height="12.5"/><path d="M4 9.5l5-3.6 3.5 2.4L19.5 3.5"/><path d="M16.2 3.5h3.3v3.3"/></symbol>
+ <symbol id="i-thg" viewBox="0 0 34 24"><path d="M.8 20.5h12"/><path d="M1.6 20.5v-7l3.2 2.2v-2.2l3.2 2.2V8.5h3v12"/><text x="13.6" y="17.2" stroke="none" fill="currentColor" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="13">CO<tspan dy="3" font-size="8.5">2</tspan></text></symbol>
+ <symbol id="i-kopf" viewBox="0 0 34 24"><circle cx="5" cy="7.4" r="2.8"/><path d="M.8 20c0-3.3 1.9-5.5 4.2-5.5s4.2 2.2 4.2 5.5"/><text x="11" y="17.2" stroke="none" fill="currentColor" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="13">CO<tspan dy="3" font-size="8.5">2</tspan></text></symbol>
+ <symbol id="i-int" viewBox="0 0 24 24"><path d="M3.5 17.5a8.5 8.5 0 0 1 17 0"/><path d="M6.3 11.2l1.1 1M12 8.5V10M17.7 11.2l-1.1 1"/><path d="M12 17.5l4.3-5" /><circle cx="12" cy="17.5" r="1.6"/><path d="M3.5 20.5h17"/></symbol>
+ <symbol id="i-ee" viewBox="0 0 24 24"><path d="M10.3 21l.9-9.2h1.6l.9 9.2"/><circle cx="12" cy="10.3" r="1.3"/><path d="M12 9V3.2M10.9 11l-4.9 2.9M13.1 11l4.9 2.9"/><path d="M7.5 21h9"/><circle cx="19.2" cy="4.8" r="2"/></symbol>
+ <symbol id="i-welt" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c-2.7 2.6-2.7 14.4 0 17M12 3.5c2.7 2.6 2.7 14.4 0 17"/></symbol>
+ <symbol id="i-preis" viewBox="0 0 24 24"><path d="M2.8 11.6V4.3a1.5 1.5 0 0 1 1.5-1.5h7.3l9.1 9.1a1.5 1.5 0 0 1 0 2.1l-7.2 7.2a1.5 1.5 0 0 1-2.1 0z"/><circle cx="7.2" cy="7.2" r="1.4"/><text x="10.2" y="16.6" stroke="none" fill="currentColor" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="8.5">€</text></symbol>
+</svg>
+```
+
+::: {.kennzahlen-leiste .steckbrief .cn}
+::: {}
+`<svg class="ks-icon" aria-hidden="true"><use href="#i-bev"/></svg>`{=html}
+[1.404,9 Mio.]{.zahl}
+[Einwohner, Ende 2025]{.was}
+:::
+::: {}
+`<svg class="ks-icon" aria-hidden="true"><use href="#i-bip"/></svg>`{=html}
+[140,2 Bio. ¥]{.zahl}
+[BIP 2025 (≈ 17.270 Mrd. €)^1^]{.was}
+:::
+::: {}
+`<svg class="ks-icon breit" aria-hidden="true"><use href="#i-thg"/></svg>`{=html}
+[15.981 Mio. t]{.zahl}
+[THG 2025 (EDGAR)]{.was}
+:::
+::: {}
+`<svg class="ks-icon breit" aria-hidden="true"><use href="#i-kopf"/></svg>`{=html}
+[11,4 t]{.zahl}
+[Treibhausgase je Einwohner 2025^1^]{.was}
+:::
+::: {}
+`<svg class="ks-icon" aria-hidden="true"><use href="#i-int"/></svg>`{=html}
+[925 kg]{.zahl}
+[Treibhausgase je 1.000 € BIP 2025^1^]{.was}
+:::
+::: {}
+`<svg class="ks-icon" aria-hidden="true"><use href="#i-welt"/></svg>`{=html}
+[29,5 %]{.zahl}
+[Anteil an den weltweiten THG 2025]{.was}
+:::
+::: {}
+`<svg class="ks-icon" aria-hidden="true"><use href="#i-ee"/></svg>`{=html}
+[35,6 %]{.zahl}
+[Wind, Sonne, Wasser am Strom 2025^1^]{.was}
+:::
+::: {}
+`<svg class="ks-icon" aria-hidden="true"><use href="#i-preis"/></svg>`{=html}
+[62 ¥ / t]{.zahl}
+[CO₂-Preis nationaler ETS, Ø 2025 (≈ 7,7 €)]{.was}
+:::
+:::
+
+::: {.belege}
+**Belege** · BIP = Bruttoinlandsprodukt, THG = Treibhausgase · Einwohner, BIP und Stromerzeugung [@nbs_2025] · Emissionen und Weltanteil ohne Landnutzung nach der EU-Datenbank EDGAR [@edgar_2026] · CO₂-Preis: durchschnittlicher Handelspreis 2025, 62,36 ¥/t [@mee_ets_2025] · ^1^ Eigene Berechnung: Umrechnung mit dem EZB-Jahresdurchschnitt 2025 von 8,118 ¥/€ [@ezb_cny]; 15.981 Mio. t geteilt durch 1.404,9 Mio. Einwohner bzw. 17.269 Mrd. € BIP; Strom: Wind (1.128 TWh), Sonne (1.173 TWh) und Wasser (1.462 TWh) an der gesamten Erzeugung von 10.575 TWh – Biomasse ist in der Statistik nicht gesondert ausgewiesen.
+:::
+
+## Ziele und Pfad bis 2060
+
+Chinas Ziele stehen in Partei- und Regierungsdokumenten: **CO₂-Höchststand vor 2030** und **CO₂-Neutralität vor 2060** [@cn_yijian_2021]. Bis 2030 soll die CO₂-Intensität um **mehr als 65 % gegenüber 2005** sinken [@cn_aktionsplan_2021]; der Klimaplan zum 15. Fünfjahresplan sieht dafür bis 2030 **−17 % gegenüber 2025** vor [@cn_15fyp_klima_2026]. Das NDC 2035 enthält erstmals ein **absolutes Ziel für alle Treibhausgase**: −7 bis −10 % gegenüber dem Höchststand [@cn_ndc_2035].
+
+```{=html}
+<figure class="pfad pfad-cn" aria-label="Treibhausgasemissionen Chinas in Millionen Tonnen und im Vergleich zu 2005, mit den Zielen">
+  <div class="pfad-zeile"><span class="pfad-jahr">2005</span><span class="pfad-balken referenz" style="width:49.7%"></span><span class="pfad-wert">7.940 Mio. t · <em>Referenzjahr der Intensitätsziele</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2020</span><span class="pfad-balken ist" style="width:91%"></span><span class="pfad-wert">14.535 Mio. t · +83 %</span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2025</span><span class="pfad-balken ist" style="width:100%"></span><span class="pfad-wert">15.981 Mio. t · +101 % <em>Ist</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">vor 2030</span><span class="pfad-ziel-text">Höchststand der CO₂-Emissionen</span><span class="pfad-wert"><em>Ziel</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2035</span><span class="pfad-ziel-text">Netto-THG −7 bis −10 % unter dem Höchststand</span><span class="pfad-wert"><em>Ziel (NDC)</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">vor 2060</span><span class="pfad-ziel-text">CO₂-Neutralität</span><span class="pfad-wert"><em>Ziel</em></span></div>
+  <figcaption>Treibhausgase in Mio. t CO₂-Äq. ohne Landnutzung (EDGAR) und Veränderung gegenüber 2005; Balkenlänge im Verhältnis zu 2025. Für die Ziele gibt es keine festen Mengen, weil sie sich auf den noch unbekannten Höchststand oder auf die Wirtschaftsleistung beziehen.</figcaption>
+</figure>
+```
+
+::: {.belege}
+**Belege** · Emissionen [@edgar_2026] · Ziele [@cn_yijian_2021; @cn_aktionsplan_2021; @cn_ndc_2035]
+:::
+
+**Höchststand in Sicht?** Nach EDGAR blieben die Emissionen 2025 praktisch unverändert (+0,06 %) [@edgar_2026]. Die CO₂-Intensität sank 2025 laut Statistikamt um 5,0 % [@nbs_2025]. Zwischen 2005 und 2020 ging sie nach Chinas Bericht an die UN um 48,4 % zurück; in den Jahren 2021 bis 2024 sank sie deutlich langsamer [@dialogue_earth_intensitaet]. Das Fünfjahresziel 2021–2025 von −18 % gilt bei unabhängigen Beobachtern als schwer erreichbar [@dialogue_earth_intensitaet]; eine amtliche Schlussbilanz lag zum Stand dieser Seite noch nicht vor.
+
+## Governance: Wer macht was?
+
+```{=html}
+<figure class="gov-diagramm">
+<div class="gov-scroll">
+<svg viewBox="0 0 960 660" role="img" aria-label="Governance-Diagramm der chinesischen Klimapolitik">
+<defs>
+ <marker id="m-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1f5f4a"/></marker>
+ <marker id="m-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#3c5a8a"/></marker>
+ <marker id="m-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5b6b63"/></marker>
+ <marker id="m-o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b8860b"/></marker>
+ <style>
+  .t{font-size:14px;font-weight:700;fill:#1a2420}.s{font-size:11.5px;fill:#5b6b63}.band{font-size:11px;font-weight:700;letter-spacing:.12em;fill:#5b6b63}
+  .leg{fill:#fbf0dc;stroke:#a8741a}.exe{fill:#e8f0ec;stroke:#1f5f4a}.kon{fill:#eef0ef;stroke:#5b6b63}.geld{fill:#fff4d6;stroke:#b8860b}.eu{fill:#e6ecf5;stroke:#3c5a8a}
+  rect{stroke-width:1.4}
+  .a{fill:none;stroke-width:1.8}.ag{stroke:#1f5f4a}.ab{stroke:#3c5a8a}.ak{stroke:#5b6b63;stroke-dasharray:5 4}.ao{stroke:#b8860b;stroke-width:3}
+  .al{font-size:11px;fill:#5b6b63;font-style:italic}
+ </style>
+</defs>
+<rect x="10" y="10" width="940" height="130" rx="8" fill="#fbf1ef" stroke="none"/>
+<text x="24" y="30" class="band">ZENTRALE FÜHRUNG UND GESETZGEBUNG</text>
+<rect x="40" y="42" width="250" height="84" rx="6" class="leg"/><text x="165" y="68" text-anchor="middle" class="t">ZK der KPCh + Staatsrat</text><text x="165" y="87" text-anchor="middle" class="s">Leitlinien 2021: CO₂-Spitze vor 2030,</text><text x="165" y="102" text-anchor="middle" class="s">Neutralität vor 2060; „1+N“-System;</text><text x="165" y="117" text-anchor="middle" class="s">Aktionspläne, NDC</text>
+<rect x="355" y="42" width="250" height="84" rx="6" class="leg"/><text x="480" y="68" text-anchor="middle" class="t">Nationaler Volkskongress</text><text x="480" y="87" text-anchor="middle" class="s">Gesetze: Ökologie- und Umwelt-</text><text x="480" y="102" text-anchor="middle" class="s">gesetzbuch (2026), Energiegesetz</text><text x="480" y="117" text-anchor="middle" class="s">(2025)</text>
+<rect x="670" y="42" width="250" height="84" rx="6" class="exe"/><text x="795" y="68" text-anchor="middle" class="t">Leitungsgruppe CO₂-Spitze</text><text x="795" y="83" text-anchor="middle" class="t">und CO₂-Neutralität</text><text x="795" y="102" text-anchor="middle" class="s">Büro bei der NDRC: koordiniert</text><text x="795" y="117" text-anchor="middle" class="s">„1+N“, prüft Provinzpläne</text>
+<path d="M290 70H330V30H795V38" class="a ag" marker-end="url(#m-g)"/><text x="560" y="24" text-anchor="middle" class="al">beauftragt</text>
+
+<rect x="10" y="152" width="940" height="232" rx="8" fill="#f7faf8" stroke="none"/>
+<text x="24" y="172" class="band">MINISTERIEN UND BEHÖRDEN</text>
+<rect x="40" y="184" width="210" height="76" rx="6" class="exe"/><text x="145" y="209" text-anchor="middle" class="t">NDRC + NEA</text><text x="145" y="228" text-anchor="middle" class="s">Planung, Energie, Ausbau</text><text x="145" y="243" text-anchor="middle" class="s">von Wind und Solar</text>
+<rect x="265" y="184" width="210" height="76" rx="6" class="exe"/><text x="370" y="209" text-anchor="middle" class="t">MEE · Ökologie/Umwelt</text><text x="370" y="228" text-anchor="middle" class="s">Klimapolitik, betreibt den</text><text x="370" y="243" text-anchor="middle" class="s">nationalen Emissionshandel</text>
+<rect x="490" y="184" width="210" height="76" rx="6" class="exe"/><text x="595" y="209" text-anchor="middle" class="t">Fachministerien</text><text x="595" y="228" text-anchor="middle" class="s">Industrie, Bauen, Verkehr,</text><text x="595" y="243" text-anchor="middle" class="s">Landwirtschaft</text>
+<rect x="725" y="184" width="195" height="76" rx="6" class="kon"/><text x="822" y="209" text-anchor="middle" class="t">Statistikamt (NBS)</text><text x="822" y="228" text-anchor="middle" class="s">Energie- und Intensitätsdaten,</text><text x="822" y="243" text-anchor="middle" class="s">jährliches Kommuniqué</text>
+<path d="M795 126V146H145V180" class="a ag" marker-end="url(#m-g)"/><path d="M370 146V180" class="a ag" marker-end="url(#m-g)"/><path d="M595 146V180" class="a ag" marker-end="url(#m-g)"/><text x="660" y="140" class="al">koordiniert</text>
+<path d="M880 184V130" class="a ak" marker-end="url(#m-k)"/><text x="886" y="166" class="al">Daten</text>
+
+<rect x="265" y="296" width="210" height="76" rx="6" class="geld"/><text x="370" y="321" text-anchor="middle" class="t">Nationaler ETS</text><text x="370" y="340" text-anchor="middle" class="s">Strom, Stahl, Zement,</text><text x="370" y="355" text-anchor="middle" class="s">Aluminium · Ø 62 ¥/t (2025)</text>
+<rect x="490" y="296" width="210" height="76" rx="6" class="geld"/><text x="595" y="321" text-anchor="middle" class="t">Zentralbank (PBoC)</text><text x="595" y="340" text-anchor="middle" class="s">grüne Kredite 44,8 Bio. ¥,</text><text x="595" y="355" text-anchor="middle" class="s">CO₂-Minderungsinstrument</text>
+<path d="M370 260V292" class="a ag" marker-end="url(#m-g)"/><text x="378" y="282" class="al">betreibt</text>
+
+<rect x="10" y="398" width="940" height="140" rx="8" fill="#f7f7f4" stroke="none"/>
+<text x="24" y="418" class="band">PROVINZEN, STÄDTE UND UNTERNEHMEN</text>
+<rect x="40" y="430" width="420" height="92" rx="6" class="exe"/><text x="250" y="456" text-anchor="middle" class="t">Provinzen und Städte</text><text x="250" y="476" text-anchor="middle" class="s">eigene Aktionspläne zur CO₂-Spitze, Zielvorgaben,</text><text x="250" y="492" text-anchor="middle" class="s">Bewertung durch die Zentralregierung</text><text x="250" y="508" text-anchor="middle" class="s">(„Kohlenstoff-Bewertung der Regionen“)</text>
+<rect x="500" y="430" width="420" height="92" rx="6" class="exe"/><text x="710" y="456" text-anchor="middle" class="t">Unternehmen</text><text x="710" y="476" text-anchor="middle" class="s">Emissionsberichte, Zertifikate im ETS,</text><text x="710" y="492" text-anchor="middle" class="s">CO₂-Management und Produkt-Fußabdruck</text><text x="710" y="508" text-anchor="middle" class="s">(Arbeitsplan Doppelkontrolle 2024)</text>
+<path d="M30 70H24V476H36" class="a ag" marker-end="url(#m-g)"/><text x="30" y="300" class="al" transform="rotate(-90 30 300)">Ziele und Bewertung</text>
+<path d="M370 372V401H600V426" class="a ao" marker-end="url(#m-o)"/>
+<path d="M595 372V426" class="a ao" marker-end="url(#m-o)"/><text x="603" y="392" class="al">Kredite, Zertifikatehandel</text>
+
+<rect x="40" y="560" width="880" height="44" rx="6" fill="#f1f1ee" stroke="#c9cfcb"/><text x="480" y="587" text-anchor="middle" class="t" style="font-size:13px">Bürgerinnen und Bürger · Unternehmen · Verbände</text>
+</svg>
+</div>
+<figcaption><span class="gl g">legt fest / beauftragt</span> <span class="gl k">berichtet</span> <span class="gl o">Geld und Markt</span> · Kästen: <span class="gk leg">Führung &amp; Gesetzgebung</span> <span class="gk exe">Regierung &amp; Verwaltung</span> <span class="gk kon">Statistik</span> <span class="gk geld">Finanzierung</span></figcaption>
+</figure>
+```
+
+::: {.belege}
+**Belege** · Ziele und „1+N“ [@cn_yijian_2021; @cn_aktionsplan_2021] · Gesetze [@cn_kodex_2026; @cn_energiegesetz] · Leitungsgruppe [@ndrc_leitungsgruppe] · Emissionshandel [@mee_qa_2025; @mee_ets_2025] · Statistik [@nbs_2025] · Zentralbank [@pboc_gruen_2025] · Provinzen und Unternehmen [@cn_doppelkontrolle_2024] · Eigene Darstellung, beschränkt auf Klima und Energie.
+:::
+
+Die sechs Rollen im Einzelnen:
+
+::: {.governance .cn}
+
+::: {.rolle}
+[Ziele festlegen]{.frage}
+[ZK der KPCh und Staatsrat]{.wer}
+Die **Leitlinien von 2021** legen die „Doppel-Kohlenstoff-Ziele“ fest und bilden mit dem Aktionsplan zur CO₂-Spitze das „1+N“-Politiksystem: ein Rahmendokument plus Pläne für einzelne Sektoren [@cn_yijian_2021; @cn_aktionsplan_2021]. Der **Nationale Volkskongress** beschließt die Gesetze [@cn_kodex_2026].
+:::
+
+::: {.rolle}
+[Koordinieren]{.frage}
+[Leitungsgruppe CO₂-Spitze und CO₂-Neutralität]{.wer}
+Ihr Büro sitzt bei der Nationalen Entwicklungs- und Reformkommission (**NDRC**). Es baut das „1+N“-System aus, prüft die Aktionspläne der Provinzen und treibt die CO₂-Statistik voran [@ndrc_leitungsgruppe].
+:::
+
+::: {.rolle}
+[Umsetzen]{.frage}
+[Ministerien und Provinzen]{.wer}
+Das Ministerium für Ökologie und Umwelt (**MEE**) ist für Klimapolitik und den nationalen Emissionshandel zuständig [@mee_qa_2025]; NDRC und Energieverwaltung (**NEA**) steuern Energie und den Ausbau der Erneuerbaren [@nea_2026]. Provinzen und Städte setzen mit eigenen Plänen um [@ndrc_leitungsgruppe].
+:::
+
+::: {.rolle}
+[Bilanzieren]{.frage}
+[Statistikamt (NBS)]{.wer}
+Veröffentlicht jährlich Energieverbrauch, Strommix sowie die Veränderung von Energie- und CO₂-Intensität [@nbs_2025]. Bis 2025 sollte die CO₂-Statistik und -Messung ausgebaut werden, damit die Steuerung auf CO₂ umgestellt werden kann [@cn_doppelkontrolle_2024].
+:::
+
+::: {.rolle}
+[Kontrollieren]{.frage}
+[Zentralregierung]{.wer}
+Statt eines unabhängigen Gremiums kontrolliert die Verwaltung selbst: Regionen, Branchen und Unternehmen werden an CO₂-Vorgaben gemessen („Kohlenstoff-Bewertung der Regionen“) [@cn_doppelkontrolle_2024]. Das Büro der Leitungsgruppe verfolgt auch gefälschte Emissionsdaten [@ndrc_leitungsgruppe].
+:::
+
+::: {.rolle}
+[Finanzieren]{.frage}
+[Zentralbank und Banken]{.wer}
+Grüne Kredite, ein Refinanzierungsinstrument der Zentralbank und der Emissionshandel – Details im [nächsten Abschnitt](#klimafinanzierung-woher-kommt-das-geld).
+:::
+
+:::
+
+## Klimafinanzierung: Woher kommt das Geld?
+
+| Quelle | Umfang | Verwendung |
+|---|---|---|
+| **Grüne Kredite** der Banken | **44,77 Bio. ¥** Bestand Ende 2025, +20,2 % in einem Jahr [@pboc_gruen_2025] | saubere Energie, Energieeffizienz, Umweltschutz |
+| **CO₂-Minderungsinstrument** der Zentralbank | günstige Refinanzierung für Banken, die solche Kredite vergeben [@pboc_gruen_2025] | saubere Energie, Energieeinsparung, CO₂-arme Technologien |
+| **Nationaler Emissionshandel** | 2025: 235 Mio. t gehandelt, Umsatz 14,63 Mrd. ¥ [@mee_ets_2025] | Preissignal für Strom und Schwerindustrie; Zuteilung nach Produktions-Benchmarks [@mee_qa_2025] |
+
+: {tbl-colwidths="[26,42,32]"}
+
+## Regelwerk: die wichtigsten Gesetze und Pläne
+
+| Bereich | Regelung | Was sie regelt |
+|---|---|---|
+| Ziele | **Leitlinien zur CO₂-Spitze und -Neutralität** (2021) | Höchststand vor 2030, Neutralität vor 2060; Rahmen des „1+N“-Systems [@cn_yijian_2021] |
+| | **Aktionsplan CO₂-Spitze vor 2030** (2021) | CO₂-Intensität −65 % ggü. 2005, nichtfossile Energie rund 25 % bis 2030 [@cn_aktionsplan_2021] |
+| | **NDC 2035** (2025) | Netto-THG −7 bis −10 % unter dem Höchststand, Wind und Solar 3.600 GW [@cn_ndc_2035] |
+| Gesetz | **Ökologie- und Umweltgesetzbuch** (beschlossen 12.03.2026, in Kraft 15.08.2026) | fasst das Umweltrecht zusammen und ersetzt u. a. das Umweltschutzgesetz; eigenes Buch „Grüne kohlenstoffarme Entwicklung“ mit Grundsätzen zu Klimawandel, CO₂-Doppelkontrolle und Emissionshandel [@cn_kodex_2026; @cn_kodex_inhalt; @npc_observer_kodex] |
+| | **Energiegesetz** (in Kraft seit 01.01.2025) | erstes Rahmengesetz für den gesamten Energiesektor; Einzelgesetze wie das Gesetz über erneuerbare Energien gelten weiter [@cn_energiegesetz] |
+| CO₂-Preis | **Vorläufige Verordnung über den Emissionshandel** (Staatsrat, seit 01.05.2024) | rechtliche Grundlage des nationalen Emissionshandels [@cn_ets_verordnung] |
+| | **Arbeitsplan Stahl, Zement, Aluminium** (MEE, 2025) | Ausweitung des Emissionshandels auf drei Industriesektoren [@mee_2025] |
+| Steuerung | **Arbeitsplan CO₂-Doppelkontrolle** (Staatsrat, 2024) | Wechsel von der Steuerung des Energieverbrauchs zur Steuerung der CO₂-Emissionen: 2026–2030 vor allem über die Intensität, nach dem Höchststand über die Gesamtmenge [@cn_doppelkontrolle_2024] |
+
+: {tbl-colwidths="[13,33,54]"}
+
+## Bereiche: Wo steht China?
+
+::: {.sektoren}
+
+::: {.sektor}
+### Strom
+[2025: 10.575 TWh erzeugt, +4,8 %]{.werte}
+[Wind + Solar 1.842 GW · Ziel 2030 (1.200 GW) übertroffen]{.status-chip .plus}
+
+Solarstrom wuchs 2025 um 39,8 %, Windstrom um 13,1 %; Strom aus Wärmekraftwerken sank leicht (−0,7 %), stellt aber noch rund 60 % der Erzeugung [@nbs_2025]. Das Ausbauziel von 1.200 GW Wind und Solar bis 2030 [@cn_aktionsplan_2021] ist damit bereits übertroffen.
+:::
+
+::: {.sektor}
+### Energieverbrauch
+[2025: 6,17 Mrd. t Steinkohleeinheiten, +3,5 %]{.werte}
+[Kohle 51,4 % des Energieverbrauchs]{.status-chip .minus}
+
+Der Kohleanteil sank um 1,8 Prozentpunkte; Erdgas, Wasser-, Kern-, Wind- und Solarenergie kommen zusammen auf 30,4 % [@nbs_2025].
+:::
+
+::: {.sektor}
+### Industrie
+[Stahl, Zement, Aluminium seit 2025 im Emissionshandel]{.werte}
+[über 60 % der CO₂-Emissionen im ETS]{.status-chip .plus}
+
+Mit rund 1.500 zusätzlichen Unternehmen deckt der Emissionshandel mehr als 60 % der nationalen CO₂-Emissionen ab; ab 2027 soll die Zuteilung schrittweise knapper werden [@mee_qa_2025].
+:::
+
+::: {.sektor}
+### Verkehr
+[2025: 16,52 Mio. Elektro- und Hybridfahrzeuge produziert, +25,1 %]{.werte}
+[Bestand 43,97 Mio. Fahrzeuge]{.status-chip .plus}
+
+Der Bestand an „New Energy Vehicles“ wuchs 2025 um 12,57 Mio. [@nbs_2025].
+:::
+
+:::
+
+## Einordnung
+
+::: {.einordnung}
+**Ausbau ja, Ausstieg noch nicht.** China baut Wind und Solar schneller aus als jedes andere Land und hat sein Ausbauziel für 2030 schon 2025 deutlich übertroffen. Gleichzeitig deckt Kohle noch über die Hälfte des Energieverbrauchs. Ob die Emissionen ihren Höchststand erreicht haben, lässt sich erst im Rückblick sagen – 2025 stagnierten sie.
+
+**Steuerung über Pläne statt über Gesetz und Kontrolle von außen.** Ziele stehen in Partei- und Regierungsdokumenten, umgesetzt wird über Fünfjahrespläne, Provinzvorgaben und Bewertungen innerhalb der Verwaltung. Mit dem Ökologie- und Umweltgesetzbuch hat das Klimathema 2026 erstmals eine gesetzliche Grundlage – allerdings nur mit Grundsätzen, ein eigenes Klimagesetz wie in Deutschland gibt es nicht.
+
+**Emissionshandel ohne Klimafonds.** Chinas Emissionshandel ist nach erfasster Menge der größte der Welt, aber die Zertifikate werden nach Benchmarks zugeteilt statt versteigert. Damit entstehen – anders als in der EU – keine großen staatlichen Einnahmen; Klimafinanzierung läuft vor allem über Banken und Zentralbank. Für Unternehmen, die nach Europa liefern, ist das wegen des [CO₂-Grenzausgleichs CBAM](../wissen/schnittstellen.qmd) relevant.
+:::
+
+## Weiterlesen
+
+- [Klimaziele im Vergleich: EU, Deutschland, China](../ziele/index.qmd)
+- [Chinas nationaler Emissionshandel](../wissen/china-ets.qmd)
+- [Schnittstelle China ↔ CBAM](../wissen/schnittstellen.qmd)
+- [Stromsektor: Deutschland & China](../wissen/stromsektor.qmd)
+- [Deutschland: Klimaschutz im Überblick](deutschland.qmd) · [Europäische Union: Klimaschutz im Überblick](eu.qmd)

@@ -32,7 +32,7 @@ Von **Jing Hu** · Umweltwissenschaftlerin, Stuttgart · [Über mich →](ueber-
 [Europäische Union]{.wer}
 [2050]{.jahr}
 [Netto null · gesetzlich]{.was}
-[Ziele im Vergleich: Europäische Union](ziele/index.qmd){.karten-link}
+[Europäische Union: Klimaschutz im Überblick](laender/eu.qmd){.karten-link}
 :::
 
 ::: {.zielkarte .de}
@@ -52,7 +52,7 @@ Von **Jing Hu** · Umweltwissenschaftlerin, Stuttgart · [Über mich →](ueber-
 [China]{.wer}
 [2060]{.jahr}
 [CO₂-neutral · Politikdokument]{.was}
-[Ziele im Vergleich: China](ziele/index.qmd){.karten-link}
+[China: Klimaschutz im Überblick](laender/china.qmd){.karten-link}
 :::
 
 :::

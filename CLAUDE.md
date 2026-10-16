@@ -30,7 +30,7 @@ Lokal: aktuelles Quarto liegt in `~/opt/quarto/bin/quarto` (1.10.19) → `QUARTO
 | 2 Instrumente & CO₂-Bepreisung | `wissen/` | China-ETS, EU-ETS/ETS 2/BEHG, CBAM-Grundlagen, Schnittstelle China ↔ CBAM |
 | 3 Erneuerbare | `daten/` | Ausbau und Erzeugung DE vs. CN (Diagrammlogik nur in `_shared/daten.qmd`) |
 | 4 Emissionen | `wissen/emissionen-de.qmd`, `wissen/stromsektor.qmd` | THG-Dashboard Deutschland, Stromsektor DE/CN |
-| Länderprofile | `laender/` | Je Land: Steckbrief (Bevölkerung, BIP, THG gesamt/pro Kopf/pro BIP, EE-Strom, Weltanteil) → Ziele & Pfad → Governance (6 Rollen) → Finanzierung → Gesetze → Sektoren → Einordnung. Bisher nur `deutschland.qmd` (DE); Zielkarte auf Startseite und Ziele-Seite verlinkt dorthin |
+| Länderprofile | `laender/` | Je Land: Steckbrief (Bevölkerung, BIP, THG gesamt/pro Kopf/pro BIP, EE-Strom, Weltanteil) → Ziele & Pfad → Governance (6 Rollen) → Finanzierung → Gesetze → Sektoren → Einordnung. `deutschland.qmd`, `eu.qmd` und `china.qmd` (nur DE); Zielkarten auf Startseite und Ziele-Seite verlinken dorthin, beide im Menü unter „Start“. EU-Seite gliedert „Bereiche“ nach ETS 1 / Lastenteilung / LULUCF / Erneuerbare statt nach KSG-Sektoren; EU-Emissionen im Steckbrief nach EDGAR; Zielpfad in Zielabgrenzung des Klimagesetzes (1990: 4.726 Mio. t, 2024: 2.970 Mio. t) nach Commission Staff Working Document zum Fortschrittsbericht 2025. Zielpfade beider Seiten: „absoluter Wert · Prozent ggü. 1990“, 1990 als umrandeter Referenzbalken. EU-Seite hat eigenes Governance-Diagramm. China-Seite: Zielpfad mit Referenzjahr 2005 (EDGAR), Ziele als Textzeilen, weil sie sich auf Intensität bzw. den Höchststand beziehen; CNY-Umrechnung mit EZB-Jahresdurchschnitt 2025 (8,118 ¥/€) |
 
 Startseite `index.qmd` = Navigations-Cockpit: Hero mit Klimastreifen → drei Neutralitäts-Karten (EU 2050 / DE 2045 / CN 2060) → vier Ebenen-Karten. Die Städte-Ebene (Stuttgart ↔ Peking) ist bewusst zurückgestellt.
 
@@ -76,7 +76,7 @@ Klimastreifen live. **Committet (Jing pusht selbst):** Länderprofil Deutschland
 
 Nächste Schritte:
 1. EN/ZH-Fassung des Länderprofils: **von Jing bewusst zurückgestellt** (Ausnahme von der Drei-Sprachen-Regel). Solange sie fehlt, steht `laender/` in `nurDeutsch` in `_includes/lang-switch.html` (EN/中 führen dort zur jeweiligen Startseite). Beim Übersetzen: Eintrag entfernen, Menü und Kartenlinks in en/zh nachziehen, Diagrammtexte übersetzen.
-2. Dieselbe Vorlage für EU und China (China-Weltanteil 29,5 % laut EDGAR 2026 bereits recherchiert).
+2. EU- und China-Seite (16.10.2026) von Jing prüfen lassen, dann committen. Notion-Seite China ist fast leer – Inhalte stammen aus Primärquellen (NBS, MEE, NEA, Staatsrat, NVK). (China-Weltanteil 29,5 % laut EDGAR 2026 bereits recherchiert).
 3. **Vorschlag für Jing** (sie trägt ihn selbst in `publish.yml` ein, nach dem Schritt „Netto-null-Ziele abrufen"), damit die Klimastreifen-Daten monatlich aktualisiert werden:
    ```yaml
          - name: Temperaturreihen abrufen (DWD, CRU)
@@ -100,3 +100,4 @@ Nächste Schritte:
 - Ziele-Seite: Governance-Vergleich „Wer kontrolliert die Ziele?“.
 - Ebene 2: Klimaschutzprogramm 2026 vs. Chinas „1+N“-Politiksystem (Quelle: Jings Notion-Notizen).
 - Beiger Chip „Politikdokument“ ist farblich nah am DE-Gold → ggf. auf Grau umstellen.
+- **Notion EU-Seite** enthält Fehler: EU-ETS ist eine Richtlinie (keine Verordnung); eine EU-weite CO₂-Steuer gibt es nicht.

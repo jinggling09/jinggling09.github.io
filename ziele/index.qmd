@@ -23,6 +23,8 @@ Alle drei haben ein Langfristziel „netto null" bzw. Neutralität. Sie untersch
 [2050]{.jahr}
 [Netto-null-THG-Emissionen, danach negative Emissionen]{.was}
 [Gesetz]{.status-chip .gesetz} Art. 2 Abs. 1 Europ. Klimagesetz [@eu_klimagesetz_2021]
+
+[Europäische Union: Klimaschutz im Überblick →](../laender/eu.qmd)
 :::
 
 ::: {.zielkarte .de}
@@ -45,6 +47,8 @@ Alle drei haben ein Langfristziel „netto null" bzw. Neutralität. Sie untersch
 [2060]{.jahr}
 [CO₂-Neutralität vor 2060; CO₂-Emissionsspitze vor 2030]{.was}
 [Politikdokument]{.status-chip .politik} [@cn_yijian_2021]
+
+[China: Klimaschutz im Überblick →](../laender/china.qmd)
 :::
 
 :::

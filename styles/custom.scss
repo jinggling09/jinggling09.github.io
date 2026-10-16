@@ -823,3 +823,19 @@ details.literatur {
   .chip { background: $gruen-hell; color: $gruen; border-radius: 999px; padding: .1rem .7rem; font-size: .85rem; font-weight: 600; }
 }
 @media (max-width: 767.98px) { .drei-karten { grid-template-columns: 1fr; } }
+
+/* Zielpfad EU: Ist-Balken in der EU-Farbe, zusätzliche Projektion „bestehende Maßnahmen“ heller */
+figure.pfad.pfad-eu .pfad-balken.ist, figure.pfad.pfad-eu .pfad-leg.ist::before { background: $spur-eu; }
+figure.pfad .pfad-balken.projektion.bestehend { background: #c9d0cc; }
+figure.pfad .pfad-balken.referenz { background: transparent; border: 2px solid $spur-de; height: 22px; }
+figure.pfad.pfad-eu .pfad-balken.referenz { border-color: $spur-eu; }
+figure.pfad .pfad-leg.projektion.bestehend::before { background: #c9d0cc; }
+figure.pfad .pfad-wert-gestapelt { line-height: 1.45; font-size: .85rem; }
+
+/* Zielpfad China: Ist in China-Rot, Referenz 2005 umrandet, Ziele als Textzeilen (keine festen Mengen) */
+figure.pfad.pfad-cn .pfad-balken.ist { background: $spur-cn; }
+figure.pfad.pfad-cn .pfad-balken.referenz { border-color: $spur-cn; }
+figure.pfad .pfad-ziel-text {
+  display: block; padding: .15rem .6rem; border: 1.5px dashed $gruen; border-radius: 3px;
+  background: $gruen-hell; color: $gruen; font-size: .88rem; font-weight: 600;
+}
