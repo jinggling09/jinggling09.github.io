@@ -83,8 +83,8 @@ Datenanalyse mit R und Python, GIS-Analyse, Carbon Management
 
 - Koordination des Pilotprogramms für innovative Low-Carbon-Technologien
 - Mitwirkung an Forschungsprojekten zu Treibhausgasinventaren und Klimaschutzstrategien der Stadt
-- Organisation internationaler Fachkonferenzen und Betreuung ausländischer Delegationen im Bereich Klimaschutz, u. a. Beijing International Forum on Clean Air and Climate Action; Dolmetschen bei Fachgesprächen zwischen internationalen Experten und Regierungsvertretern
-- Zusammenarbeit mit internationalen Partnern und Regierungsdelegationen, u. a. UNFCCC, Botschaft der Schweiz und Botschaft von Dänemark in China
+- Organisation internationaler Fachkonferenzen, u. a. Beijing International Forum on Clean Air and Climate Action
+- Koordination der Kontakte zu internationalen Partnern und Regierungsdelegationen (u. a. UNFCCC, Botschaft der Schweiz und Botschaft von Dänemark in China): Planung und Begleitung von Fachbesuchen bei Pekinger Low-Carbon-Projekten, Dolmetschen
 :::
 
 ::: {.zeit-l}
