@@ -99,7 +99,7 @@ Datenanalyse mit R und Python, GIS-Analyse, Carbon Management
 - Mitentwicklung einer Projektdatenbank mit interaktiver Visualisierung: mehr als 240 Projektunterlagen aus Papierakten digitalisiert und in der Cloud bereitgestellt; Software-Urheberrecht als Zweitautorin
 - Mitarbeit an THG-Inventaren und Studien: Waldkohlenstoff, Müllverbrennung, Klimaneutralitätspfade zweier Stadtbezirke, Emissionshöhepunkt der Bezirke (Energy Foundation China), CCUS; Fachartikel zum EU-Emissionshandel; Redaktion des monatlichen Klima-Bulletins
 - Organisation internationaler Fachkonferenzen (u. a. Beijing International Forum on Clean Air and Climate Action) und des Nationalen Low-Carbon-Tags Peking; Betreuung und Dolmetschen für Gäste, darunter ein Vertreter der Berliner Senatsverwaltung
-- Begleitung von Regierungsdelegationen (u. a. UNFCCC, Großbritannien, Kalifornien, Neuseeland, Botschaften der Schweiz und Dänemarks): Fachbesuche bei Low-Carbon-Projekten, Dolmetschen Chinesisch–Englisch; Organisation von Auslandsdienstreisen (2023: 5 Gruppen, 19 Personen)
+- Begleitung von Regierungsdelegationen (u. a. UNFCCC, Großbritannien, Kalifornien, Neuseeland, Botschaft Dänemarks, Projekt Sino-Swiss Clean Air China): Fachbesuche bei Low-Carbon-Projekten, Dolmetschen Chinesisch–Englisch; Organisation von Auslandsdienstreisen (2023: 5 Gruppen, 19 Personen)
 :::
 
 ::: {.zeit-l}
