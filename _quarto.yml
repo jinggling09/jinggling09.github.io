@@ -6,6 +6,7 @@ project:
     - "*.qmd"
     - "ziele/*.qmd"
     - "laender/*.qmd"
+    - "energiewende/*.qmd"
     - "wissen/*.qmd"
     - "daten/*.qmd"
     - "projekte/*.qmd"
@@ -52,8 +53,12 @@ website:
             text: "CBAM – Grundlagen"
           - href: wissen/schnittstellen.qmd
             text: "Schnittstelle China ↔ CBAM"
-      - href: daten/index.qmd
-        text: "Erneuerbare Energien"
+      - text: "Energiewende"
+        menu:
+          - href: daten/index.qmd
+            text: "Überblick: Ausbau Wind & Solar"
+          - href: energiewende/photovoltaik.qmd
+            text: "Photovoltaik"
       - text: "Emissionen"
         menu:
           - href: wissen/emissionen-de.qmd

@@ -32,7 +32,7 @@ website:
           - href: wissen/schnittstellen.qmd
             text: "Interface China ↔ CBAM"
       - href: daten/index.qmd
-        text: "Renewables"
+        text: "Energy transition"
       - text: "Emissions"
         menu:
           - href: wissen/emissionen-de.qmd

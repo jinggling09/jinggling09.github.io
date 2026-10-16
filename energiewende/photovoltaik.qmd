@@ -1,0 +1,212 @@
+---
+title: "Photovoltaik: Deutschland, EU und China im Vergleich"
+subtitle: "Wie viel Solarstrom gibt es, welche Ziele gelten – und wie steuern die drei den Ausbau?"
+---
+
+::: {.stand}
+Stand: 16.10.2026
+:::
+
+[Energiewende · **Photovoltaik** · [Ausbau-Daten Wind & Solar](../daten/index.qmd) · [Stromsektor](../wissen/stromsektor.qmd)]{.ebenen-pfad}
+
+```{=html}
+<svg width="0" height="0" class="icon-defs" aria-hidden="true">
+ <symbol id="t-ziel" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></symbol>
+ <symbol id="t-geld" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M15 8.6a3.6 3.6 0 1 0 0 6.8M7.5 11h5.5M7.5 13.2h5.5"/></symbol>
+ <symbol id="t-haus" viewBox="0 0 24 24"><path d="M3.5 11.5 12 4l8.5 7.5M6 10v10h12V10"/><path d="M8.5 13.2l3.2-2.4 3.8 2.8M9.8 12.2l3.4 2.6"/></symbol>
+ <symbol id="t-netz" viewBox="0 0 24 24"><path d="M12 3 6.5 21M12 3l5.5 18M8 15.5h8M9.3 10.5h5.4M5 21h14"/></symbol>
+ <symbol id="t-fabrik" viewBox="0 0 24 24"><path d="M3 20.5h18M4.5 20.5v-9l5 3v-3l5 3v-3l5 3v6"/><path d="M6 11.5V4h2.5v5.5"/></symbol>
+</svg>
+```
+
+China hat 2025 fast fünfmal so viel Photovoltaik zugebaut wie die gesamte EU; Deutschland hat dagegen je Einwohner die meiste Leistung der drei. Diese Seite stellt Stand, Ziele und Steuerung nebeneinander – jeweils **Deutschland · EU · China**.
+
+## Auf einen Blick
+
+::: {.land-drei}
+
+::: {.land-karte .de}
+[Deutschland]{.land-name}
+
+[117 GW]{.gross}
+[installiert, Ende 2025]{.klein}
+
+| | |
+|---|---|
+| Zubau 2025 | 16,4 GW |
+| Anteil am Strom | 17,4 %^1^ |
+| Ziel 2030 | 215 GW |
+
+`<div class="fortschritt" style="--wert:54%"><span></span></div>`{=html}
+[**54 %** des Ziels 2030 erreicht]{.klein}
+:::
+
+::: {.land-karte .eu}
+[Europäische Union]{.land-name}
+
+[≈ 406 GW]{.gross}
+[installiert, Ende 2025^2^]{.klein}
+
+| | |
+|---|---|
+| Zubau 2025 | 69,6 GW^2^ |
+| Anteil am Strom | ≈ 13 %^1^ |
+| Ziel 2030 | ≈ 750 GW^3^ |
+
+`<div class="fortschritt" style="--wert:54%"><span></span></div>`{=html}
+[**54 %** des Ziels 2030 erreicht]{.klein}
+:::
+
+::: {.land-karte .cn}
+[China]{.land-name}
+
+[1.200 GW]{.gross}
+[installiert, Ende 2025]{.klein}
+
+| | |
+|---|---|
+| Zubau 2025 | 317 GW |
+| Anteil am Strom | 11,1 %^1^ |
+| Ziel 2035 | 3.600 GW^4^ |
+
+`<div class="fortschritt" style="--wert:51%"><span></span></div>`{=html}
+[**51 %** des Ziels 2035 erreicht (Wind + Solar)]{.klein}
+:::
+
+:::
+
+::: {.belege}
+**Belege** · Deutschland: Bestand, Zubau [@bnetza_ee_2025], Ziel [§ 4 Nr. 3 @eeg], Anteil [@uba_ee_2025] · EU: [@spe_outlook_2025; @spe_midyear_2026; @ember_eer_2026] · China: [@nea_ee_2025; @nbs_2025; @cn_ndc_2035] · ^1^ Unterschiedliche Bezugsgrößen: Deutschland am Bruttostromverbrauch, EU an der Stromerzeugung (Ember), China an der Stromerzeugung (1.173 von 10.575 TWh, eigene Berechnung). ^2^ Schätzung des Branchenverbands SolarPower Europe (Modulleistung); der Zubau 2025 wurde im September 2026 von 65,1 auf 69,6 GW angehoben, der Bestand dürfte entsprechend etwas höher liegen. Amtlich weist Eurostat bisher nur 2024 aus: 307 GW [@eurostat_pv_2026]. ^3^ Die Solarstrategie nennt „fast 600 GW“ Wechselstromleistung, nach Branchenangaben ≈ 750 GW Modulleistung [@ec_solarstrategie_2022]. ^4^ China hat kein eigenes Photovoltaik-Ziel; das NDC 2035 nennt 3.600 GW für Wind und Solar zusammen (Ende 2025: 1.840 GW).
+:::
+
+## Wer baut wie viel?
+
+::: {.balken-vergleich}
+
+[Zubau 2025, GW]{.bv-titel}
+
+`<div class="bv-zeile cn"><span class="bv-land">China</span><span class="bv-spur"><span style="width:100%"></span></span><span class="bv-wert">317</span></div><div class="bv-zeile eu"><span class="bv-land">EU</span><span class="bv-spur"><span style="width:22%"></span></span><span class="bv-wert">69,6</span></div><div class="bv-zeile de"><span class="bv-land">Deutschland</span><span class="bv-spur"><span style="width:5.2%"></span></span><span class="bv-wert">16,4</span></div>`{=html}
+
+[Installierte Leistung je Einwohner, Ende 2025, kW]{.bv-titel}
+
+`<div class="bv-zeile de"><span class="bv-land">Deutschland</span><span class="bv-spur"><span style="width:100%"></span></span><span class="bv-wert">1,40</span></div><div class="bv-zeile eu"><span class="bv-land">EU</span><span class="bv-spur"><span style="width:64%"></span></span><span class="bv-wert">0,90</span></div><div class="bv-zeile cn"><span class="bv-land">China</span><span class="bv-spur"><span style="width:61%"></span></span><span class="bv-wert">0,85</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Belege** · Werte wie oben; je Einwohner eigene Berechnung mit 83,5 Mio. (Deutschland), 452,0 Mio. (EU) und 1.404,9 Mio. (China) Einwohnern, siehe Länderüberblicke [Deutschland](../laender/deutschland.qmd), [EU](../laender/eu.qmd), [China](../laender/china.qmd).
+:::
+
+Chinas Zubau 2025 war fast fünfmal so groß wie der der EU. Gemessen an der Bevölkerung liegt Deutschland aber vorn – und China hat die EU fast eingeholt.
+
+## Wie wird der Ausbau gesteuert?
+
+::: {.matrix}
+
+```{=html}
+<div class="m-kopf"><span></span><span class="m-land de">Deutschland</span><span class="m-land eu">Europäische Union</span><span class="m-land cn">China</span></div>
+```
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-ziel"/></svg>`{=html}
+**Ziel**
+:::
+
+::: {.m-zelle .de}
+Gesetzlicher Ausbaupfad: **215 GW bis 2030**, **400 GW bis 2040**. Mindestens die Hälfte des Zubaus soll auf Gebäuden entstehen [§ 4 @eeg].
+:::
+
+::: {.m-zelle .eu}
+Solarstrategie: **fast 600 GW** (Wechselstrom) bis 2030 [@ec_solarstrategie_2022]. Verbindlich ist nur das Gesamtziel: **42,5 %** erneuerbare Energien am Endenergieverbrauch 2030 [@eu_red3].
+:::
+
+::: {.m-zelle .cn}
+Kein eigenes Solarziel. Wind und Solar zusammen: **1.200 GW bis 2030** – schon 2024 erreicht – und **3.600 GW bis 2035** [@cn_aktionsplan_2021; @cn_ndc_2035].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-geld"/></svg>`{=html}
+**Vergütung**
+:::
+
+::: {.m-zelle .de}
+EEG: feste Einspeisevergütung für kleine Anlagen, Marktprämie über Ausschreibungen für große [@eeg]. **Reform in Beratung:** keine feste Vergütung mehr für neue Anlagen, unter 25 kW nur noch Übergangszahlung, ab 100 kW zweiseitige Differenzverträge [@bt_eeg_novelle_2026].
+:::
+
+::: {.m-zelle .eu}
+Ab 17.07.2027 müssen neue staatliche Preisstützungen für Solar-, Wind- und weitere Anlagen als **zweiseitige Differenzverträge** ausgestaltet sein: Mindestvergütung, aber Abschöpfung hoher Erlöse [Art. 19d @eu_emd_2024].
+:::
+
+::: {.m-zelle .cn}
+Seit 2021 keine zentrale Förderung mehr für neue Solarparks und gewerbliche Dachanlagen [@ndrc_833_2021]. Seit 2025 wird Solarstrom grundsätzlich **am Strommarkt verkauft**; für Neuanlagen ab 01.06.2025 gleicht ein per Auktion ermittelter „Mechanismuspreis“ Abweichungen in beide Richtungen aus [@ndrc_136_2025].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-haus"/></svg>`{=html}
+**Gebäude**
+:::
+
+::: {.m-zelle .de}
+2025 entfiel knapp die Hälfte des Zubaus auf Gebäude – das Ziel des Ausbaupfads wurde knapp verfehlt. Rund 430.000 Steckersolargeräte („Balkonkraftwerke“) sind registriert, zusammen 0,5 GW Zubau 2025 [@bnetza_ee_2025].
+:::
+
+::: {.m-zelle .eu}
+**Solarpflicht** nach der Gebäuderichtlinie, soweit technisch und wirtschaftlich machbar: neue öffentliche und Nichtwohngebäude über 250 m² bis Ende 2026, alle neuen Wohngebäude bis Ende 2029 [Art. 10 @eu_epbd].
+:::
+
+::: {.m-zelle .cn}
+Dachanlagen machen fast die Hälfte des Bestands aus: **530 GW** dezentral, 670 GW in Solarparks [@nea_ee_2025]. Seit 2025 sollen große Gewerbeanlagen grundsätzlich nur der Eigenversorgung dienen und nicht ins Netz einspeisen [@nea_dpv_2025].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#t-netz"/></svg>`{=html}
+**Netz**
+:::
+
+::: {.m-zelle .de}
+Neue Anlagen erhalten bei **negativen Börsenpreisen** keine Zahlung; kleine Anlagen unter 100 kW erst ab Einbau eines intelligenten Messsystems [§ 51 @eeg]. Geplant: Netzbetreiber sollen Anschlüsse nach Netzdienlichkeit statt nach Reihenfolge vergeben [@bt_eeg_novelle_2026].
+:::
+
+::: {.m-zelle .eu}
+Für Solaranlagen auf Gebäuden gelten die besonderen Genehmigungsverfahren und die einfache Mitteilung für den Netzanschluss nach der Erneuerbare-Energien-Richtlinie [Art. 10 Abs. 2 @eu_epbd].
+:::
+
+::: {.m-zelle .cn}
+Nutzungsgrad 2025: **95 %** – rund 5 % des möglichen Solarstroms wurden abgeregelt [@nea_ee_2025]. Strom, der wegen der Gebote am Markt nicht abgesetzt wird, zählt nicht mehr in diese Statistik [@ndrc_136_2025].
+:::
+:::
+
+:::
+
+## Wer stellt die Anlagen her?
+
+::: {.lieferkette}
+`<svg class="m-icon gross"><use href="#t-fabrik"/></svg>`{=html}
+
+[über 80 %]{.lk-zahl .cn}
+
+[Chinas Anteil an **jeder** Fertigungsstufe – Polysilizium, Wafer, Zellen und Module [@iea_pv_lieferketten_2022]]{.lk-text}
+
+[40 %]{.lk-zahl .eu}
+
+[Richtwert der EU: Bis 2030 sollen Fabriken in der EU mindestens 40 % des jährlichen Bedarfs an Netto-Null-Technologien decken können – auch Photovoltaik [@eu_nzia]]{.lk-text}
+:::
+
+Die Ausbauziele Deutschlands und der EU hängen damit an Produkten, die zum größten Teil in China gefertigt werden. Die Zahl stammt aus der Lieferketten-Analyse der IEA von 2022.
+
+## Einordnung
+
+::: {.einordnung}
+**Drei Wege, ein Trend.** Alle drei bewegen sich weg von festen Vergütungen hin zum Strommarkt: China hat diesen Schritt 2021 und 2025 bereits vollzogen, die EU schreibt ihn ab 2027 vor, Deutschland berät ihn gerade. Der Grund ist überall derselbe – Solarstrom drückt zur Mittagszeit die Preise, und feste Vergütungen setzen dann falsche Anreize.
+
+**Unterschiedliche Engpässe.** In Deutschland und der EU bremsen vor allem das schwächere Dachgeschäft und der Netzanschluss; die Ziele für 2030 sind zu gut der Hälfte erreicht. China wächst so schnell, dass Netze und Abnahme Schritt halten müssen – ein Nutzungsgrad von 95 % heißt, dass schon heute ein Teil des Solarstroms abgeregelt wird.
+
+**Abhängigkeit als offene Frage.** Die EU will mit der Netto-Null-Industrie-Verordnung eigene Fertigung aufbauen, gibt aber nur einen Richtwert vor. Ob er bei Photovoltaik erreichbar ist, ist offen.
+:::

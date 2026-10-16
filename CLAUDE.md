@@ -92,6 +92,8 @@ Nächste Schritte:
 
 **Zitieren von Paragrafen:** `[§ 3 @ksg]` schreiben, nicht `[@ksg, § 3]` – sonst macht der deutsche Zitierstil „Abschn. 3" daraus.
 
+**Energiewende-Bereich (16.10.2026, von Jing gewählt):** Menüpunkt „Energiewende“ (EN „Energy transition“, ZH „能源转型“) statt „Erneuerbare Energien“, weil Wärmepumpen und Wasserstoff keine erneuerbaren Energien im engeren Sinn sind. DE-Menü: „Überblick: Ausbau Wind & Solar“ (`daten/index.qmd`) · Photovoltaik · später Windenergie, Wärmepumpen, Wasserstoff (`energiewende/*.qmd`, vorerst nur DE, steht in `nurDeutsch`). Aufbau je Technik: „Auf einen Blick“ (drei Länderkarten `.land-drei/.land-karte.de/.eu/.cn` mit Fortschrittsbalken zum Ziel) → „Wer baut wie viel?“ (`.balken-vergleich`, absolut und je Einwohner) → „Wie wird der Ausbau gesteuert?“ (`.matrix`: Zeilen = Fragen Ziel/Vergütung/Gebäude/Netz, Spalten DE · EU · CN; Kopfzeile als HTML-Block, am Handy gestapelt mit Länderlabel) → Lieferkette (`.lieferkette`) → Einordnung. Photovoltaik-Seite als Vorlage gebaut, wartet auf Jings Prüfung. Hinweis: EEG-Novelle (Drs. 21/7867) ist im Oktober 2026 noch in Beratung – nach Verabschiedung Seite anpassen. Headless-Chrome mit 390 px schneidet Text ab (Artefakt), echte Handybreite im Browser-Pane prüfen.
+
 ## Offene Ideen
 
 - Erst das Gerüst (Gestaltung, Struktur) verfeinern, dann Inhalte/Daten füllen – so will Jing vorgehen.

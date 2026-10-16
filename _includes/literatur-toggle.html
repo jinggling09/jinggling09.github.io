@@ -31,3 +31,27 @@
   oeffneBeiSprung();
 })();
 </script>
+<script>
+/* Belege-Zeilen (.belege) zusammenklappen: das fett gesetzte erste Wort („Belege“, „Sources“, „来源“)
+   wird zur Aufklapp-Zeile, der Rest erscheint erst nach Klick. */
+(function () {
+  document.querySelectorAll("div.belege").forEach(function (box) {
+    var p = box.querySelector("p");
+    var b = p && p.firstElementChild;
+    var titel = "Belege";
+    if (b && b.tagName === "STRONG" && p.firstChild === b) {
+      titel = b.textContent.trim();
+      var rest = b.nextSibling;
+      b.remove();
+      if (rest && rest.nodeType === 3) rest.textContent = rest.textContent.replace(/^\s*·\s*/, "");
+    }
+    var d = document.createElement("details");
+    d.className = "belege-klapp";
+    var sum = document.createElement("summary");
+    sum.textContent = titel;
+    d.appendChild(sum);
+    while (box.firstChild) d.appendChild(box.firstChild);
+    box.appendChild(d);
+  });
+})();
+</script>

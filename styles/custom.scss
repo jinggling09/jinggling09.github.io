@@ -839,3 +839,89 @@ figure.pfad .pfad-ziel-text {
   display: block; padding: .15rem .6rem; border: 1.5px dashed $gruen; border-radius: 3px;
   background: $gruen-hell; color: $gruen; font-size: .88rem; font-weight: 600;
 }
+
+/* ---------- Energiewende: Technikseiten (Vergleich DE · EU · CN) ---------- */
+.land-drei {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0 .8rem;
+  @media (max-width: 760px) { grid-template-columns: 1fr; }
+}
+.land-karte {
+  border: 1px solid $linie; border-top: 4px solid $grau; border-radius: 4px; background: #fff;
+  padding: 1rem 1.1rem 1rem;
+  p { margin: 0; }
+  .land-name { display: block; font-weight: 700; font-size: .82rem; letter-spacing: .06em; text-transform: uppercase; }
+  .gross { display: block; font-family: $headings-font-family; font-size: 2.2rem; line-height: 1.15; margin-top: .4rem; font-variant-numeric: tabular-nums; }
+  .klein { display: block; font-size: .9rem; color: $grau; line-height: 1.4; }
+  table { width: 100%; margin: .8rem 0 .9rem; font-size: .95rem; border-top: 1px solid $linie; }
+  thead { display: none; }
+  td { padding: .3rem 0; border-bottom: 1px solid $linie; border-top: none; background: transparent !important; box-shadow: none !important; }
+  td:last-child { text-align: right; font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  td:first-child { color: $grau; }
+  &.de { border-top-color: $spur-de; .land-name, .gross { color: $spur-de-text; } .fortschritt > span { background: $spur-de; } }
+  &.eu { border-top-color: $spur-eu; .land-name, .gross { color: $spur-eu; } .fortschritt > span { background: $spur-eu; } }
+  &.cn { border-top-color: $spur-cn; .land-name, .gross { color: $spur-cn; } .fortschritt > span { background: $spur-cn; } }
+}
+.fortschritt {
+  height: 8px; border-radius: 4px; background: #eef1ef; overflow: hidden; margin-bottom: .35rem;
+  > span { display: block; height: 100%; width: var(--wert); border-radius: 4px; }
+}
+
+.balken-vergleich {
+  margin: 1rem 0 .8rem; max-width: 760px;
+  p { margin: 0; }
+  .bv-titel { display: block; font-weight: 600; margin: 1.1rem 0 .5rem; }
+  .bv-zeile { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr) 3.4rem; align-items: center; gap: .7rem; margin-bottom: .4rem; }
+  .bv-land { font-size: .95rem; }
+  .bv-spur { height: 18px; > span { display: block; height: 100%; min-width: 3px; border-radius: 0 3px 3px 0; } }
+  .bv-wert { font-variant-numeric: tabular-nums; font-weight: 600; text-align: right; }
+  .de .bv-spur > span { background: $spur-de; } .de .bv-wert { color: $spur-de-text; }
+  .eu .bv-spur > span { background: $spur-eu; } .eu .bv-wert { color: $spur-eu; }
+  .cn .bv-spur > span { background: $spur-cn; } .cn .bv-wert { color: $spur-cn; }
+  @media (max-width: 576px) { .bv-zeile { grid-template-columns: 5.6rem minmax(0, 1fr) 3rem; } }
+}
+
+.m-icon { width: 1.6rem; height: 1.6rem; fill: none; stroke: $gruen; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.m-icon.gross { width: 2.6rem; height: 2.6rem; }
+.matrix {
+  margin: 1rem 0 2rem; font-size: .97rem; line-height: 1.55;
+  p { margin: 0; }
+  .m-kopf, .m-zeile { display: grid; grid-template-columns: 8rem repeat(3, minmax(0, 1fr)); gap: 0 1.2rem; }
+  .m-kopf { border-bottom: 2px solid $tinte; padding-bottom: .4rem; }
+  .m-land { font-weight: 700; font-size: .82rem; letter-spacing: .06em; text-transform: uppercase; }
+  .m-land.de { color: $spur-de-text; } .m-land.eu { color: $spur-eu; } .m-land.cn { color: $spur-cn; }
+  .m-zeile { border-bottom: 1px solid $linie; padding: .9rem 0; }
+  .m-frage p { display: flex; align-items: center; gap: .5rem; font-family: $headings-font-family; font-size: 1.1rem; }
+  .m-zelle { border-left: 3px solid transparent; padding-left: .7rem; }
+  .m-zelle.de { border-left-color: $spur-de; } .m-zelle.eu { border-left-color: $spur-eu; } .m-zelle.cn { border-left-color: $spur-cn; }
+  @media (max-width: 860px) {
+    .m-kopf { display: none; }
+    .m-zeile { grid-template-columns: 1fr; gap: .7rem; }
+    .m-zelle::before { display: block; font-weight: 700; font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; margin-bottom: .1rem; }
+    .m-zelle.de::before { content: "Deutschland"; color: $spur-de-text; }
+    .m-zelle.eu::before { content: "Europäische Union"; color: $spur-eu; }
+    .m-zelle.cn::before { content: "China"; color: $spur-cn; }
+  }
+}
+
+.lieferkette {
+  display: grid; grid-template-columns: 3.2rem 9rem minmax(0, 1fr); align-items: center; gap: .9rem 1rem;
+  border-top: 2px solid $tinte; border-bottom: 1px solid $linie; padding: 1.1rem 0; margin: 1rem 0 1rem;
+  p { margin: 0; display: contents; }
+  .m-icon.gross { grid-row: 1 / span 2; }
+  .lk-zahl { font-family: $headings-font-family; font-size: 1.9rem; line-height: 1.1; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .lk-zahl.cn { color: $spur-cn; } .lk-zahl.eu { color: $spur-eu; }
+  @media (max-width: 576px) { grid-template-columns: 1fr; .m-icon.gross { grid-row: auto; } }
+}
+
+/* Belege-Zeilen zum Aufklappen (Skript in _includes/literatur-toggle.html) */
+details.belege-klapp {
+  > summary {
+    cursor: pointer; list-style: none; display: inline-flex; align-items: baseline; gap: .35rem;
+    font-weight: 600; color: $grau; font-size: .82rem;
+    &::-webkit-details-marker { display: none; }
+    &::before { content: "▸"; color: $gruen; display: inline-block; transition: transform .15s; }
+    &:hover { color: $gruen; }
+  }
+  &[open] > summary::before { transform: rotate(90deg); }
+  &[open] > summary { margin-bottom: .2rem; }
+}
