@@ -81,8 +81,8 @@ Data analysis with R and Python, GIS analysis, carbon management
 [Self-study and own projects]{.org}
 
 - German up to C1 level; Python for data analysis (Harvard CS50P)
-- Built this three-language platform comparing climate policy in Germany and China, using AI-assisted development and primary sources
-- Training in life cycle assessment (OpenLCA) and the GHG Protocol
+- Built this knowledge platform on climate action and the energy transition
+- Training in life cycle assessment (OpenLCA), the GHG Protocol, sustainability analysis and reporting (including CSRD)
 :::
 
 ::: {.zeit-l}
