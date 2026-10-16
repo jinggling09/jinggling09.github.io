@@ -19,7 +19,7 @@ toc: false
  <div>
   <div class="eyebrow">About me</div>
   <h1>Jing Hu</h1>
-  <p class="profil-text">Environmental scientist with more than four years of professional experience in climate policy, carbon accounting and low-carbon project management. Looking for a position in climate action, sustainability or the energy transition.</p>
+  <p class="profil-text">Environmental scientist with more than four years of professional experience in climate policy, carbon accounting, emissions trading and low-carbon project management. Looking for a position in climate action, sustainability or the energy transition.</p>
   <div class="knoepfe">
    <a class="knopf" href="https://www.linkedin.com/in/jing-hu-10a703182"><svg><use href="#s-in"/></svg>LinkedIn</a>
    <a class="knopf" href="mailto:hujing1104@outlook.com"><svg><use href="#s-mail"/></svg>Email</a>
@@ -96,7 +96,7 @@ Data analysis with R and Python, GIS analysis, carbon management
 
 - Coordinated the pilot programme for low-carbon technologies: advice to companies, expert reviews, site visits, release of funds, submission to the Ministry of Ecology and Environment
 - Co-developed a digital project database with interactive visualisation: digitised more than 240 paper project files and made them available in the cloud; software copyright as second author
-- GHG inventories and studies: forest carbon, waste incineration, carbon-neutrality pathways for two city districts, emissions peaking of the districts (Energy Foundation China), CCUS; article on the EU Emissions Trading System; edited the monthly climate bulletin
+- GHG inventories and studies: forest carbon, waste incineration, carbon-neutrality pathways for two city districts, emissions peaking of the districts (Energy Foundation China), CCUS; analysis of the Beijing emissions trading scheme, article on the EU Emissions Trading System; edited the monthly climate bulletin
 - Organised international expert conferences (including the Beijing International Forum on Clean Air and Climate Action) and Beijing's National Low-Carbon Day; hosted and interpreted for guests, including a representative of the Berlin Senate administration
 - Hosted government delegations (including the UNFCCC, the UK, California, New Zealand, the Embassy of Denmark and the Sino-Swiss Clean Air China project): visits to low-carbon projects, Chinese–English interpreting; organised official trips abroad (2023: 5 groups, 19 people)
 :::
