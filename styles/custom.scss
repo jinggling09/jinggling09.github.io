@@ -957,3 +957,63 @@ main.content:has(.technik-karte) #title-block-header { display: none; }
     .tk-quelle { left: 20px; text-align: left; }
   }
 }
+
+/* ---------- Unternehmen: Überblick (Stufen, Sanktionen, Selbstcheck) ---------- */
+.kaskade {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.6rem; margin: 1rem 0 1.4rem; counter-reset: k;
+  p { margin: 0; display: contents; }
+  .k-stufe {
+    position: relative; display: block; background: #fff; border: 1px solid $linie; border-top: 3px solid $gruen;
+    border-radius: 4px; padding: .8rem .9rem; font-size: .95rem; line-height: 1.45; color: $grau;
+    &:not(:last-child)::after {
+      content: "→"; position: absolute; right: -1.25rem; top: 50%; transform: translateY(-50%);
+      color: $gruen; font-weight: 700;
+    }
+  }
+  .k-schritt { display: block; font-family: $headings-font-family; font-size: 1.05rem; color: $tinte; margin-bottom: .3rem; }
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr; gap: 1.3rem;
+    .k-stufe:not(:last-child)::after { content: "↓"; right: auto; left: 1.2rem; top: auto; bottom: -1.25rem; transform: none; }
+  }
+}
+.land-drei.land-zwei { grid-template-columns: repeat(2, minmax(0, 1fr)); @media (max-width: 760px) { grid-template-columns: 1fr; } }
+.land-zwei .land-karte .klein { margin-top: .4rem; }
+
+.selbstcheck {
+  border: 1px solid $linie; border-radius: 4px; background: #fff; padding: 1.1rem 1.2rem 1.2rem; margin: 1rem 0 1.6rem;
+  label { font-size: .9rem; }
+  .sc-felder {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem 1rem;
+    label { display: flex; flex-direction: column; gap: .25rem; color: $grau; font-weight: 600; }
+    input, select { font: inherit; font-weight: 400; color: $tinte; border: 1px solid #c9d2cd; border-radius: 3px; padding: .35rem .5rem; background: $papier; }
+    input:focus, select:focus { outline: 2px solid $gruen-hell; border-color: $gruen; }
+    @media (max-width: 860px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    @media (max-width: 520px) { grid-template-columns: 1fr; }
+  }
+  .sc-haken {
+    margin: 1rem 0 0; padding: 0; border: none;
+    legend { font-size: .9rem; font-weight: 600; color: $grau; margin-bottom: .3rem; }
+    label { display: flex; gap: .55rem; align-items: flex-start; padding: .25rem 0; line-height: 1.4; }
+    input { margin-top: .25rem; accent-color: $gruen; flex: none; }
+  }
+  .sc-ergebnis { margin-top: 1.1rem; border-top: 2px solid $tinte; padding-top: .8rem; }
+  .sc-zahl { font-weight: 700; margin: 0 0 .6rem; }
+  .sc-leer { color: $grau; margin: 0; }
+  .sc-treffer {
+    border-left: 3px solid $grau; padding: .45rem 0 .55rem .8rem; margin-bottom: .7rem;
+    &.de { border-left-color: $spur-de; .sc-land { color: $spur-de-text; } }
+    &.eu { border-left-color: $spur-eu; .sc-land { color: $spur-eu; } }
+    &.cn { border-left-color: $spur-cn; .sc-land { color: $spur-cn; } }
+    strong { display: block; font-size: 1.02rem; }
+    p { margin: .15rem 0 0; font-size: .93rem; line-height: 1.45; }
+    .sc-grundlage { font-size: .8rem; color: $grau; }
+  }
+  .sc-kopf { display: flex; gap: .6rem; align-items: center; margin-bottom: .15rem; }
+  .sc-land { font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+  .sc-status {
+    font-size: .7rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; border-radius: 999px; padding: .05rem .55rem;
+    &.gilt { background: $gruen-hell; color: $gruen; }
+    &.kommt { background: #fbf0dc; color: #8a5d12; }
+    &.entlastet, &.offen { background: #eef1ef; color: $grau; }
+  }
+}

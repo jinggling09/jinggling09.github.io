@@ -9,7 +9,8 @@ Eingabe (daten/data/):
                                 vergleichbare amtliche Jahresreihe, daher nur ein Streifen)
 
 Ausgabe (daten/data/, eingebunden per {{< include >}}):
-  _kopf_wind.md, _kopf_photovoltaik.md, _kopf_waermepumpen.md, _kopf_wasserstoff.md
+  _kopf_wind.md, _kopf_photovoltaik.md, _kopf_waermepumpen.md, _kopf_wasserstoff.md,
+  _kopf_unternehmen.md (Themenseiten unternehmen/, nur Zeichnung)
 
 Wird von scripts/build.sh vor dem Rendern aufgerufen. Nur Standardbibliothek.
 """
@@ -140,6 +141,29 @@ def zeichnung_h2() -> str:
     return s
 
 
+def zeichnung_unternehmen() -> str:
+    """Vom Staat zum Betrieb: Regierungsgebäude → Fabrik → Bericht mit Kennzahlen → geprüft."""
+    s = '<path d="M0 262H900"/>'
+    # Regierungsgebäude: Stufen, Giebel, Säulen
+    s += '<path d="M330 262H450M336 254H444M342 246H438"/>'
+    s += '<path d="M338 150L390 118L442 150ZM342 150V160H438V150"/>'
+    for x in (352, 376, 400, 424):
+        s += f'<path d="M{x} 160V246M{x + 6} 160V246"/>'
+    s += '<path d="M462 212H494" opacity=".7"/><path d="M486 206l8 6-8 6" opacity=".7"/>'
+    # Fabrik mit Sheddach und Schornstein
+    s += '<path d="M505 262V190L545 165V190L585 165V190L625 165V190H655V262"/>'
+    s += '<path d="M633 190V118H647V190"/><path d="M640 110c-8-6 4-12-2-20s6-12 0-18" opacity=".55"/>'
+    s += '<path d="M520 214h20v18h-20zM560 214h20v18h-20zM600 214h20v18h-20z" opacity=".7"/>'
+    s += '<path d="M668 212H700" opacity=".7"/><path d="M692 206l8 6-8 6" opacity=".7"/>'
+    # Bericht mit Eselsohr, Textzeilen und sinkenden Balken
+    s += '<path d="M712 130H782L800 148V258H712Z"/><path d="M782 130V148H800" opacity=".7"/>'
+    s += '<path d="M724 152h44M724 164h56M724 176h36" opacity=".6"/>'
+    s += '<path d="M732 244V196M748 244V206M764 244V218M780 244V228"/><path d="M724 244h66" opacity=".6"/>'
+    # Prüfsiegel
+    s += '<circle cx="842" cy="150" r="22"/><path d="M831 150l8 8 15-16"/>'
+    return s
+
+
 def streifen(de: dict[int, float], cn: dict[int, float], technik: str) -> tuple[str, int]:
     jahre = [j for j in sorted(cn) if j >= START and j in de]
     x0, x1, y0, h = 300.0, 900.0, 262, 17
@@ -201,6 +225,10 @@ def main() -> None:
     # ohne Streifen: Ausschnitt enger, damit die Zeichnung die Karte füllt
     (DATA / "_kopf_wasserstoff.md").write_text(
         karte(zeichnung_h2(), "", "", viewbox="330 70 570 215"), encoding="utf-8")
+    # Themenseiten Unternehmen: ebenfalls nur Zeichnung; breiterer Ausschnitt, damit das Gebäude links
+    # nicht unter den Untertitel rutscht
+    (DATA / "_kopf_unternehmen.md").write_text(
+        karte(zeichnung_unternehmen(), "", "", viewbox="190 60 710 225"), encoding="utf-8")
     (DATA / "_kopf_wind.md").write_text(
         baustein(zeichnung_wind(), r["de"]["wind"], r["cn"]["wind"], "Windenergie", "Windleistung"), encoding="utf-8")
     (DATA / "_kopf_photovoltaik.md").write_text(

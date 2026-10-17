@@ -1,0 +1,308 @@
+---
+title: "Unternehmen & Klimarecht"
+---
+
+::: {.technik-karte}
+{{< include ../daten/data/_kopf_unternehmen.md >}}
+
+::: {.tk-text}
+`<h1 class="tk-titel">Unternehmen & Klimarecht</h1>`{=html}
+
+[Deutschland, EU und China im Vergleich: Wie werden Klimaziele des Staates zu Pflichten für Unternehmen – und welche treffen ein bestimmtes Unternehmen?]{.tk-sub}
+
+[Stand: 17.10.2026]{.stand}
+:::
+:::
+
+[Unternehmen · **Überblick**]{.ebenen-pfad}
+
+```{=html}
+<svg width="0" height="0" class="icon-defs" aria-hidden="true">
+ <symbol id="u-staat" viewBox="0 0 24 24"><path d="M3 20.5h18M4.5 18h15M5 9.5h14L12 4.5z"/><path d="M7 10v8M10.3 10v8M13.7 10v8M17 10v8"/></symbol>
+ <symbol id="u-sektor" viewBox="0 0 24 24"><path d="M3 20.5h18M4.5 20.5v-9l5 3v-3l5 3v-3l5 3v6"/><path d="M6 11.5V4h2.5v5.5"/></symbol>
+ <symbol id="u-bericht" viewBox="0 0 24 24"><path d="M6 3.5h9l3.5 3.5v13.5H6z"/><path d="M15 3.5V7h3.5"/><path d="M9 17v-3M12 17v-5M15 17v-2"/></symbol>
+ <symbol id="u-geld" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M15 8.6a3.6 3.6 0 1 0 0 6.8M7.5 11h5.5M7.5 13.2h5.5"/></symbol>
+</svg>
+```
+
+Klimaziele beschließt der Staat – Emissionen entstehen aber in Kraftwerken, Fabriken, Gebäuden und Fahrzeugen. Dazwischen liegen drei Ebenen: Gesetze, die **den Staat selbst binden**; Instrumente, die **ganze Branchen steuern**; und Pflichten, die **einzelne Unternehmen** erfüllen müssen. Dazu kommen **Anreize**, die freiwilliges Handeln lohnend machen sollen. Diese Seite ordnet die wichtigsten Regeln in Deutschland, der EU und China diesen Ebenen zu; der Selbstcheck unten zeigt, welche davon ein bestimmtes Unternehmen betreffen.
+
+## Wer wird verpflichtet?
+
+::: {.matrix}
+
+```{=html}
+<div class="m-kopf"><span></span><span class="m-land de">Deutschland</span><span class="m-land eu">Europäische Union</span><span class="m-land cn">China</span></div>
+```
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#u-staat"/></svg>`{=html}
+**Staat**
+:::
+
+::: {.m-zelle .de}
+**Klimaschutzgesetz**: −65 % bis 2030, −88 % bis 2040, Treibhausgasneutralität 2045 [§ 3 @ksg]. Verpflichtet ist die Bundesregierung; einklagbare Rechte oder Pflichten für Einzelne begründet das Gesetz ausdrücklich nicht [§ 4 Abs. 1 @ksg]. Behörden müssen die Ziele bei Planungen berücksichtigen und bei Investitionen und Beschaffung des Bundes einen CO₂-Preis ansetzen [§ 13 @ksg].
+:::
+
+::: {.m-zelle .eu}
+**Europäisches Klimagesetz**: −55 % bis 2030, −90 % bis 2040, Klimaneutralität 2050 – verpflichtet die EU und ihre Mitgliedstaaten [@eu_klimagesetz_2021; @eu_klimagesetz_2026]. Die **Lastenteilung** gibt jedem Staat ein eigenes Ziel, Deutschland −50 % bis 2030 gegenüber 2005 in Verkehr, Gebäuden, Landwirtschaft und Teilen der Industrie [@eu_esr_2023; @bmukn_ksp_2026].
+:::
+
+::: {.m-zelle .cn}
+**„1+N“-System**: Leitlinien von 2021 und Aktionsplan zur CO₂-Spitze vor 2030 [@cn_yijian_2021; @cn_aktionsplan_2021]. Über die **CO₂-Doppelkontrolle** werden Regionen und Branchen an CO₂-Vorgaben gemessen [@cn_doppelkontrolle_2024]. Seit 15.08.2026 gilt das **Ökologie- und Umweltgesetzbuch** [@cn_kodex_2026; @cn_kodex_inhalt].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#u-sektor"/></svg>`{=html}
+**Branchen**
+:::
+
+::: {.m-zelle .de}
+**Brennstoff-Emissionshandel**: CO₂-Preis auf Heizöl, Erdgas, Benzin und Diesel. Zahlen müssen die Unternehmen, die die Brennstoffe in Verkehr bringen und dafür Energiesteuer schulden [§ 3 Nr. 3 @behg] – sie geben den Preis an Betriebe und Haushalte weiter. Dazu kommen Regeln für Heizungen [@gmodg] und die Förderung von Ökostrom [@eeg].
+:::
+
+::: {.m-zelle .eu}
+**Emissionshandel** für Kraftwerke, Industrie, Luft- und Seeverkehr [@eu_ets_richtlinie]; ab 2028 ein zweiter für Gebäude und Verkehr [@eu_klimagesetz_2026]. **CO₂-Flottengrenzwerte** verpflichten Autohersteller [@eu_co2_pkw]; der **CO₂-Grenzausgleich (CBAM)** belegt Importe von Stahl, Zement und anderen Waren mit dem CO₂-Preis [@eu_cbam_2023].
+:::
+
+::: {.m-zelle .cn}
+**Nationaler Emissionshandel**: seit 2021 Stromsektor, seit 2025 auch Stahl, Zement und Aluminium – zusammen über 60 % der CO₂-Emissionen [@mee_qa_2025]. Erfasst wird, wer in diesen Branchen mindestens 26.000 t CO₂-Äquivalent im Jahr ausstößt [@mee_2025]. Sektorpläne ergänzen den Aktionsplan [@cn_aktionsplan_2021].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#u-bericht"/></svg>`{=html}
+**Betriebe**
+:::
+
+::: {.m-zelle .de}
+**Energieeffizienzgesetz**: ab 7,5 GWh Energieverbrauch ein Energie- oder Umweltmanagementsystem, ab 2,5 GWh veröffentlichte Pläne für alle wirtschaftlichen Sparmaßnahmen [§§ 8, 9 @enefg]. **Lieferkettengesetz** ab 1.000 Beschäftigten im Inland [§ 1 @lksg]; Berichte prüft das BAFA nicht mehr [@bafa_lksg_2025]. Die CSRD ist noch nicht umgesetzt, der Gesetzentwurf liegt im Bundestag [@bt_csrd_ug].
+:::
+
+::: {.m-zelle .eu}
+**CSRD**: Nachhaltigkeitsbericht für Unternehmen mit über 1.000 Beschäftigten **und** über 450 Mio. € Umsatz, ab Geschäftsjahr 2027 [@eu_omnibus_2026]. **CSDDD**: Sorgfaltspflichten in der Lieferkette ab 5.000 Beschäftigten und 1,5 Mrd. € Umsatz, ab 26.07.2029; die Pflicht zu einem Klima-Übergangsplan wurde gestrichen [@eu_omnibus_2026].
+:::
+
+::: {.m-zelle .cn}
+**Börsen**: Pflichtbericht zur Nachhaltigkeit für die großen Indexwerte (u. a. SSE 180, STAR 50, SZSE 100, ChiNext) und doppelt notierte Unternehmen, erstmals für 2025 [@sse_leitlinie_2024]. **Umweltinformationen** inklusive CO₂ veröffentlichen u. a. Unternehmen mit Schadstoff-Genehmigung der höchsten Kategorie jährlich bis 15. März [Art. 7, 12, 19 @mee_offenlegung]. Die Standards des Finanzministeriums gelten vorerst freiwillig [@mof_basis_2024; @mof_klima_2025].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#u-geld"/></svg>`{=html}
+**Anreize**
+:::
+
+::: {.m-zelle .de}
+**Klimaschutzverträge**: 2024 erhielten 15 Unternehmen zusammen bis zu 2,8 Mrd. € über 15 Jahre für klimafreundliche Produktion [@bmwk_ksv_2024]. Beim Energieeffizienzgesetz setzt der Staat auf Transparenz: Die Sparpläne müssen veröffentlicht, aber nicht umgesetzt werden [§ 9 @enefg].
+:::
+
+::: {.m-zelle .eu}
+**Wasserstoffbank** aus Emissionshandelserlösen: Die dritte Auktion 2026 vergab 1,09 Mrd. € an 9 Projekte [@ec_ehb3_2026]. Der wichtigste Anreiz ist der Preis selbst: Wer Emissionen senkt, muss weniger Zertifikate kaufen [@eu_ets_richtlinie].
+:::
+
+::: {.m-zelle .cn}
+**Grüne Kredite**: Ende 2025 rund 44,8 Bio. Yuan [@pboc_gruen_2025]. Im Emissionshandel können Unternehmen überschüssige Zertifikate verkaufen und zertifizierte Minderungen (CCER) zur Abgabe nutzen [Art. 14 @cn_ets_verordnung].
+:::
+:::
+
+:::
+
+::: {.belege}
+**Belege** · Eigene Zuordnung zu den Ebenen; beschränkt auf Klima und Energie, Auswahl der wichtigsten Regeln. Die EU-Regeln zu CSRD und CSDDD müssen erst in nationales Recht umgesetzt werden – die Änderungen zur CSRD bis 19. März 2027, die zur CSDDD bis 26. Juli 2028 [Art. 5 @eu_omnibus_2026].
+:::
+
+## Wie eine Pflicht im Betrieb ankommt
+
+::: {.kaskade}
+[[1 · Ziel]{.k-schritt}Der Staat legt fest, wie stark die Emissionen sinken – zum Beispiel im Klimaschutzgesetz.]{.k-stufe}
+
+[[2 · Instrument]{.k-schritt}Preis, Grenzwert oder Berichtspflicht übersetzen das Ziel für eine Branche.]{.k-stufe}
+
+[[3 · Messen & berichten]{.k-schritt}Das Unternehmen erfasst Energie und Emissionen und meldet sie.]{.k-stufe}
+
+[[4 · Prüfen & sanktionieren]{.k-schritt}Prüfer und Behörden kontrollieren; wer nicht liefert, zahlt.]{.k-stufe}
+:::
+
+Wie streng Schritt 4 ist, zeigt der Emissionshandel. Fehlen Zertifikate, wird es teuer – in der EU mit einem festen Betrag, in China als Vielfaches des Marktpreises:
+
+::: {.land-drei .land-zwei}
+
+::: {.land-karte .eu}
+[EU-Emissionshandel]{.land-name}
+
+[100 €]{.gross}
+[je Tonne CO₂ ohne abgegebenes Zertifikat, an die Inflation angepasst – die fehlenden Zertifikate müssen trotzdem nachgereicht werden. Abgabe bis 30. September [Art. 12, 16 @eu_ets_richtlinie]]{.klein}
+:::
+
+::: {.land-karte .cn}
+[Chinas Emissionshandel]{.land-name}
+
+[5- bis 10-fach]{.gross}
+[des durchschnittlichen Marktpreises im Monat vor der Frist je fehlendem Zertifikat; wer nicht nachbessert, erhält im Folgejahr entsprechend weniger Zertifikate. Für gefälschte Emissionsdaten bis 2 Mio. Yuan und Strafen für die Verantwortlichen persönlich [Art. 22, 24 @cn_ets_verordnung]]{.klein}
+:::
+
+:::
+
+## Selbstcheck: Welche Pflichten treffen ein Unternehmen?
+
+Die Angaben bleiben im Browser, es wird nichts gespeichert oder übertragen. Geprüft werden nur die auf dieser Seite genannten Regeln, stark vereinfacht – das Ergebnis ersetzt keine Rechtsberatung.
+
+```{=html}
+<form class="selbstcheck" id="selbstcheck" onsubmit="return false">
+  <div class="sc-felder">
+    <label>Sitz des Unternehmens
+      <select name="sitz">
+        <option value="de">Deutschland</option>
+        <option value="eu">anderer EU-Staat</option>
+        <option value="cn">China</option>
+        <option value="dritt">anderes Land außerhalb der EU</option>
+      </select>
+    </label>
+    <label>Beschäftigte (Gruppe, Durchschnitt)
+      <input name="besch" type="number" min="0" step="1" inputmode="numeric" placeholder="z. B. 1200">
+    </label>
+    <label>davon in Deutschland
+      <input name="besch_de" type="number" min="0" step="1" inputmode="numeric" placeholder="0">
+    </label>
+    <label>Nettoumsatz weltweit, Mio. €
+      <input name="umsatz" type="number" min="0" step="any" inputmode="decimal" placeholder="z. B. 500">
+    </label>
+    <label>davon in der EU, Mio. €
+      <input name="umsatz_eu" type="number" min="0" step="any" inputmode="decimal" placeholder="0">
+    </label>
+    <label>Energieverbrauch in Deutschland, GWh/Jahr
+      <input name="energie" type="number" min="0" step="any" inputmode="decimal" placeholder="Ø der letzten 3 Jahre">
+    </label>
+  </div>
+  <fieldset class="sc-haken">
+    <legend>Trifft zu …</legend>
+    <label><input type="checkbox" name="ets_eu"> betreibt in der EU eine Anlage im Emissionshandel (z. B. Feuerung über 20 MW, Stahl, Zement, Chemie)</label>
+    <label><input type="checkbox" name="behg"> bringt in Deutschland Brennstoffe in Verkehr (Heizöl, Erdgas, Benzin, Diesel)</label>
+    <label><input type="checkbox" name="cbam_import"> importiert in die EU mehr als 50 t im Jahr an Eisen, Stahl, Aluminium, Zement oder Düngemitteln</label>
+    <label><input type="checkbox" name="cbam_liefer"> produziert diese Waren außerhalb der EU und liefert an Kunden in der EU</label>
+    <label><input type="checkbox" name="rz_de"> betreibt in Deutschland ein Rechenzentrum ab 300 kW Anschlussleistung</label>
+    <label><input type="checkbox" name="cn_ets"> betreibt in China ein Kraftwerk, Stahl-, Zement- oder Aluminiumwerk mit mindestens 26.000 t CO₂-Äq. im Jahr</label>
+    <label><input type="checkbox" name="cn_index"> ist in China börsennotiert und im SSE 180, STAR 50, SZSE 100 oder ChiNext-Index – oder zugleich im Ausland notiert</label>
+    <label><input type="checkbox" name="cn_umwelt"> hat in China eine Schadstoff-Genehmigung der höchsten Kategorie oder muss ein Pflicht-Audit für saubere Produktion durchführen</label>
+  </fieldset>
+  <div class="sc-ergebnis" id="sc-ergebnis" aria-live="polite"></div>
+</form>
+<script>
+(function () {
+  var form = document.getElementById("selbstcheck"), aus = document.getElementById("sc-ergebnis");
+  var STATUS = { gilt: "gilt", kommt: "kommt", entlastet: "entlastet", offen: "im Verfahren" };
+  function zahl(n) { var v = parseFloat(String(form.elements[n].value).replace(",", ".")); return isNaN(v) ? 0 : v; }
+  function an(n) { return form.elements[n].checked; }
+  function treffer(land, status, titel, text, grundlage) {
+    return '<div class="sc-treffer ' + land + '"><div class="sc-kopf"><span class="sc-land">' +
+      { de: "Deutschland", eu: "EU", cn: "China" }[land] + '</span><span class="sc-status ' + status + '">' +
+      STATUS[status] + '</span></div><strong>' + titel + '</strong><p>' + text + '</p><p class="sc-grundlage">' +
+      grundlage + '</p></div>';
+  }
+  function pruefen() {
+    var sitz = form.elements.sitz.value, euSitz = sitz === "de" || sitz === "eu";
+    var besch = zahl("besch"), beschDe = zahl("besch_de"), umsatz = zahl("umsatz"),
+        umsatzEu = zahl("umsatz_eu"), energie = zahl("energie");
+    var r = [];
+    // EU: Berichte und Sorgfaltspflichten
+    if (euSitz && besch > 1000 && umsatz > 450) {
+      r.push(treffer("eu", "kommt", "Nachhaltigkeitsbericht (CSRD)",
+        "Bericht im Lagebericht nach den europäischen Standards (ESRS), extern geprüft – erstmals für das Geschäftsjahr 2027." +
+        (sitz === "de" ? " In Deutschland fehlt dafür noch das Umsetzungsgesetz." : ""),
+        "Richtlinie (EU) 2026/470; für Deutschland: Entwurf BT-Drs. 21/1857"));
+    } else if (!euSitz && umsatzEu > 450) {
+      r.push(treffer("eu", "kommt", "Nachhaltigkeitsbericht für Unternehmen außerhalb der EU",
+        "Bericht auf Gruppenebene, abzugeben über eine EU-Tochter oder Zweigniederlassung mit mehr als 200 Mio. € Umsatz – ab Geschäftsjahr 2028.",
+        "Art. 40a Richtlinie 2013/34/EU i. d. F. der Richtlinie (EU) 2026/470"));
+    } else if (euSitz && besch > 0 && besch <= 1000) {
+      r.push(treffer("eu", "entlastet", "Kein CSRD-Bericht – Schutz vor Datenanfragen",
+        "Bis 1.000 Beschäftigte gilt das Unternehmen als „geschützt“: Berichtspflichtige Kunden dürfen nicht mehr Daten verlangen, als der freiwillige EU-Standard vorsieht.",
+        "Richtlinie (EU) 2026/470"));
+    }
+    if ((euSitz && besch > 5000 && umsatz > 1500) || (!euSitz && umsatzEu > 1500)) {
+      r.push(treffer("eu", "kommt", "Sorgfaltspflichten in der Lieferkette (CSDDD)",
+        "Risiken für Menschenrechte und Umwelt in der Lieferkette ermitteln und abstellen – ab 26.07.2029. Ein eigener Klimaplan ist nicht mehr vorgeschrieben.",
+        "Richtlinie (EU) 2024/1760 i. d. F. der Richtlinie (EU) 2026/470"));
+    }
+    if (an("ets_eu")) {
+      r.push(treffer("eu", "gilt", "Emissionshandel (EU-ETS)",
+        "Emissionen überwachen und prüfen lassen, bis 30. September Zertifikate für das Vorjahr abgeben – sonst 100 € je Tonne (inflationsangepasst).",
+        "Art. 12, 16 Richtlinie 2003/87/EG; in Deutschland TEHG"));
+    }
+    if (an("cbam_import")) {
+      r.push(treffer("eu", "gilt", "CO₂-Grenzausgleich (CBAM) als Importeur",
+        "Zulassung als CBAM-Anmelder; jährliche Erklärung mit den eingebetteten Emissionen und Abgabe von CBAM-Zertifikaten bis 30. September, erstmals 2027 für 2026.",
+        "Verordnung (EU) 2023/956 i. d. F. der Verordnung (EU) 2025/2083"));
+    }
+    if (an("cbam_liefer")) {
+      r.push(treffer("eu", "entlastet", "CBAM als Hersteller außerhalb der EU",
+        "Keine eigene Pflicht – aber EU-Kunden brauchen die tatsächlichen Emissionen je Anlage, sonst werden Standardwerte angesetzt. Anlagen lassen sich im CBAM-Register eintragen.",
+        "Art. 10 Verordnung (EU) 2023/956"));
+    }
+    // Deutschland
+    if (energie > 7.5) {
+      r.push(treffer("de", "gilt", "Energie- oder Umweltmanagementsystem",
+        "Einrichten (z. B. ISO 50001 oder EMAS), Abwärme erfassen, Sparmaßnahmen bewerten – und für alle wirtschaftlichen Maßnahmen Umsetzungspläne veröffentlichen.",
+        "§§ 8, 9 Energieeffizienzgesetz"));
+    } else if (energie > 2.5) {
+      r.push(treffer("de", "gilt", "Umsetzungspläne für Energiesparmaßnahmen",
+        "Für alle im Energieaudit als wirtschaftlich erkannten Maßnahmen binnen drei Jahren konkrete Pläne erstellen und veröffentlichen.",
+        "§ 9 Energieeffizienzgesetz"));
+    }
+    if (beschDe >= 1000) {
+      r.push(treffer("de", "gilt", "Lieferkettengesetz",
+        "Risikomanagement für Menschenrechte und Umwelt bei eigenen Standorten und direkten Zulieferern; die Berichtspflicht prüft das BAFA derzeit nicht. Eine Änderung des Gesetzes ist im Verfahren.",
+        "§ 1 LkSG; BAFA-Hinweis vom 07.11.2025"));
+    }
+    if (an("behg")) {
+      r.push(treffer("de", "gilt", "Brennstoff-Emissionshandel (BEHG)",
+        "Emissionen der verkauften Brennstoffe berichten und Zertifikate abgeben; ab 2028 geht der Bereich in den EU-Emissionshandel 2 über.",
+        "§ 3 BEHG; Europäisches Klimagesetz i. d. F. 2026"));
+    }
+    if (an("rz_de")) {
+      r.push(treffer("de", "gilt", "Rechenzentrum: Effizienz und Ökostrom",
+        "Energieverbrauchseffektivität (PUE) für Bestandsanlagen höchstens 1,5 ab Juli 2027, für Neubauten 1,2; Strom ab 2027 bilanziell zu 100 % erneuerbar; jährliche Meldung bis 31. März. Eine Lockerung ist im Verfahren.",
+        "§§ 11–13 Energieeffizienzgesetz; Kabinettsentwurf vom 24.06.2026"));
+    }
+    // China
+    if (an("cn_ets")) {
+      r.push(treffer("cn", "gilt", "Nationaler Emissionshandel",
+        "Jährlicher Emissionsbericht an die Provinzbehörde, Emissionen öffentlich machen, Zertifikate fristgerecht abgeben – sonst das 5- bis 10-Fache des Marktpreises.",
+        "Art. 11, 14, 24 Vorläufige Verordnung über den Emissionshandel"));
+    }
+    if (an("cn_index")) {
+      r.push(treffer("cn", "gilt", "Nachhaltigkeitsbericht der Börse",
+        "Jährlicher Bericht zu Umwelt, Sozialem und Unternehmensführung – erstmals für das Geschäftsjahr 2025.",
+        "Leitlinien der Börsen Shanghai, Shenzhen und Peking (2024)"));
+    }
+    if (an("cn_umwelt")) {
+      r.push(treffer("cn", "gilt", "Offenlegung von Umweltinformationen",
+        "Jahresbericht zu Genehmigungen, Schadstoffen, CO₂-Emissionen und Verstößen bis 15. März veröffentlichen.",
+        "Art. 7, 12, 19 Verwaltungsmaßnahmen zur Offenlegung von Umweltinformationen"));
+    }
+    aus.innerHTML = r.length
+      ? '<p class="sc-zahl">' + r.length + (r.length === 1 ? " Ergebnis" : " Ergebnisse") + '</p>' + r.join("")
+      : '<p class="sc-leer">Nach diesen Angaben greift keine der hier geprüften Pflichten direkt. Indirekt wirken sie trotzdem – über CO₂-Preise in Energie und Vorprodukten und über Datenanfragen von Kunden und Banken.</p>';
+  }
+  form.addEventListener("input", pruefen);
+  form.addEventListener("change", pruefen);
+  pruefen();
+})();
+</script>
+```
+
+## Einordnung
+
+::: {.einordnung}
+**Der Staat bindet sich, die Instrumente binden die Unternehmen.** Das deutsche Klimaschutzgesetz verpflichtet nur die Bundesregierung; im Betrieb kommt es erst über Emissionshandel, Effizienz- und Berichtspflichten an [§ 4 Abs. 1 @ksg]. Ähnlich in China: Die Ziele werden über Provinzen und Branchen heruntergebrochen, im Unternehmen wirken Emissionshandel und Offenlegungspflichten [@cn_doppelkontrolle_2024; @cn_ets_verordnung].
+
+**Weniger Berichte, gleicher Preis.** Mit dem Omnibus-Paket hat die EU den Kreis der berichtspflichtigen Unternehmen stark verkleinert und die Lieferkettenpflichten verschoben [@eu_omnibus_2026]. Der CO₂-Preis über Emissionshandel und CBAM bleibt dagegen unverändert – er erreicht auch Unternehmen, die keinen Bericht schreiben müssen.
+
+**China geht den umgekehrten Weg.** Die Berichtspflichten beginnen bei den großen börsennotierten Unternehmen und sollen schrittweise ausgeweitet werden; die nationalen Standards sind noch freiwillig [@sse_leitlinie_2024; @mof_klima_2025]. Bei falschen Emissionsdaten sind die Strafen schon heute hoch [Art. 22 @cn_ets_verordnung].
+:::
