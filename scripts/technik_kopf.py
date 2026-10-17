@@ -10,7 +10,7 @@ Eingabe (daten/data/):
 
 Ausgabe (daten/data/, eingebunden per {{< include >}}):
   _kopf_wind.md, _kopf_photovoltaik.md, _kopf_waermepumpen.md, _kopf_wasserstoff.md,
-  _kopf_unternehmen.md, _kopf_berichte.md (Themenseiten unternehmen/, nur Zeichnung)
+  _kopf_unternehmen.md, _kopf_berichte.md, _kopf_pflichten.md (Themenseiten unternehmen/, nur Zeichnung)
 
 Wird von scripts/build.sh vor dem Rendern aufgerufen. Nur Standardbibliothek.
 """
@@ -181,6 +181,25 @@ def zeichnung_bericht() -> str:
     return s
 
 
+def zeichnung_pflichten() -> str:
+    """Pflichten erfüllen: Messgerät (messen), Kalenderblatt (Fristen), Zertifikate (abgeben), Container (CBAM)."""
+    s = '<path d="M0 262H900"/>'
+    # Messgerät: Gehäuse, Skala, Zeiger
+    s += '<path d="M300 262V170h96v92"/><path d="M314 214a34 34 0 0 1 68 0" opacity=".75"/>'
+    s += '<path d="M348 214l20-24"/><circle cx="348" cy="214" r="4"/><path d="M314 236h68" opacity=".6"/>'
+    # Kalenderblatt mit Ringen und markiertem Tag
+    s += '<path d="M440 252V136h112v116zM440 160h112"/><path d="M466 128v16M526 128v16"/>'
+    s += '<path d="M458 182h12M486 182h12M514 182h12M458 206h12M486 206h12M458 230h12M486 230h12M514 230h12" opacity=".6"/>'
+    s += '<circle cx="520" cy="206" r="12"/>'
+    # Zertifikatstapel mit Siegel
+    s += '<path d="M600 252V170h104v82zM612 170v-10h104v80h-12"/>'
+    s += '<path d="M616 194h56M616 208h44" opacity=".6"/><circle cx="680" cy="232" r="11"/>'
+    # Container (Import, CBAM)
+    s += '<path d="M752 262V196h130v66zM752 196l12-12h130l-12 12M882 262l12-12v-66"/>'
+    s += '<path d="M774 206v46M796 206v46M818 206v46M840 206v46M862 206v46" opacity=".6"/>'
+    return s
+
+
 def streifen(de: dict[int, float], cn: dict[int, float], technik: str) -> tuple[str, int]:
     jahre = [j for j in sorted(cn) if j >= START and j in de]
     x0, x1, y0, h = 300.0, 900.0, 262, 17
@@ -248,6 +267,8 @@ def main() -> None:
         karte(zeichnung_unternehmen(), "", "", viewbox="190 60 710 225"), encoding="utf-8")
     (DATA / "_kopf_berichte.md").write_text(
         karte(zeichnung_bericht(), "", "", viewbox="190 60 710 225"), encoding="utf-8")
+    (DATA / "_kopf_pflichten.md").write_text(
+        karte(zeichnung_pflichten(), "", "", viewbox="190 60 710 225"), encoding="utf-8")
     (DATA / "_kopf_wind.md").write_text(
         baustein(zeichnung_wind(), r["de"]["wind"], r["cn"]["wind"], "Windenergie", "Windleistung"), encoding="utf-8")
     (DATA / "_kopf_photovoltaik.md").write_text(

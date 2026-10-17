@@ -14,7 +14,7 @@ title: "Berichtspflichten"
 :::
 :::
 
-[Unternehmen · [Überblick](index.qmd) · **Berichtspflichten**]{.ebenen-pfad}
+[Unternehmen · [Überblick](index.qmd) · **Berichtspflichten** · [Pflichten erfüllen](pflichten.qmd)]{.ebenen-pfad}
 
 ```{=html}
 <svg width="0" height="0" class="icon-defs" aria-hidden="true">

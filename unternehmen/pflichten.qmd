@@ -1,0 +1,387 @@
+---
+title: "Pflichten erfüllen"
+---
+
+::: {.technik-karte}
+{{< include ../daten/data/_kopf_pflichten.md >}}
+
+::: {.tk-text}
+`<h1 class="tk-titel">Pflichten erfüllen</h1>`{=html}
+
+[Messen, berichten, prüfen lassen, abgeben: Was Unternehmen im Emissionshandel, beim CO₂-Grenzausgleich, bei der Energieeffizienz und in der Lieferkette konkret tun müssen.]{.tk-sub}
+
+[Stand: 17.10.2026]{.stand}
+:::
+:::
+
+[Unternehmen · [Überblick](index.qmd) · [Berichtspflichten](berichtspflichten.qmd) · **Pflichten erfüllen**]{.ebenen-pfad}
+
+```{=html}
+<svg width="0" height="0" class="icon-defs" aria-hidden="true">
+ <symbol id="p-wer" viewBox="0 0 24 24"><path d="M3.5 20.5V10l5 3V10l5 3V6.5h4v14z"/><path d="M2 20.5h20"/></symbol>
+ <symbol id="p-plan" viewBox="0 0 24 24"><path d="M6 3.5h9l3.5 3.5v13.5H6z"/><path d="M15 3.5V7h3.5M9 11h6M9 14.5h6M9 18h4"/></symbol>
+ <symbol id="p-mess" viewBox="0 0 24 24"><path d="M4 17a8 8 0 1 1 16 0"/><path d="M12 17l4-5"/><circle cx="12" cy="17" r="1.3"/><path d="M4 20.5h16"/></symbol>
+ <symbol id="p-pruef" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.2 15.2 5.3 5.3M7.8 10.5l2 2 3.6-3.8"/></symbol>
+ <symbol id="p-abgabe" viewBox="0 0 24 24"><path d="M3.5 6.5h17v11h-17z"/><path d="M7 10h7M7 13h5"/><circle cx="17" cy="13.5" r="2"/></symbol>
+ <symbol id="p-strafe" viewBox="0 0 24 24"><path d="M12 3.5 21.5 20h-19z"/><path d="M12 9.5v5M12 17.2v.3"/></symbol>
+</svg>
+```
+
+Die meisten Klimapflichten für Unternehmen folgen demselben Kreislauf: Ein Plan legt fest, wie gemessen wird; das Unternehmen erfasst seine Emissionen oder seinen Energieverbrauch und meldet sie; Dritte oder Behörden prüfen die Zahlen; im Emissionshandel müssen danach Zertifikate in Höhe der geprüften Emissionen abgegeben werden. Diese Seite zeigt, wie dieser Kreislauf in Deutschland, der EU und China geregelt ist, welche Fristen im Jahr anfallen und was Importeure, große Energieverbraucher und Unternehmen mit langen Lieferketten zusätzlich tun müssen.
+
+## Der Kreislauf im Emissionshandel
+
+::: {.matrix}
+
+```{=html}
+<div class="m-kopf"><span></span><span class="m-land de">Deutschland · Brennstoffe</span><span class="m-land eu">EU · Anlagen</span><span class="m-land cn">China · Anlagen</span></div>
+```
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#p-wer"/></svg>`{=html}
+**Wer?**
+:::
+
+::: {.m-zelle .de}
+Unternehmen, die Heizöl, Erdgas, Benzin oder Diesel in Verkehr bringen und dafür Energiesteuer schulden – nicht die Verbraucher [§ 3 Nr. 3 @behg]. Ab 2028 geht dieser Bereich in den zweiten EU-Emissionshandel über [§ 7 Abs. 2 @tehg].
+:::
+
+::: {.m-zelle .eu}
+Betreiber von Kraftwerken und Industrieanlagen, in Deutschland umgesetzt durch das Treibhausgas-Emissionshandelsgesetz [@eu_ets_richtlinie; @tehg].
+:::
+
+::: {.m-zelle .cn}
+Betriebe der Stromerzeugung, Stahl-, Zement- und Aluminiumindustrie mit mindestens 26.000 t direkten Emissionen im Jahr; die Provinzen veröffentlichen die Liste bis 31. Oktober für das Folgejahr [@mee_cets_2026].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#p-plan"/></svg>`{=html}
+**Plan**
+:::
+
+::: {.m-zelle .de}
+Überwachungsplan je Handelsperiode, von der Behörde genehmigt; wer nur Standard-Emissionsfaktoren nutzt, reicht einen vereinfachten Plan ein [§ 6 @behg].
+:::
+
+::: {.m-zelle .eu}
+Genehmigter Überwachungsplan je Handelsperiode; bei Änderungen der Anlage unverzüglich anzupassen [§ 6 @tehg].
+:::
+
+::: {.m-zelle .cn}
+Jährlicher Plan zur Datenqualität, über die nationale Plattform bis 31. Dezember des Vorjahres [Art. 11 @cn_ets_verordnung; @mee_cets_2026].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#p-mess"/></svg>`{=html}
+**Messen & berichten**
+:::
+
+::: {.m-zelle .de}
+Emissionsbericht für das Vorjahr bis **31. Juli** [§ 7 Abs. 1 @behg].
+:::
+
+::: {.m-zelle .eu}
+Emissionsbericht für das Vorjahr bis **31. März** [§ 21 Abs. 1 @tehg].
+:::
+
+::: {.m-zelle .cn}
+Messdaten **jeden Monat** innerhalb von 40 Tagen auf die Plattform, Jahresbericht bis **31. März** [@mee_cets_2026]. Emissionen und Methoden sind zu veröffentlichen, Rohdaten fünf Jahre aufzubewahren [Art. 11 @cn_ets_verordnung].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#p-pruef"/></svg>`{=html}
+**Prüfen**
+:::
+
+::: {.m-zelle .de}
+Eine private, akkreditierte Prüfstelle verifiziert den Bericht, bevor er eingereicht wird [§ 7 Abs. 3, § 15 @behg].
+:::
+
+::: {.m-zelle .eu}
+Ebenso eine private, akkreditierte Prüfstelle [§ 5 Abs. 2, § 14 @tehg].
+:::
+
+::: {.m-zelle .cn}
+Die **Umweltbehörde der Provinz** prüft und kann Dienstleister beauftragen; ein Dienstleister darf in derselben Provinz nicht zugleich Berichte erstellen und prüfen [Art. 12, 13 @cn_ets_verordnung]. Ergebnis bis 30. Juni (Strom) bzw. 31. Juli (Industrie) [@mee_cets_2026].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#p-abgabe"/></svg>`{=html}
+**Abgeben**
+:::
+
+::: {.m-zelle .de}
+Zertifikate bis **30. September** [§ 8 @behg]; 2026 werden sie in einem Preiskorridor von 55 bis 65 € je Tonne verkauft [§ 10 Abs. 2 @behg].
+:::
+
+::: {.m-zelle .eu}
+Zertifikate bis **30. September** [§ 7 Abs. 1 @tehg]; Preis am Markt.
+:::
+
+::: {.m-zelle .cn}
+Zertifikate bis **31. Dezember**; für 2025 werden sie bis 30. September 2026 zugeteilt [@mee_cets_2026]. Zugekaufte Zertifikate und zertifizierte Minderungen (CCER) zählen mit [Art. 14 @cn_ets_verordnung].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#p-strafe"/></svg>`{=html}
+**Wenn nicht**
+:::
+
+::: {.m-zelle .de}
+Für jede fehlende Tonne das Doppelte des Festpreises, seit dem Ende der Festpreise derselbe Betrag wie im EU-Handel; die Zertifikate sind trotzdem nachzureichen [§ 21 @behg].
+:::
+
+::: {.m-zelle .eu}
+Fehlt der Bericht, wird das Konto gesperrt [§ 45 @tehg]; je fehlender Tonne 100 €, an die Inflation angepasst [§ 46 @tehg].
+:::
+
+::: {.m-zelle .cn}
+Fehlender Bericht: 50.000 bis 500.000 Yuan [Art. 21 @cn_ets_verordnung]. Fehlende Zertifikate: das 5- bis 10-Fache des Marktpreises; wer nicht nachbessert, bekommt im Folgejahr weniger [Art. 24 @cn_ets_verordnung]. Auch Prüfdienstleister, die falsche Berichte ausstellen, werden bestraft und können gesperrt werden [Art. 23 @cn_ets_verordnung].
+:::
+:::
+
+:::
+
+::: {.belege}
+**Belege** · Fristen für China aus der Mitteilung des Umweltministeriums für 2026 (Berichtsjahr 2025); sie werden jährlich neu festgelegt, die Verordnung selbst nennt keine Daten [@mee_cets_2026; @cn_ets_verordnung]. Dieselbe Mitteilung verpflichtet Unternehmen der Petrochemie, Chemie, Glas-, Kupfer- und Papierindustrie sowie der Luftfahrt ab 26.000 t, Emissionsberichte einzureichen, obwohl sie noch nicht am Handel teilnehmen.
+:::
+
+## Fristenkalender
+
+Die wichtigsten jährlichen Termine, bezogen auf ein Geschäftsjahr, das dem Kalenderjahr entspricht.
+
+```{=html}
+<div class="fristen-filter" role="group" aria-label="Fristen filtern">
+  <button type="button" class="aktiv" data-land="alle">Alle</button>
+  <button type="button" data-land="de">Deutschland</button>
+  <button type="button" data-land="eu">EU</button>
+  <button type="button" data-land="cn">China</button>
+</div>
+```
+
+::: {.fristen #fristen}
+
+::: {.f-monat}
+[Jeden Monat]{.f-name}
+
+- [CN]{.f-land .cn} Emissionsdaten des Vormonats innerhalb von 40 Tagen auf die Plattform
+:::
+
+::: {.f-monat}
+[März]{.f-name}
+
+- [CN]{.f-land .cn} **15.** Umweltinformationen inklusive CO₂ veröffentlichen
+- [EU]{.f-land .eu} **31.** Geprüfter Emissionsbericht der Anlagen
+- [CN]{.f-land .cn} **31.** Jahres-Emissionsbericht
+- [DE]{.f-land .de} **31.** Abwärme an die Bundesstelle für Energieeffizienz melden (ab 2,5 GWh)
+- [DE]{.f-land .de} **31.** Rechenzentren: Energiedaten melden
+- [EU]{.f-land .eu} **31.** CBAM-Bestand (ab 2027): 50 % der bis dahin importierten Emissionen
+:::
+
+::: {.f-monat}
+[April]{.f-name}
+
+- [CN]{.f-land .cn} **30.** Nachhaltigkeitsbericht der großen börsennotierten Unternehmen
+- [DE]{.f-land .de} **30.** Lieferkettenbericht (vier Monate nach Geschäftsjahresende; derzeit nicht geprüft)
+:::
+
+::: {.f-monat}
+[Mai]{.f-name}
+
+- [EU]{.f-land .eu} **31.** ab 2028: Abgabe im zweiten Emissionshandel (Gebäude, Verkehr)
+:::
+
+::: {.f-monat}
+[Juni]{.f-name}
+
+- [CN]{.f-land .cn} **30.** Prüfergebnis für Stromerzeuger
+- [EU]{.f-land .eu} **30.** CBAM-Bestand: 50 %
+:::
+
+::: {.f-monat}
+[Juli]{.f-name}
+
+- [DE]{.f-land .de} **31.** Emissionsbericht Brennstoffe
+- [CN]{.f-land .cn} **31.** Prüfergebnis für Stahl, Zement, Aluminium
+:::
+
+::: {.f-monat}
+[September]{.f-name}
+
+- [EU]{.f-land .eu} **30.** Zertifikate für Anlagen abgeben
+- [DE]{.f-land .de} **30.** Zertifikate für Brennstoffe abgeben
+- [EU]{.f-land .eu} **30.** CBAM-Erklärung und Abgabe der CBAM-Zertifikate (erstmals 2027)
+- [EU]{.f-land .eu} **30.** CBAM-Bestand: 50 %
+- [CN]{.f-land .cn} **30.** Zuteilung der Zertifikate für das Vorjahr
+:::
+
+::: {.f-monat}
+[Oktober]{.f-name}
+
+- [CN]{.f-land .cn} **31.** Liste der pflichtigen Betriebe für das Folgejahr
+:::
+
+::: {.f-monat}
+[Dezember]{.f-name}
+
+- [EU]{.f-land .eu} **31.** CBAM-Bestand: 50 %
+- [CN]{.f-land .cn} **31.** Zertifikate für das Vorjahr abgeben
+- [CN]{.f-land .cn} **31.** Plan zur Datenqualität für das Folgejahr
+:::
+
+:::
+
+```{=html}
+<script>
+(function () {
+  var box = document.getElementById("fristen");
+  if (!box) return;
+  box.querySelectorAll("li").forEach(function (li) {
+    var l = li.querySelector(".f-land");
+    if (l) li.dataset.land = ["de", "eu", "cn"].filter(function (k) { return l.classList.contains(k); })[0];
+  });
+  document.querySelectorAll(".fristen-filter button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      document.querySelectorAll(".fristen-filter button").forEach(function (x) { x.classList.toggle("aktiv", x === b); });
+      var land = b.dataset.land;
+      box.querySelectorAll(".f-monat").forEach(function (m) {
+        var sichtbar = 0;
+        m.querySelectorAll("li").forEach(function (li) {
+          var an = land === "alle" || li.dataset.land === land;
+          li.hidden = !an;
+          if (an) sichtbar++;
+        });
+        m.hidden = sichtbar === 0;
+      });
+    });
+  });
+})();
+</script>
+```
+
+::: {.belege}
+**Belege** · Emissionshandel: [§§ 7, 21 @tehg; §§ 7, 8 @behg; @mee_cets_2026]. China, Umweltinformationen: [Art. 19 @mee_offenlegung]; Nachhaltigkeitsbericht: [Art. 4 @szse_leitlinie_2024]. Energieeffizienz: [§§ 13, 17 @enefg]. Lieferkette: [§ 10 Abs. 2 @lksg; @bafa_lksg_2025]. CBAM: Mindestbestand am Ende jedes Quartals, Erklärung und Abgabe bis 30. September [Art. 6, 22 @eu_cbam_omnibus_2025]. Eigene Zusammenstellung, ohne Ausnahmen und Sonderfälle.
+:::
+
+## CBAM: Was Importeure tun müssen
+
+Seit 1. Januar 2026 kostet der Import von Stahl, Aluminium, Zement, Düngemitteln, Wasserstoff und Strom in die EU einen CO₂-Preis. Zahlen muss der Importeur in der EU – die Daten dafür kommen vom Hersteller im Ausfuhrland.
+
+::: {.kaskade}
+[[1 · Zulassen lassen]{.k-schritt}Vor dem Import den Status als zugelassener CBAM-Anmelder beantragen. Wer unter 50 t im Jahr bleibt, ist befreit.]{.k-stufe}
+
+[[2 · Emissionen ermitteln]{.k-schritt}Standardwerte der Kommission nutzen oder tatsächliche Werte des Herstellers – diese muss ein akkreditierter Prüfer bestätigen.]{.k-stufe}
+
+[[3 · Zertifikate halten]{.k-schritt}Ab 1. Februar 2027 werden CBAM-Zertifikate verkauft; am Ende jedes Quartals 50 % der bis dahin importierten Emissionen abdecken.]{.k-stufe}
+
+[[4 · Erklären & abgeben]{.k-schritt}Bis 30. September die Jahreserklärung einreichen und die Zertifikate abgeben, erstmals 2027 für 2026.]{.k-stufe}
+:::
+
+Wer keine Zertifikate abgibt, zahlt je fehlendem Zertifikat dieselbe Strafe wie im EU-Emissionshandel und muss die Zertifikate trotzdem nachreichen [Art. 26 Abs. 1, 3 @eu_cbam_omnibus_2025]. Auch wer ohne Zulassung über die 50-Tonnen-Schwelle kommt, wird bestraft [Art. 26 Abs. 2a @eu_cbam_omnibus_2025]. Wurde im Ausfuhrland bereits ein CO₂-Preis gezahlt, sinkt die Zahl der Zertifikate [Art. 9 @eu_cbam_2023] – was das für chinesische Hersteller bedeutet, steht unter [Schnittstelle China ↔ CBAM](../wissen/schnittstellen.qmd).
+
+::: {.belege}
+**Belege** · Zulassung vor der Einfuhr [Art. 5 Abs. 1 @eu_cbam_omnibus_2025]; wer den Antrag bis 31. März 2026 gestellt hat, darf bis zur Entscheidung weiter importieren [Art. 17 Abs. 7a @eu_cbam_omnibus_2025]. Mengenschwelle [Art. 2a @eu_cbam_omnibus_2025]; Prüfung tatsächlicher Werte [Art. 8 Abs. 1 @eu_cbam_omnibus_2025]; Verkauf ab 1. Februar 2027 [Art. 20 Abs. 1 @eu_cbam_omnibus_2025]; Quartalsbestand, Erklärung und Abgabe [Art. 6, 22 @eu_cbam_omnibus_2025]. Mehr zum Instrument: [CBAM](../wissen/cbam.qmd).
+:::
+
+## Energie sparen nach Plan
+
+Große Energieverbraucher müssen ihren Verbrauch systematisch erfassen und Sparmöglichkeiten suchen – in Deutschland nach dem Energieeffizienzgesetz, in China nach dem Energieeinsparungsgesetz. Beide setzen auf Management und Berichte, nicht auf feste Einsparmengen je Betrieb.
+
+::: {.land-drei .land-zwei .land-text}
+
+::: {.land-karte .de}
+[Deutschland · Energieeffizienzgesetz]{.land-name}
+
+| | |
+|---|---|
+| ab 7,5 GWh | Energie- oder Umweltmanagementsystem |
+| ab 2,5 GWh | Umsetzungspläne veröffentlichen |
+| Prüfung | Stichproben des BAFA |
+| Bußgeld | bis 100.000 € |
+
+[Das Managementsystem musste bis 18. Juli 2025 stehen, für neu erfasste Unternehmen binnen 20 Monaten; es muss auch Abwärme erfassen und Sparmaßnahmen wirtschaftlich bewerten [§ 8 @enefg]. Als wirtschaftlich gilt eine Maßnahme, die sich nach höchstens der Hälfte ihrer Nutzungsdauer rechnet; die Pläne müssen binnen drei Jahren von Zertifizierern bestätigt und veröffentlicht werden – umsetzen muss sie niemand [§ 9 @enefg]. Kontrolle und Bußgeld: [§§ 10, 19 @enefg].]{.klein}
+:::
+
+::: {.land-karte .cn}
+[China · Energieeinsparungsgesetz]{.land-name}
+
+| | |
+|---|---|
+| ab 10.000 t SKE | „Schlüssel-Energieverbraucher“ |
+| Bericht | jährlich an die Energiebehörde |
+| Pflicht | Energiemanager benennen |
+| Bußgeld | bis 300.000 Yuan |
+
+[Erfasst sind Betriebe ab 10.000 t Steinkohleeinheiten im Jahr – nach eigener Umrechnung rund 81 GWh –, auf Anordnung auch ab 5.000 t [Art. 52 @cn_jienengfa]. Der Jahresbericht nennt Verbrauch, Effizienz und den Stand der Sparziele; die Behörde prüft ihn und kann Energieaudits und Nachbesserung anordnen [Art. 53, 54 @cn_jienengfa]. Fehlt der Bericht, drohen 10.000 bis 50.000 Yuan, bei verweigerter Nachbesserung 100.000 bis 300.000 Yuan [Art. 82, 83 @cn_jienengfa].]{.klein}
+:::
+
+:::
+
+## Lieferkette: Sorgfalt statt Grenzwerte
+
+::: {.land-drei .land-text}
+
+::: {.land-karte .de}
+[Deutschland · Lieferkettengesetz]{.land-name}
+
+[9 Pflichten]{.gross}
+[von Risikomanagement und Risikoanalyse über Beschwerdeverfahren bis zum Jahresbericht [§ 3 Abs. 1 @lksg]]{.klein}
+
+| | |
+|---|---|
+| ab | 1.000 Beschäftigten im Inland |
+| Umweltrisiken | Quecksilber, langlebige Schadstoffe, Giftmüll |
+| Klima | nicht erfasst |
+| Bußgeld | bis 800.000 € oder 2 % des Umsatzes |
+:::
+
+::: {.land-karte .eu}
+[EU · CSDDD]{.land-name}
+
+[ab 2029]{.gross}
+[Sorgfaltspflichten für Unternehmen mit über 5.000 Beschäftigten und 1,5 Mrd. € Umsatz [@eu_omnibus_2026]]{.klein}
+
+| | |
+|---|---|
+| ab | 26.07.2029 |
+| Umsetzung | bis 26.07.2028 |
+| Klimaplan | gestrichen |
+:::
+
+::: {.land-karte .cn}
+[China · Börsenleitlinie]{.land-name}
+
+[Versorgung]{.gross}
+[Berichtet wird über das Management von Lieferkettenrisiken und die Sicherheit der Versorgung [Art. 45 @szse_leitlinie_2024]]{.klein}
+
+| | |
+|---|---|
+| für | Pflicht-Berichterstatter an der Börse |
+| Form | Bericht, keine Sorgfaltspflicht |
+| Nachhaltigkeit | erwünscht, nicht Pflicht |
+:::
+
+:::
+
+::: {.belege}
+**Belege** · Deutschland: Anwendungsbereich [§ 1 @lksg]; Umweltrisiken abschließend aufgezählt nach den Übereinkommen von Minamata, Stockholm und Basel [§ 2 Abs. 3 @lksg]; keine zivilrechtliche Haftung [§ 3 Abs. 3 @lksg]; Bußgelder [§ 24 @lksg]; die Berichte prüft das BAFA derzeit nicht [@bafa_lksg_2025]. EU: Schwellen, Fristen, Streichung des Klimaplans [@eu_omnibus_2026]. China: Art. 45 verlangt Angaben zu Lieferkettenrisiken und ermutigt zu Angaben über eine nachhaltige Lieferkette [@szse_leitlinie_2024].
+:::
+
+## Einordnung
+
+**Gleicher Kreislauf, anderer Prüfer.** Planen, messen, berichten, prüfen, abgeben – die Schritte sind in allen drei Systemen gleich. Der deutlichste Unterschied liegt bei der Prüfung: In Deutschland und der EU bestätigen private, akkreditierte Prüfstellen die Zahlen, bevor sie bei der Behörde ankommen; in China prüft die Umweltbehörde der Provinz selbst. Dafür verlangt China monatliche Daten und bestraft gefälschte Daten bei Unternehmen wie bei Prüfdienstleistern mit eigenen, hohen Bußgeldern [Art. 22, 23 @cn_ets_verordnung].
+
+**Zwei Stichtage dominieren das Jahr.** Bis 31. März laufen die Emissionsberichte in der EU und in China ein, am 30. September werden in Deutschland und der EU Zertifikate abgegeben – ab 2027 auch für CBAM. Wer in mehreren Systemen pflichtig ist, braucht die Daten daher schon im ersten Quartal.
+
+**Nur der Preis zwingt zur Minderung.** Emissionshandel und CBAM kosten Geld für jede Tonne. Energieeffizienz- und Lieferkettengesetz verlangen dagegen Systeme, Pläne und Berichte, aber keine bestimmte Einsparung; das deutsche Lieferkettengesetz erfasst Treibhausgase gar nicht. Ob ein Unternehmen dort mehr tut als dokumentieren, hängt an den Kosten – und an den Anreizen, um die es auf der nächsten Seite geht.
