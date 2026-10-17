@@ -10,7 +10,8 @@ Eingabe (daten/data/):
 
 Ausgabe (daten/data/, eingebunden per {{< include >}}):
   _kopf_wind.md, _kopf_photovoltaik.md, _kopf_waermepumpen.md, _kopf_wasserstoff.md,
-  _kopf_unternehmen.md, _kopf_berichte.md, _kopf_pflichten.md (Themenseiten unternehmen/, nur Zeichnung)
+  _kopf_unternehmen.md, _kopf_berichte.md, _kopf_pflichten.md,
+  _kopf_anreize.md (Themenseiten unternehmen/, nur Zeichnung)
 
 Wird von scripts/build.sh vor dem Rendern aufgerufen. Nur Standardbibliothek.
 """
@@ -200,6 +201,24 @@ def zeichnung_pflichten() -> str:
     return s
 
 
+def zeichnung_anreize() -> str:
+    """Risiken, Anreize, Nutzen: Schirm im Regen (Risiko), Münzstapel (Anreiz), Pflanze mit Pfeil (Nutzen)."""
+    s = '<path d="M0 262H900"/>'
+    # Schirm mit Regen
+    s += '<path d="M300 186a62 62 0 0 1 124 0q-15.5-10-31 0q-15.5-10-31 0q-15.5-10-31 0q-15.5-10-31 0z"/>'
+    s += '<path d="M362 186v62q0 12-12 12t-12-12"/><path d="M362 124v-8"/>'
+    s += '<path d="M310 102l-6 14M346 92l-6 14M384 92l-6 14M420 102l-6 14" opacity=".6"/>'
+    # Münzstapel
+    for i in range(5):
+        y = 252 - i * 16
+        s += f'<ellipse cx="540" cy="{y}" rx="44" ry="10"/>'
+    s += '<path d="M496 252v-64M584 252v-64" opacity=".75"/>'
+    # Pflanze aus dem Boden und steigender Pfeil
+    s += '<path d="M700 262v-70M700 220q-30-4-38-34q30 2 38 34M700 198q26-6 32-36q-28 4-32 36"/>'
+    s += '<path d="M770 240l40-36 28 18 44-56M862 166h20v20"/>'
+    return s
+
+
 def streifen(de: dict[int, float], cn: dict[int, float], technik: str) -> tuple[str, int]:
     jahre = [j for j in sorted(cn) if j >= START and j in de]
     x0, x1, y0, h = 300.0, 900.0, 262, 17
@@ -269,6 +288,8 @@ def main() -> None:
         karte(zeichnung_bericht(), "", "", viewbox="190 60 710 225"), encoding="utf-8")
     (DATA / "_kopf_pflichten.md").write_text(
         karte(zeichnung_pflichten(), "", "", viewbox="190 60 710 225"), encoding="utf-8")
+    (DATA / "_kopf_anreize.md").write_text(
+        karte(zeichnung_anreize(), "", "", viewbox="190 60 710 225"), encoding="utf-8")
     (DATA / "_kopf_wind.md").write_text(
         baustein(zeichnung_wind(), r["de"]["wind"], r["cn"]["wind"], "Windenergie", "Windleistung"), encoding="utf-8")
     (DATA / "_kopf_photovoltaik.md").write_text(

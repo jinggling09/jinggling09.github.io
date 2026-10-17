@@ -1,0 +1,234 @@
+---
+title: "Risiken, Anreize, Nutzen"
+---
+
+::: {.technik-karte}
+{{< include ../daten/data/_kopf_anreize.md >}}
+
+::: {.tk-text}
+`<h1 class="tk-titel">Risiken, Anreize, Nutzen</h1>`{=html}
+
+[Was Klimarecht für Unternehmen bedeutet: welche Risiken sie bewerten müssen, was CO₂ kostet, mit welchen Förderungen Staaten sie zum Mitmachen bewegen – und wann sich Klimaschutz rechnet.]{.tk-sub}
+
+[Stand: 17.10.2026]{.stand}
+:::
+:::
+
+[Unternehmen · [Überblick](index.qmd) · [Berichtspflichten](berichtspflichten.qmd) · [Pflichten erfüllen](pflichten.qmd) · **Risiken, Anreize, Nutzen**]{.ebenen-pfad}
+
+```{=html}
+<svg width="0" height="0" class="icon-defs" aria-hidden="true">
+ <symbol id="a-zuschuss" viewBox="0 0 24 24"><ellipse cx="12" cy="7" rx="7" ry="2.5"/><path d="M5 7v4c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V7M5 11v4c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-4"/><path d="M12 20.5v-3"/></symbol>
+ <symbol id="a-kredit" viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5M5 9.5v8M9.5 9.5v8M14.5 9.5v8M19 9.5v8M3 20h18"/></symbol>
+ <symbol id="a-schutz" viewBox="0 0 24 24"><path d="M12 3.5 19.5 6v6c0 4.3-3.2 7.6-7.5 8.5C7.7 19.6 4.5 16.3 4.5 12V6z"/><path d="m8.8 12 2.2 2.2 4.2-4.4"/></symbol>
+ <symbol id="a-markt" viewBox="0 0 24 24"><path d="M3.5 19.5h17M5 16l4-5 3.5 3 6.5-8"/><path d="M15.5 6H19v3.5"/></symbol>
+</svg>
+```
+
+Klimagesetze sind für Unternehmen nicht nur Pflicht, sondern auch eine Rechnung: CO₂ kostet Geld, Hitze und Hochwasser gefährden Standorte, und Banken, Investoren und Kunden fragen nach Plänen. Gleichzeitig zahlen Staaten Zuschüsse, vergeben günstige Kredite und entlasten Branchen im internationalen Wettbewerb. Diese Seite zeigt, welche Risiken Unternehmen bewerten müssen, wie unterschiedlich teuer CO₂ in Deutschland, der EU und China ist, welche Anreize es gibt – und rechnet aus, was der CO₂-Preis für den eigenen Verbrauch bedeutet.
+
+## Zwei Arten von Klimarisiken
+
+::: {.wesentlich .risiken}
+[[Physische Risiken]{.w-titel}**Akut**: Stürme, Hochwasser, Dürre, Hitzewellen. **Chronisch**: veränderte Niederschläge und Temperaturen, steigender Meeresspiegel, knapperes Wasser. Folgen: Schäden an Anlagen und unterbrochene Lieferketten.]{.w-karte .physisch}
+
+[[Übergangsrisiken]{.w-titel}Risiken aus dem Umbau zur emissionsarmen Wirtschaft: neue **Politik** und **Gesetze** wie CO₂-Preise, neue **Technik**, die alte Anlagen entwertet, veränderte **Märkte** und Kundenwünsche, **Reputation**.]{.w-karte .uebergang}
+:::
+
+::: {.belege}
+**Belege** · Begriffe nach der Shenzhener Leitlinie [Art. 59 Nr. 7, 8, 10 @szse_leitlinie_2024]; der chinesische Klimastandard des Finanzministeriums baut auf dem internationalen Standard IFRS S2 auf [@mof_klima_2025]. Berichtspflichtige Unternehmen müssen diese Risiken bewerten und offenlegen [Art. 14 @szse_leitlinie_2024; @eu_esrs_2026], siehe [Berichtspflichten](berichtspflichten.qmd).
+:::
+
+## Was eine Tonne CO₂ kostet
+
+Das greifbarste Übergangsrisiko ist der CO₂-Preis. Er unterscheidet sich zwischen den drei Systemen um fast das Zehnfache:
+
+::: {.balken-vergleich}
+
+[Durchschnittspreis 2025, € je Tonne CO₂]{.bv-titel}
+
+`<div class="bv-zeile eu"><span class="bv-land">EU-Emissionshandel</span><span class="bv-spur"><span style="width:100%"></span></span><span class="bv-wert">73,86</span></div><div class="bv-zeile de"><span class="bv-land">Deutschland, Brennstoffe</span><span class="bv-spur"><span style="width:74.5%"></span></span><span class="bv-wert">55,00</span></div><div class="bv-zeile cn"><span class="bv-land">China</span><span class="bv-spur"><span style="width:10.4%"></span></span><span class="bv-wert">7,68</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Belege** · EU: durchschnittlicher Auktionspreis in Deutschland [@dehst_erloese_2025]. Deutschland: Festpreis 2025; 2026 gilt ein Korridor von 55 bis 65 € [§ 10 Abs. 2 @behg]. China: Durchschnittspreis 2025 von 62,36 Yuan [@mee_ets_2025], umgerechnet mit dem Jahresdurchschnittskurs 2025 von 8,118 Yuan je Euro [@ezb_cny]. Die Preise sind nur bedingt vergleichbar: In China werden die Zertifikate kostenlos zugeteilt; ein Verkauf ist erst schrittweise vorgesehen [Art. 9 @cn_ets_verordnung], siehe [Chinas Emissionshandel](../wissen/china-ets.qmd).
+:::
+
+Dazu kommt ein Risiko, das europäische Industrieunternehmen erst jetzt voll trifft: Bisher bekamen viele ihre Zertifikate kostenlos, um sie vor Konkurrenz aus Ländern ohne CO₂-Preis zu schützen. Für Waren, die unter den CO₂-Grenzausgleich fallen – Stahl, Zement, Aluminium, Düngemittel, Wasserstoff –, läuft dieser Schutz bis 2034 aus; an seine Stelle tritt der CBAM.
+
+::: {.balken-vergleich}
+
+[Anteil der kostenlosen Zuteilung, der für CBAM-Waren erhalten bleibt, %]{.bv-titel}
+
+`<div class="bv-zeile eu"><span class="bv-land">2026</span><span class="bv-spur"><span style="width:97.5%"></span></span><span class="bv-wert">97,5</span></div><div class="bv-zeile eu"><span class="bv-land">2027</span><span class="bv-spur"><span style="width:95%"></span></span><span class="bv-wert">95</span></div><div class="bv-zeile eu"><span class="bv-land">2028</span><span class="bv-spur"><span style="width:90%"></span></span><span class="bv-wert">90</span></div><div class="bv-zeile eu"><span class="bv-land">2029</span><span class="bv-spur"><span style="width:77.5%"></span></span><span class="bv-wert">77,5</span></div><div class="bv-zeile eu"><span class="bv-land">2030</span><span class="bv-spur"><span style="width:51.5%"></span></span><span class="bv-wert">51,5</span></div><div class="bv-zeile eu"><span class="bv-land">2031</span><span class="bv-spur"><span style="width:39%"></span></span><span class="bv-wert">39</span></div><div class="bv-zeile eu"><span class="bv-land">2032</span><span class="bv-spur"><span style="width:26.5%"></span></span><span class="bv-wert">26,5</span></div><div class="bv-zeile eu"><span class="bv-land">2033</span><span class="bv-spur"><span style="width:14%"></span></span><span class="bv-wert">14</span></div><div class="bv-zeile eu"><span class="bv-land">2034</span><span class="bv-spur"><span style="width:0%"></span></span><span class="bv-wert">0</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Belege** · „CBAM-Faktor“ nach [Art. 10a Abs. 1a @eu_ets_richtlinie]; ab 2034 gibt es für diese Waren keine kostenlose Zuteilung mehr. Erfasste Waren: [Anhang I @eu_cbam_2023].
+:::
+
+## Rechner: Was kostet CO₂ beim eigenen Verbrauch?
+
+Heizöl, Erdgas, Diesel und Benzin tragen in Deutschland seit 2021 einen CO₂-Preis. Ihn zahlt der Lieferant und gibt ihn über den Brennstoffpreis weiter. Der Rechner nutzt die amtlichen Standardwerte; die Angaben bleiben im Browser.
+
+```{=html}
+<form class="selbstcheck" id="co2rechner" onsubmit="return false">
+  <div class="sc-felder">
+    <label>Erdgas pro Jahr, MWh (laut Rechnung)
+      <input type="number" name="gas" min="0" step="any" inputmode="decimal" placeholder="z. B. 2000">
+    </label>
+    <label>Heizöl pro Jahr, Liter
+      <input type="number" name="oel" min="0" step="any" inputmode="decimal" placeholder="z. B. 0">
+    </label>
+    <label>Diesel pro Jahr, Liter
+      <input type="number" name="diesel" min="0" step="any" inputmode="decimal" placeholder="z. B. 50000">
+    </label>
+    <label>Benzin pro Jahr, Liter
+      <input type="number" name="benzin" min="0" step="any" inputmode="decimal" placeholder="z. B. 0">
+    </label>
+    <label>Eigener Preis zum Vergleich, € je t (optional)
+      <input type="number" name="preis" min="0" step="any" inputmode="decimal" placeholder="z. B. 100">
+    </label>
+    <label>Geplante Einsparung, %
+      <input type="number" name="spar" min="0" max="100" step="any" inputmode="decimal" value="10">
+    </label>
+  </div>
+  <div class="sc-ergebnis" id="co2ergebnis" aria-live="polite"></div>
+</form>
+<script>
+(function () {
+  var f = document.getElementById("co2rechner");
+  if (!f) return;
+  // t CO2 je Einheit, aus EBeV 2030 Anlage 2 Teil 4: Erdgas 3,2508 GJ/MWh × 0,0558 t/GJ;
+  // Heizöl EL und Diesel 0,845 t/1000 l × 42,8 GJ/t × 0,074 t/GJ; Benzin 0,755 t/1000 l × 43,5 GJ/t × 0,0729 t/GJ
+  var EF = { gas: 3.2508 * 0.0558, oel: 0.845 * 42.8 * 0.074 / 1000, diesel: 0.845 * 42.8 * 0.074 / 1000, benzin: 0.755 * 43.5 * 0.0729 / 1000 };
+  var out = document.getElementById("co2ergebnis");
+  function zahl(n, d) { return n.toLocaleString("de-DE", { maximumFractionDigits: d, minimumFractionDigits: d }); }
+  function wert(name) { var v = parseFloat(String(f.elements[name].value).replace(",", ".")); return isFinite(v) && v > 0 ? v : 0; }
+  function rechne() {
+    var t = 0;
+    Object.keys(EF).forEach(function (k) { t += wert(k) * EF[k]; });
+    if (t === 0) { out.innerHTML = '<p class="sc-zahl">Verbrauch eingeben, um die CO₂-Kosten zu sehen.</p>'; return; }
+    var spar = Math.min(wert("spar"), 100) / 100, preis = wert("preis");
+    var h = '<p class="sc-zahl">' + zahl(t, 1) + ' t CO₂ im Jahr</p><table class="rechner-tabelle"><tbody>' +
+      '<tr><td>CO₂-Kosten 2026 (55–65 € je t)</td><td>' + zahl(t * 55, 0) + ' – ' + zahl(t * 65, 0) + ' €</td></tr>';
+    if (preis) h += '<tr><td>bei ' + zahl(preis, 0) + ' € je t</td><td>' + zahl(t * preis, 0) + ' €</td></tr>';
+    if (spar) h += '<tr><td>gesparte CO₂-Kosten bei ' + zahl(spar * 100, 0) + ' % weniger Verbrauch (2026)</td><td>' + zahl(t * spar * 55, 0) + ' – ' + zahl(t * spar * 65, 0) + ' €</td></tr>';
+    h += '</tbody></table><p class="rechner-hinweis">Nur der CO₂-Anteil; die Brennstoffkosten selbst sinken bei Einsparungen zusätzlich. Ab 2028 gilt der Marktpreis des zweiten EU-Emissionshandels.</p>';
+    out.innerHTML = h;
+  }
+  f.addEventListener("input", rechne);
+  rechne();
+})();
+</script>
+```
+
+::: {.belege}
+**Belege** · Emissionsfaktoren: Standardwerte für Erdgas, Heizöl EL, Diesel und Benzin [@ebev_2030]; daraus rund 0,18 t CO₂ je MWh Erdgas, 2,68 kg je Liter Heizöl oder Diesel und 2,39 kg je Liter Benzin (eigene Berechnung). Preiskorridor 2026 [§ 10 Abs. 2 @behg]; für 2027 plant die Bundesregierung denselben Korridor [@bt_behg_2026]; ab 2028 zweiter EU-Emissionshandel [§ 7 Abs. 2 @tehg].
+:::
+
+## Anreize: Womit Staaten Unternehmen zum Mitmachen bewegen
+
+::: {.matrix}
+
+```{=html}
+<div class="m-kopf"><span></span><span class="m-land de">Deutschland</span><span class="m-land eu">Europäische Union</span><span class="m-land cn">China</span></div>
+```
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#a-zuschuss"/></svg>`{=html}
+**Zuschüsse & Steuern**
+:::
+
+::: {.m-zelle .de}
+**Klimaschutzverträge**: Der Staat gleicht über 15 Jahre die Mehrkosten klimafreundlicher Produktion aus; 2024 erhielten 15 Unternehmen bis zu 2,8 Mrd. € [@bmwk_ksv_2024]. Das Klimaschutzprogramm 2026 sieht für 2027 bis 2030 zusätzlich 2,9 Mrd. € für die Industrie vor [@bmukn_ksp_2026].
+:::
+
+::: {.m-zelle .eu}
+**Innovationsfonds**: rund 40 Mrd. € von 2020 bis 2030 aus dem Emissionshandel für emissionsarme Technik [@consilium_finanzierung]. Die **Wasserstoffbank** vergab in ihrer dritten Auktion 2026 1,09 Mrd. € an 9 Projekte [@ec_ehb3_2026].
+:::
+
+::: {.m-zelle .cn}
+**Steuervorteile** für Umweltschutz, Energie- und Wassersparen sowie Ressourcenverwertung; die Regierung will zudem Steuerregeln zur CO₂-Minderung prüfen [Nr. 24 @cn_gruen_2024].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#a-kredit"/></svg>`{=html}
+**Günstige Kredite**
+:::
+
+::: {.m-zelle .de}
+Über ein Sondervermögen fließen bis zu 100 Mrd. € zusätzlich in den Klima- und Transformationsfonds, aus dem Förderprogramme bezahlt werden [@gg_143h]; dorthin gehen auch die CO₂-Erlöse, 2025 rund 21,4 Mrd. € [@dehst_erloese_2025].
+:::
+
+::: {.m-zelle .eu}
+Die Mitgliedstaaten müssen ihre Erlöse aus dem Emissionshandel für Klimazwecke ausgeben, außer dem Teil, mit dem sie stromintensiven Unternehmen höhere Strompreise ausgleichen [Art. 10 Abs. 3 @eu_ets_richtlinie]; Kreditprogramme laufen national.
+:::
+
+::: {.m-zelle .cn}
+**Zentralbank-Refinanzierung**: Für Kredite an Projekte in sauberer Energie, Energiesparen und CO₂-Minderungstechnik refinanziert die Zentralbank 60 % zu 1,75 % Zins; Banken müssen die erzielte Minderung offenlegen [@pboc_tool_2021]. Verlängert bis Ende 2027 [Nr. 25 @cn_gruen_2024]. Grüne Kredite insgesamt Ende 2025: 44,77 Bio. Yuan [@pboc_gruen_2025].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#a-schutz"/></svg>`{=html}
+**Entlastung**
+:::
+
+::: {.m-zelle .de}
+Im Brennstoff-Emissionshandel Ausgleich bei unzumutbarer Härte und Schutz vor Abwanderung ins Ausland per Verordnung [§ 11 @behg].
+:::
+
+::: {.m-zelle .eu}
+**Kostenlose Zuteilung** für Industrie im internationalen Wettbewerb; für CBAM-Waren endet sie bis 2034 [Art. 10a @eu_ets_richtlinie].
+:::
+
+::: {.m-zelle .cn}
+Zertifikate werden kostenlos zugeteilt [Art. 9 @cn_ets_verordnung]; Stahl, Zement und Aluminium erhielten für 2024 so viele wie ihre Ist-Emissionen, ab 2025 gelten produktionsbezogene Richtwerte [@mee_2025].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#a-markt"/></svg>`{=html}
+**Markt & Preis**
+:::
+
+::: {.m-zelle .de}
+Jede vermiedene Tonne spart 2026 55 bis 65 € [§ 10 Abs. 2 @behg].
+:::
+
+::: {.m-zelle .eu}
+Jede vermiedene Tonne spart ein Zertifikat, 2025 im Schnitt 73,86 € [@dehst_erloese_2025]; überschüssige Zertifikate lassen sich verkaufen.
+:::
+
+::: {.m-zelle .cn}
+**Freiwillige Minderungen (CCER)** lassen sich verkaufen, 2025 im Schnitt für 70,76 Yuan je Tonne; 12 neue Methoden kamen hinzu [@mee_ets_2025]. Umgekehrt zahlen energieintensive Branchen gestaffelt höhere Strompreise [Nr. 27 @cn_gruen_2024].
+:::
+:::
+
+:::
+
+::: {.belege}
+**Belege** · Eigene Auswahl der wichtigsten Instrumente mit direktem Bezug zu Unternehmen; regionale Programme und allgemeine Energieförderung sind nicht aufgeführt.
+:::
+
+## Wann sich Klimaschutz rechnet
+
+Ob eine Maßnahme sich lohnt, hängt an drei Größen: den Energiekosten, die sie spart, dem CO₂-Preis, den sie vermeidet, und den Zuschüssen oder Zinsvorteilen, die sie verbilligen. Das deutsche Energieeffizienzgesetz gibt einen Maßstab vor: Wirtschaftlich ist eine Sparmaßnahme, wenn sie sich nach spätestens der Hälfte ihrer Nutzungsdauer gerechnet hat [§ 9 @enefg]. Umgesetzt werden muss sie trotzdem nicht – die Entscheidung bleibt beim Unternehmen.
+
+Für Exporteure kommt ein vierter Punkt hinzu: Wer seine Emissionen kennt und senkt, kann seinen Kunden in der EU niedrigere CBAM-Kosten bieten als mit den Standardwerten der Kommission; ein im Herkunftsland gezahlter CO₂-Preis wird angerechnet [Art. 9 @eu_cbam_2023]. Gute Daten werden so zum Verkaufsargument – mehr dazu unter [Schnittstelle China ↔ CBAM](../wissen/schnittstellen.qmd).
+
+## Einordnung
+
+**Peitsche und Zuckerbrot sind unterschiedlich verteilt.** Die EU setzt vor allem auf den Preis: Mit rund 74 € je Tonne ist CO₂ dort fast zehnmal so teuer wie in China, und die Erlöse fließen über Fonds zurück in die Industrie. China setzt bisher auf günstiges Geld – Zentralbank-Refinanzierung und grüne Kredite in Billionenhöhe – bei niedrigem Preis und kostenloser Zuteilung. Deutschland kombiniert einen eigenen Preis auf Brennstoffe mit Verträgen, die einzelnen Unternehmen die Mehrkosten des Umbaus abnehmen.
+
+**Das Risiko wird real, wenn der Schutz endet.** Solange Zertifikate kostenlos zugeteilt werden, ist der CO₂-Preis für viele Industrieunternehmen ein Signal, aber keine Rechnung. Mit dem Abschmelzen bis 2034 wird er in der EU für Stahl, Zement und Aluminium zum echten Kostenfaktor – für Hersteller in der EU wie für Importe.
+
+**Risikobewertung ist Pflicht, Nutzen nicht.** Große Unternehmen müssen Klimarisiken analysieren und offenlegen. Ob daraus Investitionen werden, entscheidet die Wirtschaftlichkeit; genau dort setzen CO₂-Preis und Förderung an. Den Sonderfall eines stark wachsenden Stromverbrauchs – Rechenzentren und KI – behandelt die nächste Seite.

@@ -80,6 +80,8 @@ website:
             text: "Berichtspflichten: CSRD & China"
           - href: unternehmen/pflichten.qmd
             text: "Pflichten erfüllen: Emissionshandel, CBAM, Effizienz"
+          - href: unternehmen/anreize.qmd
+            text: "Risiken, Anreize, Nutzen"
       - href: projekte/index.qmd
         text: "Projekte"
       - href: ueber-mich.qmd

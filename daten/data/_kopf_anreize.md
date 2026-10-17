@@ -1,0 +1,4 @@
+<!-- Erzeugt von scripts/technik_kopf.py – nicht von Hand bearbeiten -->
+```{=html}
+<div class="tk-deko"><svg viewBox="190 60 710 225" preserveAspectRatio="xMaxYMax meet" role="img" aria-label="Strichzeichnung"><g class="tk-linie" transform="translate(90 2) scale(.9)"><path d="M0 262H900"/><path d="M300 186a62 62 0 0 1 124 0q-15.5-10-31 0q-15.5-10-31 0q-15.5-10-31 0q-15.5-10-31 0z"/><path d="M362 186v62q0 12-12 12t-12-12"/><path d="M362 124v-8"/><path d="M310 102l-6 14M346 92l-6 14M384 92l-6 14M420 102l-6 14" opacity=".6"/><ellipse cx="540" cy="252" rx="44" ry="10"/><ellipse cx="540" cy="236" rx="44" ry="10"/><ellipse cx="540" cy="220" rx="44" ry="10"/><ellipse cx="540" cy="204" rx="44" ry="10"/><ellipse cx="540" cy="188" rx="44" ry="10"/><path d="M496 252v-64M584 252v-64" opacity=".75"/><path d="M700 262v-70M700 220q-30-4-38-34q30 2 38 34M700 198q26-6 32-36q-28 4-32 36"/><path d="M770 240l40-36 28 18 44-56M862 166h20v20"/></g></svg></div>
+```

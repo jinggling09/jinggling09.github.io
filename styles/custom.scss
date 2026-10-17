@@ -1076,3 +1076,16 @@ main.content:has(.technik-karte) #title-block-header { display: none; }
     &.de { background: $spur-de; } &.eu { background: $spur-eu; } &.cn { background: $spur-cn; }
   }
 }
+
+/* ---------- Unternehmen: Risiken, Anreize, Nutzen ---------- */
+.wesentlich.risiken {
+  .w-karte.physisch::before { content: "≈"; color: $spur-eu; }
+  .w-karte.uebergang::before { content: "→"; color: $ocker; }
+}
+.rechner-tabelle {
+  width: 100%; margin: .2rem 0 .6rem; font-size: .95rem; border-top: 1px solid $linie;
+  td { padding: .35rem 0; border-bottom: 1px solid $linie; vertical-align: top; }
+  td:last-child { text-align: right; font-weight: 700; white-space: nowrap; padding-left: .8rem; font-variant-numeric: tabular-nums; color: $tinte; }
+  td:first-child { color: $grau; }
+}
+.rechner-hinweis { font-size: .85rem; color: $grau; margin: 0; }
