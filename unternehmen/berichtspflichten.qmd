@@ -1,0 +1,318 @@
+---
+title: "Berichtspflichten"
+---
+
+::: {.technik-karte}
+{{< include ../daten/data/_kopf_berichte.md >}}
+
+::: {.tk-text}
+`<h1 class="tk-titel">Berichtspflichten</h1>`{=html}
+
+[Deutschland, EU und China im Vergleich: Wer muss über Klima und Nachhaltigkeit berichten, nach welchen Standards – und wer prüft die Zahlen?]{.tk-sub}
+
+[Stand: 17.10.2026]{.stand}
+:::
+:::
+
+[Unternehmen · [Überblick](index.qmd) · **Berichtspflichten**]{.ebenen-pfad}
+
+```{=html}
+<svg width="0" height="0" class="icon-defs" aria-hidden="true">
+ <symbol id="b-waage" viewBox="0 0 24 24"><path d="M12 4v16M8 20.5h8M4.5 6.5h15"/><path d="M4.5 6.5 2 12.5h5zM19.5 6.5 17 12.5h5z"/><path d="M2 12.5q2.5 2 5 0M17 12.5q2.5 2 5 0"/></symbol>
+ <symbol id="b-co2" viewBox="0 0 24 24"><path d="M7 17.5a4 4 0 0 1-.6-7.95A5.5 5.5 0 0 1 17 8.5a4.5 4.5 0 0 1 .5 9z"/><path d="M9.5 13.8a1.6 1.6 0 1 0 0-1.6M14 13a1.3 1.3 0 1 0 0 .1"/></symbol>
+ <symbol id="b-pfad" viewBox="0 0 24 24"><path d="M3.5 19.5c4-1 5-6 9-7s5.5-5 8-8.5"/><path d="M17 4h3.5v3.5"/><circle cx="6" cy="18.5" r="1"/><circle cx="12.5" cy="12.5" r="1"/></symbol>
+ <symbol id="b-lupe" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.2 15.2 5.3 5.3M7.8 10.5l2 2 3.6-3.8"/></symbol>
+ <symbol id="b-uhr" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+</svg>
+```
+
+Ein Nachhaltigkeitsbericht macht sichtbar, wie ein Unternehmen Umwelt und Gesellschaft beeinflusst und wie Klimarisiken auf das Unternehmen zurückwirken. Er ist keine Pflicht zur Emissionsminderung – aber Banken, Investoren und Kunden vergleichen die Zahlen, und große Kunden geben ihre Datenanfragen an Zulieferer weiter. Die EU hat ihre Pflichten 2026 stark verkleinert, China hat sie im selben Jahr zum ersten Mal verbindlich gemacht, und Deutschland wendet noch das alte Recht an.
+
+## Auf einen Blick
+
+::: {.land-drei .land-text}
+
+::: {.land-karte .de}
+[Deutschland]{.land-name}
+
+[altes Recht]{.gross}
+[Die CSRD ist noch nicht umgesetzt; es gilt die „nichtfinanzielle Erklärung“ von 2017]{.klein}
+
+| | |
+|---|---|
+| Pflicht für | kapitalmarktorientierte Unternehmen über 500 Beschäftigte |
+| Standard | keiner vorgeschrieben |
+| Prüfung | nur, ob vorhanden |
+| CSRD-Gesetz | im Bundestag |
+:::
+
+::: {.land-karte .eu}
+[Europäische Union]{.land-name}
+
+[ab 2027]{.gross}
+[neuer, kleinerer Kreis berichtspflichtiger Unternehmen nach vereinfachten Standards]{.klein}
+
+| | |
+|---|---|
+| Pflicht für | über 1.000 Beschäftigte und über 450 Mio. € Umsatz |
+| Standard | ESRS (2026) |
+| Wesentlichkeit | doppelt |
+| Prüfung | begrenzte Sicherheit |
+:::
+
+::: {.land-karte .cn}
+[China]{.land-name}
+
+[430]{.gross}
+[börsennotierte Unternehmen mit Pflichtbericht für 2025 – alle haben fristgerecht berichtet]{.klein}
+
+| | |
+|---|---|
+| Pflicht für | Werte großer Indizes und doppelt notierte |
+| Standard | Leitlinien der Börsen |
+| Wesentlichkeit | doppelt |
+| Prüfung | freiwillig (31 %) |
+:::
+
+:::
+
+::: {.belege}
+**Belege** · Deutschland: [§§ 289b, 317 @hgb; @bt_csrd_ug] · EU: [@eu_omnibus_2026; @eu_esrs_2026] · China: [Art. 3, 5 @szse_leitlinie_2024; @capco_2026] (Stichtag 30.04.2026). Die nationalen Standards des Finanzministeriums gelten vorerst freiwillig [@mof_basis_2024; @mof_klima_2025].
+:::
+
+## Doppelte Wesentlichkeit: zwei Blickrichtungen
+
+Was in den Bericht gehört, entscheidet die **Wesentlichkeitsanalyse**. Die EU und Chinas Börsen verlangen beide Blickrichtungen: Ein Thema ist zu berichten, wenn es für die Umwelt **oder** für die Finanzen des Unternehmens erheblich ist.
+
+::: {.wesentlich}
+[[Auswirkung · von innen nach außen]{.w-titel}Was das Unternehmen bewirkt: Emissionen der eigenen Anlagen und der Lieferkette, Wasserverbrauch, Arbeitsbedingungen. China nennt das „Wirkungs-Wesentlichkeit“.]{.w-karte .innen}
+
+[[Finanzen · von außen nach innen]{.w-titel}Was auf das Unternehmen wirkt: steigende CO₂-Preise, Hitze oder Hochwasser am Standort, neue Kundenanforderungen – mit Folgen für Umsatz, Kosten und Finanzierung.]{.w-karte .aussen}
+:::
+
+::: {.belege}
+**Belege** · EU: Berichtspflicht zu Auswirkungen des Unternehmens und zu Nachhaltigkeitsaspekten, die sein Geschäft beeinflussen [Art. 19a @eu_csrd_2022]. China: Definition beider Begriffe; Themen, die keines der beiden Kriterien erfüllen, sind zu begründen [Art. 5, 7 @szse_leitlinie_2024]. Deutschland verlangt heute Angaben, die für das Verständnis des Geschäfts **und** der Auswirkungen erforderlich sind – also nur, was beide Bedingungen erfüllt [§ 289c Abs. 3 @hgb].
+:::
+
+## Was steht im Bericht?
+
+::: {.matrix}
+
+```{=html}
+<div class="m-kopf"><span></span><span class="m-land de">Deutschland</span><span class="m-land eu">Europäische Union</span><span class="m-land cn">China</span></div>
+```
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#b-waage"/></svg>`{=html}
+**Inhalt**
+:::
+
+::: {.m-zelle .de}
+Angaben zu Umwelt-, Arbeitnehmer- und Sozialbelangen, Menschenrechten und Korruption, jeweils mit Konzepten und Ergebnissen; Treibhausgase sind nur ein Beispiel [§ 289c @hgb].
+:::
+
+::: {.m-zelle .eu}
+Allgemeine Angaben und Themenstandards für Umwelt, Soziales und Unternehmensführung, berichtet wird nur, was wesentlich ist [@eu_esrs_2026]. Die überarbeiteten Standards streichen die am wenigsten wichtigen Datenpunkte; Branchenstandards entfallen [@eu_omnibus_2026].
+:::
+
+::: {.m-zelle .cn}
+**21 Themen** von Klimawandel über Innovation bis ländliche Entwicklung; bei finanziell wesentlichen Themen Gliederung nach Steuerung, Strategie, Risiken und Kennzahlen [@szse_leitlinie_2024]. 98,6 % der Pflichtunternehmen haben eine doppelte Wesentlichkeitsanalyse offengelegt [@capco_2026].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#b-co2"/></svg>`{=html}
+**Emissionen**
+:::
+
+::: {.m-zelle .de}
+Keine festen Kennzahlen vorgeschrieben [§ 289c Abs. 2 @hgb].
+:::
+
+::: {.m-zelle .eu}
+**Scope 1, 2 und 3** (eigene Anlagen, eingekaufte Energie, Lieferkette), dazu Energiemix, interne CO₂-Preise und erwartete finanzielle Effekte von Klimarisiken (Angabepflichten E1-7 bis E1-11) [@eu_esrs_2026].
+:::
+
+::: {.m-zelle .cn}
+**Scope 1 und 2 Pflicht, Scope 3 empfohlen**; wer am Emissionshandel teilnimmt, muss angeben, ob die Zertifikate fristgerecht abgegeben wurden [Art. 24 @szse_leitlinie_2024]. Tatsächlich berichteten 95,6 % Scope 1 und 2 und 44,4 % Scope 3 [@capco_2026].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#b-pfad"/></svg>`{=html}
+**Klimaplan**
+:::
+
+::: {.m-zelle .de}
+Nicht vorgeschrieben.
+:::
+
+::: {.m-zelle .eu}
+Übergangsplan mit Zielen, Hebeln und Investitionen, vereinbar mit 1,5 °C – wer keinen hat, muss das sagen und angeben, ob und wann einer kommt (E1-1) [@eu_esrs_2026]. Die Pflicht, einen Plan **aufzustellen**, hat die EU dagegen gestrichen [@eu_omnibus_2026].
+:::
+
+::: {.m-zelle .cn}
+Offenzulegen sind Transformationsplan, zugrunde liegende Annahmen, bereitgestellte Mittel und Fortschritt [Art. 23 @szse_leitlinie_2024].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#b-lupe"/></svg>`{=html}
+**Prüfung**
+:::
+
+::: {.m-zelle .de}
+Der Abschlussprüfer prüft nur, **ob** die Erklärung vorgelegt wurde, nicht ihren Inhalt [§ 317 Abs. 2 @hgb]. Das CSRD-Gesetz soll eine inhaltliche Prüfung durch Wirtschaftsprüfer einführen [@bt_csrd_ug].
+:::
+
+::: {.m-zelle .eu}
+Prüfung mit **begrenzter Sicherheit** durch Abschlussprüfer; die geplante Verschärfung auf hinreichende Sicherheit wurde gestrichen [@eu_omnibus_2026].
+:::
+
+::: {.m-zelle .cn}
+Freiwillig; die Börse empfiehlt eine Prüfung vor allem der Emissionsdaten [Art. 24, 58 @szse_leitlinie_2024]. 31,4 % der Pflichtunternehmen ließen ihren Bericht prüfen [@capco_2026].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#b-uhr"/></svg>`{=html}
+**Termin**
+:::
+
+::: {.m-zelle .de}
+Mit dem Lagebericht, also zusammen mit dem Jahresabschluss [§ 289b @hgb].
+:::
+
+::: {.m-zelle .eu}
+Im Lagebericht, zusammen mit dem Jahresabschluss [@eu_csrd_2022].
+:::
+
+::: {.m-zelle .cn}
+Binnen vier Monaten nach Ende des Geschäftsjahres, vom Board beschlossen, nicht vor dem Jahresbericht [Art. 4 @szse_leitlinie_2024].
+:::
+:::
+
+:::
+
+::: {.belege}
+**Belege** · Die chinesischen Angaben beziehen sich auf die Leitlinie der Börse Shenzhen; die Börsen Shanghai und Peking haben ihre Leitlinien zeitgleich und einheitlich erlassen [@sse_leitlinie_2024]. Kennzahlen für 2025: 430 Pflichtunternehmen, Stichtag 30.04.2026 [@capco_2026].
+:::
+
+## Zeitplan
+
+::: {.matrix .zeitplan}
+
+```{=html}
+<div class="m-kopf"><span></span><span class="m-land de">Deutschland</span><span class="m-land eu">Europäische Union</span><span class="m-land cn">China</span></div>
+```
+
+::: {.m-zeile}
+::: {.m-frage}
+**2024**
+:::
+
+::: {.m-zelle .de}
+Frist zur Umsetzung der CSRD (6. Juli) verstreicht; das alte Recht gilt weiter [Art. 5 @eu_csrd_2022; @hgb].
+:::
+
+::: {.m-zelle .eu}
+Erste Gruppe beginnt: große Unternehmen von öffentlichem Interesse (u. a. börsennotierte Unternehmen, Banken, Versicherer) mit über 500 Beschäftigten [Art. 5 @eu_csrd_2022].
+:::
+
+::: {.m-zelle .cn}
+Börsenleitlinien (April) und Grundstandard des Finanzministeriums (Dezember) [@szse_leitlinie_2024; @mof_basis_2024].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+**2025**
+:::
+
+::: {.m-zelle .de}
+Neuer Gesetzentwurf im Bundestag, erste Lesung am 09.10.2025 [@bt_csrd_ug].
+:::
+
+::: {.m-zelle .eu}
+Weitere Gruppen um zwei Jahre verschoben („Stop-the-Clock“) [@eu_stop_2025].
+:::
+
+::: {.m-zelle .cn}
+Erster Themenstandard: **Klima** (Dezember), vorerst freiwillig [@mof_klima_2025].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+**2026**
+:::
+
+::: {.m-zelle .de}
+Gesetz noch nicht beschlossen, Beratungsstand „überwiesen“ [@bt_csrd_ug].
+:::
+
+::: {.m-zelle .eu}
+Omnibus-Richtlinie (Februar) und vereinfachte ESRS (September) [@eu_omnibus_2026; @eu_esrs_2026]. Staaten dürfen die erste Gruppe für 2025 und 2026 befreien [@eu_omnibus_2026].
+:::
+
+::: {.m-zelle .cn}
+Erste Pflichtberichte (für 2025) bis 30. April [@capco_2026]. Konsultation zu Leitfäden für 9 Branchen, darunter Strom, Stahl und Zement, bis 26.10.2026 [@mof_branchen_2026].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+**2027**
+:::
+
+::: {.m-zelle .de}
+Umsetzung der Omnibus-Änderungen fällig bis 19. März [Art. 5 @eu_omnibus_2026].
+:::
+
+::: {.m-zelle .eu}
+Neuer Kreis berichtet nach ESRS (2026), erstmals für das Geschäftsjahr 2027 [@eu_omnibus_2026; @eu_esrs_2026].
+:::
+
+::: {.m-zelle .cn}
+Ziel: Grundstandard, Klimastandard und Leitfäden liegen vor [@mof_basis_qa_2024].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+**2028–2030**
+:::
+
+::: {.m-zelle .de}
+–
+:::
+
+::: {.m-zelle .eu}
+Ab Geschäftsjahr 2028 berichten auch große Unternehmen aus Drittländern über ihre EU-Töchter [Art. 5 @eu_csrd_2022].
+:::
+
+::: {.m-zelle .cn}
+Bis 2030 soll ein einheitliches nationales System stehen – schrittweise von freiwillig zu verpflichtend und von börsennotierten zu weiteren Unternehmen [@mof_basis_qa_2024].
+:::
+:::
+
+:::
+
+## Und die kleineren Unternehmen?
+
+Wer nicht selbst berichten muss, bekommt die Pflichten oft über Kunden zu spüren. Die EU begrenzt das: Unternehmen bis 1.000 Beschäftigte sind „geschützt“ – berichtspflichtige Kunden dürfen von ihnen nicht mehr verlangen, als ein eigener **freiwilliger Standard** vorsieht [@eu_omnibus_2026; @eu_vsme_2026]. China setzt auf den **Grundsatz der Verhältnismäßigkeit**: Unternehmen dürfen die Methode an ihre Mittel anpassen, um kleine Unternehmen zu entlasten [@mof_klima_2025].
+
+## Einordnung
+
+::: {.einordnung}
+**Gegenläufige Richtungen.** Die EU hat den Kreis der berichtspflichtigen Unternehmen stark verkleinert, Datenpunkte gestrichen und auf strengere Prüfungen verzichtet [@eu_omnibus_2026]. China macht Berichte erst seit 2026 verbindlich – vorerst für 430 große börsennotierte Unternehmen – und will sie bis 2030 schrittweise ausweiten [@capco_2026; @mof_basis_qa_2024].
+
+**Inhaltlich näher als gedacht.** Beide verlangen doppelte Wesentlichkeit, Emissionen nach Scopes und Angaben zum Transformationsplan. Unterschiede liegen in der Tiefe: Scope 3 ist in der EU Pflicht, in China eine Empfehlung; die EU verlangt eine externe Prüfung, China nicht. Chinas nationale Standards orientieren sich an den internationalen ISSB-Standards [@mof_basis_qa_2024; @mof_klima_2025].
+
+**Deutschland im Wartestand.** Weil das Umsetzungsgesetz fehlt, gilt weiter die Erklärung von 2017 mit nur formaler Prüfung [§ 317 Abs. 2 @hgb].
+:::

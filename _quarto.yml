@@ -76,6 +76,8 @@ website:
         menu:
           - href: unternehmen/index.qmd
             text: "Überblick: Wer wird verpflichtet?"
+          - href: unternehmen/berichtspflichten.qmd
+            text: "Berichtspflichten: CSRD & China"
       - href: projekte/index.qmd
         text: "Projekte"
       - href: ueber-mich.qmd

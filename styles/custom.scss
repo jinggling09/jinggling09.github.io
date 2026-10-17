@@ -1017,3 +1017,28 @@ main.content:has(.technik-karte) #title-block-header { display: none; }
     &.entlastet, &.offen { background: #eef1ef; color: $grau; }
   }
 }
+
+/* Berichtspflichten: zwei Blickrichtungen der Wesentlichkeit, Zeitplan als schmale Matrix */
+.wesentlich {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0 .8rem;
+  p { margin: 0; display: contents; }
+  .w-karte { position: relative; display: block; background: #fff; border: 1px solid $linie; border-radius: 4px; padding: .9rem 1rem .9rem 3.2rem; font-size: .95rem; line-height: 1.45; color: $grau; }
+  .w-karte::before { position: absolute; left: 1rem; top: .75rem; font-size: 1.4rem; color: $gruen; font-weight: 700; }
+  .w-karte.innen::before { content: "↗"; }
+  .w-karte.aussen::before { content: "↙"; color: $ocker; }
+  .w-titel { display: block; font-family: $headings-font-family; font-size: 1.05rem; color: $tinte; margin-bottom: .25rem; }
+  @media (max-width: 760px) { grid-template-columns: 1fr; }
+}
+.matrix.zeitplan {
+  .m-kopf, .m-zeile { grid-template-columns: 5.5rem repeat(3, minmax(0, 1fr)); }
+  .m-zeile { padding: .7rem 0; }
+  .m-frage p { font-variant-numeric: tabular-nums; }
+  @media (max-width: 860px) { .m-zeile { grid-template-columns: 1fr; } }
+}
+/* Länderkarten mit Text statt Zahlen in der rechten Spalte: umbrechen, Spalten 45/55 */
+.land-drei.land-text .land-karte {
+  table { table-layout: fixed; }
+  td { line-height: 1.35; vertical-align: top; }
+  td:first-child { width: 38%; padding: .3rem .7rem .3rem 0; hyphens: auto; -webkit-hyphens: auto; }
+  td:last-child { white-space: normal; text-align: left; font-weight: 600; hyphens: auto; -webkit-hyphens: auto; overflow-wrap: anywhere; }
+}

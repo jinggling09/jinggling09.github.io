@@ -10,7 +10,7 @@ Eingabe (daten/data/):
 
 Ausgabe (daten/data/, eingebunden per {{< include >}}):
   _kopf_wind.md, _kopf_photovoltaik.md, _kopf_waermepumpen.md, _kopf_wasserstoff.md,
-  _kopf_unternehmen.md (Themenseiten unternehmen/, nur Zeichnung)
+  _kopf_unternehmen.md, _kopf_berichte.md (Themenseiten unternehmen/, nur Zeichnung)
 
 Wird von scripts/build.sh vor dem Rendern aufgerufen. Nur Standardbibliothek.
 """
@@ -164,6 +164,23 @@ def zeichnung_unternehmen() -> str:
     return s
 
 
+def zeichnung_bericht() -> str:
+    """Berichtspflichten: Bericht mit Kennzahlen, Waage (doppelte Wesentlichkeit), Lupe (Prüfung)."""
+    s = '<path d="M0 262H900"/>'
+    # aufgeschlagener Bericht
+    s += '<path d="M330 252V140Q380 128 430 140V252Q380 240 330 252ZM430 140Q480 128 530 140V252Q480 240 430 252"/>'
+    s += '<path d="M346 160h66M346 172h54M346 184h62" opacity=".6"/>'
+    s += '<path d="M452 226V206M470 226V194M488 226V184M506 226V176" /><path d="M446 226h68" opacity=".6"/>'
+    # Waage: Säule, Balken, zwei Schalen
+    s += '<path d="M640 262V128M610 262h60M560 140H720"/><circle cx="640" cy="126" r="5"/>'
+    s += '<path d="M560 140l-22 52h44zM720 140l-22 52h44z" opacity=".75"/>'
+    s += '<path d="M538 192q22 14 44 0M698 192q22 14 44 0"/>'
+    # Lupe über Zahlenreihe
+    s += '<circle cx="810" cy="170" r="34"/><path d="M834 194l34 36"/>'
+    s += '<path d="M792 164h36M792 176h26" opacity=".6"/>'
+    return s
+
+
 def streifen(de: dict[int, float], cn: dict[int, float], technik: str) -> tuple[str, int]:
     jahre = [j for j in sorted(cn) if j >= START and j in de]
     x0, x1, y0, h = 300.0, 900.0, 262, 17
@@ -229,6 +246,8 @@ def main() -> None:
     # nicht unter den Untertitel rutscht
     (DATA / "_kopf_unternehmen.md").write_text(
         karte(zeichnung_unternehmen(), "", "", viewbox="190 60 710 225"), encoding="utf-8")
+    (DATA / "_kopf_berichte.md").write_text(
+        karte(zeichnung_bericht(), "", "", viewbox="190 60 710 225"), encoding="utf-8")
     (DATA / "_kopf_wind.md").write_text(
         baustein(zeichnung_wind(), r["de"]["wind"], r["cn"]["wind"], "Windenergie", "Windleistung"), encoding="utf-8")
     (DATA / "_kopf_photovoltaik.md").write_text(
