@@ -1,0 +1,257 @@
+---
+title: "KI und Rechenzentren"
+---
+
+::: {.technik-karte}
+{{< include ../daten/data/_kopf_rechenzentren.md >}}
+
+::: {.tk-text}
+`<h1 class="tk-titel">KI und Rechenzentren</h1>`{=html}
+
+[Künstliche Intelligenz braucht Rechenleistung, Rechenleistung braucht Strom. Wie Deutschland, die EU und China den Verbrauch regeln – und wie sich Verbrauch und Nutzen gegeneinander abwägen lassen.]{.tk-sub}
+
+[Stand: 17.10.2026]{.stand}
+:::
+:::
+
+[Unternehmen · [Überblick](index.qmd) · [Berichtspflichten](berichtspflichten.qmd) · [Pflichten erfüllen](pflichten.qmd) · [Risiken, Anreize, Nutzen](anreize.qmd) · **KI und Rechenzentren**]{.ebenen-pfad}
+
+```{=html}
+<svg width="0" height="0" class="icon-defs" aria-hidden="true">
+ <symbol id="r-pue" viewBox="0 0 24 24"><path d="M4 17a8 8 0 1 1 16 0"/><path d="M12 17l4-5"/><circle cx="12" cy="17" r="1.3"/><path d="M4 20.5h16"/></symbol>
+ <symbol id="r-strom" viewBox="0 0 24 24"><path d="M13.5 2.5 5 13.5h6l-1 8 8.5-11h-6z"/></symbol>
+ <symbol id="r-waerme" viewBox="0 0 24 24"><path d="M7 15q2-2 0-4t0-4M12 15q2-2 0-4t0-4M17 15q2-2 0-4t0-4"/><path d="M3.5 19.5h17"/></symbol>
+ <symbol id="r-lupe" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.2 15.2 5.3 5.3M7.8 10.5h5.4"/></symbol>
+ <symbol id="r-chip" viewBox="0 0 24 24"><path d="M7 7h10v10H7zM10 10h4v4h-4z"/><path d="M9.5 7V4M14.5 7V4M9.5 20v-3M14.5 20v-3M7 9.5H4M7 14.5H4M20 9.5h-3M20 14.5h-3"/></symbol>
+</svg>
+```
+
+Rechenzentren verbrauchen weltweit rund 1,5 % des Stroms – Tendenz stark steigend, vor allem wegen KI. Gleichzeitig kann KI helfen, Energie in Industrie, Verkehr und Gebäuden zu sparen. Für Unternehmen stellen sich zwei Fragen: Welche Pflichten gelten für Rechenzentren? Und wie lässt sich beurteilen, ob der Strom für eine KI-Anwendung gut eingesetzt ist? Diese Seite vergleicht die Regeln in Deutschland, der EU und China, ordnet Verbrauch und Nutzen ein und rechnet den Stromverbrauch eines Rechenzentrums aus.
+
+## Verbrauch und Nutzen in Zahlen
+
+::: {.land-drei .land-zwei}
+
+::: {.land-karte .eu}
+[Verbrauch · weltweit]{.land-name}
+
+[415 TWh]{.gross}
+[Strom für Rechenzentren 2024, rund 1,5 % des weltweiten Verbrauchs; bis 2030 mehr als eine Verdopplung auf rund 945 TWh erwartet. Die Emissionen steigen bis 2035 von 180 auf 300 Mio. t CO₂ im Basisszenario [@iea_ai_2025].]{.klein}
+
+| | |
+|---|---|
+| USA | 45 % |
+| China | 25 % |
+| Europa | 15 % |
+:::
+
+::: {.land-karte .cn}
+[Nutzen · möglich]{.land-name}
+
+[≈ 5 %]{.gross}
+[der energiebedingten Emissionen 2035 ließen sich mit breit eingesetzten, heute schon verfügbaren KI-Lösungen einsparen – deutlich mehr, als Rechenzentren ausstoßen. Voraussetzung: Hürden bei der Einführung werden überwunden; Rebound-Effekte können einen Teil wieder aufzehren [@iea_ai_2025].]{.klein}
+
+| | |
+|---|---|
+| Industrie | Prozesse optimieren |
+| Gebäude | rund 300 TWh Strom |
+| Verkehr | Routen, Logistik |
+:::
+
+:::
+
+::: {.belege}
+**Belege** · Alle Zahlen: Internationale Energieagentur, Energy and AI (2025), Executive Summary [@iea_ai_2025]; Anteile am Stromverbrauch der Rechenzentren 2024. Die IEA betont, KI sei „kein Allheilmittel“ und ersetze keine aktive Politik.
+:::
+
+In Deutschland meldeten 482 Rechenzentren für 2025 einen Verbrauch von **7,2 TWh** an das gesetzliche Register, mit einer durchschnittlichen Energieverbrauchseffektivität (PUE) von **1,49** [@bt_7509]. Eine vom Wirtschaftsministerium beauftragte Studie, auf die sich eine Anfrage im Bundestag bezieht, nennt für 2024 rund 20 TWh; die Bundesregierung erklärt die Lücke vor allem mit unterschiedlichen Definitionen – das Gesetz erfasst nur Rechenzentren ab 300 kW. Wie viele Meldepflichtige nicht gemeldet haben, weiß sie nicht – Stichproben lässt das Gesetz bisher nicht zu [@bt_7670].
+
+::: {.belege}
+**Was ist PUE?** · Die Energieverbrauchseffektivität teilt den Stromverbrauch des ganzen Rechenzentrums durch den der IT. Ein Wert von 1,5 heißt: Auf 1 kWh für Server kommen 0,5 kWh für Kühlung, Stromversorgung und Gebäude. Ideal wäre 1,0. Die Registerdaten werden von den Betreibern gemeldet; umfassende Plausibilitätsprüfungen gab es nicht [@bt_7509].
+:::
+
+## Wie Rechenzentren reguliert werden
+
+::: {.matrix}
+
+```{=html}
+<div class="m-kopf"><span></span><span class="m-land de">Deutschland</span><span class="m-land eu">Europäische Union</span><span class="m-land cn">China</span></div>
+```
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#r-pue"/></svg>`{=html}
+**Effizienz (PUE)**
+:::
+
+::: {.m-zelle .de}
+**Grenzwerte**: Bestand höchstens 1,5 ab Juli 2027 und 1,3 ab Juli 2030; neue Rechenzentren ab Juli 2026 höchstens 1,2 [§ 11 Abs. 1, 2 @enefg]. Gilt ab 300 kW Anschlussleistung [§ 3 Nr. 24 @enefg].
+:::
+
+::: {.m-zelle .eu}
+**Noch keine Grenzwerte.** Die Kommission konsultiert bis 14. Dezember 2026 zu Mindeststandards; ein Gesetzesvorschlag ist für das zweite Quartal 2027 geplant [@ec_rz_2026].
+:::
+
+::: {.m-zelle .cn}
+**Zielwerte**: Durchschnitt aller Rechenzentren unter 1,5 bis Ende 2025; neue große höchstens 1,25, in den nationalen Knotenpunkten höchstens 1,2 [@ndrc_rz_2024].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#r-strom"/></svg>`{=html}
+**Ökostrom**
+:::
+
+::: {.m-zelle .de}
+Bilanziell 50 % erneuerbarer Strom seit 2024, **100 % ab 2027** [§ 11 Abs. 5 @enefg].
+:::
+
+::: {.m-zelle .eu}
+Keine eigene Quote für Rechenzentren; der Anteil erneuerbarer Energie gehört zu den Daten, die ab 500 kW jährlich gemeldet werden [Art. 12, Anhang VII @eu_eed].
+:::
+
+::: {.m-zelle .cn}
+Neue Rechenzentren in den Knotenpunkten über **80 % Grünstrom** bis Ende 2025; Anteil erneuerbarer Energie soll jährlich um 10 % wachsen. Neue große Rechenzentren vorrangig in den westlichen Knotenpunkten nahe Wind- und Solarparks („Daten aus dem Osten, Rechnen im Westen“) [@ndrc_rz_2024].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#r-waerme"/></svg>`{=html}
+**Abwärme**
+:::
+
+::: {.m-zelle .de}
+Neue Rechenzentren müssen 10 % ihrer Energie wiederverwenden, bei Inbetriebnahme ab Juli 2027 15 %, ab Juli 2028 20 % – meist als Wärme für Wärmenetze; Ausnahmen, wenn kein Netz abnimmt [§ 11 Abs. 2, 3 @enefg].
+:::
+
+::: {.m-zelle .eu}
+Anteil wiederverwendeter Energie wird gemeldet [Anhang VII @eu_eed]; das geplante EU-Bewertungssystem soll ihn mit einbeziehen [@ec_rz_2026].
+:::
+
+::: {.m-zelle .cn}
+Wärmerückgewinnung wird „ermutigt“, etwa für Gewerbegebiete, Fernwärme und Gewächshäuser; bis 2030 soll sie bei neuen großen Rechenzentren in den nördlichen Heizregionen deutlich steigen [@ndrc_rz_2024].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#r-lupe"/></svg>`{=html}
+**Transparenz**
+:::
+
+::: {.m-zelle .de}
+Jährliche Meldung bis 31. März an ein Register [§§ 13, 14 @enefg]; Kunden muss der Betreiber ihren Energieverbrauch mitteilen [§ 15 @enefg]. Daten zum Wasserverbrauch von KI-Rechenzentren liegen der Bundesregierung nicht vor [Frage 168 @bt_7052].
+:::
+
+::: {.m-zelle .eu}
+Ab 500 kW IT-Leistung jährliche Veröffentlichung für eine europäische Datenbank [Art. 12 @eu_eed]. Anbieter allgemeiner KI-Modelle müssen den bekannten oder geschätzten Energieverbrauch des Modells dokumentieren [Anhang XI Nr. 2 Buchst. e @eu_ki_vo].
+:::
+
+::: {.m-zelle .cn}
+Strenge Energieprüfung neuer Projekte; neue Rechenzentren sollen Server mit nationaler Effizienzeinstufung nutzen; auch der Wasserverbrauch wird bewertet [@ndrc_rz_2024].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+`<svg class="m-icon"><use href="#r-chip"/></svg>`{=html}
+**Richtung**
+:::
+
+::: {.m-zelle .de}
+**Lockerung geplant**: Das Kabinett beschloss am 24. Juni 2026 eine Änderung, die die Effizienz- und Abwärmevorgaben abschwächt – begründet mit fehlenden Netzanschlüssen und Wärmenetzen an geeigneten Standorten [Frage 101 @bt_7052]. Das Gesetz ist noch nicht beschlossen.
+:::
+
+::: {.m-zelle .eu}
+**Ausbau mit Bedingungen**: Mindeststandards in Vorbereitung, dazu ein einheitliches Bewertungssystem und Label für Rechenzentren [@ec_rz_2026].
+:::
+
+::: {.m-zelle .cn}
+**Steuerung über Standort und Auslastung**: Wo bestehende Rechenzentren zu weniger als 50 % belegt sind, sollen grundsätzlich keine neuen großen gebaut werden [@ndrc_rz_2024].
+:::
+:::
+
+:::
+
+::: {.belege}
+**Belege** · Deutschland: geltende Fassung des Energieeffizienzgesetzes [@enefg]; die im Kabinettsentwurf geplanten Werte sind noch nicht amtlich veröffentlicht und deshalb hier nicht genannt [@bt_7052]. EU: [Art. 12 @eu_eed; @ec_rz_2026; @eu_ki_vo]. China: Sonderaktionsplan vom Juli 2024 – Ziele und Leitvorgaben an die Behörden, keine Grenzwerte mit Bußgeld wie in Deutschland [@ndrc_rz_2024].
+:::
+
+## Rechner: Strom und CO₂ eines Rechenzentrums
+
+Wie viel Strom ein Rechenzentrum im Jahr braucht, hängt an drei Größen: der IT-Leistung, ihrer Auslastung und der Effizienz der Anlage (PUE). Die Angaben bleiben im Browser.
+
+```{=html}
+<form class="selbstcheck" id="rzrechner" onsubmit="return false">
+  <div class="sc-felder">
+    <label>IT-Leistung, kW
+      <input type="number" name="kw" min="0" step="any" inputmode="decimal" value="1000">
+    </label>
+    <label>Durchschnittliche Auslastung, %
+      <input type="number" name="last" min="0" max="100" step="any" inputmode="decimal" value="60">
+    </label>
+    <label>PUE der Anlage
+      <input type="number" name="pue" min="1" step="0.01" inputmode="decimal" value="1.5">
+    </label>
+  </div>
+  <div class="sc-ergebnis" id="rzergebnis" aria-live="polite"></div>
+</form>
+<script>
+(function () {
+  var f = document.getElementById("rzrechner");
+  if (!f) return;
+  // Netz-Emissionsfaktoren in t CO2 je MWh: Deutschland 2025 (UBA, geschätzt) 0,344; China 2023 (MEE) 0,531
+  var EF = { de: 0.344, cn: 0.531 };
+  var out = document.getElementById("rzergebnis");
+  function zahl(n, d) { return n.toLocaleString("de-DE", { maximumFractionDigits: d, minimumFractionDigits: d }); }
+  function wert(name) { var v = parseFloat(String(f.elements[name].value).replace(",", ".")); return isFinite(v) && v > 0 ? v : 0; }
+  function rechne() {
+    var kw = wert("kw"), last = Math.min(wert("last"), 100) / 100, pue = Math.max(wert("pue"), 1);
+    if (!kw || !last) { out.innerHTML = '<p class="sc-zahl">IT-Leistung und Auslastung eingeben.</p>'; return; }
+    var it = kw * last * 8760 / 1000, ges = it * pue, ref = it * 1.2;
+    var h = '<p class="sc-zahl">' + zahl(ges, 0) + ' MWh Strom im Jahr</p><table class="rechner-tabelle"><tbody>' +
+      '<tr><td>davon für die IT</td><td>' + zahl(it, 0) + ' MWh</td></tr>' +
+      '<tr><td>für Kühlung, Stromversorgung, Gebäude</td><td>' + zahl(ges - it, 0) + ' MWh</td></tr>';
+    if (pue > 1.2) h += '<tr><td>Mehrverbrauch gegenüber PUE 1,2</td><td>' + zahl(ges - ref, 0) + ' MWh</td></tr>';
+    h += '<tr><td>CO₂ mit deutschem Strommix 2025</td><td>' + zahl(ges * EF.de, 0) + ' t</td></tr>' +
+      '<tr><td>CO₂ mit chinesischem Strommix 2023</td><td>' + zahl(ges * EF.cn, 0) + ' t</td></tr>' +
+      '</tbody></table><p class="rechner-hinweis">CO₂ nach dem Durchschnitt des Stromnetzes. In Deutschland müssen Rechenzentren ab 2027 ihren Verbrauch bilanziell vollständig mit Ökostrom decken; der Wert zeigt, was der gleiche Verbrauch im Netzdurchschnitt verursachen würde.</p>';
+    out.innerHTML = h;
+  }
+  f.addEventListener("input", rechne);
+  rechne();
+})();
+</script>
+```
+
+::: {.belege}
+**Belege** · Strom = IT-Leistung × Auslastung × 8.760 Stunden × PUE (eigene Berechnung). Emissionsfaktoren: Deutschland 2025 344 g CO₂/kWh, geschätzt [@uba_strommix_2026]; China 2023 531 g CO₂/kWh, amtlicher Durchschnitt [@mee_ef_2023]; mehr dazu unter [Stromsektor](../wissen/stromsektor.qmd). PUE-Grenzwert für neue Rechenzentren in Deutschland [§ 11 Abs. 2 @enefg].
+:::
+
+## Verbrauch gegen Nutzen abwägen
+
+Keine der hier gezeigten Regeln wägt den Nutzen einer KI-Anwendung gegen ihren Stromverbrauch ab. Die Regeln setzen am **Verbrauch** an – an Effizienz, Strommix und Abwärme –, weil er messbar ist. Für eine eigene Abwägung bieten sich vier Fragen an, die sich aus dieser Logik ergeben:
+
+::: {.kaskade}
+[[1 · Woher kommt der Strom?]{.k-schritt}Zusätzlicher Ökostrom senkt die Emissionen; bilanzieller Bezug aus einem fossil geprägten Netz nur auf dem Papier.]{.k-stufe}
+
+[[2 · Wie effizient ist die Anlage?]{.k-schritt}PUE, Auslastung der Server und die Nutzung der Abwärme entscheiden über den Strom je Rechenoperation.]{.k-stufe}
+
+[[3 · Braucht die Aufgabe so viel Rechenleistung?]{.k-schritt}Kleinere Modelle, seltenere Neuberechnung und effiziente Hardware senken den Bedarf, ohne auf die Anwendung zu verzichten.]{.k-stufe}
+
+[[4 · Was spart die Anwendung?]{.k-schritt}Nutzen messen statt behaupten: Wie viel Energie oder CO₂ spart sie anderswo – nach Abzug von Rebound-Effekten?]{.k-stufe}
+:::
+
+::: {.belege}
+**Belege** · Eigene Zusammenstellung. Grundlage: Regelungsansätze von [§ 11 @enefg; Art. 12 @eu_eed; @ndrc_rz_2024]; Hinweis auf Rebound-Effekte und Einführungshürden [@iea_ai_2025]; Dokumentation des Energieverbrauchs von KI-Modellen [Anhang XI @eu_ki_vo].
+:::
+
+## Einordnung
+
+**Der Verbrauch ist sicher, der Nutzen möglich.** Rechenzentren verbrauchen heute messbar Strom, und der Verbrauch wächst schnell. Der Klimanutzen von KI ist nach Einschätzung der IEA größer – aber nur, wenn die Anwendungen tatsächlich breit eingesetzt werden und Rebound-Effekte ihn nicht aufzehren [@iea_ai_2025]. Deshalb regeln alle drei Systeme den Verbrauch und überlassen den Nutzen dem Markt.
+
+**Drei Wege mit einem gemeinsamen Problem.** Deutschland hat die strengsten Grenzwerte mit Bußgeld, will sie aber lockern, um Standorte nicht zu verlieren. China steuert über Planung: Standorte im Westen nahe Wind und Sonne, Auslastungsvorgaben und Grünstromquoten. Die EU setzt bisher auf Transparenz und bereitet Mindeststandards vor. Gemeinsam ist allen: Die Daten sind lückenhaft – in Deutschland fehlt ein großer Teil des Verbrauchs im Register, Angaben zum Wasserverbrauch fehlen ganz.
+
+**Für Unternehmen zählt die Rechnung im Einzelfall.** Wer KI nutzt oder Rechenzentren betreibt, sollte den Stromverbrauch kennen, ihn mit zusätzlichem Ökostrom decken, Effizienz und Abwärme ernst nehmen und den Nutzen einer Anwendung messen. Wer Rechenleistung einkauft, kann den Energieverbrauch beim Betreiber erfragen – in Deutschland muss dieser ihn mitteilen [§ 15 @enefg].

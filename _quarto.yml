@@ -82,6 +82,8 @@ website:
             text: "Pflichten erfüllen: Emissionshandel, CBAM, Effizienz"
           - href: unternehmen/anreize.qmd
             text: "Risiken, Anreize, Nutzen"
+          - href: unternehmen/rechenzentren.qmd
+            text: "KI und Rechenzentren"
       - href: projekte/index.qmd
         text: "Projekte"
       - href: ueber-mich.qmd

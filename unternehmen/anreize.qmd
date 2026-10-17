@@ -14,7 +14,7 @@ title: "Risiken, Anreize, Nutzen"
 :::
 :::
 
-[Unternehmen · [Überblick](index.qmd) · [Berichtspflichten](berichtspflichten.qmd) · [Pflichten erfüllen](pflichten.qmd) · **Risiken, Anreize, Nutzen**]{.ebenen-pfad}
+[Unternehmen · [Überblick](index.qmd) · [Berichtspflichten](berichtspflichten.qmd) · [Pflichten erfüllen](pflichten.qmd) · **Risiken, Anreize, Nutzen** · [KI und Rechenzentren](rechenzentren.qmd)]{.ebenen-pfad}
 
 ```{=html}
 <svg width="0" height="0" class="icon-defs" aria-hidden="true">
@@ -231,4 +231,4 @@ Für Exporteure kommt ein vierter Punkt hinzu: Wer seine Emissionen kennt und se
 
 **Das Risiko wird real, wenn der Schutz endet.** Solange Zertifikate kostenlos zugeteilt werden, ist der CO₂-Preis für viele Industrieunternehmen ein Signal, aber keine Rechnung. Mit dem Abschmelzen bis 2034 wird er in der EU für Stahl, Zement und Aluminium zum echten Kostenfaktor – für Hersteller in der EU wie für Importe.
 
-**Risikobewertung ist Pflicht, Nutzen nicht.** Große Unternehmen müssen Klimarisiken analysieren und offenlegen. Ob daraus Investitionen werden, entscheidet die Wirtschaftlichkeit; genau dort setzen CO₂-Preis und Förderung an. Den Sonderfall eines stark wachsenden Stromverbrauchs – Rechenzentren und KI – behandelt die nächste Seite.
+**Risikobewertung ist Pflicht, Nutzen nicht.** Große Unternehmen müssen Klimarisiken analysieren und offenlegen. Ob daraus Investitionen werden, entscheidet die Wirtschaftlichkeit; genau dort setzen CO₂-Preis und Förderung an. Den Sonderfall eines stark wachsenden Stromverbrauchs behandelt die Seite [KI und Rechenzentren](rechenzentren.qmd).

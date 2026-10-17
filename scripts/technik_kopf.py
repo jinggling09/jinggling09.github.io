@@ -11,7 +11,7 @@ Eingabe (daten/data/):
 Ausgabe (daten/data/, eingebunden per {{< include >}}):
   _kopf_wind.md, _kopf_photovoltaik.md, _kopf_waermepumpen.md, _kopf_wasserstoff.md,
   _kopf_unternehmen.md, _kopf_berichte.md, _kopf_pflichten.md,
-  _kopf_anreize.md (Themenseiten unternehmen/, nur Zeichnung)
+  _kopf_anreize.md, _kopf_rechenzentren.md (Themenseiten unternehmen/, nur Zeichnung)
 
 Wird von scripts/build.sh vor dem Rendern aufgerufen. Nur Standardbibliothek.
 """
@@ -219,6 +219,24 @@ def zeichnung_anreize() -> str:
     return s
 
 
+def zeichnung_rechenzentren() -> str:
+    """KI und Rechenzentren: zwei Serverschränke, Chip, Wärmewellen zu einem Haus (Abwärme), Strommast."""
+    s = '<path d="M0 262H900"/>'
+    # Strommast
+    s += '<path d="M300 262l18-120 18 120M306 222h24M311 186h14M300 150h36"/><path d="M336 150q40 10 64 24" opacity=".6"/>'
+    # zwei Serverschränke
+    for x in (410, 490):
+        s += f'<path d="M{x} 262V128h64v134"/>'
+        s += ''.join(f'<path d="M{x + 10} {y}h44" opacity=".6"/><circle cx="{x + 48}" cy="{y}" r="2"/>' for y in range(146, 250, 16))
+    # Chip
+    s += '<path d="M586 190h44v44h-44zM598 202h20v20h-20z"/>'
+    s += '<path d="M594 190v-8M608 190v-8M622 190v-8M594 234v8M608 234v8M622 234v8M586 198h-8M586 212h-8M586 226h-8M630 198h8M630 212h8M630 226h8" opacity=".75"/>'
+    # Wärmewellen und Haus
+    s += '<path d="M660 170q10-8 0-16t0-16M684 170q10-8 0-16t0-16M708 170q10-8 0-16t0-16" opacity=".6"/>'
+    s += '<path d="M752 262v-66l50-40 50 40v66zM786 262v-34h32v34"/>'
+    return s
+
+
 def streifen(de: dict[int, float], cn: dict[int, float], technik: str) -> tuple[str, int]:
     jahre = [j for j in sorted(cn) if j >= START and j in de]
     x0, x1, y0, h = 300.0, 900.0, 262, 17
@@ -290,6 +308,8 @@ def main() -> None:
         karte(zeichnung_pflichten(), "", "", viewbox="190 60 710 225"), encoding="utf-8")
     (DATA / "_kopf_anreize.md").write_text(
         karte(zeichnung_anreize(), "", "", viewbox="190 60 710 225"), encoding="utf-8")
+    (DATA / "_kopf_rechenzentren.md").write_text(
+        karte(zeichnung_rechenzentren(), "", "", viewbox="190 60 710 225"), encoding="utf-8")
     (DATA / "_kopf_wind.md").write_text(
         baustein(zeichnung_wind(), r["de"]["wind"], r["cn"]["wind"], "Windenergie", "Windleistung"), encoding="utf-8")
     (DATA / "_kopf_photovoltaik.md").write_text(
