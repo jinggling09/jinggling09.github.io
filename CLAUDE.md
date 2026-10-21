@@ -58,6 +58,7 @@ Alle Skripte nur mit Python-Standardbibliothek. Erzeugte `_*.md`-Dateien **nie v
 ## Gestaltung (`styles/custom.scss`)
 
 - Navigation (von Jing gewählt): kein Name links (`navbar: title: false`); Menüpunkte DE „Start · Ziele · CO₂-Bepreisung · Erneuerbare Energien · Emissionen · Projekte · Über mich“, EN „Carbon pricing“, ZH „碳定价“; Einträge brechen nicht um (nowrap, bei 992–1199 px enger gesetzt).
+- Seitenübersicht am Seitenende (Variante B, von Jing gewählt, 21.10.2026, Vorbild transsolar.com): dunkelgrünes Band direkt über dem Footer, 8 Spalten wie das Menü mit kurzen Linktexten (≤992 px 4 Spalten, Handy 2). Je Sprache eine Datei `_includes/sitemap-{de,en,zh}.html` (in `include-after-body`, Skript verschiebt sie vor `footer.footer`); EN/ZH verlinken nur-deutsche Seiten mit „(DE)“ bzw. „（德文）“. Bei neuen Seiten/Menüpunkten alle drei Dateien nachziehen.
 - Inhaltsseiten (von Jing gewählt): breite Textspalte, Inhaltsverzeichnis rechts, keine leere linke Spalte – in allen drei `_quarto.yml`: `toc-location: right` + `grid: sidebar-width 0px, body-width 940px, margin-width 260px, gutter-width 2rem`.
 
 - Thinktank-Stil. Leitfarbe Dunkelgrün `#1f5f4a`, Akzent Ocker `#a8741a`, Papierweiß `#fcfcfa`; Schriften Source Serif 4 (Überschriften) / Source Sans 3.

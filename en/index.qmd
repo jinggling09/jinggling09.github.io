@@ -165,7 +165,3 @@ Germany and China pursue ambitious climate targets with very different tools –
 :::
 
 :::
-
-::: {.mehr-leiste}
-[Projects](projekte/index.qmd) · [About me](ueber-mich.qmd) · [Sources & method](quellen.qmd)
-:::

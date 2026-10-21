@@ -179,7 +179,3 @@ Deutschland und China verfolgen ehrgeizige Klimaziele mit sehr unterschiedlichen
 :::
 
 :::
-
-::: {.mehr-leiste}
-[Projekte](projekte/index.qmd) · [Über mich](ueber-mich.qmd) · [Quellen & Methodik](quellen.qmd)
-:::

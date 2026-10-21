@@ -81,6 +81,7 @@ format:
     include-after-body:
       - ../_includes/lang-switch.html
       - ../_includes/literatur-toggle.html
+      - ../_includes/sitemap-zh.html
     citations-hover: true
     reference-location: margin
 

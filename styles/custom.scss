@@ -1231,3 +1231,17 @@ main.content:has(.technik-karte) #title-block-header { display: none; }
   .frage { display: block; font-style: italic; color: $grau; font-size: .92rem; }
   @media (max-width: 640px) { grid-template-columns: auto minmax(0, 1fr); > :last-child { grid-column: 1 / -1; } }
 }
+
+/* ---------- Seitenübersicht am Seitenende (Variante B, dunkelgrün, schließt an den Footer an) ---------- */
+nav.sitemap {
+  background: #123d30; color: #fff; padding: 2.2rem 0 1.4rem; margin-top: 3rem;
+  .sm-innen { max-width: 1240px; margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 1.4rem 1.4rem; }
+  .sm-titel { font-size: .9rem; font-weight: 700; margin: 0 0 .35rem; color: #fff; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { margin: 0; }
+  a { display: inline-block; font-size: .86rem; line-height: 1.6; font-weight: 600; color: #a9c7bb; text-decoration: none; }
+  a:hover, a:focus-visible { color: #fff; text-decoration: underline; }
+  @media (max-width: 991.98px) { .sm-innen { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  @media (max-width: 575.98px) { .sm-innen { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+}
+nav.sitemap + footer.footer { margin-top: 0; border-top: 1px solid rgba(255, 255, 255, .12); }

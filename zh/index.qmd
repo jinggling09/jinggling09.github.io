@@ -165,7 +165,3 @@ title-block-banner: false
 :::
 
 :::
-
-::: {.mehr-leiste}
-[项目](projekte/index.qmd) · [关于我](ueber-mich.qmd) · [来源与方法](quellen.qmd)
-:::
