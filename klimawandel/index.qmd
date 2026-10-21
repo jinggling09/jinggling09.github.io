@@ -160,7 +160,15 @@ Wasserdampf, Ozon, CO₂, Methan und Lachgas kommen natürlich vor; dazu kommen 
 :::
 
 ::: {.belege}
-**Belege** · Deutschland und China: eigene Berechnung aus denselben Jahresreihen wie die [Klimastreifen auf der Startseite](../index.qmd) (DWD bzw. CRU TS, Abweichung vom Mittel 1961–1990, gemittelt über die Jahre). Wärmstes Jahr in beiden Reihen: 2024. Die Werte beziehen sich auf Landflächen und sind daher höher als das globale Mittel, das die Meere einschließt.
+**Belege** · Deutschland und China: eigene Berechnung aus denselben Jahresreihen wie die Klimastreifen unten (DWD bzw. CRU TS, Abweichung vom Mittel 1961–1990, gemittelt über die Jahre). Wärmstes Jahr in beiden Reihen: 2024. Die Werte beziehen sich auf Landflächen und sind daher höher als das globale Mittel, das die Meere einschließt.
+:::
+
+### Klimastreifen: Deutschland und China seit 1901
+
+Jeder Streifen ist ein Jahr – blau kühler, rot wärmer als das Mittel 1961–1990, für beide Länder auf derselben Farbskala. Mit der Maus über einen Streifen fahren zeigt Jahr und Wert.
+
+::: {.sb-streifen}
+{{< include ../daten/data/_klimastreifen_de.md >}}
 :::
 
 ## Was sich sonst verändert

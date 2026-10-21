@@ -17,6 +17,7 @@ project:
     - "daten/data/*.json"
     - "images/*"
     - "dokumente/*"
+    - "skripte/*"
 
 lang: de
 
@@ -31,22 +32,25 @@ website:
   navbar:
     title: false
     left:
-      - text: "Start"
+      - href: index.qmd
+        text: "Start"
+      - text: "Klimawandel"
         menu:
-          - href: index.qmd
-            text: "Übersicht"
-          - href: laender/deutschland.qmd
-            text: "Deutschland: Klimaschutz im Überblick"
-          - href: laender/eu.qmd
-            text: "Europäische Union: Klimaschutz im Überblick"
-          - href: laender/china.qmd
-            text: "China: Klimaschutz im Überblick"
-      - href: klimawandel/index.qmd
-        text: "Klimawandel"
-      - href: ziele/index.qmd
-        text: "Ziele"
-      - text: "CO₂-Bepreisung"
+          - href: klimawandel/index.qmd
+            text: "Was ist Klimawandel?"
+          - text: "---"
+          - text: "Emissionen heute"
+          - href: wissen/emissionen-de.qmd
+            text: "THG-Dashboard Deutschland"
+          - href: wissen/stromsektor.qmd
+            text: "Stromsektor: Deutschland & China"
+      - text: "Klimaschutz"
         menu:
+          - text: "Ziele und Kontrolle"
+          - href: ziele/index.qmd
+            text: "Ziele im Vergleich"
+          - text: "---"
+          - text: "CO₂-Preis und Märkte"
           - href: wissen/index.qmd
             text: "Überblick & Zeitleiste"
           - href: wissen/china-ets.qmd
@@ -55,12 +59,10 @@ website:
             text: "EU-ETS, ETS 2 & BEHG"
           - href: wissen/cbam.qmd
             text: "CBAM – Grundlagen"
-          - href: wissen/schnittstellen.qmd
-            text: "Schnittstelle China ↔ CBAM"
-      - text: "Energiewende"
-        menu:
+          - text: "---"
+          - text: "Energiewende"
           - href: daten/index.qmd
-            text: "Überblick: Ausbau Wind & Solar"
+            text: "Ausbau Wind & Solar"
           - href: energiewende/photovoltaik.qmd
             text: "Photovoltaik"
           - href: energiewende/windenergie.qmd
@@ -69,12 +71,18 @@ website:
             text: "Wärmepumpen"
           - href: energiewende/wasserstoff.qmd
             text: "Wasserstoff"
-      - text: "Emissionen"
-        menu:
+          - text: "---"
+          - text: "Länder im Überblick"
+          - href: laender/deutschland.qmd
+            text: "Deutschland"
+          - href: laender/eu.qmd
+            text: "Europäische Union"
+          - href: laender/china.qmd
+            text: "China"
+          - text: "---"
+          - text: "Fortschritt"
           - href: wissen/emissionen-de.qmd
-            text: "THG-Dashboard Deutschland"
-          - href: wissen/stromsektor.qmd
-            text: "Stromsektor: Deutschland & China"
+            text: "Emissionen heute"
       - text: "Unternehmen"
         menu:
           - href: unternehmen/index.qmd
@@ -87,6 +95,8 @@ website:
             text: "Risiken, Anreize, Nutzen"
           - href: unternehmen/rechenzentren.qmd
             text: "KI und Rechenzentren"
+          - href: wissen/schnittstellen.qmd
+            text: "Schnittstelle China ↔ CBAM"
       - href: projekte/index.qmd
         text: "Projekte"
       - href: ueber-mich.qmd

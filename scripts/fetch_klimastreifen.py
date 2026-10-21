@@ -19,6 +19,7 @@ Gemeinsamer Zeitraum: 1901 (Beginn CRU) bis zum letzten Jahr, das in beiden Reih
 Ausgabe:
   daten/data/temperatur_de_cn.csv      – Jahr, Abweichungen DE/CN in °C (Basis 1961–1990)
   daten/data/_klimastreifen_{de,en,zh}.md – HTML-Baustein, eingebunden per {{< include >}}
+  daten/data/_klimastreifen_mini_{de,en,zh}.md – kleine Fassung für die Startseiten-Kachel
 
 Aufruf:
   python3 scripts/fetch_klimastreifen.py            # abrufen und Bausteine erzeugen
@@ -218,6 +219,28 @@ def baustein(zeilen: list[dict], lang: str) -> str:
     )
 
 
+def mini(zeilen: list[dict], lang: str) -> str:
+    """Kleine Fassung für die Klimawandel-Kachel der Startseite: nur die Streifen, ohne Links
+    (die Kachel ist selbst ein Link) – Jahr und Wert beim Überfahren."""
+    if not zeilen:
+        return "<!-- Klimastreifen: keine Daten vorhanden -->\n"
+    t = TEXTE[lang]
+    n = len(zeilen)
+    grenze = math.ceil(max(abs(z[k]) for z in zeilen for k in ("de", "cn")) * 2) / 2
+    rects = []
+    for land, y in (("de", 0), ("cn", 52)):
+        for i, z in enumerate(zeilen):
+            rects.append(f'<rect x="{i}" y="{y}" width="1.05" height="48" fill="{farbe(z[land], grenze)}">'
+                         f'<title>{t[land]} {z["jahr"]}: {zahl(z[land], t["komma"])} °C</title></rect>')
+    return (
+        "```{=html}\n"
+        f'<div class="ks-mini" aria-hidden="true"><svg viewBox="0 0 {n} 100" preserveAspectRatio="none" shape-rendering="crispEdges">'
+        + "".join(rects) +
+        f'</svg><span class="ks-mini-de">{t["de"]}</span><span class="ks-mini-cn">{t["cn"]}</span>'
+        f'<span class="ks-mini-jahre">{zeilen[0]["jahr"]}–{zeilen[-1]["jahr"]}</span></div>\n```\n'
+    )
+
+
 def main() -> None:
     offline = "--offline" in sys.argv
     zeilen = lies_csv()
@@ -237,6 +260,7 @@ def main() -> None:
             print("Vorhandene CSV wird verwendet.", file=sys.stderr)
     for lang in TEXTE:
         (DATA / f"_klimastreifen_{lang}.md").write_text(baustein(zeilen, lang), encoding="utf-8")
+        (DATA / f"_klimastreifen_mini_{lang}.md").write_text(mini(zeilen, lang), encoding="utf-8")
     if zeilen:
         letzte = zeilen[-1]
         print(f"Bausteine geschrieben. Letztes Jahr {letzte['jahr']}: DE {letzte['de']:+.2f} °C, CN {letzte['cn']:+.2f} °C")
