@@ -11,7 +11,7 @@
   var rel = m ? location.pathname.slice(m[0].length) : location.pathname.replace(/^\//, "");
   var onSite = location.hostname === "jinggling09.github.io";
   /* Seiten, die es bisher nur auf Deutsch gibt: dort führt EN/中 zur Startseite der Sprache statt ins Leere */
-  var nurDeutsch = ["laender/", "energiewende/", "unternehmen/"];
+  var nurDeutsch = ["klimawandel/", "laender/", "energiewende/", "unternehmen/"];
   var fehlt = nurDeutsch.some(function (p) { return rel.indexOf(p) === 0; });
   function ziel(lang) { return (onSite ? "/" : base) + prefix[lang] + (lang !== "de" && fehlt ? "" : rel); }
 

@@ -1,0 +1,237 @@
+---
+title: "Was ist Klimawandel?"
+subtitle: "Treibhauseffekt, Erwärmung und warum es Klimaziele gibt"
+---
+
+::: {.stand}
+Stand: 21.10.2026
+:::
+
+[Ebene 0 · Grundlagen → [Ziele](../ziele/index.qmd) → [Instrumente](../wissen/index.qmd) → [Energiewende](../daten/index.qmd) → [Emissionen](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
+
+Die Erde war 2025 rund 1,4 °C wärmer als im Mittel der Jahre 1850–1900 [@wmo_sogc_2025]. Der Weltklimarat IPCC hält fest: Menschliche Aktivitäten haben die Erwärmung **eindeutig** verursacht, vor allem durch den Ausstoß von Treibhausgasen [A.1 @ipcc_syr_spm]. Diese Seite erklärt in drei Schritten, wie das funktioniert, was sich schon verändert hat – und warum daraus die Klimaziele folgen, um die es auf dieser Website geht.
+
+## Der Treibhauseffekt
+
+Sonnenlicht erwärmt die Erdoberfläche. Die Erde gibt die Wärme als unsichtbare Infrarotstrahlung wieder ab. Treibhausgase in der Luft lassen das Sonnenlicht weitgehend durch, nehmen aber einen Teil der Wärmestrahlung auf und strahlen ihn in alle Richtungen ab – auch zurück zum Boden. Ohne diesen **natürlichen Treibhauseffekt** läge die mittlere Temperatur an der Erdoberfläche bei etwa −18 °C statt bei knapp 15 °C [@uba_treibhauseffekt]. Mehr Treibhausgase verstärken den Effekt: Es entweicht weniger Wärme ins Weltall, und die Erde erwärmt sich.
+
+```{=html}
+<figure class="treibhaus" id="treibhaus" data-zustand="natur">
+  <div class="th-schalter" role="group" aria-label="Zustand wählen">
+    <button type="button" data-zustand="natur" aria-pressed="true">Natürlicher Treibhauseffekt</button>
+    <button type="button" data-zustand="mensch" aria-pressed="false">Vom Menschen verstärkt</button>
+  </div>
+  <svg viewBox="0 0 760 380" role="img" aria-labelledby="th-titel th-text">
+    <title id="th-titel">Schema des Treibhauseffekts</title>
+    <defs>
+      <marker id="th-pfeil-s" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="th-sonne-f"/></marker>
+      <marker id="th-pfeil-w" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="th-waerme-f"/></marker>
+      <clipPath id="th-bild"><rect x="0" y="0" width="760" height="380"/></clipPath>
+    </defs>
+    <g clip-path="url(#th-bild)">
+      <text x="740" y="28" text-anchor="end" class="th-label">Weltall</text>
+      <!-- Sonne -->
+      <g class="th-sonne">
+        <circle cx="78" cy="66" r="30"/>
+        <path d="M78 22v-12M78 110v12M34 66h-12M122 66h12M47 35l-8-8M109 97l8 8M47 97l-8 8M109 35l8-8"/>
+      </g>
+      <!-- Atmosphäre: Band über der Erde -->
+      <circle cx="380" cy="980" r="790" class="th-atmo"/>
+      <text x="740" y="172" text-anchor="end" class="th-label th-atmo-label">Treibhausgase in der Luft</text>
+      <!-- Erde -->
+      <circle cx="380" cy="980" r="680" class="th-erde"/>
+      <!-- Sonnenlicht hinein -->
+      <path d="M108 92 L258 300" class="th-strahl th-sonne-s" marker-end="url(#th-pfeil-s)"/>
+      <text x="160" y="188" class="th-klein th-sonne-t" transform="rotate(56 160 188)">Sonnenlicht</text>
+      <!-- Reflexion -->
+      <path d="M272 306 L338 70" class="th-strahl th-sonne-s th-duenn" marker-end="url(#th-pfeil-s)"/>
+      <text x="320" y="118" class="th-klein th-sonne-t">reflektiert</text>
+      <!-- Wärmestrahlung ins All -->
+      <path d="M440 300 C452 274 428 256 444 228 C460 200 436 182 452 154 C468 126 444 108 460 62" class="th-strahl th-waerme-s th-raus" marker-end="url(#th-pfeil-w)"/>
+      <text x="470" y="80" class="th-klein th-waerme-t">Wärme entweicht ins All</text>
+      <!-- Rückstrahlung -->
+      <path d="M566 214 C552 240 576 262 560 288 L556 306" class="th-strahl th-waerme-s th-zurueck" marker-end="url(#th-pfeil-w)"/>
+      <path d="M520 310 C534 286 510 262 526 226" class="th-strahl th-waerme-s th-hoch"/>
+      <text x="590" y="262" class="th-klein th-waerme-t">zurück zum Boden</text>
+      <!-- Temperatur -->
+      <text x="380" y="350" text-anchor="middle" class="th-temp" id="th-temp">Mittel an der Oberfläche: knapp 15 °C – ohne Treibhauseffekt etwa −18 °C</text>
+    </g>
+  </svg>
+  <figcaption id="th-text">Natürlich: Ein Teil der Wärme bleibt in der unteren Atmosphäre – das macht die Erde bewohnbar.</figcaption>
+</figure>
+```
+
+::: {.belege}
+**Belege** · Eigene, vereinfachte Darstellung; Temperaturen nach [@uba_treibhauseffekt]; Erwärmung 2025 nach [@wmo_sogc_2025]. Die Pfeile zeigen Richtungen, keine Mengen.
+:::
+
+### Welche Gase?
+
+Wasserdampf, Ozon, CO₂, Methan und Lachgas kommen natürlich vor; dazu kommen künstlich hergestellte Gase wie FCKW und SF₆ [@uba_treibhauseffekt]. Für den vom Menschen verursachten Teil zählen vor allem vier Gruppen. Gase sind unterschiedlich stark: Das **Treibhauspotenzial** gibt an, wie viel stärker eine Tonne eines Gases über 100 Jahre wärmt als eine Tonne CO₂. Ein Gas antippen:
+
+```{=html}
+<div class="gas-wahl" role="tablist" aria-label="Treibhausgas wählen">
+  <button type="button" role="tab" aria-selected="true" aria-controls="gas-co2" data-gas="co2">CO₂</button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="gas-ch4" data-gas="ch4">CH₄ Methan</button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="gas-n2o" data-gas="n2o">N₂O Lachgas</button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="gas-f" data-gas="f">F-Gase</button>
+</div>
+```
+
+::: {.gas-info #gas-co2 role="tabpanel"}
+**Kohlendioxid (CO₂)** – entsteht vor allem beim Verbrennen von Kohle, Öl und Gas.
+
+- **73,8 %** der weltweiten Treibhausgas-Emissionen 2025 (fossiles CO₂) [@edgar_2026]
+- Treibhauspotenzial: **1** – der Maßstab für alle anderen Gase; eine einzelne Verweildauer lässt sich nicht angeben [Tab. 7.15 @ipcc_wg1_kap7]
+- Konzentration 2024: **423,9 ppm**, so hoch wie seit mindestens 800.000 Jahren nicht [@wmo_sogc_2025]; schon 2019 lag sie höher als in mindestens 2 Mio. Jahren [A.1 @ipcc_syr_spm]
+:::
+
+::: {.gas-info #gas-ch4 role="tabpanel" hidden="hidden"}
+**Methan (CH₄)** – entsteht etwa im Verdauungstrakt von Wiederkäuern und in Deponien; fossiles Methan wird als Energieträger gefördert [@uba_methan_2025].
+
+- **17,6 %** der weltweiten Treibhausgas-Emissionen 2025 [@edgar_2026]
+- Treibhauspotenzial: **27 bis 30**; bleibt im Mittel **11,8 Jahre** in der Atmosphäre – wirkt also stark, aber kurz [Tab. 7.15 @ipcc_wg1_kap7]
+- Konzentration 2024: **1.942 ppb** (Milliardstel) [@wmo_sogc_2025]
+:::
+
+::: {.gas-info #gas-n2o role="tabpanel" hidden="hidden"}
+**Lachgas (N₂O)** – wirkt fast dreihundertmal so stark wie CO₂ und bleibt sehr lange in der Luft.
+
+- **5,3 %** der weltweiten Treibhausgas-Emissionen 2025 [@edgar_2026]
+- Treibhauspotenzial: **273**; Verweildauer **109 Jahre** [Tab. 7.15 @ipcc_wg1_kap7]
+- Konzentration 2024: **338,0 ppb** [@wmo_sogc_2025]
+:::
+
+::: {.gas-info #gas-f role="tabpanel" hidden="hidden"}
+**Fluorierte Gase (F-Gase)** – künstlich hergestellt [@uba_treibhauseffekt]; einzelne Stoffe wirken tausendfach stärker als CO₂.
+
+- **3,3 %** der weltweiten Treibhausgas-Emissionen 2025 [@edgar_2026]
+- Beispiel HFKW-134a: Treibhauspotenzial **1.526**, Verweildauer **14 Jahre** [Tab. 7.15 @ipcc_wg1_kap7]
+:::
+
+## Wie warm ist es geworden?
+
+```{=html}
+<figure class="video-karte">
+  <video src="../images/gistemp_1880_2023.mp4" poster="../images/gistemp_1880_2023.jpg" muted loop playsinline controls preload="none" width="640" height="360" aria-describedby="video-text"></video>
+  <figcaption id="video-text">Temperaturabweichung an der Erdoberfläche 1880–2023 gegenüber dem Mittel 1951–1980: weiß normal, rot wärmer, blau kühler.</figcaption>
+</figure>
+```
+
+::: {.belege}
+**Video** · Visualisierung: NASA's Scientific Visualization Studio [@nasa_svs_5207] · Daten: GISTEMP v4 [@lenssen_2024] · für diese Seite verkleinert.
+:::
+
+### Monat für Monat
+
+```{=html}
+<figure class="video-karte">
+  <video src="../images/gistemp_monate_1880_2024.mp4" poster="../images/gistemp_monate_1880_2024.jpg" muted loop playsinline controls preload="none" width="640" height="360" aria-describedby="video2-text"></video>
+  <figcaption id="video2-text">Globale Monatstemperaturen 1880–2024: jede Linie ein Jahr, von blau (früh) nach rot (spät). Werte als Abweichung vom Mittel 1951–1980, einschließlich des normalen Jahresgangs. Die oberste, dicke Linie ist 2024.</figcaption>
+</figure>
+```
+
+::: {.belege}
+**Video** · Visualisierung: NASA's Scientific Visualization Studio [@nasa_svs_5191] · Daten: GISTEMP v4 [@lenssen_2024] · für diese Seite verkleinert.
+:::
+
+::: {.fakten}
+
+::: {.fakt}
+[1,43 °C]{.zahl}
+[2025 wärmer als 1850–1900 (± 0,13 °C) – das zweit- oder drittwärmste Jahr seit Beginn der Messungen [@wmo_sogc_2025]]{.was}
+:::
+
+::: {.fakt}
+[1,59 °C]{.zahl}
+[Erwärmung über Land 2011–2020, über dem Meer 0,88 °C – Land erwärmt sich schneller [A.1.1 @ipcc_syr_spm]]{.was}
+:::
+
+::: {.fakt .de}
+[+2,1 °C]{.zahl}
+[Deutschland: Mittel 2016–2025 gegenüber 1901–1930 [@dwd_temp]]{.was}
+:::
+
+::: {.fakt .cn}
+[+1,5 °C]{.zahl}
+[China: Mittel 2016–2025 gegenüber 1901–1930 [@cru_ts]]{.was}
+:::
+
+:::
+
+::: {.belege}
+**Belege** · Deutschland und China: eigene Berechnung aus denselben Jahresreihen wie die [Klimastreifen auf der Startseite](../index.qmd) (DWD bzw. CRU TS, Abweichung vom Mittel 1961–1990, gemittelt über die Jahre). Wärmstes Jahr in beiden Reihen: 2024. Die Werte beziehen sich auf Landflächen und sind daher höher als das globale Mittel, das die Meere einschließt.
+:::
+
+## Was sich sonst verändert
+
+::: {.fakten}
+
+::: {.fakt}
+[4,75 mm]{.zahl}
+[Meeresspiegelanstieg pro Jahr 2012–2025 – fast doppelt so schnell wie 1993–2011 (2,65 mm) [@wmo_sogc_2025]]{.was}
+:::
+
+::: {.fakt}
+[Rekord]{.zahl}
+[Wärme im Ozean 2025 so hoch wie nie seit Messbeginn vor 66 Jahren; seit 2005 erwärmt er sich mehr als doppelt so schnell wie 1960–2005 [@wmo_sogc_2025]]{.was}
+:::
+
+::: {.fakt}
+[Tiefstwert]{.zahl}
+[Größte Ausdehnung des arktischen Meereises 2025: niedrigster Jahreshöchstwert seit Beginn der Beobachtung [@wmo_sogc_2025]]{.was}
+:::
+
+::: {.fakt}
+[Extreme]{.zahl}
+[Der vom Menschen verursachte Klimawandel beeinflusst bereits viele Wetter- und Klimaextreme in jeder Region der Welt [A.2 @ipcc_syr_spm]]{.was}
+:::
+
+:::
+
+## Was daraus folgt
+
+Im **Übereinkommen von Paris** haben sich die Staaten 2015 verpflichtet, die Erwärmung deutlich unter 2 °C zu halten und Anstrengungen zu unternehmen, sie auf 1,5 °C zu begrenzen [Art. 2 Abs. 1 @paris_2015]. Dafür müssen die weltweiten Emissionen sinken – 2025 sind sie aber noch einmal um 0,7 % auf 54,1 Mrd. t CO₂-Äquivalente gestiegen [@edgar_2026]. Wie EU, Deutschland und China darauf antworten, zeigen die vier Ebenen dieser Website:
+
+::: {.weiter-ebenen}
+[[1 · Ziele](../ziele/index.qmd) – Was wurde versprochen?]{}
+[[2 · Instrumente](../wissen/index.qmd) – Womit soll es erreicht werden?]{}
+[[3 · Energiewende](../daten/index.qmd) – Was wird gebaut?]{}
+[[4 · Emissionen](../wissen/emissionen-de.qmd) – Was ist tatsächlich passiert?]{}
+:::
+
+```{=html}
+<script>
+(function () {
+  var fig = document.getElementById('treibhaus');
+  if (fig) {
+    var texte = {
+      natur: ['Mittel an der Oberfläche: knapp 15 °C – ohne Treibhauseffekt etwa −18 °C',
+              'Natürlich: Ein Teil der Wärme bleibt in der unteren Atmosphäre – das macht die Erde bewohnbar.'],
+      mensch: ['2025: rund 1,43 °C wärmer als 1850–1900',
+               'Verstärkt: Mehr Treibhausgase halten mehr Wärme zurück. Weniger entweicht ins All, mehr strahlt zum Boden zurück – die Erde erwärmt sich.']
+    };
+    fig.querySelectorAll('.th-schalter button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var z = b.dataset.zustand;
+        fig.dataset.zustand = z;
+        fig.querySelectorAll('.th-schalter button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        document.getElementById('th-temp').textContent = texte[z][0];
+        document.getElementById('th-text').textContent = texte[z][1];
+      });
+    });
+  }
+  var tabs = document.querySelectorAll('.gas-wahl button');
+  tabs.forEach(function (b) {
+    b.addEventListener('click', function () {
+      tabs.forEach(function (x) {
+        var an = x === b;
+        x.setAttribute('aria-selected', an ? 'true' : 'false');
+        var p = document.getElementById('gas-' + x.dataset.gas);
+        if (p) p.hidden = !an;
+      });
+    });
+  });
+})();
+</script>
+```

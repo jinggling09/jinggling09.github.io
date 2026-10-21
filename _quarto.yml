@@ -4,6 +4,7 @@ project:
   # Deutsch im Stammverzeichnis; en/ und zh/ sind eigene Quarto-Projekte (siehe scripts/build.sh)
   render:
     - "*.qmd"
+    - "klimawandel/*.qmd"
     - "ziele/*.qmd"
     - "laender/*.qmd"
     - "energiewende/*.qmd"
@@ -40,6 +41,8 @@ website:
             text: "Europäische Union: Klimaschutz im Überblick"
           - href: laender/china.qmd
             text: "China: Klimaschutz im Überblick"
+      - href: klimawandel/index.qmd
+        text: "Klimawandel"
       - href: ziele/index.qmd
         text: "Ziele"
       - text: "CO₂-Bepreisung"
