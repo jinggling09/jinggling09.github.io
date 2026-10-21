@@ -181,43 +181,43 @@ Die sechs Rollen im Einzelnen:
 
 ::: {.governance .de}
 
-::: {.rolle}
+::: {.rolle #rolle-1}
 [Ziele festlegen]{.frage}
 [Bundestag und Bundesrat]{.wer}
 
 Die Ziele stehen im Klimaschutzgesetz und lassen sich nur per Gesetz ändern [@ksg]. Den äußeren Rahmen setzt die EU: Europäisches Klimagesetz und Lastenteilung (ESR), die Deutschland bis 2030 −50 % gegenüber 2005 in Verkehr, Gebäuden, Landwirtschaft und Teilen der Industrie vorschreibt [@eu_klimagesetz_2021; @bmukn_ksp_2026].
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-2}
 [Planen und umsetzen]{.frage}
 [Bundesregierung]{.wer}
 
 Spätestens zwölf Monate nach Beginn jeder Legislaturperiode beschließt sie ein **Klimaschutzprogramm** [§ 9 @ksg]. Federführend ist seit Mai 2025 das **Umweltministerium (BMUKN)** – es übernahm Klimaschutz vom Wirtschaftsministerium und die internationale Klimapolitik vom Auswärtigen Amt [@organisationserlass_2025]. Energie liegt beim **Wirtschafts- und Energieministerium (BMWE)**; Verkehr, Bauen und Landwirtschaft bei den Fachressorts. Länder und Kommunen setzen vor Ort um, etwa mit der Wärmeplanung [@wpg].
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-3}
 [Bilanzieren]{.frage}
 [Umweltbundesamt (UBA)]{.wer}
 
 Legt bis **15. März** die Emissionen des Vorjahres vor und erstellt jährlich **Projektionen** bis 2045 [§§ 5, 5a @ksg]. Erfasst werden alle Kyoto-Gase (CO₂, Methan, Lachgas, F-Gase), umgerechnet in CO₂-Äquivalente und aufgeteilt auf die Sektoren des KSG.
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-4}
 [Unabhängig prüfen]{.frage}
 [Expertenrat für Klimafragen]{.wer}
 
 Fünf Sachverständige verschiedener Disziplinen [§ 11 @ksg]. Sie prüfen die UBA-Daten innerhalb von zwei Monaten und bewerten Maßnahmen und Programme [§ 12 @ksg]. Dazu kommen der jährliche Klimaschutzbericht an den Bundestag [§ 10 @ksg], die Berichtspflichten gegenüber der EU-Kommission – und Gerichte: Das Bundesverfassungsgericht verlangte 2021, Minderungslasten nicht einseitig in die Zukunft zu verschieben [@bverfg_2021]; das Bundesverwaltungsgericht stellte Anfang 2026 klar, dass unzureichende Programme nachgeschärft werden müssen [@bmukn_ksp_2026].
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-5}
 [Nachsteuern]{.frage}
 [Bundesregierung als Ganzes]{.wer}
-[↺ zurück zu 2 · Planen und umsetzen]{.zurueck}
+[↺ zurück zu 2 · Planen und umsetzen](#rolle-2){.zurueck}
 
 Zeigen die Projektionen **zwei Jahre in Folge**, dass das Budget 2021–2030 überschritten wird, muss die Regierung zusätzliche Maßnahmen beschließen [§ 8 @ksg]. Früher musste das zuständige Ministerium eines verfehlenden Sektors ein Sofortprogramm vorlegen; diese Sektorverantwortung wurde 2024 abgeschafft.
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-6}
 [Finanzieren]{.frage}
 [Klima- und Transformationsfonds (KTF)]{.wer}
 

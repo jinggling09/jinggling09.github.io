@@ -19,7 +19,7 @@ toc: false
  <div>
   <div class="eyebrow">Über mich</div>
   <h1>Jing Hu</h1>
-  <p class="profil-text">Umweltwissenschaftlerin mit über vier Jahren Berufserfahrung in Klimapolitik, CO₂-Bilanzierung, Emissionshandel und Low-Carbon-Projektmanagement. Auf der Suche nach einer Stelle im Bereich Klimaschutz, Nachhaltigkeit oder Energiewende.</p>
+  <p class="profil-text">Mich beschäftigt, was Klimaschutz tatsächlich bewirkt. Vier Jahre lang habe ich das in Peking aus nächster Nähe erlebt: Ich habe ein Förderprogramm für Low-Carbon-Technologien koordiniert, an Treibhausgasinventaren mitgearbeitet und internationale Delegationen betreut. Heute vergleiche ich auf einer eigenen Plattform, wie Deutschland und China ihre Klimaziele umsetzen, und suche eine Stelle, an der ich dieses Wissen aus beiden Systemen einsetzen kann.</p>
   <div class="knoepfe">
    <a class="knopf" href="https://www.linkedin.com/in/jing-hu-10a703182"><svg><use href="#s-in"/></svg>LinkedIn</a>
    <a class="knopf" href="mailto:hujing1104@outlook.com"><svg><use href="#s-mail"/></svg>E-Mail</a>
@@ -96,7 +96,7 @@ Datenanalyse mit R und Python, GIS-Analyse, Carbon Management
 [Beijing Climate Change Management Center · Peking]{.org}
 
 - Koordination des Pilotprogramms für Low-Carbon-Technologien: Unternehmensberatung, Expertenbewertungen, Vor-Ort-Begehungen, Abstimmung der Mittelfreigabe, Einreichung beim Ministerium für Ökologie und Umwelt
-- Mitentwicklung einer Projektdatenbank mit interaktiver Visualisierung: mehr als 240 Projektunterlagen aus Papierakten digitalisiert und in der Cloud bereitgestellt; Software-Urheberrecht als Zweitautorin
+- Mitentwicklung einer Projektdatenbank mit interaktiver Visualisierung: mehr als 240 Projektunterlagen aus Papierakten digitalisiert und in der Cloud bereitgestellt
 - Mitarbeit an THG-Inventaren und Studien: Waldkohlenstoff, Müllverbrennung, Klimaneutralitätspfade zweier Stadtbezirke, Emissionshöhepunkt der Bezirke (Energy Foundation China), CCUS; Analyse des Pekinger Emissionshandels, Fachartikel zum EU-Emissionshandel; Redaktion des monatlichen Klima-Bulletins
 - Organisation internationaler Fachkonferenzen (u. a. Beijing International Forum on Clean Air and Climate Action) und des Nationalen Low-Carbon-Tags Peking; Betreuung und Dolmetschen für Gäste, darunter ein Vertreter der Berliner Senatsverwaltung
 - Begleitung von Regierungsdelegationen (u. a. UNFCCC, Großbritannien, Kalifornien, Neuseeland, Botschaft Dänemarks, Projekt Sino-Swiss Clean Air China): Fachbesuche bei Low-Carbon-Projekten, Dolmetschen Chinesisch–Englisch; Organisation von Auslandsdienstreisen (2023: 5 Gruppen, 19 Personen)

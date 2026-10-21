@@ -170,43 +170,43 @@ Die sechs Rollen im Einzelnen:
 
 ::: {.governance .eu}
 
-::: {.rolle}
+::: {.rolle #rolle-1}
 [Ziele festlegen]{.frage}
 [Europäisches Parlament und Rat]{.wer}
 
 Die **Kommission** schlägt Gesetze vor; **Parlament** und **Rat** (die Regierungen der Mitgliedstaaten) beschließen sie gemeinsam. So entstanden das Klimagesetz und das „Fit-for-55"-Paket für das Ziel 2030 [@eu_klimagesetz_2021; @eu_klimagesetz_2026].
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-2}
 [Planen und umsetzen]{.frage}
 [Kommission und Mitgliedstaaten]{.wer}
 
 Die Kommission setzt EU-Recht um und überwacht es. **Verordnungen** gelten direkt, **Richtlinien** übertragen die Mitgliedstaaten in nationales Recht – etwa Deutschland die ETS-Richtlinie über das TEHG [@tehg]. Jeder Mitgliedstaat legt einen **Nationalen Energie- und Klimaplan (NECP)** vor [@eu_governance].
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-3}
 [Bilanzieren]{.frage}
 [Europäische Umweltagentur (EEA)]{.wer}
 
 Sie führt die nationalen Inventare zum **EU-Treibhausgasinventar** zusammen, meldet es jährlich an die Vereinten Nationen und veröffentlicht vorab Schätzungen und Projektionen [@eea_trends_2025; @eu_governance].
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-4}
 [Unabhängig prüfen]{.frage}
 [Wissenschaftlicher Beirat (ESABCC)]{.wer}
 
 **15 unabhängige Sachverständige**, berufen für vier Jahre. Sie werten die Forschung aus und beraten zu EU-Maßnahmen, Zielen und Treibhausgasbudgets [@eu_klimagesetz_2021; @esabcc]. Die Kommission legt jährlich einen **Klimaschutz-Fortschrittsbericht** vor [@ec_capr_2025].
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-5}
 [Nachsteuern]{.frage}
 [Kommission]{.wer}
-[↺ zurück zu 2 · Planen und umsetzen]{.zurueck}
+[↺ zurück zu 2 · Planen und umsetzen](#rolle-2){.zurueck}
 
 Sie bewertet regelmäßig, ob EU und Mitgliedstaaten auf Kurs sind, und kann Mitgliedstaaten Empfehlungen geben [@eu_klimagesetz_2021]. Das Ziel 2040 wird alle zwei Jahre überprüft und kann angepasst werden [@eu_klimagesetz_2026].
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-6}
 [Finanzieren]{.frage}
 [EU-Haushalt und Emissionshandel]{.wer}
 

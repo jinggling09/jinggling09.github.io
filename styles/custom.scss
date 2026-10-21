@@ -684,7 +684,10 @@ figure.pfad {
   > :not(:first-child) { grid-column: 2; }
   .frage { display: block; font-family: $headings-font-family; font-size: 1.15rem; font-weight: 600; line-height: 1.3; color: var(--spur); }
   .wer { display: block; font-weight: 600; margin: .2rem 0 0; color: $tinte; line-height: 1.4; }
-  .zurueck { display: inline-block; margin-top: .45rem; padding: .05rem .55rem; border: 1px dashed var(--spur); border-radius: 999px; font-size: .8rem; color: var(--spur); }
+  &:target { animation: rolle-hinweis 2.4s ease-out; }
+  scroll-margin-top: 5rem;
+  .zurueck:hover, .zurueck:focus-visible { border-style: solid; background: #fff; }
+  .zurueck { text-decoration: none; display: inline-block; margin-top: .45rem; padding: .05rem .55rem; border: 1px dashed var(--spur); border-radius: 999px; font-size: .8rem; color: var(--spur); }
   p { margin: 0 0 .4rem; }
   @media (max-width: 700px) {
     grid-template-columns: minmax(0, 1fr); padding-left: 3rem;
@@ -1178,3 +1181,5 @@ main.content:has(.technik-karte) #title-block-header { display: none; }
     .za-legende { margin-left: 0; }
   }
 }
+
+@keyframes rolle-hinweis { 0%, 35% { background: rgba(31, 95, 74, .1); } 100% { background: transparent; } }

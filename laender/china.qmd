@@ -157,43 +157,43 @@ Die sechs Rollen im Einzelnen:
 
 ::: {.governance .cn}
 
-::: {.rolle}
+::: {.rolle #rolle-1}
 [Ziele festlegen]{.frage}
 [ZK der KPCh und Staatsrat]{.wer}
 
 Die **Leitlinien von 2021** legen die „Doppel-Kohlenstoff-Ziele“ fest und bilden mit dem Aktionsplan zur CO₂-Spitze das „1+N“-Politiksystem: ein Rahmendokument plus Pläne für einzelne Sektoren [@cn_yijian_2021; @cn_aktionsplan_2021]. Der **Nationale Volkskongress** beschließt die Gesetze [@cn_kodex_2026].
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-2}
 [Koordinieren]{.frage}
 [Leitungsgruppe CO₂-Spitze und CO₂-Neutralität]{.wer}
 
 Ihr Büro sitzt bei der Nationalen Entwicklungs- und Reformkommission (**NDRC**). Es baut das „1+N“-System aus, prüft die Aktionspläne der Provinzen und treibt die CO₂-Statistik voran [@ndrc_leitungsgruppe].
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-3}
 [Umsetzen]{.frage}
 [Ministerien und Provinzen]{.wer}
 
 Das Ministerium für Ökologie und Umwelt (**MEE**) ist für Klimapolitik und den nationalen Emissionshandel zuständig [@mee_qa_2025]; NDRC und Energieverwaltung (**NEA**) steuern Energie und den Ausbau der Erneuerbaren [@nea_2026]. Provinzen und Städte setzen mit eigenen Plänen um [@ndrc_leitungsgruppe].
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-4}
 [Bilanzieren]{.frage}
 [Statistikamt (NBS)]{.wer}
 
 Veröffentlicht jährlich Energieverbrauch, Strommix sowie die Veränderung von Energie- und CO₂-Intensität [@nbs_2025]. Bis 2025 sollte die CO₂-Statistik und -Messung ausgebaut werden, damit die Steuerung auf CO₂ umgestellt werden kann [@cn_doppelkontrolle_2024].
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-5}
 [Kontrollieren]{.frage}
 [Zentralregierung und Umweltinspektion]{.wer}
-[↺ zurück zu 3 · Umsetzen]{.zurueck}
+[↺ zurück zu 3 · Umsetzen](#rolle-3){.zurueck}
 
 Statt eines unabhängigen Gremiums kontrolliert die Verwaltung selbst: Regionen, Branchen und Unternehmen werden an CO₂-Vorgaben gemessen („Kohlenstoff-Bewertung der Regionen“) [@cn_doppelkontrolle_2024]. Das Büro der Leitungsgruppe verfolgt auch gefälschte Emissionsdaten [@ndrc_leitungsgruppe]. Seit dem 15.08.2026 schreibt das Ökologie- und Umweltgesetzbuch Zielverantwortung, Leistungsbewertung und die Umweltinspektion ausdrücklich fest [Art. 27–29 @cn_kodex_text]; die zentrale Umweltinspektion prüft auch die Umsetzung der Klimaziele [Nr. 37 @cn_yijian_2021]. Mehr dazu unter [Wer überwacht die Ziele?](../ziele/index.qmd#kontrolle).
 :::
 
-::: {.rolle}
+::: {.rolle #rolle-6}
 [Finanzieren]{.frage}
 [Zentralbank und Banken]{.wer}
 
