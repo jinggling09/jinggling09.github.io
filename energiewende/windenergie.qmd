@@ -10,7 +10,7 @@ title: "Windenergie"
 
 [Deutschland, EU und China im Vergleich: Wie viel Windstrom gibt es, welche Ziele gelten – und wie steuern die drei den Ausbau an Land und auf See?]{.tk-sub}
 
-[Stand: 16.10.2026]{.stand}
+[Stand: 21.10.2026]{.stand}
 :::
 :::
 
@@ -187,7 +187,7 @@ Programm für **Windräder in Dörfern**: bis zu 20 MW je Verwaltungsdorf, Ertr�
 :::
 
 ::: {.m-zelle .de}
-Im August 2025 gab es **erstmals keine Gebote** für zwei Flächen mit zusammen 2,5 GW [@bnetza_n10_2025]. Die Ausschreibungen für 2026 wurden auf **2027 verschoben**, das WindSeeG wird geändert [@bnetza_offshore_2027].
+Im August 2025 gab es **erstmals keine Gebote** für zwei Flächen mit zusammen 2,5 GW [@bnetza_n10_2025]. Die Ausschreibungen für 2026 wurden auf **2027 verschoben** [@bnetza_offshore_2027]. Der Regierungsentwurf zur Änderung des WindSeeG (September 2026) sieht vor: 2026 keine Ausschreibung, danach ein Korridor von 2.000 bis 4.800 MW pro Jahr, ein Höchstwert von 9,487 ct/kWh und eine Regellaufzeit neuer Parks von 35 statt 25 Jahren [@bt_8238]; beschlossen ist er noch nicht.
 :::
 
 ::: {.m-zelle .eu}

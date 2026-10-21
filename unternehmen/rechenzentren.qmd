@@ -10,7 +10,7 @@ title: "KI und Rechenzentren"
 
 [Künstliche Intelligenz braucht Rechenleistung, Rechenleistung braucht Strom. Wie Deutschland, die EU und China den Verbrauch regeln – und wie sich Verbrauch und Nutzen gegeneinander abwägen lassen.]{.tk-sub}
 
-[Stand: 17.10.2026]{.stand}
+[Stand: 21.10.2026]{.stand}
 :::
 :::
 
@@ -161,7 +161,7 @@ Strenge Energieprüfung neuer Projekte; neue Rechenzentren sollen Server mit nat
 :::
 
 ::: {.m-zelle .de}
-**Lockerung geplant**: Das Kabinett beschloss am 24. Juni 2026 eine Änderung, die die Effizienz- und Abwärmevorgaben abschwächt – begründet mit fehlenden Netzanschlüssen und Wärmenetzen an geeigneten Standorten [Frage 101 @bt_7052]. Das Gesetz ist noch nicht beschlossen.
+**Lockerung geplant**: Das Kabinett beschloss am 24. Juni 2026 eine Änderung, die die Effizienz- und Abwärmevorgaben abschwächt – begründet mit fehlenden Netzanschlüssen und Wärmenetzen an geeigneten Standorten [Frage 101 @bt_7052]. Laut Regierungsentwurf: Bestand höchstens **1,6** ab Juli 2027 und **1,4** ab Juli 2030; neue Rechenzentren weiter 1,2, aber erst **vier statt zwei Jahre** nach Inbetriebnahme; eigene Heizung zählt als Abwärmenutzung; **100 % Ökostrom erst ab 2030** [§ 11 neu @bt_8027]. Erste Lesung am 24.09.2026, noch nicht beschlossen [@bt_kw39_enefg].
 :::
 
 ::: {.m-zelle .eu}
@@ -176,7 +176,7 @@ Strenge Energieprüfung neuer Projekte; neue Rechenzentren sollen Server mit nat
 :::
 
 ::: {.belege}
-**Belege** · Deutschland: geltende Fassung des Energieeffizienzgesetzes [@enefg]; die im Kabinettsentwurf geplanten Werte sind noch nicht amtlich veröffentlicht und deshalb hier nicht genannt [@bt_7052]. EU: [Art. 12 @eu_eed; @ec_rz_2026; @eu_ki_vo]. China: Sonderaktionsplan vom Juli 2024 – Ziele und Leitvorgaben an die Behörden, keine Grenzwerte mit Bußgeld wie in Deutschland [@ndrc_rz_2024].
+**Belege** · Deutschland: geltende Fassung des Energieeffizienzgesetzes [@enefg]; geplante Werte nach dem Regierungsentwurf [@bt_8027]. EU: [Art. 12 @eu_eed; @ec_rz_2026; @eu_ki_vo]. China: Sonderaktionsplan vom Juli 2024 – Ziele und Leitvorgaben an die Behörden, keine Grenzwerte mit Bußgeld wie in Deutschland [@ndrc_rz_2024].
 :::
 
 ## Rechner: Strom und CO₂ eines Rechenzentrums

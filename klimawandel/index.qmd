@@ -95,7 +95,7 @@ Wasserdampf, Ozon, CO₂, Methan und Lachgas kommen natürlich vor; dazu kommen 
 :::
 
 ::: {.gas-info #gas-n2o role="tabpanel" hidden="hidden"}
-**Lachgas (N₂O)** – wirkt fast dreihundertmal so stark wie CO₂ und bleibt sehr lange in der Luft.
+**Lachgas (N₂O)** – entsteht vor allem beim Ausbringen von mineralischem und organischem Dünger; in Deutschland stammen 75,9 % der Lachgas-Emissionen aus der Landwirtschaft [@uba_landwirtschaft_thg].
 
 - **5,3 %** der weltweiten Treibhausgas-Emissionen 2025 [@edgar_2026]
 - Treibhauspotenzial: **273**; Verweildauer **109 Jahre** [Tab. 7.15 @ipcc_wg1_kap7]
@@ -103,7 +103,7 @@ Wasserdampf, Ozon, CO₂, Methan und Lachgas kommen natürlich vor; dazu kommen 
 :::
 
 ::: {.gas-info #gas-f role="tabpanel" hidden="hidden"}
-**Fluorierte Gase (F-Gase)** – künstlich hergestellt [@uba_treibhauseffekt]; einzelne Stoffe wirken tausendfach stärker als CO₂.
+**Fluorierte Gase (F-Gase)** – künstlich hergestellt [@uba_treibhauseffekt]; in Deutschland stammt der weitaus größte Teil der HFKW- und FKW-Emissionen aus Kälte- und Klimaanlagen [@uba_fgase_2026].
 
 - **3,3 %** der weltweiten Treibhausgas-Emissionen 2025 [@edgar_2026]
 - Beispiel HFKW-134a: Treibhauspotenzial **1.526**, Verweildauer **14 Jahre** [Tab. 7.15 @ipcc_wg1_kap7]

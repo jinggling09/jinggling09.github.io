@@ -245,6 +245,20 @@ Der größte Teil der ETS-Einnahmen geht an die Mitgliedstaaten: 2024 waren es 2
 **Belege** · Anteile laut Fortschrittsbericht der Kommission; die übrigen rund 25 % verteilen sich auf weitere Zwecke oder waren noch nicht ausgegeben – 2024 wurden 16,4 Mrd. € als ausgezahlt gemeldet [@ec_progress_2025_ets]. Strompreiskompensation: 3,2 von 24,4 Mrd. €, eigene Rechnung.
 :::
 
+Dazu kommt der Corona-Wiederaufbaufonds, die **Aufbau- und Resilienzfazilität**: Jeder Mitgliedstaat muss mindestens 37 % seines Aufbauplans für Klimaziele einsetzen [@ec_rrf_green]. So verteilen sich diese Klimaausgaben:
+
+::: {.balken-vergleich .breit}
+
+[Aufbau- und Resilienzfazilität: Klimaausgaben nach Bereich, Anteil]{.bv-titel}
+
+`<div class="bv-zeile eu"><span class="bv-land">Nachhaltige Mobilität</span><span class="bv-spur"><span style="width:100%"></span></span><span class="bv-wert">30 %</span></div><div class="bv-zeile eu"><span class="bv-land">Energieeffizienz</span><span class="bv-spur"><span style="width:94.7%"></span></span><span class="bv-wert">29 %</span></div><div class="bv-zeile eu"><span class="bv-land">Erneuerbare und Netze</span><span class="bv-spur"><span style="width:75.5%"></span></span><span class="bv-wert">23 %</span></div><div class="bv-zeile eu"><span class="bv-land">Grüne Forschung und Innovation</span><span class="bv-spur"><span style="width:23.2%"></span></span><span class="bv-wert">7 %</span></div><div class="bv-zeile eu"><span class="bv-land">Anpassung an den Klimawandel</span><span class="bv-spur"><span style="width:11.6%"></span></span><span class="bv-wert">4 %</span></div><div class="bv-zeile eu"><span class="bv-land">übrige Bereiche</span><span class="bv-spur"><span style="width:26.2%"></span></span><span class="bv-wert">8 %</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Belege** · Klimaausgaben der Aufbaupläne nach Politikbereich, Scoreboard der Kommission, Stand 21.10.2026 [@ec_rrf_green]: Mobilität 30,2 %, Effizienz 28,6 %, Erneuerbare und Netze 22,8 %, Forschung 7,0 %, Anpassung 3,5 %; übrige (Kreislaufwirtschaft, Wasser, sonstiger Klimaschutz, Biodiversität, Schadstoffe, grüne Qualifikationen) zusammen 7,9 %. Maßnahmen zählen je nach Klimawirkung zu 100 %, 40 % oder 0 %.
+:::
+
 ::: {.sektoren}
 
 ::: {.sektor}

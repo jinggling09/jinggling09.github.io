@@ -243,7 +243,7 @@ Zu den wichtigsten Förderprogrammen gehören die **Bundesförderung für effizi
 
 ### Wohin fließt das Geld?
 
-Der Wirtschaftsplan des KTF 2026 hat 67 Ausgabetitel. Die 15 größten – jeweils mindestens rund 500 Mio. € – summieren sich auf 35,2 Mrd. € [@wd_ktf_2026]. Nach Bereichen zusammengefasst:
+Der vom Bundestag beschlossene Wirtschaftsplan des KTF 2026 sieht Ausgaben von **34,8 Mrd. €** vor [@hib_ktf_2026]; das Finanzministerium nennt geplante Programmausgaben von rund 37,4 Mrd. € [@bmf_ktf_2026]. Der Plan hat 67 Ausgabetitel; die 15 größten – jeweils mindestens rund 500 Mio. € – summieren sich auf 35,2 Mrd. € [@wd_ktf_2026]. Nach Bereichen zusammengefasst:
 
 ::: {.balken-vergleich .breit}
 
@@ -254,7 +254,7 @@ Der Wirtschaftsplan des KTF 2026 hat 67 Ausgabetitel. Die 15 größten – jewei
 :::
 
 ::: {.belege}
-**Belege** · Soll-Ansätze 2026 nach der Titelübersicht der Wissenschaftlichen Dienste [@wd_ktf_2026], eigene Zusammenfassung: **Strom- und Energiekosten** = Zuschuss zu den Übertragungsnetzkosten 6,5 · Strompreiskompensation 4,0 · Ausgleich der abgeschafften Gasspeicherumlage 3,4 · **Gebäude** = Bundesförderung für effiziente Gebäude (BEG) 11,96 · **Industrie und Wasserstoff** = Wasserstoff in der Industrie (IPCEI) 1,26 · Energieeffizienz in Industrie und Gewerbe 0,97 · Nationale Wasserstoffstrategie 0,90 · Dekarbonisierung der Industrie (u. a. Klimaschutzverträge) 0,70 · deutsch-französische IPCEI-Wasserstoffprojekte 0,68 · Fertigung von Energiespeichern 0,52 · **Verkehr** = Tank- und Ladeinfrastruktur 1,71 · E-Auto-Förderung für Haushalte mit kleinem und mittlerem Einkommen 0,55. Anteile an den 35,2 Mrd. €: Strom- und Energiekosten 40 %, Gebäude 34 %, Industrie und Wasserstoff 14 %, Verkehr 6 %, übrige 6 %. Einen Titel für die Schiene ab 500 Mio. € gibt es im KTF 2026 nicht.
+**Belege** · Soll-Ansätze 2026 nach der Titelübersicht der Wissenschaftlichen Dienste [@wd_ktf_2026], eigene Zusammenfassung: **Strom- und Energiekosten** = Zuschuss zu den Übertragungsnetzkosten 6,5 · Strompreiskompensation 4,0 · Ausgleich der abgeschafften Gasspeicherumlage 3,4 · **Gebäude** = Bundesförderung für effiziente Gebäude (BEG) 11,96 · **Industrie und Wasserstoff** = Wasserstoff in der Industrie (IPCEI) 1,26 · Energieeffizienz in Industrie und Gewerbe 0,97 · Nationale Wasserstoffstrategie 0,90 · Dekarbonisierung der Industrie (u. a. Klimaschutzverträge) 0,70 · deutsch-französische IPCEI-Wasserstoffprojekte 0,68 · Fertigung von Energiespeichern 0,52 · **Verkehr** = Tank- und Ladeinfrastruktur 1,71 · E-Auto-Förderung für Haushalte mit kleinem und mittlerem Einkommen 0,55. Anteile an den 35,2 Mrd. €: Strom- und Energiekosten 40 %, Gebäude 34 %, Industrie und Wasserstoff 14 %, Verkehr 6 %, übrige 6 %. Einen Titel für die Schiene ab 500 Mio. € gibt es im KTF 2026 nicht. Die drei Gesamtsummen sind unterschiedlich abgegrenzt; die Anteile beziehen sich deshalb nur auf die 15 Titel.
 :::
 
 ::: {.sektoren}
@@ -268,9 +268,9 @@ Förderung von Sanierung und Heizungstausch in drei Programmteilen: Einzelmaßna
 
 ::: {.sektor}
 ### Industrie: Klimaschutzverträge
-[2024: 15 Verträge, bis zu 2,8 Mrd. €]{.werte}
+[2024: 15 Verträge, bis zu 2,8 Mrd. € · 2026: zweite Runde mit 5 Mrd. €]{.werte}
 
-Der Staat gleicht über 15 Jahre die Mehrkosten klimafreundlicher Produktion aus [@bmwk_ksv_2024]; finanziert aus dem KTF-Titel „Dekarbonisierung der Industrie“ (2026: 0,70 Mrd. €) [@wd_ktf_2026].
+Der Staat gleicht über 15 Jahre die Mehrkosten klimafreundlicher Produktion aus [@bmwk_ksv_2024]; finanziert aus dem KTF-Titel „Dekarbonisierung der Industrie“ (2026: 0,70 Mrd. €) [@wd_ktf_2026]. Die EU-Kommission genehmigte im Mai 2026 eine zweite Runde mit 5 Mrd. €; Projekte müssen ihre Emissionen binnen vier Jahren um mindestens 50 % und bis Vertragsende um 85 % senken [@ec_ksv_2026]. Ergebnisse lagen am 21.10.2026 noch nicht vor.
 :::
 
 ::: {.sektor}

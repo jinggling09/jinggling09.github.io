@@ -10,7 +10,7 @@ title: "Risiken, Anreize, Nutzen"
 
 [Was Klimarecht für Unternehmen bedeutet: welche Risiken sie bewerten müssen, was CO₂ kostet, mit welchen Förderungen Staaten sie zum Mitmachen bewegen – und wann sich Klimaschutz rechnet.]{.tk-sub}
 
-[Stand: 17.10.2026]{.stand}
+[Stand: 21.10.2026]{.stand}
 :::
 :::
 
@@ -144,7 +144,7 @@ Heizöl, Erdgas, Diesel und Benzin tragen in Deutschland seit 2021 einen CO₂-P
 :::
 
 ::: {.m-zelle .de}
-**Klimaschutzverträge**: Der Staat gleicht über 15 Jahre die Mehrkosten klimafreundlicher Produktion aus; 2024 erhielten 15 Unternehmen bis zu 2,8 Mrd. € [@bmwk_ksv_2024]. Das Klimaschutzprogramm 2026 sieht für 2027 bis 2030 zusätzlich 2,9 Mrd. € für die Industrie vor [@bmukn_ksp_2026].
+**Klimaschutzverträge**: Der Staat gleicht über 15 Jahre die Mehrkosten klimafreundlicher Produktion aus; 2024 erhielten 15 Unternehmen bis zu 2,8 Mrd. € [@bmwk_ksv_2024]. Für eine zweite Runde genehmigte die EU-Kommission im Mai 2026 weitere 5 Mrd. € – mit der Auflage, die Emissionen binnen vier Jahren um mindestens 50 % und nach 15 Jahren um 85 % zu senken [@ec_ksv_2026]; Zuschläge standen am 21.10.2026 noch aus. Das Klimaschutzprogramm 2026 sieht für 2027 bis 2030 zusätzlich 2,9 Mrd. € für die Industrie vor [@bmukn_ksp_2026].
 :::
 
 ::: {.m-zelle .eu}
