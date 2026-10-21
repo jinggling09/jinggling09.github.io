@@ -221,6 +221,26 @@ Im **Übereinkommen von Paris** haben sich die Staaten 2015 verpflichtet, die Er
       });
     });
   }
+  // Videos: abspielen, sobald sie sichtbar sind, sonst pausieren – nicht bei „Bewegung reduzieren“
+  // und nicht wieder starten, wenn jemand selbst pausiert hat
+  var ruhig = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!ruhig && 'IntersectionObserver' in window) {
+    var beob = new IntersectionObserver(function (eintraege) {
+      eintraege.forEach(function (e) {
+        var v = e.target;
+        if (e.isIntersecting) {
+          if (v.dataset.selbst !== 'pause') { v.dataset.auto = '1'; v.play().catch(function () {}); }
+        } else if (!v.paused) {
+          v.dataset.auto = '1'; v.pause();
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.video-karte video').forEach(function (v) {
+      v.addEventListener('pause', function () { if (v.dataset.auto !== '1') v.dataset.selbst = 'pause'; v.dataset.auto = ''; });
+      v.addEventListener('play', function () { if (v.dataset.auto !== '1') v.dataset.selbst = ''; v.dataset.auto = ''; });
+      beob.observe(v);
+    });
+  }
   var tabs = document.querySelectorAll('.gas-wahl button');
   tabs.forEach(function (b) {
     b.addEventListener('click', function () {
