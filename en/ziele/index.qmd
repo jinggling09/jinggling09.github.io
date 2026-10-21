@@ -303,4 +303,4 @@ Besides states, companies also set climate targets – voluntarily. The best-kno
 
 ### Supplement: CDP
 
-**CDP** runs a platform through which companies, cities and regions voluntarily disclose environmental data. CDP scores the disclosures, with A as the top grade; companies, investors and policymakers use the data for decisions [@cdp]. Unlike the SBTi, CDP does not publish a freely downloadable list by country, so a Germany–China comparison in figures is not possible here.
+**CDP** runs a platform through which companies, cities and regions voluntarily disclose environmental data. CDP scores the disclosures, with A as the top grade; companies, investors and policymakers use the data for decisions [@cdp]. In 2025 more than 22,100 companies disclosed data; over 270 major buyers asked around 45,000 suppliers to do so [@cdp_factsheet_2025]. Unlike the SBTi, CDP does not publish a freely downloadable list by country, so a Germany–China comparison in figures is not possible here.

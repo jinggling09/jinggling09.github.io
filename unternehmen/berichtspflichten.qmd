@@ -10,7 +10,7 @@ title: "Berichtspflichten"
 
 [Deutschland, EU und China im Vergleich: Wer muss über Klima und Nachhaltigkeit berichten, nach welchen Standards – und wer prüft die Zahlen?]{.tk-sub}
 
-[Stand: 17.10.2026]{.stand}
+[Stand: 21.10.2026]{.stand}
 :::
 :::
 
@@ -306,6 +306,29 @@ Bis 2030 soll ein einheitliches nationales System stehen – schrittweise von fr
 ## Und die kleineren Unternehmen?
 
 Wer nicht selbst berichten muss, bekommt die Pflichten oft über Kunden zu spüren. Die EU begrenzt das: Unternehmen bis 1.000 Beschäftigte sind „geschützt“ – berichtspflichtige Kunden dürfen von ihnen nicht mehr verlangen, als ein eigener **freiwilliger Standard** vorsieht [@eu_omnibus_2026; @eu_vsme_2026]. China setzt auf den **Grundsatz der Verhältnismäßigkeit**: Unternehmen dürfen die Methode an ihre Mittel anpassen, um kleine Unternehmen zu entlasten [@mof_klima_2025].
+
+## Freiwillig dazu: CDP und SBTi {#freiwillig}
+
+Neben der gesetzlichen Berichtspflicht gibt es zwei freiwillige Rahmen, nach denen Kunden und Investoren häufig fragen. **CDP** sammelt Klimadaten von Unternehmen und bewertet sie. Die **Science Based Targets initiative (SBTi)** prüft, ob ein Klimaziel zum Pariser Abkommen passt. Beide hängen zusammen: CDP gehört zu den Gründern der SBTi [@sbti_about].
+
+| | **CDP** | **SBTi** |
+|---|---|---|
+| Was es ist | Plattform zur Offenlegung von Umweltdaten mit jährlichem Fragebogen und Bewertung; 2025 kamen 899 Unternehmen auf die „A-Liste“ – 5 % von fast 20.000 bewerteten [@cdp] | gemeinnützige Organisation (Charity in England und Wales), die Standards für Klimaziele entwickelt; die Tochter SBTi Services prüft die Ziele [@sbti_about] |
+| Wer fragt danach? | 640 Investoren mit 127 Bio. US-$ Vermögen; über 270 große Einkäufer forderten rund 45.000 Lieferanten zur Offenlegung auf [@cdp_factsheet_2025] | keine gesetzliche Pflicht; das ESRS fragt aber, ob Ziele wissenschaftlich fundiert sind (siehe unten) |
+| Wie viele machen mit? | 2025 über 22.100 Unternehmen mit fast zwei Dritteln des weltweiten Börsenwerts, davon über 4.400 zum ersten Mal [@cdp_factsheet_2025]; Länderzahlen veröffentlicht CDP nicht frei | Deutschland 682, China 831 Unternehmen mit geprüftem Ziel (Stand 15.10.2026) – siehe [Ziele der Unternehmen](../ziele/index.qmd#unternehmensziele) [@sbti_dashboard] |
+| Ablauf | Antwort auf den jährlichen Fragebogen; CDP vergibt eine Note [@cdp] | Zusage, dann innerhalb von 24 Monaten Ziel einreichen; Prüfung meist binnen 12 Wochen; danach 6 Monate Zeit für die Veröffentlichung [@sbti_howto] |
+| Danach | jährlich neu antworten | Fortschritt **jährlich** berichten – Emissionen, Maßnahmen, Hindernisse [CNZS-C36 @sbti_cnzs2] |
+| Bezug zu Pflichtstandards | Fragebogen seit 2024 an **IFRS S2** (ISSB) ausgerichtet; mit dem alten ESRS E1 weitgehend abgestimmt, Abgleich mit dem neuen ESRS folgt [@cdp_alignment] | – |
+
+: {tbl-colwidths="[18,41,41]"}
+
+**Und die CSRD?** Die CSRD legt fest, **wer** berichten muss – nach der Vereinfachung Unternehmen mit über 1.000 Beschäftigten und über 450 Mio. € Umsatz – und dass der Bericht mit begrenzter Sicherheit geprüft wird [@eu_omnibus_2026]. **Was** im Bericht steht, regeln die ESRS [@eu_esrs_2026]. CDP und SBTi sind keine EU-Vorgaben; sie docken an zwei Stellen an: beim Klimaziel (SBTi, siehe nächster Absatz) und bei den Daten – der CDP-Fragebogen ist mit dem bisherigen ESRS E1 weitgehend abgestimmt [@cdp_alignment], sodass Emissions-, Ziel- und Plandaten für beide genutzt werden können.
+
+**Wie das mit der Pflicht zusammenhängt.** Das ESRS verlangt bei den THG-Minderungszielen eine Angabe, ob sie **wissenschaftlich fundiert** und mit 1,5 °C vereinbar sind, und welche Leitlinien und Rahmen zur Festlegung herangezogen wurden [E1-6 Abs. 24 @eu_esrs_2026] – ein von der SBTi geprüftes Ziel ist eine Möglichkeit, das zu belegen. Die Shenzhener Leitlinie verlangt Minderungsziele, Maßnahmen und Fortschritt [Art. 19, 27 @szse_leitlinie_2024] und bei Zielen die zugrunde liegenden Annahmen [Art. 8 @szse_leitlinie_2024], schreibt aber keinen bestimmten Rahmen vor. Weil sich Chinas nationale Standards an den ISSB-Standards orientieren [@mof_basis_qa_2024] und der CDP-Fragebogen an IFRS S2 ausgerichtet ist [@cdp_alignment], lassen sich CDP-Antworten teilweise für beide Welten nutzen.
+
+::: {.einordnung}
+**Einordnung.** Eine CDP-Antwort ist kein geprüfter Teil des Lageberichts und ersetzt den CSRD-Bericht daher nicht – sie kann ihn aber vorbereiten. Für viele Zulieferer ist nicht das Gesetz der erste Kontakt mit Klimaberichten, sondern eine Anfrage über CDP oder die Bitte eines Kunden um ein SBTi-Ziel. Die SBTi ändert gerade ihre Regeln: Ab Version 2.0 des Standards sind Netto-null-Ziele für alle Unternehmen freiwillig, Version 1 bleibt für neue Ziele bis Ende 2027 offen [@sbti_cnzs2].
+:::
 
 ## Einordnung
 

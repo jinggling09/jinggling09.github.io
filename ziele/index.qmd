@@ -279,7 +279,7 @@ Regionen und Behörden, die Ziele verfehlen, droht **öffentliche Rüge, Vorladu
 
 ## Ziele der Unternehmen: Science Based Targets {#unternehmensziele}
 
-Neben den Staaten setzen sich auch Unternehmen Klimaziele – freiwillig. Die bekannteste Prüfstelle ist die **Science Based Targets initiative (SBTi)**: Sie prüft, ob die Ziele eines Unternehmens zu den Minderungspfaden des Pariser Abkommens passen, und veröffentlicht alle Unternehmen mit geprüftem Ziel oder Zusage [@sbti_dashboard].
+Neben den Staaten setzen sich auch Unternehmen Klimaziele – freiwillig. Die bekannteste Prüfstelle ist die **Science Based Targets initiative (SBTi)**: Sie prüft, ob die Ziele eines Unternehmens zu den Minderungspfaden des Pariser Abkommens passen, und veröffentlicht alle Unternehmen mit geprüftem Ziel oder Zusage [@sbti_dashboard]. Ablauf und Bezug zu den Berichtspflichten: [Freiwillig dazu: CDP und SBTi](../unternehmen/berichtspflichten.qmd#freiwillig).
 
 ::: {.balken-vergleich}
 
@@ -309,4 +309,4 @@ Neben den Staaten setzen sich auch Unternehmen Klimaziele – freiwillig. Die be
 
 ### Ergänzung: CDP
 
-**CDP** betreibt eine Plattform, über die Unternehmen, Städte und Regionen freiwillig Umweltdaten offenlegen. CDP bewertet die Angaben mit Noten bis zur Bestnote A; Unternehmen, Investoren und Politik nutzen die Daten für Entscheidungen [@cdp]. Anders als bei der SBTi veröffentlicht CDP keine frei herunterladbare Liste nach Ländern; ein Zahlenvergleich Deutschland – China ist hier deshalb nicht möglich.
+**CDP** betreibt eine Plattform, über die Unternehmen, Städte und Regionen freiwillig Umweltdaten offenlegen. CDP bewertet die Angaben mit Noten bis zur Bestnote A; Unternehmen, Investoren und Politik nutzen die Daten für Entscheidungen [@cdp]. 2025 legten über 22.100 Unternehmen Daten offen; über 270 große Einkäufer forderten rund 45.000 Lieferanten dazu auf [@cdp_factsheet_2025]. Anders als bei der SBTi veröffentlicht CDP keine frei herunterladbare Liste nach Ländern; ein Zahlenvergleich Deutschland – China ist hier deshalb nicht möglich. Wie CDP und SBTi mit den Berichtspflichten zusammenhängen, zeigt [Freiwillig dazu: CDP und SBTi](../unternehmen/berichtspflichten.qmd#freiwillig).
