@@ -89,43 +89,58 @@ Von **Jing Hu** · Umweltwissenschaftlerin, Stuttgart · [Über mich →](ueber-
 [Treibhauseffekt zum Ausprobieren, Erwärmung seit 1880 und die wichtigsten Fakten →](klimawandel/index.qmd)
 :::
 
+```{=html}
+<svg width="0" height="0" class="icon-defs" aria-hidden="true">
+ <symbol id="e-ziel" viewBox="0 0 48 48"><circle cx="22" cy="26" r="16"/><circle cx="22" cy="26" r="9"/><circle cx="22" cy="26" r="2"/><path d="M22 26L40 8M34 8h6v6"/></symbol>
+ <symbol id="e-preis" viewBox="0 0 48 48"><path d="M24 6v34M10 40h28M8 14h32"/><path d="M8 14l-5 12h10zM40 14l-5 12h10z"/><path d="M3 26a5 3 0 0 0 10 0M35 26a5 3 0 0 0 10 0"/></symbol>
+ <symbol id="e-bau" viewBox="0 0 48 48"><path d="M14 44V18M14 18l-9-4M14 18l9-4M14 18l0-10"/><circle cx="14" cy="18" r="1.8"/><path d="M26 44l4-14h14l-4 14zM29 37h13M36 30l-3 14"/></symbol>
+ <symbol id="e-emission" viewBox="0 0 48 48"><path d="M6 44V26l9 5v-5l9 5v-5l9 5V12h6v32z"/><path d="M36 8c0-3 4-3 4-6M30 10c0-3 4-3 4-6"/></symbol>
+</svg>
+```
+
 ::: {.cockpit}
 
 ::: {.ebene}
 [1]{.nr}
+`<svg class="e-icon" aria-hidden="true"><use href="#e-ziel"/></svg>`{=html}
 
 ### [Ziele & Rechtsrahmen](ziele/index.qmd)
 
 [Was wurde versprochen?]{.frage}
 
-EU-Klimagesetz, Bundes-Klimaschutzgesetz und Chinas „Dual-Carbon“-Ziele mit Zieljahren, Zwischenzielen und Verbindlichkeit.
+::: {.e-kennzahl .ziele}
+[−65 %]{.de} [−55 %]{.eu} [Spitze]{.cn}
+[Ziele bis 2030: Deutschland und EU gegenüber 1990, China CO₂-Höchststand · [Belege](ziele/index.qmd#meilensteine-bis-2060)]{.was}
+:::
 
-- [Klimaziele im Vergleich](ziele/index.qmd)
-
-[Neu]{.status}
+- [Ziele der Staaten im Zeitverlauf](ziele/index.qmd)
+- [Wer überwacht die Ziele?](ziele/index.qmd#kontrolle)
+- [Ziele der Unternehmen (SBTi, CDP)](ziele/index.qmd#unternehmensziele)
 :::
 
 ::: {.ebene}
 [2]{.nr}
+`<svg class="e-icon" aria-hidden="true"><use href="#e-preis"/></svg>`{=html}
 
 ### [Instrumente & CO₂-Bepreisung](wissen/index.qmd)
 
 [Womit soll es erreicht werden?]{.frage}
 
-Emissionshandel in China und der EU, CO₂-Preis auf Brennstoffe in Deutschland – und der CO₂-Grenzausgleich als Brücke zwischen beiden.
+::: {.e-kennzahl}
+`<div class="e-balken"><div class="eu"><span>EU-ETS</span><i style="width:100%"></i><b>73,86 €</b></div><div class="de"><span>DE Brennstoffe</span><i style="width:74.5%"></i><b>55 €</b></div><div class="cn"><span>China-ETS</span><i style="width:10.4%"></i><b>7,68 €</b></div></div>`{=html}
+[CO₂-Preis je Tonne, Durchschnitt 2025 · [Belege](unternehmen/anreize.qmd#co2-preise)]{.was}
+:::
 
 - [Chinas nationaler Emissionshandel](wissen/china-ets.qmd)
 - [EU-ETS, ETS 2 & BEHG](wissen/eu-ets.qmd)
-- [CBAM – Grundlagen](wissen/cbam.qmd)
-- [Schnittstelle China ↔ CBAM](wissen/schnittstellen.qmd)
-
-[Im Aufbau]{.status}
+- [CBAM](wissen/cbam.qmd) · [Schnittstelle China ↔ CBAM](wissen/schnittstellen.qmd)
 :::
 
 ::: {.ebene}
 [3]{.nr}
+`<svg class="e-icon" aria-hidden="true"><use href="#e-bau"/></svg>`{=html}
 
-### [Energiewende](energiewende/photovoltaik.qmd)
+### [Energiewende](daten/index.qmd)
 
 [Was wird gebaut?]{.frage}
 
@@ -133,26 +148,36 @@ Emissionshandel in China und der EU, CO₂-Preis auf Brennstoffe in Deutschland 
 
 - [Photovoltaik](energiewende/photovoltaik.qmd) · [Windenergie](energiewende/windenergie.qmd)
 - [Wärmepumpen](energiewende/waermepumpen.qmd) · [Wasserstoff](energiewende/wasserstoff.qmd)
-- [Ausbau-Daten Wind & Solar: Deutschland & China](daten/index.qmd)
 
-[DE monatlich · CN jährlich]{.status}
+[Deutschland monatlich · China jährlich aktualisiert]{.status}
 :::
 
 ::: {.ebene}
 [4]{.nr}
+`<svg class="e-icon" aria-hidden="true"><use href="#e-emission"/></svg>`{=html}
 
 ### [Emissionen](wissen/emissionen-de.qmd)
 
 [Was ist tatsächlich passiert?]{.frage}
 
-Entwicklung der Treibhausgasemissionen – gesamt, nach Sektoren und im Stromsektor.
+::: {.e-kennzahl .einzeln}
+[649 Mio. t]{.zahl}
+[Treibhausgase Deutschland 2025, −48,2 % gegenüber 1990 · [Belege](laender/deutschland.qmd#steckbrief)]{.was}
+:::
 
 - [THG-Dashboard Deutschland](wissen/emissionen-de.qmd)
 - [Stromsektor: CO₂ je Kilowattstunde, DE & CN](wissen/stromsektor.qmd)
 
-[DE live · CN geplant]{.status}
+[China nach Sektoren: in Arbeit]{.status}
 :::
 
+:::
+
+::: {.unternehmen-band}
+[Unternehmen]{.ub-titel}
+[Was müssen Firmen in Deutschland, der EU und China tun?]{.ub-frage}
+
+[Wer wird verpflichtet?](unternehmen/index.qmd) · [Berichtspflichten](unternehmen/berichtspflichten.qmd) · [Pflichten erfüllen](unternehmen/pflichten.qmd) · [Risiken, Anreize, Nutzen](unternehmen/anreize.qmd) · [KI und Rechenzentren](unternehmen/rechenzentren.qmd)
 :::
 
 ::: {.zweispaltig .unten}
@@ -168,6 +193,15 @@ Entwicklung der Treibhausgasemissionen – gesamt, nach Sektoren und im Stromsek
 - [2035]{.datum} China: Netto-THG −7 bis −10 % ggü. Gipfel
 
 [Alle Meilensteine bis 2060 →](ziele/index.qmd#meilensteine-bis-2060)
+
+::: {.zuletzt}
+[Zuletzt aktualisiert]{.eyebrow}
+
+- [21.10.2026]{.datum} [Was ist Klimawandel?](klimawandel/index.qmd) – neu
+- [21.10.2026]{.datum} [Berichtspflichten: CDP und SBTi](unternehmen/berichtspflichten.qmd#freiwillig)
+- [21.10.2026]{.datum} [Ziele: Zeitachse und Kontrolle](ziele/index.qmd)
+- [21.10.2026]{.datum} [Länder: Wohin fließt das Geld?](laender/deutschland.qmd#klimafinanzierung)
+:::
 :::
 
 ::: {.leitgedanke}

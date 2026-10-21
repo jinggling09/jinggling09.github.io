@@ -1245,3 +1245,38 @@ nav.sitemap {
   @media (max-width: 575.98px) { .sm-innen { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 }
 nav.sitemap + footer.footer { margin-top: 0; border-top: 1px solid rgba(255, 255, 255, .12); }
+
+/* ---------- Startseite: Ebenen-Karten mit Zeichnung und Kennzahl (Variante A, von Jing gewählt) ---------- */
+.cockpit { align-items: stretch; }
+.ebene {
+  .e-icon { position: absolute; right: 1.1rem; top: 1rem; width: 46px; height: 46px; fill: none; stroke: $gruen; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; opacity: .55; }
+  h3 { padding-right: 3.4rem; }
+  .e-kennzahl { margin: .3rem 0 .7rem; p { margin: 0; }
+    .was { display: block; font-size: .8rem; line-height: 1.4; color: $grau; margin-top: .25rem; a { color: $grau; } }
+    .zahl { display: block; font-family: $headings-font-family; font-size: 1.7rem; line-height: 1.15; color: $tinte; font-variant-numeric: tabular-nums; }
+    &.ziele span.de, &.ziele span.eu, &.ziele span.cn { font-family: $headings-font-family; font-size: 1.7rem; line-height: 1.15; margin-right: .5rem; font-variant-numeric: tabular-nums; }
+    &.ziele .de { color: $spur-de-text; } &.ziele .eu { color: $spur-eu; } &.ziele .cn { color: $spur-cn; }
+  }
+  .e-balken { display: grid; gap: .3rem; font-size: .82rem;
+    > div { display: grid; grid-template-columns: 6.6rem minmax(0, 1fr) 3.6rem; align-items: center; gap: .5rem; }
+    @media (max-width: 575.98px) { > div { grid-template-columns: 5.4rem minmax(0, 1fr) 3.4rem; gap: .35rem; } span { font-size: .76rem; } }
+    i { display: block; height: 10px; border-radius: 0 2px 2px 0; min-width: 3px; }
+    b { text-align: right; font-variant-numeric: tabular-nums; }
+    .eu i { background: $spur-eu; } .eu b { color: $spur-eu; }
+    .de i { background: $spur-de; } .de b { color: $spur-de-text; }
+    .cn i { background: $spur-cn; } .cn b { color: $spur-cn; }
+  }
+}
+/* Unternehmen-Band */
+.unternehmen-band { margin: 1.6rem 0 3rem; background: #fbf6ec; border: 1px solid #eadfc8; border-left: 4px solid $ocker; border-radius: 4px; padding: 1rem 1.3rem;
+  p { margin: 0; }
+  .ub-titel { display: block; font-family: $headings-font-family; font-size: 1.2rem; font-weight: 600; }
+  .ub-frage { display: block; font-style: italic; color: $grau; margin-bottom: .45rem; }
+  a { font-size: .93rem; }
+}
+/* Zuletzt aktualisiert */
+.zuletzt { margin-top: 2rem;
+  ul { list-style: none; padding: 0; margin: .4rem 0 0; }
+  li { margin: 0 0 .45rem; font-size: .95rem; }
+  .datum { display: inline-block; min-width: 6.2rem; font-size: .78rem; font-weight: 700; color: $gruen; font-variant-numeric: tabular-nums; }
+}

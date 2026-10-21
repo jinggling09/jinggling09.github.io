@@ -39,7 +39,7 @@ Klimagesetze sind für Unternehmen nicht nur Pflicht, sondern auch eine Rechnung
 **Belege** · Begriffe nach der Shenzhener Leitlinie [Art. 59 Nr. 7, 8, 10 @szse_leitlinie_2024]; der chinesische Klimastandard des Finanzministeriums baut auf dem internationalen Standard IFRS S2 auf [@mof_klima_2025]. Berichtspflichtige Unternehmen müssen diese Risiken bewerten und offenlegen [Art. 14 @szse_leitlinie_2024; @eu_esrs_2026], siehe [Berichtspflichten](berichtspflichten.qmd).
 :::
 
-## Was eine Tonne CO₂ kostet
+## Was eine Tonne CO₂ kostet {#co2-preise}
 
 Das greifbarste Übergangsrisiko ist der CO₂-Preis. Er unterscheidet sich zwischen den drei Systemen um fast das Zehnfache:
 
