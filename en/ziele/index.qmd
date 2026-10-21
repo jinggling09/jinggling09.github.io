@@ -4,12 +4,16 @@ subtitle: "What the EU, Germany and China have committed to – and how binding 
 ---
 
 ::: {.stand}
-Last checked: 15 Oct 2026
+Last checked: 21 Oct 2026
 :::
 
 [Level 1 of 4 · Targets → [Instruments](../wissen/index.qmd) → [Renewables](../daten/index.qmd) → [Emissions](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
 
-All three have a long-term "net zero" or neutrality goal. They differ in **when** it is to be reached, **which gases** it covers, **what** interim targets are measured against – and whether it is **legally enforceable**.
+This page has two parts: the **targets of states** – timeline, assessment by the Net Zero Tracker and who monitors the targets – and the **voluntary targets of companies**.
+
+All three have a long-term "net zero" or neutrality goal. They differ in **when** it is to be reached, **which gases** it covers, **what** interim targets are measured against – and whether it is **set in law** and how it is monitored.
+
+[Part A · Targets of states]{.teil-marke}
 
 ## At a glance
 
@@ -41,46 +45,262 @@ All three have a long-term "net zero" or neutrality goal. They differ in **when*
 ```
 [China]{.wer}
 [2060]{.jahr}
-[Carbon neutrality before 2060; CO₂ emissions peak before 2030]{.was}
-[Policy document]{.status-chip .politik} [@cn_yijian_2021]
+[Carbon neutrality before 2060 (CO₂ only, according to the Net Zero Tracker); CO₂ peak before 2030]{.was}
+[Principle in law]{.status-chip .gesetz-teil} [Target year in policy document]{.status-chip .politik} [Art. 1032 @cn_kodex_text; @cn_yijian_2021]
 :::
 
 :::
 
 ## Milestones to 2060
 
-Read from top to bottom, the table shows how the three target paths are staggered over time. Note the base years: the EU and Germany measure against **1990**, China against **2005**, **2020**, **2025** or its **emissions peak**.
+Each track shows the interim and final targets of one actor. A **filled dot** marks a target covering all greenhouse gases, a **ring** a target for CO₂ or CO₂ intensity only. Hover over a dot or tap it to see the target and its source. Note the base years: the EU and Germany measure against **1990**, China against **2005**, **2020**, **2025** or its **emissions peak**.
 
-::: {.meilensteine}
+::: {.zeitachse}
 
-| Year | [EU]{.spur .eu} | [Germany]{.spur .de} | [China]{.spur .cn} |
-|---|-------------|-------------|------------------|
-| **2025** | – | – | CO₂ per unit of GDP −18 % vs. 2020; non-fossil share of energy consumption ≈ 20 % |
-| **2030** | Net GHG **−55 %** vs. 1990 | GHG **−65 %** vs. 1990; land-use sink (LULUCF) ≥ 25 Mt | **CO₂ peak before 2030**; CO₂ per unit of GDP −65 % vs. 2005; non-fossil ≈ 25 %; wind + solar ≥ 1,200 GW · *new in 2026:* CO₂ per unit of GDP −17 % vs. 2025 |
-| **2035** | – | – | Economy-wide net GHG **−7 to −10 %** below peak; non-fossil > 30 %; wind + solar aiming for 3,600 GW |
-| **2040** | Net GHG **−90 %** vs. 1990 | GHG **−88 %** vs. 1990; LULUCF sink ≥ 35 Mt | – |
-| **2045** | – | **Net GHG neutrality**; LULUCF sink ≥ 40 Mt | – |
-| **2050** | **Net zero**, negative emissions thereafter | negative emissions after 2050 | – |
-| **2060** | – | – | **Carbon neutrality**; non-fossil > 80 % |
+```{=html}
+<div class="za-achse" aria-hidden="true"><span style="--x:0%">2025</span><span style="--x:14.29%">2030</span><span style="--x:28.57%">2035</span><span style="--x:42.86%">2040</span><span style="--x:57.14%">2045</span><span style="--x:71.43%">2050</span><span style="--x:85.71%">2055</span><span style="--x:100%">2060</span></div>
+```
+
+::: {.za-spur .eu}
+[EU]{.za-label}
+
+::: {.ms .voll tabindex="0" style="--x:14.29%"}
+[2030]{.ms-jahr}
+
+::: {.ms-info}
+**Net GHG −55 %** vs. 1990 [Art. 4(1) @eu_klimagesetz_2021]
+:::
+:::
+
+::: {.ms .voll tabindex="0" style="--x:42.86%"}
+[2040]{.ms-jahr}
+
+::: {.ms-info}
+**Net GHG −90 %** vs. 1990 [@eu_klimagesetz_2026]
+:::
+:::
+
+::: {.ms .voll .haupt .rechts tabindex="0" style="--x:71.43%"}
+[2050]{.ms-jahr}
+
+::: {.ms-info}
+**Net zero** for all greenhouse gases, negative emissions thereafter [Art. 2(1) @eu_klimagesetz_2021]
+:::
+:::
+:::
+
+::: {.za-spur .de}
+[DE]{.za-label}
+
+::: {.ms .voll tabindex="0" style="--x:14.29%"}
+[2030]{.ms-jahr}
+
+::: {.ms-info}
+**GHG −65 %** vs. 1990; land-use sink (LULUCF) at least 25 Mt [§§ 3, 3a @ksg]
+:::
+:::
+
+::: {.ms .voll tabindex="0" style="--x:28.57%"}
+[2035]{.ms-jahr}
+
+::: {.ms-info}
+**GHG −77 %** vs. 1990 – one of the annual reduction targets for 2031–2040 [Annex 3 @ksg]
+:::
+:::
+
+::: {.ms .voll tabindex="0" style="--x:42.86%"}
+[2040]{.ms-jahr}
+
+::: {.ms-info}
+**GHG −88 %** vs. 1990; LULUCF sink at least 35 Mt [§§ 3, 3a @ksg]
+:::
+:::
+
+::: {.ms .voll .haupt tabindex="0" style="--x:57.14%"}
+[2045]{.ms-jahr}
+
+::: {.ms-info}
+**Net greenhouse gas neutrality**; LULUCF sink at least 40 Mt [§§ 3(2), 3a @ksg]
+:::
+:::
+
+::: {.ms .voll .rechts tabindex="0" style="--x:71.43%"}
+[2050]{.ms-jahr}
+
+::: {.ms-info}
+**Negative emissions** after 2050 [§ 3(2) @ksg]
+:::
+:::
+:::
+
+::: {.za-spur .cn}
+[CN]{.za-label}
+
+::: {.ms .co2 tabindex="0" style="--x:0%"}
+[2025]{.ms-jahr}
+
+::: {.ms-info}
+**CO₂ per unit of GDP −18 %** vs. 2020; non-fossil share of energy consumption about 20 % [@cn_aktionsplan_2021]
+:::
+:::
+
+::: {.ms .co2 tabindex="0" style="--x:14.29%"}
+[2030]{.ms-jahr}
+
+::: {.ms-info}
+**CO₂ peak before 2030**; CO₂ per unit of GDP −65 % vs. 2005; non-fossil about 25 %; wind + solar at least 1,200 GW [@cn_aktionsplan_2021]. New in 2026: CO₂ per unit of GDP −17 % vs. 2025 [@cn_15fyp_klima_2026]
+:::
+:::
+
+::: {.ms .voll tabindex="0" style="--x:28.57%"}
+[2035]{.ms-jahr}
+
+::: {.ms-info}
+**Economy-wide net GHG −7 to −10 %** below peak – the first target for all greenhouse gases; non-fossil above 30 %; wind + solar aiming for 3,600 GW [@cn_ndc_2035]
+:::
+:::
+
+::: {.ms .co2 .haupt .rechts tabindex="0" style="--x:100%"}
+[2060]{.ms-jahr}
+
+::: {.ms-info}
+**Carbon neutrality before 2060**; non-fossil above 80 % [@cn_yijian_2021]. The guidelines do not specify the gases covered; the Net Zero Tracker records it as a CO₂-only target [@nzt_api]
+:::
+:::
+:::
+
+```{=html}
+<div class="za-legende"><span class="voll">all greenhouse gases</span><span class="co2">CO₂ or CO₂ intensity only</span><span class="haupt">neutrality target</span></div>
+```
 
 :::
 
 ::: {.belege}
-**Sources** · EU: European Climate Law, Arts. 2 and 4 [@eu_klimagesetz_2021; @eu_klimagesetz_2026] · Germany: §§ 3, 3a KSG [@ksg] · China: 2025/2030 Action Plan [@cn_aktionsplan_2021], new 2030 target in the 15th Five-Year climate plan [@cn_15fyp_klima_2026], 2035 NDC [@cn_ndc_2035], 2060 [@cn_yijian_2021]
+**Sources** · EU: European Climate Law, Art. 2 and 4 [@eu_klimagesetz_2021; @eu_klimagesetz_2026] · Germany: §§ 3, 3a and Annex 3 KSG [@ksg] · China: 2025/2030 Action Plan [@cn_aktionsplan_2021], new 2030 target in the climate plan for the 15th Five-Year Plan [@cn_15fyp_klima_2026], 2035 NDC [@cn_ndc_2035], 2060 [@cn_yijian_2021]
 :::
 
 ## What sets the targets apart
 
 ::: {.einordnung}
-**Absolute vs. relative.** The EU and Germany set absolute reductions against 1990. Until 2030, China steers by **carbon intensity** (CO₂ per unit of GDP) and an emissions peak; its first absolute target is in the 2035 NDC (−7 to −10 % below the peak).
+**Absolute vs. relative.** The EU and Germany set absolute reductions against 1990. Until 2030, China steers by **CO₂ intensity** (CO₂ per unit of GDP) and an emissions peak; its first absolute target is in the 2035 NDC (−7 to −10 % below peak).
 
-**Gases covered.** EU and German targets cover all greenhouse gases. In official documents, China's neutrality goal refers to CO₂; the 2035 NDC is its first target covering **all greenhouse gases across the whole economy**.
+**Gases covered.** The EU and German targets cover all greenhouse gases. China's targets up to 2030 refer to CO₂. For the 2060 neutrality target the guidelines name no set of gases; the Net Zero Tracker treats it as a CO₂ target. The 2035 NDC is the first target for **all greenhouse gases across the economy**.
 
-**Legal force.** In the EU and Germany the targets are set in law and can be reviewed by courts. In China they are laid down in Party and government documents; there is no climate law yet.
+**Legal status.** In the EU and Germany, targets and target years are set in law. In China, since 15 August 2026 the **Ecological and Environmental Code** anchors the CO₂ peak and carbon neutrality as a principle: they must be integrated into national development planning, and total CO₂ emissions and CO₂ intensity are subject to control [Art. 1032 @cn_kodex_text]. The Code does not state the **target years** 2030 and 2060; they remain in Party and government documents [@cn_yijian_2021; @cn_aktionsplan_2021]. A dedicated climate change law is not in the 2026 legislative plan of either the National People's Congress or the State Council [@npcsc_plan_2026; @gwy_plan_2026].
 :::
 
 ## How the Net Zero Tracker rates them
 
-The [Net Zero Tracker](https://zerotracker.net/) assesses net-zero targets worldwide against common criteria. The table shows its entries for the three actors [@nzt_api].
+The [Net Zero Tracker](https://zerotracker.net/) assesses net-zero targets worldwide using uniform criteria. The table below shows its entries for the three actors [@nzt_api].
 
 {{< include _nzt-tabelle.md >}}
+
+::: {.belege}
+**Note on China's status** · The Net Zero Tracker lists China's target as a policy document; its entry was last updated on 9 Dec 2025, before the Ecological and Environmental Code. Since 15 Aug 2026 the Code anchors the target as a principle, without a target year [Art. 1032 @cn_kodex_text].
+:::
+
+## Who monitors the targets? {#kontrolle}
+
+A target is only as strong as its oversight. In Germany and the EU, **independent experts** review the data, and the law sets out what happens if a target is missed. China relies on **targets passed down the administrative hierarchy**: targets are allocated to provinces and sectors, their fulfilment is assessed, and the central environmental inspection checks it.
+
+::: {.matrix}
+
+```{=html}
+<div class="m-kopf"><span></span><span class="m-land de">Germany</span><span class="m-land eu">European Union</span><span class="m-land cn">China</span></div>
+```
+
+::: {.m-zeile}
+::: {.m-frage}
+**Who reviews?**
+:::
+
+::: {.m-zelle .de}
+The Federal Environment Agency submits emissions and projection data. The **Council of Experts on Climate Change** – five experts, bound only by their statutory mandate – assesses them within two months [§§ 11, 12 @ksg]. The government reports to the Bundestag every year by 30 June [§ 10 @ksg].
+:::
+
+::: {.m-zelle .eu}
+The **European Scientific Advisory Board on Climate Change** gives independent advice [Art. 3 @eu_klimagesetz_2021; @esabcc]. Every five years the **Commission** assesses the EU's progress and the measures of the member states [Art. 6, 7 @eu_klimagesetz_2021].
+:::
+
+::: {.m-zelle .cn}
+**Target responsibility and assessment**: the Code requires a system of target responsibility and performance assessment [Art. 27 @cn_kodex_text]. Energy and CO₂ targets are allocated to regions and assessed together [Section VI @cn_aktionsplan_2021; @cn_doppelkontrolle_2024].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+**Who checks implementation?**
+:::
+
+::: {.m-zelle .de}
+The Bundestag and the public, via the reports; the Council of Experts submits its assessments to the government and the Bundestag [§ 12 @ksg].
+:::
+
+::: {.m-zelle .eu}
+The European Parliament and the Council receive the Commission's assessments; the Commission can issue **recommendations** to member states [Art. 7 @eu_klimagesetz_2021].
+:::
+
+::: {.m-zelle .cn}
+The **central environmental inspection** examines provinces, ministries and central state-owned enterprises, as a rule once per term of the Central Committee [Art. 5 @cn_inspektion_2019; Art. 28 @cn_kodex_text]. Implementation of the climate targets is part of this inspection [No. 37 @cn_yijian_2021].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+**What if targets are missed?**
+:::
+
+::: {.m-zelle .de}
+If projection data show an overshoot in two consecutive years, the government must **adopt measures** [§ 8 @ksg]. In 2021 the Federal Constitutional Court required that the burden of reductions not be pushed into the future [@bverfg_2021].
+:::
+
+::: {.m-zelle .eu}
+Member states must take the Commission's recommendations into account or explain why they deviate from them [Art. 7 @eu_klimagesetz_2021].
+:::
+
+::: {.m-zelle .cn}
+Regions and authorities that miss targets face **public criticism, summons for talks and accountability**; the climate targets carry greater weight in the assessment of regions [No. 37 @cn_yijian_2021]. After an inspection, a rectification plan is mandatory [Art. 29 @cn_kodex_text].
+:::
+:::
+
+:::
+
+::: {.einordnung}
+**Two logics of oversight.** In Germany and the EU, oversight works through **transparency**: published data, independent assessment, a duty to correct course – and in Germany also the Constitutional Court. In China it works through the **administrative hierarchy**: targets are passed down, fulfilment is assessed and inspected from above. The Code now explicitly lays down both instruments (Art. 27–29).
+:::
+
+[Part B · Targets of companies]{.teil-marke}
+
+## Corporate targets: Science Based Targets {#unternehmensziele}
+
+Besides states, companies also set climate targets – voluntarily. The best-known reviewer is the **Science Based Targets initiative (SBTi)**: it checks whether a company's targets are in line with the reduction pathways of the Paris Agreement and publishes all companies with a validated target or a commitment [@sbti_dashboard].
+
+::: {.balken-vergleich}
+
+[Companies with an SBTi-validated (near-term) target]{.bv-titel}
+
+`<div class="bv-zeile de"><span class="bv-land">Germany</span><span class="bv-spur"><span style="width:82.1%"></span></span><span class="bv-wert">682</span></div><div class="bv-zeile cn"><span class="bv-land">China</span><span class="bv-spur"><span style="width:100%"></span></span><span class="bv-wert">831</span></div>`{=html}
+
+[of which with a validated net-zero target]{.bv-titel}
+
+`<div class="bv-zeile de"><span class="bv-land">Germany</span><span class="bv-spur"><span style="width:24%"></span></span><span class="bv-wert">199</span></div><div class="bv-zeile cn"><span class="bv-land">China</span><span class="bv-spur"><span style="width:14.3%"></span></span><span class="bv-wert">119</span></div>`{=html}
+
+[Commitment, target not yet validated]{.bv-titel}
+
+`<div class="bv-zeile de"><span class="bv-land">Germany</span><span class="bv-spur"><span style="width:26.8%"></span></span><span class="bv-wert">223</span></div><div class="bv-zeile cn"><span class="bv-land">China</span><span class="bv-spur"><span style="width:19.4%"></span></span><span class="bv-wert">161</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Sources** · SBTi Target Dashboard, data as of 15 Oct 2026, own count by country of headquarters; "China" excludes Hong Kong, Macao and Taiwan, which the SBTi lists separately [@sbti_dashboard]. For comparison: the EU-27 together have 3,782 companies with a validated target. Commitments withdrawn: Germany 74, China 88.
+:::
+
+**Which sectors?** In Germany, food and beverages lead (65 companies with a validated target), followed by electrical equipment and machinery (62) and professional services (58). In China, consumer durables, household and personal products lead (159), followed by electrical equipment and machinery (114) and professional services (90); textiles and apparel follow with 66. Small and medium-sized enterprises account for 304 of the companies with a validated target in Germany and 469 in China [@sbti_dashboard].
+
+::: {.einordnung}
+**Assessment.** Chinese companies with an SBTi target often come from sectors that produce a great deal for customers abroad – consumer goods, textiles, electrical equipment. This suggests that requirements from buyers in Europe and elsewhere play an important role; the data alone cannot prove the reason. For steel, aluminium, cement and fertilisers, what counts is not a voluntary target but the carbon price at the EU border: see [CBAM – Carbon Border Adjustment Mechanism](../wissen/cbam.qmd) and [Interface China ↔ CBAM](../wissen/schnittstellen.qmd).
+:::
+
+### Supplement: CDP
+
+**CDP** runs a platform through which companies, cities and regions voluntarily disclose environmental data. CDP scores the disclosures, with A as the top grade; companies, investors and policymakers use the data for decisions [@cdp]. Unlike the SBTi, CDP does not publish a freely downloadable list by country, so a Germany–China comparison in figures is not possible here.

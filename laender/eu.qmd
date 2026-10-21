@@ -4,7 +4,7 @@ subtitle: "Wer setzt die Ziele, wer setzt sie um, wer kontrolliert – und wo st
 ---
 
 ::: {.stand}
-Stand: 16.10.2026
+Stand: 21.10.2026
 :::
 
 [Länderüberblick · [Ziele im Vergleich](../ziele/index.qmd) · [Deutschland: Klimaschutz im Überblick](deutschland.qmd) · [EU-ETS & BEHG](../wissen/eu-ets.qmd)]{.ebenen-pfad}
@@ -173,42 +173,51 @@ Die sechs Rollen im Einzelnen:
 ::: {.rolle}
 [Ziele festlegen]{.frage}
 [Europäisches Parlament und Rat]{.wer}
+
 Die **Kommission** schlägt Gesetze vor; **Parlament** und **Rat** (die Regierungen der Mitgliedstaaten) beschließen sie gemeinsam. So entstanden das Klimagesetz und das „Fit-for-55"-Paket für das Ziel 2030 [@eu_klimagesetz_2021; @eu_klimagesetz_2026].
 :::
 
 ::: {.rolle}
 [Planen und umsetzen]{.frage}
 [Kommission und Mitgliedstaaten]{.wer}
+
 Die Kommission setzt EU-Recht um und überwacht es. **Verordnungen** gelten direkt, **Richtlinien** übertragen die Mitgliedstaaten in nationales Recht – etwa Deutschland die ETS-Richtlinie über das TEHG [@tehg]. Jeder Mitgliedstaat legt einen **Nationalen Energie- und Klimaplan (NECP)** vor [@eu_governance].
 :::
 
 ::: {.rolle}
 [Bilanzieren]{.frage}
 [Europäische Umweltagentur (EEA)]{.wer}
+
 Sie führt die nationalen Inventare zum **EU-Treibhausgasinventar** zusammen, meldet es jährlich an die Vereinten Nationen und veröffentlicht vorab Schätzungen und Projektionen [@eea_trends_2025; @eu_governance].
 :::
 
 ::: {.rolle}
 [Unabhängig prüfen]{.frage}
 [Wissenschaftlicher Beirat (ESABCC)]{.wer}
+
 **15 unabhängige Sachverständige**, berufen für vier Jahre. Sie werten die Forschung aus und beraten zu EU-Maßnahmen, Zielen und Treibhausgasbudgets [@eu_klimagesetz_2021; @esabcc]. Die Kommission legt jährlich einen **Klimaschutz-Fortschrittsbericht** vor [@ec_capr_2025].
 :::
 
 ::: {.rolle}
 [Nachsteuern]{.frage}
 [Kommission]{.wer}
+[↺ zurück zu 2 · Planen und umsetzen]{.zurueck}
+
 Sie bewertet regelmäßig, ob EU und Mitgliedstaaten auf Kurs sind, und kann Mitgliedstaaten Empfehlungen geben [@eu_klimagesetz_2021]. Das Ziel 2040 wird alle zwei Jahre überprüft und kann angepasst werden [@eu_klimagesetz_2026].
 :::
 
 ::: {.rolle}
 [Finanzieren]{.frage}
 [EU-Haushalt und Emissionshandel]{.wer}
-Einnahmen aus dem Emissionshandel, eigene Fonds und der EU-Haushalt – Details im [nächsten Abschnitt](#klimafinanzierung-woher-kommt-das-geld).
+
+Einnahmen aus dem Emissionshandel, eigene Fonds und der EU-Haushalt – Details im [nächsten Abschnitt](#klimafinanzierung).
 :::
 
 :::
 
-## Klimafinanzierung: Woher kommt das Geld?
+## Klimafinanzierung: Woher kommt das Geld, wohin fließt es? {#klimafinanzierung}
+
+### Woher kommt das Geld?
 
 | Quelle | Umfang | Verwendung |
 |---|---|---|
@@ -219,6 +228,51 @@ Einnahmen aus dem Emissionshandel, eigene Fonds und der EU-Haushalt – Details 
 | **EU-Haushalt 2021–2027** | **662 Mrd. €** für Klimaziele vorgesehen [@ec_capr_news_2025] | Querschnitt über alle Programme |
 
 : {tbl-colwidths="[24,44,32]"}
+
+### Wohin fließt das Geld?
+
+Der größte Teil der ETS-Einnahmen geht an die Mitgliedstaaten: 2024 waren es 24,4 Mrd. €. Davon nutzten sie 3,2 Mrd. € als Strompreiskompensation für energieintensive Unternehmen; die übrigen 21,2 Mrd. € müssen in Klimaschutz und Energiewende fließen, aber nicht im selben Jahr [@ec_progress_2025_ets].
+
+::: {.balken-vergleich .breit}
+
+[Verwendung der ETS-Einnahmen der Mitgliedstaaten 2024, Anteil]{.bv-titel}
+
+`<div class="bv-zeile eu"><span class="bv-land">Öffentlicher Verkehr, Mobilität</span><span class="bv-spur"><span style="width:100.0%"></span></span><span class="bv-wert">22 %</span></div><div class="bv-zeile eu"><span class="bv-land">Erneuerbare, Netze, Speicher</span><span class="bv-spur"><span style="width:90.9%"></span></span><span class="bv-wert">20 %</span></div><div class="bv-zeile eu"><span class="bv-land">Energieeffizienz Industrie, Gebäude</span><span class="bv-spur"><span style="width:90.9%"></span></span><span class="bv-wert">20 %</span></div><div class="bv-zeile eu"><span class="bv-land">Strompreiskompensation</span><span class="bv-spur"><span style="width:59.5%"></span></span><span class="bv-wert">13 %</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Belege** · Anteile laut Fortschrittsbericht der Kommission; die übrigen rund 25 % verteilen sich auf weitere Zwecke oder waren noch nicht ausgegeben – 2024 wurden 16,4 Mrd. € als ausgezahlt gemeldet [@ec_progress_2025_ets]. Strompreiskompensation: 3,2 von 24,4 Mrd. €, eigene Rechnung.
+:::
+
+::: {.sektoren}
+
+::: {.sektor}
+### Wasserstoff: Wasserstoffbank
+[2026: 1,09 Mrd. € für 9 Projekte]{.werte}
+
+Die dritte Auktion der Europäischen Wasserstoffbank fördert die Erzeugung von erneuerbarem Wasserstoff, bezahlt aus ETS-Einnahmen über den Innovationsfonds [@ec_ehb3_2026].
+:::
+
+::: {.sektor}
+### Technik: Innovationsfonds
+[rund 40 Mrd. € von 2020 bis 2030]{.werte}
+
+Fördert emissionsarme Technologien in Industrie und Energie, finanziert aus dem Emissionshandel [@consilium_finanzierung].
+:::
+
+::: {.sektor}
+### Haushalte: Klima-Sozialfonds
+[mindestens 86,7 Mrd. € mit nationaler Kofinanzierung]{.werte}
+
+Entlastet Haushalte und Kleinunternehmen beim CO₂-Preis auf Heizen und Verkehr; wegen des ETS-2-Starts erst 2028 sinkt die Obergrenze der EU-Mittel auf 54,6 Mrd. € [@eu_scf; @eu_scf_leitfaden].
+:::
+
+:::
+
+::: {.einordnung}
+**Einordnung.** Die EU verteilt das Geld vor allem über die Mitgliedstaaten; deren Schwerpunkte – Verkehr, erneuerbare Energien, Effizienz – liegen gleichauf. Wie in Deutschland geht ein spürbarer Teil in die Entlastung energieintensiver Unternehmen bei den Strompreisen.
+:::
 
 ## Rechtsrahmen: die wichtigsten Rechtsakte
 

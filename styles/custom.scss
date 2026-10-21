@@ -48,6 +48,21 @@ body { font-size: 1.05rem; line-height: 1.65; }
   .navbar .navbar-nav .nav-link { font-size: .88rem; padding-left: .4rem; padding-right: .4rem; }
 }
 
+/* Ebenen-Nummern 1–4 vor Ziele, CO₂-Bepreisung, Energiewende, Emissionen (Reihenfolge wie in _quarto.yml) */
+.navbar .navbar-nav.me-auto > li:nth-child(n+2):nth-child(-n+5) > .nav-link .menu-text::before {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.05rem; height: 1.05rem; margin-right: .3rem; vertical-align: .08em;
+  border: 1px solid currentColor; border-radius: 50%;
+  font-size: .64rem; font-weight: 700; line-height: 1; color: $gruen;
+}
+.navbar .navbar-nav.me-auto > li:nth-child(2) > .nav-link .menu-text::before { content: "1"; }
+.navbar .navbar-nav.me-auto > li:nth-child(3) > .nav-link .menu-text::before { content: "2"; }
+.navbar .navbar-nav.me-auto > li:nth-child(4) > .nav-link .menu-text::before { content: "3"; }
+.navbar .navbar-nav.me-auto > li:nth-child(5) > .nav-link .menu-text::before { content: "4"; }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar .navbar-nav.me-auto > li > .nav-link .menu-text::before { display: none; } /* zu eng: Nummern erst ab 1200 px */
+}
+
 /* ---------- Überschriften & Titelblock ---------- */
 h1, h2, h3, .title { letter-spacing: -.012em; }
 h2 {
@@ -445,6 +460,7 @@ $spur-cn: #b0412e;
   margin-right: .3rem;
   &.gesetz  { background: $gruen-hell; color: $gruen; }
   &.politik { background: #fbf0dc; color: #8a5d12; }
+  &.gesetz-teil { background: #fff; color: $gruen; box-shadow: inset 0 0 0 1px $gruen; }
 }
 
 .spur {
@@ -586,10 +602,22 @@ html[lang|="zh"] .ebene .gruppe { letter-spacing: .04em; }
   .umriss { width: 64px; height: 64px; top: .8rem; right: .9rem; }
   .jahr { font-size: 2.2rem; margin: .2rem 0 .1rem; }
   .was { min-height: 0; margin-bottom: 0; font-size: .9rem; }
+  .bis { display: block; position: relative; z-index: 1; font-size: .8rem; color: $grau; margin-top: .35rem; }
   &:hover { box-shadow: 0 6px 18px rgba(18, 61, 48, .1); transform: translateY(-2px); }
   &.eu:hover { border-color: $spur-eu; }
   &.de:hover { border-color: $spur-de; }
   &.cn:hover { border-color: $spur-cn; }
+}
+h2.ziel-titel { margin: 2.8rem 0 .2rem; border-top: none; padding-top: 0; font-size: 1.45rem; }
+.ziel-bahn {
+  position: relative; height: 3rem; margin: 1.1rem 1.2rem .6rem .6rem;
+  border-top: 2px solid $linie;
+  .punkt {
+    position: absolute; top: -.45rem; transform: translateX(-50%);
+    font-size: .75rem; line-height: 1.25; text-align: center; white-space: nowrap; color: $grau;
+    &::before { content: ""; display: block; width: .75rem; height: .75rem; border-radius: 50%; margin: 0 auto .25rem; background: currentColor; }
+    &.heute { color: $gruen; } &.de { color: $spur-de-text; } &.eu { color: $spur-eu; } &.cn { color: $spur-cn; }
+  }
 }
 .zielkarte .karten-link { position: absolute; inset: 0; z-index: 2; font-size: 0; color: transparent; }
 .zielkarte .karten-link:focus-visible { outline: 2px solid $gruen; outline-offset: 2px; }
@@ -630,36 +658,44 @@ figure.pfad {
 }
 
 /* Governance: sechs Rollen als nummerierte Kette */
+/* Governance: sechs Rollen als senkrechter Ablauf (links Nummer + Frage + Institution, rechts Erläuterung) */
 .governance {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
+  position: relative;
   margin: 1rem 0 1.5rem;
   counter-reset: rolle;
+  --spur: #{$gruen};
+  &::before { content: ""; position: absolute; left: 1.05rem; top: 1.4rem; bottom: 1.4rem; width: 2px; background: var(--spur); opacity: .35; }
 }
 .rolle {
   position: relative;
-  background: #fff;
-  border: 1px solid $linie;
-  border-top: 3px solid $gruen;
-  border-radius: 4px;
-  padding: .9rem 1.1rem 1rem;
-  font-size: .92rem;
-  line-height: 1.55;
+  display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); gap: 0 1.6rem;
+  padding: .9rem 0 .9rem 3.2rem;
+  border-bottom: 1px solid $linie;
+  font-size: .95rem; line-height: 1.55;
   counter-increment: rolle;
-  .frage {
-    display: block;
-    font-family: $headings-font-family; font-size: 1.2rem; font-weight: 600; line-height: 1.3;
-    color: $gruen;
-    &::before { content: counter(rolle) " · "; color: $grau; }
+  &:last-child { border-bottom: none; }
+  &::before {
+    content: counter(rolle); position: absolute; left: 0; top: .85rem;
+    width: 2.2rem; height: 2.2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    background: #fff; border: 2px solid var(--spur); color: var(--spur);
+    font-family: $headings-font-family; font-weight: 700; font-size: 1.05rem;
   }
-  .wer { display: block; font-family: $headings-font-family; font-size: 1.15rem; font-weight: 600; margin: .2rem 0 .45rem; color: $tinte; }
+  > p:first-child { grid-column: 1; grid-row: 1 / span 20; margin: 0; }
+  > :not(:first-child) { grid-column: 2; }
+  .frage { display: block; font-family: $headings-font-family; font-size: 1.15rem; font-weight: 600; line-height: 1.3; color: var(--spur); }
+  .wer { display: block; font-weight: 600; margin: .2rem 0 0; color: $tinte; line-height: 1.4; }
+  .zurueck { display: inline-block; margin-top: .45rem; padding: .05rem .55rem; border: 1px dashed var(--spur); border-radius: 999px; font-size: .8rem; color: var(--spur); }
   p { margin: 0 0 .4rem; }
+  @media (max-width: 700px) {
+    grid-template-columns: minmax(0, 1fr); padding-left: 3rem;
+    > p:first-child { grid-row: auto; margin-bottom: .4rem; }
+    > :not(:first-child) { grid-column: 1; }
+  }
 }
 /* Länderfarbe für die Rollen-Überschriften */
-.governance.de { .rolle { border-top-color: $spur-de; } .frage, .frage::before { color: $spur-de-text; } }
-.governance.eu { .rolle { border-top-color: $spur-eu; } .frage, .frage::before { color: $spur-eu; } }
-.governance.cn { .rolle { border-top-color: $spur-cn; } .frage, .frage::before { color: $spur-cn; } }
+.governance.de { --spur: #{$spur-de-text}; }
+.governance.eu { --spur: #{$spur-eu}; }
+.governance.cn { --spur: #{$spur-cn}; }
 
 /* Sektor-Karten */
 .sektoren {
@@ -879,6 +915,9 @@ figure.pfad .pfad-ziel-text {
   .cn .bv-spur > span { background: $spur-cn; } .cn .bv-wert { color: $spur-cn; }
   @media (max-width: 576px) { .bv-zeile { grid-template-columns: 5.6rem minmax(0, 1fr) 3rem; } }
 }
+.balken-vergleich.breit .bv-zeile { grid-template-columns: 15rem minmax(0, 1fr) 3.4rem; }
+@media (max-width: 576px) { .balken-vergleich.breit .bv-zeile { grid-template-columns: minmax(0, 1fr) 3rem; } .balken-vergleich.breit .bv-land { grid-column: 1 / -1; } }
+
 
 .m-icon { width: 1.6rem; height: 1.6rem; fill: none; stroke: $gruen; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; flex: none; }
 .m-icon.gross { width: 2.6rem; height: 2.6rem; }
@@ -1089,3 +1128,53 @@ main.content:has(.technik-karte) #title-block-header { display: none; }
   td:first-child { color: $grau; }
 }
 .rechner-hinweis { font-size: .85rem; color: $grau; margin: 0; }
+
+/* ---------- Ziele: Teile und Zeitachse (drei Spuren) ---------- */
+.teil-marke {
+  display: block; margin: 2.6rem 0 -.4rem; padding-top: .9rem; border-top: 3px solid $gruen;
+  font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: $gruen;
+}
+.zeitachse {
+  position: relative; margin: 1.2rem 0 1rem; padding: 0 1.6rem 0 3.4rem;
+  p { margin: 0; }
+  .za-achse { position: relative; height: 1.6rem; border-bottom: 1px solid $linie; margin-bottom: .3rem;
+    span { position: absolute; left: var(--x); transform: translateX(-50%); font-size: .75rem; color: $grau; font-variant-numeric: tabular-nums; }
+  }
+  .za-spur { position: relative; height: 4.2rem; border-bottom: 1px dashed $linie;
+    &::before { content: ""; position: absolute; left: 0; right: 0; top: 1.5rem; height: 3px; border-radius: 2px; background: currentColor; opacity: .25; }
+    &.eu { color: $spur-eu; } &.de { color: $spur-de-text; } &.cn { color: $spur-cn; }
+  }
+  .za-label { position: absolute; left: -3.4rem; top: 1.05rem; font-weight: 700; font-size: .82rem; letter-spacing: .06em; }
+  .ms { position: absolute; left: var(--x); top: .95rem; transform: translateX(-50%); text-align: center; cursor: help; outline: none; z-index: 1;
+    &::before { content: ""; display: block; width: 14px; height: 14px; margin: 0 auto .25rem; border-radius: 50%; border: 3px solid currentColor; background: #fff; box-sizing: border-box; }
+    &.voll::before { background: currentColor; }
+    &.haupt::before { width: 20px; height: 20px; margin-top: -3px; box-shadow: 0 0 0 3px #fff, 0 0 0 5px currentColor; }
+    .ms-jahr { font-size: .78rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .ms-info { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-1.2rem); width: 17rem; margin-top: 0; padding: .6rem .75rem;
+      background: #fff; border: 1px solid $linie; border-top: 3px solid currentColor; border-radius: 4px; box-shadow: 0 6px 18px rgba(18, 61, 48, .12);
+      text-align: left; font-size: .85rem; line-height: 1.45; color: $tinte; z-index: 5; }
+    &.rechts .ms-info { left: auto; right: 50%; transform: translateX(1.2rem); }
+    &:hover, &:focus, &:focus-within { z-index: 6; .ms-info { display: block; } }
+    &:focus-visible::before { outline: 2px solid $gruen; outline-offset: 3px; }
+  }
+  .za-legende { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; margin: .8rem 0 0 -3.4rem; font-size: .82rem; color: $grau;
+    span { display: inline-flex; align-items: center; gap: .4rem; }
+    span::before { content: ""; width: 12px; height: 12px; border-radius: 50%; border: 3px solid $grau; box-sizing: border-box; }
+    .voll::before { background: $grau; }
+    .haupt::before { width: 14px; height: 14px; box-shadow: 0 0 0 2px #fff, 0 0 0 4px $grau; }
+  }
+  /* Handy: Spuren als Listen, Details immer sichtbar */
+  @media (max-width: 700px) {
+    padding: 0;
+    .za-achse { display: none; }
+    .za-spur { height: auto; border-bottom: none; margin-bottom: 1.2rem; border-left: 3px solid currentColor; padding-left: .8rem;
+      &::before { display: none; } }
+    .za-label { position: static; display: block; margin-bottom: .3rem; }
+    .ms { position: relative; left: auto; top: auto; transform: none; display: grid; grid-template-columns: 1.1rem 3rem 1fr; align-items: start; text-align: left; margin-bottom: .55rem; cursor: default;
+      &::before { margin: .2rem 0 0; } &.haupt::before { width: 14px; height: 14px; margin-top: .2rem; }
+      .ms-jahr { line-height: 1.3; } > p { margin: 0; line-height: 1.3; }
+      .ms-info, &.rechts .ms-info { display: block; position: static; width: auto; transform: none; margin: 0; padding: 0; border: 0; box-shadow: none; background: none; }
+    }
+    .za-legende { margin-left: 0; }
+  }
+}

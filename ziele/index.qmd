@@ -4,12 +4,16 @@ subtitle: "Was EU, Deutschland und China zugesagt haben – und wie verbindlich"
 ---
 
 ::: {.stand}
-Stand: 15.10.2026
+Stand: 21.10.2026
 :::
 
 [Ebene 1 von 4 · Ziele → [Instrumente](../wissen/index.qmd) → [Erneuerbare](../daten/index.qmd) → [Emissionen](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
 
-Alle drei haben ein Langfristziel „netto null" bzw. Neutralität. Sie unterscheiden sich aber darin, **wann** es erreicht werden soll, **welche Gase** es umfasst, **woran** Zwischenziele gemessen werden – und ob es **gesetzlich einklagbar** ist.
+Die Seite hat zwei Teile: die **Ziele der Staaten** – Zeitachse, Bewertung durch den Net Zero Tracker und wer die Ziele überwacht – und die **freiwilligen Ziele der Unternehmen**.
+
+Alle drei haben ein Langfristziel „netto null" bzw. Neutralität. Sie unterscheiden sich aber darin, **wann** es erreicht werden soll, **welche Gase** es umfasst, **woran** Zwischenziele gemessen werden – und ob es **im Gesetz steht** und wie es kontrolliert wird.
+
+[Teil A · Ziele der Staaten]{.teil-marke}
 
 ## Auf einen Blick
 
@@ -45,8 +49,8 @@ Alle drei haben ein Langfristziel „netto null" bzw. Neutralität. Sie untersch
 ```
 [China]{.wer}
 [2060]{.jahr}
-[CO₂-Neutralität vor 2060; CO₂-Emissionsspitze vor 2030]{.was}
-[Politikdokument]{.status-chip .politik} [@cn_yijian_2021]
+[Kohlenstoffneutralität vor 2060 (laut Net Zero Tracker nur CO₂); CO₂-Spitze vor 2030]{.was}
+[Grundsatz im Gesetz]{.status-chip .gesetz-teil} [Zieljahr im Politikdokument]{.status-chip .politik} [Art. 1032 @cn_kodex_text; @cn_yijian_2021]
 
 [China: Klimaschutz im Überblick →](../laender/china.qmd)
 :::
@@ -55,24 +59,130 @@ Alle drei haben ein Langfristziel „netto null" bzw. Neutralität. Sie untersch
 
 ## Meilensteine bis 2060
 
-Gelesen von oben nach unten zeigt die Tabelle, wie sich die drei Zielpfade zeitlich staffeln. Bezugsjahre beachten: EU und Deutschland messen an **1990**, China an **2005**, **2020**, **2025** oder am **Emissionsgipfel**.
+Jede Spur zeigt die Zwischen- und Endziele eines Akteurs. Ein **Punkt mit Füllung** steht für ein Ziel über alle Treibhausgase, ein **Ring** für ein Ziel nur zu CO₂ oder zur CO₂-Intensität. Mit der Maus über einen Punkt fahren oder ihn antippen zeigt Ziel und Quelle. Bezugsjahre beachten: EU und Deutschland messen an **1990**, China an **2005**, **2020**, **2025** oder am **Emissionsgipfel**.
 
-::: {.meilensteine}
+::: {.zeitachse}
 
-| Jahr | [EU]{.spur .eu} | [Deutschland]{.spur .de} | [China]{.spur .cn} |
-|---|-------------|-------------|------------------|
-| **2025** | – | – | CO₂ pro BIP −18 % ggü. 2020; nicht-fossiler Anteil am Energieverbrauch ≈ 20 % |
-| **2030** | Netto-THG **−55 %** ggü. 1990 | THG **−65 %** ggü. 1990; Senke aus Landnutzung (LULUCF) ≥ 25 Mio. t | **CO₂-Spitze vor 2030**; CO₂ pro BIP −65 % ggü. 2005; nicht-fossil ≈ 25 %; Wind + Solar ≥ 1.200 GW · *neu 2026:* CO₂ pro BIP −17 % ggü. 2025 |
-| **2035** | – | – | Netto-THG der Gesamtwirtschaft **−7 bis −10 %** ggü. Gipfel; nicht-fossil > 30 %; Wind + Solar angestrebt 3.600 GW |
-| **2040** | Netto-THG **−90 %** ggü. 1990 | THG **−88 %** ggü. 1990; LULUCF-Senke ≥ 35 Mio. t | – |
-| **2045** | – | **Netto-THG-Neutralität**; LULUCF-Senke ≥ 40 Mio. t | – |
-| **2050** | **Netto null**, danach negative Emissionen | negative Emissionen nach 2050 | – |
-| **2060** | – | – | **CO₂-Neutralität**; nicht-fossil > 80 % |
+```{=html}
+<div class="za-achse" aria-hidden="true"><span style="--x:0%">2025</span><span style="--x:14.29%">2030</span><span style="--x:28.57%">2035</span><span style="--x:42.86%">2040</span><span style="--x:57.14%">2045</span><span style="--x:71.43%">2050</span><span style="--x:85.71%">2055</span><span style="--x:100%">2060</span></div>
+```
+
+::: {.za-spur .eu}
+[EU]{.za-label}
+
+::: {.ms .voll tabindex="0" style="--x:14.29%"}
+[2030]{.ms-jahr}
+
+::: {.ms-info}
+**Netto-THG −55 %** gegenüber 1990 [Art. 4 Abs. 1 @eu_klimagesetz_2021]
+:::
+:::
+
+::: {.ms .voll tabindex="0" style="--x:42.86%"}
+[2040]{.ms-jahr}
+
+::: {.ms-info}
+**Netto-THG −90 %** gegenüber 1990 [@eu_klimagesetz_2026]
+:::
+:::
+
+::: {.ms .voll .haupt .rechts tabindex="0" style="--x:71.43%"}
+[2050]{.ms-jahr}
+
+::: {.ms-info}
+**Netto null** für alle Treibhausgase, danach negative Emissionen [Art. 2 Abs. 1 @eu_klimagesetz_2021]
+:::
+:::
+:::
+
+::: {.za-spur .de}
+[DE]{.za-label}
+
+::: {.ms .voll tabindex="0" style="--x:14.29%"}
+[2030]{.ms-jahr}
+
+::: {.ms-info}
+**THG −65 %** gegenüber 1990; Senke aus Landnutzung (LULUCF) mindestens 25 Mio. t [§§ 3, 3a @ksg]
+:::
+:::
+
+::: {.ms .voll tabindex="0" style="--x:28.57%"}
+[2035]{.ms-jahr}
+
+::: {.ms-info}
+**THG −77 %** gegenüber 1990 – eines der jährlichen Minderungsziele 2031–2040 [Anlage 3 @ksg]
+:::
+:::
+
+::: {.ms .voll tabindex="0" style="--x:42.86%"}
+[2040]{.ms-jahr}
+
+::: {.ms-info}
+**THG −88 %** gegenüber 1990; LULUCF-Senke mindestens 35 Mio. t [§§ 3, 3a @ksg]
+:::
+:::
+
+::: {.ms .voll .haupt tabindex="0" style="--x:57.14%"}
+[2045]{.ms-jahr}
+
+::: {.ms-info}
+**Netto-Treibhausgasneutralität**; LULUCF-Senke mindestens 40 Mio. t [§§ 3 Abs. 2, 3a @ksg]
+:::
+:::
+
+::: {.ms .voll .rechts tabindex="0" style="--x:71.43%"}
+[2050]{.ms-jahr}
+
+::: {.ms-info}
+**Negative Emissionen** nach 2050 [§ 3 Abs. 2 @ksg]
+:::
+:::
+:::
+
+::: {.za-spur .cn}
+[CN]{.za-label}
+
+::: {.ms .co2 tabindex="0" style="--x:0%"}
+[2025]{.ms-jahr}
+
+::: {.ms-info}
+**CO₂ pro BIP −18 %** gegenüber 2020; nicht-fossiler Anteil am Energieverbrauch etwa 20 % [@cn_aktionsplan_2021]
+:::
+:::
+
+::: {.ms .co2 tabindex="0" style="--x:14.29%"}
+[2030]{.ms-jahr}
+
+::: {.ms-info}
+**CO₂-Spitze vor 2030**; CO₂ pro BIP −65 % gegenüber 2005; nicht-fossil etwa 25 %; Wind + Solar mindestens 1.200 GW [@cn_aktionsplan_2021]. Neu 2026: CO₂ pro BIP −17 % gegenüber 2025 [@cn_15fyp_klima_2026]
+:::
+:::
+
+::: {.ms .voll tabindex="0" style="--x:28.57%"}
+[2035]{.ms-jahr}
+
+::: {.ms-info}
+**Netto-THG der Gesamtwirtschaft −7 bis −10 %** gegenüber dem Gipfel – erstes Ziel für alle Treibhausgase; nicht-fossil über 30 %; Wind + Solar angestrebt 3.600 GW [@cn_ndc_2035]
+:::
+:::
+
+::: {.ms .co2 .haupt .rechts tabindex="0" style="--x:100%"}
+[2060]{.ms-jahr}
+
+::: {.ms-info}
+**Kohlenstoffneutralität vor 2060**; nicht-fossil über 80 % [@cn_yijian_2021]. Welche Gase gemeint sind, legen die Leitlinien nicht fest; der Net Zero Tracker führt das Ziel als reines CO₂-Ziel [@nzt_api]
+:::
+:::
+:::
+
+```{=html}
+<div class="za-legende"><span class="voll">alle Treibhausgase</span><span class="co2">nur CO₂ bzw. CO₂-Intensität</span><span class="haupt">Neutralitätsziel</span></div>
+```
 
 :::
 
 ::: {.belege}
-**Belege** · EU: Europäisches Klimagesetz, Art. 2 und 4 [@eu_klimagesetz_2021; @eu_klimagesetz_2026] · Deutschland: §§ 3, 3a KSG [@ksg] · China: 2025/2030 Aktionsplan [@cn_aktionsplan_2021], 2030 neu Klimaplan zum 15. Fünfjahresplan [@cn_15fyp_klima_2026], 2035 NDC [@cn_ndc_2035], 2060 [@cn_yijian_2021]
+**Belege** · EU: Europäisches Klimagesetz, Art. 2 und 4 [@eu_klimagesetz_2021; @eu_klimagesetz_2026] · Deutschland: §§ 3, 3a und Anlage 3 KSG [@ksg] · China: 2025/2030 Aktionsplan [@cn_aktionsplan_2021], 2030 neu Klimaplan zum 15. Fünfjahresplan [@cn_15fyp_klima_2026], 2035 NDC [@cn_ndc_2035], 2060 [@cn_yijian_2021]
 :::
 
 ## Was die Ziele unterscheidet
@@ -80,9 +190,9 @@ Gelesen von oben nach unten zeigt die Tabelle, wie sich die drei Zielpfade zeitl
 ::: {.einordnung}
 **Absolut vs. relativ.** EU und Deutschland setzen absolute Minderungen gegenüber 1990. China steuert bis 2030 über die **CO₂-Intensität** (CO₂ pro BIP) und einen Emissionsgipfel; das erste absolute Ziel steht im NDC 2035 (−7 bis −10 % gegenüber dem Gipfel).
 
-**Erfasste Gase.** Die Ziele von EU und Deutschland umfassen alle Treibhausgase. Chinas Neutralitätsziel bezieht sich in den amtlichen Dokumenten auf CO₂; das NDC 2035 ist dagegen erstmals ein Ziel für **alle Treibhausgase der Gesamtwirtschaft**.
+**Erfasste Gase.** Die Ziele von EU und Deutschland umfassen alle Treibhausgase. Chinas Ziele bis 2030 beziehen sich auf CO₂. Beim Neutralitätsziel 2060 nennen die Leitlinien kein Gasspektrum; der Net Zero Tracker wertet es als CO₂-Ziel. Das NDC 2035 ist erstmals ein Ziel für **alle Treibhausgase der Gesamtwirtschaft**.
 
-**Verbindlichkeit.** In der EU und in Deutschland stehen die Ziele im Gesetz und sind damit überprüfbar. In China sind sie in Partei- und Regierungsdokumenten festgelegt; ein Klimagesetz gibt es bisher nicht.
+**Verbindlichkeit.** In der EU und in Deutschland stehen Ziele und Zieljahre im Gesetz. In China verankert seit dem 15.08.2026 das **Ökologie- und Umweltgesetzbuch** CO₂-Spitze und Kohlenstoffneutralität als Grundsatz: Sie sind in die nationale Entwicklungsplanung einzubeziehen, und es gilt eine Kontrolle von Gesamtmenge und Intensität der CO₂-Emissionen [Art. 1032 @cn_kodex_text]. Die **Zieljahre** 2030 und 2060 nennt das Gesetzbuch nicht; sie stehen weiter in Partei- und Regierungsdokumenten [@cn_yijian_2021; @cn_aktionsplan_2021]. Ein eigenes Klimaschutzgesetz steht weder im Gesetzgebungsplan des Volkskongresses noch in dem des Staatsrats für 2026 [@npcsc_plan_2026; @gwy_plan_2026].
 :::
 
 ## Bewertung durch den Net Zero Tracker
@@ -90,3 +200,113 @@ Gelesen von oben nach unten zeigt die Tabelle, wie sich die drei Zielpfade zeitl
 Der [Net Zero Tracker](https://zerotracker.net/) bewertet Netto-null-Ziele weltweit nach einheitlichen Kriterien. Die folgende Tabelle zeigt seine Einträge für die drei Akteure [@nzt_api].
 
 {{< include _nzt-tabelle.md >}}
+
+::: {.belege}
+**Hinweis zum Status China** · Der Net Zero Tracker führt Chinas Ziel als Politikdokument; sein Eintrag wurde zuletzt am 09.12.2025 aktualisiert, also vor dem Ökologie- und Umweltgesetzbuch. Dieses verankert das Ziel seit dem 15.08.2026 als Grundsatz, ohne Zieljahr [Art. 1032 @cn_kodex_text].
+:::
+
+## Wer überwacht die Ziele? {#kontrolle}
+
+Ein Ziel ist nur so stark wie seine Kontrolle. In Deutschland und der EU prüfen **unabhängige Fachleute** die Daten, und das Gesetz schreibt vor, was bei einer Verfehlung passiert. China setzt auf **Zielvorgaben in der Verwaltungshierarchie**: Ziele werden auf Provinzen und Branchen verteilt, ihre Erfüllung wird bewertet und von der zentralen Umweltinspektion kontrolliert.
+
+::: {.matrix}
+
+```{=html}
+<div class="m-kopf"><span></span><span class="m-land de">Deutschland</span><span class="m-land eu">Europäische Union</span><span class="m-land cn">China</span></div>
+```
+
+::: {.m-zeile}
+::: {.m-frage}
+**Wer prüft?**
+:::
+
+::: {.m-zelle .de}
+Das Umweltbundesamt legt Emissions- und Projektionsdaten vor. Der **Expertenrat für Klimafragen** – fünf Sachverständige, nur an den gesetzlichen Auftrag gebunden – bewertet sie innerhalb von zwei Monaten [§§ 11, 12 @ksg]. Die Bundesregierung berichtet dem Bundestag jährlich bis 30. Juni [§ 10 @ksg].
+:::
+
+::: {.m-zelle .eu}
+Der **Europäische Wissenschaftliche Beirat für Klimawandel** berät unabhängig [Art. 3 @eu_klimagesetz_2021; @esabcc]. Die **Kommission** bewertet alle fünf Jahre den Fortschritt der EU und die Maßnahmen der Mitgliedstaaten [Art. 6, 7 @eu_klimagesetz_2021].
+:::
+
+::: {.m-zelle .cn}
+**Zielverantwortung und Bewertung**: Das Gesetzbuch schreibt ein System von Zielverantwortung und Leistungsbewertung vor [Art. 27 @cn_kodex_text]. Energie- und CO₂-Vorgaben werden gemeinsam auf Regionen verteilt und gemeinsam bewertet [Abschn. VI @cn_aktionsplan_2021; @cn_doppelkontrolle_2024].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+**Wer kontrolliert die Umsetzung?**
+:::
+
+::: {.m-zelle .de}
+Bundestag und Öffentlichkeit über die Berichte; der Expertenrat legt seine Bewertungen Bundesregierung und Bundestag vor [§ 12 @ksg].
+:::
+
+::: {.m-zelle .eu}
+Europäisches Parlament und Rat erhalten die Bewertungen der Kommission; sie kann Mitgliedstaaten **Empfehlungen** geben [Art. 7 @eu_klimagesetz_2021].
+:::
+
+::: {.m-zelle .cn}
+Die **zentrale Umweltinspektion** prüft Provinzen, Ministerien und zentrale Staatsunternehmen, in der Regel einmal je Amtszeit des Zentralkomitees [Art. 5 @cn_inspektion_2019; Art. 28 @cn_kodex_text]. Die Umsetzung der Klimaziele ist Teil dieser Inspektion [Nr. 37 @cn_yijian_2021].
+:::
+:::
+
+::: {.m-zeile}
+::: {.m-frage}
+**Was passiert bei Verfehlung?**
+:::
+
+::: {.m-zelle .de}
+Weisen die Projektionsdaten zwei Jahre in Folge eine Überschreitung aus, muss die Bundesregierung **Maßnahmen beschließen** [§ 8 @ksg]. Das Bundesverfassungsgericht verlangte 2021, die Minderungslast nicht in die Zukunft zu verschieben [@bverfg_2021].
+:::
+
+::: {.m-zelle .eu}
+Mitgliedstaaten müssen Empfehlungen der Kommission berücksichtigen oder begründen, warum sie davon abweichen [Art. 7 @eu_klimagesetz_2021].
+:::
+
+::: {.m-zelle .cn}
+Regionen und Behörden, die Ziele verfehlen, droht **öffentliche Rüge, Vorladung zum Gespräch und Verantwortlichmachung**; die Klimaziele fließen mit höherem Gewicht in die Bewertung der Regionen ein [Nr. 37 @cn_yijian_2021]. Nach einer Inspektion ist ein Nachbesserungsplan Pflicht [Art. 29 @cn_kodex_text].
+:::
+:::
+
+:::
+
+::: {.einordnung}
+**Zwei Logiken der Kontrolle.** In Deutschland und der EU wirkt Kontrolle über **Transparenz**: veröffentlichte Daten, unabhängige Bewertung, Pflicht zur Nachsteuerung – und im Fall Deutschlands auch über das Verfassungsgericht. In China wirkt sie über die **Verwaltungshierarchie**: Ziele werden nach unten verteilt, ihre Erfüllung wird bewertet und von oben inspiziert. Das Gesetzbuch schreibt beide Instrumente nun ausdrücklich fest (Art. 27–29).
+:::
+
+[Teil B · Ziele der Unternehmen]{.teil-marke}
+
+## Ziele der Unternehmen: Science Based Targets {#unternehmensziele}
+
+Neben den Staaten setzen sich auch Unternehmen Klimaziele – freiwillig. Die bekannteste Prüfstelle ist die **Science Based Targets initiative (SBTi)**: Sie prüft, ob die Ziele eines Unternehmens zu den Minderungspfaden des Pariser Abkommens passen, und veröffentlicht alle Unternehmen mit geprüftem Ziel oder Zusage [@sbti_dashboard].
+
+::: {.balken-vergleich}
+
+[Unternehmen mit von der SBTi geprüftem Ziel (kurzfristig)]{.bv-titel}
+
+`<div class="bv-zeile de"><span class="bv-land">Deutschland</span><span class="bv-spur"><span style="width:82.1%"></span></span><span class="bv-wert">682</span></div><div class="bv-zeile cn"><span class="bv-land">China</span><span class="bv-spur"><span style="width:100%"></span></span><span class="bv-wert">831</span></div>`{=html}
+
+[davon geprüftes Netto-null-Ziel]{.bv-titel}
+
+`<div class="bv-zeile de"><span class="bv-land">Deutschland</span><span class="bv-spur"><span style="width:24%"></span></span><span class="bv-wert">199</span></div><div class="bv-zeile cn"><span class="bv-land">China</span><span class="bv-spur"><span style="width:14.3%"></span></span><span class="bv-wert">119</span></div>`{=html}
+
+[Zusage, Ziel noch nicht geprüft]{.bv-titel}
+
+`<div class="bv-zeile de"><span class="bv-land">Deutschland</span><span class="bv-spur"><span style="width:26.8%"></span></span><span class="bv-wert">223</span></div><div class="bv-zeile cn"><span class="bv-land">China</span><span class="bv-spur"><span style="width:19.4%"></span></span><span class="bv-wert">161</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Belege** · SBTi Target Dashboard, Stand 15.10.2026, eigene Auszählung nach Sitzland; „China“ ohne Hongkong, Macau und Taiwan, die die SBTi getrennt führt [@sbti_dashboard]. Zum Vergleich: EU-27 zusammen 3.782 Unternehmen mit geprüftem Ziel. Zurückgezogene Zusagen: Deutschland 74, China 88.
+:::
+
+**Welche Branchen?** In Deutschland führen Lebensmittel und Getränke (65 Unternehmen mit geprüftem Ziel), Elektrotechnik und Maschinenbau (62) sowie Dienstleistungen für Unternehmen (58). In China führen langlebige Konsumgüter, Haushalts- und Körperpflegeprodukte (159), Elektrotechnik und Maschinenbau (114) sowie Dienstleistungen für Unternehmen (90); Textilien und Bekleidung folgen mit 66. Kleine und mittlere Unternehmen stellen in Deutschland 304, in China 469 der Unternehmen mit geprüftem Ziel [@sbti_dashboard].
+
+::: {.einordnung}
+**Einordnung.** Chinas Unternehmen mit SBTi-Ziel stammen häufig aus Branchen, die viel für Kunden im Ausland herstellen – Konsumgüter, Textilien, Elektrotechnik. Das spricht dafür, dass Anforderungen von Abnehmern in Europa und anderswo eine wichtige Rolle spielen; belegen lässt sich der Grund aus den Daten allein nicht. Für Stahl, Aluminium, Zement und Düngemittel zählt dagegen nicht ein freiwilliges Ziel, sondern der CO₂-Preis an der EU-Grenze: siehe [CBAM – Grundlagen](../wissen/cbam.qmd) und [Schnittstelle China ↔ CBAM](../wissen/schnittstellen.qmd). Welche Berichtspflichten Unternehmen zu ihren Zielen haben, zeigt [Berichtspflichten: CSRD & China](../unternehmen/berichtspflichten.qmd).
+:::
+
+### Ergänzung: CDP
+
+**CDP** betreibt eine Plattform, über die Unternehmen, Städte und Regionen freiwillig Umweltdaten offenlegen. CDP bewertet die Angaben mit Noten bis zur Bestnote A; Unternehmen, Investoren und Politik nutzen die Daten für Entscheidungen [@cdp]. Anders als bei der SBTi veröffentlicht CDP keine frei herunterladbare Liste nach Ländern; ein Zahlenvergleich Deutschland – China ist hier deshalb nicht möglich.

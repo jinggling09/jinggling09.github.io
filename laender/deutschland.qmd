@@ -4,7 +4,7 @@ subtitle: "Wer setzt die Ziele, wer setzt sie um, wer kontrolliert – und wo st
 ---
 
 ::: {.stand}
-Stand: 15.10.2026
+Stand: 21.10.2026
 :::
 
 [Länderüberblick · [Ziele im Vergleich](../ziele/index.qmd) · [EU-ETS & BEHG](../wissen/eu-ets.qmd) · [THG-Dashboard](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
@@ -184,42 +184,51 @@ Die sechs Rollen im Einzelnen:
 ::: {.rolle}
 [Ziele festlegen]{.frage}
 [Bundestag und Bundesrat]{.wer}
+
 Die Ziele stehen im Klimaschutzgesetz und lassen sich nur per Gesetz ändern [@ksg]. Den äußeren Rahmen setzt die EU: Europäisches Klimagesetz und Lastenteilung (ESR), die Deutschland bis 2030 −50 % gegenüber 2005 in Verkehr, Gebäuden, Landwirtschaft und Teilen der Industrie vorschreibt [@eu_klimagesetz_2021; @bmukn_ksp_2026].
 :::
 
 ::: {.rolle}
 [Planen und umsetzen]{.frage}
 [Bundesregierung]{.wer}
+
 Spätestens zwölf Monate nach Beginn jeder Legislaturperiode beschließt sie ein **Klimaschutzprogramm** [§ 9 @ksg]. Federführend ist seit Mai 2025 das **Umweltministerium (BMUKN)** – es übernahm Klimaschutz vom Wirtschaftsministerium und die internationale Klimapolitik vom Auswärtigen Amt [@organisationserlass_2025]. Energie liegt beim **Wirtschafts- und Energieministerium (BMWE)**; Verkehr, Bauen und Landwirtschaft bei den Fachressorts. Länder und Kommunen setzen vor Ort um, etwa mit der Wärmeplanung [@wpg].
 :::
 
 ::: {.rolle}
 [Bilanzieren]{.frage}
 [Umweltbundesamt (UBA)]{.wer}
+
 Legt bis **15. März** die Emissionen des Vorjahres vor und erstellt jährlich **Projektionen** bis 2045 [§§ 5, 5a @ksg]. Erfasst werden alle Kyoto-Gase (CO₂, Methan, Lachgas, F-Gase), umgerechnet in CO₂-Äquivalente und aufgeteilt auf die Sektoren des KSG.
 :::
 
 ::: {.rolle}
 [Unabhängig prüfen]{.frage}
 [Expertenrat für Klimafragen]{.wer}
+
 Fünf Sachverständige verschiedener Disziplinen [§ 11 @ksg]. Sie prüfen die UBA-Daten innerhalb von zwei Monaten und bewerten Maßnahmen und Programme [§ 12 @ksg]. Dazu kommen der jährliche Klimaschutzbericht an den Bundestag [§ 10 @ksg], die Berichtspflichten gegenüber der EU-Kommission – und Gerichte: Das Bundesverfassungsgericht verlangte 2021, Minderungslasten nicht einseitig in die Zukunft zu verschieben [@bverfg_2021]; das Bundesverwaltungsgericht stellte Anfang 2026 klar, dass unzureichende Programme nachgeschärft werden müssen [@bmukn_ksp_2026].
 :::
 
 ::: {.rolle}
 [Nachsteuern]{.frage}
 [Bundesregierung als Ganzes]{.wer}
+[↺ zurück zu 2 · Planen und umsetzen]{.zurueck}
+
 Zeigen die Projektionen **zwei Jahre in Folge**, dass das Budget 2021–2030 überschritten wird, muss die Regierung zusätzliche Maßnahmen beschließen [§ 8 @ksg]. Früher musste das zuständige Ministerium eines verfehlenden Sektors ein Sofortprogramm vorlegen; diese Sektorverantwortung wurde 2024 abgeschafft.
 :::
 
 ::: {.rolle}
 [Finanzieren]{.frage}
 [Klima- und Transformationsfonds (KTF)]{.wer}
-Sondervermögen des Bundes, gespeist vor allem aus der CO₂-Bepreisung – Details im [nächsten Abschnitt](#klimafinanzierung-woher-kommt-das-geld).
+
+Sondervermögen des Bundes, gespeist vor allem aus der CO₂-Bepreisung – Details im [nächsten Abschnitt](#klimafinanzierung).
 :::
 
 :::
 
-## Klimafinanzierung: Woher kommt das Geld?
+## Klimafinanzierung: Woher kommt das Geld, wohin fließt es? {#klimafinanzierung}
+
+### Woher kommt das Geld?
 
 | Quelle | Umfang | Verwendung |
 |---|---|---|
@@ -231,6 +240,51 @@ Sondervermögen des Bundes, gespeist vor allem aus der CO₂-Bepreisung – Deta
 
 
 Zu den wichtigsten Förderprogrammen gehören die **Bundesförderung für effiziente Gebäude (BEG)**, die **Bundesförderung für effiziente Wärmenetze (BEW)** – sie soll 2030 auf 2,7 Mrd. € jährlich wachsen –, Programme für Prozesswärme und Elektrifizierung in der Industrie einschließlich CO₂-Differenzverträgen sowie eine neue, sozial gestaffelte **E-Auto-Förderung** mit 3 Mrd. € für rund 800.000 Fahrzeuge [@bmukn_ksp_2026].
+
+### Wohin fließt das Geld?
+
+Der Wirtschaftsplan des KTF 2026 hat 67 Ausgabetitel. Die 15 größten – jeweils mindestens rund 500 Mio. € – summieren sich auf 35,2 Mrd. € [@wd_ktf_2026]. Nach Bereichen zusammengefasst:
+
+::: {.balken-vergleich .breit}
+
+[KTF 2026, Soll in Mrd. € (15 größte Titel)]{.bv-titel}
+
+`<div class="bv-zeile de"><span class="bv-land">Strom- und Energiekosten senken</span><span class="bv-spur"><span style="width:100.0%"></span></span><span class="bv-wert">13,9</span></div><div class="bv-zeile de"><span class="bv-land">Gebäude</span><span class="bv-spur"><span style="width:86.0%"></span></span><span class="bv-wert">12,0</span></div><div class="bv-zeile de"><span class="bv-land">Industrie und Wasserstoff</span><span class="bv-spur"><span style="width:36.2%"></span></span><span class="bv-wert">5,0</span></div><div class="bv-zeile de"><span class="bv-land">Verkehr</span><span class="bv-spur"><span style="width:16.3%"></span></span><span class="bv-wert">2,3</span></div><div class="bv-zeile de"><span class="bv-land">Natürlicher Klimaschutz</span><span class="bv-spur"><span style="width:5.9%"></span></span><span class="bv-wert">0,8</span></div><div class="bv-zeile de"><span class="bv-land">Internationaler Klimaschutz</span><span class="bv-spur"><span style="width:4.6%"></span></span><span class="bv-wert">0,6</span></div><div class="bv-zeile de"><span class="bv-land">Energieforschung</span><span class="bv-spur"><span style="width:3.9%"></span></span><span class="bv-wert">0,5</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Belege** · Soll-Ansätze 2026 nach der Titelübersicht der Wissenschaftlichen Dienste [@wd_ktf_2026], eigene Zusammenfassung: **Strom- und Energiekosten** = Zuschuss zu den Übertragungsnetzkosten 6,5 · Strompreiskompensation 4,0 · Ausgleich der abgeschafften Gasspeicherumlage 3,4 · **Gebäude** = Bundesförderung für effiziente Gebäude (BEG) 11,96 · **Industrie und Wasserstoff** = Wasserstoff in der Industrie (IPCEI) 1,26 · Energieeffizienz in Industrie und Gewerbe 0,97 · Nationale Wasserstoffstrategie 0,90 · Dekarbonisierung der Industrie (u. a. Klimaschutzverträge) 0,70 · deutsch-französische IPCEI-Wasserstoffprojekte 0,68 · Fertigung von Energiespeichern 0,52 · **Verkehr** = Tank- und Ladeinfrastruktur 1,71 · E-Auto-Förderung für Haushalte mit kleinem und mittlerem Einkommen 0,55. Anteile an den 35,2 Mrd. €: Strom- und Energiekosten 40 %, Gebäude 34 %, Industrie und Wasserstoff 14 %, Verkehr 6 %, übrige 6 %. Einen Titel für die Schiene ab 500 Mio. € gibt es im KTF 2026 nicht.
+:::
+
+::: {.sektoren}
+
+::: {.sektor}
+### Gebäude: BEG
+[2026: 11,96 Mrd. € · größter Einzeltitel]{.werte}
+
+Förderung von Sanierung und Heizungstausch in drei Programmteilen: Einzelmaßnahmen, Wohngebäude und Nichtwohngebäude [@wd_ktf_2026].
+:::
+
+::: {.sektor}
+### Industrie: Klimaschutzverträge
+[2024: 15 Verträge, bis zu 2,8 Mrd. €]{.werte}
+
+Der Staat gleicht über 15 Jahre die Mehrkosten klimafreundlicher Produktion aus [@bmwk_ksv_2024]; finanziert aus dem KTF-Titel „Dekarbonisierung der Industrie“ (2026: 0,70 Mrd. €) [@wd_ktf_2026].
+:::
+
+::: {.sektor}
+### Wasserstoff: IPCEI
+[2026: rund 2,8 Mrd. € in drei Wasserstoff-Titeln]{.werte}
+
+Gefördert werden „wichtige Vorhaben von gemeinsamem europäischem Interesse“: Elektrolyseure, Leitungen und der Einsatz von Wasserstoff in der Industrie, auch gemeinsam mit Frankreich [@wd_ktf_2026].
+:::
+
+:::
+
+::: {.einordnung}
+**Einordnung.** Der größte Block des KTF 2026 finanziert keine neuen Anlagen, sondern **senkt Energiepreise**: Zuschüsse zu Netzentgelten, Strompreiskompensation für energieintensive Unternehmen und der Ausgleich der Gasspeicherumlage machen zusammen rund 40 % der großen Titel aus. In die Transformation im engeren Sinn – Gebäude, Industrie, Wasserstoff, Verkehr – fließen rund 54 %.
+:::
 
 ## Rechtsrahmen: die wichtigsten Gesetze
 

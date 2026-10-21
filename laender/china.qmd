@@ -4,7 +4,7 @@ subtitle: "Wer setzt die Ziele, wer setzt sie um, wer kontrolliert – und wo st
 ---
 
 ::: {.stand}
-Stand: 16.10.2026
+Stand: 21.10.2026
 :::
 
 [Länderüberblick · [Ziele im Vergleich](../ziele/index.qmd) · [Chinas Emissionshandel](../wissen/china-ets.qmd) · [Schnittstelle China ↔ CBAM](../wissen/schnittstellen.qmd)]{.ebenen-pfad}
@@ -160,50 +160,104 @@ Die sechs Rollen im Einzelnen:
 ::: {.rolle}
 [Ziele festlegen]{.frage}
 [ZK der KPCh und Staatsrat]{.wer}
+
 Die **Leitlinien von 2021** legen die „Doppel-Kohlenstoff-Ziele“ fest und bilden mit dem Aktionsplan zur CO₂-Spitze das „1+N“-Politiksystem: ein Rahmendokument plus Pläne für einzelne Sektoren [@cn_yijian_2021; @cn_aktionsplan_2021]. Der **Nationale Volkskongress** beschließt die Gesetze [@cn_kodex_2026].
 :::
 
 ::: {.rolle}
 [Koordinieren]{.frage}
 [Leitungsgruppe CO₂-Spitze und CO₂-Neutralität]{.wer}
+
 Ihr Büro sitzt bei der Nationalen Entwicklungs- und Reformkommission (**NDRC**). Es baut das „1+N“-System aus, prüft die Aktionspläne der Provinzen und treibt die CO₂-Statistik voran [@ndrc_leitungsgruppe].
 :::
 
 ::: {.rolle}
 [Umsetzen]{.frage}
 [Ministerien und Provinzen]{.wer}
+
 Das Ministerium für Ökologie und Umwelt (**MEE**) ist für Klimapolitik und den nationalen Emissionshandel zuständig [@mee_qa_2025]; NDRC und Energieverwaltung (**NEA**) steuern Energie und den Ausbau der Erneuerbaren [@nea_2026]. Provinzen und Städte setzen mit eigenen Plänen um [@ndrc_leitungsgruppe].
 :::
 
 ::: {.rolle}
 [Bilanzieren]{.frage}
 [Statistikamt (NBS)]{.wer}
+
 Veröffentlicht jährlich Energieverbrauch, Strommix sowie die Veränderung von Energie- und CO₂-Intensität [@nbs_2025]. Bis 2025 sollte die CO₂-Statistik und -Messung ausgebaut werden, damit die Steuerung auf CO₂ umgestellt werden kann [@cn_doppelkontrolle_2024].
 :::
 
 ::: {.rolle}
 [Kontrollieren]{.frage}
-[Zentralregierung]{.wer}
-Statt eines unabhängigen Gremiums kontrolliert die Verwaltung selbst: Regionen, Branchen und Unternehmen werden an CO₂-Vorgaben gemessen („Kohlenstoff-Bewertung der Regionen“) [@cn_doppelkontrolle_2024]. Das Büro der Leitungsgruppe verfolgt auch gefälschte Emissionsdaten [@ndrc_leitungsgruppe].
+[Zentralregierung und Umweltinspektion]{.wer}
+[↺ zurück zu 3 · Umsetzen]{.zurueck}
+
+Statt eines unabhängigen Gremiums kontrolliert die Verwaltung selbst: Regionen, Branchen und Unternehmen werden an CO₂-Vorgaben gemessen („Kohlenstoff-Bewertung der Regionen“) [@cn_doppelkontrolle_2024]. Das Büro der Leitungsgruppe verfolgt auch gefälschte Emissionsdaten [@ndrc_leitungsgruppe]. Seit dem 15.08.2026 schreibt das Ökologie- und Umweltgesetzbuch Zielverantwortung, Leistungsbewertung und die Umweltinspektion ausdrücklich fest [Art. 27–29 @cn_kodex_text]; die zentrale Umweltinspektion prüft auch die Umsetzung der Klimaziele [Nr. 37 @cn_yijian_2021]. Mehr dazu unter [Wer überwacht die Ziele?](../ziele/index.qmd#kontrolle).
 :::
 
 ::: {.rolle}
 [Finanzieren]{.frage}
 [Zentralbank und Banken]{.wer}
-Grüne Kredite, ein Refinanzierungsinstrument der Zentralbank und der Emissionshandel – Details im [nächsten Abschnitt](#klimafinanzierung-woher-kommt-das-geld).
+
+Grüne Kredite, ein Refinanzierungsinstrument der Zentralbank und der Emissionshandel – Details im [nächsten Abschnitt](#klimafinanzierung).
 :::
 
 :::
 
-## Klimafinanzierung: Woher kommt das Geld?
+## Klimafinanzierung: Woher kommt das Geld, wohin fließt es? {#klimafinanzierung}
+
+### Woher kommt das Geld?
 
 | Quelle | Umfang | Verwendung |
 |---|---|---|
-| **Grüne Kredite** der Banken | **44,77 Bio. ¥** Bestand Ende 2025, +20,2 % in einem Jahr [@pboc_gruen_2025] | saubere Energie, Energieeffizienz, Umweltschutz |
+| **Grüne Kredite** der Banken | **48,63 Bio. ¥** Bestand Ende Juni 2026, +14,5 % in einem Jahr [@pboc_kredit_q2_2026]; Ende 2025: 44,77 Bio. ¥ [@pboc_gruen_2025] | Infrastruktur, Energiewende, Ökosysteme – siehe unten |
 | **CO₂-Minderungsinstrument** der Zentralbank | günstige Refinanzierung für Banken, die solche Kredite vergeben [@pboc_gruen_2025] | saubere Energie, Energieeinsparung, CO₂-arme Technologien |
 | **Nationaler Emissionshandel** | 2025: 235 Mio. t gehandelt, Umsatz 14,63 Mrd. ¥ [@mee_ets_2025] | Preissignal für Strom und Schwerindustrie; Zuteilung nach Produktions-Benchmarks [@mee_qa_2025] |
 
 : {tbl-colwidths="[26,42,32]"}
+
+### Wohin fließt das Geld?
+
+Weil China kaum Zertifikate versteigert, läuft Klimafinanzierung vor allem über **Bankkredite**. Mitte 2026 lagen die grünen Kredite bei 48,63 Bio. ¥, 14,5 % mehr als ein Jahr zuvor [@pboc_kredit_q2_2026].
+
+::: {.balken-vergleich .breit}
+
+[Grüne Kredite nach Verwendung, Bestand Ende Juni 2026, Bio. ¥]{.bv-titel}
+
+`<div class="bv-zeile cn"><span class="bv-land">Infrastruktur grün modernisieren</span><span class="bv-spur"><span style="width:100.0%"></span></span><span class="bv-wert">21,74</span></div><div class="bv-zeile cn"><span class="bv-land">Energiewende</span><span class="bv-spur"><span style="width:40.2%"></span></span><span class="bv-wert">8,73</span></div><div class="bv-zeile cn"><span class="bv-land">Ökosysteme schützen und nutzen</span><span class="bv-spur"><span style="width:24.9%"></span></span><span class="bv-wert">5,42</span></div><div class="bv-zeile cn"><span class="bv-land">übrige Verwendungen</span><span class="bv-spur"><span style="width:58.6%"></span></span><span class="bv-wert">12,74</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Belege** · Verwendungen laut Zentralbank [@pboc_kredit_q2_2026]; „übrige“ = Differenz zum Gesamtbestand, eigene Rechnung. Anteile: Infrastruktur 45 %, Energiewende 18 %, Ökosysteme 11 %, übrige 26 %. Nach Branchen: Strom, Wärme, Gas und Wasser 9,17 Bio. ¥, Verkehr, Lagerei und Post 9,10 Bio. ¥. Seit 2025 gilt eine neue Abgrenzung; ältere Zahlen sind nicht direkt vergleichbar. Kredite müssen zurückgezahlt werden und sind daher nicht mit Zuschüssen aus dem KTF gleichzusetzen.
+:::
+
+::: {.sektoren}
+
+::: {.sektor}
+### Zentralbank: CO₂-Minderungsinstrument
+[60 % des Kredits zu 1,75 % refinanziert · verlängert bis Ende 2027]{.werte}
+
+Banken vergeben zuerst Kredite für Projekte mit direkter CO₂-Minderung und können sich dann 60 % davon bei der Zentralbank zu 1,75 % refinanzieren [@pboc_tool_2021; @cn_gruen_2024].
+:::
+
+::: {.sektor}
+### Verkehr
+[1. Halbjahr 2026: +797,3 Mrd. ¥ grüne Kredite]{.werte}
+
+Die grünen Kredite für Transport, Lagerei und Post wuchsen im ersten Halbjahr 2026 um 797,3 Mrd. ¥ – fast viermal so stark wie die für Strom, Wärme, Gas und Wasser (+220,7 Mrd. ¥) [@pboc_kredit_q2_2026].
+:::
+
+::: {.sektor}
+### Staatshaushalt
+[Jan.–Aug. 2026: 290,6 Mrd. ¥ für Energieeinsparung und Umweltschutz]{.werte}
+
+Das sind 1,6 % der Ausgaben der allgemeinen öffentlichen Haushalte und 12,3 % weniger als im Vorjahreszeitraum [@mof_haushalt_2026_8]. Umgerechnet mit 8,118 ¥/€ [@ezb_cny] etwa 35,8 Mrd. € – die Abgrenzung umfasst auch Umweltschutz und ist mit dem KTF nur grob vergleichbar.
+:::
+
+:::
+
+::: {.einordnung}
+**Einordnung.** Chinas grünes Geld fließt vor allem in die grüne Modernisierung der **Infrastruktur** und erst an zweiter Stelle in die Energiewende im engeren Sinn. Anders als in Deutschland und der EU stammt es überwiegend aus Krediten, nicht aus Einnahmen eines CO₂-Preises.
+:::
 
 ## Regelwerk: die wichtigsten Gesetze und Pläne
 

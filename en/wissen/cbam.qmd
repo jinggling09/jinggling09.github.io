@@ -31,3 +31,7 @@ CBAM puts a carbon price, aligned with the EU Emissions Trading System, on impor
 ## Carbon price paid abroad
 
 If a carbon price has actually been paid in the country of origin for the embedded emissions, the number of CBAM certificates to be surrendered can be reduced accordingly [@eu_cbam_2023, Art. 9]. What this means for imports from China is covered under [Interface China ↔ CBAM](schnittstellen.qmd).
+
+## CBAM and voluntary corporate targets
+
+CBAM requires a carbon price, not a climate target. Many manufacturers in China and Germany also set voluntary targets validated by the Science Based Targets initiative [@sbti_dashboard] – see the comparison under [Corporate targets](../ziele/index.qmd#unternehmensziele).

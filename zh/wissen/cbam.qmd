@@ -31,3 +31,7 @@ CBAM 对进口到欧盟的部分高排放产品征收与欧盟碳排放交易体
 ## 在境外已支付的碳价
 
 如果原产国已就隐含排放实际支付了碳价，需清缴的 CBAM 证书数量可相应减少 [@eu_cbam_2023, 第 9 条]。这对自中国进口意味着什么，见[中国碳市场 ↔ CBAM 接口](schnittstellen.qmd)。
+
+## CBAM 与企业自愿目标
+
+CBAM 要求的是碳价，而不是气候目标。中国和德国的许多制造企业还设定了经科学碳目标倡议（SBTi）审核的自愿目标 [@sbti_dashboard]，对比见[企业目标](../ziele/index.qmd#unternehmensziele)。

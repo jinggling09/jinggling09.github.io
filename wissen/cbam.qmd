@@ -31,3 +31,7 @@ Der CBAM belegt den Import bestimmter emissionsintensiver Waren in die EU mit ei
 ## Im Ausland gezahlter CO₂-Preis
 
 Wurde für die eingebetteten Emissionen im Ursprungsland tatsächlich ein CO₂-Preis gezahlt, kann die Zahl der abzugebenden CBAM-Zertifikate entsprechend verringert werden [@eu_cbam_2023, Art. 9]. Was das für Importe aus China bedeutet, steht unter [Schnittstelle China ↔ CBAM](schnittstellen.qmd).
+
+## CBAM und freiwillige Unternehmensziele
+
+Der CBAM verlangt einen CO₂-Preis, kein Klimaziel. Viele Hersteller in China und Deutschland setzen sich zusätzlich freiwillige Ziele, die die Science Based Targets initiative prüft [@sbti_dashboard] – ein Vergleich steht unter [Ziele der Unternehmen](../ziele/index.qmd#unternehmensziele).
