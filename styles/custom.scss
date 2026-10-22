@@ -1460,3 +1460,17 @@ figcaption details.belege-klapp { display: inline; margin: 0;
   summary { display: inline; }
   > p { display: block; margin: .3rem 0 0; }
 }
+
+/* Folgen und Klimarisiken (von Jing gewählt, 22.10.2026): Sprungleiste, Ortsangabe in Faktenkarten, Anteilsbalken */
+.sprung-leiste { display: flex; flex-wrap: wrap; gap: .4rem; margin: 1.2rem 0 .4rem;
+  a { display: inline-block; padding: .28rem .8rem; border: 1px solid $linie; border-radius: 999px; background: #fff; font-size: .88rem; color: $tinte; text-decoration: none;
+    &:hover, &:focus-visible { border-color: $gruen; color: $gruen; } }
+}
+.fakten .fakt .wo { display: block; font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: $grau; margin-bottom: .2rem; }
+figure.anteil-balken { margin: 1rem 0 1.2rem;
+  .ab-leiste { display: flex; height: 2.4rem; border-radius: 4px; overflow: hidden; }
+  span { display: flex; align-items: center; padding: 0 .6rem; min-width: 0; overflow: hidden; white-space: nowrap; font-size: .82rem; font-weight: 600; color: #fff; }
+  .ab-wasser { background: #2f6690; } .ab-sturm { background: #5b7f95; } .ab-hitze { background: $spur-cn; } .ab-rest { background: #a39b8b; }
+  figcaption { font-size: .85rem; color: $grau; margin-top: .4rem; }
+  @media (max-width: 640px) { span { font-size: .7rem; padding: 0 .35rem; } }
+}

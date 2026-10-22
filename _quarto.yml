@@ -38,6 +38,8 @@ website:
         menu:
           - href: klimawandel/index.qmd
             text: "Was ist Klimawandel?"
+          - href: klimawandel/folgen.qmd
+            text: "Folgen und Klimarisiken"
           - text: "---"
           - text: "Emissionen heute"
           - href: wissen/emissionen-de.qmd

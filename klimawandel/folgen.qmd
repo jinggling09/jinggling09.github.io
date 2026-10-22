@@ -1,0 +1,198 @@
+---
+title: "Folgen und Klimarisiken"
+subtitle: "Hitze, Dürre, Starkregen – was der Klimawandel schon anrichtet und was droht"
+---
+
+::: {.stand}
+Stand: 22.10.2026
+:::
+
+Der Klimawandel ist kein Zukunftsthema mehr. Der Weltklimarat IPCC stellt fest: Der vom Menschen verursachte Klimawandel beeinflusst bereits viele Wetter- und Klimaextreme in jeder Region der Welt – Hitzewellen, Starkregen, Dürren und tropische Wirbelstürme [A.3 @ipcc_wg1_spm]. Er hat schon heute verbreitete Schäden an Natur und Menschen verursacht; am stärksten trifft es die Verwundbarsten [B.1 @ipcc_wg2_spm]. Diese Seite zeigt die wichtigsten Folgen nach Art der Gefahr – jeweils für die Welt, Deutschland und China.
+
+[[Hitze](#hitze) [Dürre](#duerre) [Starkregen](#starkregen) [Meeresspiegel](#meer) [Schäden](#schaeden) [Risiken](#risiken) [Zuordnung](#zuordnung)]{.sprung-leiste}
+
+## Hitze {#hitze}
+
+Hitzeextreme werden mit zunehmender Erwärmung häufiger und intensiver [B.2 @ipcc_wg1_spm]. Der Sommer 2026 hat gezeigt, was das für Deutschland bedeutet.
+
+::: {.fakten}
+
+::: {.fakt .de}
+[Deutschland]{.wo}
+[41,8 °C]{.zahl}
+[Neuer Deutschlandrekord am 27. Juni 2026 in Möckern-Drewitz (Sachsen-Anhalt); in Kubschütz (Sachsen) sank die Temperatur in der Nacht zum 28. Juni nicht unter 29,4 °C – das höchste je gemessene nächtliche Minimum [@dwd_sommer_2026]]{.was}
+:::
+
+::: {.fakt .de}
+[Deutschland]{.wo}
+[rund 22]{.zahl}
+[heiße Tage mit mindestens 30 °C im Sommer 2026 im Deutschlandmittel – laut DWD „beispiellos“ [@dwd_sommer_2026]. Die zehn Jahre mit den meisten heißen Tagen liegen alle nach 1994 [@uba_heisse_tage]]{.was}
+:::
+
+::: {.fakt .de}
+[Deutschland]{.wo}
+[≈ 16.000]{.zahl}
+[hitzebedingte Sterbefälle von April bis Mitte September 2026 (Schätzbereich 14.400–17.600) – davon rund 9.600 allein in der Hitzewoche Ende Juni [@rki_hitze_2026]]{.was}
+:::
+
+::: {.fakt .cn}
+[China]{.wo}
+[16,5 Tage]{.zahl}
+[Hitzetage 2025 im Landesmittel – so viele wie nie seit 1961; 2025 war zugleich das wärmste Jahr seit 1961 [@mem_2025]. Extreme Hitze ist seit Anfang der 2000er-Jahre deutlich häufiger geworden [@cma_blaubuch_2026]]{.was}
+:::
+
+:::
+
+Zum Vergleich: In den Hitzesommern 2018 und 2019 schätzte das RKI jeweils rund 7.000 oder mehr hitzebedingte Sterbefälle, 2020 und 2022 bis 2024 jeweils rund 3.000 oder mehr [@rki_hitze_2026].
+
+## Dürre {#duerre}
+
+In einigen Regionen der Welt nehmen landwirtschaftliche und ökologische Dürren mit der Erwärmung zu [B.2 @ipcc_wg1_spm].
+
+::: {.fakten}
+
+::: {.fakt .de}
+[Deutschland]{.wo}
+[72 %]{.zahl}
+[des üblichen Niederschlags fielen im Sommer 2026 – rund 171 statt 239 l/m² [@dwd_sommer_2026]. Von November 2025 bis Juli 2026 war es seit 1882 nur zweimal trockener; die Bodenfeuchte ähnelte den Dürrejahren 2018 und 2022 [@dwd_trockenheit_2026]]{.was}
+:::
+
+::: {.fakt .de}
+[Deutschland]{.wo}
+[≈ 35 Mrd. €]{.zahl}
+[Schäden durch die Hitze- und Dürresommer 2018 und 2019 [@breg_kosten_klimawandel]]{.was}
+:::
+
+::: {.fakt .cn}
+[China]{.wo}
+[−20 %]{.zahl}
+[Abfluss der großen Flüsse 2025 gegenüber normalen Jahren; Dürren betrafen 19,6 Mio. Menschen, 1,19 Mio. brauchten Hilfe bei der Trinkwasserversorgung [@mem_2025]]{.was}
+:::
+
+:::
+
+## Starkregen und Hochwasser {#starkregen}
+
+Auch Starkregen wird mit zunehmender Erwärmung häufiger und heftiger [B.2 @ipcc_wg1_spm]. In Deutschland und China haben zwei Ereignisse im Juli 2021 gezeigt, was das bedeutet.
+
+::: {.fakten}
+
+::: {.fakt .de}
+[Deutschland · Ahr und Erft, Juli 2021]{.wo}
+[40,5 Mrd. €]{.zahl}
+[Schaden – das teuerste Extremwetterereignis der deutschen Geschichte [@breg_kosten_klimawandel]. Mindestens 184 Menschen starben in Deutschland [@wwa_ahr_2021]]{.was}
+:::
+
+::: {.fakt .cn}
+[China · Henan, Juli 2021]{.wo}
+[201,9 mm]{.zahl}
+[Regen in einer Stunde an der Station Zhengzhou. In der Provinz starben oder verschwanden 398 Menschen; direkter Schaden 120,06 Mrd. Yuan [@cn_zhengzhou_2022]]{.was}
+:::
+
+::: {.fakt .cn}
+[China]{.wo}
+[+4,5 %]{.zahl}
+[mehr Starkregentage an den Messstationen pro Jahrzehnt; extreme Starkregen nehmen zu [@cma_blaubuch_2026]]{.was}
+:::
+
+:::
+
+## Meeresspiegel {#meer}
+
+::: {.fakten}
+
+::: {.fakt}
+[Welt]{.wo}
+[4,75 mm]{.zahl}
+[Anstieg pro Jahr 2012–2025 – fast doppelt so schnell wie 1993–2011 [@wmo_sogc_2025]]{.was}
+:::
+
+::: {.fakt .cn}
+[China]{.wo}
+[4,0 mm]{.zahl}
+[Anstieg pro Jahr an Chinas Küsten 1993–2025, mit Beschleunigung; 2025 lag der Meeresspiegel dort 86 mm über dem Mittel 1993–2011 [@cma_blaubuch_2026]]{.was}
+:::
+
+:::
+
+## Was es kostet {#schaeden}
+
+In der EU haben Wetter- und Klimaextreme von 1980 bis 2024 Schäden von **822 Mrd. €** verursacht (Preise von 2024), ein Viertel davon allein 2021–2024. Weniger als 20 % waren privat versichert. Deutschland hatte zusammen mit Italien, Frankreich und Spanien die höchsten absoluten Schäden [@eea_verluste_2025].
+
+```{=html}
+<figure class="anteil-balken" aria-label="Anteile an den Schäden in der EU 1980–2024">
+  <div class="ab-leiste">
+    <span style="flex: 47" class="ab-wasser">Hochwasser 47 %</span>
+    <span style="flex: 27" class="ab-sturm">Stürme, Hagel 27 %</span>
+    <span style="flex: 18" class="ab-hitze">Hitze 18 %</span>
+    <span style="flex: 8" class="ab-rest" title="Dürre, Waldbrände, Kälte, Frost 8 %">8 %</span>
+  </div>
+  <figcaption>Schäden in der EU 1980–2024 nach Gefahr. Rest (8 %): Dürre, Waldbrände, Kälte und Frost.</figcaption>
+</figure>
+```
+
+::: {.fakten}
+
+::: {.fakt .de}
+[Deutschland]{.wo}
+[≥ 145 Mrd. €]{.zahl}
+[Schäden durch Klimawandelfolgen von 2000 bis 2021. Bis 2050 könnten es je nach Stärke des Klimawandels 280 bis 900 Mrd. € werden [@breg_kosten_klimawandel]]{.was}
+:::
+
+::: {.fakt .cn}
+[China]{.wo}
+[241,6 Mrd. Yuan]{.zahl}
+[direkter Schaden durch Naturkatastrophen 2025 (einschließlich Erdbeben); 763 Tote und Vermisste. Hochwasser und Erdrutsche verursachten 69 % des Schadens [@mem_2025]]{.was}
+:::
+
+:::
+
+## Wie groß sind die Risiken? {#risiken}
+
+Weltweit leben etwa **3,3 bis 3,6 Mrd. Menschen** in Verhältnissen, die sehr anfällig für den Klimawandel sind [B.2 @ipcc_wg2_spm]. Für Europa und Deutschland gibt es eigene Risikoanalysen:
+
+::: {.fakten}
+
+::: {.fakt}
+[EU · EUCRA 2024]{.wo}
+[21 von 36]{.zahl}
+[großen Klimarisiken für Europa verlangen sofort Maßnahmen, 8 davon besonders dringend. Südeuropa, tief liegende Küsten und die Gebiete in äußerster Randlage sind Hotspots [@eea_eucra_2024]]{.was}
+:::
+
+::: {.fakt .de}
+[Deutschland · KWRA 2021]{.wo}
+[rund 30]{.zahl}
+[von über 100 untersuchten Klimawirkungen brauchen sehr dringend Maßnahmen. Bei starkem Klimawandel wäre Ende des Jahrhunderts ganz Deutschland ein Hotspot [@uba_kwra_2021]]{.was}
+:::
+
+:::
+
+## Wie viel davon ist Klimawandel? {#zuordnung}
+
+Ob ein einzelnes Wetterereignis „vom Klimawandel kommt“, lässt sich nicht mit Ja oder Nein beantworten. **Attributionsstudien** vergleichen deshalb, wie wahrscheinlich und wie stark ein Ereignis im heutigen Klima ist und wie in einem Klima ohne menschliche Erwärmung.
+
+::: {.fakten}
+
+::: {.fakt .de}
+[Hochwasser Ahr und Erft 2021]{.wo}
+[1,2- bis 9-mal]{.zahl}
+[wahrscheinlicher wurde so ein Tagesregen durch den Klimawandel, und 3–19 % heftiger [@wwa_ahr_2021]]{.was}
+:::
+
+::: {.fakt .de}
+[Hitzewelle Juni 2026]{.wo}
+[+3,1 °C]{.zahl}
+[wärmer war die Hitzewoche als in einem vorindustriellen Klima. In einem 1,3 °C kälteren Klima wäre dieses Ereignis statistisch nicht möglich gewesen [@dwd_attribution_2026]]{.was}
+:::
+
+:::
+
+## Was daraus folgt
+
+Zwei Antworten gehören zusammen: **Anpassung** an Folgen, die nicht mehr zu vermeiden sind, und **Klimaschutz**, damit die Risiken nicht weiter wachsen. Der IPCC hält fest: Viele Veränderungen im Klimasystem werden umso größer, je stärker sich die Erde erwärmt [B.2 @ipcc_wg1_spm].
+
+::: {.weiter-ebenen}
+[[Was ist Klimawandel?](index.qmd) – Treibhauseffekt und Erwärmung]{}
+[[Ziele und Kontrolle](../ziele/index.qmd) – Was wurde versprochen?]{}
+[[Emissionen heute](../wissen/emissionen-de.qmd) – Wo steht Deutschland?]{}
+:::

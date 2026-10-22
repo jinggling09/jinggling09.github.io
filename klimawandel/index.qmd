@@ -197,6 +197,8 @@ Jeder Streifen ist ein Jahr – blau kühler, rot wärmer als das Mittel 1961–
 
 :::
 
+Hitze, Dürre, Starkregen und was sie kosten: [Folgen und Klimarisiken →](folgen.qmd)
+
 ## Was daraus folgt
 
 Im **Übereinkommen von Paris** haben sich die Staaten 2015 verpflichtet, die Erwärmung deutlich unter 2 °C zu halten und Anstrengungen zu unternehmen, sie auf 1,5 °C zu begrenzen [Art. 2 Abs. 1 @paris_2015]. Dafür müssen die weltweiten Emissionen sinken – 2025 sind sie aber noch einmal um 0,7 % auf 54,1 Mrd. t CO₂-Äquivalente gestiegen [@edgar_2026]. Wie EU, Deutschland und China darauf antworten, zeigen die vier Ebenen dieser Website:

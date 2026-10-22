@@ -118,7 +118,7 @@ Stand 21.10.2026 – Punkte 1–8 umgesetzt und committet (bd5411d, db5861c, 849
 
 ## Neue Seiten nach Strukturumbau (21.10.2026, erst mit Inhalt ins Menü)
 - „Was die Forschung sagt: IPCC“ (Klimawandel-Bereich): wie der IPCC arbeitet, WG I/II/III, TFI, AR6-Kernaussagen, AR7-Zeitplan – Primärquellen ipcc.ch. Danach kleine Verweise: WG I → Was ist Klimawandel, WG II → Folgen und Klimarisiken, WG III → Klimaschutz.
-- „Folgen und Klimarisiken“ DE/CN (Klimawandel-Bereich).
+- „Folgen und Klimarisiken“: erledigt 22.10.2026 als `klimawandel/folgen.qmd` (nur DE, im Menü unter Klimawandel). Gliederung nach Gefahr (Jings Wahl): Hitze · Dürre · Starkregen · Meeresspiegel · Schäden · Risiken (EUCRA/KWRA) · Zuordnung (Attributionsstudien). Jährlich prüfen: RKI-Hitzemortalität (Saisonende Sept.), DWD-Sommerbilanz (31.8.), MEM-Jahresbilanz China (Januar), CMA-Blaubuch (Juli), EEA-Schadensindikator (Oktober). Für China noch keine Attributionsstudie ausgewertet; EN/ZH fehlen.
 - „Chinesische Unternehmen in Europa“ (CBAM, CSRD Drittstaaten, CSDDD, Batterieverordnung, EUDR) und „Carbon Leakage“ (auch Verlagerung europäischer Firmen nach Asien) im Unternehmen-Bereich.
 - PRI (Principles for Responsible Investment, Investorenseite) in `berichtspflichten.qmd` → „Freiwillig“ neben CDP/SBTi, Quelle unpri.org. NFRD nicht aufnehmen (durch CSRD ersetzt, Jings Entscheidung).
 - Querverweise zwischen Seiten („穿插“), z. B. „Welche Gase?“ → THG-Dashboard.
