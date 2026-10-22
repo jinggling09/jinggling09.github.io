@@ -17,6 +17,9 @@ python3 scripts/fetch_klimastreifen.py --offline
 # Kopfbilder der Technikseiten (Energiewende) aus den Ausbaudaten
 python3 scripts/technik_kopf.py
 
+# Sektorkarten des Länderprofils Deutschland (gleiche Daten wie das Klimaschutz-Rad)
+python3 scripts/sektoren_de.py
+
 for lang in en zh; do
   rm -rf "$lang/daten/data"
   mkdir -p "$lang/daten/data"

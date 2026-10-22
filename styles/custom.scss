@@ -1391,3 +1391,31 @@ html[lang|="zh"] .sb-hand, html[lang|="zh"] .sb-frage { font-weight: 400; transf
   .ks-mini-de { top: .4rem; } .ks-mini-cn { top: calc(52% + .4rem); }
   .ks-mini-jahre { right: auto; left: .5rem; bottom: .35rem; letter-spacing: .04em; color: #24302a; text-shadow: 0 0 4px #fff; }
 }
+
+/* Klimaschutz-Rad im Länderprofil Deutschland (von Jing gewählt, 22.10.2026): Sektoren als Ring, Instrumente als Strahlen */
+figure.klimarad { margin: 1rem 0 .4rem;
+  .kr-rad { position: relative; container-type: inline-size; }
+  svg { width: 100%; height: auto; display: block; overflow: visible; }
+  .kr-hilfslinie { fill: none; stroke: #e6ebe7; stroke-dasharray: 2 5; }
+  .kr-sektor { cursor: pointer; transition: opacity .25s; outline: none; }
+  .kr-faecher { pointer-events: none; path { transition: opacity .3s; } }
+  .kr-name { font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; fill: #fff; pointer-events: none; }
+  .kr-strahl { cursor: pointer; transition: opacity .25s; outline: none;
+    line { stroke: #b9c4be; stroke-width: 1; }
+    text { font-family: $headings-font-family; font-size: 17px; fill: #33413a; }
+    &:hover text, &:focus-visible text { fill: #000; font-weight: 700; } }
+  .kr-voll { fill: #1d2a24; } .kr-offen { fill: none; stroke: #1d2a24; stroke-width: 1.6; }
+  .kr-gedimmt { opacity: .22; }
+  .kr-mitte { position: absolute; left: 50%; top: 50%; width: 26%; transform: translate(-50%, -50%); text-align: center; }
+  .kr-titel { font-family: $headings-font-family; font-weight: 700; font-size: 2.3cqw; line-height: 1.15; margin-bottom: .15rem; }
+  .kr-zahl { font-family: $headings-font-family; font-size: 3.3cqw; line-height: 1.1; }
+  .kr-klein { font-size: 1.35cqw; color: $grau; margin: .15rem 0 .45rem; }
+  .kr-text { font-size: 1.4cqw; line-height: 1.35; margin: .4rem 0; }
+  .status-chip { font-size: 1.2cqw; padding: .15em .6em; }
+  .kr-mitte a { font-weight: 700; font-size: 1.5cqw; text-decoration: none; color: $gruen; }
+  .kr-legende { display: flex; justify-content: center; gap: .3em .9em; flex-wrap: wrap; font-size: 1.3cqw; color: $grau;
+    span { display: inline-flex; align-items: center; gap: .25rem; white-space: nowrap; } svg { width: auto; fill: #1d2a24; color: #1d2a24; } }
+  .kr-hinweis { font-family: $hand; font-weight: 700; font-size: 1.2rem; color: $gruen; text-align: center; margin-top: -.6rem; }
+  @media (max-width: 640px) { display: none; }
+}
+.kr-belege { @media (max-width: 640px) { display: none; } }

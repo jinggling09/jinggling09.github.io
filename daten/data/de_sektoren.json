@@ -1,0 +1,270 @@
+{
+ "_hinweis": "Einzige Quelle für die Sektorkarten in laender/deutschland.qmd (über scripts/sektoren_de.py → _sektoren_de.md) und das Klimaschutz-Rad (skripte/klimarad.js). Jährlich aktualisieren: Emissionen des Vorjahres (UBA bis 15. März, § 5 KSG) und Projektionen/Budgetstand (UBA-Projektionsbericht, § 5a KSG).",
+ "stand": "2026-10-22",
+ "emissionen_jahr": 2025,
+ "quellen": {
+  "emissionen": "uba_projektion_2026",
+  "massnahmen": "bmukn_ksp_2026"
+ },
+ "typen": {
+  "preis": "CO₂-Preis",
+  "pflicht": "Pflicht oder Ziel",
+  "foerder": "Förderung"
+ },
+ "sektoren": [
+  {
+   "id": "energiewirtschaft",
+   "name": "Energiewirtschaft",
+   "werte_md": "2025: **189,1 Mio. t** · 2030: 94 Mio. t (Projektion)",
+   "status": "plus",
+   "status_md": "übererfüllt +193 Mio. t",
+   "text_md": "Größter Sektor mit rund 29 % der Emissionen, aber auch größter Minderungsbeitrag. Der Puffer schrumpfte gegenüber dem Vorjahr um 67 Mio. t – wegen mehr Kohleverstromung, niedrigerem CO₂-Preis und verzögertem Offshore-Wind.",
+   "massnahmen_md": "zusätzliche Ausschreibung von 12 GW Wind an Land (rund 2.000 Anlagen, 6,5 Mio. t weniger CO₂ im Jahr 2030), Ziel 115 GW Wind an Land bis 2030; flexibleres Stromsystem, klimaneutrale Brennstoffe in Kraftwerken.",
+   "rad": {
+    "kurz": "Energie",
+    "farbe": "#d9822b",
+    "zahl": "189,1 Mio. t",
+    "klein": "2025 · Projektion 2030: 94 Mio. t",
+    "budget": "Budget 2021–2030 übererfüllt: +193 Mio. t",
+    "kurztext": "Größter Sektor mit rund 29 % der Emissionen, aber auch größter Minderungsbeitrag.",
+    "instrumente": [
+     [
+      "EU-Emissionshandel",
+      "preis",
+      "wissen/eu-ets.html"
+     ],
+     [
+      "EEG-Ausschreibungen",
+      "foerder",
+      "energiewende/photovoltaik.html"
+     ],
+     [
+      "Wind an Land: 115 GW bis 2030",
+      "pflicht",
+      "energiewende/windenergie.html"
+     ],
+     [
+      "Klimaneutrale Brennstoffe",
+      "foerder",
+      "energiewende/wasserstoff.html"
+     ]
+    ]
+   },
+   "emissionen_2025": 189.1,
+   "lulucf": false
+  },
+  {
+   "id": "industrie",
+   "name": "Industrie",
+   "werte_md": "2025: **144,1 Mio. t** · 2030: 116,5 Mio. t",
+   "status": "plus",
+   "status_md": "übererfüllt +74,6 Mio. t",
+   "text_md": "Der Rückgang 2025 (−3,8 %) folgt vor allem der schwachen Konjunktur: Die Primärstahlproduktion sank um über 10 %. Ohne zusätzliche Instrumente steigen die Emissionen nach der Projektion um 2040 wieder an.",
+   "massnahmen_md": "neues Förderprogramm für Prozesswärme und Elektrifizierung, z. B. Groß-Wärmepumpen (4,3 Mio. t im Jahr 2030), CO₂-Differenzverträge, Kreislaufwirtschaft, CO₂-Abscheidung und -Speicherung für unvermeidbare Emissionen.",
+   "rad": {
+    "kurz": "Industrie",
+    "farbe": "#6d6f8f",
+    "zahl": "144,1 Mio. t",
+    "klein": "2025 · Projektion 2030: 116,5 Mio. t",
+    "budget": "Budget 2021–2030 übererfüllt: +74,6 Mio. t",
+    "kurztext": "Rückgang 2025 vor allem wegen schwacher Konjunktur; ohne neue Instrumente steigen die Emissionen um 2040 wieder.",
+    "instrumente": [
+     [
+      "EU-Emissionshandel",
+      "preis",
+      "wissen/eu-ets.html"
+     ],
+     [
+      "CBAM",
+      "preis",
+      "wissen/cbam.html"
+     ],
+     [
+      "Klimaschutzverträge",
+      "foerder",
+      "unternehmen/anreize.html"
+     ],
+     [
+      "Energieeffizienzgesetz",
+      "pflicht",
+      "unternehmen/pflichten.html"
+     ],
+     [
+      "Förderung Prozesswärme",
+      "foerder",
+      "#industrie"
+     ]
+    ]
+   },
+   "emissionen_2025": 144.1,
+   "lulucf": false
+  },
+  {
+   "id": "gebäude",
+   "name": "Gebäude",
+   "werte_md": "2025: **103,4 Mio. t** (+3,4 %)",
+   "status": "minus",
+   "status_md": "verfehlt −110,1 Mio. t",
+   "text_md": "Der kalte Winter 2025 erhöhte den Gasverbrauch um 8 %. Gleichzeitig wurden 2025 erstmals mehr Wärmepumpen als Gasheizungen verkauft [@bmukn_ksp_2026]. Die Projektion rechnet noch mit der alten 65-%-Regel; die Wirkung des neuen Gebäudemodernisierungsgesetzes ist darin nicht enthalten [@erk_pruefbericht_2026].",
+   "massnahmen_md": "Fortführung der BEG, Ausbau der BEW auf 2,7 Mrd. € im Jahr 2030 (2,3 Mio. t), Förderprogramme für effizientes Bauen, kommunale Wärmeplanung.",
+   "rad": {
+    "kurz": "Gebäude",
+    "farbe": "#b0412e",
+    "zahl": "103,4 Mio. t",
+    "klein": "2025 · +3,4 % gegenüber 2024",
+    "budget": "Budget 2021–2030 verfehlt: −110,1 Mio. t",
+    "kurztext": "Kalter Winter, mehr Gas – aber 2025 erstmals mehr Wärmepumpen als Gasheizungen verkauft.",
+    "instrumente": [
+     [
+      "BEHG, ab 2028 ETS 2",
+      "preis",
+      "wissen/eu-ets.html"
+     ],
+     [
+      "Gebäudemodernisierungsgesetz",
+      "pflicht",
+      "energiewende/waermepumpen.html"
+     ],
+     [
+      "Solarpflicht ab 2027",
+      "pflicht",
+      "energiewende/photovoltaik.html"
+     ],
+     [
+      "BEG und BEW",
+      "foerder",
+      "energiewende/waermepumpen.html"
+     ],
+     [
+      "Kommunale Wärmeplanung",
+      "pflicht",
+      "#gebäude"
+     ]
+    ]
+   },
+   "emissionen_2025": 103.4,
+   "lulucf": false
+  },
+  {
+   "id": "verkehr",
+   "name": "Verkehr",
+   "werte_md": "2025: **146,3 Mio. t** (+1,5 %) · 2030: 115 Mio. t",
+   "status": "minus",
+   "status_md": "verfehlt −186,9 Mio. t",
+   "text_md": "Größte Lücke aller Sektoren, um 18 Mio. t gewachsen. Grund ist vor allem der langsamere Hochlauf der E-Mobilität: Für 2030 werden nur noch 7 Mio. E-Pkw erwartet, 1,7 Mio. weniger als im Vorjahr angenommen.",
+   "massnahmen_md": "E-Auto-Förderung (3 Mrd. €, rund 800.000 Fahrzeuge), Weiterentwicklung der Treibhausgasquote für Kraftstoffe (6,3 Mio. t im Jahr 2030), Deutschlandticket (1 Mio. t pro Jahr), Masterplan Ladeinfrastruktur 2030.",
+   "rad": {
+    "kurz": "Verkehr",
+    "farbe": "#3c5a8a",
+    "zahl": "146,3 Mio. t",
+    "klein": "2025 · Projektion 2030: 115 Mio. t",
+    "budget": "Budget 2021–2030 verfehlt: −186,9 Mio. t",
+    "kurztext": "Größte Lücke aller Sektoren, vor allem wegen des langsameren Hochlaufs der E-Mobilität.",
+    "instrumente": [
+     [
+      "BEHG, ab 2028 ETS 2",
+      "preis",
+      "wissen/eu-ets.html"
+     ],
+     [
+      "THG-Quote für Kraftstoffe",
+      "pflicht",
+      "#verkehr"
+     ],
+     [
+      "E-Auto-Förderung",
+      "foerder",
+      "#verkehr"
+     ],
+     [
+      "Deutschlandticket",
+      "foerder",
+      "#verkehr"
+     ],
+     [
+      "Masterplan Ladeinfrastruktur",
+      "foerder",
+      "#verkehr"
+     ]
+    ]
+   },
+   "emissionen_2025": 146.3,
+   "lulucf": false
+  },
+  {
+   "id": "landwirtschaft",
+   "name": "Landwirtschaft",
+   "werte_md": "2025: **60,8 Mio. t** · 2030: 58,2 Mio. t",
+   "status": "plus",
+   "status_md": "übererfüllt +16,4 Mio. t",
+   "text_md": "Emissionen stagnieren; die Bestände an Rindern und Schweinen sinken nicht mehr. Nach 2030 wirken die bestehenden Instrumente laut UBA nur noch wenig.",
+   "massnahmen_md": "u. a. Umstieg landwirtschaftlicher Maschinen von Diesel auf elektrische Antriebe.",
+   "rad": {
+    "kurz": "Agrar",
+    "farbe": "#7f9a3a",
+    "zahl": "60,8 Mio. t",
+    "klein": "2025 · Projektion 2030: 58,2 Mio. t",
+    "budget": "Budget 2021–2030 übererfüllt: +16,4 Mio. t",
+    "kurztext": "Emissionen stagnieren; nach 2030 wirken die bestehenden Instrumente laut UBA nur noch wenig.",
+    "instrumente": [
+     [
+      "Elektrische Landmaschinen",
+      "foerder",
+      "#landwirtschaft"
+     ]
+    ]
+   },
+   "emissionen_2025": 60.8,
+   "lulucf": false
+  },
+  {
+   "id": "abfall",
+   "name": "Abfallwirtschaft und Sonstiges",
+   "emissionen_2025": 5.1,
+   "lulucf": false,
+   "status": "plus",
+   "nur_beleg": true,
+   "beleg_md": "Der kleinste Sektor, **Abfallwirtschaft und Sonstiges** (2025: 5,1 Mio. t), übererfüllt sein Budget um 17 Mio. t [@uba_projektion_2026].",
+   "rad": {
+    "kurz": "",
+    "farbe": "#9aa39e",
+    "zahl": "5,1 Mio. t",
+    "klein": "2025 · kleinster Sektor",
+    "budget": "Budget 2021–2030 übererfüllt: +17 Mio. t",
+    "kurztext": "Der kleinste Sektor des Klimaschutzgesetzes.",
+    "instrumente": []
+   }
+  },
+  {
+   "id": "landnutzung-wald-moore-lulucf",
+   "name": "Landnutzung, Wald, Moore (LULUCF)",
+   "werte_md": "2025: **+26,9 Mio. t** (Netto-Quelle) · Ziel 2030: −25 Mio. t",
+   "status": "minus",
+   "status_md": "Ziel 2030 verfehlt um knapp 50 Mio. t",
+   "text_md": "Nach Dürre- und Schadjahren seit 2018 erholt sich der Wald, doch organische Böden – vor allem entwässerte Moore – bleiben die größte Quelle.",
+   "massnahmen_md": "23 Maßnahmen im natürlichen Klimaschutz mit 4,7 Mrd. €: Umbau zu klimastabilen Mischwäldern, Wiedervernässung von Mooren, Förderung „nasser\" Landwirtschaft auf Moorflächen – zusammen 13,5 Mio. t Minderung.",
+   "rad": {
+    "kurz": "LULUCF",
+    "farbe": "#4f7d5c",
+    "zahl": "+26,9 Mio. t",
+    "klein": "2025 Netto-Quelle · Ziel 2030: −25 Mio. t",
+    "budget": "Ziel 2030 verfehlt um knapp 50 Mio. t",
+    "kurztext": "Sollte CO₂ binden, setzt aber frei – vor allem entwässerte Moore. Nicht in der Summe der übrigen Sektoren.",
+    "instrumente": [
+     [
+      "Wiedervernässung von Mooren",
+      "foerder",
+      "#landnutzung-wald-moore-lulucf"
+     ],
+     [
+      "Klimastabile Mischwälder",
+      "foerder",
+      "#landnutzung-wald-moore-lulucf"
+     ]
+    ]
+   },
+   "emissionen_2025": 26.9,
+   "lulucf": true
+  }
+ ]
+}
