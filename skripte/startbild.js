@@ -108,6 +108,18 @@
   }).catch(function () { /* ohne Kartendaten bleibt die blaue Kugel stehen */ });
 
   // Einstiege in der Zeichnung (SVG-Gruppen mit role="link"): Klick und Enter/Leertaste
+  // ruhige Trefferfläche: unsichtbares Rechteck um Schrift, Punkt und Pfeil (sonst flackert das
+  // Vergrößern, weil der Zeiger zwischen die Buchstaben fällt); erst nach dem Laden der Handschrift messen
+  function flaechen() {
+    document.querySelectorAll(".sb-hot").forEach(function (h) {
+      var alt = h.querySelector(".sb-flaeche"); if (alt) alt.remove();
+      var b = h.getBBox(), r = document.createElementNS("http://www.w3.org/2000/svg", "rect"), p = 16;
+      r.setAttribute("class", "sb-flaeche"); r.setAttribute("rx", "12");
+      r.setAttribute("x", b.x - p); r.setAttribute("y", b.y - p); r.setAttribute("width", b.width * 1.3 + 2 * p); r.setAttribute("height", b.height + 2 * p);
+      h.insertBefore(r, h.firstChild);
+    });
+  }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(flaechen); else flaechen();
   document.querySelectorAll(".sb-hot[data-href]").forEach(function (h) {
     h.addEventListener("click", function () { location.href = h.dataset.href; });
     h.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); location.href = h.dataset.href; } });

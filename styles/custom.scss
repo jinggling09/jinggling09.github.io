@@ -1311,12 +1311,14 @@ $hand: "Caveat", "Ma Shan Zheng", cursive;
     text { paint-order: stroke; stroke: rgba(255, 255, 255, .85); stroke-width: 4px; cursor: pointer; }
     .sb-treffer { cursor: pointer; } }
   .sb-hot { cursor: pointer;
-    text { font-family: $hand; font-weight: 700; font-size: 30px; fill: $tinte; transform-box: fill-box; transform-origin: center; transition: transform .25s ease, fill .2s; }
+    text { font-family: $hand; font-weight: 700; font-size: 30px; fill: $tinte; transform-box: fill-box; transform-origin: left center; transition: transform .25s ease, fill .2s; pointer-events: none; }
+    .sb-flaeche { fill: transparent; }
     text.klein { font-size: 22px; }
     .sb-punkt { fill: $gruen; transition: r .2s; }
     .sb-pfeil { fill: none; stroke: $tinte; stroke-width: 1.4; stroke-linecap: round; }
     .sb-ring { fill: none; stroke: $gruen; stroke-width: 2; opacity: 0; transform-box: fill-box; transform-origin: center; animation: sb-puls 2.8s ease-out infinite; }
-    &:hover text, &:focus-visible text { fill: $gruen; transform: scale(1.35); }
+    &:hover text, &:focus-visible text { fill: $gruen; transform: scale(1.3); }
+    &:active text { transform: scale(1.22); }
     &:hover .sb-punkt, &:focus-visible .sb-punkt { r: 11; }
     &:focus { outline: none; }
   }
