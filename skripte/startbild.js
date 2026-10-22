@@ -115,7 +115,7 @@
       var alt = h.querySelector(".sb-flaeche"); if (alt) alt.remove();
       var b = h.getBBox(), r = document.createElementNS("http://www.w3.org/2000/svg", "rect"), p = 16;
       r.setAttribute("class", "sb-flaeche"); r.setAttribute("rx", "12");
-      r.setAttribute("x", b.x - p); r.setAttribute("y", b.y - p); r.setAttribute("width", b.width * 1.3 + 2 * p); r.setAttribute("height", b.height + 2 * p);
+      r.setAttribute("x", b.x - p); r.setAttribute("y", b.y - p); r.setAttribute("width", b.width * 1.12 + 2 * p); r.setAttribute("height", b.height + 2 * p);
       h.insertBefore(r, h.firstChild);
     });
   }
