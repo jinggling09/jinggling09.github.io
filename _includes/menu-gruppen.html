@@ -1,0 +1,41 @@
+<!-- Menü: Gruppenköpfe (dropdown-header) werden zu Schaltern (von Jing gewünscht, 22.10.2026).
+     Breiter Bildschirm: Unterpunkte klappen nach rechts aus (Überfahren oder Klick).
+     Schmaler Bildschirm (eingeklapptes Menü): Unterpunkte klappen darunter auf; Gruppe der aktuellen Seite ist offen. -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var breit = window.matchMedia("(min-width: 992px)");
+  document.querySelectorAll(".navbar .dropdown-menu .dropdown-header").forEach(function (kopf, n) {
+    var li = kopf.closest("li") || kopf, punkte = [], x = li.nextElementSibling;
+    while (x && !x.querySelector(".dropdown-header") && !x.classList.contains("dropdown-header") && !x.querySelector(".dropdown-divider")) { punkte.push(x); x = x.nextElementSibling; }
+    if (!punkte.length) return;
+    var gruppe = document.createElement("li"), knopf = document.createElement("button"), liste = document.createElement("ul");
+    gruppe.className = "menu-gruppe-li"; liste.className = "menu-flyout"; liste.id = "menu-gruppe-" + n;
+    knopf.type = "button"; knopf.className = "menu-gruppe"; knopf.setAttribute("aria-controls", liste.id);
+    knopf.innerHTML = "<span>" + kopf.textContent.trim() + "</span><span class=\"menu-pfeil\" aria-hidden=\"true\"></span>";
+    gruppe.appendChild(knopf); gruppe.appendChild(liste);
+    li.replaceWith(gruppe);
+    var aktuell = false;
+    punkte.forEach(function (p) {
+      liste.appendChild(p);
+      var a = p.querySelector("a[href]");
+      if (a && a.pathname === location.pathname) { aktuell = true; a.classList.add("aktuell"); }
+    });
+    if (aktuell) gruppe.classList.add("aktuell");
+    function setze(o) {
+      if (o) gruppe.parentNode.querySelectorAll(".menu-gruppe-li.offen").forEach(function (g) { if (g !== gruppe) { g.classList.remove("offen"); g.firstChild.setAttribute("aria-expanded", "false"); } });
+      gruppe.classList.toggle("offen", o); knopf.setAttribute("aria-expanded", o);
+    }
+    setze(aktuell && !breit.matches);
+    // Klick im Menü soll das Dropdown nicht schließen
+    knopf.addEventListener("click", function (e) { e.preventDefault(); e.stopPropagation(); setze(!gruppe.classList.contains("offen")); });
+    gruppe.addEventListener("mouseenter", function () { if (breit.matches) setze(true); });
+    gruppe.addEventListener("mouseleave", function () { if (breit.matches) setze(false); });
+  });
+  // beim Schließen des Dropdowns ausgeklappte Gruppen zurücksetzen (nur breiter Bildschirm)
+  document.querySelectorAll(".navbar .dropdown").forEach(function (d) {
+    d.addEventListener("hidden.bs.dropdown", function () {
+      if (breit.matches) d.querySelectorAll(".menu-gruppe-li.offen").forEach(function (g) { g.classList.remove("offen"); g.firstChild.setAttribute("aria-expanded", "false"); });
+    });
+  });
+});
+</script>

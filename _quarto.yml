@@ -46,10 +46,18 @@ website:
             text: "Stromsektor: Deutschland & China"
       - text: "Klimaschutz"
         menu:
-          - text: "Ziele und Kontrolle"
+          # Hauptpunkte direkt, Themengruppen klappen auf (_includes/menu-gruppen.html)
           - href: ziele/index.qmd
-            text: "Ziele im Vergleich"
-          - text: "---"
+            text: "Ziele und Kontrolle"
+          - href: wissen/emissionen-de.qmd
+            text: "Fortschritt: Emissionen heute"
+          - text: "Länder im Überblick"
+          - href: laender/eu.qmd
+            text: "Europäische Union"
+          - href: laender/deutschland.qmd
+            text: "Deutschland"
+          - href: laender/china.qmd
+            text: "China"
           - text: "CO₂-Preis und Märkte"
           - href: wissen/index.qmd
             text: "Überblick & Zeitleiste"
@@ -59,7 +67,6 @@ website:
             text: "EU-ETS, ETS 2 & BEHG"
           - href: wissen/cbam.qmd
             text: "CBAM – Grundlagen"
-          - text: "---"
           - text: "Energiewende"
           - href: daten/index.qmd
             text: "Ausbau Wind & Solar"
@@ -71,18 +78,6 @@ website:
             text: "Wärmepumpen"
           - href: energiewende/wasserstoff.qmd
             text: "Wasserstoff"
-          - text: "---"
-          - text: "Länder im Überblick"
-          - href: laender/deutschland.qmd
-            text: "Deutschland"
-          - href: laender/eu.qmd
-            text: "Europäische Union"
-          - href: laender/china.qmd
-            text: "China"
-          - text: "---"
-          - text: "Fortschritt"
-          - href: wissen/emissionen-de.qmd
-            text: "Emissionen heute"
       - text: "Unternehmen"
         menu:
           - href: unternehmen/index.qmd
@@ -140,6 +135,7 @@ format:
       - _includes/lang-switch.html
       - _includes/literatur-toggle.html
       - _includes/sitemap-de.html
+      - _includes/menu-gruppen.html
     citations-hover: true
     reference-location: margin
 

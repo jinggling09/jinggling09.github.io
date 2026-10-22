@@ -3,6 +3,8 @@ title: "Europäische Union: Klimaschutz im Überblick"
 subtitle: "Wer setzt die Ziele, wer setzt sie um, wer kontrolliert – und wo steht die EU?"
 ---
 
+{{< include _wahl.md >}}
+
 ::: {.stand}
 Stand: 21.10.2026
 :::

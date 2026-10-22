@@ -3,6 +3,8 @@ title: "Deutschland: Klimaschutz im Überblick"
 subtitle: "Wer setzt die Ziele, wer setzt sie um, wer kontrolliert – und wo steht das Land?"
 ---
 
+{{< include _wahl.md >}}
+
 ::: {.stand}
 Stand: 21.10.2026
 :::

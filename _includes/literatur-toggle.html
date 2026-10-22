@@ -52,6 +52,10 @@
     d.appendChild(sum);
     while (box.firstChild) d.appendChild(box.firstChild);
     box.appendChild(d);
+    // .belege.am-bild: Aufklapp-Zeile ans Ende der Bildunterschrift davor (z. B. Videos)
+    var fig = box.classList.contains("am-bild") && box.previousElementSibling;
+    var cap = fig && fig.querySelector("figcaption");
+    if (cap) { cap.appendChild(document.createTextNode(" ")); cap.appendChild(d); box.remove(); }
   });
 })();
 </script>

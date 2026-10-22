@@ -118,7 +118,7 @@ Wasserdampf, Ozon, CO₂, Methan und Lachgas kommen natürlich vor; dazu kommen 
 </figure>
 ```
 
-::: {.belege}
+::: {.belege .am-bild}
 **Video** · Visualisierung: NASA's Scientific Visualization Studio [@nasa_svs_5207] · Daten: GISTEMP v4 [@lenssen_2024] · für diese Seite verkleinert.
 :::
 
@@ -131,7 +131,7 @@ Wasserdampf, Ozon, CO₂, Methan und Lachgas kommen natürlich vor; dazu kommen 
 </figure>
 ```
 
-::: {.belege}
+::: {.belege .am-bild}
 **Video** · Visualisierung: NASA's Scientific Visualization Studio [@nasa_svs_5191] · Daten: GISTEMP v4 [@lenssen_2024] · für diese Seite verkleinert.
 :::
 

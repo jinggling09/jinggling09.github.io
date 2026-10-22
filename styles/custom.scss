@@ -1419,3 +1419,40 @@ figure.klimarad { margin: 1rem 0 .4rem;
   @media (max-width: 640px) { display: none; }
 }
 .kr-belege { @media (max-width: 640px) { display: none; } }
+
+/* Länderprofile: Umschalter EU · Deutschland · China über dem Titel */
+nav.laender-wahl { display: inline-flex; gap: .25rem; padding: .25rem; margin: .4rem 0 1rem; background: #fff; border: 1px solid $linie; border-radius: 99px; font-size: .92rem;
+  a { display: inline-flex; align-items: center; gap: .45rem; padding: .35rem 1rem; border-radius: 99px; color: $grau; font-weight: 600; text-decoration: none; transition: background .2s, color .2s;
+    &:hover { background: $gruen-hell; color: $gruen-dunkel; } }
+  .lw-punkt { width: .6rem; height: .6rem; border-radius: 50%; }
+  .lw-eu .lw-punkt { background: $spur-eu; } .lw-de .lw-punkt { background: $spur-de; } .lw-cn .lw-punkt { background: $spur-cn; }
+  a.aktiv { background: $gruen-dunkel; color: #fff; }
+}
+
+/* Menü: Hauptpunkte und Themengruppen – breit nach rechts ausklappend, schmal darunter (_includes/menu-gruppen.html) */
+.navbar .dropdown-menu {
+  > li:not(.menu-gruppe-li) > .dropdown-item { font-weight: 600; }
+  .menu-gruppe-li { position: relative; }
+  button.menu-gruppe { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 1.2rem; padding: .45rem 1rem; border: 0; background: none; font: inherit; font-weight: 600; color: $gruen-dunkel; text-align: left; cursor: pointer;
+    .menu-pfeil { flex: none; width: .45rem; height: .45rem; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); transition: transform .2s; } }
+  .menu-gruppe-li.offen > button.menu-gruppe, button.menu-gruppe:hover { background: $gruen-hell; }
+  .menu-gruppe-li.aktuell > button.menu-gruppe span:first-child { text-decoration: underline; text-decoration-color: rgba(31, 95, 74, .45); text-underline-offset: .25em; }
+  .menu-flyout { display: none; list-style: none; margin: 0; padding: .4rem 0; }
+  .menu-gruppe-li.offen > .menu-flyout { display: block; }
+  .menu-flyout .dropdown-item { color: $grau; }
+  .menu-flyout .dropdown-item.aktuell { color: $gruen-dunkel; font-weight: 700; }
+  @media (min-width: 992px) {
+    .menu-flyout { position: absolute; left: 100%; top: -.4rem; min-width: 16rem; background: #fff; border: 1px solid rgba(0, 0, 0, .15); border-radius: .375rem; box-shadow: 0 8px 22px rgba(18, 61, 48, .12); z-index: 1001; }
+  }
+  @media (max-width: 991.98px) {
+    button.menu-gruppe .menu-pfeil { transform: rotate(45deg) translateY(-2px); }
+    .menu-gruppe-li.offen > button.menu-gruppe .menu-pfeil { transform: rotate(-135deg) translateY(-1px); }
+    .menu-flyout .dropdown-item { padding-left: 1.9rem; font-size: .92em; }
+  }
+}
+
+/* Belege-Zeile am Ende einer Bildunterschrift (.belege.am-bild) */
+figcaption details.belege-klapp { display: inline; margin: 0;
+  summary { display: inline; }
+  > p { display: block; margin: .3rem 0 0; }
+}
