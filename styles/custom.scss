@@ -1474,3 +1474,25 @@ figure.anteil-balken { margin: 1rem 0 1.2rem;
   figcaption { font-size: .85rem; color: $grau; margin-top: .4rem; }
   @media (max-width: 640px) { span { font-size: .7rem; padding: 0 .35rem; } }
 }
+
+/* Prüfliste Berichtsqualität (berichtspflichten.qmd#qualitaet, 23.10.2026): keine Punkte, nur offene Fragen je Merkmal */
+.qualicheck { margin: 1rem 0 1.6rem;
+  .qc-raster { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem;
+    @media (max-width: 860px) { grid-template-columns: 1fr; } }
+  .qc-dim { margin: 0; border: 1px solid $linie; border-top: 3px solid $gruen; border-radius: 4px; background: #fff; padding: .7rem 1rem .8rem; min-width: 0;
+    legend { float: left; width: 100%; padding: 0; margin-bottom: .4rem;
+      strong { display: block; font-family: $headings-font-family; font-size: 1.15rem; }
+      span { display: block; font-size: .88rem; color: $grau; } } }
+  .qc-frage { clear: both; border-top: 1px solid $linie; padding: .5rem 0;
+    p { margin: 0 0 .35rem; font-size: .92rem; line-height: 1.4; } }
+  .qc-wahl { display: flex; flex-wrap: wrap; gap: .35rem;
+    label { cursor: pointer; }
+    input { position: absolute; opacity: 0; pointer-events: none; }
+    span { display: inline-block; font-size: .8rem; padding: .12rem .65rem; border: 1px solid #c9d2cd; border-radius: 999px; background: $papier; }
+    input:focus-visible + span { outline: 2px solid $gruen; outline-offset: 1px; }
+    input[value="ja"]:checked + span { background: $gruen; border-color: $gruen; color: #fff; }
+    input[value="teils"]:checked + span { background: $ocker; border-color: $ocker; color: #fff; }
+    input[value="nein"]:checked + span { background: $tinte; border-color: $tinte; color: #fff; } }
+  .qc-stand { margin: .4rem 0 0; font-size: .82rem; font-weight: 600; color: $grau; min-height: 1.2em; &.offen { color: $ocker; } }
+  .qc-fuss { margin: .6rem 0 0; button { font: inherit; font-size: .85rem; border: 1px solid $linie; background: #fff; border-radius: 3px; padding: .25rem .8rem; cursor: pointer; } }
+}

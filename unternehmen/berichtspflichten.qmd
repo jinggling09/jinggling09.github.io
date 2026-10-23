@@ -10,7 +10,7 @@ title: "Berichtspflichten"
 
 [Deutschland, EU und China im Vergleich: Wer muss über Klima und Nachhaltigkeit berichten, nach welchen Standards – und wer prüft die Zahlen?]{.tk-sub}
 
-[Stand: 21.10.2026]{.stand}
+[Stand: 23.10.2026]{.stand}
 :::
 :::
 
@@ -329,6 +329,65 @@ Neben der gesetzlichen Berichtspflicht gibt es zwei freiwillige Rahmen, nach den
 ::: {.einordnung}
 **Einordnung.** Eine CDP-Antwort ist kein geprüfter Teil des Lageberichts und ersetzt den CSRD-Bericht daher nicht – sie kann ihn aber vorbereiten. Für viele Zulieferer ist nicht das Gesetz der erste Kontakt mit Klimaberichten, sondern eine Anfrage über CDP oder die Bitte eines Kunden um ein SBTi-Ziel. Die SBTi ändert gerade ihre Regeln: Ab Version 2.0 des Standards sind Netto-null-Ziele für alle Unternehmen freiwillig, Version 1 bleibt für neue Ziele bis Ende 2027 offen [@sbti_cnzs2].
 :::
+
+## Über die Pflicht hinaus: Was macht einen Bericht gut? {#qualitaet}
+
+Ein Bericht kann alle ESRS-Angaben enthalten und trotzdem schwer zu verstehen sein. Die Beratungsgesellschaft EY hat CSRD-Berichte der ersten und zweiten Welle nicht auf Vollständigkeit, sondern auf **Qualität** geprüft und vier Merkmale herausgearbeitet: **glaubwürdig, verknüpft, knapp, klar**. Häufige Schwächen: Rückschläge stehen weniger sichtbar als Erfolge, der Bezug zu Strategie und Finanzen bleibt vage, werbliche Allgemeinplätze ersetzen konkrete Angaben – und keiner der untersuchten Berichte war auf verschiedenen Bildschirmgrößen gut lesbar oder barrierefrei [@ey_qualitaet_2026]. Das ist die Sicht einer Beratung, keine gesetzliche Vorgabe; die EU-Richtlinie gegen Greenwashing (EmpCo) geht aber in dieselbe Richtung: Aussagen müssen belegt sein [@ey_qualitaet_2026].
+
+Die Prüfliste unten fasst die Leitfragen der Studie auf Deutsch zusammen. Sie vergibt bewusst **keine Punkte** – auch EY versteht die Fragen nicht als Bewertung, sondern als Anstoß zur Diskussion [S. 5 @ey_qualitaet_2026]. Die Antworten bleiben im Browser, es wird nichts gespeichert oder übertragen.
+
+```{=html}
+<form class="qualicheck" id="qualicheck" onsubmit="return false" aria-label="Prüfliste Berichtsqualität"></form>
+<script>
+(function () {
+  var D = [
+    ["glaubwuerdig", "Glaubwürdig", "Kann man den Angaben trauen?", [
+      "Sind die wichtigsten Aussagen mit eigenen Daten, Belegen oder Quellen gestützt?",
+      "Werden Methoden, Annahmen, Abgrenzungen, Schätzungen und Unsicherheiten erklärt?",
+      "Zeigt der Bericht auch Hindernisse, schwierige Entscheidungen und Lehren – nicht nur Erfolge?",
+      "Sind Ziele messbar und mit den tatsächlichen Ergebnissen verglichen, Lücken begründet?"]],
+    ["verknuepft", "Verknüpft", "Lässt sich der Weg vom Thema zum Ergebnis verfolgen?", [
+      "Führt von jeder wesentlichen Auswirkung, jedem Risiko und jeder Chance ein Weg zu Maßnahme, Ziel, Kennzahl und Ergebnis?",
+      "Wird erklärt, wie wesentliche Themen Strategie, Geschäftsmodell und langfristige Wertschöpfung beeinflussen?",
+      "Sind Nachhaltigkeitsthemen mit ihren finanziellen Folgen und den Finanzangaben verbunden?",
+      "Werden Zielkonflikte und Abhängigkeiten und ihre Folgen für Entscheidungen erklärt?"]],
+    ["knapp", "Knapp", "Sieht man schnell, was am meisten zählt?", [
+      "Konzentriert sich der Bericht auf wesentliche Informationen?",
+      "Sind allgemeine und werbliche Formulierungen durch unternehmensspezifische Angaben ersetzt?",
+      "Wird Vollständigkeit gegen Kürze abgewogen, ohne Wiederholungen?",
+      "Stehen Kernaussagen, Ziele und Ergebnisse sichtbar vorne, Details nur wo sie helfen?"]],
+    ["klar", "Klar", "Findet und versteht man, was man sucht?", [
+      "Helfen Navigation, Wegweiser und eine logische Gliederung beim Finden?",
+      "Funktionieren Links und Querverweise und führen direkt zum Ziel?",
+      "Sind Tabellen und Grafiken lesbar, beschriftet und erklären sie die Kernaussagen?",
+      "Ist der Bericht digital zugänglich – auf allen Geräten und mit Hilfstechnik wie Screenreadern?"]]
+  ];
+  var W = [["ja", "Ja"], ["teils", "Teilweise"], ["nein", "Nein"]];
+  var form = document.getElementById("qualicheck"), html = '<div class="qc-raster">';
+  D.forEach(function (d) {
+    html += '<fieldset class="qc-dim"><legend><strong>' + d[1] + "</strong><span>" + d[2] + "</span></legend>";
+    d[3].forEach(function (f, i) {
+      var n = d[0] + i;
+      html += '<div class="qc-frage"><p id="' + n + '-t">' + f + '</p><div class="qc-wahl" role="radiogroup" aria-labelledby="' + n + '-t">' +
+        W.map(function (w) { return '<label><input type="radio" name="' + n + '" value="' + w[0] + '"><span>' + w[1] + "</span></label>"; }).join("") + "</div></div>";
+    });
+    html += '<p class="qc-stand" data-d="' + d[0] + '" aria-live="polite"></p></fieldset>';
+  });
+  form.innerHTML = html + '</div><p class="qc-fuss"><button type="reset">Zurücksetzen</button></p>';
+  function stand() {
+    D.forEach(function (d) {
+      var offen = 0, beantwortet = 0;
+      d[3].forEach(function (f, i) { var v = form.elements[d[0] + i].value; if (v) beantwortet++; if (v === "teils" || v === "nein") offen++; });
+      var el = form.querySelector('.qc-stand[data-d="' + d[0] + '"]');
+      el.textContent = beantwortet ? beantwortet + " von 4 beantwortet" + (offen ? " · " + offen + (offen === 1 ? " Punkt" : " Punkte") + " zum Nacharbeiten" : " · nichts offen") : "";
+      el.classList.toggle("offen", offen > 0);
+    });
+  }
+  form.addEventListener("change", stand);
+  form.addEventListener("reset", function () { setTimeout(stand, 0); });
+})();
+</script>
+```
 
 ## Einordnung
 
