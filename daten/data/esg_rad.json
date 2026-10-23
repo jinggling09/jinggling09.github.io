@@ -1,0 +1,269 @@
+{
+  "_hinweis": "Daten für das ESG-Rad auf unternehmen/index.qmd (skripte/esgrad.js). Themen und Namen: ESRS 2026 (Delegierte Verordnung (EU) 2026/1563). 'esrs_nennt' = Regelwerke, auf die der ESRS-Text selbst verweist (am 23.10.2026 im EUR-Lex-Text geprüft). 'pflichten' = weitere EU-/DE-Regeln zum selben Thema (eigene Zuordnung). 'china' = Artikel der SZSE-Leitlinie Nr. 17. 'abteilungen' = eigene, vereinfachte Zuordnung. Quellen im Belege-Block der Seite.",
+  "stand": "2026-10-23",
+  "saeulen": {
+    "e": "Umwelt",
+    "s": "Soziales",
+    "g": "Unternehmensführung"
+  },
+  "abteilungen": {
+    "leitung": [
+      "Geschäftsleitung",
+      "#1a2420"
+    ],
+    "finanzen": [
+      "Finanzen und Risiko",
+      "#5b6b63"
+    ],
+    "recht": [
+      "Recht und Compliance",
+      "#3c5a8a"
+    ],
+    "einkauf": [
+      "Einkauf und Lieferkette",
+      "#b0412e"
+    ],
+    "produktion": [
+      "Produktion und Standorte",
+      "#2e7d5b"
+    ],
+    "fue": [
+      "Forschung und Produkt",
+      "#7a5aa6"
+    ],
+    "personal": [
+      "Personal",
+      "#a8741a"
+    ],
+    "vertrieb": [
+      "Marketing und Vertrieb",
+      "#2f8fa0"
+    ]
+  },
+  "themen": [
+    {
+      "code": "E1",
+      "kurz": "Klima",
+      "name": "Klimawandel",
+      "saeule": "e",
+      "text": "Übergangsplan für den Klimaschutz, Minderungsziele, Energieverbrauch und Treibhausgase nach Scope 1, 2 und 3.",
+      "abteilungen": [
+        "produktion",
+        "einkauf",
+        "finanzen",
+        "leitung"
+      ],
+      "esrs_nennt": [
+        "THG-Protokoll (GHG Protocol)",
+        "Übereinkommen von Paris"
+      ],
+      "pflichten": [
+        [
+          "EU-ETS / BEHG",
+          "pflichten.html"
+        ],
+        [
+          "CBAM",
+          "../wissen/cbam.html"
+        ],
+        [
+          "EnEfG",
+          "pflichten.html"
+        ]
+      ],
+      "china": "Art. 21–28: Klimawandel"
+    },
+    {
+      "code": "E2",
+      "kurz": "Schadstoffe",
+      "name": "Umweltverschmutzung",
+      "saeule": "e",
+      "text": "Schadstoffe, die in Luft, Wasser und Boden gelangen.",
+      "abteilungen": [
+        "produktion",
+        "fue"
+      ],
+      "esrs_nennt": [
+        "Industrieemissions-Richtlinie",
+        "Europäisches Schadstoffregister (E-PRTR)"
+      ],
+      "pflichten": [],
+      "china": "Art. 29–31: Umweltschutz, Umweltinformation, Abfälle"
+    },
+    {
+      "code": "E3",
+      "kurz": "Wasser",
+      "name": "Wasser",
+      "saeule": "e",
+      "text": "Nutzung von Wasserressourcen und Ableitung von Wasser, Standorte in Gebieten mit Wasserstress.",
+      "abteilungen": [
+        "produktion"
+      ],
+      "esrs_nennt": [
+        "Wasserrahmenrichtlinie"
+      ],
+      "pflichten": [],
+      "china": "Art. 36: Wassernutzung"
+    },
+    {
+      "code": "E4",
+      "kurz": "Biodiversität",
+      "name": "Biodiversität und Ökosysteme",
+      "saeule": "e",
+      "text": "Standorte in oder nahe schutzbedürftigen Gebieten, Konzepte gegen Entwaldung.",
+      "abteilungen": [
+        "einkauf",
+        "produktion"
+      ],
+      "esrs_nennt": [
+        "Biodiversitätsrahmen von Kunming-Montreal"
+      ],
+      "pflichten": [
+        [
+          "Entwaldungsverordnung (EUDR)",
+          null
+        ]
+      ],
+      "china": "Art. 32: Ökosysteme und Biodiversität"
+    },
+    {
+      "code": "E5",
+      "kurz": "Kreislauf",
+      "name": "Ressourcennutzung und Kreislaufwirtschaft",
+      "saeule": "e",
+      "text": "Ressourcennutzung, Übergang zur Kreislaufwirtschaft, Abfälle.",
+      "abteilungen": [
+        "fue",
+        "produktion",
+        "einkauf"
+      ],
+      "esrs_nennt": [],
+      "pflichten": [
+        [
+          "Ökodesign-Verordnung",
+          null
+        ],
+        [
+          "Batterieverordnung",
+          null
+        ],
+        [
+          "Recht auf Reparatur",
+          null
+        ]
+      ],
+      "china": "Art. 34, 35, 37: Ressourcen, Energie, Kreislaufwirtschaft"
+    },
+    {
+      "code": "S1",
+      "kurz": "Belegschaft",
+      "name": "Arbeitskräfte des Unternehmens",
+      "saeule": "s",
+      "text": "Gesundheit und Sicherheit, Verdienstgefälle zwischen den Geschlechtern, Diskriminierung, Beschwerdewege.",
+      "abteilungen": [
+        "personal",
+        "leitung"
+      ],
+      "esrs_nennt": [
+        "IAO-Erklärung über grundlegende Prinzipien und Rechte bei der Arbeit",
+        "UN-Leitprinzipien für Wirtschaft und Menschenrechte",
+        "OECD-Leitsätze"
+      ],
+      "pflichten": [],
+      "china": "Art. 49–51: Beschäftigte"
+    },
+    {
+      "code": "S2",
+      "kurz": "Lieferkette",
+      "name": "Arbeitskräfte in der Wertschöpfungskette",
+      "saeule": "s",
+      "text": "Menschenrechte bei Zulieferern, Verhaltenskodex, Maßnahmen gegen Menschenhandel.",
+      "abteilungen": [
+        "einkauf",
+        "recht"
+      ],
+      "esrs_nennt": [
+        "UN-Leitprinzipien für Wirtschaft und Menschenrechte",
+        "OECD-Leitsätze",
+        "IAO-Erklärung über grundlegende Prinzipien und Rechte bei der Arbeit"
+      ],
+      "pflichten": [
+        [
+          "LkSG",
+          "pflichten.html"
+        ],
+        [
+          "CSDDD",
+          "pflichten.html"
+        ],
+        [
+          "Zwangsarbeitsverordnung",
+          null
+        ]
+      ],
+      "china": "Art. 45: Lieferkette; Art. 52: Sorgfaltsprüfung (empfohlen)"
+    },
+    {
+      "code": "S3",
+      "kurz": "Gemeinden",
+      "name": "Betroffene Gemeinschaften",
+      "saeule": "s",
+      "text": "Auswirkungen auf Menschen rund um Standorte und Lieferkette, Beschwerdewege, Menschenrechte.",
+      "abteilungen": [
+        "produktion",
+        "einkauf"
+      ],
+      "esrs_nennt": [
+        "UN-Leitprinzipien für Wirtschaft und Menschenrechte",
+        "OECD-Leitsätze"
+      ],
+      "pflichten": [
+        [
+          "LkSG",
+          "pflichten.html"
+        ],
+        [
+          "CSDDD",
+          "pflichten.html"
+        ]
+      ],
+      "china": "Art. 38–40: ländliche Entwicklung und gesellschaftlicher Beitrag (keine direkte Entsprechung)"
+    },
+    {
+      "code": "S4",
+      "kurz": "Verbraucher",
+      "name": "Verbraucher und Endnutzer",
+      "saeule": "s",
+      "text": "Information der Kunden, ihre Sicherheit und soziale Inklusion.",
+      "abteilungen": [
+        "vertrieb",
+        "fue"
+      ],
+      "esrs_nennt": [],
+      "pflichten": [
+        [
+          "Richtlinie gegen Greenwashing (EmpCo)",
+          null
+        ]
+      ],
+      "china": "Art. 47–48: Produktsicherheit, Datenschutz"
+    },
+    {
+      "code": "G1",
+      "kurz": "Governance",
+      "name": "Unternehmensführung",
+      "saeule": "g",
+      "text": "Korruptionsbekämpfung, Schutz von Hinweisgebern, Zahlungspraktiken – vor allem Zahlungsverzug gegenüber kleinen und mittleren Lieferanten.",
+      "abteilungen": [
+        "leitung",
+        "recht",
+        "finanzen"
+      ],
+      "esrs_nennt": [
+        "UN-Übereinkommen gegen Korruption"
+      ],
+      "pflichten": [],
+      "china": "Art. 46: überfällige Zahlungen (bei hohen Verbindlichkeiten); Art. 54–56: Geschäftsethik, Korruption, Wettbewerb"
+    }
+  ]
+}

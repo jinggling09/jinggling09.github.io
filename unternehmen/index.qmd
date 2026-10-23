@@ -10,7 +10,7 @@ title: "Unternehmen & Klimarecht"
 
 [Deutschland, EU und China im Vergleich: Wie werden Klimaziele des Staates zu Pflichten für Unternehmen – und welche treffen ein bestimmtes Unternehmen?]{.tk-sub}
 
-[Stand: 17.10.2026]{.stand}
+[Stand: 23.10.2026]{.stand}
 :::
 :::
 
@@ -147,6 +147,26 @@ Wie streng Schritt 4 ist, zeigt der Emissionshandel. Fehlen Zertifikate, wird es
 [des durchschnittlichen Marktpreises im Monat vor der Frist je fehlendem Zertifikat; wer nicht nachbessert, erhält im Folgejahr entsprechend weniger Zertifikate. Für gefälschte Emissionsdaten bis 2 Mio. Yuan und Strafen für die Verantwortlichen persönlich [Art. 22, 24 @cn_ets_verordnung]]{.klein}
 :::
 
+:::
+
+## ESG im Betrieb: Wer liefert was?
+
+Ein Nachhaltigkeitsbericht nach der CSRD gliedert sich in **zehn Themen** der europäischen Standards (ESRS) – fünf zur Umwelt, vier zu sozialen Fragen, eines zur Unternehmensführung [@eu_esrs_2026]. Berichten muss ein Unternehmen nur die Themen, die für es wesentlich sind. Die Daten kommen aus ganz unterschiedlichen Abteilungen: Emissionen aus Produktion und Einkauf, Arbeitsunfälle aus der Personalabteilung, Zahlungsfristen aus den Finanzen. Das Rad zeigt, wo welches Thema im Betrieb landet und welche Regeln dazugehören.
+
+```{=html}
+<figure class="esgrad" data-quelle="../daten/data/esg_rad.json" data-root="../">
+  <div class="er-box">
+    <svg viewBox="20 20 560 560" role="img" aria-label="ESG-Rad: zehn ESRS-Themen mit zuständigen Abteilungen"></svg>
+    <div class="er-feld" aria-live="polite"></div>
+  </div>
+  <div class="er-abt" aria-label="Abteilungen"></div>
+  <div class="er-legende"><span><span class="chip">Im ESRS genannt</span>Regelwerk, auf das der Standard verweist</span><span><span class="chip pflicht">Weitere Regel</span>EU- oder deutsches Recht zum selben Thema</span></div>
+</figure>
+<script src="../skripte/esgrad.js"></script>
+```
+
+::: {.belege}
+**Belege** · Themen, Namen und genannte Regelwerke: ESRS 2026 [@eu_esrs_2026]. Weitere Regeln: Emissionshandel und CBAM [@eu_ets_richtlinie; @behg; @eu_cbam_2023], Energieeffizienz [@enefg], Industrieemissionen [@eu_ied_2024], Entwaldung [@eu_eudr_2023], Ökodesign [@eu_espr], Batterien [@eu_batterien], Reparatur [@eu_reparatur_2024], Lieferketten [@lksg; @eu_csddd_2024], Zwangsarbeit [@eu_zwangsarbeit_2024], Greenwashing [@eu_empco_2024]. China: Artikel der Leitlinie der Börse Shenzhen [@szse_leitlinie_2024]. Die Zuordnung der Abteilungen ist eine eigene, vereinfachte Einordnung – in jedem Unternehmen ist das anders geregelt. Idee des Rads nach einer Grafik von Capgemini.
 :::
 
 ## Selbstcheck: Welche Pflichten treffen ein Unternehmen?

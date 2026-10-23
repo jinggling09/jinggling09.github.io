@@ -1513,3 +1513,28 @@ figure.anteil-balken { margin: 1rem 0 1.2rem;
     &:hover, &:focus-visible { color: $gruen; text-decoration: underline; text-underline-offset: .2em; }
     &.aktuell { color: $gruen-dunkel; font-weight: 700; } }
 }
+
+/* ESG-Rad (unternehmen/index.qmd, 23.10.2026, skripte/esgrad.js): Ring = ESRS-Themen, Punkte = Abteilungen */
+figure.esgrad { margin: 1rem 0 .6rem;
+  .er-box { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 1.4rem; align-items: start;
+    @media (max-width: 760px) { grid-template-columns: 1fr; } }
+  .er-box > svg { width: 100%; height: auto; display: block; }
+  .er-seg { cursor: pointer; stroke: #fff; stroke-width: 2; transition: opacity .2s, fill .2s; &:focus { outline: none; } &:focus-visible { stroke: $tinte; } }
+  .er-aus { opacity: .5; }
+  .er-saeule { font: 700 15px $font-family-sans-serif; fill: #fff; letter-spacing: .06em; pointer-events: none; }
+  .er-mitte { font: 600 17px $headings-font-family; fill: $tinte; }
+  .er-code { font: 700 15px $font-family-sans-serif; fill: $tinte; pointer-events: none; }
+  .er-kurz { font: 600 12px $font-family-sans-serif; fill: $tinte; pointer-events: none; }
+  .er-feld { background: #fff; border: 1px solid $linie; border-top: 4px solid $gruen; border-radius: 6px; padding: .9rem 1.1rem 1rem; min-height: 20rem;
+    &.e { border-top-color: #2e7d5b; .er-kopf { color: #2e7d5b; } } &.s { border-top-color: $ocker; .er-kopf { color: $ocker; } } &.g { border-top-color: $spur-eu; .er-kopf { color: $spur-eu; } }
+    h3 { font-size: 1.2rem; margin: .1rem 0 .3rem; border: 0; padding: 0; }
+    p { font-size: .92rem; margin: 0 0 .4rem; }
+    dl { margin: .4rem 0 0; } dt { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: $grau; margin-top: .65rem; } dd { margin: .15rem 0 0; font-size: .92rem; } }
+  .er-kopf { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: $grau; }
+  .er-leer { color: $grau; }
+  .chip { display: inline-block; font-size: .78rem; line-height: 1.4; padding: .1rem .55rem; border-radius: 999px; border: 1px solid #c9d2cd; background: #fff; margin: .12rem .2rem .12rem 0; color: $tinte; text-decoration: none;
+    &.pflicht { border-color: $gruen; color: $gruen; font-weight: 600; } }
+  a.chip:hover { background: $gruen-hell; }
+  .er-abt, .er-legende { display: flex; flex-wrap: wrap; gap: .3rem 1rem; font-size: .8rem; color: $grau; margin-top: .6rem;
+    > span { display: inline-flex; align-items: center; gap: .35rem; white-space: nowrap; } svg { flex: none; } .chip { margin: 0; } }
+}
