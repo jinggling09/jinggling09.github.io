@@ -1,0 +1,63 @@
+<!-- Großes Menü (von Jing gewünscht, 23.10.2026, Vorbild fiveglaciers.com): auf breitem Bildschirm klappt
+     ein Hauptpunkt ein Feld über die ganze Breite auf, alle Unterpunkte in Spalten mit Symbol.
+     Die Spalten werden aus den Links des normalen Menüs gebaut (Reihenfolge wie in _quarto.yml);
+     schmaler Bildschirm: bleibt das Klappmenü aus menu-gruppen.html. Menüs ohne Eintrag hier bleiben klein. -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var SPALTEN = {
+    "Klimawandel": [["Fakten und Folgen", "erde", 2], ["Emissionen heute", "kurve", 2]],
+    "Klimaschutz": [["Ziele und Fortschritt", "ziel", 2], ["CO₂-Preis und Märkte", "preis", 4], ["Energiewende", "wind", 5]],
+    "Unternehmen": [["Pflichten", "bericht", 3], ["Weitere Themen", "fabrik", 3]]
+  };
+  var SYMBOL = {
+    erde: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/>',
+    kurve: '<path d="M3 20h18M5 16l4-5 4 3 6-8"/>',
+    ziel: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/>',
+    preis: '<path d="M4 12V4h8l8 8-8 8z"/><circle cx="8.5" cy="8.5" r="1.4"/>',
+    wind: '<path d="M12 10v11M9 21h6"/><path d="M12 10c-.6-2.6-.2-5.2 1.2-7.4.6 2.6.2 5.2-1.2 7.4zM12 10c2.4 1.1 4.2 3.1 4.9 5.6-2.4-1.1-4.2-3.1-4.9-5.6zM12 10c-2 1.7-4.5 2.5-7 2.3 2-1.7 4.5-2.5 7-2.3z"/>',
+    bericht: '<path d="M6 3h9l3 3v15H6z"/><path d="M9 10h6M9 14h6M9 18h4"/>',
+    fabrik: '<path d="M3 21V11l5 3v-3l5 3V7h3v14zM18 21V4h3v17"/>'
+  };
+  function pfad(p) { return p.replace(/index\.html$/, ""); }
+  document.querySelectorAll(".navbar .nav-item.dropdown").forEach(function (item) {
+    var toggle = item.querySelector(".dropdown-toggle"), menu = item.querySelector(".dropdown-menu");
+    if (!toggle || !menu) return;
+    var name = toggle.textContent.trim(), plan = SPALTEN[name];
+    if (!plan) return;
+    var links = Array.prototype.slice.call(menu.querySelectorAll("a.dropdown-item[href]")), n = 0;
+    var li = document.createElement("li"), feld = document.createElement("div");
+    li.className = "mega-li"; feld.className = "mega-feld";
+    plan.forEach(function (sp) {
+      var spalte = document.createElement("div");
+      spalte.className = "mega-spalte";
+      spalte.innerHTML = '<svg class="mega-symbol" viewBox="0 0 24 24" aria-hidden="true">' + SYMBOL[sp[1]] + '</svg><p class="mega-titel">' + sp[0] + "</p>";
+      var ul = document.createElement("ul");
+      links.slice(n, n + sp[2]).forEach(function (a) {
+        var k = a.cloneNode(true), x = document.createElement("li");
+        k.className = "mega-link" + (pfad(a.pathname) === pfad(location.pathname) ? " aktuell" : "");
+        x.appendChild(k); ul.appendChild(x);
+      });
+      n += sp[2];
+      spalte.appendChild(ul); feld.appendChild(spalte);
+    });
+    li.appendChild(feld); menu.insertBefore(li, menu.firstChild);
+    menu.classList.add("hat-mega");
+    feld.style.setProperty("--spalten", plan.length);
+  });
+
+  // Breit: Feld öffnet beim Überfahren, Platz unter der Navigationsleiste berechnen
+  var breit = window.matchMedia("(min-width: 992px)"), nav = document.querySelector("#quarto-header .navbar");
+  function oben() { if (nav) document.documentElement.style.setProperty("--mega-oben", nav.getBoundingClientRect().bottom + "px"); }
+  oben(); window.addEventListener("resize", oben); window.addEventListener("scroll", oben, { passive: true });
+  var alle = [];
+  document.querySelectorAll(".navbar .nav-item.dropdown").forEach(function (item) {
+    var toggle = item.querySelector(".dropdown-toggle"), zu;
+    if (!toggle || !window.bootstrap) return;
+    var dd = bootstrap.Dropdown.getOrCreateInstance(toggle);
+    alle.push(dd);
+    // beim Wechsel auf einen anderen Hauptpunkt das alte Feld sofort schließen
+    item.addEventListener("mouseenter", function () { if (!breit.matches) return; clearTimeout(zu); alle.forEach(function (x) { if (x !== dd) x.hide(); }); oben(); dd.show(); });
+    item.addEventListener("mouseleave", function () { if (!breit.matches) return; zu = setTimeout(function () { dd.hide(); }, 180); });
+  });
+});
+</script>

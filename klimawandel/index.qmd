@@ -7,8 +7,6 @@ subtitle: "Treibhauseffekt, Erwärmung und warum es Klimaziele gibt"
 Stand: 21.10.2026
 :::
 
-[Ebene 0 · Grundlagen → [Ziele](../ziele/index.qmd) → [Instrumente](../wissen/index.qmd) → [Energiewende](../daten/index.qmd) → [Emissionen](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
-
 Die Erde war 2025 rund 1,4 °C wärmer als im Mittel der Jahre 1850–1900 [@wmo_sogc_2025]. Der Weltklimarat IPCC hält fest: Menschliche Aktivitäten haben die Erwärmung **eindeutig** verursacht, vor allem durch den Ausstoß von Treibhausgasen [A.1 @ipcc_syr_spm]. Diese Seite erklärt in drei Schritten, wie das funktioniert, was sich schon verändert hat – und warum daraus die Klimaziele folgen, um die es auf dieser Website geht.
 
 ## Der Treibhauseffekt
@@ -201,13 +199,13 @@ Hitze, Dürre, Starkregen und was sie kosten: [Folgen und Klimarisiken →](folg
 
 ## Was daraus folgt
 
-Im **Übereinkommen von Paris** haben sich die Staaten 2015 verpflichtet, die Erwärmung deutlich unter 2 °C zu halten und Anstrengungen zu unternehmen, sie auf 1,5 °C zu begrenzen [Art. 2 Abs. 1 @paris_2015]. Dafür müssen die weltweiten Emissionen sinken – 2025 sind sie aber noch einmal um 0,7 % auf 54,1 Mrd. t CO₂-Äquivalente gestiegen [@edgar_2026]. Wie EU, Deutschland und China darauf antworten, zeigen die vier Ebenen dieser Website:
+Im **Übereinkommen von Paris** haben sich die Staaten 2015 verpflichtet, die Erwärmung deutlich unter 2 °C zu halten und Anstrengungen zu unternehmen, sie auf 1,5 °C zu begrenzen [Art. 2 Abs. 1 @paris_2015]. Dafür müssen die weltweiten Emissionen sinken – 2025 sind sie aber noch einmal um 0,7 % auf 54,1 Mrd. t CO₂-Äquivalente gestiegen [@edgar_2026]. Wie EU, Deutschland und China darauf antworten, zeigen die Bereiche dieser Website:
 
 ::: {.weiter-ebenen}
-[[1 · Ziele](../ziele/index.qmd) – Was wurde versprochen?]{}
-[[2 · Instrumente](../wissen/index.qmd) – Womit soll es erreicht werden?]{}
-[[3 · Energiewende](../daten/index.qmd) – Was wird gebaut?]{}
-[[4 · Emissionen](../wissen/emissionen-de.qmd) – Was ist tatsächlich passiert?]{}
+[[Ziele](../ziele/index.qmd) – Was wurde versprochen?]{}
+[[CO₂-Preis und Märkte](../wissen/index.qmd) – Womit soll es erreicht werden?]{}
+[[Energiewende](../daten/index.qmd) – Was wird gebaut?]{}
+[[Emissionen heute](../wissen/emissionen-de.qmd) – Was ist tatsächlich passiert?]{}
 :::
 
 ```{=html}

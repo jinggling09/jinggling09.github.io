@@ -7,8 +7,6 @@ subtitle: "Was EU, Deutschland und China zugesagt haben – und wie verbindlich"
 Stand: 21.10.2026
 :::
 
-[Ebene 1 von 4 · Ziele → [Instrumente](../wissen/index.qmd) → [Erneuerbare](../daten/index.qmd) → [Emissionen](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
-
 Die Seite hat zwei Teile: die **Ziele der Staaten** – Zeitachse, Bewertung durch den Net Zero Tracker und wer die Ziele überwacht – und die **freiwilligen Ziele der Unternehmen**.
 
 Alle drei haben ein Langfristziel „netto null" bzw. Neutralität. Sie unterscheiden sich aber darin, **wann** es erreicht werden soll, **welche Gase** es umfasst, **woran** Zwischenziele gemessen werden – und ob es **im Gesetz steht** und wie es kontrolliert wird.
