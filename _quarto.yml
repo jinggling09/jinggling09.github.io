@@ -53,13 +53,6 @@ website:
             text: "Ziele und Kontrolle"
           - href: wissen/emissionen-de.qmd
             text: "Fortschritt: Emissionen heute"
-          - text: "Länder im Überblick"
-          - href: laender/eu.qmd
-            text: "Europäische Union"
-          - href: laender/deutschland.qmd
-            text: "Deutschland"
-          - href: laender/china.qmd
-            text: "China"
           - text: "CO₂-Preis und Märkte"
           - href: wissen/index.qmd
             text: "Überblick & Zeitleiste"
@@ -80,6 +73,14 @@ website:
             text: "Wärmepumpen"
           - href: energiewende/wasserstoff.qmd
             text: "Wasserstoff"
+      - text: "Länder"
+        menu:
+          - href: laender/eu.qmd
+            text: "Europäische Union"
+          - href: laender/deutschland.qmd
+            text: "Deutschland"
+          - href: laender/china.qmd
+            text: "China"
       - text: "Unternehmen"
         menu:
           - href: unternehmen/index.qmd

@@ -12,7 +12,7 @@ title-block-banner: false
     <h1 class="sb-titel">Klimaschutz<br>im Vergleich</h1>
     <span class="sb-hand">EU, Deutschland und China</span>
     <p class="sb-lead">Was wurde versprochen, womit soll es erreicht werden – und was ist tatsächlich passiert? Jede Aussage mit Primärquelle und Stand-Datum.</p>
-    <div class="sb-knoepfe"><a class="voll" href="ziele/index.html">Ziele vergleichen</a><a class="" href="klimawandel/index.html">Was ist Klimawandel?</a><a class="" href="daten/index.html">Daten ansehen</a></div>
+    <div class="sb-knoepfe"><a class="voll" href="ziele/index.html">Ziele vergleichen</a><a class="" href="wissen/emissionen-de.html">Emissionen heute</a><a class="" href="daten/index.html">Energiewende</a></div>
   </div>
   <div class="sb-bild">
     <svg id="sb-erde" viewBox="-40 0 840 640" role="img" aria-label="Gezeichnete Erde mit EU, Deutschland und China, dazu Windräder, Solarmodule, Sonne und Fabrik; Beschriftungen führen zu den Themen der Website" data-namen='{"eu": "EU", "de": "Deutschland", "cn": "China"}' data-links='{"eu": "laender/eu.html", "de": "laender/deutschland.html", "cn": "laender/china.html"}'>
