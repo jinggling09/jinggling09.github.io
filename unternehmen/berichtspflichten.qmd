@@ -203,6 +203,22 @@ Binnen vier Monaten nach Ende des Geschäftsjahres, vom Board beschlossen, nicht
 **Belege** · Die chinesischen Angaben beziehen sich auf die Leitlinie der Börse Shenzhen; die Börsen Shanghai und Peking haben ihre Leitlinien zeitgleich und einheitlich erlassen [@sse_leitlinie_2024]. Kennzahlen für 2025: 430 Pflichtunternehmen, Stichtag 30.04.2026 [@capco_2026].
 :::
 
+## Die zehn ESRS-Themen
+
+Welche Themen ein Bericht nach den ESRS abdeckt, welche Regelwerke der Standard selbst nennt und was in der chinesischen Leitlinie dazu passt – auf einen Blick. Mit dem Filter lässt sich zeigen, welche Themen eine Abteilung betreffen. Dieselben Angaben zeigt das [ESG-Rad](index.qmd#esg-im-betrieb-wer-liefert-was) auf der Überblicksseite.
+
+```{=html}
+<div class="esrs-tabelle" data-quelle="../daten/data/esg_rad.json" data-root="../">
+  <div class="et-filter" role="group" aria-label="Nach Abteilung filtern"><span>Abteilung:</span></div>
+  <div class="et-inhalt"></div>
+</div>
+<script src="../skripte/esrstabelle.js"></script>
+```
+
+::: {.belege}
+**Belege** · Themen, Namen und genannte Regelwerke: ESRS 2026 [@eu_esrs_2026]. Weitere Regeln: Emissionshandel und CBAM [@eu_ets_richtlinie; @behg; @eu_cbam_2023], Energieeffizienz [@enefg], Entwaldung [@eu_eudr_2023], Ökodesign [@eu_espr], Batterien [@eu_batterien], Reparatur [@eu_reparatur_2024], Lieferketten [@lksg; @eu_csddd_2024], Zwangsarbeit [@eu_zwangsarbeit_2024], Greenwashing [@eu_empco_2024]. China: Leitlinie der Börse Shenzhen [@szse_leitlinie_2024]. „Weitere Regeln“ und Zuständigkeit sind eine eigene, vereinfachte Zuordnung.
+:::
+
 ## Zeitplan
 
 ::: {.matrix .zeitplan}

@@ -1538,3 +1538,26 @@ figure.esgrad { margin: 1rem 0 .6rem;
   .er-abt, .er-legende { display: flex; flex-wrap: wrap; gap: .3rem 1rem; font-size: .8rem; color: $grau; margin-top: .6rem;
     > span { display: inline-flex; align-items: center; gap: .35rem; white-space: nowrap; } svg { flex: none; } .chip { margin: 0; } }
 }
+
+/* ESRS-Tabelle (berichtspflichten.qmd, 23.10.2026, skripte/esrstabelle.js; Daten wie ESG-Rad) */
+.esrs-tabelle { margin: 1rem 0 .6rem;
+  .et-filter { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; font-size: .85rem; color: $grau; margin-bottom: .7rem;
+    button { font: inherit; font-size: .8rem; border: 1px solid $linie; background: #fff; border-radius: 999px; padding: .18rem .7rem; cursor: pointer; color: $tinte;
+      &[aria-pressed="true"] { background: $tinte; border-color: $tinte; color: #fff; } } }
+  table { width: 100%; border-collapse: separate; border-spacing: 0; background: #fff; border: 1px solid $linie; border-radius: 6px; overflow: hidden; font-size: .86rem; }
+  th { text-align: left; font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; color: $grau; background: $gruen-hell; padding: .5rem .6rem; }
+  td { border-top: 1px solid $linie; padding: .55rem .6rem; vertical-align: top; }
+  tr.e { --f: #2e7d5b; --f2: #e3efe8; } tr.s { --f: #{$ocker}; --f2: #f6ecda; } tr.g { --f: #{$spur-eu}; --f2: #e3e8f1; }
+  td.et-thema { border-left: 5px solid var(--f); width: 26%;
+    span { display: block; font-size: .72rem; font-weight: 700; color: var(--f); } strong { display: block; } small { display: block; color: $grau; margin-top: .15rem; line-height: 1.35; } }
+  tr.et-saeule td { background: var(--f2); border-left: 5px solid var(--f); font-family: $headings-font-family; font-weight: 700; }
+  tr.et-weg { display: none; }
+  .chip { display: inline-block; font-size: .74rem; line-height: 1.4; padding: .08rem .5rem; border-radius: 999px; border: 1px solid #c9d2cd; background: #fff; margin: .1rem .2rem .1rem 0; color: $tinte; text-decoration: none;
+    &.pflicht { border-color: $gruen; color: $gruen; font-weight: 600; } }
+  a.chip:hover { background: $gruen-hell; }
+  .et-leer { color: $grau; }
+  @media (max-width: 760px) {
+    thead { display: none; } table, tbody, tr, td { display: block; width: auto !important; }
+    tr[data-abt] { border-top: 1px solid $linie; padding: .3rem 0; } td { border-top: 0; padding: .3rem .8rem; }
+    td[data-k]::before { content: attr(data-k); display: block; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: $grau; } }
+}
