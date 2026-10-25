@@ -14,6 +14,9 @@ python3 scripts/kennzahlen_start.py
 # Klimastreifen-Bausteine aus vorhandener CSV (Abruf: python3 scripts/fetch_klimastreifen.py)
 python3 scripts/fetch_klimastreifen.py --offline
 
+# Säulenbild für die Startseiten-Kachel „Emissionen heute“ (UBA-Reihe in daten/data/de_thg_gesamt.csv)
+python3 scripts/emissionen_mini.py
+
 # Kopfbilder der Technikseiten (Energiewende) aus den Ausbaudaten
 python3 scripts/technik_kopf.py
 

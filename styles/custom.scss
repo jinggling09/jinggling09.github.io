@@ -32,8 +32,21 @@ body, p, li, td, th, blockquote, .csl-entry {
 body { font-size: 1.05rem; line-height: 1.65; }
 
 /* ---------- Navigation ---------- */
+/* Leiste bleibt beim Scrollen stehen (Jing, 25.10.2026); Headroom wird in menu-mega.html angehalten */
+#quarto-header.headroom--unpinned { transform: none; }
+/* Grüne Kapsel unter dem aktuellen Hauptpunkt, gleitet zum Punkt unter der Maus (Jing, 25.10.2026; menu-mega.html) */
+@media (min-width: 992px) {
+  .navbar .navbar-nav.me-auto { position: relative; }
+  .navbar .navbar-nav.me-auto > .nav-item { position: relative; z-index: 1; }
+  .navbar .navbar-nav.hat-kapsel .nav-link.active { background: none; }
+  .nav-kapsel { position: absolute; left: 0; top: 0; height: 0; width: 0; border-radius: 999px; background: rgba($gruen, .1);
+    opacity: 0; pointer-events: none; transition: transform .25s ease, width .25s ease, opacity .2s; }
+  .nav-kapsel.an { opacity: 1; }
+  .navbar .navbar-nav.hat-kapsel .nav-link:focus:not(:focus-visible) { box-shadow: none; }
+}
+@media (prefers-reduced-motion: reduce) { .nav-kapsel { transition: opacity .2s; } }
 .navbar {
-  border-bottom: 1px solid $linie;
+  border-bottom: none;
   box-shadow: none;
   .navbar-title {
     font-family: $headings-font-family;
@@ -41,7 +54,7 @@ body { font-size: 1.05rem; line-height: 1.65; }
     letter-spacing: -.01em;
   }
   .nav-link { font-size: .95rem; white-space: nowrap; }
-  .nav-link.active { box-shadow: inset 0 -2px 0 $gruen; }
+  .nav-link.active { background: rgba($gruen, .1); border-radius: 999px; }
 }
 /* Mittlere Breite (aufgeklapptes Menü bis knapp 1200 px): Einträge enger setzen, damit nichts umbricht */
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -1394,6 +1407,11 @@ html[lang|="zh"] .sb-hand, html[lang|="zh"] .sb-frage { font-weight: 400; transf
   span { position: absolute; right: .5rem; font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #fff; text-shadow: 0 1px 3px rgba(0, 0, 0, .45); }
   .ks-mini-de { top: .4rem; } .ks-mini-cn { top: calc(52% + .4rem); }
   .ks-mini-jahre { right: auto; left: .5rem; bottom: .35rem; letter-spacing: .04em; color: #24302a; text-shadow: 0 0 4px #fff; }
+}
+/* Startseite: Säulen der Treibhausgase Deutschland in der Kachel „Emissionen heute“ (scripts/emissionen_mini.py) */
+.sb-kachel .ks-mini.em-mini, .sb-teil .ks-mini.em-mini { background: $gruen-hell;
+  span { color: $gruen-dunkel; text-shadow: none; }
+  .ks-mini-jahre { color: #fff; text-shadow: 0 1px 3px rgba(0, 0, 0, .45); }
 }
 
 /* Klimaschutz-Rad im Länderprofil Deutschland (von Jing gewählt, 22.10.2026): Sektoren als Ring, Instrumente als Strahlen */

@@ -129,7 +129,13 @@ title-block-banner: false
 
 ```{=html}
 <span class="sb-teil-titel">Was ist Klimawandel?</span><div class="sb-zahl">1,43 °C</div><div class="sb-was">Erde 2025 wärmer als 1850–1900</div><span class="sb-los">Grundlagen ansehen</span></a>
-<a class="sb-teil" href="wissen/emissionen-de.html"><svg viewBox="0 0 300 150" aria-hidden="true"><ellipse class="sb-fleck" cx="150" cy="85" rx="105" ry="50" fill="#e9ece9" filter="url(#aquarell)"/><path class="sb-linie" d="M60 132v-40l30 18v-18l30 18v-18l30 18v-58h18v80z"/><circle class="sb-rauch" cx="174" cy="44" r="9" fill="#9aa39e"/><circle class="sb-rauch z2" cx="174" cy="44" r="12" fill="#9aa39e"/><circle class="sb-rauch z3" cx="174" cy="44" r="7" fill="#9aa39e"/><path class="sb-linie" d="M210 50l20 20 20-30 20 60" stroke="#b0412e"/></svg><span class="sb-teil-titel">Emissionen heute</span><div class="sb-zahl"><span class="z-de">−48,2 %</span></div><div class="sb-was">Treibhausgase Deutschland 2025 gegenüber 1990</div><span class="sb-los">Daten ansehen</span></a>
+<a class="sb-teil" href="wissen/emissionen-de.html">
+```
+
+{{< include daten/data/_emissionen_mini_de.md >}}
+
+```{=html}
+<span class="sb-teil-titel">Emissionen heute</span><div class="sb-zahl"><span class="z-de">−48,2 %</span></div><div class="sb-was">Treibhausgase Deutschland 2025 gegenüber 1990</div><span class="sb-los">Daten ansehen</span></a>
 </div></div>
 <div class="sb-kachel sb-block sb-teile-3"><h2>Klimaschutz</h2><div class="sb-frage">Was wurde versprochen – und womit soll es erreicht werden?</div><div class="sb-teile">
 <a class="sb-teil" href="ziele/index.html"><svg viewBox="0 0 300 150" aria-hidden="true"><ellipse class="sb-fleck" cx="150" cy="78" rx="95" ry="55" fill="#d9e8ef" filter="url(#aquarell)"/><circle class="sb-linie" cx="140" cy="80" r="46"/><circle class="sb-linie" cx="140" cy="80" r="28"/><circle class="sb-linie" cx="140" cy="80" r="9"/><path class="sb-linie" d="M140 80L214 22M200 22h14v14"/></svg><span class="sb-teil-titel">Ziele</span><div class="sb-zahl"><span class="z-de">2045</span> · <span class="z-eu">2050</span> · <span class="z-cn">2060</span></div><div class="sb-was">klimaneutral: Deutschland · EU · China</div><span class="sb-los">Ziele vergleichen</span></a>

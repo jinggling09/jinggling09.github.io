@@ -49,6 +49,34 @@ document.addEventListener("DOMContentLoaded", function () {
   var breit = window.matchMedia("(min-width: 992px)"), nav = document.querySelector("#quarto-header .navbar");
   function oben() { if (nav) document.documentElement.style.setProperty("--mega-oben", nav.getBoundingClientRect().bottom + "px"); }
   oben(); window.addEventListener("resize", oben); window.addEventListener("scroll", oben, { passive: true });
+  // Leiste bleibt stehen (Jing, 25.10.2026): Quarto blendet sie sonst beim Abwärtsscrollen aus (Headroom)
+  if (window.quartoToggleHeadroom) window.quartoToggleHeadroom();
+  // Grüne Kapsel: liegt unter dem aktuellen Hauptpunkt und folgt der Maus (nur breit)
+  var leiste = document.querySelector(".navbar .navbar-nav.me-auto");
+  if (leiste) {
+    var kapsel = document.createElement("span"), heim = null;
+    kapsel.className = "nav-kapsel"; kapsel.setAttribute("aria-hidden", "true");
+    leiste.appendChild(kapsel); leiste.classList.add("hat-kapsel");
+    leiste.querySelectorAll(":scope > .nav-item > .nav-link").forEach(function (a) {
+      var drin = a.parentNode.querySelectorAll(".dropdown-menu a.dropdown-item[href]");
+      var treffer = a.pathname && pfad(a.pathname) === pfad(location.pathname) && !a.classList.contains("dropdown-toggle");
+      Array.prototype.forEach.call(drin, function (x) { if (pfad(x.pathname) === pfad(location.pathname)) treffer = true; });
+      if (treffer) heim = a;
+    });
+    function auf(a) {
+      if (!a || !breit.matches) { kapsel.classList.remove("an"); return; }
+      var r = a.getBoundingClientRect(), o = leiste.getBoundingClientRect();
+      kapsel.style.width = r.width + "px"; kapsel.style.height = r.height + "px";
+      kapsel.style.transform = "translate(" + (r.left - o.left) + "px," + (r.top - o.top) + "px)";
+      kapsel.classList.add("an");
+    }
+    leiste.querySelectorAll(":scope > .nav-item").forEach(function (li) {
+      li.addEventListener("mouseenter", function () { auf(li.querySelector(".nav-link")); });
+    });
+    leiste.addEventListener("mouseleave", function () { auf(heim); });
+    window.addEventListener("resize", function () { auf(heim); });
+    auf(heim);
+  }
   var alle = [];
   document.querySelectorAll(".navbar .nav-item.dropdown").forEach(function (item) {
     var toggle = item.querySelector(".dropdown-toggle"), zu;
