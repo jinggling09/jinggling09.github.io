@@ -14,16 +14,16 @@ jahr,reihe,art,gw
 2014,Photovoltaik,Ist,37.821
 2015,Photovoltaik,Ist,39.237
 2016,Photovoltaik,Ist,40.736
-2017,Photovoltaik,Ist,42.405
+2017,Photovoltaik,Ist,42.406
 2018,Photovoltaik,Ist,45.409
 2019,Photovoltaik,Ist,49.418
-2020,Photovoltaik,Ist,54.559
-2021,Photovoltaik,Ist,60.268
-2022,Photovoltaik,Ist,67.846
+2020,Photovoltaik,Ist,54.558
+2021,Photovoltaik,Ist,60.267
+2022,Photovoltaik,Ist,67.845
 2023,Photovoltaik,Ist,83.306
-2024,Photovoltaik,Ist,100.8
-2025,Photovoltaik,Ist,118.111
-2026,Photovoltaik,Ist,132.082
+2024,Photovoltaik,Ist,100.801
+2025,Photovoltaik,Ist,118.113
+2026,Photovoltaik,Ist,132.351
 2024,Photovoltaik,Ziel,88.0
 2026,Photovoltaik,Ziel,128.0
 2028,Photovoltaik,Ziel,172.0
@@ -52,7 +52,7 @@ jahr,reihe,art,gw
 2023,Wind an Land,Ist,61.013
 2024,Wind an Land,Ist,63.589
 2025,Wind an Land,Ist,68.179
-2026,Wind an Land,Ist,71.618
+2026,Wind an Land,Ist,71.705
 2024,Wind an Land,Ziel,69.0
 2026,Wind an Land,Ziel,84.0
 2028,Wind an Land,Ziel,99.0
@@ -74,5 +74,5 @@ jahr,reihe,art,gw
 2023,Wind auf See,Ist,8.473
 2024,Wind auf See,Ist,9.215
 2025,Wind auf See,Ist,9.733
-2026,Wind auf See,Ist,11.644
+2026,Wind auf See,Ist,11.659
 2030,Wind auf See,Ziel,30.0
