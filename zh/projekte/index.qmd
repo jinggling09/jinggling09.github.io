@@ -6,6 +6,13 @@ toc: false
 ::: {.karten}
 
 ::: {.karte}
+### [交互式日照与遮阴研究](https://jinggling09.github.io/solar-studie.html)
+围绕住宅节能改造开展的个人学习项目，借助 AI 与初步三维模型探索太阳位置和建筑自身遮阴。使用虚拟参考位置，不展示住宅所在地；光伏组件仅作示意，不提供发电量预测。
+
+[打开演示](https://jinggling09.github.io/solar-studie.html) · 更新：2026年11月1日 · 德文说明、英文操作界面
+:::
+
+::: {.karte}
 ### [德国气候数据看板](../wissen/emissionen-de.qmd)
 基于德国联邦环境署国家温室气体清单的交互式分析：总排放与《联邦气候保护法》目标路径对比、分部门趋势和部门占比。数据从 UBA DataCube 自动更新。
 

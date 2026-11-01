@@ -6,6 +6,13 @@ toc: false
 ::: {.karten}
 
 ::: {.karte}
+### [Interaktive Solar- und Verschattungsstudie](../solar-studie.html)
+Privates, KI-gestütztes Lernprojekt zur energetischen Modernisierung: Sonnenstand und gebäudeeigene Verschattung an einem vorläufigen 3D-Gebäudemodell untersuchen. Fiktiver Referenzstandort; Solarmodule nur zur Illustration, keine Ertragsprognose.
+
+[Demo ansehen](../solar-studie.html) · Stand: 01.11.2026 · Bedienung auf Englisch
+:::
+
+::: {.karte}
 ### [Klima-Dashboard Deutschland](../wissen/emissionen-de.qmd)
 Interaktive Auswertung der nationalen THG-Inventare des Umweltbundesamts: Gesamtemissionen mit KSG-Zielpfad, Sektortrends, Sektoranteile. Automatische Aktualisierung aus dem UBA-DataCube.
 

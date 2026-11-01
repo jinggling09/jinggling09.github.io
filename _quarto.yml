@@ -13,6 +13,7 @@ project:
     - "daten/*.qmd"
     - "projekte/*.qmd"
   resources:
+    - "solar-studie.html"
     - "daten/data/*.csv"
     - "daten/data/*.json"
     - "images/*"

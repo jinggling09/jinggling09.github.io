@@ -6,6 +6,13 @@ toc: false
 ::: {.karten}
 
 ::: {.karte}
+### [Interactive solar and shading study](https://jinggling09.github.io/solar-studie.html)
+A private, AI-assisted learning project on energy renovation: explore solar position and building self-shading using a provisional 3D model. Fictional reference location; illustrative panels only, no energy-yield forecast.
+
+[View demo](https://jinggling09.github.io/solar-studie.html) · Updated: 1 November 2026 · German introduction, English controls
+:::
+
+::: {.karte}
 ### [Germany climate dashboard](../wissen/emissionen-de.qmd)
 Interactive analysis of the national GHG inventories of the German Environment Agency: total emissions against the Climate Protection Act target path, sector trends and sector shares. Updated automatically from the UBA DataCube.
 
