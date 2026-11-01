@@ -13,10 +13,6 @@
 <header style="max-width:1000px;margin:0 auto 24px;font-family:system-ui,sans-serif;line-height:1.6">
 <a href="/projekte/" style="color:inherit">← Projekte · Jing Hu</a>
 <h1 style="font-size:clamp(1.5rem,4vw,2.2rem);line-height:1.2">Interaktive Solar- und Verschattungsstudie</h1>
-<p>Ein privates, KI-gestütztes Lernprojekt zur energetischen Modernisierung: Sonnenstand und gebäudeeigene Verschattung an einem vorläufigen 3D-Gebäudemodell erkunden.</p>
-<p><strong>Bedienung:</strong> Datum und Uhrzeit über die Regler wählen, das Modell durch Ziehen drehen oder den Tages- und Jahresverlauf abspielen. Die Bedienelemente der Simulation sind auf Englisch.</p>
-<p><strong>Modellgrenzen:</strong> Die Sonnenberechnung verwendet einen fiktiven Referenzstandort, nicht den tatsächlichen Gebäudestandort. Dachausrichtung und Geometrie sind vorläufig. Nachbargebäude, Bäume und Gelände werden nicht berücksichtigt. Solarmodule dienen nur der Illustration. Die Studie enthält keine Ertrags- oder Wirtschaftlichkeitsprognose und ersetzt keine Fachplanung.</p>
-<p style="font-size:.9rem">Stand: 01.11.2026 · Sonnenstand nach den <a href="https://gml.noaa.gov/grad/solcalc/solareqns.PDF">NOAA-Näherungsgleichungen</a>.</p>
 </header>
 <iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Interaktive Solar- und Verschattungsstudie" data-srcdoc="&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
@@ -2623,6 +2619,12 @@ refreshTheme();resize();update(true);restore(window.openai?.widgetState);root.da
 &lt;/body&gt;
 &lt;/html&gt;
 "></iframe>
+<section id="projekt-hinweise" aria-label="Projektbeschreibung und Hinweise" style="max-width:1000px;margin:32px auto 0;font-family:system-ui,sans-serif;line-height:1.6">
+<p>Ein privates, KI-gestütztes Lernprojekt zur energetischen Modernisierung: Sonnenstand und gebäudeeigene Verschattung an einem vorläufigen 3D-Gebäudemodell erkunden.</p>
+<p><strong>Bedienung:</strong> Datum und Uhrzeit über die Regler wählen, das Modell durch Ziehen drehen oder den Tages- und Jahresverlauf abspielen. Die Bedienelemente der Simulation sind auf Englisch.</p>
+<p><strong>Modellgrenzen:</strong> Die Sonnenberechnung verwendet einen fiktiven Referenzstandort, nicht den tatsächlichen Gebäudestandort. Dachausrichtung und Geometrie sind vorläufig. Nachbargebäude, Bäume und Gelände werden nicht berücksichtigt. Solarmodule dienen nur der Illustration. Die Studie enthält keine Ertrags- oder Wirtschaftlichkeitsprognose und ersetzt keine Fachplanung.</p>
+<p style="font-size:.9rem">Stand: 01.11.2026 · Sonnenstand nach den <a href="https://gml.noaa.gov/grad/solcalc/solareqns.PDF">NOAA-Näherungsgleichungen</a>.</p>
+</section>
 
 <script>(() => {
   const frame = document.getElementById("codex-visualization");
