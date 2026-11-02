@@ -3274,7 +3274,7 @@ const SolarData=(()=>{
  const names={main:'Hauptdach',dormer:'Dachgaube'};
  const defaults={main:{count:'10',watts:'450',preset:'450',length:'176.2',width:'113.4',gap:'2',setback:'15',clearance:'20',orientation:'portrait',excluded:[],irradiation:'4',loss:'20'},dormer:{count:'4',watts:'450',preset:'450',length:'176.2',width:'113.4',gap:'2',setback:'15',clearance:'20',orientation:'landscape',excluded:[],irradiation:'4',loss:'20'}};
  const values=JSON.parse(JSON.stringify(defaults)),fields=['count','watts','length','width','irradiation','loss'];
- let selected='main',mode='manual',date='',records={},pending=false,requestId=0,abort;
+ let selected='main',mode=SolarData.available?'history':'manual',date='',records={},pending=false,requestId=0,abort;
  let profiles={},periodPending=false,periodView='months';
  const layouts={},layoutFields=['orientation','gap','setback','clearance'];
  const local=SolarData.available;
@@ -3461,10 +3461,13 @@ const SolarData=(()=>{
   if(nextDate!==date){invalidate();date=nextDate;}
   get('date').textContent=date?'Datum im Modell: '+dayLabel():'';
   selectRoof(message.zone);
+  // Mit Referenzdaten startet der Rechner beim Monatsmittel des Modelldatums statt beim festen Beispielwert
+  if(mode==='history'&&local&&date&&!pending&&!records[message.zone])get('load').onclick();
   if(!dialog.open)dialog.showModal();
   dialog.scrollTop=0;get('close').focus({preventScroll:true});
  });
  for(const roof of Object.keys(names))rebuildLayout(roof);
+ get('mode').value=mode;
  selectRoof('main');
 })();
 // Hourly AC-side self-consumption scenario. Capacity is usable storage, not nameplate capacity.
