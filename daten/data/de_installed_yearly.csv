@@ -1,7 +1,7 @@
 jahr,reihe,art,gw
 2002,Photovoltaik,Ist,0.29
 2003,Photovoltaik,Ist,0.434
-2004,Photovoltaik,Ist,1.086
+2004,Photovoltaik,Ist,1.085
 2005,Photovoltaik,Ist,2.007
 2006,Photovoltaik,Ist,2.851
 2007,Photovoltaik,Ist,4.102
@@ -12,7 +12,7 @@ jahr,reihe,art,gw
 2012,Photovoltaik,Ist,32.924
 2013,Photovoltaik,Ist,36.056
 2014,Photovoltaik,Ist,37.821
-2015,Photovoltaik,Ist,39.237
+2015,Photovoltaik,Ist,39.238
 2016,Photovoltaik,Ist,40.736
 2017,Photovoltaik,Ist,42.406
 2018,Photovoltaik,Ist,45.409
@@ -23,7 +23,7 @@ jahr,reihe,art,gw
 2023,Photovoltaik,Ist,83.306
 2024,Photovoltaik,Ist,100.801
 2025,Photovoltaik,Ist,118.113
-2026,Photovoltaik,Ist,132.351
+2026,Photovoltaik,Ist,132.364
 2024,Photovoltaik,Ziel,88.0
 2026,Photovoltaik,Ziel,128.0
 2028,Photovoltaik,Ziel,172.0
