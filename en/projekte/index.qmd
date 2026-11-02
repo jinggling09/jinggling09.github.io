@@ -7,9 +7,9 @@ toc: false
 
 ::: {.karte}
 ### [Interactive solar and shading study](https://jinggling09.github.io/solar-studie.html)
-A private, AI-assisted learning project on energy renovation: explore solar position and building self-shading using a provisional 3D model. Fictional reference location; illustrative panels only, no energy-yield forecast.
+An AI-assisted energy-renovation learning project: explore solar position, arrange PV modules on provisional roof surfaces, estimate daily, monthly and quarterly generation, and compare battery capacities. The public demo uses a fictional reference location and example consumption. Building shadows are visualized but are not automatically deducted from energy estimates.
 
-[View demo](https://jinggling09.github.io/solar-studie.html) · Updated: 1 November 2026 · German introduction, English controls
+[View demo](https://jinggling09.github.io/solar-studie.html) · Updated: 2 November 2026 · German calculators, partly English 3D controls
 :::
 
 ::: {.karte}

@@ -7,9 +7,9 @@ toc: false
 
 ::: {.karte}
 ### [Interaktive Solar- und Verschattungsstudie](../solar-studie.html)
-Privates, KI-gestütztes Lernprojekt zur energetischen Modernisierung: Sonnenstand und gebäudeeigene Verschattung an einem vorläufigen 3D-Gebäudemodell untersuchen. Fiktiver Referenzstandort; Solarmodule nur zur Illustration, keine Ertragsprognose.
+KI-gestütztes Lernprojekt zur energetischen Modernisierung: Sonnenstand erkunden, PV-Module auf vorläufigen Dachflächen anordnen, Tages-, Monats- und Quartalserträge schätzen und Batteriespeicher vergleichen. Die öffentliche Demo verwendet einen fiktiven Referenzstandort und Beispielverbräuche. Gebäudeschatten werden dargestellt, aber nicht automatisch von der Ertragsrechnung abgezogen.
 
-[Demo ansehen](../solar-studie.html) · Stand: 01.11.2026 · Bedienung auf Englisch
+[Demo ansehen](../solar-studie.html) · Stand: 02.11.2026 · Rechner auf Deutsch, 3D-Steuerung teilweise auf Englisch
 :::
 
 ::: {.karte}
