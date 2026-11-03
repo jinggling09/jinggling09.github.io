@@ -1461,6 +1461,10 @@ nav.laender-wahl { display: inline-flex; gap: .25rem; padding: .25rem; margin: .
   .menu-gruppe-li.aktuell > button.menu-gruppe span:first-child { text-decoration: underline; text-decoration-color: rgba(31, 95, 74, .45); text-underline-offset: .25em; }
   .menu-flyout { display: none; list-style: none; margin: 0; padding: .4rem 0; }
   .menu-gruppe-li.offen > .menu-flyout { display: block; }
+  /* Länder-Menü in den Länderfarben (wie Umschalter und Steckbrief) */
+  .dropdown-item[href$="laender/eu.html"] { color: $spur-eu; }
+  .dropdown-item[href$="laender/deutschland.html"] { color: $spur-de-text; }
+  .dropdown-item[href$="laender/china.html"] { color: $spur-cn; }
   .menu-flyout .dropdown-item { color: $grau; }
   .menu-flyout .dropdown-item.aktuell { color: $gruen-dunkel; font-weight: 700; }
   @media (min-width: 992px) {
