@@ -125,6 +125,12 @@ Stand 21.10.2026 – Punkte 1–8 umgesetzt und committet (bd5411d, db5861c, 849
 - PRI (Principles for Responsible Investment, Investorenseite) in `berichtspflichten.qmd` → „Freiwillig“ neben CDP/SBTi, Quelle unpri.org. NFRD nicht aufnehmen (durch CSRD ersetzt, Jings Entscheidung).
 - Querverweise zwischen Seiten („穿插“), z. B. „Welche Gase?“ → THG-Dashboard.
 
+## Besucherzählung und Datenschutz (03.11.2026, von Jing gewählt)
+
+- GoatCounter, Konto/Code `jinggling` (Jings eigenes Konto, Auswertung unter jinggling.goatcounter.com). Code in `_includes/goatcounter.html`, per `include-in-header` in allen drei `_quarto.yml`. Keine Cookies, kein Banner nötig.
+- Footer links zeigt die Gesamtzahl („· N Besuche seit November 2026“, EN/ZH übersetzt) über `counter/TOTAL.json`; braucht in GoatCounter die Einstellung „Allow adding visitor counts on your website“, sonst bleibt die Zeile weg.
+- Datenschutzseite `datenschutz.qmd` in DE/EN/ZH (Footer-Link rechts): GitHub Pages, GoatCounter, jsDelivr, Google Fonts. Bei neuen externen Diensten dort nachtragen. Noch nicht in den Sitemap-Dateien.
+
 ## Offene Ideen
 
 - Erst das Gerüst (Gestaltung, Struktur) verfeinern, dann Inhalte/Daten füllen – so will Jing vorgehen.

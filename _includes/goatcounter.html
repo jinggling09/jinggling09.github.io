@@ -1,2 +1,26 @@
 <!-- Besucherzählung mit GoatCounter: ohne Cookies, keine personenbezogenen Daten gespeichert (siehe datenschutz.qmd). Zählt nicht auf localhost. -->
 <script data-goatcounter="https://jinggling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<!-- Gesamtzahl der Besuche im Footer links. Braucht in GoatCounter die Einstellung „Allow adding visitor counts on your website“; sonst bleibt die Zeile weg. -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var ziel = document.querySelector(".nav-footer-left");
+  if (!ziel || !window.fetch) return;
+  var lang = (document.documentElement.lang || "de").slice(0, 2);
+  var text = {
+    de: function (n) { return n + " Besuche seit November 2026"; },
+    en: function (n) { return n + " visits since November 2026"; },
+    zh: function (n) { return "自 2026 年 11 月起访问 " + n + " 次"; }
+  }[lang] || function (n) { return n; };
+  fetch("https://jinggling.goatcounter.com/counter/TOTAL.json")
+    .then(function (r) { if (!r.ok) throw r.status; return r.json(); })
+    .then(function (d) {
+      var n = parseInt(String(d.count).replace(/\D/g, ""), 10);
+      if (!n) return;
+      var s = document.createElement("span");
+      s.className = "besuche";
+      s.textContent = " · " + text(n.toLocaleString(lang === "zh" ? "zh-CN" : lang));
+      (ziel.querySelector("p") || ziel).appendChild(s);
+    })
+    .catch(function () {});
+});
+</script>
