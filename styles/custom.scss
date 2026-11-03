@@ -693,6 +693,32 @@ figure.pfad {
     > :not(:first-child) { grid-column: 1; }
   }
 }
+/* Diagramm ↔ Rollen (skripte/diagramm.js): gemeinsames Hervorheben, Nummern im Diagramm */
+.gov-diagramm svg {
+  [data-r] { transition: opacity .25s ease; cursor: pointer; }
+  &.dg-fokus [data-r]:not(.dg-an) { opacity: .2; }
+  &.dg-fokus .dg-an rect { stroke-width: 2.4; }
+  .dg-marke circle { fill: #fff; stroke: $spur-de-text; stroke-width: 1.6; transition: fill .25s ease; }
+  .dg-marke text { font-size: 12.5px; font-weight: 700; fill: $spur-de-text; transition: fill .25s ease; }
+  .dg-marke.dg-an circle { fill: $spur-de-text; }
+  .dg-marke.dg-an text { fill: #fff; }
+}
+.rolle {
+  transition: background-color .25s ease;
+  &::before { transition: background-color .25s ease, color .25s ease; }
+  &.rolle-an { background: rgba($gruen, .06); }
+  &.rolle-an::before { background: var(--spur); color: #fff; }
+  .rolle-zeigen {
+    display: inline-block; margin-top: .45rem; margin-left: .3rem; padding: .05rem .55rem;
+    border: 1px dashed var(--spur); border-radius: 999px; background: none;
+    font-size: .8rem; color: var(--spur); cursor: pointer;
+    &:hover, &:focus-visible { border-style: solid; background: #fff; }
+  }
+  .wer + .rolle-zeigen { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gov-diagramm svg [data-r], .rolle, .rolle::before { transition: none; }
+}
 /* Länderfarbe für die Rollen-Überschriften */
 .governance.de { --spur: #{$spur-de-text}; }
 .governance.eu { --spur: #{$spur-eu}; }

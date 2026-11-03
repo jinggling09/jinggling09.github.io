@@ -129,5 +129,58 @@
     document.addEventListener("fullscreenchange", function () { if (!document.fullscreenElement && fig.classList.contains("dg-gross")) aus(); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && fig.classList.contains("dg-gross")) aus(); });
     beschriften();
+    // die Rollen stehen erst unter dem Diagramm im Dokument
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", function () { rollenVerbinden(fig); });
+    else rollenVerbinden(fig);
   });
+
+  // Diagramm ↔ Rollen (Jing, 03.11.2026): Teile mit data-r="2 5" gehören zu #rolle-2 und #rolle-5 (erste Zahl = Hauptrolle).
+  // data-marke="n" setzt eine Nummer an die linke obere Ecke des Kastens, "n x y" an eine feste Stelle.
+  // Überfahren hebt Diagrammteile und Rolle gemeinsam hervor (beide Richtungen); Klick auf einen Teil springt zur Rolle,
+  // jede Rolle bekommt „↑ im Diagramm zeigen“. Ohne data-r im Diagramm passiert nichts.
+  function rollenVerbinden(fig) {
+    var svg = fig.querySelector("svg"), NS = "http://www.w3.org/2000/svg";
+    if (!svg.querySelector("[data-r]")) return;
+    fig.querySelectorAll("[data-marke]").forEach(function (g) {
+      var a = g.dataset.marke.split(" "), n = a[0], x, y;
+      if (a.length > 2) { x = +a[1]; y = +a[2]; }
+      else { var r = g.querySelector("rect"); x = +r.getAttribute("x") + 3; y = +r.getAttribute("y") + 3; }
+      var m = document.createElementNS(NS, "g"); m.setAttribute("class", "dg-marke"); m.setAttribute("data-r", n);
+      m.innerHTML = '<circle cx="' + x + '" cy="' + y + '" r="11"/><text x="' + x + '" y="' + (y + 4.3) + '" text-anchor="middle">' + n + "</text>";
+      svg.appendChild(m);
+    });
+    var teile = svg.querySelectorAll("[data-r]"), rollen = {}, aktiv = null, halt = null, ruheBis = 0;   // ruheBis: beim Springen gleiten Rollen unter der Maus durch
+    document.querySelectorAll(".governance .rolle[id^='rolle-']").forEach(function (r) { rollen[r.id.slice(6)] = r; });
+    function haupt(el) { return el.dataset.r.split(" ")[0]; }
+    function zeigen(n) {
+      if (aktiv === n) return; aktiv = n;
+      svg.classList.toggle("dg-fokus", !!n);
+      teile.forEach(function (t) { t.classList.toggle("dg-an", !!n && t.dataset.r.split(" ").indexOf(n) > -1); });
+      Object.keys(rollen).forEach(function (k) { rollen[k].classList.toggle("rolle-an", k === n); });
+    }
+
+    svg.addEventListener("pointerover", function (e) {
+      if (Date.now() < ruheBis) return;
+      var t = e.target.closest("[data-r]"); halt = null; zeigen(t ? haupt(t) : null);
+    });
+    svg.addEventListener("pointerleave", function () { if (!halt) zeigen(null); });
+    svg.addEventListener("click", function (e) {
+      var t = e.target.closest("[data-r]"); if (!t) return;
+      var n = haupt(t); zeigen(n);
+      if (!fig.classList.contains("dg-gross") && rollen[n]) { halt = n; ruheBis = Date.now() + 1000; rollen[n].scrollIntoView({ behavior: "smooth", block: "center" }); }
+    });
+
+    Object.keys(rollen).forEach(function (k) {
+      var r = rollen[k];
+      r.addEventListener("pointerenter", function (e) { if (e.pointerType === "mouse" && Date.now() > ruheBis) { halt = null; zeigen(k); } });
+      r.addEventListener("pointerleave", function (e) { if (e.pointerType === "mouse" && !halt) zeigen(null); });
+      var link = document.createElement("button"); link.type = "button"; link.className = "rolle-zeigen";
+      link.innerHTML = "<span aria-hidden='true'>↑</span> im Diagramm zeigen";
+      link.addEventListener("click", function () { halt = k; ruheBis = Date.now() + 1000; zeigen(k); fig.scrollIntoView({ behavior: "smooth", block: "center" }); });
+      var kopf = r.querySelector(":scope > p:first-child"); (kopf || r).appendChild(link);
+    });
+    document.addEventListener("click", function (e) {
+      if (halt && !svg.contains(e.target) && !e.target.closest(".rolle")) { halt = null; zeigen(null); }
+    });
+  }
 })();

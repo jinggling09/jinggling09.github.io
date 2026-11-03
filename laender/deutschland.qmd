@@ -121,59 +121,59 @@ Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 
 <!-- EU -->
 <rect x="10" y="10" width="940" height="108" rx="8" fill="#f3f6fb" stroke="none"/>
 <text x="24" y="30" class="band">EUROPÄISCHE UNION</text>
-<rect x="40" y="42" width="250" height="62" rx="6" class="eu"/><text x="165" y="68" text-anchor="middle" class="t">Europ. Parlament &amp; Rat</text><text x="165" y="88" text-anchor="middle" class="s">beschließen EU-Klimarecht</text>
-<rect x="355" y="42" width="250" height="62" rx="6" class="eu"/><text x="480" y="66" text-anchor="middle" class="t">EU-Rahmen</text><text x="480" y="86" text-anchor="middle" class="s">Klimagesetz · Lastenteilung (ESR) · EU-ETS</text>
-<rect x="670" y="42" width="250" height="62" rx="6" class="eu"/><text x="795" y="68" text-anchor="middle" class="t">EU-Kommission</text><text x="795" y="88" text-anchor="middle" class="s">überwacht Ziele und Fortschritt</text>
-<path d="M290 73H351" class="a ab" marker-end="url(#m-b)"/>
+<g data-r="1"><rect x="40" y="42" width="250" height="62" rx="6" class="eu"/><text x="165" y="68" text-anchor="middle" class="t">Europ. Parlament &amp; Rat</text><text x="165" y="88" text-anchor="middle" class="s">beschließen EU-Klimarecht</text></g>
+<g data-r="1"><rect x="355" y="42" width="250" height="62" rx="6" class="eu"/><text x="480" y="66" text-anchor="middle" class="t">EU-Rahmen</text><text x="480" y="86" text-anchor="middle" class="s">Klimagesetz · Lastenteilung (ESR) · EU-ETS</text></g>
+<g data-r="4"><rect x="670" y="42" width="250" height="62" rx="6" class="eu"/><text x="795" y="68" text-anchor="middle" class="t">EU-Kommission</text><text x="795" y="88" text-anchor="middle" class="s">überwacht Ziele und Fortschritt</text></g>
+<g data-r="1"><path d="M290 73H351" class="a ab" marker-end="url(#m-b)"/></g>
 
 <!-- BUND -->
 <rect x="10" y="132" width="940" height="430" rx="8" fill="#f7faf8" stroke="none"/>
 <text x="24" y="152" class="band">BUND</text>
 
-<rect x="40" y="166" width="250" height="70" rx="6" class="leg"/><text x="165" y="192" text-anchor="middle" class="t">Bundestag + Bundesrat</text><text x="165" y="211" text-anchor="middle" class="s">beschließen das Klimaschutzgesetz:</text><text x="165" y="226" text-anchor="middle" class="s">Ziele 2030 / 2040 / 2045, Budgets</text>
-<rect x="355" y="166" width="250" height="70" rx="6" class="exe"/><text x="480" y="192" text-anchor="middle" class="t">Bundesregierung (Kabinett)</text><text x="480" y="211" text-anchor="middle" class="s">Klimaschutzprogramm (§ 9 KSG)</text><text x="480" y="226" text-anchor="middle" class="s">Nachsteuern bei Verfehlung (§ 8)</text>
-<rect x="670" y="166" width="250" height="70" rx="6" class="kon"/><text x="795" y="192" text-anchor="middle" class="t">Expertenrat für Klimafragen</text><text x="795" y="211" text-anchor="middle" class="s">5 unabhängige Sachverständige,</text><text x="795" y="226" text-anchor="middle" class="s">prüfen Daten und Programme</text>
+<g data-r="1" data-marke="1"><rect x="40" y="166" width="250" height="70" rx="6" class="leg"/><text x="165" y="192" text-anchor="middle" class="t">Bundestag + Bundesrat</text><text x="165" y="211" text-anchor="middle" class="s">beschließen das Klimaschutzgesetz:</text><text x="165" y="226" text-anchor="middle" class="s">Ziele 2030 / 2040 / 2045, Budgets</text></g>
+<g data-r="2 5" data-marke="2"><rect x="355" y="166" width="250" height="70" rx="6" class="exe"/><text x="480" y="192" text-anchor="middle" class="t">Bundesregierung (Kabinett)</text><text x="480" y="211" text-anchor="middle" class="s">Klimaschutzprogramm (§ 9 KSG)</text><text x="480" y="226" text-anchor="middle" class="s">Nachsteuern bei Verfehlung (§ 8)</text></g>
+<g data-r="4" data-marke="4"><rect x="670" y="166" width="250" height="70" rx="6" class="kon"/><text x="795" y="192" text-anchor="middle" class="t">Expertenrat für Klimafragen</text><text x="795" y="211" text-anchor="middle" class="s">5 unabhängige Sachverständige,</text><text x="795" y="226" text-anchor="middle" class="s">prüfen Daten und Programme</text></g>
 
-<path d="M290 201H351" class="a ag" marker-end="url(#m-g)"/><text x="320" y="194" text-anchor="middle" class="al">Gesetz</text>
-<path d="M480 104V162" class="a ab" marker-end="url(#m-b)"/><text x="488" y="138" class="al">verpflichtet</text>
-<path d="M590 166V140H760V108" class="a ak" marker-end="url(#m-k)"/><text x="660" y="134" class="al">Berichte</text>
+<g data-r="1"><path d="M290 201H351" class="a ag" marker-end="url(#m-g)"/><text x="320" y="194" text-anchor="middle" class="al">Gesetz</text></g>
+<g data-r="1"><path d="M480 104V162" class="a ab" marker-end="url(#m-b)"/><text x="488" y="138" class="al">verpflichtet</text></g>
+<g data-r="4"><path d="M590 166V140H760V108" class="a ak" marker-end="url(#m-k)"/><text x="660" y="134" class="al">Berichte</text></g>
 
 <!-- Ministerien -->
-<rect x="40" y="286" width="210" height="76" rx="6" class="exe"/><text x="145" y="311" text-anchor="middle" class="t">BMUKN · Umwelt</text><text x="145" y="330" text-anchor="middle" class="s">Federführung Klimaschutz</text><text x="145" y="345" text-anchor="middle" class="s">KSG, internat. Klimapolitik</text>
-<rect x="265" y="286" width="210" height="76" rx="6" class="exe"/><text x="370" y="311" text-anchor="middle" class="t">BMWE · Wirtschaft &amp; Energie</text><text x="370" y="330" text-anchor="middle" class="s">Energiewende: EEG, Netze,</text><text x="370" y="345" text-anchor="middle" class="s">Strommarkt</text>
-<rect x="490" y="286" width="210" height="76" rx="6" class="exe"/><text x="595" y="311" text-anchor="middle" class="t">Fachressorts</text><text x="595" y="330" text-anchor="middle" class="s">Verkehr (BMV) · Bauen (BMWSB)</text><text x="595" y="345" text-anchor="middle" class="s">Landwirtschaft (BMLEH)</text>
-<path d="M480 236V262H145V282" class="a ag" marker-end="url(#m-g)"/><path d="M370 262V282" class="a ag" marker-end="url(#m-g)"/><path d="M480 262H595V282" class="a ag" marker-end="url(#m-g)"/><path d="M480 262V282" class="a ag"/><text x="160" y="256" class="al">beauftragt die Ministerien</text>
+<g data-r="2 5"><rect x="40" y="286" width="210" height="76" rx="6" class="exe"/><text x="145" y="311" text-anchor="middle" class="t">BMUKN · Umwelt</text><text x="145" y="330" text-anchor="middle" class="s">Federführung Klimaschutz</text><text x="145" y="345" text-anchor="middle" class="s">KSG, internat. Klimapolitik</text></g>
+<g data-r="2 5"><rect x="265" y="286" width="210" height="76" rx="6" class="exe"/><text x="370" y="311" text-anchor="middle" class="t">BMWE · Wirtschaft &amp; Energie</text><text x="370" y="330" text-anchor="middle" class="s">Energiewende: EEG, Netze,</text><text x="370" y="345" text-anchor="middle" class="s">Strommarkt</text></g>
+<g data-r="2 5"><rect x="490" y="286" width="210" height="76" rx="6" class="exe"/><text x="595" y="311" text-anchor="middle" class="t">Fachressorts</text><text x="595" y="330" text-anchor="middle" class="s">Verkehr (BMV) · Bauen (BMWSB)</text><text x="595" y="345" text-anchor="middle" class="s">Landwirtschaft (BMLEH)</text></g>
+<g data-r="2"><path d="M480 236V262H145V282" class="a ag" marker-end="url(#m-g)"/><path d="M370 262V282" class="a ag" marker-end="url(#m-g)"/><path d="M480 262H595V282" class="a ag" marker-end="url(#m-g)"/><path d="M480 262V282" class="a ag"/><text x="160" y="256" class="al">beauftragt die Ministerien</text></g>
 
-<rect x="725" y="286" width="195" height="76" rx="6" class="kon"/><text x="822" y="311" text-anchor="middle" class="t">Gerichte</text><text x="822" y="330" text-anchor="middle" class="s">BVerfG 2021: Freiheitsrechte</text><text x="822" y="345" text-anchor="middle" class="s">BVerwG 2026: Programm nachschärfen</text>
-<path d="M780 286V250H590V240" class="a ak" marker-end="url(#m-k)"/><text x="788" y="270" class="al">Nachschärfen</text>
+<g data-r="4"><rect x="725" y="286" width="195" height="76" rx="6" class="kon"/><text x="822" y="311" text-anchor="middle" class="t">Gerichte</text><text x="822" y="330" text-anchor="middle" class="s">BVerfG 2021: Freiheitsrechte</text><text x="822" y="345" text-anchor="middle" class="s">BVerwG 2026: Programm nachschärfen</text></g>
+<g data-r="5 4" data-marke="5 650 250"><path d="M780 286V250H590V240" class="a ak" marker-end="url(#m-k)"/><text x="788" y="270" class="al">Nachschärfen</text></g>
 
 <!-- Daten & Geld -->
-<rect x="40" y="410" width="290" height="120" rx="6" class="exe"/><text x="185" y="434" text-anchor="middle" class="t">Umweltbundesamt (UBA)</text><text x="185" y="453" text-anchor="middle" class="s">Emissionsdaten bis 15. März, Projektionen</text>
-<rect x="60" y="466" width="250" height="50" rx="5" class="exe" style="fill:#fff"/><text x="185" y="487" text-anchor="middle" class="t" style="font-size:13px">DEHSt (im UBA)</text><text x="185" y="505" text-anchor="middle" class="s">Emissionshandel: EU-ETS &amp; BEHG</text>
-<path d="M145 362V406" class="a ag" marker-end="url(#m-g)"/><text x="152" y="390" class="al">Fachaufsicht</text>
+<g data-r="3" data-marke="3"><rect x="40" y="410" width="290" height="120" rx="6" class="exe"/><text x="185" y="434" text-anchor="middle" class="t">Umweltbundesamt (UBA)</text><text x="185" y="453" text-anchor="middle" class="s">Emissionsdaten bis 15. März, Projektionen</text></g>
+<g data-r="3 6"><rect x="60" y="466" width="250" height="50" rx="5" class="exe" style="fill:#fff"/><text x="185" y="487" text-anchor="middle" class="t" style="font-size:13px">DEHSt (im UBA)</text><text x="185" y="505" text-anchor="middle" class="s">Emissionshandel: EU-ETS &amp; BEHG</text></g>
+<g data-r="3"><path d="M145 362V406" class="a ag" marker-end="url(#m-g)"/><text x="152" y="390" class="al">Fachaufsicht</text></g>
 
-<rect x="395" y="430" width="230" height="80" rx="6" class="geld"/><text x="510" y="456" text-anchor="middle" class="t">Klima- und Transformationsfonds</text><text x="510" y="475" text-anchor="middle" class="s">2025: 21,4 Mrd. € aus CO₂-Preisen</text><text x="510" y="491" text-anchor="middle" class="s">+ 100 Mrd. € Sondervermögen</text>
-<path d="M310 491H391" class="a ao" marker-end="url(#m-o)"/><text x="350" y="482" text-anchor="middle" class="al">Erlöse</text>
-<path d="M510 430V388H370V366" class="a ao" marker-end="url(#m-o)"/><path d="M370 388H232V366" class="a ao" marker-end="url(#m-o)"/><path d="M510 388H595V366" class="a ao" marker-end="url(#m-o)"/><text x="518" y="410" class="al">Förderprogramme</text>
+<g data-r="6" data-marke="6"><rect x="395" y="430" width="230" height="80" rx="6" class="geld"/><text x="510" y="456" text-anchor="middle" class="t">Klima- und Transformationsfonds</text><text x="510" y="475" text-anchor="middle" class="s">2025: 21,4 Mrd. € aus CO₂-Preisen</text><text x="510" y="491" text-anchor="middle" class="s">+ 100 Mrd. € Sondervermögen</text></g>
+<g data-r="6"><path d="M310 491H391" class="a ao" marker-end="url(#m-o)"/><text x="350" y="482" text-anchor="middle" class="al">Erlöse</text></g>
+<g data-r="6"><path d="M510 430V388H370V366" class="a ao" marker-end="url(#m-o)"/><path d="M370 388H232V366" class="a ao" marker-end="url(#m-o)"/><path d="M510 388H595V366" class="a ao" marker-end="url(#m-o)"/><text x="518" y="410" class="al">Förderprogramme</text></g>
 
-<path d="M330 420H712V240" class="a ak" marker-end="url(#m-k)"/><text x="634" y="414" class="al">Daten</text>
-<path d="M670 214H609" class="a ak" marker-end="url(#m-k)"/><text x="612" y="252" class="al" style="display:none"></text><text x="672" y="160" class="al">Prüfbericht an Regierung und Bundestag</text>
+<g data-r="3 4"><path d="M330 420H712V240" class="a ak" marker-end="url(#m-k)"/><text x="634" y="414" class="al">Daten</text></g>
+<g data-r="4 5"><path d="M670 214H609" class="a ak" marker-end="url(#m-k)"/><text x="612" y="252" class="al" style="display:none"></text><text x="672" y="160" class="al">Prüfbericht an Regierung und Bundestag</text></g>
 
 <!-- Länder -->
 <rect x="10" y="576" width="940" height="76" rx="8" fill="#f7f7f4" stroke="none"/>
 <text x="24" y="596" class="band">LÄNDER &amp; KOMMUNEN</text>
-<rect x="250" y="604" width="460" height="40" rx="6" class="exe"/><text x="480" y="629" text-anchor="middle" class="s"><tspan class="t" style="font-size:13px">Landesregierungen &amp; Kommunen</tspan> · eigene Klimagesetze, kommunale Wärmeplanung</text>
-<path d="M665 362V600" class="a ag" marker-end="url(#m-g)"/><text x="672" y="560" class="al">Wärmeplanung (WPG)</text>
+<g data-r="2"><rect x="250" y="604" width="460" height="40" rx="6" class="exe"/><text x="480" y="629" text-anchor="middle" class="s"><tspan class="t" style="font-size:13px">Landesregierungen &amp; Kommunen</tspan> · eigene Klimagesetze, kommunale Wärmeplanung</text></g>
+<g data-r="2"><path d="M665 362V600" class="a ag" marker-end="url(#m-g)"/><text x="672" y="560" class="al">Wärmeplanung (WPG)</text></g>
 
 <!-- Bürger -->
-<rect x="40" y="672" width="880" height="44" rx="6" fill="#f1f1ee" stroke="#c9cfcb"/><text x="480" y="699" text-anchor="middle" class="t" style="font-size:13px">Bürgerinnen und Bürger · Unternehmen · Verbände</text>
-<path d="M40 694H24V201H36" class="a ag" marker-end="url(#m-g)"/><text x="17" y="660" class="al" transform="rotate(-90 17 660)">wählen</text>
-<path d="M880 672V366" class="a ak" marker-end="url(#m-k)"/><text x="826" y="650" class="al">klagen</text>
+<g data-r="1 4"><rect x="40" y="672" width="880" height="44" rx="6" fill="#f1f1ee" stroke="#c9cfcb"/><text x="480" y="699" text-anchor="middle" class="t" style="font-size:13px">Bürgerinnen und Bürger · Unternehmen · Verbände</text></g>
+<g data-r="1"><path d="M40 694H24V201H36" class="a ag" marker-end="url(#m-g)"/><text x="17" y="660" class="al" transform="rotate(-90 17 660)">wählen</text></g>
+<g data-r="4"><path d="M880 672V366" class="a ak" marker-end="url(#m-k)"/><text x="826" y="650" class="al">klagen</text></g>
 </svg>
 </div>
 <figcaption><span class="gl g">legt fest / beauftragt</span> <span class="gl b">EU-Vorgaben</span> <span class="gl k">berichtet / prüft</span> <span class="gl o">Geldfluss</span> · Kästen: <span class="gk leg">Gesetzgebung</span> <span class="gk exe">Regierung &amp; Verwaltung</span> <span class="gk kon">Kontrolle</span> <span class="gk geld">Finanzierung</span></figcaption>
 </figure>
-<script src="../skripte/diagramm.js?v=1"></script>
+<script src="../skripte/diagramm.js?v=4"></script>
 ```
 
 ::: {.belege}
