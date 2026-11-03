@@ -1454,7 +1454,16 @@ html[lang|="zh"] .startbild .sb-hand::before { content: "——"; }
 }
 
 /* Klimaschutz-Rad im Länderprofil Deutschland (von Jing gewählt, 22.10.2026): Sektoren als Ring, Instrumente als Strahlen */
-figure.klimarad { margin: 1rem 0 .4rem;
+html.kr-offen { overflow: hidden; } /* Seite steht still, solange das Klimaschutz-Rad im Vollbild ist */
+figure.klimarad { margin: 1rem 0 .4rem; position: relative;
+  .kr-vollbild { position: absolute; right: 0; top: 0; z-index: 3; display: inline-flex; align-items: center; gap: .35rem; padding: .35rem .8rem; border: 1.5px solid $gruen; border-radius: 99px; background: #fff; color: $gruen; font-size: .85rem; font-weight: 600; cursor: pointer; transition: background .15s, color .15s;
+    &:hover, &:focus-visible { background: $gruen; color: #fff; } }
+  /* Vollbild (skripte/klimarad.js): Rad so groß, wie das Fenster hoch ist */
+  &.kr-gross { position: fixed; inset: 0; z-index: 2000; margin: 0; background: #fcfcfa; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.2rem; overflow: auto;
+    .kr-rad { width: min(100%, calc(100vh - 5.5rem)); }
+    .kr-vollbild { position: fixed; right: 1.2rem; top: 1.2rem; }
+    .kr-hinweis { margin-top: .4rem; } }
+  &:fullscreen { background: #fcfcfa; }
   .kr-rad { position: relative; container-type: inline-size; }
   svg { width: 100%; height: auto; display: block; overflow: visible; }
   .kr-hilfslinie { fill: none; stroke: #e6ebe7; stroke-dasharray: 2 5; }

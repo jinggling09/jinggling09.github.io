@@ -323,7 +323,7 @@ Grundlage sind die Emissionen 2025 und die UBA-Projektionen 2026. „Budget 2021
   </div>
   <div class="kr-hinweis">Sektor antippen · Doppelklick ins Leere zeigt wieder alles</div>
 </figure>
-<script src="../skripte/klimarad.js"></script>
+<script src="../skripte/klimarad.js?v=2"></script>
 ```
 
 ::: {.belege .kr-belege}

@@ -84,5 +84,32 @@
     svg.addEventListener("dblclick", function () { zeige(null); });
     svg.addEventListener("click", function (e) { if (e.target === svg) zeige(null); });
     zeige(null);
+    vollbild();
   }).catch(function () { fig.style.display = "none"; });
+
+  // Vollbild (Jing, 03.11.2026): Knopf oben rechts; echte Vollbild-Ansicht, wo der Browser sie kann,
+  // sonst eine Ebene über der Seite. Esc oder der Knopf schließt; ein Link im Rad schließt ebenfalls.
+  function vollbild() {
+    var knopf = document.createElement("button");
+    knopf.type = "button"; knopf.className = "kr-vollbild";
+    fig.insertBefore(knopf, fig.firstChild);
+    function beschriften() {
+      var an = fig.classList.contains("kr-gross");
+      knopf.innerHTML = an ? "<span aria-hidden='true'>✕</span> Schließen" : "<span aria-hidden='true'>⤢</span> Vollbild";
+      knopf.setAttribute("aria-pressed", an ? "true" : "false");
+    }
+    function an() {
+      fig.classList.add("kr-gross"); document.documentElement.classList.add("kr-offen"); beschriften();
+      if (fig.requestFullscreen) fig.requestFullscreen().catch(function () {});
+    }
+    function aus() {
+      fig.classList.remove("kr-gross"); document.documentElement.classList.remove("kr-offen"); beschriften();
+      if (document.fullscreenElement === fig && document.exitFullscreen) document.exitFullscreen().catch(function () {});
+    }
+    knopf.addEventListener("click", function () { fig.classList.contains("kr-gross") ? aus() : an(); });
+    document.addEventListener("fullscreenchange", function () { if (!document.fullscreenElement && fig.classList.contains("kr-gross")) aus(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && fig.classList.contains("kr-gross")) aus(); });
+    fig.addEventListener("click", function (e) { if (e.target.closest("a") && fig.classList.contains("kr-gross")) aus(); });
+    beschriften();
+  }
 })();
