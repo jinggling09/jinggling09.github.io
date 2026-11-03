@@ -188,5 +188,5 @@ title-block-banner: false
     {"text": "Schnittstelle China ↔ CBAM", "href": "wissen/schnittstellen.html", "icon": "container"}]}
 }
 </script>
-<script src="skripte/startmenue.js?v=4"></script>
+<script src="skripte/startmenue.js?v=5"></script>
 ```

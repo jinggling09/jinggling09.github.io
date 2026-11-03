@@ -46,9 +46,9 @@
     setTimeout(function () { z.remove(); }, ruhig ? 0 : 220);
   }
 
-  function oeffnen(h) {
+  function oeffnen(h, perMaus) {
     var eintrag = daten[h.dataset.menue];
-    if (zettel && offenBei === h) { schliessen(true); return; }
+    if (zettel && offenBei === h) { if (!perMaus) schliessen(true); return; }
     schliessen(false);
     offenBei = h; h.classList.add("offen"); h.setAttribute("aria-expanded", "true");
 
@@ -85,15 +85,30 @@
     oben = Math.max(0, Math.min(oben, br.height - hh));
     z.style.left = links + "px"; z.style.top = oben + "px";
     z.style.transformOrigin = (px - parseFloat(z.style.left)) + "px " + (py - parseFloat(z.style.top)) + "px";
+    z.addEventListener("pointerenter", halten);
+    z.addEventListener("pointerleave", function (e) { if (e.pointerType === "mouse") spaeterZu(); });
     zettel = z;
     requestAnimationFrame(function () { requestAnimationFrame(function () { z.classList.add("da"); }); });
     var erster = z.querySelector("a"); if (erster && h.dataset.tastatur) { erster.focus(); delete h.dataset.tastatur; }
   }
 
+  // Maus (Jing, 03.11.2026): Zettel öffnet beim Überfahren und schließt beim Verlassen (kurze Pause,
+  // damit man vom Punkt in den Zettel wechseln kann); ein Klick führt dann direkt zur Hauptseite.
+  // Touch und Tastatur: Klick bzw. Enter öffnet und schließt wie bisher.
+  var maus = window.matchMedia && matchMedia("(hover: hover) and (pointer: fine)").matches, timer = null;
+  function halten() { clearTimeout(timer); }
+  function spaeterZu() { clearTimeout(timer); timer = setTimeout(function () { schliessen(false); }, 280); }
+
   document.querySelectorAll(".startbild .sb-hot[data-menue]").forEach(function (h) {
     if (!daten[h.dataset.menue]) return;
     h.setAttribute("aria-haspopup", "dialog"); h.setAttribute("aria-expanded", "false");
-    h.sbMenue = function (tastatur) { if (tastatur) h.dataset.tastatur = "1"; oeffnen(h); };
+    h.sbMenue = function (tastatur) {
+      if (maus && !tastatur) { location.href = h.dataset.href; return; }
+      if (tastatur) h.dataset.tastatur = "1";
+      oeffnen(h);
+    };
+    h.addEventListener("pointerenter", function (e) { if (e.pointerType === "mouse") { halten(); oeffnen(h, true); } });
+    h.addEventListener("pointerleave", function (e) { if (e.pointerType === "mouse") spaeterZu(); });
   });
   document.addEventListener("click", function (e) {
     if (zettel && !zettel.contains(e.target) && !(offenBei && offenBei.contains(e.target))) schliessen(false);
