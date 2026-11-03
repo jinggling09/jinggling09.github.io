@@ -60,7 +60,7 @@ website:
         aria-label: GitHub
   page-footer:
     left: "© 2026 Jing Hu"
-    right: "所有内容均注明来源 · [来源与方法](/quellen.qmd)"
+    right: "所有内容均注明来源 · [来源与方法](/quellen.qmd) · [隐私说明](/datenschutz.qmd)"
 
 format:
   html:
@@ -78,6 +78,8 @@ format:
     smooth-scroll: true
     link-external-newwindow: true
     link-external-filter: '^(?:http:|https:)\/\/jinggling09\.github\.io\/'
+    include-in-header:
+      - ../_includes/goatcounter.html
     include-after-body:
       - ../_includes/lang-switch.html
       - ../_includes/literatur-toggle.html

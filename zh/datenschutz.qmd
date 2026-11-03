@@ -1,0 +1,34 @@
+---
+title: "隐私说明"
+date: 2026-11-03
+---
+
+## 负责人
+
+Jing Hu · 邮箱：[hujing1104@outlook.com](mailto:hujing1104@outlook.com)
+
+本网站为个人非商业项目。
+
+## 托管：GitHub Pages
+
+网页托管在 GitHub Pages（GitHub, Inc.，美国）。访问网页时，GitHub 会处理传输网页和保障服务安全所必需的数据，包括 IP 地址。详见 [GitHub 隐私声明](https://docs.github.com/zh/site-policy/privacy-policies/github-general-privacy-statement)。
+
+## 访问统计：GoatCounter
+
+为了解哪些页面有人阅读，本网站使用 [GoatCounter](https://www.goatcounter.com)。GoatCounter：
+
+- **不使用 Cookie**，不在浏览器中存储任何内容；
+- **不保存 IP 地址**，不建立用户画像；
+- 只记录：访问的页面、来源页面、浏览器和操作系统、屏幕尺寸，以及国家（由 IP 地址推断，IP 地址随后不保存）。
+
+我只能看到汇总数字。法律依据为改进网站的正当利益（《通用数据保护条例》第 6 条第 1 款 f 项）。详见 [GoatCounter 隐私政策](https://www.goatcounter.com/help/privacy)。
+
+广告拦截插件可能会使访问不被统计。
+
+## 嵌入内容
+
+部分页面从 [jsDelivr](https://www.jsdelivr.com) 加载程序库和地图数据，并从 Google Fonts（Google Ireland Ltd.）加载字体，您的 IP 地址会因此传给这些服务商。网站上的计算器和表单只在您的浏览器中运行，输入内容不会被发送或保存。
+
+## 您的权利
+
+您享有访问、更正、删除、限制处理和反对的权利（《通用数据保护条例》第 15–21 条），并可向数据保护监管机构投诉。如需行使上述权利，请发邮件至上方地址。

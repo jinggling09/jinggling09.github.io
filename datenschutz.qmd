@@ -1,0 +1,35 @@
+---
+title: "Datenschutz"
+date: 2026-11-03
+date-format: "D. MMMM YYYY"
+---
+
+## Verantwortlich
+
+Jing Hu · E-Mail: [hujing1104@outlook.com](mailto:hujing1104@outlook.com)
+
+Diese Website ist ein privates, nicht kommerzielles Projekt.
+
+## Hosting: GitHub Pages
+
+Die Seiten liegen bei GitHub Pages (GitHub, Inc., USA). Beim Aufruf verarbeitet GitHub technisch nötige Daten, darunter die IP-Adresse, um die Seiten auszuliefern und den Dienst zu schützen. Einzelheiten: [GitHub Privacy Statement](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement).
+
+## Besucherzählung: GoatCounter
+
+Um zu sehen, welche Seiten gelesen werden, nutzt diese Website [GoatCounter](https://www.goatcounter.com). GoatCounter
+
+- setzt **keine Cookies** und speichert nichts in Ihrem Browser,
+- speichert **keine IP-Adressen** und erstellt keine Profile,
+- erfasst nur: aufgerufene Seite, verweisende Seite, Browser und Betriebssystem, Bildschirmgröße und das Land (aus der IP-Adresse abgeleitet, die danach nicht gespeichert wird).
+
+Die Zahlen sehe ich nur als Summen. Rechtsgrundlage ist mein berechtigtes Interesse, die Website zu verbessern (Art. 6 Abs. 1 lit. f DSGVO). Einzelheiten: [Datenschutzerklärung von GoatCounter](https://www.goatcounter.com/help/privacy).
+
+Werbeblocker können die Zählung verhindern.
+
+## Eingebundene Inhalte
+
+Einige Seiten laden Programmbibliotheken und Kartendaten von [jsDelivr](https://www.jsdelivr.com) sowie Schriften von Google Fonts (Google Ireland Ltd.). Dabei wird Ihre IP-Adresse an diese Anbieter übermittelt. Rechner und Formulare auf dieser Website rechnen nur in Ihrem Browser; Eingaben werden nicht gesendet oder gespeichert.
+
+## Ihre Rechte
+
+Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch (Art. 15–21 DSGVO) sowie auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde. Schreiben Sie mir dazu an die oben genannte Adresse.
