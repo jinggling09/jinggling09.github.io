@@ -1,0 +1,51 @@
+<!-- Scroll-Effekte (Jing, 03.11.2026): Inhalte blenden beim Scrollen ein, Lesebalken oben, Erde auf der Startseite gleitet weg.
+     Bei „Bewegung reduzieren“ im Betriebssystem bleibt alles ruhig (nur der Lesebalken läuft). -->
+<style>
+.se-ziel { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.se-ziel.se-da { opacity: 1; transform: none; }
+.se-balken { position: fixed; left: 0; top: 0; height: 3px; width: 0; background: #a8741a; z-index: 1100; pointer-events: none; }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var ruhig = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var main = document.querySelector("main.content") || document.querySelector("main");
+
+  // Lesebalken
+  var balken = document.createElement("div");
+  balken.className = "se-balken";
+  document.body.appendChild(balken);
+
+  // Erde der Startseite gleitet nach unten weg (nur breite Fenster)
+  var bild = !ruhig && document.querySelector(".sb-bild");
+  var breit = window.matchMedia && matchMedia("(min-width: 768px)");
+
+  function scroll() {
+    var h = document.documentElement, max = h.scrollHeight - h.clientHeight;
+    balken.style.width = (max > 0 ? h.scrollTop / max * 100 : 0) + "%";
+    if (bild) {
+      var y = breit && breit.matches ? Math.min(window.scrollY, 700) : 0;
+      bild.style.transform = y ? "translateY(" + y * 0.35 + "px) scale(" + (1 - y / 3500) + ")" : "";
+      bild.style.opacity = y ? 1 - y / 900 : "";
+    }
+  }
+  window.addEventListener("scroll", scroll, { passive: true });
+  window.addEventListener("resize", scroll);
+  scroll();
+
+  // Einblenden: nur, was beim Laden unterhalb des Fensters liegt; nichts doppelt (keine Kinder schon erfasster Blöcke)
+  if (ruhig || !main || !("IntersectionObserver" in window)) return;
+  var beob = new IntersectionObserver(function (eintraege) {
+    eintraege.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add("se-da"); beob.unobserve(e.target); }
+    });
+  }, { rootMargin: "0px 0px -8% 0px" });
+  var gewaehlt = [];
+  main.querySelectorAll("section.level2 > *, .sb-kachel, figure, .matrix").forEach(function (el) {
+    if (gewaehlt.some(function (g) { return g.contains(el); })) return;
+    if (el.getBoundingClientRect().top < window.innerHeight) return;
+    gewaehlt.push(el);
+    el.classList.add("se-ziel");
+    beob.observe(el);
+  });
+});
+</script>

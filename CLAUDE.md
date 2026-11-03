@@ -125,6 +125,10 @@ Stand 21.10.2026 – Punkte 1–8 umgesetzt und committet (bd5411d, db5861c, 849
 - PRI (Principles for Responsible Investment, Investorenseite) in `berichtspflichten.qmd` → „Freiwillig“ neben CDP/SBTi, Quelle unpri.org. NFRD nicht aufnehmen (durch CSRD ersetzt, Jings Entscheidung).
 - Querverweise zwischen Seiten („穿插“), z. B. „Welche Gase?“ → THG-Dashboard.
 
+## Scroll-Effekte (03.11.2026, von Jing gewählt: A + C + D)
+
+`_includes/scroll-effekte.html` (alle drei Sprachen): Blöcke blenden beim Scrollen ein (nur was beim Laden unterhalb des Fensters liegt), ockerfarbener Lesebalken oben, Erde der Startseite gleitet nach unten weg (nur ≥ 768 px). Bei „Bewegung reduzieren“ nur der Lesebalken. Abgelehnt: hochzählende Zahlen.
+
 ## Besucherzählung und Datenschutz (03.11.2026, von Jing gewählt)
 
 - GoatCounter, Konto/Code `jinggling` (Jings eigenes Konto, Auswertung unter jinggling.goatcounter.com). Code in `_includes/goatcounter.html`, per `include-in-header` in allen drei `_quarto.yml`. Keine Cookies, kein Banner nötig.

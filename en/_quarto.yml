@@ -84,6 +84,7 @@ format:
       - ../_includes/lang-switch.html
       - ../_includes/literatur-toggle.html
       - ../_includes/sitemap-en.html
+      - ../_includes/scroll-effekte.html
     citations-hover: true
     reference-location: margin
 

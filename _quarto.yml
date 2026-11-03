@@ -144,6 +144,7 @@ format:
       - _includes/sitemap-de.html
       - _includes/menu-gruppen.html
       - _includes/menu-mega.html
+      - _includes/scroll-effekte.html
     citations-hover: true
     reference-location: margin
 
