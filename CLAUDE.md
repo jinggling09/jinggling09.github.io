@@ -39,6 +39,7 @@ Die Städte-Ebene (Stuttgart ↔ Peking) ist bewusst zurückgestellt.
 
 - DE im Stammverzeichnis, `en/` und `zh/` sind **eigene Quarto-Projekte** mit denselben Dateinamen (Sprachmenü `_includes/lang-switch.html` springt auf dieselbe Seite).
 - Inhaltliche Änderungen zuerst auf Deutsch, dann in `en/` und `zh/` nachziehen – **immer alle drei**.
+- **Ausnahme seit 03.11.2026 (Jing):** vorerst nur die deutsche Fassung weiterentwickeln, EN/ZH nicht mehr nachziehen. Grund: Startseiten-Kacheln (DE drei Blöcke `.sb-block`, EN/ZH noch fünf alte Kacheln) und Menü unterscheiden sich schon; EN/ZH werden später in einem Zug angeglichen.
 - Auf DE- und EN-Seiten **keine chinesischen Zeichen** (einzige Ausnahme: „中文“ im Sprachmenü).
 - `zh/references.bib` ist eigenständig (chinesische Originaltitel); DE und EN teilen `references.bib`.
 - Gemeinsam genutzt: `styles/custom.scss`, `daten/data/`.
