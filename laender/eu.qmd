@@ -162,6 +162,7 @@ Das Europäische Klimagesetz verpflichtet die EU, ihre **Netto-Treibhausgasemiss
 </div>
 <figcaption><span class="gl g">legt fest / beauftragt</span> <span class="gl b">EU-Recht wirkt in den Mitgliedstaaten</span> <span class="gl k">berichtet / berät</span> <span class="gl o">Geldfluss</span> · Kästen: <span class="gk leg">Gesetzgebung</span> <span class="gk exe">Verwaltung</span> <span class="gk kon">Beratung</span> <span class="gk geld">Finanzierung</span></figcaption>
 </figure>
+<script src="../skripte/diagramm.js?v=1"></script>
 ```
 
 ::: {.belege}

@@ -762,6 +762,7 @@ figure.pfad {
 }
 
 /* Governance-Diagramm */
+html.dg-offen { overflow: hidden; } /* Seite steht still, solange ein Diagramm im Vollbild ist */
 figure.gov-diagramm {
   margin: 1rem 0 .6rem;
   background: #fff;
@@ -770,6 +771,15 @@ figure.gov-diagramm {
   padding: .5rem;
   .gov-scroll { overflow-x: auto; }
   svg { display: block; width: 100%; min-width: 720px; height: auto; font-family: $font-family-sans-serif; }
+  /* Werkzeugleiste (skripte/diagramm.js): Vollbild und Als Bild speichern */
+  .dg-werkzeug { display: flex; justify-content: flex-end; gap: .4rem; margin: 0 0 .3rem;
+    button { display: inline-flex; align-items: center; gap: .35rem; padding: .3rem .75rem; border: 1.5px solid $gruen; border-radius: 99px; background: #fff; color: $gruen; font-size: .82rem; font-weight: 600; cursor: pointer; transition: background .15s, color .15s;
+      &:hover, &:focus-visible { background: $gruen; color: #fff; } &:disabled { opacity: .6; cursor: wait; } } }
+  &.dg-gross { position: fixed; inset: 0; z-index: 2000; margin: 0; border: 0; border-radius: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem 1.5rem; overflow: auto;
+    .dg-werkzeug { position: fixed; right: 1.2rem; top: 1rem; }
+    .gov-scroll { width: min(100%, calc((100vh - 7rem) * var(--dg-q, 1.3))); overflow: visible; }
+    svg { min-width: 0; }
+    figcaption { max-width: min(100%, calc((100vh - 7rem) * var(--dg-q, 1.3))); } }
   figcaption { font-size: .82rem; color: $grau; margin: .5rem .3rem .1rem; line-height: 1.7; }
   .gl { white-space: nowrap; margin-right: .5rem; }
   .gl::before { content: ""; display: inline-block; width: 18px; height: 0; border-top: 2.5px solid; vertical-align: middle; margin-right: .3rem; }

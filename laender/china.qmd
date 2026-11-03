@@ -149,6 +149,7 @@ Chinas Ziele stehen in Partei- und Regierungsdokumenten: **CO₂-Höchststand vo
 </div>
 <figcaption><span class="gl g">legt fest / beauftragt</span> <span class="gl k">berichtet</span> <span class="gl o">Geld und Markt</span> · Kästen: <span class="gk leg">Führung &amp; Gesetzgebung</span> <span class="gk exe">Regierung &amp; Verwaltung</span> <span class="gk kon">Statistik</span> <span class="gk geld">Finanzierung</span></figcaption>
 </figure>
+<script src="../skripte/diagramm.js?v=1"></script>
 ```
 
 ::: {.belege}

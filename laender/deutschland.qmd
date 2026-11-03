@@ -173,6 +173,7 @@ Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 
 </div>
 <figcaption><span class="gl g">legt fest / beauftragt</span> <span class="gl b">EU-Vorgaben</span> <span class="gl k">berichtet / prüft</span> <span class="gl o">Geldfluss</span> · Kästen: <span class="gk leg">Gesetzgebung</span> <span class="gk exe">Regierung &amp; Verwaltung</span> <span class="gk kon">Kontrolle</span> <span class="gk geld">Finanzierung</span></figcaption>
 </figure>
+<script src="../skripte/diagramm.js?v=1"></script>
 ```
 
 ::: {.belege}
