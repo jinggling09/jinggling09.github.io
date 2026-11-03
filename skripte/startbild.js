@@ -121,8 +121,9 @@
   }
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(flaechen); else flaechen();
   document.querySelectorAll(".sb-hot[data-href]").forEach(function (h) {
-    h.addEventListener("click", function () { location.href = h.dataset.href; });
-    h.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); location.href = h.dataset.href; } });
+    // mit Unterseiten (startmenue.js): Notizzettel öffnen, sonst direkt zur Seite
+    h.addEventListener("click", function () { if (h.sbMenue) h.sbMenue(false); else location.href = h.dataset.href; });
+    h.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); if (h.sbMenue) h.sbMenue(true); else location.href = h.dataset.href; } });
   });
   // Windräder: bei „Bewegung reduzieren“ SVG-Animationen anhalten
   if (ruhig) document.querySelectorAll(".startbild svg, .sb-kacheln svg").forEach(function (s) { if (s.pauseAnimations) s.pauseAnimations(); });

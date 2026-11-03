@@ -1,4 +1,4 @@
-<!-- Scroll-Effekte (Jing, 03.11.2026): Inhalte blenden beim Scrollen ein, Lesebalken oben, Erde auf der Startseite gleitet weg.
+<!-- Scroll-Effekte (Jing, 03.11.2026): Inhalte blenden beim Scrollen ein, Lesebalken oben, Erde auf der Startseite wird kleiner und blasser.
      Bei „Bewegung reduzieren“ im Betriebssystem bleibt alles ruhig (nur der Lesebalken läuft). -->
 <style>
 .se-ziel { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
@@ -24,8 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
     balken.style.width = (max > 0 ? h.scrollTop / max * 100 : 0) + "%";
     if (bild) {
       var y = breit && breit.matches ? Math.min(window.scrollY, 700) : 0;
-      bild.style.transform = y ? "translateY(" + y * 0.35 + "px) scale(" + (1 - y / 3500) + ")" : "";
-      bild.style.opacity = y ? 1 - y / 900 : "";
+      // Erde steht seit 03.11.2026 mittig über den Knöpfen: nur kleiner und blasser, nicht nach unten schieben
+      bild.style.transform = y ? "scale(" + (1 - y / 2500) + ")" : "";
+      bild.style.opacity = y ? 1 - y / 1100 : "";
     }
   }
   window.addEventListener("scroll", scroll, { passive: true });

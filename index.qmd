@@ -9,10 +9,8 @@ title-block-banner: false
 <section class="startbild">
   <div class="sb-text">
     <div class="eyebrow">Wissensbasis · EU · Deutschland · China</div>
-    <h1 class="sb-titel">Klimaschutz<br>im Vergleich</h1>
+    <h1 class="sb-titel">Klimaschutz im Vergleich</h1>
     <span class="sb-hand">EU, Deutschland und China</span>
-    <p class="sb-lead">Was wurde versprochen, womit soll es erreicht werden – und was ist tatsächlich passiert? Jede Aussage mit Primärquelle und Stand-Datum.</p>
-    <div class="sb-knoepfe"><a class="voll" href="ziele/index.html">Ziele vergleichen</a><a class="" href="wissen/emissionen-de.html">Emissionen heute</a><a class="" href="daten/index.html">Energiewende</a></div>
   </div>
   <div class="sb-bild">
     <svg id="sb-erde" viewBox="-40 0 840 640" role="img" aria-label="Gezeichnete Erde mit EU, Deutschland und China, dazu Windräder, Solarmodule, Sonne und Fabrik; Beschriftungen führen zu den Themen der Website" data-namen='{"eu": "EU", "de": "Deutschland", "cn": "China"}' data-links='{"eu": "laender/eu.html", "de": "laender/deutschland.html", "cn": "laender/china.html"}'>
@@ -92,29 +90,34 @@ title-block-banner: false
       </g>
 
       <!-- Fabrik mit Rauch -->
-      <g transform="translate(210 260) rotate(-48)">
+      <g transform="translate(212 262) rotate(-48) scale(.75)">
         <path class="sb-linie" d="M-40 0v-34l20 12v-12l20 12v-12l20 12v-36h12v58z"/>
         <circle class="sb-rauch" cx="38" cy="-62" r="7" fill="#9aa39e"/>
         <circle class="sb-rauch z2" cx="38" cy="-62" r="9" fill="#9aa39e"/>
         <circle class="sb-rauch z3" cx="38" cy="-62" r="6" fill="#9aa39e"/>
       </g>
 
+
       <!-- Einstiege (Hotspots) -->
-      <g class="sb-hot" role="link" tabindex="0" data-href="klimawandel/index.html" aria-label="Was ist Klimawandel?">
+      <g class="sb-hot" role="button" tabindex="0" data-menue="klimawandel" data-href="klimawandel/index.html" aria-label="Was ist Klimawandel?">
         <circle class="sb-ring" cx="640" cy="110" r="8"/><circle class="sb-punkt" r="8" cx="640" cy="110"/>
         <path class="sb-pfeil" d="M628 94 c-8-18-6-32 2-44"/><g class="sb-schrift"><text x="560" y="36">Klimawandel</text></g>
       </g>
-      <g class="sb-hot" role="link" tabindex="0" data-href="ziele/index.html" aria-label="Klimaschutz: Ziele, CO₂-Preise und Märkte">
-        <circle class="sb-ring" cx="150" cy="430" r="8"/><circle class="sb-punkt" r="8" cx="150" cy="430"/>
-        <g class="sb-schrift"><text x="-10" y="480">Klimaschutz</text><text class="klein" x="-10" y="506">Ziele · CO₂-Preise · Märkte</text></g>
+      <g class="sb-hot" role="button" tabindex="0" data-menue="klimaschutz" data-href="ziele/index.html" aria-label="Klimaschutz: Ziele, CO₂-Preise und Märkte">
+        <circle class="sb-ring" cx="153" cy="362" r="8"/><circle class="sb-punkt" r="8" cx="153" cy="362"/>
+        <g class="sb-schrift"><text x="-10" y="412">Klimaschutz</text><text class="klein" x="-10" y="438">Ziele · CO₂-Preise · Märkte</text></g>
       </g>
-      <g class="sb-hot" role="link" tabindex="0" data-href="daten/index.html" aria-label="Energiewende">
+      <g class="sb-hot" role="button" tabindex="0" data-menue="energiewende" data-href="daten/index.html" aria-label="Energiewende">
         <circle class="sb-ring" cx="372" cy="40" r="8"/><circle class="sb-punkt" r="8" cx="372" cy="40"/>
         <path class="sb-pfeil" d="M352 28 c-30-14-50-6-70 0"/><g class="sb-schrift"><text x="140" y="28">Energiewende</text></g>
       </g>
-      <g class="sb-hot" role="link" tabindex="0" data-href="wissen/emissionen-de.html" aria-label="Emissionen">
+      <g class="sb-hot" role="button" tabindex="0" data-menue="emissionen" data-href="wissen/emissionen-de.html" aria-label="Emissionen">
         <circle class="sb-ring" cx="168" cy="190" r="8"/><circle class="sb-punkt" r="8" cx="168" cy="190"/>
         <path class="sb-pfeil" d="M150 178 c-20-10-40-10-60 0"/><g class="sb-schrift"><text x="-20" y="190">Emissionen</text></g>
+      </g>
+      <g class="sb-hot" role="button" tabindex="0" data-menue="unternehmen" data-href="unternehmen/index.html" aria-label="Unternehmen: Pflichten und CBAM">
+        <circle class="sb-ring" cx="193" cy="540" r="8"/><circle class="sb-punkt" r="8" cx="193" cy="540"/>
+        <g class="sb-schrift"><text x="20" y="590">Unternehmen</text><text class="klein" x="20" y="616">Pflichten · CBAM</text></g>
       </g>
     </svg>
   </div>
@@ -154,5 +157,36 @@ title-block-banner: false
 <script src="https://cdn.jsdelivr.net/npm/d3-array@3.2.4/dist/d3-array.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/dist/d3-geo.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-<script src="skripte/startbild.js?v=16d7edbf"></script>
+<script src="skripte/startbild.js?v=20261103"></script>
+<script type="application/json" id="sb-menue">
+{
+  "_zu": "Schließen",
+  "klimawandel": {"titel": "Klimawandel", "seiten": [
+    {"text": "Was ist Klimawandel?", "href": "klimawandel/index.html", "icon": "thermo"},
+    {"text": "Folgen und Klimarisiken", "href": "klimawandel/folgen.html", "icon": "welle"}]},
+  "emissionen": {"titel": "Emissionen heute", "seiten": [
+    {"text": "THG-Dashboard Deutschland", "href": "wissen/emissionen-de.html", "icon": "balken"},
+    {"text": "Stromsektor: Deutschland & China", "href": "wissen/stromsektor.html", "icon": "blitz"}]},
+  "klimaschutz": {"titel": "Klimaschutz", "seiten": [
+    {"text": "Ziele und Kontrolle", "href": "ziele/index.html", "icon": "flagge"},
+    {"text": "CO₂-Preis: Überblick & Zeitleiste", "href": "wissen/index.html", "icon": "preis"},
+    {"text": "Chinas Emissionshandel", "href": "wissen/china-ets.html", "icon": "waage"},
+    {"text": "EU-ETS, ETS 2 & BEHG", "href": "wissen/eu-ets.html", "icon": "waage"},
+    {"text": "CBAM – Grundlagen", "href": "wissen/cbam.html", "icon": "container"}]},
+  "energiewende": {"titel": "Energiewende", "seiten": [
+    {"text": "Ausbau Wind & Solar", "href": "daten/index.html", "icon": "balken"},
+    {"text": "Photovoltaik", "href": "energiewende/photovoltaik.html", "icon": "solar"},
+    {"text": "Windenergie", "href": "energiewende/windenergie.html", "icon": "wind"},
+    {"text": "Wärmepumpen", "href": "energiewende/waermepumpen.html", "icon": "haus"},
+    {"text": "Wasserstoff", "href": "energiewende/wasserstoff.html", "icon": "h2"}]},
+  "unternehmen": {"titel": "Unternehmen", "seiten": [
+    {"text": "Wer wird verpflichtet?", "href": "unternehmen/index.html", "icon": "fabrik"},
+    {"text": "Berichtspflichten: CSRD & China", "href": "unternehmen/berichtspflichten.html", "icon": "bericht"},
+    {"text": "Pflichten erfüllen", "href": "unternehmen/pflichten.html", "icon": "haken"},
+    {"text": "Risiken, Anreize, Nutzen", "href": "unternehmen/anreize.html", "icon": "muenze"},
+    {"text": "KI und Rechenzentren", "href": "unternehmen/rechenzentren.html", "icon": "server"},
+    {"text": "Schnittstelle China ↔ CBAM", "href": "wissen/schnittstellen.html", "icon": "container"}]}
+}
+</script>
+<script src="skripte/startmenue.js?v=4"></script>
 ```

@@ -1301,19 +1301,24 @@ nav.sitemap + footer.footer { margin-top: 0; border-top: 1px solid rgba(255, 255
 }
 
 /* ---------- Startseite (von Jing gewählt, 21.10.2026): gezeichnete Erde + Themen-Kacheln ---------- */
+/* Seit 03.11.2026 zentriert (Jing): Titel in einer Zeile oben, Erde in der Mitte, Knöpfe darunter; Lead-Satz vorerst entfernt */
 $hand: "Caveat", "Ma Shan Zheng", cursive;
 .startbild {
-  position: relative; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: center;
-  min-height: min(calc(100vh - 64px), 860px); padding: 1rem 0 4rem;
+  position: relative; display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center;
+  padding: .3rem 0 3.6rem;
+  min-height: calc(100vh - 122px); align-content: center; /* erster Bildschirm füllt das Fenster: Kacheln darunter erst nach „mehr“ sichtbar (Jing, 03.11.2026) */
   .sb-text { position: relative; z-index: 2; }
   .sb-titel { font-family: $headings-font-family; font-weight: 700; font-size: clamp(2.4rem, 4.6vw, 4.2rem); line-height: 1.04; margin: .6rem 0 .2rem; letter-spacing: -.02em; border: none; padding: 0; }
-  .sb-hand { font-family: $hand; font-weight: 700; color: $gruen; font-size: clamp(2rem, 3.6vw, 3.2rem); line-height: 1; display: block; margin-bottom: 1.2rem; transform: rotate(-2deg); transform-origin: left; }
+  .sb-hand { font-family: $hand; font-weight: 700; color: $gruen; font-size: clamp(2rem, 3.6vw, 3.2rem); line-height: 1; display: block; margin-bottom: .4rem; transform: rotate(-2deg); transform-origin: center;
+    position: relative; left: clamp(1.5rem, 8vw, 7rem); /* nach rechts versetzt, mit Gedankenstrich (Jing, 03.11.2026) */
+    &::before { content: "– "; } }
   .sb-lead { font-size: 1.15rem; line-height: 1.55; max-width: 30rem; color: #34403a; margin: 0 0 1.6rem; }
-  .sb-knoepfe { display: flex; flex-wrap: wrap; gap: .6rem;
+  .sb-unten { position: relative; z-index: 2; margin-top: .6rem; }
+  .sb-knoepfe { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem;
     a { font-size: .95rem; font-weight: 600; text-decoration: none; padding: .55rem 1.1rem; border-radius: 999px; border: 1.5px solid $gruen; color: $gruen; transition: background .15s, color .15s; }
     a.voll, a:hover { background: $gruen; color: #fff; }
   }
-  .sb-bild { position: relative; z-index: 1; margin-right: -2rem;
+  .sb-bild { position: relative; z-index: 1; width: min(680px, 100%, (100vh - 410px) * 1.3); margin-top: 2.6rem; /* passt in die Fensterhöhe */
     svg { width: 100%; height: auto; display: block; overflow: visible; } }
   .sb-mehr { position: absolute; left: 50%; bottom: 1.2rem; transform: translateX(-50%); font-family: $hand; font-size: 1.4rem; color: $grau; text-decoration: none; text-align: center; animation: sb-wippen 2.4s ease-in-out infinite;
     &::after { content: ""; display: block; width: 14px; height: 14px; margin: .1rem auto 0; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); } }
@@ -1338,8 +1343,9 @@ $hand: "Caveat", "Ma Shan Zheng", cursive;
     &:focus { outline: none; }
   }
   @media (max-width: 860px) {
-    grid-template-columns: 1fr; padding-top: 1.5rem; min-height: 0;
-    .sb-bild { margin: 1.5rem 0 2rem; }
+    padding-top: 1.5rem; min-height: 0;
+    .sb-bild { margin: 1rem 0 1.5rem; }
+    .sb-unten { margin-top: 0; }
     .sb-mehr { display: none; }
   }
 }
@@ -1387,6 +1393,7 @@ $hand: "Caveat", "Ma Shan Zheng", cursive;
   &.sb-firma .sb-teil:hover { background: #f4ecdb; }
 }
 html[lang|="zh"] .sb-hand, html[lang|="zh"] .sb-frage { font-weight: 400; transform: none; }
+html[lang|="zh"] .startbild .sb-hand::before { content: "——"; }
 
 /* Klimastreifen auf der Startseite als eigenes Band statt im Hintergrund */
 .sb-streifen { margin: 0 0 2rem;
@@ -1400,6 +1407,38 @@ html[lang|="zh"] .sb-hand, html[lang|="zh"] .sb-frage { font-weight: 400; transf
   a { color: $gruen; margin-right: 1.2rem; }
 }
 @media (prefers-reduced-motion: reduce) { .sb-strahlen, .sb-rauch, .sb-hot .sb-ring, .startbild .sb-mehr { animation: none !important; } }
+/* Startseite: Notizzettel mit Unterseiten beim Klick auf einen Einstieg (skripte/startmenue.js, Jing 03.11.2026) */
+.startbild .sb-hot.offen text { fill: $gruen; }
+.startbild .sb-hot.offen .sb-punkt { r: 11; }
+.sb-zettel { position: absolute; z-index: 5; width: 17.5rem; max-width: 100%; text-align: left;
+  background: #fcfcfa; border: 1.5px solid $gruen; border-radius: 18px 6px 16px 8px / 8px 16px 6px 18px;
+  box-shadow: 0 14px 30px rgba(18, 61, 48, .16), 0 2px 0 rgba(31, 95, 74, .25);
+  padding: .55rem .5rem .6rem; opacity: 0; transform: scale(.4) rotate(-6deg);
+  transition: opacity .2s ease, transform .38s cubic-bezier(.3, 1.45, .55, 1);
+  &.da { opacity: 1; transform: scale(1) rotate(-1deg); }
+  .sz-kopf { display: flex; align-items: center; justify-content: space-between; padding: 0 .45rem .25rem; border-bottom: 1px dashed rgba(31, 95, 74, .35); margin-bottom: .3rem; }
+  .sz-titel { font-family: $hand; font-weight: 700; font-size: 1.6rem; line-height: 1.1; color: $gruen; }
+  .sz-zu { border: 0; background: none; font-size: 1.4rem; line-height: 1; color: $grau; cursor: pointer; padding: .1rem .3rem; border-radius: 6px;
+    &:hover { color: $gruen-dunkel; background: $gruen-hell; } }
+  ul { list-style: none; margin: 0; padding: 0; }
+  a { display: flex; align-items: center; gap: .65rem; padding: .42rem .45rem; border-radius: 10px; color: $gruen-dunkel; text-decoration: none; font-size: .95rem; font-weight: 600; line-height: 1.25;
+    opacity: 0; transform: translateX(-8px); transition: opacity .3s ease, transform .3s ease, background .15s; transition-delay: calc(.08s + var(--i) * .05s), calc(.08s + var(--i) * .05s), 0s;
+    &::after { content: "→"; margin-left: auto; color: $gruen; opacity: 0; transform: translateX(-4px); transition: opacity .15s, transform .15s; }
+    &:hover, &:focus-visible { background: $gruen-hell; outline: none;
+      &::after { opacity: 1; transform: none; }
+      .sm-icon { transform: rotate(-6deg) scale(1.1); } } }
+  &.da a { opacity: 1; transform: none; }
+  .sm-icon { flex: none; width: 1.6rem; height: 1.6rem; fill: none; stroke: $gruen; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: transform .2s;
+    path { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset .6s ease; transition-delay: calc(.15s + var(--i, 0) * .05s); } }
+  &.da .sm-icon path { stroke-dashoffset: 0; }
+}
+/* .sb-bild svg (Erde) setzt width: 100% – für die kleinen Icons zurücknehmen */
+.startbild .sb-bild .sb-zettel svg.sm-icon { width: 1.6rem; height: 1.6rem; overflow: hidden; }
+@media (prefers-reduced-motion: reduce) {
+  .sb-zettel, .sb-zettel a, .sb-zettel .sm-icon path { transition: none !important; }
+  .sb-zettel { transform: none; } .sb-zettel a { transform: none; } .sb-zettel .sm-icon path { stroke-dashoffset: 0; }
+}
+
 
 /* Startseite: kleine Klimastreifen in der Klimawandel-Kachel */
 .sb-kachel .ks-mini { position: relative; height: 150px; margin: -.4rem 0 .4rem; border-radius: 6px; overflow: hidden;

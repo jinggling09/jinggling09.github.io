@@ -9,10 +9,8 @@ title-block-banner: false
 <section class="startbild">
   <div class="sb-text">
     <div class="eyebrow">知识库 · 欧盟 · 德国 · 中国</div>
-    <h1 class="sb-titel">中德气候<br>行动对比</h1>
+    <h1 class="sb-titel">中德气候行动对比</h1>
     <span class="sb-hand">欧盟、德国和中国</span>
-    <p class="sb-lead">各方作出了哪些承诺，用什么工具实现，实际发生了什么？每条信息都有一手来源和核对日期。</p>
-    <div class="sb-knoepfe"><a class="voll" href="ziele/index.html">比较目标</a><a class="" href="../klimawandel/index.html">什么是气候变化？（德文）</a><a class="" href="daten/index.html">查看数据</a></div>
   </div>
   <div class="sb-bild">
     <svg id="sb-erde" viewBox="-40 0 840 640" role="img" aria-label="手绘地球，标出欧盟、德国和中国，并有风机、光伏板、太阳和工厂；标签链接到网站各主题" data-namen='{"eu": "欧盟", "de": "德国", "cn": "中国"}' data-links='{"eu": "../laender/eu.html", "de": "../laender/deutschland.html", "cn": "../laender/china.html"}'>
@@ -92,29 +90,34 @@ title-block-banner: false
       </g>
 
       <!-- Fabrik mit Rauch -->
-      <g transform="translate(210 260) rotate(-48)">
+      <g transform="translate(212 262) rotate(-48) scale(.75)">
         <path class="sb-linie" d="M-40 0v-34l20 12v-12l20 12v-12l20 12v-36h12v58z"/>
         <circle class="sb-rauch" cx="38" cy="-62" r="7" fill="#9aa39e"/>
         <circle class="sb-rauch z2" cx="38" cy="-62" r="9" fill="#9aa39e"/>
         <circle class="sb-rauch z3" cx="38" cy="-62" r="6" fill="#9aa39e"/>
       </g>
 
+
       <!-- Einstiege (Hotspots) -->
-      <g class="sb-hot" role="link" tabindex="0" data-href="../klimawandel/index.html" aria-label="什么是气候变化？（德文）">
+      <g class="sb-hot" role="button" tabindex="0" data-menue="klimawandel" data-href="../klimawandel/index.html" aria-label="什么是气候变化？（德文）">
         <circle class="sb-ring" cx="640" cy="110" r="8"/><circle class="sb-punkt" r="8" cx="640" cy="110"/>
         <path class="sb-pfeil" d="M628 94 c-8-18-6-32 2-44"/><g class="sb-schrift"><text x="560" y="36">气候变化</text></g>
       </g>
-      <g class="sb-hot" role="link" tabindex="0" data-href="ziele/index.html" aria-label="气候行动：目标、碳价与市场">
-        <circle class="sb-ring" cx="150" cy="430" r="8"/><circle class="sb-punkt" r="8" cx="150" cy="430"/>
-        <g class="sb-schrift"><text x="-10" y="480">气候行动</text><text class="klein" x="-10" y="506">目标 · 碳价 · 市场</text></g>
+      <g class="sb-hot" role="button" tabindex="0" data-menue="klimaschutz" data-href="ziele/index.html" aria-label="气候行动：目标、碳价与市场">
+        <circle class="sb-ring" cx="153" cy="362" r="8"/><circle class="sb-punkt" r="8" cx="153" cy="362"/>
+        <g class="sb-schrift"><text x="-10" y="412">气候行动</text><text class="klein" x="-10" y="438">目标 · 碳价 · 市场</text></g>
       </g>
-      <g class="sb-hot" role="link" tabindex="0" data-href="daten/index.html" aria-label="能源转型">
+      <g class="sb-hot" role="button" tabindex="0" data-menue="energiewende" data-href="daten/index.html" aria-label="能源转型">
         <circle class="sb-ring" cx="372" cy="40" r="8"/><circle class="sb-punkt" r="8" cx="372" cy="40"/>
         <path class="sb-pfeil" d="M352 28 c-30-14-50-6-70 0"/><g class="sb-schrift"><text x="140" y="28">能源转型</text></g>
       </g>
-      <g class="sb-hot" role="link" tabindex="0" data-href="wissen/emissionen-de.html" aria-label="排放">
+      <g class="sb-hot" role="button" tabindex="0" data-menue="emissionen" data-href="wissen/emissionen-de.html" aria-label="排放">
         <circle class="sb-ring" cx="168" cy="190" r="8"/><circle class="sb-punkt" r="8" cx="168" cy="190"/>
         <path class="sb-pfeil" d="M150 178 c-20-10-40-10-60 0"/><g class="sb-schrift"><text x="-20" y="190">排放</text></g>
+      </g>
+      <g class="sb-hot" role="button" tabindex="0" data-menue="unternehmen" data-href="../unternehmen/index.html" aria-label="企业：义务与 CBAM（德文）">
+        <circle class="sb-ring" cx="193" cy="540" r="8"/><circle class="sb-punkt" r="8" cx="193" cy="540"/>
+        <g class="sb-schrift"><text x="20" y="590">企业</text><text class="klein" x="20" y="616">义务 · CBAM</text></g>
       </g>
     </svg>
   </div>
@@ -149,5 +152,136 @@ title-block-banner: false
 <script src="https://cdn.jsdelivr.net/npm/d3-array@3.2.4/dist/d3-array.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/dist/d3-geo.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-<script src="../skripte/startbild.js?v=16d7edbf"></script>
+<script src="../skripte/startbild.js?v=20261103"></script>
+<script type="application/json" id="sb-menue">
+{
+ "_zu": "关闭",
+ "klimawandel": {
+  "titel": "气候变化",
+  "seiten": [
+   {
+    "text": "什么是气候变化？（德文）",
+    "href": "../klimawandel/index.html",
+    "icon": "thermo"
+   },
+   {
+    "text": "影响与气候风险（德文）",
+    "href": "../klimawandel/folgen.html",
+    "icon": "welle"
+   }
+  ]
+ },
+ "emissionen": {
+  "titel": "排放现状",
+  "seiten": [
+   {
+    "text": "德国温室气体排放",
+    "href": "wissen/emissionen-de.html",
+    "icon": "balken"
+   },
+   {
+    "text": "电力部门：德国与中国",
+    "href": "wissen/stromsektor.html",
+    "icon": "blitz"
+   }
+  ]
+ },
+ "klimaschutz": {
+  "titel": "气候行动",
+  "seiten": [
+   {
+    "text": "气候目标对比",
+    "href": "ziele/index.html",
+    "icon": "flagge"
+   },
+   {
+    "text": "碳定价：概览与时间轴",
+    "href": "wissen/index.html",
+    "icon": "preis"
+   },
+   {
+    "text": "中国全国碳市场",
+    "href": "wissen/china-ets.html",
+    "icon": "waage"
+   },
+   {
+    "text": "欧盟碳市场、ETS2 与 BEHG",
+    "href": "wissen/eu-ets.html",
+    "icon": "waage"
+   },
+   {
+    "text": "CBAM 基础",
+    "href": "wissen/cbam.html",
+    "icon": "container"
+   }
+  ]
+ },
+ "energiewende": {
+  "titel": "能源转型",
+  "seiten": [
+   {
+    "text": "风电与光伏发展",
+    "href": "daten/index.html",
+    "icon": "balken"
+   },
+   {
+    "text": "光伏（德文）",
+    "href": "../energiewende/photovoltaik.html",
+    "icon": "solar"
+   },
+   {
+    "text": "风电（德文）",
+    "href": "../energiewende/windenergie.html",
+    "icon": "wind"
+   },
+   {
+    "text": "热泵（德文）",
+    "href": "../energiewende/waermepumpen.html",
+    "icon": "haus"
+   },
+   {
+    "text": "氢能（德文）",
+    "href": "../energiewende/wasserstoff.html",
+    "icon": "h2"
+   }
+  ]
+ },
+ "unternehmen": {
+  "titel": "企业",
+  "seiten": [
+   {
+    "text": "哪些企业负有义务？（德文）",
+    "href": "../unternehmen/index.html",
+    "icon": "fabrik"
+   },
+   {
+    "text": "信息披露：CSRD 与中国（德文）",
+    "href": "../unternehmen/berichtspflichten.html",
+    "icon": "bericht"
+   },
+   {
+    "text": "履行义务（德文）",
+    "href": "../unternehmen/pflichten.html",
+    "icon": "haken"
+   },
+   {
+    "text": "风险、激励与收益（德文）",
+    "href": "../unternehmen/anreize.html",
+    "icon": "muenze"
+   },
+   {
+    "text": "人工智能与数据中心（德文）",
+    "href": "../unternehmen/rechenzentren.html",
+    "icon": "server"
+   },
+   {
+    "text": "中国碳市场 ↔ CBAM",
+    "href": "wissen/schnittstellen.html",
+    "icon": "container"
+   }
+  ]
+ }
+}
+</script>
+<script src="../skripte/startmenue.js?v=4"></script>
 ```

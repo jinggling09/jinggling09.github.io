@@ -125,6 +125,13 @@ Stand 21.10.2026 – Punkte 1–8 umgesetzt und committet (bd5411d, db5861c, 849
 - PRI (Principles for Responsible Investment, Investorenseite) in `berichtspflichten.qmd` → „Freiwillig“ neben CDP/SBTi, Quelle unpri.org. NFRD nicht aufnehmen (durch CSRD ersetzt, Jings Entscheidung).
 - Querverweise zwischen Seiten („穿插“), z. B. „Welche Gase?“ → THG-Dashboard.
 
+## Startseite zentriert, Notizzettel (03.11.2026, von Jing gewählt)
+
+- Erster Bildschirm jetzt einspaltig und zentriert: Eyebrow, Titel in einer Zeile, Handschrift-Zeile nach rechts versetzt mit Gedankenstrich (CSS `::before`, ZH „——“), darunter die Erde. Lead-Satz und Knöpfe unter der Erde entfernt (Jing will den Lead später neu formulieren; frühere Fassungen in der Git-Historie).
+- Neuer Einstieg „Unternehmen“ (EN „Companies“, ZH „企业“) links unten auf der Erde, unter „Klimaschutz“; Fabrik bei „Emissionen“ auf 75 % verkleinert. Bürogebäude-Zeichnung ausprobiert und auf Jings Wunsch wieder entfernt.
+- Klick auf einen Einstieg öffnet einen Notizzettel mit den Unterseiten (Strich-Icons, die sich zeichnen), statt direkt zu springen: `skripte/startmenue.js`, Daten je Sprache im `<script type="application/json" id="sb-menue">` der `index.qmd`, Schlüssel `data-menue` am `.sb-hot`. Zettel klappt nach außen in den freien Rand auf (links nach links, rechts nach rechts) und darf die eigene Beschriftung verdecken. Bei neuen Unterseiten die JSON in allen drei `index.qmd` nachziehen (EN/ZH: nur-deutsche Seiten mit „(DE)“/„（德文）“ und `../`).
+- Scroll-Effekt D geändert: Erde wird beim Scrollen nur kleiner und blasser (gleitet nicht mehr nach unten, sonst läge sie über dem Inhalt).
+
 ## Scroll-Effekte (03.11.2026, von Jing gewählt: A + C + D)
 
 `_includes/scroll-effekte.html` (alle drei Sprachen): Blöcke blenden beim Scrollen ein (nur was beim Laden unterhalb des Fensters liegt), ockerfarbener Lesebalken oben, Erde der Startseite gleitet nach unten weg (nur ≥ 768 px). Bei „Bewegung reduzieren“ nur der Lesebalken. Abgelehnt: hochzählende Zahlen.

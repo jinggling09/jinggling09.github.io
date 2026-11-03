@@ -9,10 +9,8 @@ title-block-banner: false
 <section class="startbild">
   <div class="sb-text">
     <div class="eyebrow">Knowledge base · EU · Germany · China</div>
-    <h1 class="sb-titel">Climate action<br>compared</h1>
+    <h1 class="sb-titel">Climate action compared</h1>
     <span class="sb-hand">EU, Germany and China</span>
-    <p class="sb-lead">What has been promised, which instruments should deliver it – and what has actually happened? Every statement with a primary source and date.</p>
-    <div class="sb-knoepfe"><a class="voll" href="ziele/index.html">Compare targets</a><a class="" href="../klimawandel/index.html">What is climate change? (DE)</a><a class="" href="daten/index.html">See the data</a></div>
   </div>
   <div class="sb-bild">
     <svg id="sb-erde" viewBox="-40 0 840 640" role="img" aria-label="Drawn Earth showing the EU, Germany and China, with wind turbines, solar panels, sun and factory; labels lead to the topics of the site" data-namen='{"eu": "EU", "de": "Germany", "cn": "China"}' data-links='{"eu": "../laender/eu.html", "de": "../laender/deutschland.html", "cn": "../laender/china.html"}'>
@@ -92,29 +90,34 @@ title-block-banner: false
       </g>
 
       <!-- Fabrik mit Rauch -->
-      <g transform="translate(210 260) rotate(-48)">
+      <g transform="translate(212 262) rotate(-48) scale(.75)">
         <path class="sb-linie" d="M-40 0v-34l20 12v-12l20 12v-12l20 12v-36h12v58z"/>
         <circle class="sb-rauch" cx="38" cy="-62" r="7" fill="#9aa39e"/>
         <circle class="sb-rauch z2" cx="38" cy="-62" r="9" fill="#9aa39e"/>
         <circle class="sb-rauch z3" cx="38" cy="-62" r="6" fill="#9aa39e"/>
       </g>
 
+
       <!-- Einstiege (Hotspots) -->
-      <g class="sb-hot" role="link" tabindex="0" data-href="../klimawandel/index.html" aria-label="What is climate change? (German)">
+      <g class="sb-hot" role="button" tabindex="0" data-menue="klimawandel" data-href="../klimawandel/index.html" aria-label="What is climate change? (German)">
         <circle class="sb-ring" cx="640" cy="110" r="8"/><circle class="sb-punkt" r="8" cx="640" cy="110"/>
         <path class="sb-pfeil" d="M628 94 c-8-18-6-32 2-44"/><g class="sb-schrift"><text x="560" y="36">Climate change</text></g>
       </g>
-      <g class="sb-hot" role="link" tabindex="0" data-href="ziele/index.html" aria-label="Climate action: targets, carbon prices and markets">
-        <circle class="sb-ring" cx="150" cy="430" r="8"/><circle class="sb-punkt" r="8" cx="150" cy="430"/>
-        <g class="sb-schrift"><text x="-10" y="480">Climate action</text><text class="klein" x="-10" y="506">Targets · Carbon prices · Markets</text></g>
+      <g class="sb-hot" role="button" tabindex="0" data-menue="klimaschutz" data-href="ziele/index.html" aria-label="Climate action: targets, carbon prices and markets">
+        <circle class="sb-ring" cx="153" cy="362" r="8"/><circle class="sb-punkt" r="8" cx="153" cy="362"/>
+        <g class="sb-schrift"><text x="-10" y="412">Climate action</text><text class="klein" x="-10" y="438">Targets · Carbon prices · Markets</text></g>
       </g>
-      <g class="sb-hot" role="link" tabindex="0" data-href="daten/index.html" aria-label="Energy transition">
+      <g class="sb-hot" role="button" tabindex="0" data-menue="energiewende" data-href="daten/index.html" aria-label="Energy transition">
         <circle class="sb-ring" cx="372" cy="40" r="8"/><circle class="sb-punkt" r="8" cx="372" cy="40"/>
         <path class="sb-pfeil" d="M352 28 c-30-14-50-6-70 0"/><g class="sb-schrift"><text x="140" y="28">Energy transition</text></g>
       </g>
-      <g class="sb-hot" role="link" tabindex="0" data-href="wissen/emissionen-de.html" aria-label="Emissions">
+      <g class="sb-hot" role="button" tabindex="0" data-menue="emissionen" data-href="wissen/emissionen-de.html" aria-label="Emissions">
         <circle class="sb-ring" cx="168" cy="190" r="8"/><circle class="sb-punkt" r="8" cx="168" cy="190"/>
         <path class="sb-pfeil" d="M150 178 c-20-10-40-10-60 0"/><g class="sb-schrift"><text x="-20" y="190">Emissions</text></g>
+      </g>
+      <g class="sb-hot" role="button" tabindex="0" data-menue="unternehmen" data-href="../unternehmen/index.html" aria-label="Companies: obligations and CBAM (German)">
+        <circle class="sb-ring" cx="193" cy="540" r="8"/><circle class="sb-punkt" r="8" cx="193" cy="540"/>
+        <g class="sb-schrift"><text x="20" y="590">Companies</text><text class="klein" x="20" y="616">Obligations · CBAM</text></g>
       </g>
     </svg>
   </div>
@@ -149,5 +152,136 @@ title-block-banner: false
 <script src="https://cdn.jsdelivr.net/npm/d3-array@3.2.4/dist/d3-array.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/dist/d3-geo.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-<script src="../skripte/startbild.js?v=16d7edbf"></script>
+<script src="../skripte/startbild.js?v=20261103"></script>
+<script type="application/json" id="sb-menue">
+{
+ "_zu": "Close",
+ "klimawandel": {
+  "titel": "Climate change",
+  "seiten": [
+   {
+    "text": "What is climate change? (DE)",
+    "href": "../klimawandel/index.html",
+    "icon": "thermo"
+   },
+   {
+    "text": "Impacts and climate risks (DE)",
+    "href": "../klimawandel/folgen.html",
+    "icon": "welle"
+   }
+  ]
+ },
+ "emissionen": {
+  "titel": "Emissions today",
+  "seiten": [
+   {
+    "text": "GHG emissions in Germany",
+    "href": "wissen/emissionen-de.html",
+    "icon": "balken"
+   },
+   {
+    "text": "Power sector: Germany & China",
+    "href": "wissen/stromsektor.html",
+    "icon": "blitz"
+   }
+  ]
+ },
+ "klimaschutz": {
+  "titel": "Climate action",
+  "seiten": [
+   {
+    "text": "Targets compared",
+    "href": "ziele/index.html",
+    "icon": "flagge"
+   },
+   {
+    "text": "Carbon pricing: overview & timeline",
+    "href": "wissen/index.html",
+    "icon": "preis"
+   },
+   {
+    "text": "China’s national ETS",
+    "href": "wissen/china-ets.html",
+    "icon": "waage"
+   },
+   {
+    "text": "EU ETS, ETS2 & BEHG",
+    "href": "wissen/eu-ets.html",
+    "icon": "waage"
+   },
+   {
+    "text": "CBAM – basics",
+    "href": "wissen/cbam.html",
+    "icon": "container"
+   }
+  ]
+ },
+ "energiewende": {
+  "titel": "Energy transition",
+  "seiten": [
+   {
+    "text": "Wind & solar expansion",
+    "href": "daten/index.html",
+    "icon": "balken"
+   },
+   {
+    "text": "Photovoltaics (DE)",
+    "href": "../energiewende/photovoltaik.html",
+    "icon": "solar"
+   },
+   {
+    "text": "Wind energy (DE)",
+    "href": "../energiewende/windenergie.html",
+    "icon": "wind"
+   },
+   {
+    "text": "Heat pumps (DE)",
+    "href": "../energiewende/waermepumpen.html",
+    "icon": "haus"
+   },
+   {
+    "text": "Hydrogen (DE)",
+    "href": "../energiewende/wasserstoff.html",
+    "icon": "h2"
+   }
+  ]
+ },
+ "unternehmen": {
+  "titel": "Companies",
+  "seiten": [
+   {
+    "text": "Who is obliged? (DE)",
+    "href": "../unternehmen/index.html",
+    "icon": "fabrik"
+   },
+   {
+    "text": "Reporting: CSRD & China (DE)",
+    "href": "../unternehmen/berichtspflichten.html",
+    "icon": "bericht"
+   },
+   {
+    "text": "Meeting obligations (DE)",
+    "href": "../unternehmen/pflichten.html",
+    "icon": "haken"
+   },
+   {
+    "text": "Risks, incentives, benefits (DE)",
+    "href": "../unternehmen/anreize.html",
+    "icon": "muenze"
+   },
+   {
+    "text": "AI and data centres (DE)",
+    "href": "../unternehmen/rechenzentren.html",
+    "icon": "server"
+   },
+   {
+    "text": "Interface China ↔ CBAM",
+    "href": "wissen/schnittstellen.html",
+    "icon": "container"
+   }
+  ]
+ }
+}
+</script>
+<script src="../skripte/startmenue.js?v=4"></script>
 ```
