@@ -167,7 +167,7 @@ Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 
 
 <!-- Bürger -->
 <rect x="40" y="672" width="880" height="44" rx="6" fill="#f1f1ee" stroke="#c9cfcb"/><text x="480" y="699" text-anchor="middle" class="t" style="font-size:13px">Bürgerinnen und Bürger · Unternehmen · Verbände</text>
-<path d="M40 694H24V201H36" class="a ag" marker-end="url(#m-g)"/><text x="30" y="660" class="al" transform="rotate(-90 30 660)">wählen</text>
+<path d="M40 694H24V201H36" class="a ag" marker-end="url(#m-g)"/><text x="17" y="660" class="al" transform="rotate(-90 17 660)">wählen</text>
 <path d="M880 672V366" class="a ak" marker-end="url(#m-k)"/><text x="826" y="650" class="al">klagen</text>
 </svg>
 </div>
