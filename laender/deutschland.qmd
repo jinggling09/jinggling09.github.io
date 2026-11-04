@@ -1,6 +1,8 @@
 ---
 title: "Deutschland: Klimaschutz im Überblick"
 subtitle: "Wer setzt die Ziele, wer setzt sie um, wer kontrolliert – und wo steht das Land?"
+# Fußnoten am Seitenende statt am Rand: Randnotizen sprengen das Raster der Rollen-Karten (.rolle)
+reference-location: document
 ---
 
 {{< include _wahl.md >}}
@@ -187,14 +189,14 @@ Die sechs Rollen im Einzelnen:
 
 ::: {.rolle #rolle-1}
 [Ziele festlegen]{.frage}
-[Bundestag und Bundesrat]{.wer}
+[Bundestag und Bundesrat[^parlament]]{.wer}
 
 Die Ziele stehen im Klimaschutzgesetz und lassen sich nur per Gesetz ändern [@ksg]. Den äußeren Rahmen setzt die EU: Europäisches Klimagesetz und Lastenteilung (ESR), die Deutschland bis 2030 −50 % gegenüber 2005 in Verkehr, Gebäuden, Landwirtschaft und Teilen der Industrie vorschreibt [@eu_klimagesetz_2021; @bmukn_ksp_2026].
 :::
 
 ::: {.rolle #rolle-2}
 [Planen und umsetzen]{.frage}
-[Bundesregierung]{.wer}
+[Bundesregierung[^regierung]]{.wer}
 
 Spätestens zwölf Monate nach Beginn jeder Legislaturperiode beschließt sie ein **Klimaschutzprogramm** [§ 9 @ksg]. Federführend ist seit Mai 2025 das **Umweltministerium (BMUKN)** – es übernahm Klimaschutz vom Wirtschaftsministerium und die internationale Klimapolitik vom Auswärtigen Amt [@organisationserlass_2025]. Energie liegt beim **Wirtschafts- und Energieministerium (BMWE)**; Verkehr, Bauen und Landwirtschaft bei den Fachressorts. Länder und Kommunen setzen vor Ort um, etwa mit der Wärmeplanung [@wpg].
 :::
@@ -229,6 +231,15 @@ Sondervermögen des Bundes, gespeist vor allem aus der CO₂-Bepreisung – Deta
 :::
 
 :::
+
+[^parlament]:
+    - **Bundestag:** 630 Abgeordnete, alle vier Jahre direkt gewählt [@gg, Art. 38–39; @bwahlg, § 1].
+    - **Bundesrat:** Mitglieder der 16 Landesregierungen mit zusammen 69 Stimmen; jedes Land hat je nach Einwohnerzahl 3 bis 6 Stimmen und gibt sie einheitlich ab [@gg, Art. 50–51]. Zustimmungsgesetze brauchen seine Zustimmung, gegen alle anderen kann er nur Einspruch einlegen, den der Bundestag überstimmen kann [@gg, Art. 77–78].
+
+[^regierung]:
+    - **Bundeskanzler:** vom Bundestag gewählt, bestimmt die Richtlinien der Politik [@gg, Art. 63, 65].
+    - **Bundesminister:** auf Vorschlag des Kanzlers vom Bundespräsidenten ernannt; leiten ihr Ressort selbstständig, Streitfragen zwischen Ressorts entscheidet die Regierung gemeinsam [@gg, Art. 64–65].
+    - **Kabinett:** Kanzler und Minister zusammen; beschließt unter anderem das Klimaschutzprogramm [@gg, Art. 62; § 9 @ksg].
 
 ## Klimafinanzierung: Woher kommt das Geld, wohin fließt es? {#klimafinanzierung}
 

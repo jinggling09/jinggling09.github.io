@@ -719,6 +719,8 @@ figure.pfad {
 @media (prefers-reduced-motion: reduce) {
   .gov-diagramm svg [data-r], .rolle, .rolle::before { transition: none; }
 }
+/* Fußnoten-Popup erbt sonst die fette Schrift der Institution (.wer) */
+.tippy-content { font-weight: 400; }
 /* Länderfarbe für die Rollen-Überschriften */
 .governance.de { --spur: #{$spur-de-text}; }
 .governance.eu { --spur: #{$spur-eu}; }
