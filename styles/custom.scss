@@ -319,6 +319,29 @@ figure.klimastreifen {
     color: $ocker; margin-bottom: .3rem;
   }
 }
+/* „Einfach erklärt“: zugeklappter Kasten vor einem Diagramm (Deutschland-Governance) */
+.einfach {
+  background: #f1f6f3;
+  border-left: 4px solid $gruen;
+  border-radius: 0 4px 4px 0;
+  padding: .7rem 1.2rem;
+  margin: 0 0 1.4rem;
+  p { margin: 0 0 .6rem; }
+  details.geschichte {
+    margin: 0;
+    > summary {
+      cursor: pointer; list-style: none; display: flex; align-items: baseline; gap: .45rem;
+      font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: $gruen;
+      &::-webkit-details-marker { display: none; }
+      &::before { content: "▸"; display: inline-block; transition: transform .15s; }
+      &:hover { text-decoration: underline; }
+    }
+    &[open] > summary::before { transform: rotate(90deg); }
+    &[open] > summary { margin-bottom: .7rem; }
+    > p:last-child { margin-bottom: 0; }
+    a[href^="#rolle-"] { text-decoration: none; }
+  }
+}
 html[lang|="en"] .einordnung::before { content: "Assessment"; }
 html[lang|="zh"] .einordnung::before { content: "作者评述"; letter-spacing: .04em; }
 
