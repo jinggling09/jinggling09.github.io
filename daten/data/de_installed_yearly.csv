@@ -18,12 +18,12 @@ jahr,reihe,art,gw
 2018,Photovoltaik,Ist,45.41
 2019,Photovoltaik,Ist,49.419
 2020,Photovoltaik,Ist,54.559
-2021,Photovoltaik,Ist,60.267
+2021,Photovoltaik,Ist,60.268
 2022,Photovoltaik,Ist,67.846
-2023,Photovoltaik,Ist,83.306
-2024,Photovoltaik,Ist,100.802
-2025,Photovoltaik,Ist,118.115
-2026,Photovoltaik,Ist,132.432
+2023,Photovoltaik,Ist,83.307
+2024,Photovoltaik,Ist,100.803
+2025,Photovoltaik,Ist,118.118
+2026,Photovoltaik,Ist,132.496
 2024,Photovoltaik,Ziel,88.0
 2026,Photovoltaik,Ziel,128.0
 2028,Photovoltaik,Ziel,172.0
@@ -52,7 +52,7 @@ jahr,reihe,art,gw
 2023,Wind an Land,Ist,61.013
 2024,Wind an Land,Ist,63.589
 2025,Wind an Land,Ist,68.178
-2026,Wind an Land,Ist,71.722
+2026,Wind an Land,Ist,71.76
 2024,Wind an Land,Ziel,69.0
 2026,Wind an Land,Ziel,84.0
 2028,Wind an Land,Ziel,99.0
