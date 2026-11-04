@@ -121,10 +121,11 @@ Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 
 <!-- EU -->
 <rect x="10" y="10" width="940" height="108" rx="8" fill="#f3f6fb" stroke="none"/>
 <text x="24" y="30" class="band">EUROPÄISCHE UNION</text>
-<g data-r="1"><rect x="40" y="42" width="250" height="62" rx="6" class="eu"/><text x="165" y="68" text-anchor="middle" class="t">Europ. Parlament &amp; Rat</text><text x="165" y="88" text-anchor="middle" class="s">beschließen EU-Klimarecht</text></g>
-<g data-r="1"><rect x="355" y="42" width="250" height="62" rx="6" class="eu"/><text x="480" y="66" text-anchor="middle" class="t">EU-Rahmen</text><text x="480" y="86" text-anchor="middle" class="s">Klimagesetz · Lastenteilung (ESR) · EU-ETS</text></g>
-<g data-r="4"><rect x="670" y="42" width="250" height="62" rx="6" class="eu"/><text x="795" y="68" text-anchor="middle" class="t">EU-Kommission</text><text x="795" y="88" text-anchor="middle" class="s">überwacht Ziele und Fortschritt</text></g>
-<g data-r="1"><path d="M290 73H351" class="a ab" marker-end="url(#m-b)"/></g>
+<g data-r="1 4"><rect x="40" y="42" width="250" height="62" rx="6" class="eu"/><text x="165" y="66" text-anchor="middle" class="t">EU-Kommission</text><text x="165" y="86" text-anchor="middle" class="s">schlägt vor · überwacht die Umsetzung</text></g>
+<g data-r="1"><rect x="355" y="42" width="250" height="62" rx="6" class="eu"/><text x="480" y="66" text-anchor="middle" class="t">Europ. Parlament &amp; Rat</text><text x="480" y="86" text-anchor="middle" class="s">beraten und beschließen gemeinsam</text></g>
+<!-- EU-Klimarecht als Dokument (Eselsohr), nicht als Behörde -->
+<g data-r="1"><path d="M670 42H902L920 60V104H670Z" class="eu" style="fill:#fff;stroke-width:1.4"/><path d="M902 42V60H920" class="eu" style="stroke-width:1.4"/><text x="795" y="66" text-anchor="middle" class="t">EU-Klimarecht</text><text x="795" y="86" text-anchor="middle" class="s">Klimagesetz · Lastenteilung (ESR) · EU-ETS</text></g>
+<g data-r="1"><path d="M290 73H351" class="a ab" marker-end="url(#m-b)"/><text x="320" y="66" text-anchor="middle" class="al">Vorschlag</text><path d="M605 73H666" class="a ab" marker-end="url(#m-b)"/><text x="635" y="66" text-anchor="middle" class="al">Gesetz</text></g>
 
 <!-- BUND -->
 <rect x="10" y="132" width="940" height="430" rx="8" fill="#f7faf8" stroke="none"/>
@@ -135,8 +136,8 @@ Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 
 <g data-r="4" data-marke="4"><rect x="670" y="166" width="250" height="70" rx="6" class="kon"/><text x="795" y="192" text-anchor="middle" class="t">Expertenrat für Klimafragen</text><text x="795" y="211" text-anchor="middle" class="s">5 unabhängige Sachverständige,</text><text x="795" y="226" text-anchor="middle" class="s">prüfen Daten und Programme</text></g>
 
 <g data-r="1"><path d="M290 201H351" class="a ag" marker-end="url(#m-g)"/><text x="320" y="194" text-anchor="middle" class="al">Gesetz</text></g>
-<g data-r="1"><path d="M480 104V162" class="a ab" marker-end="url(#m-b)"/><text x="488" y="138" class="al">verpflichtet</text></g>
-<g data-r="4"><path d="M590 166V140H760V108" class="a ak" marker-end="url(#m-k)"/><text x="660" y="134" class="al">Berichte</text></g>
+<g data-r="1"><path d="M720 104V140H560V162" class="a ab" marker-end="url(#m-b)"/><text x="728" y="126" class="al">verpflichtet</text></g>
+<g data-r="4"><path d="M400 166V140H165V108" class="a ak" marker-end="url(#m-k)"/><text x="282" y="135" text-anchor="middle" class="al">Berichte</text></g>
 
 <!-- Ministerien -->
 <g data-r="2 5"><rect x="40" y="286" width="210" height="76" rx="6" class="exe"/><text x="145" y="311" text-anchor="middle" class="t">BMUKN · Umwelt</text><text x="145" y="330" text-anchor="middle" class="s">Federführung Klimaschutz</text><text x="145" y="345" text-anchor="middle" class="s">KSG, internat. Klimapolitik</text></g>
