@@ -1577,6 +1577,7 @@ $hand: "Caveat", "Ma Shan Zheng", cursive;
 @keyframes sb-rauchen { 0% { transform: translate(0, 0); opacity: .55; } 100% { transform: translate(-14px, -40px); opacity: 0; } }
 @keyframes sb-puls { 0% { opacity: .6; transform: scale(1); } 100% { opacity: 0; transform: scale(2.2); } }
 @keyframes sb-wippen { 50% { transform: translate(-50%, 6px); } }
+@keyframes sb-handel { to { stroke-dashoffset: -11; } }
 
 .sb-kacheln { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.6rem; margin: 1rem 0 3rem;
   @media (max-width: 980px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -1923,3 +1924,82 @@ figure.esgrad { margin: 1rem 0 .6rem;
 .gf .gf-grafik .gf-schmal { display: none; }   /* .gf-grafik nötig: sonst gewinnt „.gf .gf-grafik svg { display: block }“ */
 @media (max-width: 640px) { .gf .gf-grafik .gf-breit { display: none; } .gf .gf-grafik .gf-schmal { display: block; } .gf { padding: 1rem .9rem; } }
 .gf-karte ul { columns: 1; }
+
+/* Startseite: Heranzoomen auf EU, Deutschland, China (skripte/startbild.js, Jing 06.11.2026) */
+.startbild {
+  .sb-deko { transition: opacity .5s ease; }
+  svg.sb-nah .sb-deko { opacity: 0; pointer-events: none; }
+  /* Kugel rückt nach links, damit der Zettel rechts daneben Platz hat */
+  .sb-bild > svg { transition: transform .9s cubic-bezier(.45, 0, .2, 1); }
+  @media (min-width: 861px) { .sb-bild-nah > svg { transform: translateX(-16%); } }
+  svg.sb-nah #sb-welt { cursor: zoom-out; }
+  svg.sb-nah #sb-eu, svg.sb-nah #sb-de, svg.sb-nah #sb-cn { cursor: zoom-in; }
+  /* in der Nahansicht die anderen Regionen zurücknehmen */
+  svg[data-nah="eu"] #sb-cn, svg[data-nah="cn"] #sb-eu, svg[data-nah="cn"] #sb-de, svg[data-nah="de"] #sb-cn { opacity: .25; }
+  svg[data-nah="de"] #sb-eu { opacity: .35; }
+  svg[data-nah] #sb-land { opacity: .6; }
+  #sb-land, #sb-eu, #sb-cn, #sb-de { transition: opacity .5s ease, stroke-width .2s; }
+}
+.sb-krumen { position: absolute; left: 50%; top: -.4rem; transform: translate(-50%, -6px); z-index: 4; white-space: nowrap;
+  font-family: $hand; font-weight: 700; font-size: 1.45rem; color: $grau; opacity: 0; pointer-events: none; transition: opacity .3s, transform .3s;
+  &.da { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+  button { border: 0; background: none; padding: 0 .15rem; font: inherit; color: $gruen; cursor: pointer; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px;
+    &:hover { color: $gruen-dunkel; } }
+  span { color: $tinte; }
+  .sb-krume-eu { color: $spur-eu; } .sb-krume-de { color: $spur-de-text; } .sb-krume-cn { color: $spur-cn; }
+}
+/* Zettel der Region: rechts neben der Kugel, im Stil der Notizzettel */
+.sb-region { --r: #{$gruen};
+  position: absolute; z-index: 5; right: -12%; top: 22%; width: 17rem; text-align: left;
+  background: #fcfcfa; border: 1.5px solid var(--r); border-radius: 18px 6px 16px 8px / 8px 16px 6px 18px;
+  box-shadow: 0 14px 30px rgba(18, 61, 48, .16), 0 2px 0 color-mix(in srgb, var(--r) 30%, transparent);
+  padding: .7rem .9rem .8rem; opacity: 0; transform: translateX(16px) rotate(1deg); transition: opacity .25s ease, transform .4s cubic-bezier(.3, 1.4, .55, 1);
+  &.da { opacity: 1; transform: rotate(-1deg); }
+  &.sb-region-eu { --r: #{$spur-eu}; } &.sb-region-de { --r: #{$spur-de-text}; } &.sb-region-cn { --r: #{$spur-cn}; }
+  .sz-zu { position: absolute; right: .4rem; top: .3rem; border: 0; background: none; font-size: 1.4rem; line-height: 1; color: $grau; cursor: pointer; padding: .1rem .3rem; border-radius: 6px;
+    &:hover { color: $gruen-dunkel; background: $gruen-hell; } }
+  .sr-titel { font-family: $hand; font-weight: 700; font-size: 2rem; line-height: 1; color: var(--r); }
+  .sr-unter { font-size: .85rem; color: $grau; margin: .15rem 0 .6rem; }
+  dl { margin: 0 0 .6rem; }
+  dl > div { display: grid; grid-template-columns: 5.4rem 1fr; gap: .5rem; align-items: baseline; padding: .3rem 0; border-top: 1px dashed color-mix(in srgb, var(--r) 30%, transparent); }
+  dt { font-family: $headings-font-family; font-weight: 700; font-size: 1.15rem; color: var(--r); white-space: nowrap; }
+  dd { margin: 0; font-size: .8rem; line-height: 1.3; color: #34403a; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  a { display: flex; justify-content: space-between; padding: .3rem .4rem; margin: 0 -.4rem; border-radius: 8px; color: $gruen-dunkel; text-decoration: none; font-size: .9rem; font-weight: 600;
+    opacity: 0; transform: translateX(-6px); transition: opacity .3s, transform .3s, background .15s; transition-delay: calc(.1s + var(--i) * .05s), calc(.1s + var(--i) * .05s), 0s;
+    &::after { content: "→"; color: var(--r); }
+    &:hover, &:focus-visible { background: $gruen-hell; outline: none; } }
+  &.da a { opacity: 1; transform: none; }
+  @media (max-width: 860px) { position: relative; right: auto; top: auto; width: auto; margin: -1rem .5rem 0; }
+}
+@media (prefers-reduced-motion: reduce) { .sb-region, .sb-region a, .sb-krumen, .startbild .sb-deko { transition: none !important; } }
+/* Startseite: Heranzoomen auf die Einstiege (viewBox, skripte/startbild.js) */
+.startbild {
+  svg.sb-thema .sb-hot:not(.sb-hot-an) { opacity: 0; pointer-events: none; }
+  /* Handelsweg China → EU, nur beim Einstieg „Unternehmen“ */
+  .sb-handel { stroke: #fff; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 2 9; opacity: 0; transition: opacity .6s ease; }
+  svg[data-thema="unternehmen"] .sb-handel { opacity: .95; animation: sb-handel 1.2s linear infinite; }
+  /* vergrößerte Zeichnung bleibt in ihrem Rahmen und läuft zu den Rändern weich aus, wie ein Aquarell */
+  svg.sb-thema { overflow: hidden;
+    -webkit-mask-image: radial-gradient(closest-side, #000 72%, transparent 100%); mask-image: radial-gradient(closest-side, #000 72%, transparent 100%);
+    -webkit-mask-size: 100% 100%; mask-size: 100% 100%; }
+  .sb-hot { transition: opacity .4s ease; }
+  svg.sb-thema .sb-hot-an text { fill: $gruen; }
+  svg.sb-thema .sb-hot-an .sb-ring { animation: none; }
+}
+.sb-krumen .sb-krume-thema { color: $gruen; }
+/* gewählter Einstieg bleibt auch bei gedrehter Kugel sichtbar; sein Zettel hängt darunter, ohne eigenen Titel */
+.startbild svg.sb-nah .sb-hot.sb-hot-an { opacity: 1; pointer-events: auto; }
+.sb-region.sb-unter-schrift { padding-top: .45rem; transform-origin: 1.5rem 0; transform: translateY(-8px) scale(.96);
+  &.da { transform: none; }
+  .sr-titel { display: none; }
+  .sz-zu { top: .15rem; } ul { margin-right: 1.4rem; } }
+.sb-region.sb-region-thema { width: 18rem; top: 16%;
+  &.sb-seite-links { right: auto; left: -12%; transform: translateX(-16px) rotate(-1deg); &.da { transform: rotate(1deg); } }
+  .sr-titel { margin-bottom: .5rem; }
+  a { justify-content: flex-start; gap: .6rem; align-items: center;
+    span { flex: 1; }
+    .sm-icon { flex: none; width: 1.5rem; height: 1.5rem; fill: none; stroke: $gruen; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; overflow: hidden; } }
+  @media (max-width: 860px) { &.sb-seite-links { left: auto; } }
+}
+.startbild .sb-bild .sb-region svg.sm-icon { width: 1.5rem; height: 1.5rem; }

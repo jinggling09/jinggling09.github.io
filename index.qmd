@@ -13,7 +13,7 @@ title-block-banner: false
     <span class="sb-hand">EU, Deutschland und China</span>
   </div>
   <div class="sb-bild">
-    <svg id="sb-erde" viewBox="-40 0 840 640" role="img" aria-label="Gezeichnete Erde mit EU, Deutschland und China, dazu Windräder, Solarmodule, Sonne und Fabrik; Beschriftungen führen zu den Themen der Website" data-namen='{"eu": "EU", "de": "Deutschland", "cn": "China"}' data-links='{"eu": "laender/eu.html", "de": "laender/deutschland.html", "cn": "laender/china.html"}'>
+    <svg id="sb-erde" viewBox="-40 0 840 640" data-zoom="an" role="img" aria-label="Gezeichnete Erde mit EU, Deutschland und China, dazu Windräder, Solarmodule, Sonne und Fabrik; Beschriftungen führen zu den Themen der Website" data-namen='{"eu": "EU", "de": "Deutschland", "cn": "China"}' data-links='{"eu": "laender/eu.html", "de": "laender/deutschland.html", "cn": "laender/china.html"}'>
       <defs>
         <filter id="aquarell" x="-10%" y="-10%" width="120%" height="120%">
           <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="7" result="n"/>
@@ -43,7 +43,7 @@ title-block-banner: false
       </g>
 
       <!-- Sonne -->
-      <g transform="translate(640 110)">
+      <g class="sb-deko" transform="translate(640 110)">
         <g class="sb-strahlen" filter="url(#aquarell)">
           <circle r="62" fill="#f6d27a" opacity=".55"/>
         </g>
@@ -65,6 +65,7 @@ title-block-banner: false
           <path id="sb-eu" fill="#3c5a8a" opacity=".75"/>
           <path id="sb-cn" fill="#b0412e" opacity=".8"/>
           <path id="sb-de" fill="#b8860b" opacity=".95"/>
+          <path id="sb-handel" class="sb-handel" fill="none"/>
         </g>
         <!-- Schatten auf der sonnenabgewandten Seite, Glanz und Papierkorn -->
         <circle cx="400" cy="400" r="250" fill="url(#schatten)" pointer-events="none"/>
@@ -77,29 +78,29 @@ title-block-banner: false
       <circle cx="400" cy="400" r="251" class="sb-linie" stroke-width="1.6" opacity=".55"/>
 
       <!-- Windräder auf der Erdkrümmung -->
-      <g transform="translate(300 172) rotate(-22)">
+      <g class="sb-deko" transform="translate(300 172) rotate(-22)">
         <path class="sb-linie" d="M0 0v-96"/>
         <g transform="translate(0 -96)"><g class="sb-fluegel"><path class="sb-linie" d="M0 0l0-44M0 0l38 22M0 0l-38 22"/><circle r="3.5" fill="#1f5f4a"/><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="6s" repeatCount="indefinite"/></g></g>
       </g>
-      <g transform="translate(372 152) rotate(-8)">
+      <g class="sb-deko" transform="translate(372 152) rotate(-8)">
         <path class="sb-linie" d="M0 0v-120"/>
         <g transform="translate(0 -120)"><g class="sb-fluegel"><path class="sb-linie" d="M0 0l0-52M0 0l45 26M0 0l-45 26"/><circle r="4" fill="#1f5f4a"/><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="7.5s" repeatCount="indefinite"/></g></g>
       </g>
-      <g transform="translate(450 154) rotate(10)">
+      <g class="sb-deko" transform="translate(450 154) rotate(10)">
         <path class="sb-linie" d="M0 0v-88"/>
         <g transform="translate(0 -88)"><g class="sb-fluegel"><path class="sb-linie" d="M0 0l0-40M0 0l35 20M0 0l-35 20"/><circle r="3.2" fill="#1f5f4a"/><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="5.2s" repeatCount="indefinite"/></g></g>
       </g>
 
       <!-- Solarmodule -->
-      <g transform="translate(336 156) rotate(-15) scale(.8)">
+      <g class="sb-deko" transform="translate(336 156) rotate(-15) scale(.8)">
         <path class="sb-linie" d="M-34 0h68l-12-30h-44z M-17 0l6-30 M0 0v-30 M17 0l-6-30 M-28-15h56 M0 0v14"/>
       </g>
-      <g transform="translate(411 149) rotate(3) scale(.8)">
+      <g class="sb-deko" transform="translate(411 149) rotate(3) scale(.8)">
         <path class="sb-linie" d="M-30 0h60l-10-26h-40z M-15 0l5-26 M0 0v-26 M15 0l-5-26 M-25-13h50 M0 0v12"/>
       </g>
 
       <!-- Fabrik mit Rauch -->
-      <g transform="translate(212 262) rotate(-48) scale(.75)">
+      <g class="sb-deko" transform="translate(212 262) rotate(-48) scale(.75)">
         <path class="sb-linie" d="M-40 0v-34l20 12v-12l20 12v-12l20 12v-36h12v58z"/>
         <circle class="sb-rauch" cx="38" cy="-62" r="7" fill="#9aa39e"/>
         <circle class="sb-rauch z2" cx="38" cy="-62" r="9" fill="#9aa39e"/>
@@ -108,25 +109,25 @@ title-block-banner: false
 
 
       <!-- Einstiege (Hotspots) -->
-      <g class="sb-hot" role="button" tabindex="0" data-menue="klimawandel" data-href="klimawandel/index.html" aria-label="Was ist Klimawandel?">
+      <g class="sb-hot sb-deko" role="button" tabindex="0" data-menue="klimawandel" data-href="klimawandel/index.html" aria-label="Was ist Klimawandel?">
         <circle class="sb-ring" cx="640" cy="110" r="8"/><circle class="sb-punkt" r="8" cx="640" cy="110"/>
         <path class="sb-pfeil" d="M628 94 c-8-18-6-32 2-44"/><g class="sb-schrift"><text x="560" y="36">Klimawandel</text></g>
       </g>
-      <g class="sb-hot" role="button" tabindex="0" data-menue="klimaschutz" data-href="ziele/index.html" aria-label="Klimaschutz: Ziele, CO₂-Preise und Märkte">
-        <circle class="sb-ring" cx="153" cy="362" r="8"/><circle class="sb-punkt" r="8" cx="153" cy="362"/>
-        <g class="sb-schrift"><text x="-10" y="412">Klimaschutz</text><text class="klein" x="-10" y="438">Ziele · CO₂-Preise · Märkte</text></g>
+      <g class="sb-hot sb-deko" role="button" tabindex="0" data-menue="klimaschutz" data-href="ziele/index.html" aria-label="Klimaschutz: Ziele, CO₂-Preise und Märkte">
+        <circle class="sb-ring" cx="649" cy="372" r="8"/><circle class="sb-punkt" r="8" cx="649" cy="372"/>
+        <g class="sb-schrift"><text x="668" y="382">Klimaschutz</text><text class="klein" x="668" y="408">Ziele · CO₂-Preise</text><text class="klein" x="668" y="432">Märkte</text></g>
       </g>
-      <g class="sb-hot" role="button" tabindex="0" data-menue="energiewende" data-href="daten/index.html" aria-label="Energiewende">
+      <g class="sb-hot sb-deko" role="button" tabindex="0" data-menue="energiewende" data-href="daten/index.html" aria-label="Energiewende">
         <circle class="sb-ring" cx="372" cy="40" r="8"/><circle class="sb-punkt" r="8" cx="372" cy="40"/>
         <path class="sb-pfeil" d="M352 28 c-30-14-50-6-70 0"/><g class="sb-schrift"><text x="140" y="28">Energiewende</text></g>
       </g>
-      <g class="sb-hot" role="button" tabindex="0" data-menue="emissionen" data-href="wissen/emissionen-de.html" aria-label="Emissionen">
+      <g class="sb-hot sb-deko" role="button" tabindex="0" data-menue="emissionen" data-href="wissen/emissionen-de.html" aria-label="Emissionen">
         <circle class="sb-ring" cx="168" cy="190" r="8"/><circle class="sb-punkt" r="8" cx="168" cy="190"/>
         <path class="sb-pfeil" d="M150 178 c-20-10-40-10-60 0"/><g class="sb-schrift"><text x="-20" y="190">Emissionen</text></g>
       </g>
-      <g class="sb-hot" role="button" tabindex="0" data-menue="unternehmen" data-href="unternehmen/index.html" aria-label="Unternehmen: Pflichten und CBAM">
-        <circle class="sb-ring" cx="193" cy="540" r="8"/><circle class="sb-punkt" r="8" cx="193" cy="540"/>
-        <g class="sb-schrift"><text x="20" y="590">Unternehmen</text><text class="klein" x="20" y="616">Pflichten · CBAM</text></g>
+      <g class="sb-hot sb-deko" role="button" tabindex="0" data-menue="unternehmen" data-href="unternehmen/index.html" aria-label="Unternehmen: Pflichten und CBAM">
+        <circle class="sb-ring" cx="153" cy="362" r="8"/><circle class="sb-punkt" r="8" cx="153" cy="362"/>
+        <g class="sb-schrift"><text x="-10" y="412">Unternehmen</text><text class="klein" x="-10" y="438">Pflichten · CBAM</text></g>
       </g>
     </svg>
   </div>
@@ -166,7 +167,21 @@ title-block-banner: false
 <script src="https://cdn.jsdelivr.net/npm/d3-array@3.2.4/dist/d3-array.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/dist/d3-geo.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-<script src="skripte/startbild.js?v=20261105"></script>
+<script type="application/json" id="sb-regionen">
+{
+  "_erde": "Erde", "_zurueck": "Zurück zur Erde",
+  "eu": {"titel": "EU", "unter": "27 Staaten, ein gemeinsames Klimaziel",
+    "werte": [["2050", "klimaneutral"], ["−55 %", "Treibhausgase bis 2030 gegenüber 1990"], ["73,86 €", "je Tonne CO₂ im EU-Emissionshandel 2025"]],
+    "links": [["EU im Überblick", "laender/eu.html"], ["Ziele im Vergleich", "ziele/index.html"], ["EU-ETS, ETS 2 und BEHG", "wissen/eu-ets.html"]]},
+  "de": {"titel": "Deutschland", "unter": "Klimaneutral fünf Jahre vor der EU",
+    "werte": [["2045", "klimaneutral"], ["−48,2 %", "Treibhausgase 2025 gegenüber 1990"], ["−65 %", "Ziel bis 2030"]],
+    "links": [["Deutschland im Überblick", "laender/deutschland.html"], ["Wer macht was?", "laender/deutschland.html#governance-wer-macht-was"], ["Woher kommt das Geld?", "laender/deutschland.html#klimafinanzierung"], ["Die wichtigsten Gesetze", "laender/deutschland.html#rechtsrahmen-die-wichtigsten-gesetze"]]},
+  "cn": {"titel": "China", "unter": "Größter Emittent und größter Ausbau",
+    "werte": [["2060", "klimaneutral"], ["1.842 GW", "Wind und Photovoltaik, Ende 2025"], ["7,68 €", "je Tonne CO₂ im nationalen Emissionshandel 2025"]],
+    "links": [["China im Überblick", "laender/china.html"], ["Energiewende in Zahlen", "daten/index.html"], ["China und CBAM", "wissen/schnittstellen.html"]]}
+}
+</script>
+<script src="skripte/startbild.js?v=20261106u"></script>
 <script type="application/json" id="sb-menue">
 {
   "_zu": "Schließen",
@@ -197,5 +212,5 @@ title-block-banner: false
     {"text": "Schnittstelle China ↔ CBAM", "href": "wissen/schnittstellen.html", "icon": "container"}]}
 }
 </script>
-<script src="skripte/startmenue.js?v=5"></script>
+<script src="skripte/startmenue.js?v=6"></script>
 ```

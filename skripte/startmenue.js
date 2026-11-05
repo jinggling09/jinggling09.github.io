@@ -36,6 +36,11 @@
     s.appendChild(p); return s;
   }
 
+  // Icons auch für die Zettel der Zoom-Startseite (startbild.js); dort öffnet der Klick heranfliegend,
+  // der Notizzettel beim Überfahren entfällt (data-zoom am SVG, bisher nur DE)
+  window.sbIcon = icon;
+  if (document.getElementById("sb-erde") && document.getElementById("sb-erde").dataset.zoom) return;
+
   var zettel = null, offenBei = null;
   function schliessen(fokus) {
     if (!zettel) return;
