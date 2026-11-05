@@ -1,0 +1,182 @@
+<!-- Rechtsrahmen, „normale“ Version (Haus-Diagramm + Karten), 05.11.2026 – zum Zurücktauschen in deutschland.qmd -->
+
+## Rechtsrahmen: die wichtigsten Gesetze
+
+Das Klimaschutzgesetz ist das Dach: Es setzt Ziele und Budgets, sagt aber nicht, wie sie erreicht werden. Das regeln Fachgesetze für die einzelnen Sektoren. Darunter liegt als Fundament der CO₂-Preis, der in allen Sektoren wirkt. Über allem stehen die Vorgaben der EU.
+
+```{=html}
+<figure class="gov-diagramm recht-haus" data-karten="gesetz-" data-datei="gesetze">
+<div class="gov-scroll">
+<svg viewBox="0 -58 960 668" role="img" aria-label="Die deutschen Klimagesetze als Haus: Klimaschutzgesetz als Dach, Fachgesetze als Säulen je Sektor, CO₂-Preis als Fundament, EU-Vorgaben darüber">
+<defs>
+ <marker id="r-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#3c5a8a"/></marker>
+ <style>
+  .t{font-size:14px;font-weight:700;fill:#1a2420}.s{font-size:11.5px;fill:#5b6b63}.band{font-size:11px;font-weight:700;letter-spacing:.12em;fill:#5b6b63}
+  .leg{fill:#fbf0dc;stroke:#a8741a}.exe{fill:#e8f0ec;stroke:#1f5f4a}.geld{fill:#fff4d6;stroke:#b8860b}.eu{fill:#e6ecf5;stroke:#3c5a8a}
+  .gz{fill:#fff;stroke:#1f5f4a}
+  rect,polygon{stroke-width:1.4}
+  .a{fill:none;stroke-width:1.8}.ab{stroke:#3c5a8a}
+  .al{font-size:11px;fill:#5b6b63;font-style:italic}
+ </style>
+</defs>
+
+<!-- Titel (im SVG, damit er auch im Vollbild und im PNG erscheint) -->
+<text x="480" y="-30" text-anchor="middle" style="font-size:20px;font-weight:700;fill:#1a2420">Das Haus der deutschen Klimagesetze</text>
+<text x="480" y="-10" text-anchor="middle" class="s" style="font-size:12.5px">Das Dach setzt das Ziel, die Säulen setzen es in den Sektoren um, der CO₂-Preis trägt alles</text>
+
+<!-- EU -->
+<rect x="10" y="10" width="940" height="62" rx="8" fill="#f3f6fb" stroke="none"/>
+<text x="24" y="30" class="band">EUROPÄISCHE UNION</text>
+<path d="M240 24H702L718 40V62H240Z" class="eu" style="fill:#fff"/><path d="M702 24V40H718" class="eu" style="fill:none"/>
+<text x="479" y="48" text-anchor="middle" class="s"><tspan class="t" style="font-size:13px">EU-Klimarecht</tspan> · Klimagesetz · Lastenteilung (ESR) · EU-ETS 1 und 2</text>
+<path d="M800 62V112" class="a ab" marker-end="url(#r-b)"/><text x="808" y="92" class="al">gibt den Rahmen vor</text>
+
+<!-- Dach: KSG -->
+<g data-r="ksg"><polygon points="40,186 480,86 920,186" class="leg"/>
+<text x="480" y="140" text-anchor="middle" class="t" style="font-size:15px">Bundes-Klimaschutzgesetz (KSG)</text>
+<text x="480" y="160" text-anchor="middle" class="s">−65 % bis 2030 · −88 % bis 2040 · klimaneutral 2045</text>
+<text x="480" y="176" text-anchor="middle" class="s">Emissionsbudgets · Monitoring · Expertenrat</text></g>
+
+<!-- Säulen -->
+<rect x="40" y="196" width="205" height="236" rx="6" fill="#f7faf8" stroke="#d5e0da"/>
+<rect x="265" y="196" width="205" height="236" rx="6" fill="#f7faf8" stroke="#d5e0da"/>
+<rect x="490" y="196" width="205" height="236" rx="6" fill="#f7faf8" stroke="#d5e0da"/>
+<rect x="715" y="196" width="205" height="236" rx="6" fill="#f7faf8" stroke="#d5e0da"/>
+<text x="142" y="218" text-anchor="middle" class="band">STROM &amp; EFFIZIENZ</text>
+<text x="367" y="218" text-anchor="middle" class="band">WÄRME &amp; GEBÄUDE</text>
+<text x="592" y="218" text-anchor="middle" class="band">VERKEHR</text>
+<text x="817" y="218" text-anchor="middle" class="band">KREISLAUF &amp; CO₂</text>
+
+<g data-r="eeg"><rect x="52" y="230" width="181" height="56" rx="5" class="gz"/><text x="142" y="252" text-anchor="middle" class="t">EEG</text><text x="142" y="271" text-anchor="middle" class="s">Wind &amp; Solar · 80 % bis 2030</text></g>
+<g data-r="enwg"><rect x="52" y="296" width="181" height="56" rx="5" class="gz"/><text x="142" y="318" text-anchor="middle" class="t">EnWG</text><text x="142" y="337" text-anchor="middle" class="s">Netze, Strom- und Gasmarkt</text></g>
+<g data-r="enefg"><rect x="52" y="362" width="181" height="56" rx="5" class="gz"/><text x="142" y="384" text-anchor="middle" class="t">EnEfG</text><text x="142" y="403" text-anchor="middle" class="s">−26,5 % Endenergie bis 2030</text></g>
+
+<g data-r="gmodg"><rect x="277" y="230" width="181" height="56" rx="5" class="gz"/><text x="367" y="252" text-anchor="middle" class="t">GModG</text><text x="367" y="271" text-anchor="middle" class="s">Heizungen: Ökoanteil bis 60 %</text></g>
+<g data-r="wpg"><rect x="277" y="296" width="181" height="56" rx="5" class="gz"/><text x="367" y="318" text-anchor="middle" class="t">WPG</text><text x="367" y="337" text-anchor="middle" class="s">Wärmeplan für jede Kommune</text></g>
+
+<g data-r="emog"><rect x="502" y="230" width="181" height="56" rx="5" class="gz"/><text x="592" y="252" text-anchor="middle" class="t">EmoG</text><text x="592" y="271" text-anchor="middle" class="s">Sonderrechte für E-Autos</text></g>
+<g data-r="geig"><rect x="502" y="296" width="181" height="56" rx="5" class="gz"/><text x="592" y="318" text-anchor="middle" class="t">GEIG</text><text x="592" y="337" text-anchor="middle" class="s">Ladepunkte in Gebäuden</text></g>
+<g data-r="regg"><rect x="502" y="362" width="181" height="56" rx="5" class="gz"/><text x="592" y="384" text-anchor="middle" class="t">RegG</text><text x="592" y="403" text-anchor="middle" class="s">Regionalbahn, Deutschlandticket</text></g>
+
+<g data-r="krwg"><rect x="727" y="230" width="181" height="56" rx="5" class="gz"/><text x="817" y="252" text-anchor="middle" class="t">KrWG</text><text x="817" y="271" text-anchor="middle" class="s">Abfall vermeiden, recyceln</text></g>
+<g data-r="ksptg"><rect x="727" y="296" width="181" height="56" rx="5" class="gz"/><text x="817" y="318" text-anchor="middle" class="t">KSpTG</text><text x="817" y="337" text-anchor="middle" class="s">CO₂ transportieren, speichern</text></g>
+
+<!-- Fundament: CO₂-Preis -->
+<rect x="10" y="446" width="940" height="110" rx="8" fill="#fffaf0" stroke="none"/>
+<text x="24" y="466" class="band">FUNDAMENT: CO₂-PREIS IN ALLEN SEKTOREN</text>
+<g data-r="tehg"><rect x="40" y="478" width="430" height="62" rx="6" class="geld"/><text x="255" y="502" text-anchor="middle" class="t">TEHG · EU-Emissionshandel (ETS 1)</text><text x="255" y="522" text-anchor="middle" class="s">Kraftwerke, Industrie, Luft- und Seeverkehr</text></g>
+<g data-r="behg"><rect x="490" y="478" width="430" height="62" rx="6" class="geld"/><text x="705" y="502" text-anchor="middle" class="t">BEHG · nationaler CO₂-Preis</text><text x="705" y="522" text-anchor="middle" class="s">Heizöl, Gas, Benzin, Diesel · ab 2028 EU-ETS 2</text></g>
+<path d="M10 570H950" stroke="#c9cfcb" stroke-width="1.4"/>
+<text x="480" y="592" text-anchor="middle" class="al">Die Einnahmen fließen in den Klima- und Transformationsfonds (KTF)</text>
+</svg>
+</div>
+<figcaption>Kästen: <span class="gk eu">EU-Recht</span> <span class="gk leg">Rahmengesetz</span> <span class="gk exe">Fachgesetz je Sektor</span> <span class="gk geld">CO₂-Bepreisung</span> · Ein Gesetz anklicken springt zur Erläuterung darunter.</figcaption>
+</figure>
+<script src="../skripte/diagramm.js?v=5"></script>
+```
+
+::: {.gesetze}
+
+::: {.bereich}
+Dach · Rahmen
+:::
+
+::: {.gesetz .rahmen #gesetz-ksg}
+[KSG]{.kuerzel} [Bundes-Klimaschutzgesetz]{.name}
+
+Ziele 2030/2040/2045, Emissionsbudgets, Monitoring, Expertenrat [@ksg].
+:::
+
+::: {.bereich}
+Säule · Strom & Effizienz
+:::
+
+::: {.gesetz #gesetz-eeg}
+[EEG]{.kuerzel} [Erneuerbare-Energien-Gesetz]{.name}
+
+Ausbau und Vergütung von Wind- und Solarstrom über Ausschreibungen; Ziel 80 % Erneuerbare am Bruttostromverbrauch 2030 [§ 1 @eeg].
+:::
+
+::: {.gesetz #gesetz-enwg}
+[EnWG]{.kuerzel} [Energiewirtschaftsgesetz]{.name}
+
+Grundgesetz der Energiewirtschaft: Netze, Strom- und Gasmarkt, Versorgungssicherheit [@enwg].
+:::
+
+::: {.gesetz #gesetz-enefg}
+[EnEfG]{.kuerzel} [Energieeffizienzgesetz]{.name}
+
+Endenergieverbrauch bis 2030 um mindestens 26,5 % gegenüber 2008 senken; Pflichten für Unternehmen, Rechenzentren und öffentliche Stellen [§ 4 @enefg].
+:::
+
+::: {.bereich}
+Säule · Wärme & Gebäude
+:::
+
+::: {.gesetz #gesetz-gmodg}
+[GModG]{.kuerzel} [Gebäudemodernisierungsgesetz, vormals GEG]{.name}
+
+Seit 29.07.2026: Die 65-%-Erneuerbaren-Pflicht für neue Heizungen entfällt; neue Gas- und Ölheizungen brauchen stattdessen steigende Anteile erneuerbarer oder klimaneutraler Brennstoffe – 10 % ab 2029 bis 60 % im Jahr 2040 [§ 43 @geg].
+:::
+
+::: {.gesetz #gesetz-wpg}
+[WPG]{.kuerzel} [Wärmeplanungsgesetz]{.name}
+
+Jede Kommune braucht einen Wärmeplan: Städte über 100.000 Einwohner bis 30.06.2026, alle übrigen bis 30.06.2028 [§ 4 @wpg].
+:::
+
+::: {.bereich}
+Säule · Verkehr
+:::
+
+::: {.gesetz #gesetz-emog}
+[EmoG]{.kuerzel} [Elektromobilitätsgesetz]{.name}
+
+Sonderrechte für E-Fahrzeuge, z. B. beim Parken [@emog].
+:::
+
+::: {.gesetz #gesetz-geig}
+[GEIG]{.kuerzel} [Gebäude-Elektromobilitätsinfrastruktur-Gesetz]{.name}
+
+Leitungs- und Ladepunktpflichten in Neubauten und großen Sanierungen [@geig].
+:::
+
+::: {.gesetz #gesetz-regg}
+[RegG]{.kuerzel} [Regionalisierungsgesetz]{.name}
+
+Bundesmittel für den Regionalverkehr auf der Schiene, u. a. für das Deutschlandticket [@regg].
+:::
+
+::: {.bereich}
+Säule · Kreislauf & CO₂-Speicherung
+:::
+
+::: {.gesetz #gesetz-krwg}
+[KrWG]{.kuerzel} [Kreislaufwirtschaftsgesetz]{.name}
+
+Abfallvermeidung, Recycling, Produktverantwortung [@krwg].
+:::
+
+::: {.gesetz #gesetz-ksptg}
+[KSpTG]{.kuerzel} [Kohlendioxid-Speicherungs- und -Transportgesetz]{.name}
+
+Seit 28.11.2025: Rechtsrahmen für CO₂-Pipelines und dauerhafte Speicherung, vor allem unter dem Meeresboden [@ksptg].
+:::
+
+::: {.bereich}
+Fundament · CO₂-Preis
+:::
+
+::: {.gesetz .preis #gesetz-tehg}
+[TEHG]{.kuerzel} [Treibhausgas-Emissionshandelsgesetz]{.name}
+
+Umsetzung des EU-Emissionshandels in deutsches Recht (Kraftwerke, Industrie, Luft- und Seeverkehr) [@tehg].
+:::
+
+::: {.gesetz .preis #gesetz-behg}
+[BEHG]{.kuerzel} [Brennstoffemissionshandelsgesetz]{.name}
+
+Nationaler CO₂-Preis auf Heiz- und Kraftstoffe seit 2021: 25 € (2021) bis 55 € (2025), 2026 Korridor 55–65 €; Übergang in den EU-ETS 2, dessen Start auf 2028 verschoben wurde [§ 10 @behg; @eu_klimagesetz_2026].
+:::
+
+:::

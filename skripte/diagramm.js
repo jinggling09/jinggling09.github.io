@@ -90,7 +90,7 @@
         URL.revokeObjectURL(url);
         c.toBlob(function (b) {
           var a = document.createElement("a"), name = location.pathname.split("/").pop().replace(/\.html?$/, "") || "diagramm";
-          a.href = URL.createObjectURL(b); a.download = "governance-" + name + ".png";
+          a.href = URL.createObjectURL(b); a.download = (fig.dataset.datei || "governance") + "-" + name + ".png";
           document.body.appendChild(a); a.click(); a.remove();
           setTimeout(function () { URL.revokeObjectURL(a.href); }, 2000);
           knopf.disabled = false; knopf.innerHTML = alt;
@@ -138,6 +138,7 @@
   // data-marke="n" setzt eine Nummer an die linke obere Ecke des Kastens, "n x y" an eine feste Stelle.
   // Überfahren hebt Diagrammteile und Rolle gemeinsam hervor (beide Richtungen); Klick auf einen Teil springt zur Rolle,
   // jede Rolle bekommt „↑ im Diagramm zeigen“. Ohne data-r im Diagramm passiert nichts.
+  // data-karten="gesetz-" an der figure verbindet stattdessen mit Karten .gesetz#gesetz-… (Schlüssel = Text nach dem Präfix).
   function rollenVerbinden(fig) {
     var svg = fig.querySelector("svg"), NS = "http://www.w3.org/2000/svg";
     if (!svg.querySelector("[data-r]")) return;
@@ -150,7 +151,8 @@
       svg.appendChild(m);
     });
     var teile = svg.querySelectorAll("[data-r]"), rollen = {}, aktiv = null, halt = null, ruheBis = 0;   // ruheBis: beim Springen gleiten Rollen unter der Maus durch
-    document.querySelectorAll(".governance .rolle[id^='rolle-']").forEach(function (r) { rollen[r.id.slice(6)] = r; });
+    var praefix = fig.dataset.karten || "rolle-";
+    document.querySelectorAll(".governance .rolle[id^='" + praefix + "'], .gesetze .gesetz[id^='" + praefix + "']").forEach(function (r) { rollen[r.id.slice(praefix.length)] = r; });
     function haupt(el) { return el.dataset.r.split(" ")[0]; }
     function zeigen(n) {
       if (aktiv === n) return; aktiv = n;
@@ -180,7 +182,7 @@
       var kopf = r.querySelector(":scope > p:first-child"); (kopf || r).appendChild(link);
     });
     document.addEventListener("click", function (e) {
-      if (halt && !svg.contains(e.target) && !e.target.closest(".rolle")) { halt = null; zeigen(null); }
+      if (halt && !svg.contains(e.target) && !e.target.closest(".rolle, .gesetz")) { halt = null; zeigen(null); }
     });
   }
 })();
