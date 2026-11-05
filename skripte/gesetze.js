@@ -2,14 +2,19 @@
 // Markup in laender/deutschland.qmd: section#gesetzesnavigator mit SVG-Gruppen .gn-g[data-g, data-s, data-w, data-p],
 // Filterknöpfen [data-f="s:…|w:…|p:…"] je Blickwinkel, Zeitleiste (Knöpfe mit data-g) und den Karten .gn-karten .gesetz[data-g].
 // Das Skript holt die Karten in das Detailfeld und zeigt immer eine; ohne Skript bleiben alle Karten als Liste stehen.
+// Das Haus gibt es zweimal (breit und schmal fürs Handy, per CSS umgeschaltet); jedes Gesetz hat daher bis zu zwei Gruppen.
 (function () {
   var nav = document.getElementById("gesetzesnavigator");
   var karten = document.querySelectorAll(".gn-karten .gesetz[data-g]");
   if (!nav || !karten.length) return;
 
-  var svg = nav.querySelector("svg"), inhalt = nav.querySelector(".gn-detail-inhalt");
-  var gruppen = {}, karte = {}, reihe = [];
-  nav.querySelectorAll(".gn-g[data-g]").forEach(function (g) { gruppen[g.dataset.g] = g; });
+  var svgs = nav.querySelectorAll(".gn-haus svg"), inhalt = nav.querySelector(".gn-detail-inhalt");
+  var gruppen = {}, alle = {}, karte = {}, reihe = [];   // gruppen: erste Gruppe (für data-*), alle: sämtliche Gruppen je Gesetz
+  nav.querySelectorAll(".gn-g[data-g]").forEach(function (g) {
+    var n = g.dataset.g; if (!gruppen[n]) { gruppen[n] = g; alle[n] = []; } alle[n].push(g);
+  });
+  function setzen(n, klasse, an) { alle[n].forEach(function (g) { g.classList.toggle(klasse, an); }); }
+  function sichtbar(n) { return alle[n].filter(function (g) { return g.getClientRects().length; })[0] || gruppen[n]; }
   karten.forEach(function (k) { var n = k.dataset.g; karte[n] = k; reihe.push(n); k.hidden = true; inhalt.appendChild(k); });
   var liste = document.querySelector(".gn-karten"); if (liste) liste.hidden = true;
   nav.classList.add("gn-js");
@@ -32,17 +37,19 @@
 
   function zaehlen() {
     var t = treffer(), i = t.indexOf(wahl) + 1;
+    // Detailfeld übernimmt die Farbe, die das gewählte Gesetz im aktuellen Blickwinkel trägt
+    if (wahl) detail.style.setProperty("--c", getComputedStyle(sichtbar(wahl)).getPropertyValue("--c").trim());
     nav.querySelector(".gn-zaehler").textContent = filter
       ? knopf(filter).textContent + " · " + i + " von " + t.length
-      : "Gesetz " + i + " von " + reihe.length;
+      : i + " von " + reihe.length;
   }
 
   function filtern(f) {
     filter = f;
-    svg.classList.toggle("gn-fokus", !!f);
+    svgs.forEach(function (s) { s.classList.toggle("gn-fokus", !!f); });
     // Farbe des gewählten Filters für das Haus (Blickwinkel „Wer ist betroffen?“)
     var fb = f && knopf(f); nav.style.setProperty("--f", fb ? fb.style.getPropertyValue("--w") || "" : "");
-    reihe.forEach(function (n) { gruppen[n].classList.toggle("gn-an", !!f && passt(n, f)); });
+    reihe.forEach(function (n) { setzen(n, "gn-an", !!f && passt(n, f)); });
     nav.querySelectorAll(".gn-saeule").forEach(function (s) { s.classList.toggle("gn-an", !!f && f === "s:" + s.dataset.s); });
     zeitKnoepfe.forEach(function (b) { b.classList.toggle("gn-aus", !!f && !passt(b.dataset.g, f)); });
     filterKnoepfe.forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
@@ -60,7 +67,7 @@
   function waehlen(n) {
     if (!karte[n]) return;
     wahl = n;
-    reihe.forEach(function (k) { karte[k].hidden = k !== n; gruppen[k].classList.toggle("gn-wahl", k === n); });
+    reihe.forEach(function (k) { karte[k].hidden = k !== n; setzen(k, "gn-wahl", k === n); });
     zeitKnoepfe.forEach(function (b) { b.classList.toggle("gn-wahl", b.dataset.g === n); });
 
     // Einordnung: Sektor, Wirkweise, Betroffene als Marken
@@ -114,19 +121,20 @@
     b.addEventListener("click", function () { filtern(filter === b.dataset.f ? null : b.dataset.f); });
   });
   reihe.forEach(function (n) {
-    var g = gruppen[n];
-    g.addEventListener("click", function () { anklicken(n); zeigen(); });
-    g.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); anklicken(n); zeigen(); } });
+    alle[n].forEach(function (g) {
+      g.addEventListener("click", function () { anklicken(n); zeigen(); });
+      g.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); anklicken(n); zeigen(); } });
+    });
   });
   // Säule anklicken = nach diesem Sektor filtern
   nav.querySelectorAll(".gn-saeule[data-s]").forEach(function (s) {
     s.addEventListener("click", function () { var f = "s:" + s.dataset.s; linseSetzen("sektor"); filtern(filter === f ? null : f); });
   });
   zeitKnoepfe.forEach(function (b) {
-    var g = gruppen[b.dataset.g];
-    b.addEventListener("click", function () { anklicken(b.dataset.g); });
-    b.addEventListener("pointerenter", function () { g.classList.add("gn-vorschau"); });
-    b.addEventListener("pointerleave", function () { g.classList.remove("gn-vorschau"); });
+    var n = b.dataset.g;
+    b.addEventListener("click", function () { anklicken(n); });
+    b.addEventListener("pointerenter", function () { setzen(n, "gn-vorschau", true); });
+    b.addEventListener("pointerleave", function () { setzen(n, "gn-vorschau", false); });
   });
   nav.querySelector(".gn-vor").addEventListener("click", function () { blaettern(-1); });
   nav.querySelector(".gn-nach").addEventListener("click", function () { blaettern(1); });

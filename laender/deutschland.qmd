@@ -332,7 +332,7 @@ Gefördert werden „wichtige Vorhaben von gemeinsamem europäischem Interesse�
 
 ## Rechtsrahmen: die wichtigsten Gesetze
 
-Dreizehn Gesetze tragen die deutsche Klimapolitik. Man kann sie auf drei Arten ordnen: **nach Sektor** (wo wirkt das Gesetz?), **nach Wirkweise** (setzt es ein Ziel, einen Preis, eine Pflicht, Geld oder einen Plan?) und **nach Betroffenen** (wen trifft es im Alltag?). Der Navigator zeigt alle drei Blickwinkel; ein Klick auf ein Gesetz öffnet seine Kurzbeschreibung.
+Dreizehn Gesetze und das neue EU-ETS 2 tragen die deutsche Klimapolitik. Man kann sie auf drei Arten ordnen: **nach Sektor** (wo wirkt das Gesetz?), **nach Wirkweise** (setzt es ein Ziel, einen Preis, eine Pflicht, Geld oder einen Plan?) und **nach Betroffenen** (wen trifft es im Alltag?). Der Navigator zeigt alle drei Blickwinkel; ein Klick auf ein Gesetz öffnet seine Kurzbeschreibung.
 
 ```{=html}
 <div class="gn" id="gesetzesnavigator" role="region" aria-label="Gesetzesnavigator: deutsche Klimagesetze">
@@ -360,7 +360,7 @@ Dreizehn Gesetze tragen die deutsche Klimapolitik. Man kann sie auf drei Arten o
 
 <div class="gn-buehne">
 <div class="gn-haus">
-<svg viewBox="0 0 900 548" role="group" aria-label="Haus der Klimagesetze: EU-Rahmen, Klimaschutzgesetz als Dach, Fachgesetze in vier Sektoren, CO₂-Preis als Fundament">
+<svg class="gn-breit" viewBox="0 0 900 548" role="group" aria-label="Haus der Klimagesetze: EU-Rahmen, Klimaschutzgesetz als Dach, Fachgesetze in vier Sektoren, CO₂-Preis als Fundament">
 <!-- Ebene 1: EU-Rahmen (alle Ebenen: x 0–900, Text eingerückt um 18) -->
 <rect x="0" y="0" width="900" height="56" rx="6" class="gn-eu"/>
 <text x="18" y="25" class="gn-eu-t">EU-Klimarecht</text>
@@ -396,8 +396,42 @@ Dreizehn Gesetze tragen die deutsche Klimapolitik. Man kann sie auf drei Arten o
 
 <!-- Ebene 4: Fundament CO₂-Preis -->
 <g class="gn-saeule gn-fundament" data-s="alle"><rect x="0" y="462" width="900" height="84" rx="4" class="gn-spalte"/><rect x="0" y="462" width="900" height="3" class="gn-linie"/><text x="0" y="452" class="gn-spaltenkopf">FUNDAMENT — CO₂-PREIS IN ALLEN SEKTOREN</text></g>
-<g class="gn-g" data-g="tehg" data-s="alle" data-w="preis" data-p="firma" tabindex="0" role="button" aria-label="TEHG: Treibhausgas-Emissionshandelsgesetz"><rect x="4" y="472" width="442" height="64" rx="4" class="gn-hit"/><rect x="18" y="489" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="34" y="499" class="gn-k">TEHG · EU-ETS 1</text><text x="34" y="520" class="gn-s">Kraftwerke, Industrie, Luft- und Seeverkehr</text></g>
-<g class="gn-g" data-g="behg" data-s="alle" data-w="preis" data-p="haus mobil firma" tabindex="0" role="button" aria-label="BEHG: Brennstoffemissionshandelsgesetz"><rect x="454" y="472" width="442" height="64" rx="4" class="gn-hit"/><rect x="468" y="489" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="484" y="499" class="gn-k">BEHG · nationaler CO₂-Preis</text><text x="484" y="520" class="gn-s">Heizöl, Gas, Benzin, Diesel · ab 2028 EU-ETS 2</text></g>
+<g class="gn-g" data-g="tehg" data-s="alle" data-w="preis" data-p="firma" tabindex="0" role="button" aria-label="TEHG: Treibhausgas-Emissionshandelsgesetz, EU-ETS 1"><rect x="4" y="472" width="292" height="64" rx="4" class="gn-hit"/><rect x="18" y="489" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="34" y="499" class="gn-k">TEHG · EU-ETS 1</text><text x="34" y="520" class="gn-s">Strom, Industrie, Luft- und Seeverkehr</text></g>
+<g class="gn-g" data-g="ets2" data-s="alle" data-w="preis" data-p="haus mobil firma" tabindex="0" role="button" aria-label="EU-ETS 2: Emissionshandel für Gebäude und Verkehr"><rect x="304" y="472" width="292" height="64" rx="4" class="gn-hit"/><rect x="318" y="489" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="334" y="499" class="gn-k">EU-ETS 2 · ab 2028</text><text x="334" y="520" class="gn-s">Heizen und Tanken, geregelt im TEHG</text></g>
+<g class="gn-g" data-g="behg" data-s="alle" data-w="preis" data-p="haus mobil firma" tabindex="0" role="button" aria-label="BEHG: Brennstoffemissionshandelsgesetz"><rect x="604" y="472" width="292" height="64" rx="4" class="gn-hit"/><rect x="618" y="489" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="634" y="499" class="gn-k">BEHG · bis 2027</text><text x="634" y="520" class="gn-s">nationaler CO₂-Preis auf Heiz- und Kraftstoffe</text></g>
+</svg>
+<svg class="gn-schmal" viewBox="0 0 360 988" role="group" aria-label="Haus der Klimagesetze, Handy-Fassung">
+<!-- schmale Fassung fürs Handy: dieselben Gesetze, untereinander, Sektoren mit je zwei Spalten -->
+<rect x="0" y="0" width="360" height="52" rx="6" class="gn-eu"/>
+<text x="14" y="23" class="gn-eu-t">EU-Klimarecht</text>
+<text x="14" y="41" class="gn-eu-s">Klimagesetz · ESR · EU-ETS 1 und 2</text>
+<path d="M180 52V64" class="gn-verbinder"/>
+<g class="gn-g gn-ksg" data-g="ksg" data-s="alle" data-w="ziel" data-p="" tabindex="0" role="button" aria-label="KSG: Bundes-Klimaschutzgesetz">
+ <rect x="0" y="64" width="360" height="112" rx="8" class="gn-ksg-flaeche"/>
+ <text x="14" y="94" class="gn-ksg-t" style="font-size:19px">Bundes-Klimaschutzgesetz (KSG)</text>
+ <path d="M14 108H346" class="gn-ksg-trenn"/>
+ <text x="62" y="130" text-anchor="middle" class="gn-ksg-jahr">2030</text><text x="62" y="160" text-anchor="middle" class="gn-ksg-z" style="font-size:22px">−65 %</text>
+ <text x="180" y="130" text-anchor="middle" class="gn-ksg-jahr">2040</text><text x="180" y="160" text-anchor="middle" class="gn-ksg-z" style="font-size:22px">−88 %</text>
+ <text x="298" y="130" text-anchor="middle" class="gn-ksg-jahr">2045</text><text x="298" y="160" text-anchor="middle" class="gn-ksg-z" style="font-size:22px">Netto-Null</text>
+</g>
+<g class="gn-saeule" data-s="strom"><rect x="0" y="210" width="360" height="136" rx="4" class="gn-spalte"/><rect x="0" y="210" width="360" height="3" class="gn-linie"/><text x="0" y="200" class="gn-spaltenkopf">01 — STROM &amp; EFFIZIENZ</text></g>
+<g class="gn-g" data-g="eeg" data-s="strom" data-w="geld" data-p="haus firma" tabindex="0" role="button" aria-label="EEG: Erneuerbare-Energien-Gesetz"><rect x="3" y="216" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="231" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="29" y="241" class="gn-k">EEG</text><text x="29" y="260" class="gn-s">Wind- und Solarausbau</text></g>
+<g class="gn-g" data-g="enwg" data-s="strom" data-w="plan" data-p="firma" tabindex="0" role="button" aria-label="EnWG: Energiewirtschaftsgesetz"><rect x="183" y="216" width="174" height="58" rx="4" class="gn-hit"/><rect x="194" y="231" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="209" y="241" class="gn-k">EnWG</text><text x="209" y="260" class="gn-s">Netze und Energiemärkte</text></g>
+<g class="gn-g" data-g="enefg" data-s="strom" data-w="pflicht" data-p="firma kommune" tabindex="0" role="button" aria-label="EnEfG: Energieeffizienzgesetz"><rect x="3" y="280" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="295" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="29" y="305" class="gn-k">EnEfG</text><text x="29" y="324" class="gn-s">Energie sparen</text></g>
+<g class="gn-saeule" data-s="waerme"><rect x="0" y="386" width="360" height="72" rx="4" class="gn-spalte"/><rect x="0" y="386" width="360" height="3" class="gn-linie"/><text x="0" y="376" class="gn-spaltenkopf">02 — WÄRME &amp; GEBÄUDE</text></g>
+<g class="gn-g" data-g="gmodg" data-s="waerme" data-w="pflicht" data-p="haus" tabindex="0" role="button" aria-label="GModG: Gebäudemodernisierungsgesetz"><rect x="3" y="392" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="407" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="29" y="417" class="gn-k">GModG</text><text x="29" y="436" class="gn-s">Regeln für neue Heizungen</text></g>
+<g class="gn-g" data-g="wpg" data-s="waerme" data-w="plan" data-p="kommune haus" tabindex="0" role="button" aria-label="WPG: Wärmeplanungsgesetz"><rect x="183" y="392" width="174" height="58" rx="4" class="gn-hit"/><rect x="194" y="407" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="209" y="417" class="gn-k">WPG</text><text x="209" y="436" class="gn-s">Wärmeplan je Kommune</text></g>
+<g class="gn-saeule" data-s="verkehr"><rect x="0" y="498" width="360" height="136" rx="4" class="gn-spalte"/><rect x="0" y="498" width="360" height="3" class="gn-linie"/><text x="0" y="488" class="gn-spaltenkopf">03 — VERKEHR</text></g>
+<g class="gn-g" data-g="emog" data-s="verkehr" data-w="geld" data-p="mobil" tabindex="0" role="button" aria-label="EmoG: Elektromobilitätsgesetz"><rect x="3" y="504" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="519" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="29" y="529" class="gn-k">EmoG</text><text x="29" y="548" class="gn-s">Vorteile für E-Autos</text></g>
+<g class="gn-g" data-g="geig" data-s="verkehr" data-w="pflicht" data-p="haus firma" tabindex="0" role="button" aria-label="GEIG: Gebäude-Elektromobilitätsinfrastruktur-Gesetz"><rect x="183" y="504" width="174" height="58" rx="4" class="gn-hit"/><rect x="194" y="519" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="209" y="529" class="gn-k">GEIG</text><text x="209" y="548" class="gn-s">Ladepunkte an Gebäuden</text></g>
+<g class="gn-g" data-g="regg" data-s="verkehr" data-w="geld" data-p="mobil kommune" tabindex="0" role="button" aria-label="RegG: Regionalisierungsgesetz"><rect x="3" y="568" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="583" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="29" y="593" class="gn-k">RegG</text><text x="29" y="612" class="gn-s">Geld für Regionalbahn</text></g>
+<g class="gn-saeule" data-s="kreislauf"><rect x="0" y="674" width="360" height="72" rx="4" class="gn-spalte"/><rect x="0" y="674" width="360" height="3" class="gn-linie"/><text x="0" y="664" class="gn-spaltenkopf">04 — KREISLAUF &amp; CO₂</text></g>
+<g class="gn-g" data-g="krwg" data-s="kreislauf" data-w="pflicht" data-p="firma kommune" tabindex="0" role="button" aria-label="KrWG: Kreislaufwirtschaftsgesetz"><rect x="3" y="680" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="695" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="29" y="705" class="gn-k">KrWG</text><text x="29" y="724" class="gn-s">Abfall und Recycling</text></g>
+<g class="gn-g" data-g="ksptg" data-s="kreislauf" data-w="plan" data-p="firma" tabindex="0" role="button" aria-label="KSpTG: Kohlendioxid-Speicherungs- und -Transportgesetz"><rect x="183" y="680" width="174" height="58" rx="4" class="gn-hit"/><rect x="194" y="695" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="209" y="705" class="gn-k">KSpTG</text><text x="209" y="724" class="gn-s">CO₂ leiten und speichern</text></g>
+<g class="gn-saeule gn-fundament" data-s="alle"><rect x="0" y="786" width="360" height="200" rx="4" class="gn-spalte"/><rect x="0" y="786" width="360" height="3" class="gn-linie"/><text x="0" y="776" class="gn-spaltenkopf">FUNDAMENT — CO₂-PREIS</text></g>
+<g class="gn-g" data-g="tehg" data-s="alle" data-w="preis" data-p="firma" tabindex="0" role="button" aria-label="TEHG: Treibhausgas-Emissionshandelsgesetz, EU-ETS 1"><rect x="3" y="792" width="354" height="58" rx="4" class="gn-hit"/><rect x="14" y="807" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="29" y="817" class="gn-k">TEHG · EU-ETS 1</text><text x="29" y="836" class="gn-s">Strom, Industrie, Luft- und Seeverkehr</text></g>
+<g class="gn-g" data-g="ets2" data-s="alle" data-w="preis" data-p="haus mobil firma" tabindex="0" role="button" aria-label="EU-ETS 2: Emissionshandel für Gebäude und Verkehr"><rect x="3" y="856" width="354" height="58" rx="4" class="gn-hit"/><rect x="14" y="871" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="29" y="881" class="gn-k">EU-ETS 2 · ab 2028</text><text x="29" y="900" class="gn-s">Heizen und Tanken, geregelt im TEHG</text></g>
+<g class="gn-g" data-g="behg" data-s="alle" data-w="preis" data-p="haus mobil firma" tabindex="0" role="button" aria-label="BEHG: Brennstoffemissionshandelsgesetz"><rect x="3" y="920" width="354" height="58" rx="4" class="gn-hit"/><rect x="14" y="935" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="29" y="945" class="gn-k">BEHG · bis 2027</text><text x="29" y="964" class="gn-s">nationaler CO₂-Preis, Heizöl bis Diesel</text></g>
 </svg>
 <a class="gn-ktf" href="#klimafinanzierung">Die Einnahmen aus dem CO₂-Preis fließen in den Klima- und Transformationsfonds (KTF) ↓</a>
 </div>
@@ -416,7 +450,7 @@ Dreizehn Gesetze tragen die deutsche Klimapolitik. Man kann sie auf drei Arten o
  <li class="gn-vorbei"><span class="gn-jahr">2025</span><button type="button" data-g="ksptg">28.11.: CO₂-Speicherung erlaubt</button></li>
  <li class="gn-vorbei"><span class="gn-jahr">2026</span><button type="button" data-g="wpg">30.06.: Wärmepläne der Großstädte</button><button type="button" data-g="gmodg">29.07.: GModG ersetzt 65-%-Pflicht</button><button type="button" data-g="behg">CO₂-Preis 55–65 €</button></li>
  <li class="gn-heute" aria-label="heute"><span class="gn-jahr">heute</span></li>
- <li><span class="gn-jahr">2028</span><button type="button" data-g="behg">EU-ETS 2 löst BEHG ab</button><button type="button" data-g="wpg">30.06.: Wärmepläne aller Kommunen</button></li>
+ <li><span class="gn-jahr">2028</span><button type="button" data-g="ets2">EU-ETS 2 startet für Heizen und Tanken</button><button type="button" data-g="behg">BEHG-Preis geht im EU-ETS 2 auf</button><button type="button" data-g="wpg">30.06.: Wärmepläne aller Kommunen</button></li>
  <li><span class="gn-jahr">2029</span><button type="button" data-g="gmodg">neue Gas- und Ölheizungen: 10 % erneuerbar</button></li>
  <li><span class="gn-jahr">2030</span><button type="button" data-g="ksg">−65 % THG</button><button type="button" data-g="eeg">80 % Ökostrom</button><button type="button" data-g="enefg">−26,5 % Endenergie</button></li>
  <li><span class="gn-jahr">2040</span><button type="button" data-g="ksg">−88 % THG</button><button type="button" data-g="gmodg">60 % erneuerbar in neuen Heizungen</button></li>
@@ -521,7 +555,15 @@ Seit 28.11.2025: Rechtsrahmen für CO₂-Pipelines und dauerhafte Speicherung, v
 
 [EU-ETS 1]{.zahl} [Kraftwerke, Industrie, Luft- und Seeverkehr]{.zahl-text}
 
-Umsetzung des EU-Emissionshandels in deutsches Recht (Kraftwerke, Industrie, Luft- und Seeverkehr) [@tehg].
+Setzt den EU-Emissionshandel für Kraftwerke, Industrie, Luft- und Seeverkehr in deutsches Recht um. Dasselbe Gesetz regelt auch das neue EU-ETS 2 [§ 1 @tehg].
+:::
+
+::: {.gesetz .preis #gesetz-ets2 data-g="ets2"}
+[ETS 2]{.kuerzel} [EU-Emissionshandel für Gebäude und Straßenverkehr, geregelt im TEHG]{.name}
+
+[ab 2028]{.zahl} [EU-weiter CO₂-Preis auf Heizöl, Gas, Benzin und Diesel]{.zahl-text}
+
+Ein zweites, eigenes EU-Emissionshandelssystem für Brennstoffe in Gebäuden und Straßenverkehr. In Deutschland setzt es ebenfalls das TEHG um; es startet 2028 und löst den nationalen CO₂-Preis des BEHG ab [§ 1 @tehg; @eu_klimagesetz_2026].
 :::
 
 ::: {.gesetz .preis #gesetz-behg data-g="behg"}
@@ -534,7 +576,7 @@ Nationaler CO₂-Preis auf Heiz- und Kraftstoffe seit 2021: 25 € (2021) bis 55
 
 :::
 
-<script src="../skripte/gesetze.js?v=4"></script>
+<script src="../skripte/gesetze.js?v=7"></script>
 
 ## Sektoren: Wo steht Deutschland?
 

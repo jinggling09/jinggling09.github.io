@@ -790,7 +790,9 @@ figure.pfad {
       &[aria-pressed="true"] { background: var(--w); border-color: var(--w); color: #fff; &::before { background: #fff; } } }
     .gn-hinweis { font-size: .75rem; color: $grau; font-style: italic; margin-left: .3rem; } }
   .gn-buehne { display: grid; grid-template-columns: minmax(0, 1fr); gap: .9rem; }
-  .gn-haus { overflow-x: auto; svg { min-width: 560px; } }
+  /* Haus breit ab 640 px, darunter die schmale Hochformat-Fassung */
+  .gn-haus .gn-schmal { display: none; }
+  @media (max-width: 640px) { .gn-haus .gn-breit { display: none; } .gn-haus .gn-schmal { display: block; } }
   .gn-haus svg { display: block; width: 100%; height: auto; font-family: $font-family-sans-serif; overflow: visible; }
 
   /* SVG – vier Ebenen im Stil eines Policy-Reports: EU-Rahmen, KSG als Anker, vier Sektor-Spalten, Fundament.
@@ -847,7 +849,7 @@ figure.pfad {
   /* Detailfeld */
   /* quer unter dem Haus: links das Gesetz, rechts Einordnung und Termine */
   .gn-detail { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); grid-template-rows: auto auto 1fr; gap: 0 1.6rem; scroll-margin: 6rem 0 1rem;
-    background: #fff; border: 1px solid $linie; border-top: 3px solid $gruen; border-radius: 8px; padding: .7rem 1.1rem 1rem; box-shadow: 0 6px 20px -14px rgba(#1a2420, .35);
+    background: #fff; border: 1px solid $linie; border-top: 3px solid var(--c, #{$gruen}); border-radius: 8px; transition: border-color .25s; padding: .7rem 1.1rem 1rem; box-shadow: 0 6px 20px -14px rgba(#1a2420, .35);
     .gn-detail-kopf { grid-column: 1 / -1; }
     .gn-detail-inhalt { grid-row: 2 / span 2; }
     .gn-tags { grid-column: 2; margin-top: 0; padding-top: 0; border-top: 0; align-self: start; }
@@ -858,11 +860,12 @@ figure.pfad {
   .gn-detail-kopf { display: flex; align-items: center; justify-content: space-between; margin-bottom: .5rem; font-size: .75rem; color: $grau; letter-spacing: .04em; }
   .gn-blaettern button { width: 1.9rem; height: 1.9rem; margin-left: .25rem; border: 1px solid $linie; border-radius: 50%; background: #fff; color: $gruen; font-size: 1.1rem; line-height: 1; cursor: pointer;
     &:hover, &:focus-visible { background: $gruen; color: #fff; border-color: $gruen; } }
-  .gesetz { border: 0; padding: 0; background: none; font-size: .92rem;
-    .kuerzel { font-size: .95rem; }
-    .name { display: block; margin-top: .35rem; font-family: $headings-font-family; font-size: 1.15rem; line-height: 1.25; }
-    .zahl { display: block; margin-top: .6rem; font-family: $headings-font-family; font-size: 2.1rem; font-weight: 700; line-height: 1.05; color: var(--rand); }
-    .zahl-text { display: block; margin-bottom: .55rem; font-size: .82rem; color: $grau; }
+  /* Detailfeld in der Farbe des gewählten Gesetzes (--c setzt gesetze.js), Schrift wie im Haus */
+  .gesetz { border: 0; padding: 0; background: none; font-size: .92rem; color: #20352f;
+    .kuerzel { font-size: .8rem; letter-spacing: .04em; background: var(--c, #24634f); }
+    .name { display: block; margin-top: .4rem; font-size: 1.2rem; font-weight: 700; line-height: 1.25; color: #20352f; }
+    .zahl { display: block; margin-top: .7rem; font-size: 2.2rem; font-weight: 700; line-height: 1.05; color: color-mix(in srgb, var(--c, #24634f) 80%, #20352f); }
+    .zahl-text { display: block; margin: .15rem 0 .6rem; font-size: .82rem; color: #85958d; }
     animation: gn-ein .3s ease-out; }
   .gn-tags { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .7rem; padding-top: .6rem; border-top: 1px dashed $linie; }
   .gn-tag { --w: #{$gruen}; padding: .1rem .55rem; border: 1px solid var(--w); border-radius: 99px; background: none; font-size: .76rem; color: var(--w); cursor: pointer;
@@ -876,10 +879,13 @@ figure.pfad {
   /* Zeitleiste */
   .gn-zeit-titel { margin: 1.3rem 0 .5rem; font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: $gruen; }
   .gn-zeit { position: relative; display: flex; gap: .5rem; margin: 0; padding: 0 0 .4rem; list-style: none; overflow-x: auto;
-    &::before { content: ""; position: absolute; left: 0; right: 0; top: 1.95rem; height: 2px; background: linear-gradient(90deg, #c9cfcb 0 34%, $gruen 34%); }
+    /* Linie je Station: vergangene grau, ab „heute“ grün */
+    li::after { content: ""; position: absolute; left: 0; right: -.5rem; top: 1.95rem; height: 2px; background: #24634f; z-index: -1; }
+    li.gn-vorbei::after { background: #c9cfcb; } li:last-child::after { right: 0; }
+    isolation: isolate;
     li { position: relative; flex: 1 1 0; min-width: 5.6rem; display: flex; flex-direction: column; gap: .3rem; padding-top: 2.6rem; }
     li::before { content: ""; position: absolute; top: 1.6rem; left: .1rem; width: .8rem; height: .8rem; border-radius: 50%; background: #fff; border: 2px solid $gruen; }
-    .gn-jahr { position: absolute; top: 0; left: 0; font-family: $headings-font-family; font-size: 1.05rem; font-weight: 700; color: $tinte; }
+    .gn-jahr { position: absolute; top: 0; left: 0; font-size: 1.05rem; font-weight: 700; color: #20352f; }
     .gn-vorbei { .gn-jahr { color: $grau; } &::before { background: #c9cfcb; border-color: #c9cfcb; } }
     .gn-heute { flex: 0 0 2.2rem; min-width: 0; &::before { left: .9rem; width: 2px; height: 3rem; top: .9rem; border: 0; border-radius: 0; background: #a0412d; }
       .gn-jahr { font-family: inherit; font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #a0412d; } }
