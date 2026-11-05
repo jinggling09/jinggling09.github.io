@@ -346,7 +346,7 @@ Dreizehn Gesetze und das neue EU-ETS 2 tragen die deutsche Klimapolitik. Man kan
 </div>
 
 <div class="gn-filter" data-linse="sektor">
- <button type="button" data-f="s:strom" style="--w:#81749e">Strom &amp; Effizienz</button><button type="button" data-f="s:waerme" style="--w:#c77b5a">Wärme &amp; Gebäude</button><button type="button" data-f="s:verkehr" style="--w:#6689aa">Verkehr</button><button type="button" data-f="s:kreislauf" style="--w:#6d9b86">Kreislauf &amp; CO₂</button><button type="button" data-f="s:alle" style="--w:#c5a15d">Alle Sektoren</button>
+ <button type="button" data-f="s:strom" style="--w:#81749e">Strom &amp; Effizienz</button><button type="button" data-f="s:waerme" style="--w:#c77b5a">Wärme &amp; Gebäude</button><button type="button" data-f="s:verkehr" style="--w:#6689aa">Verkehr</button><button type="button" data-f="s:kreislauf" style="--w:#6d9b86">Kreislauf &amp; CO₂</button>
  <span class="gn-hinweis">Farbe = Säule</span>
 </div>
 <div class="gn-filter" data-linse="wirkweise" hidden>
@@ -576,7 +576,7 @@ Nationaler CO₂-Preis auf Heiz- und Kraftstoffe seit 2021: 25 € (2021) bis 55
 
 :::
 
-<script src="../skripte/gesetze.js?v=7"></script>
+<script src="../skripte/gesetze.js?v=8"></script>
 
 ## Sektoren: Wo steht Deutschland?
 

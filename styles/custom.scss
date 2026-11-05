@@ -817,7 +817,9 @@ figure.pfad {
     .gn-spalte { fill: #fff; transition: fill .25s; }
     .gn-linie { fill: var(--s); }
     &:hover .gn-spalte, &.gn-an .gn-spalte { fill: color-mix(in srgb, var(--s) 6%, #fff); } }
+  .gn-fundament { cursor: default; }
   .gn-fundament .gn-spalte, .gn-fundament:hover .gn-spalte { fill: color-mix(in srgb, #c5a15d 8%, #fff); }
+  span.gn-tag { cursor: default; &:hover { background: none; color: var(--w); } }
   .gn-g { cursor: pointer; outline: none; transition: opacity .25s;
     --w: #24634f; --c: var(--s);
     &[data-w="preis"] { --w: #c5a15d; } &[data-w="pflicht"] { --w: #a8675b; }

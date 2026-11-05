@@ -73,7 +73,10 @@
     // Einordnung: Sektor, Wirkweise, Betroffene als Marken
     var g = gruppen[n], tags = nav.querySelector(".gn-tags"); tags.innerHTML = "";
     function marke(f, titel) {
-      var b = knopf(f); if (!b) return;
+      var b = knopf(f);
+      // Dach und Fundament haben keinen Sektorknopf: nur als Hinweis, nicht anklickbar
+      if (!b && f === "s:alle") { var h = document.createElement("span"); h.className = "gn-tag"; h.style.setProperty("--w", "#c5a15d"); h.innerHTML = "<small>" + titel + "</small> sektorübergreifend"; tags.appendChild(h); return; }
+      if (!b) return;
       var m = document.createElement("button"); m.type = "button"; m.className = "gn-tag";
       m.innerHTML = "<small>" + titel + "</small> " + b.textContent;
       if (b.style.getPropertyValue("--w")) m.style.setProperty("--w", b.style.getPropertyValue("--w"));
@@ -95,7 +98,7 @@
   // Sektor → seine Säule, Wirkweise → sein Instrument, Betroffene → aktuelle Gruppe, sonst die erste des Gesetzes.
   function anklicken(n) {
     var g = gruppen[n], f = null;
-    if (linse === "sektor") f = "s:" + g.dataset.s;
+    if (linse === "sektor") f = g.dataset.s === "alle" ? null : "s:" + g.dataset.s;   // Dach/Fundament: kein Filter
     else if (linse === "wirkweise") f = "w:" + g.dataset.w;
     else if (filter && passt(n, filter)) f = filter;
     else { var p = (g.dataset.p || "").split(" ").filter(Boolean)[0]; f = p ? "p:" + p : null; }
@@ -127,7 +130,7 @@
     });
   });
   // Säule anklicken = nach diesem Sektor filtern
-  nav.querySelectorAll(".gn-saeule[data-s]").forEach(function (s) {
+  nav.querySelectorAll(".gn-saeule[data-s]:not([data-s='alle'])").forEach(function (s) {
     s.addEventListener("click", function () { var f = "s:" + s.dataset.s; linseSetzen("sektor"); filtern(filter === f ? null : f); });
   });
   zeitKnoepfe.forEach(function (b) {
