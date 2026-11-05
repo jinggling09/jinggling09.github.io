@@ -1,5 +1,5 @@
 // Startseite: gezeichnete Erde mit EU, Deutschland und China (von Jing gewählt, 21.10.2026).
-// Landmassen aus Natural Earth (world-atlas, 1:110 Mio.), Projektion mit d3-geo.
+// Landmassen aus Natural Earth (world-atlas, 1:50 Mio., feinere Küsten seit 05.11.2026), Projektion mit d3-geo.
 // Sprache, Beschriftungen und Ziele der Links stehen als data-Attribute am <svg id="sb-erde">.
 (function () {
   var svg = document.getElementById("sb-erde");
@@ -65,7 +65,7 @@
     });
   }
 
-  fetch("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json").then(function (r) { return r.json(); }).then(function (topo) {
+  fetch("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json").then(function (r) { return r.json(); }).then(function (topo) {
     var alle = topojson.feature(topo, topo.objects.countries).features;
     land = topojson.merge(topo, topo.objects.countries.geometries);
     eu = { type: "FeatureCollection", features: alle.filter(function (f) { return EU.indexOf(f.id) >= 0 && f.id !== "276"; }) };

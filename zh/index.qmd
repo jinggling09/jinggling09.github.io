@@ -26,13 +26,16 @@ title-block-banner: false
           <feGaussianBlur in="d" stdDeviation=".5"/>
         </filter>
         <filter id="papier"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .08 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
-        <radialGradient id="meer" cx="38%" cy="32%" r="75%">
+        <radialGradient id="meer" cx="66%" cy="28%" r="80%">
           <stop offset="0" stop-color="#bcd6e6"/><stop offset=".55" stop-color="#7fa9c6"/><stop offset="1" stop-color="#4f7ea3"/>
         </radialGradient>
+        <radialGradient id="schatten" cx="70%" cy="25%" r="95%"><stop offset=".45" stop-color="#1d3550" stop-opacity="0"/><stop offset=".85" stop-color="#1d3550" stop-opacity=".28"/><stop offset="1" stop-color="#1d3550" stop-opacity=".42"/></radialGradient>
+        <radialGradient id="glanz" cx="68%" cy="26%" r="30%"><stop offset="0" stop-color="#fff8e1" stop-opacity=".55"/><stop offset="1" stop-color="#fff8e1" stop-opacity="0"/></radialGradient>
         <clipPath id="kugel"><circle cx="400" cy="400" r="250"/></clipPath>
       </defs>
 
       <!-- Aquarell-Flecken im Hintergrund -->
+      <g filter="url(#papier)" opacity=".9"><ellipse cx="420" cy="380" rx="330" ry="290" fill="#000"/></g>
       <g filter="url(#aquarell)" opacity=".55">
         <ellipse cx="420" cy="380" rx="330" ry="290" fill="#d9e8ef"/>
         <ellipse cx="610" cy="200" rx="140" ry="110" fill="#e6efd9"/>
@@ -51,6 +54,8 @@ title-block-banner: false
       <!-- Erde -->
       <g filter="url(#aquarell)">
         <circle cx="400" cy="400" r="250" fill="url(#meer)"/>
+        <!-- Pigmentrand wie bei Aquarell -->
+        <circle cx="400" cy="400" r="246" fill="none" stroke="#3d6d93" stroke-width="7" opacity=".3"/>
       </g>
       <g clip-path="url(#kugel)">
         <!-- echte Landmassen, per Skript aus Natural Earth (world-atlas) gezeichnet; EU, Deutschland, China farbig -->
@@ -61,9 +66,13 @@ title-block-banner: false
           <path id="sb-cn" fill="#b0412e" opacity=".8"/>
           <path id="sb-de" fill="#b8860b" opacity=".95"/>
         </g>
+        <!-- Schatten auf der sonnenabgewandten Seite, Glanz und Papierkorn -->
+        <circle cx="400" cy="400" r="250" fill="url(#schatten)" pointer-events="none"/>
+        <circle cx="400" cy="400" r="250" fill="url(#glanz)" pointer-events="none"/>
+        <circle cx="400" cy="400" r="250" fill="#000" filter="url(#papier)" pointer-events="none"/>
         <g id="sb-namen" font-family="Caveat" font-weight="700" font-size="24"></g>
-        <!-- Lichtkante -->
-        <circle cx="400" cy="400" r="250" fill="none" stroke="#fff" stroke-width="18" opacity=".18"/>
+        <!-- Lichtkante nur auf der Sonnenseite -->
+        <circle cx="400" cy="400" r="250" fill="none" stroke="#fff" stroke-width="18" opacity=".3" stroke-dasharray="420 1151" stroke-dashoffset="406"/>
       </g>
       <circle cx="400" cy="400" r="251" class="sb-linie" stroke-width="1.6" opacity=".55"/>
 
@@ -152,7 +161,7 @@ title-block-banner: false
 <script src="https://cdn.jsdelivr.net/npm/d3-array@3.2.4/dist/d3-array.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/dist/d3-geo.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-<script src="../skripte/startbild.js?v=20261103"></script>
+<script src="../skripte/startbild.js?v=20261105"></script>
 <script type="application/json" id="sb-menue">
 {
  "_zu": "关闭",
