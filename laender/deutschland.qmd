@@ -272,72 +272,184 @@ Sondervermögen des Bundes, gespeist vor allem aus der CO₂-Bepreisung – Deta
 
 ## Klimafinanzierung: Woher kommt das Geld, wohin fließt es? {#klimafinanzierung}
 
-### Woher kommt das Geld?
+Fast alles Geld für Klimaschutz läuft über einen Topf: den **Klima- und Transformationsfonds (KTF)**, ein Sondervermögen des Bundes. Er wird vor allem aus dem CO₂-Preis gespeist und seit 2025 zusätzlich aus Krediten des neuen Sondervermögens. Der vom Bundestag beschlossene Wirtschaftsplan 2026 sieht Ausgaben von **34,8 Mrd. €** vor [@hib_ktf_2026]; das Finanzministerium nennt geplante Programmausgaben von rund 37,4 Mrd. € [@bmf_ktf_2026]. Die 15 größten der 67 Titel – jeweils mindestens rund 500 Mio. € – summieren sich auf 35,2 Mrd. € [@wd_ktf_2026].
 
-| Quelle | Umfang | Verwendung |
-|---|---|---|
-| **CO₂-Bepreisung** (EU-ETS und nationaler Emissionshandel) | **21,4 Mrd. €** im Jahr 2025: davon 5,4 Mrd. € aus dem EU-ETS und rund 16 Mrd. € aus dem nationalen Brennstoffemissionshandel [@dehst_erloese_2025] | fließt vollständig in den KTF |
-| **Sondervermögen Infrastruktur und Klimaneutralität** (Grundgesetzänderung 2025) | bis zu 500 Mrd. € Kredite, davon **100 Mrd. €** für den KTF [@gg_143h] | zusätzliche Investitionen für Klimaneutralität bis 2045 |
-| **Klimaschutzprogramm 2026** | **8 Mrd. €** zusätzlich 2027–2030 (KTF und Sondervermögen): 2,9 Mrd. € Industrie, 4,7 Mrd. € Landnutzung [@bmukn_ksp_2026] | neue Maßnahmen des Programms |
+**Der größte Block senkt Energiepreise, statt neue Anlagen zu bauen:** rund 40 % der großen Titel. In den Umbau – Gebäude, Industrie, Wasserstoff, Verkehr – fließen rund 54 %.
 
-: {tbl-colwidths="[28,44,28]"}
+```{=html}
+<div class="gf" id="geldfluss" role="region" aria-label="Geldfluss des Klima- und Transformationsfonds">
+<div class="gf-kopfzeile"><div><span class="gn-kicker">Klimafinanzierung</span><span class="gf-titel">Der Weg des Geldes durch den KTF</span></div><span class="gf-tipp">Quelle oder Verwendung anklicken</span></div>
+<div class="gf-grafik">
+<svg class="gf-breit" viewBox="0 0 900 544" role="group" aria-label="Geldfluss des Klima- und Transformationsfonds 2026: Quellen, Fonds, Verwendungen">
+<!-- Spaltenköpfe -->
+<text x="0" y="22" class="gf-kopf">WOHER · schematisch</text>
+<text x="385.0" y="22" text-anchor="middle" class="gf-kopf">FONDS</text>
+<text x="620" y="22" class="gf-kopf">WOHIN · 15 größte Titel, maßstäblich</text>
+<!-- Quellen: nicht maßstäblich, unterschiedliche Jahre -->
+<g class="gf-teil gf-quelle" data-k="co2" tabindex="0" role="button" aria-label="CO₂-Preis: 21,4 Mrd. €"><rect x="0" y="60" width="240" height="112" rx="6" class="gf-q-flaeche"/><text x="18" y="88" class="gf-q-t">CO₂-Preis</text><text x="18" y="116" class="gf-q-z">21,4 Mrd. €</text><text x="18" y="138" class="gf-q-s">Einnahmen 2025:</text><text x="18" y="154" class="gf-q-s">EU-ETS 5,4 · BEHG rund 16</text></g>
+<path d="M240 116.0C285 116.0 285 120 330 120" class="gf-zufluss" data-k="co2"/>
+<g class="gf-teil gf-quelle" data-k="sv" tabindex="0" role="button" aria-label="Sondervermögen: 100 Mrd. €"><rect x="0" y="192" width="240" height="112" rx="6" class="gf-q-flaeche"/><text x="18" y="220" class="gf-q-t">Sondervermögen</text><text x="18" y="248" class="gf-q-z">100 Mrd. €</text><text x="18" y="270" class="gf-q-s">Kredite für den KTF,</text><text x="18" y="286" class="gf-q-s">Grundgesetzänderung 2025</text></g>
+<path d="M240 248.0C285 248.0 285 270 330 270" class="gf-zufluss" data-k="sv"/>
+<g class="gf-teil gf-quelle gf-zusatz" data-k="ksp" tabindex="0" role="button" aria-label="Klimaschutzprogramm 2026: 8 Mrd. € zusätzlich 2027 bis 2030"><rect x="0" y="328" width="240" height="76" rx="6" class="gf-q-flaeche"/><text x="18" y="354" class="gf-q-t" style="font-size:14px">Klimaschutzprogramm 2026</text><text x="18" y="378" class="gf-q-z" style="font-size:18px">+8 Mrd. €</text><text x="18" y="394" class="gf-q-s">zusätzlich 2027–2030</text></g>
+<text x="0" y="428" class="gf-hinweis">Quellen: verschiedene Jahre und Zeiträume,</text>
+<text x="0" y="443" class="gf-hinweis">deshalb nicht maßstäblich.</text>
+<!-- Fonds -->
+<g class="gf-ktf"><rect x="330" y="60" width="110" height="315.9" rx="6" class="gf-ktf-flaeche"/><text x="385.0" y="204" text-anchor="middle" class="gf-ktf-t">KTF</text><text x="385.0" y="230" text-anchor="middle" class="gf-ktf-z">34,8 Mrd. €</text><text x="385.0" y="248" text-anchor="middle" class="gf-ktf-s">Soll 2026</text></g>
+<!-- Verwendungen: Bänder und Balken maßstäblich (Soll 2026) -->
+<g class="gf-teil gf-ziel" data-k="energie" data-gruppe="entl" tabindex="0" role="button" aria-label="Strom- und Energiekosten senken: 13,9 Mrd. €"><path d="M440 60.0C530.0 60.0 530.0 60.0 620 60.0V185.1C530.0 185.1 530.0 185.1 440 185.1Z" class="gf-band"/><rect x="620" y="60.0" width="10" height="125.1" class="gf-balken"/><rect x="634" y="60" width="232" height="125.10000000000001" rx="4" class="gf-hit"/><text x="644" y="121" class="gf-z-t">Strom- und Energiekosten senken</text><text x="644" y="137" class="gf-z-s">13,9 Mrd. €</text></g>
+<g class="gf-teil gf-ziel" data-k="gebaeude" data-gruppe="umbau" tabindex="0" role="button" aria-label="Gebäude: 12,0 Mrd. €"><path d="M440 185.1C530.0 185.1 530.0 193.1 620 193.1V301.1C530.0 301.1 530.0 293.1 440 293.1Z" class="gf-band"/><rect x="620" y="193.1" width="10" height="108.0" class="gf-balken"/><rect x="634" y="193.10000000000002" width="232" height="108.0" rx="4" class="gf-hit"/><text x="644" y="245" class="gf-z-t">Gebäude</text><text x="644" y="261" class="gf-z-s">12,0 Mrd. €</text></g>
+<g class="gf-teil gf-ziel" data-k="industrie" data-gruppe="umbau" tabindex="0" role="button" aria-label="Industrie und Wasserstoff: 5,0 Mrd. €"><path d="M440 293.1C530.0 293.1 530.0 309.1 620 309.1V354.1C530.0 354.1 530.0 338.1 440 338.1Z" class="gf-band"/><rect x="620" y="309.1" width="10" height="45.0" class="gf-balken"/><rect x="634" y="309.1" width="232" height="45.0" rx="4" class="gf-hit"/><text x="644" y="330" class="gf-z-t">Industrie und Wasserstoff</text><text x="644" y="346" class="gf-z-s">5,0 Mrd. €</text></g>
+<g class="gf-teil gf-ziel" data-k="verkehr" data-gruppe="umbau" tabindex="0" role="button" aria-label="Verkehr: 2,3 Mrd. €"><path d="M440 338.1C530.0 338.1 530.0 367.8 620 367.8V388.4C530.0 388.4 530.0 358.8 440 358.8Z" class="gf-band"/><rect x="620" y="367.8" width="10" height="20.7" class="gf-balken"/><rect x="634" y="362.1" width="232" height="32" rx="4" class="gf-hit"/><text x="644" y="376" class="gf-z-t">Verkehr</text><text x="644" y="392" class="gf-z-s">2,3 Mrd. €</text></g>
+<g class="gf-teil gf-ziel" data-k="natur" data-gruppe="rest" tabindex="0" role="button" aria-label="Natürlicher Klimaschutz: 0,8 Mrd. €"><path d="M440 358.8C530.0 358.8 530.0 414.5 620 414.5V421.7C530.0 421.7 530.0 366.0 440 366.0Z" class="gf-band"/><rect x="620" y="414.5" width="10" height="7.2" class="gf-balken"/><rect x="634" y="402.1" width="232" height="32" rx="4" class="gf-hit"/><text x="644" y="416" class="gf-z-t">Natürlicher Klimaschutz</text><text x="644" y="432" class="gf-z-s">0,8 Mrd. €</text></g>
+<g class="gf-teil gf-ziel" data-k="international" data-gruppe="rest" tabindex="0" role="button" aria-label="Internationaler Klimaschutz: 0,6 Mrd. €"><path d="M440 366.0C530.0 366.0 530.0 455.4 620 455.4V460.8C530.0 460.8 530.0 371.4 440 371.4Z" class="gf-band"/><rect x="620" y="455.4" width="10" height="5.4" class="gf-balken"/><rect x="634" y="442.1" width="232" height="32" rx="4" class="gf-hit"/><text x="644" y="456" class="gf-z-t">Internationaler Klimaschutz</text><text x="644" y="472" class="gf-z-s">0,6 Mrd. €</text></g>
+<g class="gf-teil gf-ziel" data-k="forschung" data-gruppe="rest" tabindex="0" role="button" aria-label="Energieforschung: 0,5 Mrd. €"><path d="M440 371.4C530.0 371.4 530.0 495.9 620 495.9V500.4C530.0 500.4 530.0 375.9 440 375.9Z" class="gf-band"/><rect x="620" y="495.9" width="10" height="4.5" class="gf-balken"/><rect x="634" y="482.1" width="232" height="32" rx="4" class="gf-hit"/><text x="644" y="496" class="gf-z-t">Energieforschung</text><text x="644" y="512" class="gf-z-s">0,5 Mrd. €</text></g>
+<g class="gf-klammer entl"><path d="M872 64H878V181H872"/><text x="892" y="123" text-anchor="middle" transform="rotate(90 892 123)">Entlastung 40 %</text></g>
+<g class="gf-klammer umbau"><path d="M872 197H878V390H872"/><text x="892" y="294" text-anchor="middle" transform="rotate(90 892 294)">Umbau 54 %</text></g>
+<g class="gf-klammer rest"><path d="M872 406H878V510H872"/><text x="892" y="458" text-anchor="middle" transform="rotate(90 892 458)">6 %</text></g>
+</svg>
+<svg class="gf-schmal" viewBox="0 0 360 718" role="group" aria-label="Geldfluss des KTF, Handy-Fassung">
+<!-- schmale Fassung fürs Handy: Quellen oben, Fonds als Balken, Verwendungen als maßstäbliche Balkenliste -->
+<text x="0" y="14" class="gf-kopf">WOHER · schematisch</text>
+<g class="gf-teil gf-quelle" data-k="co2" tabindex="0" role="button" aria-label="CO₂-Preis: 21,4 Mrd. €"><rect x="0" y="24" width="360" height="62" rx="6" class="gf-q-flaeche"/><text x="14" y="49" class="gf-q-t">CO₂-Preis</text><text x="346" y="51" text-anchor="end" class="gf-q-z" style="font-size:19px">21,4 Mrd. €</text><text x="14" y="71" class="gf-q-s">Einnahmen 2025: EU-ETS 5,4 · BEHG rund 16</text></g>
+<g class="gf-teil gf-quelle" data-k="sv" tabindex="0" role="button" aria-label="Sondervermögen: 100 Mrd. €"><rect x="0" y="96" width="360" height="62" rx="6" class="gf-q-flaeche"/><text x="14" y="121" class="gf-q-t">Sondervermögen</text><text x="346" y="123" text-anchor="end" class="gf-q-z" style="font-size:19px">100 Mrd. €</text><text x="14" y="143" class="gf-q-s">Kredite für den KTF, Grundgesetz 2025</text></g>
+<g class="gf-teil gf-quelle gf-zusatz" data-k="ksp" tabindex="0" role="button" aria-label="Klimaschutzprogramm 2026: +8 Mrd. €"><rect x="0" y="168" width="360" height="62" rx="6" class="gf-q-flaeche"/><text x="14" y="193" class="gf-q-t">Klimaschutzprogramm 2026</text><text x="346" y="195" text-anchor="end" class="gf-q-z" style="font-size:19px">+8 Mrd. €</text><text x="14" y="215" class="gf-q-s">zusätzlich 2027–2030</text></g>
+<path d="M180 234V250" class="gf-zufluss" data-k="co2" style="stroke-width:4"/>
+<g class="gf-ktf"><rect x="0" y="252" width="360" height="54" rx="6" class="gf-ktf-flaeche"/><text x="14" y="285" class="gf-ktf-t" style="font-size:20px">KTF</text><text x="346" y="278" text-anchor="end" class="gf-ktf-z">34,8 Mrd. €</text><text x="346" y="295" text-anchor="end" class="gf-ktf-s">Soll 2026</text></g>
+<text x="0" y="334" class="gf-kopf">WOHIN · 15 größte Titel, maßstäblich</text>
+<g class="gf-teil gf-ziel" data-k="energie" tabindex="0" role="button" aria-label="Strom- und Energiekosten senken: 13,9 Mrd. €"><rect x="0" y="344" width="360" height="46" rx="4" class="gf-hit"/><text x="10" y="362" class="gf-z-t">Strom- und Energiekosten senken</text><rect x="10" y="370" width="270.0" height="10" rx="2" class="gf-balken"/><text x="288.0" y="379" class="gf-z-s">13,9</text></g>
+<g class="gf-teil gf-ziel" data-k="gebaeude" tabindex="0" role="button" aria-label="Gebäude: 12,0 Mrd. €"><rect x="0" y="394" width="360" height="46" rx="4" class="gf-hit"/><text x="10" y="412" class="gf-z-t">Gebäude</text><rect x="10" y="420" width="233.1" height="10" rx="2" class="gf-balken"/><text x="251.1" y="429" class="gf-z-s">12,0</text></g>
+<g class="gf-teil gf-ziel" data-k="industrie" tabindex="0" role="button" aria-label="Industrie und Wasserstoff: 5,0 Mrd. €"><rect x="0" y="444" width="360" height="46" rx="4" class="gf-hit"/><text x="10" y="462" class="gf-z-t">Industrie und Wasserstoff</text><rect x="10" y="470" width="97.1" height="10" rx="2" class="gf-balken"/><text x="115.1" y="479" class="gf-z-s">5,0</text></g>
+<g class="gf-teil gf-ziel" data-k="verkehr" tabindex="0" role="button" aria-label="Verkehr: 2,3 Mrd. €"><rect x="0" y="494" width="360" height="46" rx="4" class="gf-hit"/><text x="10" y="512" class="gf-z-t">Verkehr</text><rect x="10" y="520" width="44.7" height="10" rx="2" class="gf-balken"/><text x="62.7" y="529" class="gf-z-s">2,3</text></g>
+<g class="gf-teil gf-ziel" data-k="natur" tabindex="0" role="button" aria-label="Natürlicher Klimaschutz: 0,8 Mrd. €"><rect x="0" y="544" width="360" height="46" rx="4" class="gf-hit"/><text x="10" y="562" class="gf-z-t">Natürlicher Klimaschutz</text><rect x="10" y="570" width="15.5" height="10" rx="2" class="gf-balken"/><text x="33.5" y="579" class="gf-z-s">0,8</text></g>
+<g class="gf-teil gf-ziel" data-k="international" tabindex="0" role="button" aria-label="Internationaler Klimaschutz: 0,6 Mrd. €"><rect x="0" y="594" width="360" height="46" rx="4" class="gf-hit"/><text x="10" y="612" class="gf-z-t">Internationaler Klimaschutz</text><rect x="10" y="620" width="11.7" height="10" rx="2" class="gf-balken"/><text x="29.7" y="629" class="gf-z-s">0,6</text></g>
+<g class="gf-teil gf-ziel" data-k="forschung" tabindex="0" role="button" aria-label="Energieforschung: 0,5 Mrd. €"><rect x="0" y="644" width="360" height="46" rx="4" class="gf-hit"/><text x="10" y="662" class="gf-z-t">Energieforschung</text><rect x="10" y="670" width="9.7" height="10" rx="2" class="gf-balken"/><text x="27.7" y="679" class="gf-z-s">0,5</text></g>
+<text x="0" y="708" class="gf-hinweis">Entlastung 40 % · Umbau 54 % · übrige 6 %</text>
+</svg>
+</div>
+<div class="gf-detail" aria-live="polite"></div>
+</div>
+```
 
+::: {.gf-karten}
 
-Zu den wichtigsten Förderprogrammen gehören die **Bundesförderung für effiziente Gebäude (BEG)**, die **Bundesförderung für effiziente Wärmenetze (BEW)** – sie soll 2030 auf 2,7 Mrd. € jährlich wachsen –, Programme für Prozesswärme und Elektrifizierung in der Industrie einschließlich CO₂-Differenzverträgen sowie eine neue, sozial gestaffelte **E-Auto-Förderung** mit 3 Mrd. € für rund 800.000 Fahrzeuge [@bmukn_ksp_2026].
+::: {.gf-karte #geld-co2 data-k="co2"}
+[Quelle]{.gf-art} [CO₂-Bepreisung]{.gf-name}
 
-### Wohin fließt das Geld?
+[21,4 Mrd. €]{.zahl} [Einnahmen 2025, fließen vollständig in den KTF]{.zahl-text}
 
-Der vom Bundestag beschlossene Wirtschaftsplan des KTF 2026 sieht Ausgaben von **34,8 Mrd. €** vor [@hib_ktf_2026]; das Finanzministerium nennt geplante Programmausgaben von rund 37,4 Mrd. € [@bmf_ktf_2026]. Der Plan hat 67 Ausgabetitel; die 15 größten – jeweils mindestens rund 500 Mio. € – summieren sich auf 35,2 Mrd. € [@wd_ktf_2026]. Nach Bereichen zusammengefasst:
+- EU-Emissionshandel (EU-ETS 1): 5,4 Mrd. €
+- nationaler Brennstoffemissionshandel (BEHG): rund 16 Mrd. €
 
-::: {.balken-vergleich .breit}
+Zahlen nach der Deutschen Emissionshandelsstelle [@dehst_erloese_2025]. Ab 2028 ersetzt das EU-ETS 2 den nationalen Preis; dann fließen auch diese Erlöse aus dem EU-System.
+:::
 
-[KTF 2026, Soll in Mrd. € (15 größte Titel)]{.bv-titel}
+::: {.gf-karte #geld-sv data-k="sv"}
+[Quelle]{.gf-art} [Sondervermögen Infrastruktur und Klimaneutralität]{.gf-name}
 
-`<div class="bv-zeile de"><span class="bv-land">Strom- und Energiekosten senken</span><span class="bv-spur"><span style="width:100.0%"></span></span><span class="bv-wert">13,9</span></div><div class="bv-zeile de"><span class="bv-land">Gebäude</span><span class="bv-spur"><span style="width:86.0%"></span></span><span class="bv-wert">12,0</span></div><div class="bv-zeile de"><span class="bv-land">Industrie und Wasserstoff</span><span class="bv-spur"><span style="width:36.2%"></span></span><span class="bv-wert">5,0</span></div><div class="bv-zeile de"><span class="bv-land">Verkehr</span><span class="bv-spur"><span style="width:16.3%"></span></span><span class="bv-wert">2,3</span></div><div class="bv-zeile de"><span class="bv-land">Natürlicher Klimaschutz</span><span class="bv-spur"><span style="width:5.9%"></span></span><span class="bv-wert">0,8</span></div><div class="bv-zeile de"><span class="bv-land">Internationaler Klimaschutz</span><span class="bv-spur"><span style="width:4.6%"></span></span><span class="bv-wert">0,6</span></div><div class="bv-zeile de"><span class="bv-land">Energieforschung</span><span class="bv-spur"><span style="width:3.9%"></span></span><span class="bv-wert">0,5</span></div>`{=html}
+[100 Mrd. €]{.zahl} [für den KTF, aus bis zu 500 Mrd. € Krediten]{.zahl-text}
+
+Mit der Grundgesetzänderung 2025 darf der Bund bis zu 500 Mrd. € Kredite für Infrastruktur und Klimaneutralität aufnehmen; 100 Mrd. € davon gehen in den KTF, für zusätzliche Investitionen bis 2045 [@gg_143h].
+:::
+
+::: {.gf-karte #geld-ksp data-k="ksp"}
+[Zusätzlich]{.gf-art} [Klimaschutzprogramm 2026]{.gf-name}
+
+[8 Mrd. €]{.zahl} [zusätzlich 2027–2030, aus KTF und Sondervermögen]{.zahl-text}
+
+- Industrie: 2,9 Mrd. €
+- Landnutzung: 4,7 Mrd. €
+
+Neue Maßnahmen des Programms [@bmukn_ksp_2026]. Keine eigene Geldquelle, sondern ein Zuschlag aus denselben Töpfen.
+:::
+
+::: {.gf-karte #geld-energie data-k="energie"}
+[Verwendung · Entlastung]{.gf-art} [Strom- und Energiekosten senken]{.gf-name}
+
+[13,9 Mrd. €]{.zahl} [Soll 2026 · rund 40 % der 15 größten Titel]{.zahl-text}
+
+- Zuschuss zu den Übertragungsnetzkosten: 6,5 Mrd. €
+- Strompreiskompensation für energieintensive Unternehmen: 4,0 Mrd. €
+- Ausgleich der abgeschafften Gasspeicherumlage: 3,4 Mrd. €
+
+Diese Titel bauen nichts Neues, sondern senken Strom- und Gaspreise für Haushalte und Unternehmen [@wd_ktf_2026].
+:::
+
+::: {.gf-karte #geld-gebaeude data-k="gebaeude"}
+[Verwendung · Umbau]{.gf-art} [Gebäude]{.gf-name}
+
+[12,0 Mrd. €]{.zahl} [Soll 2026 · größter Einzeltitel]{.zahl-text}
+
+- Bundesförderung für effiziente Gebäude (BEG): 11,96 Mrd. €
+
+Die BEG fördert Sanierung und Heizungstausch in drei Programmteilen: Einzelmaßnahmen, Wohngebäude und Nichtwohngebäude [@wd_ktf_2026]. Dazu kommt die Bundesförderung für effiziente Wärmenetze (BEW), die bis 2030 auf 2,7 Mrd. € im Jahr wachsen soll [@bmukn_ksp_2026].
+:::
+
+::: {.gf-karte #geld-industrie data-k="industrie"}
+[Verwendung · Umbau]{.gf-art} [Industrie und Wasserstoff]{.gf-name}
+
+[5,0 Mrd. €]{.zahl} [Soll 2026 · sechs Titel]{.zahl-text}
+
+- Wasserstoff in der Industrie (IPCEI): 1,26 Mrd. €
+- Energieeffizienz in Industrie und Gewerbe: 0,97 Mrd. €
+- Nationale Wasserstoffstrategie: 0,90 Mrd. €
+- Dekarbonisierung der Industrie, u. a. Klimaschutzverträge: 0,70 Mrd. €
+- deutsch-französische IPCEI-Wasserstoffprojekte: 0,68 Mrd. €
+- Fertigung von Energiespeichern: 0,52 Mrd. €
+
+**Klimaschutzverträge:** Der Staat gleicht über 15 Jahre die Mehrkosten klimafreundlicher Produktion aus; 2024 gab es 15 Verträge mit bis zu 2,8 Mrd. € [@bmwk_ksv_2024]. Die EU-Kommission genehmigte im Mai 2026 eine zweite Runde mit 5 Mrd. €; Projekte müssen ihre Emissionen binnen vier Jahren um mindestens 50 % und bis Vertragsende um 85 % senken [@ec_ksv_2026]. **IPCEI** sind „wichtige Vorhaben von gemeinsamem europäischem Interesse“: Elektrolyseure, Leitungen und Wasserstoff in der Industrie, auch gemeinsam mit Frankreich [@wd_ktf_2026].
+:::
+
+::: {.gf-karte #geld-verkehr data-k="verkehr"}
+[Verwendung · Umbau]{.gf-art} [Verkehr]{.gf-name}
+
+[2,3 Mrd. €]{.zahl} [Soll 2026 · zwei Titel]{.zahl-text}
+
+- Tank- und Ladeinfrastruktur: 1,71 Mrd. €
+- E-Auto-Förderung für Haushalte mit kleinem und mittlerem Einkommen: 0,55 Mrd. €
+
+Die neue, sozial gestaffelte E-Auto-Förderung umfasst insgesamt 3 Mrd. € für rund 800.000 Fahrzeuge [@bmukn_ksp_2026]. Einen Titel für die Schiene ab 500 Mio. € gibt es im KTF 2026 nicht [@wd_ktf_2026].
+:::
+
+::: {.gf-karte #geld-natur data-k="natur"}
+[Verwendung · übrige]{.gf-art} [Natürlicher Klimaschutz]{.gf-name}
+
+[0,8 Mrd. €]{.zahl} [Soll 2026]{.zahl-text}
+
+Einer der 15 größten Ausgabetitel des KTF 2026 [@wd_ktf_2026].
+:::
+
+::: {.gf-karte #geld-international data-k="international"}
+[Verwendung · übrige]{.gf-art} [Internationaler Klimaschutz]{.gf-name}
+
+[0,6 Mrd. €]{.zahl} [Soll 2026]{.zahl-text}
+
+Einer der 15 größten Ausgabetitel des KTF 2026 [@wd_ktf_2026].
+:::
+
+::: {.gf-karte #geld-forschung data-k="forschung"}
+[Verwendung · übrige]{.gf-art} [Energieforschung]{.gf-name}
+
+[0,5 Mrd. €]{.zahl} [Soll 2026]{.zahl-text}
+
+Einer der 15 größten Ausgabetitel des KTF 2026 [@wd_ktf_2026].
+:::
 
 :::
 
 ::: {.belege}
-**Belege** · Soll-Ansätze 2026 nach der Titelübersicht der Wissenschaftlichen Dienste [@wd_ktf_2026], eigene Zusammenfassung: **Strom- und Energiekosten** = Zuschuss zu den Übertragungsnetzkosten 6,5 · Strompreiskompensation 4,0 · Ausgleich der abgeschafften Gasspeicherumlage 3,4 · **Gebäude** = Bundesförderung für effiziente Gebäude (BEG) 11,96 · **Industrie und Wasserstoff** = Wasserstoff in der Industrie (IPCEI) 1,26 · Energieeffizienz in Industrie und Gewerbe 0,97 · Nationale Wasserstoffstrategie 0,90 · Dekarbonisierung der Industrie (u. a. Klimaschutzverträge) 0,70 · deutsch-französische IPCEI-Wasserstoffprojekte 0,68 · Fertigung von Energiespeichern 0,52 · **Verkehr** = Tank- und Ladeinfrastruktur 1,71 · E-Auto-Förderung für Haushalte mit kleinem und mittlerem Einkommen 0,55. Anteile an den 35,2 Mrd. €: Strom- und Energiekosten 40 %, Gebäude 34 %, Industrie und Wasserstoff 14 %, Verkehr 6 %, übrige 6 %. Einen Titel für die Schiene ab 500 Mio. € gibt es im KTF 2026 nicht. Die drei Gesamtsummen sind unterschiedlich abgegrenzt; die Anteile beziehen sich deshalb nur auf die 15 Titel.
+**Belege** · Soll-Ansätze 2026 nach der Titelübersicht der Wissenschaftlichen Dienste [@wd_ktf_2026], eigene Zusammenfassung der 15 größten Titel in sieben Bereiche. Anteile an den 35,2 Mrd. €: Strom- und Energiekosten 40 %, Gebäude 34 %, Industrie und Wasserstoff 14 %, Verkehr 6 %, übrige 6 %. Die drei Gesamtsummen (34,8 / 37,4 / 35,2 Mrd. €) sind unterschiedlich abgegrenzt; die Anteile beziehen sich deshalb nur auf die 15 Titel. Die Quellen links sind nicht maßstäblich: CO₂-Erlöse von 2025, Sondervermögen über mehrere Jahre, Klimaschutzprogramm für 2027–2030.
 :::
 
-::: {.sektoren}
-
-::: {.sektor}
-### Gebäude: BEG
-[2026: 11,96 Mrd. € · größter Einzeltitel]{.werte}
-
-Förderung von Sanierung und Heizungstausch in drei Programmteilen: Einzelmaßnahmen, Wohngebäude und Nichtwohngebäude [@wd_ktf_2026].
-:::
-
-::: {.sektor}
-### Industrie: Klimaschutzverträge
-[2024: 15 Verträge, bis zu 2,8 Mrd. € · 2026: zweite Runde mit 5 Mrd. €]{.werte}
-
-Der Staat gleicht über 15 Jahre die Mehrkosten klimafreundlicher Produktion aus [@bmwk_ksv_2024]; finanziert aus dem KTF-Titel „Dekarbonisierung der Industrie“ (2026: 0,70 Mrd. €) [@wd_ktf_2026]. Die EU-Kommission genehmigte im Mai 2026 eine zweite Runde mit 5 Mrd. €; Projekte müssen ihre Emissionen binnen vier Jahren um mindestens 50 % und bis Vertragsende um 85 % senken [@ec_ksv_2026]. Ergebnisse lagen am 21.10.2026 noch nicht vor.
-:::
-
-::: {.sektor}
-### Wasserstoff: IPCEI
-[2026: rund 2,8 Mrd. € in drei Wasserstoff-Titeln]{.werte}
-
-Gefördert werden „wichtige Vorhaben von gemeinsamem europäischem Interesse“: Elektrolyseure, Leitungen und der Einsatz von Wasserstoff in der Industrie, auch gemeinsam mit Frankreich [@wd_ktf_2026].
-:::
-
-:::
-
-::: {.einordnung}
-**Einordnung.** Der größte Block des KTF 2026 finanziert keine neuen Anlagen, sondern **senkt Energiepreise**: Zuschüsse zu Netzentgelten, Strompreiskompensation für energieintensive Unternehmen und der Ausgleich der Gasspeicherumlage machen zusammen rund 40 % der großen Titel aus. In die Transformation im engeren Sinn – Gebäude, Industrie, Wasserstoff, Verkehr – fließen rund 54 %.
-:::
+<script src="../skripte/geldfluss.js?v=1"></script>
 
 ## Rechtsrahmen: die wichtigsten Gesetze
 
-Dreizehn Gesetze und das neue EU-ETS 2 tragen die deutsche Klimapolitik. Man kann sie auf drei Arten ordnen: **nach Sektor** (wo wirkt das Gesetz?), **nach Wirkweise** (setzt es ein Ziel, einen Preis, eine Pflicht, Geld oder einen Plan?) und **nach Betroffenen** (wen trifft es im Alltag?). Der Navigator zeigt alle drei Blickwinkel; ein Klick auf ein Gesetz öffnet seine Kurzbeschreibung.
+Dreizehn Gesetze und das neue EU-ETS 2 tragen die deutsche Klimapolitik. Man kann sie auf drei Arten ordnen: **nach Sektor** (wo wirkt das Gesetz?), **nach Wirkweise** (setzt es ein Ziel, einen Preis, eine Pflicht, Geld oder einen Plan?) und **nach Betroffenen** (wen trifft es im Alltag?). Die Grafik zeigt alle drei Blickwinkel; ein Klick auf ein Gesetz öffnet seine Kurzbeschreibung.
 
 ```{=html}
-<div class="gn" id="gesetzesnavigator" role="region" aria-label="Gesetzesnavigator: deutsche Klimagesetze">
+<div class="gn" id="gesetzesnavigator" role="region" aria-label="Die Architektur des deutschen Klimarechts">
 <div class="gn-kopf">
- <div><span class="gn-kicker">Gesetzesnavigator</span><span class="gn-titel">Das Haus der deutschen Klimagesetze</span></div>
+ <div><span class="gn-kicker">Rechtsrahmen</span><span class="gn-titel">Die Architektur des deutschen Klimarechts</span></div>
  <div class="gn-linsen" role="tablist" aria-label="Blickwinkel">
   <button type="button" role="tab" data-linse="sektor" aria-selected="true">Nach Sektor</button>
   <button type="button" role="tab" data-linse="wirkweise" aria-selected="false">Nach Wirkweise</button>
@@ -360,7 +472,7 @@ Dreizehn Gesetze und das neue EU-ETS 2 tragen die deutsche Klimapolitik. Man kan
 
 <div class="gn-buehne">
 <div class="gn-haus">
-<svg class="gn-breit" viewBox="0 0 900 548" role="group" aria-label="Haus der Klimagesetze: EU-Rahmen, Klimaschutzgesetz als Dach, Fachgesetze in vier Sektoren, CO₂-Preis als Fundament">
+<svg class="gn-breit" viewBox="0 0 900 548" role="group" aria-label="Architektur des Klimarechts: EU-Rahmen, Klimaschutzgesetz als Dach, Fachgesetze in vier Sektoren, CO₂-Preis als Fundament">
 <!-- Ebene 1: EU-Rahmen (alle Ebenen: x 0–900, Text eingerückt um 18) -->
 <rect x="0" y="0" width="900" height="56" rx="6" class="gn-eu"/>
 <text x="18" y="25" class="gn-eu-t">EU-Klimarecht</text>
@@ -400,7 +512,7 @@ Dreizehn Gesetze und das neue EU-ETS 2 tragen die deutsche Klimapolitik. Man kan
 <g class="gn-g" data-g="ets2" data-s="alle" data-w="preis" data-p="haus mobil firma" tabindex="0" role="button" aria-label="EU-ETS 2: Emissionshandel für Gebäude und Verkehr"><rect x="304" y="472" width="292" height="64" rx="4" class="gn-hit"/><rect x="318" y="489" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="334" y="499" class="gn-k">EU-ETS 2 · ab 2028</text><text x="334" y="520" class="gn-s">Heizen und Tanken, geregelt im TEHG</text></g>
 <g class="gn-g" data-g="behg" data-s="alle" data-w="preis" data-p="haus mobil firma" tabindex="0" role="button" aria-label="BEHG: Brennstoffemissionshandelsgesetz"><rect x="604" y="472" width="292" height="64" rx="4" class="gn-hit"/><rect x="618" y="489" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="634" y="499" class="gn-k">BEHG · bis 2027</text><text x="634" y="520" class="gn-s">nationaler CO₂-Preis auf Heiz- und Kraftstoffe</text></g>
 </svg>
-<svg class="gn-schmal" viewBox="0 0 360 988" role="group" aria-label="Haus der Klimagesetze, Handy-Fassung">
+<svg class="gn-schmal" viewBox="0 0 360 988" role="group" aria-label="Architektur des Klimarechts, Handy-Fassung">
 <!-- schmale Fassung fürs Handy: dieselben Gesetze, untereinander, Sektoren mit je zwei Spalten -->
 <rect x="0" y="0" width="360" height="52" rx="6" class="gn-eu"/>
 <text x="14" y="23" class="gn-eu-t">EU-Klimarecht</text>

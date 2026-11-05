@@ -1851,3 +1851,75 @@ figure.esgrad { margin: 1rem 0 .6rem;
     tr[data-abt] { border-top: 1px solid $linie; padding: .3rem 0; } td { border-top: 0; padding: .3rem .8rem; }
     td[data-k]::before { content: attr(data-k); display: block; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: $grau; } }
 }
+
+/* Geldfluss des KTF (skripte/geldfluss.js): Quellen schematisch, Verwendungen maßstäblich; Stil wie der Rechtsrahmen */
+.gf {
+  margin: 1rem 0 1.2rem; padding: 1.2rem 1.4rem 1.1rem;
+  background: #f8f8f5; border: 1px solid $linie; border-radius: 10px;
+  .gn-kicker { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: $gruen; }
+  .gf-kopfzeile { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: .4rem 1.5rem; margin-bottom: .9rem; }
+  .gf-titel { display: block; font-family: $headings-font-family; font-size: 1.45rem; font-weight: 700; line-height: 1.2; color: $tinte; }
+  .gf-tipp { font-size: .75rem; font-style: italic; color: $grau; }
+  .gf-grafik svg { display: block; width: 100%; height: auto; font-family: $font-family-sans-serif; overflow: visible; }
+
+  /* Farben je Quelle und Verwendung */
+  [data-k="co2"] { --k: #c5a15d; } [data-k="sv"] { --k: #5d7896; } [data-k="ksp"] { --k: #8a958f; }
+  [data-k="energie"] { --k: #b0884a; } [data-k="gebaeude"] { --k: #c77b5a; } [data-k="industrie"] { --k: #81749e; }
+  [data-k="verkehr"] { --k: #6689aa; } [data-k="natur"] { --k: #6d9b86; } [data-k="international"] { --k: #5f9aa8; }
+  [data-k="forschung"] { --k: #8a9b5e; }
+
+  .gf-kopf { font-size: 11.5px; font-weight: 700; letter-spacing: .08em; fill: #6b7a73; }
+  .gf-hinweis { font-size: 11px; font-style: italic; fill: #85958d; }
+  .gf-teil { cursor: pointer; outline: none; transition: opacity .25s; }
+  .gf-teil text { pointer-events: none; }
+  .gf-q-flaeche { fill: #fff; stroke: color-mix(in srgb, var(--k) 45%, #fff); stroke-width: 1.4; transition: fill .2s, stroke .2s; }
+  .gf-zusatz .gf-q-flaeche { stroke-dasharray: 4 3; }
+  .gf-q-t { font-size: 15px; font-weight: 700; fill: #20352f; }
+  .gf-q-z { font-size: 22px; font-weight: 700; fill: color-mix(in srgb, var(--k) 80%, #20352f); }
+  .gf-q-s { font-size: 12px; fill: #85958d; }
+  .gf-zufluss { fill: none; stroke: color-mix(in srgb, var(--k) 35%, #fff); stroke-width: 12; stroke-linecap: butt; transition: stroke .25s, opacity .25s; }
+  .gf-ktf-flaeche { fill: #24634f; }
+  .gf-ktf-t { font-size: 24px; font-weight: 700; fill: #fff; }
+  .gf-ktf-z { font-size: 15px; font-weight: 700; fill: #fff; }
+  .gf-ktf-s { font-size: 11.5px; fill: #cfe2d9; }
+  .gf-band { fill: var(--k); opacity: .3; transition: opacity .25s; }
+  .gf-balken { fill: var(--k); }
+  .gf-hit { fill: transparent; stroke: transparent; stroke-width: 1.5; transition: fill .2s, stroke .2s; }
+  .gf-z-t { font-size: 14px; font-weight: 700; fill: #20352f; }
+  .gf-z-s { font-size: 12px; fill: #85958d; }
+  .gf-klammer { path { fill: none; stroke: #b9c1bc; stroke-width: 1.4; }
+    text { font-size: 11.5px; font-weight: 700; letter-spacing: .04em; fill: #6b7a73; }
+    &.entl text { fill: #8f6b33; } &.umbau text { fill: #24634f; } }
+
+  /* Überfahren und Wahl: Teil kräftiger, Rest gedämpft */
+  .gf-teil.gf-an .gf-band, .gf-teil.gf-wahl .gf-band { opacity: .65; }
+  .gf-teil.gf-an .gf-hit { fill: color-mix(in srgb, var(--k) 12%, #fff); }
+  .gf-teil.gf-wahl .gf-hit { fill: color-mix(in srgb, var(--k) 16%, #fff); stroke: color-mix(in srgb, var(--k) 60%, #fff); }
+  .gf-quelle.gf-an .gf-q-flaeche { fill: color-mix(in srgb, var(--k) 10%, #fff); }
+  .gf-quelle.gf-wahl .gf-q-flaeche { fill: color-mix(in srgb, var(--k) 14%, #fff); stroke: color-mix(in srgb, var(--k) 75%, #fff); stroke-width: 2; }
+  .gf-zufluss.gf-an, .gf-zufluss.gf-wahl { stroke: color-mix(in srgb, var(--k) 65%, #fff); }
+  svg.gf-fokus .gf-teil:not(.gf-an), svg.gf-fokus .gf-zufluss:not(.gf-an) { opacity: .35; }
+  .gf-teil:focus-visible .gf-hit, .gf-teil:focus-visible .gf-q-flaeche { stroke: var(--k); stroke-width: 2; }
+
+  /* Detailfeld unter der Grafik */
+  .gf-detail { margin-top: 1rem; background: #fff; border: 1px solid $linie; border-top: 3px solid var(--k, #{$gruen}); border-radius: 8px; padding: .9rem 1.1rem 1rem; transition: border-color .25s;
+    box-shadow: 0 6px 20px -14px rgba(#1a2420, .35); }
+}
+.gf-karte { color: #20352f; font-size: .92rem; line-height: 1.5;
+  .gf-art { display: block; font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #85958d; }
+  .gf-name { display: block; margin-top: .15rem; font-size: 1.2rem; font-weight: 700; line-height: 1.25; }
+  .zahl { display: block; margin-top: .55rem; font-size: 2.1rem; font-weight: 700; line-height: 1.05; color: color-mix(in srgb, var(--k, #{$gruen}) 80%, #20352f); }
+  .zahl-text { display: block; margin: .15rem 0 .5rem; font-size: .82rem; color: #85958d; }
+  p { margin: 0 0 .45rem; } > p:last-child { margin-bottom: 0; }
+  ul { margin: .2rem 0 .7rem; padding: 0; list-style: none; columns: 2 18rem; column-gap: 2rem; }
+  li { padding: .2rem 0; border-bottom: 1px dotted #d6dcd8; break-inside: avoid; }
+  animation: gn-ein .3s ease-out;
+}
+/* ohne Skript: Karten als Liste */
+.gf-karten { display: grid; gap: .8rem; margin: 1rem 0;
+  .gf-karte { background: #fff; border: 1px solid $linie; border-radius: 8px; padding: .8rem 1rem; } }
+@media (prefers-reduced-motion: reduce) { .gf *, .gf-karte { transition: none !important; animation: none !important; } }
+/* Geldfluss breit ab 640 px, darunter die Handy-Fassung */
+.gf .gf-grafik .gf-schmal { display: none; }   /* .gf-grafik nötig: sonst gewinnt „.gf .gf-grafik svg { display: block }“ */
+@media (max-width: 640px) { .gf .gf-grafik .gf-breit { display: none; } .gf .gf-grafik .gf-schmal { display: block; } .gf { padding: 1rem .9rem; } }
+.gf-karte ul { columns: 1; }
