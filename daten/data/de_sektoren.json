@@ -51,7 +51,8 @@
     ]
    },
    "emissionen_2025": 189.1,
-   "lulucf": false
+   "lulucf": false,
+   "budget_mio_t": 193
   },
   {
    "id": "industrie",
@@ -97,7 +98,8 @@
     ]
    },
    "emissionen_2025": 144.1,
-   "lulucf": false
+   "lulucf": false,
+   "budget_mio_t": 74.6
   },
   {
    "id": "gebäude",
@@ -143,7 +145,8 @@
     ]
    },
    "emissionen_2025": 103.4,
-   "lulucf": false
+   "lulucf": false,
+   "budget_mio_t": -110.1
   },
   {
    "id": "verkehr",
@@ -189,7 +192,8 @@
     ]
    },
    "emissionen_2025": 146.3,
-   "lulucf": false
+   "lulucf": false,
+   "budget_mio_t": -186.9
   },
   {
    "id": "landwirtschaft",
@@ -215,7 +219,8 @@
     ]
    },
    "emissionen_2025": 60.8,
-   "lulucf": false
+   "lulucf": false,
+   "budget_mio_t": 16.4
   },
   {
    "id": "abfall",
@@ -233,7 +238,8 @@
     "budget": "Budget 2021–2030 übererfüllt: +17 Mio. t",
     "kurztext": "Der kleinste Sektor des Klimaschutzgesetzes.",
     "instrumente": []
-   }
+   },
+   "budget_mio_t": 17
   },
   {
    "id": "landnutzung-wald-moore-lulucf",
@@ -264,7 +270,8 @@
     ]
    },
    "emissionen_2025": 26.9,
-   "lulucf": true
+   "lulucf": true,
+   "budget_mio_t": null
   }
  ]
 }

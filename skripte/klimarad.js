@@ -1,9 +1,17 @@
 // Klimaschutz-Rad (von Jing gewählt, 22.10.2026, Vorbild: Climate Tech Map von Pentagram).
 // Ring = Sektoren des KSG, Bogenlänge nach Emissionen; Strahlen = Instrumente je Sektor.
 // Daten aus daten/data/de_sektoren.json (dieselbe Datei erzeugt die Sektorkarten darunter).
+// Rad, Budgetleiste und Karte hängen zusammen (Jing, 06.11.2026): Ein Sektor ist immer gewählt; Ring und Leiste wählen,
+// Überfahren zeigt nur vorübergehend. Die Karten .sektoren .sektor wandern ins Detailfeld .kr-detail;
+// ohne Skript bleiben sie als Liste stehen. Das Skript steht in der Seite hinter den Karten.
+// Erkunden (Jing, 06.11.2026, Vorbild: Inner Anatomy): Klick auf einen Sektor im Rad öffnet eine Vollbild-Ansicht –
+// Kopfzeile mit Pfad, Leiste links, großes Rad in der Mitte, Sektorkarte mit Reitern rechts. In der Seite selbst
+// bleibt alles untereinander; die Reiter gibt es nur im Vollbild.
 (function () {
   var fig = document.querySelector("figure.klimarad");
   if (!fig) return;
+  var block = fig.closest(".kr-block") || fig, gross = false, oeffnen = null;
+  var auswahl = document.querySelector(".kr-auswahl"), leiste = auswahl && auswahl.querySelector(".kr-leiste"), detail = auswahl && auswahl.querySelector(".kr-detail");
   var svg = fig.querySelector("svg"), mitte = fig.querySelector(".kr-mitte"), root = fig.dataset.root || "";
   var ns = "http://www.w3.org/2000/svg";
   var C = 450, R1 = 182, R2 = 220, RS = 230, LUECKE = 2;
@@ -22,7 +30,7 @@
   function zahl(x) { return x.toLocaleString("de-DE", { minimumFractionDigits: 1, maximumFractionDigits: 1 }); }
 
   fetch(fig.dataset.quelle).then(function (r) { return r.json(); }).then(function (d) {
-    var SEK = d.sektoren, TYP = d.typen, aktiv = null;
+    var SEK = d.sektoren, TYP = d.typen, aktiv = null, wahl = null;
     [300, 420, 540].forEach(function (r) { el("circle", { cx: C, cy: C, r: r, class: "kr-hilfslinie" }); });
     el("defs", {}).innerHTML = '<pattern id="kr-schraffur" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#4f7d5c"/><line x1="0" y1="0" x2="0" y2="6" stroke="#cfe0d4" stroke-width="2.4"/></pattern>';
     var gF = el("g", { class: "kr-faecher" }), gS = el("g", {}), gR = el("g", {});
@@ -51,13 +59,15 @@
         var tx = el("text", { x: pt[0], y: pt[1], dy: 5, "text-anchor": links ? "end" : "start", transform: "rotate(" + (links ? g + 90 : g - 90) + " " + pt[0] + " " + pt[1] + ")" }, grp);
         tx.textContent = ins[0];
         grp.addEventListener("mouseenter", function () { zeige(s); });
+        grp.addEventListener("mouseleave", function () { zeige(wahl); });
         grp.addEventListener("click", function () { location.href = grp.dataset.href; });
         grp.addEventListener("keydown", function (e) { if (e.key === "Enter") location.href = grp.dataset.href; });
         return grp;
       });
-      s.el.addEventListener("click", function (e) { e.stopPropagation(); zeige(aktiv === s ? null : s); });
+      s.el.addEventListener("click", function (e) { e.stopPropagation(); waehlen(s); if (!gross && oeffnen) oeffnen(); });
       s.el.addEventListener("mouseenter", function () { zeige(s); });
-      s.el.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); zeige(s); } });
+      s.el.addEventListener("mouseleave", function () { zeige(wahl); });
+      s.el.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); waehlen(s); if (!gross && oeffnen) oeffnen(); } });
     });
 
     function legende() {
@@ -79,37 +89,138 @@
         return;
       }
       var r = s.rad;
-      mitte.innerHTML = '<div class="kr-titel">' + s.name + '</div><div class="kr-zahl" style="color:' + r.farbe + '">' + r.zahl + '</div><div class="kr-klein">' + r.klein + '</div><span class="status-chip ' + s.status + '">' + r.budget + '</span><p class="kr-text">' + r.kurztext + "</p>" + (s.nur_beleg ? "" : '<a href="#' + s.id + '">Zur Sektorkarte ↓</a>');
+      mitte.innerHTML = '<div class="kr-titel">' + s.name + '</div><div class="kr-zahl" style="color:' + r.farbe + '">' + r.zahl + '</div><div class="kr-klein">' + r.klein + '</div><span class="status-chip ' + s.status + '">' + r.budget + '</span>' + legende();
+      SEK.forEach(function (x) { if (x.zeile) x.zeile.classList.toggle("kr-vorschau", x === s && x !== wahl); });
     }
-    svg.addEventListener("dblclick", function () { zeige(null); });
-    svg.addEventListener("click", function (e) { if (e.target === svg) zeige(null); });
-    zeige(null);
-    vollbild();
+
+    // Budgetleiste: je Sektor ein Balken um die Nulllinie, links verfehlt, rechts übererfüllt
+    var max = Math.max.apply(null, SEK.map(function (x) { return Math.abs(x.budget_mio_t || 0); }));
+    leiste.innerHTML = '<div class="kr-leiste-kopf"><span>Budget 2021–2030 nach KSG</span><span class="kr-achse"><i>← verfehlt</i><i>übererfüllt →</i></span><span></span></div>';
+    SEK.forEach(function (s) {
+      var b = s.budget_mio_t, z = document.createElement("button");
+      z.type = "button"; z.className = "kr-zeile" + (b == null ? " kr-ohne-budget" : ""); z.style.setProperty("--s", s.rad.farbe);
+      var balken = b == null
+        ? '<span class="kr-ohne">kein Budget</span>'
+        : '<span class="kr-balken ' + (b < 0 ? "minus" : "plus") + '" style="width:' + (Math.abs(b) / max * 50) + '%"></span>';
+      var wert = b == null ? "Ziel 2030 verfehlt" : (b > 0 ? "+" : "−") + Math.abs(b).toLocaleString("de-DE", { maximumFractionDigits: 1 }) + " Mio. t";
+      z.innerHTML = '<span class="kr-zname">' + (s.rad.kurz || "Abfall") + '</span><span class="kr-spur">' + balken + '</span><span class="kr-wert">' + wert + "</span>";
+      z.setAttribute("aria-label", s.name + ": " + s.rad.budget);
+      z.addEventListener("click", function () { waehlen(s); });
+      z.addEventListener("mouseenter", function () { zeige(s); });
+      z.addEventListener("mouseleave", function () { zeige(wahl); });
+      leiste.appendChild(z); s.zeile = z;
+    });
+
+    // Karten ins Detailfeld holen; Abfall hat keine eigene Karte, sondern seinen Beleg
+    SEK.forEach(function (s) {
+      var k = document.getElementById(s.id);
+      if (!k && s.nur_beleg) {
+        k = document.createElement("section"); k.className = "sektor";
+        k.innerHTML = "<h3>" + s.name + '</h3><p><span class="werte">2025: <strong>' + s.rad.zahl + '</strong></span> <span class="status-chip ' + s.status + '">' + s.rad.budget.replace("Budget 2021–2030 ", "") + "</span></p><p>" + s.rad.kurztext + "</p>";
+      }
+      if (!k) return;
+      s.karte = k; k.hidden = true; detail.appendChild(k);
+      // Teile der Karte für die Reiter im Vollbild: Kopfzeile mit Werten, Überblick, Maßnahmen, Instrumente
+      k.querySelectorAll(":scope > p").forEach(function (p) {
+        var st = p.querySelector(":scope > strong:first-child");
+        p.dataset.teil = p.querySelector(".werte") ? "kopf" : st && /^Maßnahmen/.test(st.textContent) && p.firstChild === st ? "massnahmen" : "ueberblick";
+      });
+      var ins = document.createElement("ul"); ins.className = "kr-instrumente";
+      ins.innerHTML = s.rad.instrumente.map(function (i) {
+        return '<li class="kr-typ-' + i[1] + '"><a href="' + link(i[2]) + '">' + i[0] + "</a> <small>" + TYP[i[1]] + "</small></li>";
+      }).join("");
+      ins.dataset.teil = "instrumente";
+      if (s.rad.instrumente.length) k.appendChild(ins);
+    });
+    var liste = document.querySelector(".sektoren"); if (liste && !liste.children.length) liste.hidden = true;
+
+    var kicker = document.createElement("div"); kicker.className = "kr-kicker";
+    var reiter = document.createElement("div"); reiter.className = "kr-reiter"; reiter.setAttribute("role", "tablist");
+    var REITER = [["ueberblick", "Überblick"], ["massnahmen", "Maßnahmen"], ["instrumente", "Instrumente"]], teil = "ueberblick";
+    REITER.forEach(function (x) {
+      var b = document.createElement("button"); b.type = "button"; b.setAttribute("role", "tab"); b.dataset.teil = x[0];
+      b.innerHTML = x[1] + " <small></small>";
+      b.addEventListener("click", function () { reiten(x[0]); });
+      reiter.appendChild(b);
+    });
+    var blaettern = document.createElement("div"); blaettern.className = "kr-blaettern";
+    blaettern.innerHTML = '<button type="button" class="kr-zurueck"></button><button type="button" class="kr-weiter"></button>';
+    detail.appendChild(blaettern);
+    var reihe = SEK.filter(function (x) { return x.karte; });
+    function nachbar(n) { return reihe[(reihe.indexOf(wahl) + n + reihe.length) % reihe.length]; }
+    blaettern.querySelector(".kr-zurueck").addEventListener("click", function () { waehlen(nachbar(-1)); });
+    blaettern.querySelector(".kr-weiter").addEventListener("click", function () { waehlen(nachbar(1)); });
+
+    var kopf = document.createElement("div"); kopf.className = "kr-kopf";
+    kopf.innerHTML = '<nav class="kr-pfad" aria-label="Pfad"><span>Deutschland</span><i>›</i><span>Sektoren</span><i>›</i><b></b></nav>' + legende() + '<button type="button" class="kr-schliessen" aria-label="Schließen">✕</button>';
+    block.insertBefore(kopf, block.firstChild);
+
+    function reiten(x) {
+      teil = x; detail.dataset.teil = x;
+      reiter.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-selected", b.dataset.teil === x ? "true" : "false"); });
+    }
+    reiten("ueberblick");
+    auswahl.hidden = false;
+
+    function waehlen(s) {
+      wahl = s;
+      SEK.forEach(function (x) {
+        if (x.karte) x.karte.hidden = x !== s;
+        if (x.zeile) { x.zeile.setAttribute("aria-pressed", x === s ? "true" : "false"); }
+      });
+      detail.style.setProperty("--s", s.rad.farbe); block.style.setProperty("--s", s.rad.farbe);
+      // Kicker: Anteil an den Emissionen (Landnutzung als Netto-Quelle getrennt)
+      kicker.textContent = s.lulucf ? "Sektor · Netto-Quelle " + s.rad.zahl : "Sektor · " + Math.round(s.emissionen_2025 / ohneLulucf * 100) + " % der Emissionen " + d.emissionen_jahr;
+      kopf.querySelector("b").textContent = s.name;
+      // Kicker über den Titel, Reiter unter die Kopfzeile der gewählten Karte
+      if (s.karte) {
+        var kz = s.karte.querySelector('[data-teil="kopf"]') || s.karte.querySelector("h3");
+        s.karte.insertBefore(kicker, s.karte.firstChild);
+        s.karte.insertBefore(reiter, kz ? kz.nextSibling : null);
+      }
+      // Reiter ohne Inhalt ausblenden, Zahl der Instrumente anzeigen
+      var leer = {};
+      REITER.forEach(function (x) {
+        var b = reiter.querySelector('[data-teil="' + x[0] + '"]'), n = s.karte ? s.karte.querySelectorAll(':scope > [data-teil="' + x[0] + '"]').length : 0;
+        leer[x[0]] = !n; b.hidden = !n;
+        b.querySelector("small").textContent = x[0] === "instrumente" && n ? s.rad.instrumente.length : "";
+      });
+      if (leer[teil]) reiten("ueberblick");
+      if (reihe) {
+        blaettern.querySelector(".kr-zurueck").textContent = "‹ " + nachbar(-1).name;
+        blaettern.querySelector(".kr-weiter").textContent = nachbar(1).name + " ›";
+      }
+      zeige(s);
+    }
+    waehlen(SEK[0]);
+    oeffnen = vollbild();
+    kopf.querySelector(".kr-schliessen").addEventListener("click", function () { oeffnen.aus(); });
   }).catch(function () { fig.style.display = "none"; });
 
   // Vollbild (Jing, 03.11.2026): Knopf oben rechts; echte Vollbild-Ansicht, wo der Browser sie kann,
   // sonst eine Ebene über der Seite. Esc oder der Knopf schließt; ein Link im Rad schließt ebenfalls.
+  // Seit 06.11.2026 geht der ganze Block (Rad, Leiste, Karte) ins Vollbild; Rückgabe: an() mit an/aus.
   function vollbild() {
     var knopf = document.createElement("button");
     knopf.type = "button"; knopf.className = "kr-vollbild";
+    knopf.innerHTML = "<span aria-hidden='true'>⤢</span> Erkunden";
     fig.insertBefore(knopf, fig.firstChild);
-    function beschriften() {
-      var an = fig.classList.contains("kr-gross");
-      knopf.innerHTML = an ? "<span aria-hidden='true'>✕</span> Schließen" : "<span aria-hidden='true'>⤢</span> Vollbild";
-      knopf.setAttribute("aria-pressed", an ? "true" : "false");
-    }
     function an() {
-      fig.classList.add("kr-gross"); document.documentElement.classList.add("kr-offen"); beschriften();
-      if (fig.requestFullscreen) fig.requestFullscreen().catch(function () {});
+      if (gross) return;
+      gross = true; block.classList.add("kr-gross"); document.documentElement.classList.add("kr-offen");
+      if (block.requestFullscreen) block.requestFullscreen().catch(function () {});
     }
     function aus() {
-      fig.classList.remove("kr-gross"); document.documentElement.classList.remove("kr-offen"); beschriften();
-      if (document.fullscreenElement === fig && document.exitFullscreen) document.exitFullscreen().catch(function () {});
+      if (!gross) return;
+      gross = false; block.classList.remove("kr-gross"); document.documentElement.classList.remove("kr-offen");
+      if (document.fullscreenElement === block && document.exitFullscreen) document.exitFullscreen().catch(function () {});
+      block.scrollIntoView({ block: "start" });
     }
-    knopf.addEventListener("click", function () { fig.classList.contains("kr-gross") ? aus() : an(); });
-    document.addEventListener("fullscreenchange", function () { if (!document.fullscreenElement && fig.classList.contains("kr-gross")) aus(); });
-    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && fig.classList.contains("kr-gross")) aus(); });
-    fig.addEventListener("click", function (e) { if (e.target.closest("a") && fig.classList.contains("kr-gross")) aus(); });
-    beschriften();
+    an.aus = aus;
+    knopf.addEventListener("click", an);
+    document.addEventListener("fullscreenchange", function () { if (!document.fullscreenElement && gross) aus(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && gross) aus(); });
+    block.addEventListener("click", function (e) { if (e.target.closest("a") && gross) aus(); });
+    return an;
   }
 })();

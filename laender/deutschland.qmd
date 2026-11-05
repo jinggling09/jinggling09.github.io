@@ -694,24 +694,33 @@ Nationaler CO₂-Preis auf Heiz- und Kraftstoffe seit 2021: 25 € (2021) bis 55
 
 Grundlage sind die Emissionen 2025 und die UBA-Projektionen 2026. „Budget 2021–2030" zeigt, ob ein Sektor in der Summe dieser Jahre unter (**übererfüllt**) oder über (**verfehlt**) seinen erlaubten Mengen nach KSG liegt [@uba_projektion_2026]. Die Maßnahmen stammen aus dem Klimaschutzprogramm 2026 [@bmukn_ksp_2026].
 
-**Welches Instrument wirkt wo?** Der Ring zeigt die Sektoren, jeweils so groß wie ihr Anteil an den Emissionen 2025; die Strahlen sind die Instrumente, die dort wirken. Sektor antippen für Zahlen, Instrument anklicken für die Erklärseite. Details stehen in den Karten darunter.
+**Welches Instrument wirkt wo?** Der Ring zeigt die Sektoren, jeweils so groß wie ihr Anteil an den Emissionen 2025; die Strahlen sind die Instrumente, die dort wirken. Die Leiste zeigt, wie jeder Sektor beim Budget bis 2030 dasteht. Ein Klick auf einen Sektor im Ring öffnet ihn groß mit Karte und Instrumenten; in der Leiste gewählt, erscheint seine Karte darunter.
 
 ```{=html}
-<figure class="klimarad" id="klimarad" data-quelle="../daten/data/de_sektoren.json" data-root="../">
+<div class="kr-block"><div class="kr-innen">
+<figure class="klimarad" id="klimarad" data-quelle="../daten/data/de_sektoren.json?v=2" data-root="../">
   <div class="kr-rad">
     <svg viewBox="-130 -130 1160 1160" role="group" aria-label="Klimaschutz-Rad: Sektoren und Instrumente in Deutschland"></svg>
     <div class="kr-mitte" aria-live="polite"></div>
   </div>
-  <div class="kr-hinweis">Sektor antippen · Doppelklick ins Leere zeigt wieder alles</div>
+  <div class="kr-hinweis">Sektor anklicken öffnet die Erkundungsansicht · Instrument führt zur Erklärseite</div>
 </figure>
-<script src="../skripte/klimarad.js?v=2"></script>
+<div class="kr-auswahl" hidden>
+  <div class="kr-leiste" role="group" aria-label="Budget 2021–2030 je Sektor"></div>
+  <div class="kr-detail" aria-live="polite"></div>
+</div>
+</div></div>
 ```
 
 ::: {.belege .kr-belege}
-Ringgröße nach Emissionen 2025 [@uba_projektion_2026], Instrumente nach dem Klimaschutzprogramm 2026 [@bmukn_ksp_2026] und den verlinkten Seiten; Summe ohne Landnutzung eigene Rechnung. Auf schmalen Bildschirmen ist das Rad ausgeblendet – die Karten zeigen dieselben Angaben.
+Ringgröße nach Emissionen 2025 [@uba_projektion_2026], Instrumente nach dem Klimaschutzprogramm 2026 [@bmukn_ksp_2026] und den verlinkten Seiten; Summe ohne Landnutzung eigene Rechnung. Budgetstand 2021–2030 nach UBA-Projektion. Auf schmalen Bildschirmen ist das Rad ausgeblendet; Leiste und Karten zeigen dieselben Angaben.
 :::
 
 {{< include ../daten/data/_sektoren_de.md >}}
+
+```{=html}
+<script src="../skripte/klimarad.js?v=6"></script>
+```
 
 ## Einordnung
 

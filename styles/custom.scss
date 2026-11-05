@@ -1679,12 +1679,6 @@ html.kr-offen { overflow: hidden; } /* Seite steht still, solange das Klimaschut
 figure.klimarad { margin: 1rem 0 .4rem; position: relative;
   .kr-vollbild { position: absolute; right: 0; top: 0; z-index: 3; display: inline-flex; align-items: center; gap: .35rem; padding: .35rem .8rem; border: 1.5px solid $gruen; border-radius: 99px; background: #fff; color: $gruen; font-size: .85rem; font-weight: 600; cursor: pointer; transition: background .15s, color .15s;
     &:hover, &:focus-visible { background: $gruen; color: #fff; } }
-  /* Vollbild (skripte/klimarad.js): Rad so groß, wie das Fenster hoch ist */
-  &.kr-gross { position: fixed; inset: 0; z-index: 2000; margin: 0; background: #fcfcfa; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.2rem; overflow: auto;
-    .kr-rad { width: min(100%, calc(100vh - 5.5rem)); }
-    .kr-vollbild { position: fixed; right: 1.2rem; top: 1.2rem; }
-    .kr-hinweis { margin-top: .4rem; } }
-  &:fullscreen { background: #fcfcfa; }
   .kr-rad { position: relative; container-type: inline-size; }
   svg { width: 100%; height: auto; display: block; overflow: visible; }
   .kr-hilfslinie { fill: none; stroke: #e6ebe7; stroke-dasharray: 2 5; }
@@ -1709,7 +1703,94 @@ figure.klimarad { margin: 1rem 0 .4rem; position: relative;
   .kr-hinweis { font-family: $hand; font-weight: 700; font-size: 1.2rem; color: $gruen; text-align: center; margin-top: -.6rem; }
   @media (max-width: 640px) { display: none; }
 }
-.kr-belege { @media (max-width: 640px) { display: none; } }
+/* Erkunden: Vollbild-Ansicht des ganzen Blocks (Jing, 06.11.2026, Vorbild Inner Anatomy).
+   Kopfzeile mit Pfad oben, Budgetleiste links unten, Rad in der Mitte, Sektorkarte mit Reitern rechts. */
+.kr-kopf, .kr-kicker, .kr-reiter, .kr-blaettern { display: none; }
+.kr-block.kr-gross { position: fixed; inset: 0; z-index: 2000; margin: 0; overflow: hidden;
+  background: radial-gradient(circle at 46% 55%, #fff 0, #f6f7f3 45%, #eceee8 100%);
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(340px, 410px); grid-template-rows: auto minmax(0, 1fr) auto; gap: 1rem; padding: 1rem 1.2rem 1.2rem;
+  .kr-innen, .kr-auswahl { display: contents; }
+  .kr-kopf { grid-column: 1 / -1; display: flex; align-items: center; gap: 1rem; }
+  .kr-pfad { display: flex; align-items: center; gap: .55rem; padding: .45rem 1rem; background: #fff; border: 1px solid $linie; border-radius: 99px; box-shadow: 0 2px 10px rgba(30, 45, 38, .06); font-size: .92rem; color: $grau;
+    i { font-style: normal; color: #b9c4be; }
+    b { display: inline-flex; align-items: center; gap: .4rem; color: $tinte; padding: .1rem .7rem; border-radius: 99px; background: color-mix(in srgb, var(--s) 14%, #fff);
+      &::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: var(--s); } } }
+  .kr-legende { display: flex; gap: .9rem; font-size: .82rem; color: $grau; margin-left: auto;
+    span { display: inline-flex; align-items: center; gap: .3rem; } svg { fill: #1d2a24; color: #1d2a24; } }
+  .kr-schliessen { width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 1px solid $linie; background: #fff; font-size: 1rem; cursor: pointer; color: $tinte;
+    &:hover, &:focus-visible { background: $tinte; color: #fff; } }
+
+  figure.klimarad { grid-column: 1; grid-row: 2 / 4; margin: 0; min-height: 0; display: flex; align-items: center; justify-content: center;
+    .kr-rad { width: min(100%, calc(100vh - 5rem)); }
+    .kr-vollbild, .kr-hinweis, .kr-mitte .kr-legende { display: none; }
+    .kr-strahl text { font-size: 21px; }
+    .kr-name { font-size: 15px; } }
+
+  .kr-leiste { grid-column: 2; grid-row: 3; background: #fff; border: 1px solid $linie; border-radius: 14px; padding: .9rem .7rem .7rem; box-shadow: 0 6px 24px rgba(30, 45, 38, .08); }
+
+  .kr-detail { grid-column: 2; grid-row: 2; align-self: stretch; min-height: 0; display: flex; flex-direction: column; border: 1px solid $linie; border-top: 0; border-radius: 16px; box-shadow: 0 10px 34px rgba(30, 45, 38, .10); overflow: hidden;
+    &::before { content: ""; flex: none; height: 4px; background: var(--s); }
+    .kr-kicker { display: flex; align-items: center; gap: .45rem; padding: 1rem 0 0; font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: color-mix(in srgb, var(--s) 80%, #000);
+      &::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: var(--s); } }
+    .sektor { flex: 1; min-height: 0; overflow-y: auto; padding: 0 1.4rem 1rem; font-size: .98rem;
+      h3 { font-size: 1.9rem; line-height: 1.1; margin: .35rem 0 .5rem; color: $tinte; }
+      [data-teil="kopf"] { margin-bottom: .2rem; } }
+    .kr-reiter { display: flex; gap: 1.2rem; border-bottom: 1px solid $linie; margin-top: .6rem;
+      button { border: 0; background: none; padding: .55rem 0; font-size: .92rem; color: $grau; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px;
+        small { color: #9aa39e; }
+        &[aria-selected="true"] { color: $tinte; font-weight: 700; border-bottom-color: var(--s); }
+        &:hover { color: $tinte; } } }
+    .kr-blaettern { display: flex; justify-content: space-between; gap: .5rem; padding: .7rem 1.4rem; border-top: 1px solid $linie; background: #fafbf8;
+      button { border: 0; background: none; color: $gruen; font-weight: 600; font-size: .88rem; cursor: pointer; padding: .2rem 0; &:hover { text-decoration: underline; } } }
+    .kr-instrumente { flex-direction: column; border-top: 0; gap: .5rem; padding-top: .8rem;
+      li { border-radius: 10px; padding: .55rem .8rem; font-size: .95rem; justify-content: space-between; } }
+  }
+  /* Reiter: nur der gewählte Teil der Karte ist sichtbar */
+  .kr-detail:not([data-teil="ueberblick"]) .sektor > [data-teil="ueberblick"],
+  .kr-detail:not([data-teil="massnahmen"]) .sektor > [data-teil="massnahmen"],
+  .kr-detail:not([data-teil="instrumente"]) .sektor > [data-teil="instrumente"] { display: none; }
+  .kr-detail .sektor > [data-teil="ueberblick"], .kr-detail .sektor > [data-teil="massnahmen"] { margin-top: .9rem; line-height: 1.65; }
+
+  /* schmalere Fenster: alles untereinander, Ansicht scrollt */
+  @media (max-width: 1000px) { overflow-y: auto; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto;
+    figure.klimarad, .kr-leiste, .kr-detail { grid-column: 1; grid-row: auto; }
+    .kr-detail { min-height: 70vh; }
+    .kr-legende { display: none; } }
+}
+
+/* Budgetleiste und Sektorkarte unter dem Rad (Jing, 06.11.2026): gewählter Sektor in Ring, Leiste und Karte gleich */
+.kr-auswahl { scroll-margin-top: 5.5rem; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 1.2rem; align-items: start; margin: .2rem 0 1rem;
+  @media (max-width: 760px) { grid-template-columns: 1fr; }
+  &[hidden] { display: none; } }
+.kr-leiste { display: flex; flex-direction: column; gap: 2px; font-size: .85rem;
+  .kr-leiste-kopf, .kr-zeile { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr) 5.6rem; align-items: center; gap: .5rem; }
+  .kr-leiste-kopf { font-size: .74rem; color: $grau; margin-bottom: .25rem;
+    > span:first-child { grid-column: 1 / -1; font-weight: 700; color: $tinte; font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; }
+    .kr-achse { grid-column: 2; display: flex; justify-content: space-between; gap: .3rem; i { font-style: normal; white-space: nowrap; } } }
+  @media (max-width: 480px) { .kr-leiste-kopf, .kr-zeile { grid-template-columns: 4.3rem minmax(0, 1fr) 4.9rem; gap: .35rem; } .kr-wert { font-size: .74rem; } }
+  .kr-zeile { width: 100%; padding: .32rem .4rem; border: 0; border-radius: 6px; background: none; text-align: left; cursor: pointer; color: $tinte; transition: background .15s;
+    &:hover, &.kr-vorschau { background: color-mix(in srgb, var(--s) 10%, #fff); }
+    &[aria-pressed="true"] { background: color-mix(in srgb, var(--s) 18%, #fff); box-shadow: inset 3px 0 0 var(--s); .kr-zname { font-weight: 700; } }
+    &:focus-visible { outline: 2px solid var(--s); outline-offset: 1px; } }
+  .kr-zname { display: flex; align-items: center; gap: .35rem; white-space: nowrap;
+    &::before { content: ""; flex: none; width: .6rem; height: .6rem; border-radius: 2px; background: var(--s); } }
+  .kr-spur { position: relative; height: .8rem;
+    &::before { content: ""; position: absolute; left: 50%; top: -.2rem; bottom: -.2rem; border-left: 1px solid #9aa39e; } }
+  .kr-balken { position: absolute; top: 0; bottom: 0; border-radius: 2px;
+    &.plus { left: 50%; background: #4f8a6a; }
+    &.minus { right: 50%; background: #b5604f; } }
+  .kr-ohne-budget .kr-spur::before { display: none; }
+  .kr-ohne { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: .72rem; color: $grau; font-style: italic; }
+  .kr-wert { text-align: right; font-variant-numeric: tabular-nums; font-size: .8rem; white-space: nowrap; }
+}
+.kr-detail { background: #fff; border: 1px solid $linie; border-top: 3px solid var(--s, #{$gruen}); border-radius: 8px; transition: border-color .25s;
+  .sektor { border: 0; background: none; padding: .9rem 1.1rem .5rem; }
+  .sektor h3 { color: var(--s); }
+  .kr-instrumente { list-style: none; padding: .55rem 0 0; margin: .3rem 0 .4rem; border-top: 1px solid $linie; display: flex; flex-wrap: wrap; gap: .35rem;
+    li { display: inline-flex; align-items: baseline; gap: .3rem; padding: .15rem .55rem; border-radius: 99px; background: color-mix(in srgb, var(--s) 9%, #fff); font-size: .82rem; }
+    a { text-decoration: none; font-weight: 600; color: $tinte; &:hover { text-decoration: underline; } }
+    small { color: $grau; font-size: .72rem; } }
+}
 
 /* Länderprofile: Umschalter EU · Deutschland · China über dem Titel */
 nav.laender-wahl { display: inline-flex; gap: .25rem; padding: .25rem; margin: .4rem 0 1rem; background: #fff; border: 1px solid $linie; border-radius: 99px; font-size: .92rem;
