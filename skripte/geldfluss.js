@@ -1,4 +1,4 @@
-// Geldfluss des KTF (Jing, 05.11.2026): Quellen → Fonds → Verwendungen, laender/deutschland.qmd.
+// Geldfluss (Jing, 05.11.2026): Quellen → Fonds → Verwendungen, laender/deutschland.qmd; seit 09.11.2026 auch laender/eu.qmd.
 // SVG-Teile mit data-k (Quellen, Bänder der Verwendungen, Zuflüsse) und Karten .gf-karten .gf-karte[data-k].
 // Überfahren hebt einen Teil hervor, Klick wählt ihn und zeigt seine Karte im Detailfeld;
 // ohne Skript bleiben alle Karten als Liste unter der Grafik stehen.
@@ -40,5 +40,5 @@
     t.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); waehlen(k); } });
   });
 
-  waehlen("energie");
+  waehlen(box.dataset.start || karten[0].dataset.k);   // Deutschland: "energie" über data-start
 })();

@@ -1,0 +1,74 @@
+<!-- alte Fassung Klimafinanzierung EU (bis 09.11.2026), nicht gerendert -->
+## Klimafinanzierung: Woher kommt das Geld, wohin fließt es? {#klimafinanzierung}
+
+### Woher kommt das Geld?
+
+| Quelle | Umfang | Verwendung |
+|---|---|---|
+| **EU-Emissionshandel** (Auktionserlöse) | **38,8 Mrd. €** im Jahr 2024, davon 24,4 Mrd. € direkt an die Mitgliedstaaten [@ec_cmr_2025] | Mitgliedstaaten müssen sie für Klimaschutz und Energiewende einsetzen; der Rest fließt in EU-Fonds |
+| **Innovationsfonds** | rund **40 Mrd. €** von 2020 bis 2030, finanziert aus dem Emissionshandel [@consilium_finanzierung] | emissionsarme Technologien in Industrie und Energie |
+| **Modernisierungsfonds** | gespeist aus einem Anteil der ETS-Zertifikate [@consilium_finanzierung] | Energiesysteme in Mitgliedstaaten mit geringerem Einkommen |
+| **Klima-Sozialfonds** (ab 2026) | bis zu 65 Mrd. € EU-Mittel, mit nationaler Kofinanzierung mindestens **86,7 Mrd. €**; wegen des ETS-2-Starts erst 2028 sinkt die Obergrenze auf 54,6 Mrd. € [@eu_scf; @eu_scf_leitfaden] | Entlastung von Haushalten und Kleinunternehmen beim CO₂-Preis auf Heizen und Verkehr |
+| **EU-Haushalt 2021–2027** | **662 Mrd. €** für Klimaziele vorgesehen [@ec_capr_news_2025] | Querschnitt über alle Programme |
+
+: {tbl-colwidths="[24,44,32]"}
+
+### Wohin fließt das Geld?
+
+Der größte Teil der ETS-Einnahmen geht an die Mitgliedstaaten: 2024 waren es 24,4 Mrd. €. Davon nutzten sie 3,2 Mrd. € als Strompreiskompensation für energieintensive Unternehmen; die übrigen 21,2 Mrd. € müssen in Klimaschutz und Energiewende fließen, aber nicht im selben Jahr [@ec_progress_2025_ets].
+
+::: {.balken-vergleich .breit}
+
+[Verwendung der ETS-Einnahmen der Mitgliedstaaten 2024, Anteil]{.bv-titel}
+
+`<div class="bv-zeile eu"><span class="bv-land">Öffentlicher Verkehr, Mobilität</span><span class="bv-spur"><span style="width:100.0%"></span></span><span class="bv-wert">22 %</span></div><div class="bv-zeile eu"><span class="bv-land">Erneuerbare, Netze, Speicher</span><span class="bv-spur"><span style="width:90.9%"></span></span><span class="bv-wert">20 %</span></div><div class="bv-zeile eu"><span class="bv-land">Energieeffizienz Industrie, Gebäude</span><span class="bv-spur"><span style="width:90.9%"></span></span><span class="bv-wert">20 %</span></div><div class="bv-zeile eu"><span class="bv-land">Strompreiskompensation</span><span class="bv-spur"><span style="width:59.5%"></span></span><span class="bv-wert">13 %</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Belege** · Anteile laut Fortschrittsbericht der Kommission; die übrigen rund 25 % verteilen sich auf weitere Zwecke oder waren noch nicht ausgegeben – 2024 wurden 16,4 Mrd. € als ausgezahlt gemeldet [@ec_progress_2025_ets]. Strompreiskompensation: 3,2 von 24,4 Mrd. €, eigene Rechnung.
+:::
+
+Dazu kommt der Corona-Wiederaufbaufonds, die **Aufbau- und Resilienzfazilität**: Jeder Mitgliedstaat muss mindestens 37 % seines Aufbauplans für Klimaziele einsetzen [@ec_rrf_green]. So verteilen sich diese Klimaausgaben:
+
+::: {.balken-vergleich .breit}
+
+[Aufbau- und Resilienzfazilität: Klimaausgaben nach Bereich, Anteil]{.bv-titel}
+
+`<div class="bv-zeile eu"><span class="bv-land">Nachhaltige Mobilität</span><span class="bv-spur"><span style="width:100%"></span></span><span class="bv-wert">30 %</span></div><div class="bv-zeile eu"><span class="bv-land">Energieeffizienz</span><span class="bv-spur"><span style="width:94.7%"></span></span><span class="bv-wert">29 %</span></div><div class="bv-zeile eu"><span class="bv-land">Erneuerbare und Netze</span><span class="bv-spur"><span style="width:75.5%"></span></span><span class="bv-wert">23 %</span></div><div class="bv-zeile eu"><span class="bv-land">Grüne Forschung und Innovation</span><span class="bv-spur"><span style="width:23.2%"></span></span><span class="bv-wert">7 %</span></div><div class="bv-zeile eu"><span class="bv-land">Anpassung an den Klimawandel</span><span class="bv-spur"><span style="width:11.6%"></span></span><span class="bv-wert">4 %</span></div><div class="bv-zeile eu"><span class="bv-land">übrige Bereiche</span><span class="bv-spur"><span style="width:26.2%"></span></span><span class="bv-wert">8 %</span></div>`{=html}
+
+:::
+
+::: {.belege}
+**Belege** · Klimaausgaben der Aufbaupläne nach Politikbereich, Scoreboard der Kommission, Stand 21.10.2026 [@ec_rrf_green]: Mobilität 30,2 %, Effizienz 28,6 %, Erneuerbare und Netze 22,8 %, Forschung 7,0 %, Anpassung 3,5 %; übrige (Kreislaufwirtschaft, Wasser, sonstiger Klimaschutz, Biodiversität, Schadstoffe, grüne Qualifikationen) zusammen 7,9 %. Maßnahmen zählen je nach Klimawirkung zu 100 %, 40 % oder 0 %.
+:::
+
+::: {.sektoren}
+
+::: {.sektor}
+### Wasserstoff: Wasserstoffbank
+[2026: 1,09 Mrd. € für 9 Projekte]{.werte}
+
+Die dritte Auktion der Europäischen Wasserstoffbank fördert die Erzeugung von erneuerbarem Wasserstoff, bezahlt aus ETS-Einnahmen über den Innovationsfonds [@ec_ehb3_2026].
+:::
+
+::: {.sektor}
+### Technik: Innovationsfonds
+[rund 40 Mrd. € von 2020 bis 2030]{.werte}
+
+Fördert emissionsarme Technologien in Industrie und Energie, finanziert aus dem Emissionshandel [@consilium_finanzierung].
+:::
+
+::: {.sektor}
+### Haushalte: Klima-Sozialfonds
+[mindestens 86,7 Mrd. € mit nationaler Kofinanzierung]{.werte}
+
+Entlastet Haushalte und Kleinunternehmen beim CO₂-Preis auf Heizen und Verkehr; wegen des ETS-2-Starts erst 2028 sinkt die Obergrenze der EU-Mittel auf 54,6 Mrd. € [@eu_scf; @eu_scf_leitfaden].
+:::
+
+:::
+
+::: {.einordnung}
+**Einordnung.** Die EU verteilt das Geld vor allem über die Mitgliedstaaten; deren Schwerpunkte – Verkehr, erneuerbare Energien, Effizienz – liegen gleichauf. Wie in Deutschland geht ein spürbarer Teil in die Entlastung energieintensiver Unternehmen bei den Strompreisen.
+:::
+

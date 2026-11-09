@@ -169,7 +169,7 @@ Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 
 :::
 
 ```{=html}
-<script src="../skripte/zielpfad.js?v=2"></script>
+<script src="../skripte/zielpfad.js?v=4"></script>
 ```
 
 ## Governance: Wer macht was?
@@ -349,7 +349,7 @@ Fast alles Geld für Klimaschutz läuft über einen Topf: den **Klima- und Trans
 **Der größte Block senkt Energiepreise, statt neue Anlagen zu bauen:** rund 40 % der großen Titel. In den Umbau – Gebäude, Industrie, Wasserstoff, Verkehr – fließen rund 54 %.
 
 ```{=html}
-<div class="gf" id="geldfluss" role="region" aria-label="Geldfluss des Klima- und Transformationsfonds">
+<div class="gf" id="geldfluss" data-start="energie" role="region" aria-label="Geldfluss des Klima- und Transformationsfonds">
 <div class="gf-kopfzeile"><div><span class="gn-kicker">Klimafinanzierung</span><span class="gf-titel">Der Weg des Geldes durch den KTF</span></div><span class="gf-tipp">Quelle oder Verwendung anklicken</span></div>
 <div class="gf-grafik">
 <svg class="gf-breit" viewBox="0 0 900 544" role="group" aria-label="Geldfluss des Klima- und Transformationsfonds 2026: Quellen, Fonds, Verwendungen">
@@ -512,7 +512,7 @@ Einer der 15 größten Ausgabetitel des KTF 2026 [@wd_ktf_2026].
 **Belege** · Soll-Ansätze 2026 nach der Titelübersicht der Wissenschaftlichen Dienste [@wd_ktf_2026], eigene Zusammenfassung der 15 größten Titel in sieben Bereiche. Anteile an den 35,2 Mrd. €: Strom- und Energiekosten 40 %, Gebäude 34 %, Industrie und Wasserstoff 14 %, Verkehr 6 %, übrige 6 %. Die drei Gesamtsummen (34,8 / 37,4 / 35,2 Mrd. €) sind unterschiedlich abgegrenzt; die Anteile beziehen sich deshalb nur auf die 15 Titel. Die Quellen links sind nicht maßstäblich: CO₂-Erlöse von 2025, Sondervermögen über mehrere Jahre, Klimaschutzprogramm für 2027–2030.
 :::
 
-<script src="../skripte/geldfluss.js?v=1"></script>
+<script src="../skripte/geldfluss.js?v=2"></script>
 
 ## Rechtsrahmen: die wichtigsten Gesetze
 

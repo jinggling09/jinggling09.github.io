@@ -1949,6 +1949,17 @@ figure.esgrad { margin: 1rem 0 .6rem;
   [data-k="energie"] { --k: #b0884a; } [data-k="gebaeude"] { --k: #c77b5a; } [data-k="industrie"] { --k: #81749e; }
   [data-k="verkehr"] { --k: #6689aa; } [data-k="natur"] { --k: #6d9b86; } [data-k="international"] { --k: #5f9aa8; }
   [data-k="forschung"] { --k: #8a9b5e; }
+  /* EU (laender/eu.qmd) */
+  [data-k="ets"] { --k: #3c5a8a; } [data-k="ms"] { --k: #5d7896; } [data-k="eufonds"] { --k: #24634f; }
+  [data-k="erneuerbar"] { --k: #6d9b86; } [data-k="effizienz"] { --k: #c77b5a; } [data-k="kompensation"] { --k: #b0884a; }
+  [data-k="offen"] { --k: #9aa39e; } [data-k="fonds"] { --k: #24634f; } [data-k="scf"] { --k: #9a7e9e; }
+  [data-k="rrf"] { --k: #5f9aa8; } [data-k="haushalt"] { --k: #8a958f; }
+  .gf-stark .gf-ktf-flaeche { fill: var(--k); transition: filter .2s; }
+  .gf-mitte-flaeche { fill: var(--k); }
+  .gf-stark.gf-an .gf-ktf-flaeche, .gf-stark.gf-an .gf-mitte-flaeche, .gf-stark.gf-wahl .gf-ktf-flaeche, .gf-stark.gf-wahl .gf-mitte-flaeche { filter: brightness(1.12); }
+  .gf-stark.gf-wahl rect { stroke: #20352f; stroke-width: 2; }
+  .gf-strom { opacity: .22; }
+  .gf-strom.gf-an { opacity: .5; }
 
   .gf-kopf { font-size: 11.5px; font-weight: 700; letter-spacing: .08em; fill: #6b7a73; }
   .gf-hinweis { font-size: 11px; font-style: italic; fill: #85958d; }
@@ -1980,7 +1991,7 @@ figure.esgrad { margin: 1rem 0 .6rem;
   .gf-quelle.gf-an .gf-q-flaeche { fill: color-mix(in srgb, var(--k) 10%, #fff); }
   .gf-quelle.gf-wahl .gf-q-flaeche { fill: color-mix(in srgb, var(--k) 14%, #fff); stroke: color-mix(in srgb, var(--k) 75%, #fff); stroke-width: 2; }
   .gf-zufluss.gf-an, .gf-zufluss.gf-wahl { stroke: color-mix(in srgb, var(--k) 65%, #fff); }
-  svg.gf-fokus .gf-teil:not(.gf-an), svg.gf-fokus .gf-zufluss:not(.gf-an) { opacity: .35; }
+  svg.gf-fokus .gf-teil:not(.gf-an), svg.gf-fokus .gf-zufluss:not(.gf-an), svg.gf-fokus .gf-strom:not(.gf-an) { opacity: .35; }
   .gf-teil:focus-visible .gf-hit, .gf-teil:focus-visible .gf-q-flaeche { stroke: var(--k); stroke-width: 2; }
 
   /* Detailfeld unter der Grafik */
@@ -2086,6 +2097,7 @@ figure.esgrad { margin: 1rem 0 .6rem;
 .startbild .sb-bild .sb-region svg.sm-icon { width: 1.5rem; height: 1.5rem; }
 
 /* Zielpfad Deutschland (Jing, 09.11.2026, skripte/zielpfad.js): Linie Ist, Ziel und Projektion bis 2045 mit Meilensteinen */
+.zp.zp-eu { --ist: #{$spur-eu}; }   /* nicht .eu: das Governance-SVG setzt .eu{stroke} seitenweit */
 .zp { --ist: #{$spur-de}; --ziel: #{$gruen}; --proj: #7d8a84; --rot: #b5604f;
   margin: 1.4rem 0 .6rem; background: #fff; border: 1px solid $linie; border-radius: 10px; padding: 1rem 1.1rem .9rem;
   display: grid; grid-template-columns: minmax(0, 1fr) 15.5rem; grid-template-areas: "kopf kopf" "marken marken" "grafik detail" "legende detail"; gap: .5rem 1.2rem;
@@ -2112,6 +2124,9 @@ figure.esgrad { margin: 1rem 0 .6rem;
   .zp-proj { fill: none; stroke: var(--proj); stroke-width: 2.2; stroke-dasharray: 2 3; }
   .zp-ziel-punkt { fill: #fff; stroke: var(--ziel); stroke-width: 2.2; }
   .zp-proj-punkt { fill: var(--proj); }
+  .zp-proj.proj2 { stroke: #b3bdb8; stroke-dasharray: 1 4; stroke-width: 2.4; }
+  .zp-proj-punkt.proj2 { fill: #b3bdb8; }
+  .zp-c-proj.proj2 { fill: #b3bdb8; }
   .zp-luecke { fill: color-mix(in srgb, var(--rot) 16%, transparent); }
   .zp-klammer { fill: none; stroke: var(--rot); stroke-width: 1.6; }
   .zp-flaeche { cursor: crosshair; }
@@ -2125,17 +2140,18 @@ figure.esgrad { margin: 1rem 0 .6rem;
     .ist::before { border-top: 2.6px solid var(--ist); }
     .ziel::before { border-top: 2.2px dashed var(--ziel); }
     .proj::before { border-top: 2.2px dotted var(--proj); }
+    .proj2::before { border-top: 2.4px dotted #b3bdb8; }
     .luecke::before { height: 10px; background: color-mix(in srgb, var(--rot) 16%, transparent); } }
   .zp-detail { grid-area: detail; align-self: start; border-left: 1px solid $linie; padding-left: 1.1rem;
     @media (max-width: 860px) { border-left: 0; border-top: 1px solid $linie; padding: .7rem 0 0; }
     dl { margin: .2rem 0 .5rem; }
     p { margin: 0; } }
   .zp-jahr { font-family: $headings-font-family; font-size: 2rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
-  .zp-zeile { display: grid; grid-template-columns: 5.6rem 1fr; align-items: baseline; padding: .28rem 0; border-bottom: 1px solid #f0f3f1; font-size: .9rem;
+  .zp-zeile { display: grid; grid-template-columns: 6.6rem 1fr; align-items: baseline; padding: .28rem 0; border-bottom: 1px solid #f0f3f1; font-size: .9rem;
     dt { font-weight: 400; color: $grau; display: flex; align-items: center; gap: .4rem;
       &::before { content: ""; width: .55rem; height: .55rem; border-radius: 50%; background: var(--c, $grau); } }
     dd { margin: 0; font-variant-numeric: tabular-nums; b { font-size: 1.05rem; } span { color: $grau; font-size: .82rem; margin-left: .2rem; } }
-    &.ist { --c: var(--ist); } &.ziel { --c: var(--ziel); } &.proj { --c: var(--proj); }
+    &.ist { --c: var(--ist); } &.ziel { --c: var(--ziel); } &.proj { --c: var(--proj); } &.proj2 { --c: #b3bdb8; }
     &.luecke { --c: var(--rot); dd b { color: var(--rot); } } }
   .zp-text { font-size: .88rem; line-height: 1.5; margin-top: .5rem; }
   .zp-leise { color: $grau; font-style: italic; }
@@ -2150,8 +2166,8 @@ figure.esgrad { margin: 1rem 0 .6rem;
 .zp-wf-kopf, .zp-wf-feld { position: relative; }
 .zp-wf-kopf { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr) 3.4rem; gap: .5rem; font-size: .72rem; margin-bottom: .2rem;
   .minus-seite, .plus-seite { grid-column: 2; grid-row: 1; }
-  .minus-seite { color: #3f7a5c; width: 50%; text-align: right; padding-right: .4rem; box-sizing: border-box; white-space: nowrap; }
-  .plus-seite { color: #b5604f; margin-left: 50%; padding-left: .4rem; } }
+  .minus-seite { color: #3f7a5c; width: var(--null, 50%); text-align: right; padding-right: .4rem; box-sizing: border-box; white-space: nowrap; }
+  .plus-seite { color: #b5604f; margin-left: var(--null, 50%); padding-left: .4rem; white-space: nowrap; } }
 .zp-wf { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr) 3.4rem; align-items: center; gap: .5rem; font-size: .82rem; padding: 1px 0;
   span { display: flex; align-items: center; gap: .3rem; white-space: nowrap; &::before { content: ""; width: .5rem; height: .5rem; border-radius: 2px; background: var(--s, #9aa39e); } }
   i { position: relative; height: 15px; display: block;
@@ -2160,6 +2176,7 @@ figure.esgrad { margin: 1rem 0 .6rem;
   b { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
   &.ueber u { background: #c98474; } &.ueber b { color: #b5604f; }
   &.unter u { background: #6fa486; } &.unter b { color: #3f7a5c; }
+  &.wachs u { background: #8fa9c9; } &.wachs b { color: #3c5a8a; }
   &.summe { font-weight: 700; span::before { display: none; } }
   &.unter.summe { margin-top: .3rem; padding-top: .3rem; border-top: 1px solid $linie; }
   &.rest { margin-top: .3rem; padding-top: .3rem; border-top: 1px solid $linie; font-weight: 700;
@@ -2168,7 +2185,7 @@ figure.esgrad { margin: 1rem 0 .6rem;
     b { color: #3f7a5c; font-size: .95rem; }
     s { position: absolute; top: -3px; bottom: -3px; border-left: 2px dotted #8f9a94; text-decoration: none;
       em { position: absolute; right: 5px; top: 50%; transform: translateY(-50%); font-style: normal; font-weight: 400; font-size: .7rem; color: $grau; white-space: nowrap; } } } }
-.zp-wf-feld { --null: 50%; }
+.zp-mini { --null: 50%; }
 /* Landnutzung im selben Muster: links Senke, rechts Quelle; Ziel als Umriss, Projektion grau, Lücke als Pfeil */
 .zp-lulucf .zp-wf {
   grid-template-columns: 5.8rem minmax(0, 1fr) 3.4rem;
@@ -2178,3 +2195,32 @@ figure.esgrad { margin: 1rem 0 .6rem;
   &.luecke { font-weight: 700; span::before { display: none; } u { background: repeating-linear-gradient(45deg, #f3e1dc 0 4px, #fff 4px 7px); border: 1.5px solid #b5604f; } b { color: #b5604f; } } }
 .zp-lulucf .zp-wf-kopf { grid-template-columns: 5.8rem minmax(0, 1fr) 3.4rem; }
 .zp-wf-fuss { font-size: .72rem; color: $grau; margin-top: .4rem; }
+
+/* Bereiche der EU (Jing, 09.11.2026, skripte/bereiche.js): Fortschritt zum Ziel 2030 je Bereich, Karte daneben */
+.br { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 1.2rem; align-items: start; margin: 1rem 0 .6rem;
+  @media (max-width: 760px) { grid-template-columns: 1fr; }
+  &:not(.br-js) .br-detail { display: none; } }
+.br-leiste { display: flex; flex-direction: column; gap: 3px; background: #fff; border: 1px solid $linie; border-radius: 10px; padding: .8rem .7rem .7rem; }
+.br-kopf, .br-zeile { display: grid; grid-template-columns: 7.4rem minmax(0, 1fr) 6.6rem; align-items: center; gap: .6rem; }
+.br-kopf { font-size: .74rem; color: $grau; margin-bottom: .3rem;
+  > span:first-child { grid-column: 1 / -1; font-weight: 700; color: $tinte; font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; }
+  .br-skala { grid-column: 2; position: relative; height: 1rem; i { position: absolute; font-style: normal; transform: translateX(-50%); } i:first-child { transform: none; } } }
+.br-zeile { width: 100%; padding: .45rem .4rem; border: 0; border-radius: 6px; background: none; text-align: left; cursor: pointer; color: $tinte; font-size: .88rem; transition: background .15s;
+  &:hover { background: color-mix(in srgb, var(--s) 9%, #fff); }
+  &[aria-pressed="true"] { background: color-mix(in srgb, var(--s) 16%, #fff); box-shadow: inset 3px 0 0 var(--s); .br-name { font-weight: 700; } }
+  &:focus-visible { outline: 2px solid var(--s); outline-offset: 1px; } }
+.br-name { display: flex; align-items: center; gap: .4rem; &::before { content: ""; flex: none; width: .6rem; height: .6rem; border-radius: 2px; background: var(--s); } }
+.br-spur { position: relative; height: 14px; background: #eef1ef; border-radius: 2px;
+  u { position: absolute; left: 0; top: 0; bottom: 0; background: var(--s); border-radius: 2px; }
+  s { position: absolute; top: -3px; bottom: -3px; width: 0; border-left: 2px dotted $tinte; text-decoration: none; }
+  em { position: absolute; top: -5px; bottom: -5px; width: 0; border-left: 2px solid $gruen; } }
+.br-wert { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.15;
+  small { display: block; font-weight: 400; font-size: .72rem; color: $grau; } }
+.br-legende { display: flex; flex-wrap: wrap; gap: .3rem 1rem; font-size: .75rem; color: $grau; margin-top: .45rem; padding-left: .4rem;
+  span::before { content: ""; display: inline-block; width: 14px; margin-right: .3rem; vertical-align: middle; }
+  .ist::before { height: 9px; background: #9aa39e; border-radius: 2px; }
+  .proj::before { width: 0; height: 12px; border-left: 2px dotted $tinte; margin-right: .5rem; }
+  .ziel::before { width: 0; height: 12px; border-left: 2px solid $gruen; margin-right: .5rem; } }
+.br-detail { background: #fff; border: 1px solid $linie; border-top: 3px solid var(--s, #{$gruen}); border-radius: 8px; transition: border-color .25s;
+  .sektor { border: 0; background: none; padding: .9rem 1.1rem .5rem; }
+  .sektor h3 { color: color-mix(in srgb, var(--s) 85%, #000); } }

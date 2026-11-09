@@ -1,0 +1,21 @@
+<!-- alte Fassung Rechtsrahmen EU (bis 09.11.2026), nicht gerendert -->
+## Rechtsrahmen: die wichtigsten Rechtsakte
+
+| Bereich | Rechtsakt | Was er regelt |
+|---|---|---|
+| Rahmen | **Europäisches Klimagesetz** (VO 2021/1119, geändert 2026) | −55 % bis 2030, −90 % bis 2040, Klimaneutralität 2050; Wissenschaftlicher Beirat [@eu_klimagesetz_2021; @eu_klimagesetz_2026] |
+| | **Governance-Verordnung** (VO 2018/1999) | Nationale Energie- und Klimapläne, Berichtspflichten [@eu_governance] |
+| CO₂-Preis | **Emissionshandelsrichtlinie** (RL 2003/87/EG, zuletzt 2023 geändert) | Strom, Industrie, Luft- und Seeverkehr: −62 % bis 2030 gegenüber 2005; zweites System **ETS 2** für Gebäude und Straßenverkehr ab 2028 [@eu_ets_richtlinie; @eu_ets_2023; @icap_2026] |
+| | **CO₂-Grenzausgleich CBAM** (VO 2023/956) | CO₂-Preis auf Importe von Stahl, Zement, Aluminium u. a.; Regelphase seit 2026 [@eu_cbam_2023; @eu_cbam_omnibus_2025] |
+| Lastenteilung | **Effort-Sharing-Verordnung** (VO 2023/857) | Gebäude, Verkehr, Landwirtschaft, Abfall: −40 % bis 2030 gegenüber 2005, aufgeteilt auf nationale Ziele von −10 % bis −50 % [@eu_esr_2023] |
+| Landnutzung | **LULUCF-Verordnung** (VO 2023/839) | Wälder und Böden sollen 2030 netto 310 Mio. t CO₂-Äq. aufnehmen [@eu_lulucf_2023] |
+| Energie | **Erneuerbare-Energien-Richtlinie** (RED III, RL 2023/2413) | mindestens 42,5 % erneuerbare Energien am Endenergieverbrauch 2030, angestrebt 45 % [@eu_red3] |
+| | **Energieeffizienzrichtlinie** (RL 2023/1791) | Endenergieverbrauch 2030 um 11,7 % unter der Referenzprognose von 2020 [@eu_eed] |
+| | **Methan-Verordnung** (VO 2024/1787) | Messung und Verringerung von Methanemissionen im Energiesektor [@eu_methan] |
+| Gebäude | **Gebäuderichtlinie** (EPBD, RL 2024/1275) | Neubauten als Nullemissionsgebäude: öffentliche ab 2028, alle ab 2030 [@eu_epbd] |
+| Verkehr | **CO₂-Flottengrenzwerte** (VO 2023/851) | neue Pkw ab 2035 −100 % CO₂; ein Vorschlag der Kommission von 12/2025 senkt dies auf −90 %, das Verfahren läuft [@eu_co2_pkw; @ep_autopaket] |
+| Soziales | **Klima-Sozialfonds** (VO 2023/955) | Ausgleich für den CO₂-Preis auf Heizen und Verkehr [@eu_scf] |
+| Produkte & Kreislauf | **Ökodesign-Verordnung** (ESPR, VO 2024/1781), **Batterieverordnung** (VO 2023/1542) | Anforderungen an Haltbarkeit, Reparierbarkeit und CO₂-Fußabdruck von Produkten und Batterien [@eu_espr; @eu_batterien] |
+
+: {tbl-colwidths="[16,30,54]"}
+

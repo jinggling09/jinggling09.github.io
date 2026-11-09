@@ -80,6 +80,42 @@ Die EU hat ihr Ziel der **Klimaneutralität bis 2050** im Europäischen Klimages
 Das Europäische Klimagesetz verpflichtet die EU, ihre **Netto-Treibhausgasemissionen** (einschließlich der Aufnahme durch Wälder und Böden) gegenüber 1990 zu senken: **mindestens −55 % bis 2030**, **−90 % bis 2040** und **Klimaneutralität bis 2050**, danach negative Emissionen [@eu_klimagesetz_2021; @eu_klimagesetz_2026]. Für 2040 dürfen ab 2036 hochwertige internationale Gutschriften bis zu 5 % des Ziels beitragen [@icap_2026].
 
 ```{=html}
+<div class="zp zp-eu" id="zielpfad-eu" data-quelle="../daten/data/eu_thg_netto.csv?v=1" role="region" aria-label="Zielpfad der EU bis 2050">
+  <div class="zp-kopf">
+    <div class="zp-kicker">Zielpfad · Netto-Emissionen, 1990 = 100 %</div>
+    <div class="zp-titel">Gut ein Drittel geschafft – 2030 klappt nur mit allen Plänen</div>
+  </div>
+  <div class="zp-marken" role="tablist" aria-label="Meilensteine">
+    <button type="button" data-j="1990">1990</button>
+    <button type="button" data-j="2024">2024</button>
+    <button type="button" data-j="2030">2030</button>
+    <button type="button" data-j="2040">2040</button>
+    <button type="button" data-j="2050">2050</button>
+  </div>
+  <div class="zp-grafik"></div>
+  <div class="zp-legende"><span class="ist">Ist</span><span class="ziel">Ziel nach Klimagesetz</span><span class="proj">Projektion mit geplanten Maßnahmen</span><span class="proj2">nur beschlossene</span><span class="luecke">Lücke</span></div>
+  <div class="zp-detail" aria-live="polite"></div>
+  <script type="application/json" class="zp-daten">
+  {
+    "spalte": "index_1990", "einheit": "index", "von": 1990, "bis": 2050, "ymax": 110, "raster": [0, 25, 50, 75, 100],
+    "achse": [1990, 2000, 2010, 2020, 2030, 2040, 2050], "achse_schmal": [1990, 2010, 2030, 2050],
+    "punkt_mt": 47.26,
+    "ist_texte": { "1990": ["Basis", "4.726 Mio. t"], "2024": ["−37 %", "2.970 Mio. t"] },
+    "ziele": [[2030, 45, "−55 %", "Mindestens −55 % netto gegenüber 1990", "≈ 2.120 Mio. t"], [2040, 10, "−90 %", "−90 % netto gegenüber 1990", "≈ 470 Mio. t"], [2050, 0, "netto 0", "Klimaneutralität", ""]],
+    "projektionen": [
+      { "name": "geplant", "klasse": "proj", "punkte": [[2024, 62.5], [2030, 46, "−54 %", "≈ 2.170 Mio. t"], [2040, 31, "−69 %", "≈ 1.470 Mio. t"], [2050, 22, "−78 %", "≈ 1.040 Mio. t"]] },
+      { "name": "beschlossen", "klasse": "proj2", "punkte": [[2024, 62.5], [2030, 53, "−47 %", "≈ 2.500 Mio. t"]] }
+    ],
+    "rest": { "jahr": 2050, "wert": 22, "text": ["−78 % statt 0", "geplant 2050"] },
+    "texte": {
+      "1990": "Referenzjahr aller Ziele. Gezählt wird netto: Emissionen minus das, was Wälder und Böden aufnehmen.",
+      "2024": "Gut ein Drittel ist geschafft – während die Wirtschaft um 71 % wuchs. Bis 2030 müssen die Emissionen im Schnitt um 140 Mio. t pro Jahr sinken.",
+      "2030": "Mit allen geplanten Maßnahmen fehlt nur 1 Prozentpunkt. Mit den heute beschlossenen käme die EU nur auf −47 %.",
+      "2040": "Zwischenziel seit 2026; ab 2036 dürfen internationale Gutschriften bis zu 5 % beitragen. Die Projektion liegt mit −69 % weit dahinter.",
+      "2050": "Ziel ist Klimaneutralität, danach negative Emissionen. Mit den geplanten Maßnahmen blieben rund 1.040 Mio. t."
+    }
+  }
+  </script>
 <figure class="pfad pfad-eu" aria-label="Netto-Treibhausgasemissionen der EU in Millionen Tonnen und im Vergleich zu 1990: Ist-Wert, Ziele und Projektionen">
   <div class="pfad-zeile"><span class="pfad-jahr">1990</span><span class="pfad-balken referenz" style="width:100%"></span><span class="pfad-wert">4.726 Mio. t · <em>Referenzjahr</em></span></div>
   <div class="pfad-zeile"><span class="pfad-jahr">2024</span><span class="pfad-balken ist" style="width:62.8%"></span><span class="pfad-wert">2.970 Mio. t · −37 % <em>Ist</em></span></div>
@@ -88,20 +124,78 @@ Das Europäische Klimagesetz verpflichtet die EU, ihre **Netto-Treibhausgasemiss
   <div class="pfad-zeile"><span class="pfad-jahr">2050</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:0.6%"></span><span class="pfad-balken projektion" style="width:22%"></span></span><span class="pfad-wert">netto 0 <em>Ziel</em> · ≈ 1.040 · −78 % <em>geplant</em></span></div>
   <figcaption>Netto-Treibhausgasemissionen der EU in Mio. t CO₂-Äq. und Veränderung gegenüber 1990 (Abgrenzung des Klimagesetzes: mit Landnutzung und internationalem Luft- und Seeverkehr). Werte mit „≈“ rechnerisch aus den Prozentangaben. <span class="pfad-leg ist">Ist</span> <span class="pfad-leg ziel">Ziel nach Klimagesetz</span> <span class="pfad-leg projektion">Projektion mit beschlossenen und geplanten Maßnahmen</span> <span class="pfad-leg projektion bestehend">nur beschlossene Maßnahmen</span></figcaption>
 </figure>
+</div>
+<script src="../skripte/zielpfad.js?v=4"></script>
 ```
 
 ::: {.belege}
-**Belege** · 1990, 2024 und Ziel 2030 sowie Projektionen 2030 [@ec_capr_swd_2025]; Projektionen 2040 und 2050 [@eea_trends_2025]. Bis 2030 ist im Schnitt ein Rückgang von 140 Mio. t pro Jahr nötig [@ec_capr_2025].
+**Belege** · 1990, 2024 und Ziel 2030 sowie Projektionen 2030 [@ec_capr_swd_2025]; Projektionen 2040 und 2050 [@eea_trends_2025]. Bis 2030 ist im Schnitt ein Rückgang von 140 Mio. t pro Jahr nötig [@ec_capr_2025]. Verlauf 1990–2024 als Index aus Eurostat, netto mit Landnutzung und internationalem Luftverkehr [@eurostat_gge_2026]; diese Abgrenzung weicht leicht von der des Klimagesetzes ab (2024: −37,5 % statt −37 %). Mio.-t-Angaben bei Zielen und Projektionen rechnerisch aus den Prozentwerten.
 :::
 
+::: {.zp-karten}
+::: {.zp-karte}
+```{=html}
+<div class="zp-mini zp-puffer" role="img" aria-label="1990 bis 2024: Wirtschaftsleistung der EU plus 71 Prozent, Netto-Emissionen minus 37 Prozent.">
+  <div class="zp-mini-titel">1990 bis 2024: entkoppelt</div>
+  <div class="zp-wf-kopf"><span class="minus-seite">← weniger</span><span class="plus-seite">mehr →</span></div>
+  <div class="zp-wf-feld">
+    <div class="zp-wf unter summe" style="--s:#3c5a8a"><span>Emissionen</span><i><u style="left:26.88%;width:23.12%"></u></i><b>−37 %</b></div>
+    <div class="zp-wf wachs summe" style="--s:#1f5f4a"><span>Wirtschaft</span><i><u style="left:50.0%;width:44.38%"></u></i><b>+71 %</b></div>
+  </div>
+  <div class="zp-wf-fuss">Veränderung 1990–2024; Wirtschaft = reales BIP, Emissionen netto.</div>
+</div>
+```
 **Wirtschaft wächst, Emissionen sinken.** Zwischen 1990 und 2024 wuchs die Wirtschaft der EU um 71 %, während die Netto-Emissionen um 37 % sanken [@ec_capr_news_2025].
+:::
+
+::: {.zp-karte}
+```{=html}
+<div class="zp-mini zp-puffer zp-lulucf" style="--null:87.5%" role="img" aria-label="Landnutzung der EU: 2023 nahmen Wälder und Böden netto rund 198 Mio. t auf, verlangt sind 2030 310 Mio. t; es fehlen rund 112 Mio. t.">
+  <div class="zp-mini-titel">Landnutzung: Senke zu klein</div>
+  <div class="zp-wf-kopf"><span class="minus-seite">← nimmt auf</span><span class="plus-seite">gibt ab →</span></div>
+  <div class="zp-wf-feld">
+    <div class="zp-wf unter summe" style="--s:#4f7d5c"><span>Ist 2023</span><i><u style="left:38.0%;width:49.5%"></u></i><b>−198</b></div>
+    <div class="zp-wf ziel summe"><span>Ziel 2030</span><i><u style="left:10.0%;width:77.5%"></u></i><b>−310</b></div>
+    <div class="zp-wf luecke"><span>Lücke</span><i><u style="left:10.0%;width:28.0%"></u></i><b>≈ 112</b></div>
+  </div>
+  <div class="zp-wf-fuss">Mio. t CO₂-Äq.; Mittellinie = Fläche nimmt so viel auf, wie sie abgibt. Lücke eigene Rechnung.</div>
+</div>
+```
+**Senke zu klein.** Wälder und Böden nahmen 2023 netto rund 198 Mio. t auf; das gleicht nur rund 6 % der EU-Emissionen aus [@eea_trends_2025]. Die LULUCF-Verordnung verlangt für 2030 310 Mio. t – die Senke muss um gut die Hälfte wachsen [@eu_lulucf_2023].
+:::
+:::
 
 ## Governance: Wer macht was?
 
+::: {.einfach}
+<details class="geschichte">
+<summary>Einfach erklärt: Klimapolitik in 27 Haushalten</summary>
+
+Man kann sich die EU wie ein Haus mit 27 Wohnungen vorstellen: Die Hausordnung gilt für alle, aber jede Wohnung muss sie selbst einhalten. Die EU setzt den Rahmen, die Mitgliedstaaten setzen ihn um.
+
+Das Haus hat sich ein Ziel gesetzt: **Bis 2050 sollen die Netto-Emissionen bei null liegen.**
+
+**[①](#rolle-1) Wer legt das Ziel fest?** Die Kommission schlägt vor, das Europäische Parlament und der Rat – die Regierungen der Mitgliedstaaten – beschließen gemeinsam. So entstand das Klimagesetz [@eu_klimagesetz_2021].
+
+**[②](#rolle-2) Wer setzt es um?** Die Kommission überwacht die Umsetzung. Die Mitgliedstaaten übertragen Richtlinien in eigenes Recht und legen nationale Energie- und Klimapläne vor [@eu_governance].
+
+**[③](#rolle-3) Wer führt Buch?** Die Europäische Umweltagentur fasst die nationalen Treibhausgasinventare zum EU-Inventar zusammen [@eea_trends_2025].
+
+**[④](#rolle-4) Wer prüft unabhängig?** Ein wissenschaftlicher Beirat aus 15 Fachleuten berät zu Zielen und Maßnahmen [@esabcc].
+
+**[⑤](#rolle-5) Was, wenn es nicht reicht?** Die Kommission bewertet den Fortschritt und gibt den Mitgliedstaaten Empfehlungen; das Ziel 2040 wird alle zwei Jahre überprüft [@eu_klimagesetz_2026].
+
+**[⑥](#rolle-6) Woher kommt das Geld?** Vor allem aus dem Emissionshandel: 2024 brachte er 38,8 Mrd. €, fast zwei Drittel davon gingen direkt an die Mitgliedstaaten [@ec_cmr_2025].
+
+**Der Unterschied zu Deutschland:** Die EU kann Ziele und Regeln setzen, aber kaum selbst Geld ausgeben oder Maßnahmen vor Ort durchsetzen – das bleibt Aufgabe der Mitgliedstaaten.
+
+</details>
+:::
+
 ```{=html}
-<figure class="gov-diagramm">
+<figure class="gov-diagramm" data-datei="eu">
 <div class="gov-scroll">
-<svg viewBox="0 0 960 640" role="img" aria-label="Governance-Diagramm der EU-Klimapolitik">
+<svg viewBox="0 -58 960 698" role="img" aria-label="Governance-Diagramm der EU-Klimapolitik">
 <defs>
  <marker id="m-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1f5f4a"/></marker>
  <marker id="m-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#3c5a8a"/></marker>
@@ -116,53 +210,57 @@ Das Europäische Klimagesetz verpflichtet die EU, ihre **Netto-Treibhausgasemiss
  </style>
 </defs>
 
-<!-- EU-Ebene -->
+<!-- Titel (im SVG, damit er auch im Vollbild und im PNG erscheint) -->
+<text x="480" y="-30" text-anchor="middle" style="font-size:20px;font-weight:700;fill:#1a2420">Klima-Governance in der EU</text>
+<text x="480" y="-10" text-anchor="middle" class="s" style="font-size:12.5px">Von den EU-Institutionen bis zu den Bürgern: wer Ziele setzt, umsetzt, prüft und bezahlt</text>
+
+<!-- EU-Ebene; data-r = Rollen unten (erste = Hauptrolle), data-marke = Nummernkreis -->
 <rect x="10" y="10" width="940" height="372" rx="8" fill="#f3f6fb" stroke="none"/>
 <text x="24" y="30" class="band">EUROPÄISCHE UNION</text>
 
-<rect x="40" y="42" width="250" height="70" rx="6" class="exe"/><text x="165" y="68" text-anchor="middle" class="t">Europäische Kommission</text><text x="165" y="87" text-anchor="middle" class="s">schlägt Gesetze vor, setzt um,</text><text x="165" y="102" text-anchor="middle" class="s">bewertet den Fortschritt</text>
-<rect x="355" y="42" width="250" height="70" rx="6" class="leg"/><text x="480" y="68" text-anchor="middle" class="t">Europ. Parlament + Rat</text><text x="480" y="87" text-anchor="middle" class="s">beschließen EU-Recht; im Rat sitzen</text><text x="480" y="102" text-anchor="middle" class="s">die Regierungen der Mitgliedstaaten</text>
-<rect x="670" y="42" width="250" height="70" rx="6" class="kon"/><text x="795" y="68" text-anchor="middle" class="t">Wissenschaftl. Beirat (ESABCC)</text><text x="795" y="87" text-anchor="middle" class="s">15 unabhängige Sachverständige,</text><text x="795" y="102" text-anchor="middle" class="s">beraten zu Zielen und Maßnahmen</text>
+<g data-r="2 5 1" data-marke="2"><rect x="40" y="42" width="250" height="70" rx="6" class="exe"/><text x="165" y="68" text-anchor="middle" class="t">Europäische Kommission</text><text x="165" y="87" text-anchor="middle" class="s">schlägt Gesetze vor, setzt um,</text><text x="165" y="102" text-anchor="middle" class="s">bewertet den Fortschritt</text></g>
+<g data-r="1" data-marke="1"><rect x="355" y="42" width="250" height="70" rx="6" class="leg"/><text x="480" y="68" text-anchor="middle" class="t">Europ. Parlament + Rat</text><text x="480" y="87" text-anchor="middle" class="s">beschließen EU-Recht; im Rat sitzen</text><text x="480" y="102" text-anchor="middle" class="s">die Regierungen der Mitgliedstaaten</text></g>
+<g data-r="4" data-marke="4"><rect x="670" y="42" width="250" height="70" rx="6" class="kon"/><text x="795" y="68" text-anchor="middle" class="t">Wissenschaftl. Beirat (ESABCC)</text><text x="795" y="87" text-anchor="middle" class="s">15 unabhängige Sachverständige,</text><text x="795" y="102" text-anchor="middle" class="s">beraten zu Zielen und Maßnahmen</text></g>
 
-<path d="M290 77H351" class="a ag" marker-end="url(#m-g)"/><text x="320" y="70" text-anchor="middle" class="al">Vorschlag</text>
-<path d="M670 77H609" class="a ak" marker-end="url(#m-k)"/><text x="640" y="70" text-anchor="middle" class="al">Rat</text>
+<g data-r="1"><path d="M290 77H351" class="a ag" marker-end="url(#m-g)"/><text x="320" y="70" text-anchor="middle" class="al">Vorschlag</text></g>
+<g data-r="4"><path d="M670 77H609" class="a ak" marker-end="url(#m-k)"/><text x="640" y="70" text-anchor="middle" class="al">Rat</text></g>
 
-<rect x="40" y="172" width="250" height="70" rx="6" class="exe"/><text x="165" y="198" text-anchor="middle" class="t">Europ. Umweltagentur (EEA)</text><text x="165" y="217" text-anchor="middle" class="s">EU-Treibhausgasinventar,</text><text x="165" y="232" text-anchor="middle" class="s">Schätzungen und Projektionen</text>
-<rect x="355" y="172" width="250" height="70" rx="6" class="eu"/><text x="480" y="198" text-anchor="middle" class="t">EU-Recht</text><text x="480" y="217" text-anchor="middle" class="s">Klimagesetz · Emissionshandel ·</text><text x="480" y="232" text-anchor="middle" class="s">Lastenteilung · RED III · EPBD …</text>
-<path d="M480 112V168" class="a ag" marker-end="url(#m-g)"/><text x="488" y="146" class="al">beschließen</text>
-<path d="M165 172V116" class="a ak" marker-end="url(#m-k)"/><text x="172" y="150" class="al">Daten</text>
+<g data-r="3" data-marke="3"><rect x="40" y="172" width="250" height="70" rx="6" class="exe"/><text x="165" y="198" text-anchor="middle" class="t">Europ. Umweltagentur (EEA)</text><text x="165" y="217" text-anchor="middle" class="s">EU-Treibhausgasinventar,</text><text x="165" y="232" text-anchor="middle" class="s">Schätzungen und Projektionen</text></g>
+<g data-r="1 2"><rect x="355" y="172" width="250" height="70" rx="6" class="eu"/><text x="480" y="198" text-anchor="middle" class="t">EU-Recht</text><text x="480" y="217" text-anchor="middle" class="s">Klimagesetz · Emissionshandel ·</text><text x="480" y="232" text-anchor="middle" class="s">Lastenteilung · RED III · EPBD …</text></g>
+<g data-r="1"><path d="M480 112V168" class="a ag" marker-end="url(#m-g)"/><text x="488" y="146" class="al">beschließen</text></g>
+<g data-r="3"><path d="M165 172V116" class="a ak" marker-end="url(#m-k)"/><text x="172" y="150" class="al">Daten</text></g>
 
-<rect x="355" y="296" width="250" height="70" rx="6" class="geld"/><text x="480" y="322" text-anchor="middle" class="t">EU-Fonds</text><text x="480" y="341" text-anchor="middle" class="s">Innovations-, Modernisierungs-,</text><text x="480" y="356" text-anchor="middle" class="s">Klima-Sozialfonds</text>
-<rect x="670" y="296" width="250" height="70" rx="6" class="geld"/><text x="795" y="322" text-anchor="middle" class="t">EU-Emissionshandel</text><text x="795" y="341" text-anchor="middle" class="s">Versteigerung der Zertifikate:</text><text x="795" y="356" text-anchor="middle" class="s">38,8 Mrd. € (2024)</text>
-<path d="M670 331H609" class="a ao" marker-end="url(#m-o)"/><text x="640" y="316" text-anchor="middle" class="al">Erlöse</text>
+<g data-r="6" data-marke="6"><rect x="355" y="296" width="250" height="70" rx="6" class="geld"/><text x="480" y="322" text-anchor="middle" class="t">EU-Fonds</text><text x="480" y="341" text-anchor="middle" class="s">Innovations-, Modernisierungs-,</text><text x="480" y="356" text-anchor="middle" class="s">Klima-Sozialfonds</text></g>
+<g data-r="6"><rect x="670" y="296" width="250" height="70" rx="6" class="geld"/><text x="795" y="322" text-anchor="middle" class="t">EU-Emissionshandel</text><text x="795" y="341" text-anchor="middle" class="s">Versteigerung der Zertifikate:</text><text x="795" y="356" text-anchor="middle" class="s">38,8 Mrd. € (2024)</text></g>
+<g data-r="6"><path d="M670 331H609" class="a ao" marker-end="url(#m-o)"/><text x="640" y="316" text-anchor="middle" class="al">Erlöse</text></g>
 
 
 
 <!-- Mitgliedstaaten -->
 <rect x="10" y="396" width="940" height="134" rx="8" fill="#f7faf8" stroke="none"/>
 <text x="44" y="412" class="band">27 MITGLIEDSTAATEN</text>
-<rect x="40" y="420" width="880" height="96" rx="6" class="exe"/>
+<g data-r="2"><rect x="40" y="420" width="880" height="96" rx="6" class="exe"/>
 <text x="480" y="446" text-anchor="middle" class="t">Regierungen, Parlamente und Behörden der Mitgliedstaaten</text>
 <text x="480" y="467" text-anchor="middle" class="s">setzen Richtlinien in nationales Recht um · legen Nationale Energie- und Klimapläne (NECP) vor</text>
 <text x="480" y="484" text-anchor="middle" class="s">erstellen nationale Treibhausgasinventare · erhalten ETS-Erlöse für Klimaschutz und Energiewende</text>
-<text x="480" y="503" text-anchor="middle" class="s">Beispiel Deutschland: Klimaschutzgesetz, TEHG, BEHG – siehe Länderüberblick Deutschland</text>
-<path d="M250 420V246" class="a ak" marker-end="url(#m-k)"/><text x="257" y="300" class="al">nationale</text><text x="257" y="314" class="al">Inventare</text>
+<text x="480" y="503" text-anchor="middle" class="s">Beispiel Deutschland: Klimaschutzgesetz, TEHG, BEHG – siehe Länderüberblick Deutschland</text></g>
+<g data-r="3"><path d="M250 420V246" class="a ak" marker-end="url(#m-k)"/><text x="257" y="300" class="al">nationale</text><text x="257" y="314" class="al">Inventare</text></g>
 
 <!-- EU-Recht zu den Mitgliedstaaten -->
-<path d="M605 207H638V412" class="a ab" marker-end="url(#m-b)"/><text x="646" y="262" class="al">gilt direkt bzw.</text><text x="646" y="276" class="al">wird umgesetzt</text>
+<g data-r="2"><path d="M605 207H638V412" class="a ab" marker-end="url(#m-b)"/><text x="646" y="262" class="al">gilt direkt bzw.</text><text x="646" y="276" class="al">wird umgesetzt</text></g>
 <!-- Geld zu den Mitgliedstaaten -->
-<path d="M480 366V412" class="a ao" marker-end="url(#m-o)"/><text x="488" y="394" class="al">Förderung</text>
-<path d="M795 366V412" class="a ao" marker-end="url(#m-o)"/><text x="803" y="394" class="al">24,4 Mrd. € (2024)</text>
+<g data-r="6"><path d="M480 366V412" class="a ao" marker-end="url(#m-o)"/><text x="488" y="394" class="al">Förderung</text></g>
+<g data-r="6"><path d="M795 366V412" class="a ao" marker-end="url(#m-o)"/><text x="803" y="394" class="al">24,4 Mrd. € (2024)</text></g>
 
-<path d="M40 77H24V440H36" class="a ag" marker-end="url(#m-g)"/><text x="30" y="300" class="al" transform="rotate(-90 30 300)">Bewertung, Empfehlungen</text>
+<g data-r="5" data-marke="5 24 330"><path d="M40 77H24V440H36" class="a ag" marker-end="url(#m-g)"/><text x="30" y="300" class="al" transform="rotate(-90 30 300)">Bewertung, Empfehlungen</text></g>
 <!-- Bürger -->
-<rect x="40" y="552" width="880" height="44" rx="6" fill="#f1f1ee" stroke="#c9cfcb"/><text x="480" y="579" text-anchor="middle" class="t" style="font-size:13px">Bürgerinnen und Bürger · Unternehmen · Verbände</text>
-<path d="M920 574H944V142H560V116" class="a ag" marker-end="url(#m-g)"/><text x="936" y="136" text-anchor="end" class="al">wählen das Parlament</text>
+<g data-r="1"><rect x="40" y="552" width="880" height="44" rx="6" fill="#f1f1ee" stroke="#c9cfcb"/><text x="480" y="579" text-anchor="middle" class="t" style="font-size:13px">Bürgerinnen und Bürger · Unternehmen · Verbände</text></g>
+<g data-r="1"><path d="M920 574H944V142H560V116" class="a ag" marker-end="url(#m-g)"/><text x="936" y="136" text-anchor="end" class="al">wählen das Parlament</text></g>
 </svg>
 </div>
 <figcaption><span class="gl g">legt fest / beauftragt</span> <span class="gl b">EU-Recht wirkt in den Mitgliedstaaten</span> <span class="gl k">berichtet / berät</span> <span class="gl o">Geldfluss</span> · Kästen: <span class="gk leg">Gesetzgebung</span> <span class="gk exe">Verwaltung</span> <span class="gk kon">Beratung</span> <span class="gk geld">Finanzierung</span></figcaption>
 </figure>
-<script src="../skripte/diagramm.js?v=1"></script>
+<script src="../skripte/diagramm.js?v=5"></script>
 ```
 
 ::: {.belege}
@@ -220,104 +318,425 @@ Einnahmen aus dem Emissionshandel, eigene Fonds und der EU-Haushalt – Details 
 
 ## Klimafinanzierung: Woher kommt das Geld, wohin fließt es? {#klimafinanzierung}
 
-### Woher kommt das Geld?
+Die wichtigste eigene Geldquelle der EU-Klimapolitik ist der **Emissionshandel**: 2024 brachten die versteigerten Zertifikate **38,8 Mrd. €** [@ec_cmr_2025]. Fast zwei Drittel davon, 24,4 Mrd. €, gingen direkt an die Mitgliedstaaten; der Rest speist EU-Fonds für Innovation und Modernisierung. Dazu kommen mehrjährige Töpfe – der Klima-Sozialfonds, der Corona-Aufbaufonds und der EU-Haushalt.
 
-| Quelle | Umfang | Verwendung |
-|---|---|---|
-| **EU-Emissionshandel** (Auktionserlöse) | **38,8 Mrd. €** im Jahr 2024, davon 24,4 Mrd. € direkt an die Mitgliedstaaten [@ec_cmr_2025] | Mitgliedstaaten müssen sie für Klimaschutz und Energiewende einsetzen; der Rest fließt in EU-Fonds |
-| **Innovationsfonds** | rund **40 Mrd. €** von 2020 bis 2030, finanziert aus dem Emissionshandel [@consilium_finanzierung] | emissionsarme Technologien in Industrie und Energie |
-| **Modernisierungsfonds** | gespeist aus einem Anteil der ETS-Zertifikate [@consilium_finanzierung] | Energiesysteme in Mitgliedstaaten mit geringerem Einkommen |
-| **Klima-Sozialfonds** (ab 2026) | bis zu 65 Mrd. € EU-Mittel, mit nationaler Kofinanzierung mindestens **86,7 Mrd. €**; wegen des ETS-2-Starts erst 2028 sinkt die Obergrenze auf 54,6 Mrd. € [@eu_scf; @eu_scf_leitfaden] | Entlastung von Haushalten und Kleinunternehmen beim CO₂-Preis auf Heizen und Verkehr |
-| **EU-Haushalt 2021–2027** | **662 Mrd. €** für Klimaziele vorgesehen [@ec_capr_news_2025] | Querschnitt über alle Programme |
+**Die Staaten setzen das Geld vor allem für den Umbau ein:** Verkehr, erneuerbare Energien und Effizienz erhalten zusammen 62 %. 13 % gingen als Strompreiskompensation an energieintensive Unternehmen – wie in Deutschland ein spürbarer Teil zur Entlastung.
 
-: {tbl-colwidths="[24,44,32]"}
+```{=html}
+<div class="gf gf-eu" id="geldfluss" role="region" aria-label="Geldfluss der EU-Klimafinanzierung">
+<div class="gf-kopfzeile"><div><span class="gn-kicker">Klimafinanzierung</span><span class="gf-titel">Der Weg der Emissionshandelserlöse</span></div><span class="gf-tipp">Quelle, Empfänger oder Verwendung anklicken</span></div>
+<div class="gf-grafik">
+<svg class="gf-breit" viewBox="0 0 900 643" role="group" aria-label="Geldfluss der EU-Emissionshandelserlöse 2024: Quelle, Empfänger, Verwendungen">
+<text x="0" y="22" class="gf-kopf">WOHER</text>
+<text x="355.0" y="22" text-anchor="middle" class="gf-kopf">WER BEKOMMT ES</text>
+<text x="600" y="22" class="gf-kopf">WOHIN · 2024, maßstäblich</text>
+<g class="gf-teil gf-quelle gf-stark" data-k="ets" tabindex="0" role="button" aria-label="EU-Emissionshandel: 38,8 Mrd. € Erlöse 2024"><rect x="0" y="91.6" width="120" height="350.1" rx="6" class="gf-ktf-flaeche"/><text x="60.0" y="251" text-anchor="middle" class="gf-ktf-t" style="font-size:19px">EU-ETS</text><text x="60.0" y="275" text-anchor="middle" class="gf-ktf-z">38,8 Mrd. €</text><text x="60.0" y="293" text-anchor="middle" class="gf-ktf-s">Erlöse 2024</text></g>
+<path d="M120 91.6C210.0 91.6 210.0 60.0 300 60.0V280.5C210.0 280.5 210.0 312.1 120 312.1Z" class="gf-band gf-strom" data-k="ms"/>
+<path d="M120 312.1C210.0 312.1 210.0 343.7 300 343.7V473.3C210.0 473.3 210.0 441.7 120 441.7Z" class="gf-band gf-strom" data-k="eufonds"/>
+<g class="gf-teil gf-quelle gf-stark" data-k="ms" tabindex="0" role="button" aria-label="Mitglied-staaten: 24,4 Mrd. €"><rect x="300" y="60.0" width="110" height="220.5" rx="6" class="gf-mitte-flaeche"/><text x="355.0" y="152" text-anchor="middle" class="gf-ktf-t" style="font-size:15px">Mitglied-</text><text x="355.0" y="169" text-anchor="middle" class="gf-ktf-t" style="font-size:15px">staaten</text><text x="355.0" y="190" text-anchor="middle" class="gf-ktf-z" style="font-size:13px">24,4 Mrd. €</text></g>
+<g class="gf-teil gf-quelle gf-stark" data-k="eufonds" tabindex="0" role="button" aria-label="EU-Fonds: 14,4 Mrd. €"><rect x="300" y="343.7" width="110" height="129.6" rx="6" class="gf-mitte-flaeche"/><text x="355.0" y="390" text-anchor="middle" class="gf-ktf-t" style="font-size:15px">EU-Fonds</text><text x="355.0" y="412" text-anchor="middle" class="gf-ktf-z" style="font-size:13px">14,4 Mrd. €</text></g>
+<g class="gf-teil gf-ziel" data-k="verkehr" tabindex="0" role="button" aria-label="Öffentlicher Verkehr, Mobilität: 5,4 Mrd. €"><path d="M410 60.0C505.0 60.0 505.0 60.0 600 60.0V108.6C505.0 108.6 505.0 108.6 410 108.6Z" class="gf-band"/><rect x="600" y="60.0" width="10" height="48.6" class="gf-balken"/><rect x="614" y="60" width="252" height="48.6" rx="4" class="gf-hit"/><text x="624" y="82" class="gf-z-t">Öffentlicher Verkehr, Mobilität</text><text x="624" y="98" class="gf-z-s">5,4 Mrd. € · 22 %</text></g>
+<g class="gf-teil gf-ziel" data-k="erneuerbar" tabindex="0" role="button" aria-label="Erneuerbare, Netze, Speicher: 4,9 Mrd. €"><path d="M410 108.6C505.0 108.6 505.0 116.6 600 116.6V160.7C505.0 160.7 505.0 152.7 410 152.7Z" class="gf-band"/><rect x="600" y="116.6" width="10" height="44.1" class="gf-balken"/><rect x="614" y="116.6" width="252" height="44.1" rx="4" class="gf-hit"/><text x="624" y="137" class="gf-z-t">Erneuerbare, Netze, Speicher</text><text x="624" y="153" class="gf-z-s">4,9 Mrd. € · 20 %</text></g>
+<g class="gf-teil gf-ziel" data-k="effizienz" tabindex="0" role="button" aria-label="Energieeffizienz Industrie, Gebäude: 4,9 Mrd. €"><path d="M410 152.7C505.0 152.7 505.0 168.7 600 168.7V212.8C505.0 212.8 505.0 196.8 410 196.8Z" class="gf-band"/><rect x="600" y="168.7" width="10" height="44.1" class="gf-balken"/><rect x="614" y="168.7" width="252" height="44.1" rx="4" class="gf-hit"/><text x="624" y="189" class="gf-z-t">Energieeffizienz Industrie, Gebäude</text><text x="624" y="205" class="gf-z-s">4,9 Mrd. € · 20 %</text></g>
+<g class="gf-teil gf-ziel" data-k="kompensation" tabindex="0" role="button" aria-label="Strompreiskompensation: 3,2 Mrd. €"><path d="M410 196.8C505.0 196.8 505.0 223.4 600 223.4V252.2C505.0 252.2 505.0 225.6 410 225.6Z" class="gf-band"/><rect x="600" y="223.4" width="10" height="28.8" class="gf-balken"/><rect x="614" y="220.79999999999998" width="252" height="34.0" rx="4" class="gf-hit"/><text x="624" y="236" class="gf-z-t">Strompreiskompensation</text><text x="624" y="252" class="gf-z-s">3,2 Mrd. € · 13 %</text></g>
+<g class="gf-teil gf-ziel" data-k="offen" tabindex="0" role="button" aria-label="Übrige Zwecke, noch nicht ausgegeben: 6,1 Mrd. €"><path d="M410 225.6C505.0 225.6 505.0 262.8 600 262.8V317.7C505.0 317.7 505.0 280.5 410 280.5Z" class="gf-band"/><rect x="600" y="262.8" width="10" height="54.9" class="gf-balken"/><rect x="614" y="262.79999999999995" width="252" height="54.9" rx="4" class="gf-hit"/><text x="624" y="288" class="gf-z-t">Übrige Zwecke, noch nicht ausgegeben</text><text x="624" y="304" class="gf-z-s">6,1 Mrd. € · 25 %</text></g>
+<g class="gf-teil gf-ziel" data-k="fonds" tabindex="0" role="button" aria-label="Innovations- und Modernisierungsfonds: 14,4 Mrd. €"><path d="M410 343.7C505.0 343.7 505.0 343.7 600 343.7V473.3C505.0 473.3 505.0 473.3 410 473.3Z" class="gf-band"/><rect x="600" y="343.7" width="10" height="129.6" class="gf-balken"/><rect x="614" y="343.69999999999993" width="252" height="129.6" rx="4" class="gf-hit"/><text x="624" y="406" class="gf-z-t">Innovations- und Modernisierungsfonds</text><text x="624" y="422" class="gf-z-s">14,4 Mrd. €</text></g>
+<g class="gf-klammer umbau"><path d="M872 64H878V209H872"/><text x="892" y="136" text-anchor="middle" transform="rotate(90 892 136)">Umbau 62 %</text></g>
+<g class="gf-klammer entl"><path d="M872 225H878V251H872"/><text x="892" y="238" text-anchor="middle" transform="rotate(90 892 238)">13 %</text></g>
+<text x="0" y="511" class="gf-kopf">WEITERE TÖPFE · mehrjährig, nicht maßstäblich</text>
+<g class="gf-teil gf-quelle gf-zusatz" data-k="scf" tabindex="0" role="button" aria-label="Klima-Sozialfonds: ≥ 86,7 Mrd. €"><rect x="0" y="523" width="280" height="96" rx="6" class="gf-q-flaeche"/><text x="16" y="549" class="gf-q-t" style="font-size:14px">Klima-Sozialfonds</text><text x="16" y="579" class="gf-q-z" style="font-size:20px">≥ 86,7 Mrd. €</text><text x="16" y="601" class="gf-q-s">ab 2026, mit nationalen Mitteln</text></g>
+<g class="gf-teil gf-quelle gf-zusatz" data-k="rrf" tabindex="0" role="button" aria-label="Aufbau- und Resilienzfazilität: ≥ 37 %"><rect x="300" y="523" width="280" height="96" rx="6" class="gf-q-flaeche"/><text x="316" y="549" class="gf-q-t" style="font-size:14px">Aufbau- und Resilienzfazilität</text><text x="316" y="579" class="gf-q-z" style="font-size:20px">≥ 37 %</text><text x="316" y="601" class="gf-q-s">der Aufbaupläne für Klimaziele</text></g>
+<g class="gf-teil gf-quelle gf-zusatz" data-k="haushalt" tabindex="0" role="button" aria-label="EU-Haushalt 2021–2027: 662 Mrd. €"><rect x="600" y="523" width="280" height="96" rx="6" class="gf-q-flaeche"/><text x="616" y="549" class="gf-q-t" style="font-size:14px">EU-Haushalt 2021–2027</text><text x="616" y="579" class="gf-q-z" style="font-size:20px">662 Mrd. €</text><text x="616" y="601" class="gf-q-s">für Klimaziele vorgesehen</text></g>
+</svg>
+<svg class="gf-schmal" viewBox="0 0 360 690" role="group" aria-label="Geldfluss der EU-Emissionshandelserlöse, Handy-Fassung">
+<text x="0" y="14" class="gf-kopf">WOHER</text>
+<g class="gf-teil gf-quelle gf-stark" data-k="ets" tabindex="0" role="button" aria-label="EU-Emissionshandel: 38,8 Mrd. €"><rect x="0" y="24" width="360" height="54" rx="6" class="gf-ktf-flaeche"/><text x="14" y="57" class="gf-ktf-t" style="font-size:19px">EU-ETS</text><text x="346" y="50" text-anchor="end" class="gf-ktf-z">38,8 Mrd. €</text><text x="346" y="67" text-anchor="end" class="gf-ktf-s">Erlöse 2024</text></g>
+<text x="0" y="104" class="gf-kopf">WER BEKOMMT ES</text>
+<g class="gf-teil gf-quelle gf-stark" data-k="ms" tabindex="0" role="button" aria-label="Mitgliedstaaten: 24,4 Mrd. €"><rect x="0" y="112" width="223.4" height="50" rx="6" class="gf-mitte-flaeche"/><text x="10" y="133" class="gf-ktf-t" style="font-size:13px">Mitgliedstaaten</text><text x="10" y="151" class="gf-ktf-z" style="font-size:13px">24,4 Mrd. €</text></g>
+<g class="gf-teil gf-quelle gf-stark" data-k="eufonds" tabindex="0" role="button" aria-label="EU-Fonds: 14,4 Mrd. €"><rect x="229.4" y="112" width="130.6" height="50" rx="6" class="gf-mitte-flaeche"/><text x="237.4" y="133" class="gf-ktf-t" style="font-size:13px">EU-Fonds</text><text x="237.4" y="151" class="gf-ktf-z" style="font-size:13px">14,4 Mrd. €</text></g>
+<text x="0" y="190" class="gf-kopf">WOHIN · 2024, maßstäblich</text>
+<g class="gf-teil gf-ziel" data-k="verkehr" tabindex="0" role="button" aria-label="Öffentlicher Verkehr, Mobilität: 5,4 Mrd. €"><rect x="0" y="200" width="360" height="46" rx="4" class="gf-hit"/><text x="10" y="218" class="gf-z-t">Öffentlicher Verkehr, Mobilität</text><rect x="10" y="226" width="127.5" height="10" class="gf-balken"/><text x="143.5" y="235" class="gf-z-s">5,4 · 22 %</text></g>
+<g class="gf-teil gf-ziel" data-k="erneuerbar" tabindex="0" role="button" aria-label="Erneuerbare, Netze, Speicher: 4,9 Mrd. €"><rect x="0" y="250" width="360" height="46" rx="4" class="gf-hit"/><text x="10" y="268" class="gf-z-t">Erneuerbare, Netze, Speicher</text><rect x="10" y="276" width="115.7" height="10" class="gf-balken"/><text x="131.7" y="285" class="gf-z-s">4,9 · 20 %</text></g>
+<g class="gf-teil gf-ziel" data-k="effizienz" tabindex="0" role="button" aria-label="Energieeffizienz Industrie, Gebäude: 4,9 Mrd. €"><rect x="0" y="300" width="360" height="46" rx="4" class="gf-hit"/><text x="10" y="318" class="gf-z-t">Energieeffizienz Industrie, Gebäude</text><rect x="10" y="326" width="115.7" height="10" class="gf-balken"/><text x="131.7" y="335" class="gf-z-s">4,9 · 20 %</text></g>
+<g class="gf-teil gf-ziel" data-k="kompensation" tabindex="0" role="button" aria-label="Strompreiskompensation: 3,2 Mrd. €"><rect x="0" y="350" width="360" height="46" rx="4" class="gf-hit"/><text x="10" y="368" class="gf-z-t">Strompreiskompensation</text><rect x="10" y="376" width="75.6" height="10" class="gf-balken"/><text x="91.6" y="385" class="gf-z-s">3,2 · 13 %</text></g>
+<g class="gf-teil gf-ziel" data-k="offen" tabindex="0" role="button" aria-label="Übrige Zwecke, noch nicht ausgegeben: 6,1 Mrd. €"><rect x="0" y="400" width="360" height="46" rx="4" class="gf-hit"/><text x="10" y="418" class="gf-z-t">Übrige Zwecke, noch nicht ausgegeben</text><rect x="10" y="426" width="144.0" height="10" class="gf-balken"/><text x="160.0" y="435" class="gf-z-s">6,1 · 25 %</text></g>
+<g class="gf-teil gf-ziel" data-k="fonds" tabindex="0" role="button" aria-label="Innovations- und Modernisierungsfonds: 14,4 Mrd. €"><rect x="0" y="450" width="360" height="46" rx="4" class="gf-hit"/><text x="10" y="468" class="gf-z-t">Innovations- und Modernisierungsfonds</text><rect x="10" y="476" width="340.0" height="10" class="gf-balken"/><text x="290.0" y="485" class="gf-z-s">14,4</text></g>
+<text x="0" y="518" class="gf-kopf">WEITERE TÖPFE · mehrjährig</text>
+<g class="gf-teil gf-quelle gf-zusatz" data-k="scf" tabindex="0" role="button" aria-label="Klima-Sozialfonds: ≥ 86,7 Mrd. €"><rect x="0" y="528" width="360" height="46" rx="6" class="gf-q-flaeche"/><text x="12" y="556" class="gf-q-t" style="font-size:14px">Klima-Sozialfonds</text><text x="348" y="557" text-anchor="end" class="gf-q-z" style="font-size:16px">≥ 86,7 Mrd. €</text></g>
+<g class="gf-teil gf-quelle gf-zusatz" data-k="rrf" tabindex="0" role="button" aria-label="Aufbau- und Resilienzfazilität: ≥ 37 %"><rect x="0" y="582" width="360" height="46" rx="6" class="gf-q-flaeche"/><text x="12" y="610" class="gf-q-t" style="font-size:14px">Aufbau- und Resilienzfazilität</text><text x="348" y="611" text-anchor="end" class="gf-q-z" style="font-size:16px">≥ 37 %</text></g>
+<g class="gf-teil gf-quelle gf-zusatz" data-k="haushalt" tabindex="0" role="button" aria-label="EU-Haushalt 2021–2027: 662 Mrd. €"><rect x="0" y="636" width="360" height="46" rx="6" class="gf-q-flaeche"/><text x="12" y="664" class="gf-q-t" style="font-size:14px">EU-Haushalt 2021–2027</text><text x="348" y="665" text-anchor="end" class="gf-q-z" style="font-size:16px">662 Mrd. €</text></g>
+</svg>
+</div>
+<div class="gf-detail" aria-live="polite"></div>
+</div>
+```
 
-### Wohin fließt das Geld?
+::: {.gf-karten}
 
-Der größte Teil der ETS-Einnahmen geht an die Mitgliedstaaten: 2024 waren es 24,4 Mrd. €. Davon nutzten sie 3,2 Mrd. € als Strompreiskompensation für energieintensive Unternehmen; die übrigen 21,2 Mrd. € müssen in Klimaschutz und Energiewende fließen, aber nicht im selben Jahr [@ec_progress_2025_ets].
+::: {.gf-karte #geld-ets data-k="ets"}
+[Quelle]{.gf-art} [EU-Emissionshandel (ETS 1)]{.gf-name}
 
-::: {.balken-vergleich .breit}
+[38,8 Mrd. €]{.zahl} [Versteigerungserlöse 2024]{.zahl-text}
 
-[Verwendung der ETS-Einnahmen der Mitgliedstaaten 2024, Anteil]{.bv-titel}
+Strom, Industrie, Luft- und Seeverkehr zahlen für jede Tonne CO₂ ein Zertifikat; versteigert werden sie von den Mitgliedstaaten und für die EU-Fonds [@ec_cmr_2025]. Der Durchschnittspreis lag 2025 bei 73,86 € je Tonne [@dehst_erloese_2025].
+:::
 
-`<div class="bv-zeile eu"><span class="bv-land">Öffentlicher Verkehr, Mobilität</span><span class="bv-spur"><span style="width:100.0%"></span></span><span class="bv-wert">22 %</span></div><div class="bv-zeile eu"><span class="bv-land">Erneuerbare, Netze, Speicher</span><span class="bv-spur"><span style="width:90.9%"></span></span><span class="bv-wert">20 %</span></div><div class="bv-zeile eu"><span class="bv-land">Energieeffizienz Industrie, Gebäude</span><span class="bv-spur"><span style="width:90.9%"></span></span><span class="bv-wert">20 %</span></div><div class="bv-zeile eu"><span class="bv-land">Strompreiskompensation</span><span class="bv-spur"><span style="width:59.5%"></span></span><span class="bv-wert">13 %</span></div>`{=html}
+::: {.gf-karte #geld-ms data-k="ms"}
+[Empfänger]{.gf-art} [Mitgliedstaaten]{.gf-name}
+
+[24,4 Mrd. €]{.zahl} [2024, gut 60 % der Erlöse]{.zahl-text}
+
+Die Staaten müssen die Einnahmen für Klimaschutz und Energiewende einsetzen, aber nicht im selben Jahr. 2024 wurden 16,4 Mrd. € als ausgezahlt gemeldet [@ec_progress_2025_ets].
+:::
+
+::: {.gf-karte #geld-eufonds data-k="eufonds"}
+[Empfänger]{.gf-art} [EU-Fonds]{.gf-name}
+
+[14,4 Mrd. €]{.zahl} [2024, Rest der Erlöse, eigene Rechnung]{.zahl-text}
+
+Der nicht an die Staaten verteilte Teil speist vor allem den **Innovationsfonds** und den **Modernisierungsfonds** [@consilium_finanzierung].
+:::
+
+::: {.gf-karte #geld-verkehr data-k="verkehr"}
+[Verwendung · Umbau]{.gf-art} [Öffentlicher Verkehr, Mobilität]{.gf-name}
+
+[22 %]{.zahl} [der Einnahmen der Staaten 2024, rund 5,4 Mrd. €]{.zahl-text}
+
+Größter Einzelposten in den Berichten der Mitgliedstaaten [@ec_progress_2025_ets].
+:::
+
+::: {.gf-karte #geld-erneuerbar data-k="erneuerbar"}
+[Verwendung · Umbau]{.gf-art} [Erneuerbare, Netze, Speicher]{.gf-name}
+
+[20 %]{.zahl} [der Einnahmen der Staaten 2024, rund 4,9 Mrd. €]{.zahl-text}
+
+Ausbau erneuerbarer Energien, Stromnetze und Speicher [@ec_progress_2025_ets].
+:::
+
+::: {.gf-karte #geld-effizienz data-k="effizienz"}
+[Verwendung · Umbau]{.gf-art} [Energieeffizienz in Industrie und Gebäuden]{.gf-name}
+
+[20 %]{.zahl} [der Einnahmen der Staaten 2024, rund 4,9 Mrd. €]{.zahl-text}
+
+Sanierung von Gebäuden und effizientere Industrieprozesse [@ec_progress_2025_ets].
+:::
+
+::: {.gf-karte #geld-kompensation data-k="kompensation"}
+[Verwendung · Entlastung]{.gf-art} [Strompreiskompensation]{.gf-name}
+
+[3,2 Mrd. €]{.zahl} [2024, 13 % der Einnahmen der Staaten]{.zahl-text}
+
+Energieintensive Unternehmen erhalten einen Teil der CO₂-Kosten im Strompreis zurück. Das baut nichts um, sondern schützt vor Abwanderung [@ec_progress_2025_ets].
+:::
+
+::: {.gf-karte #geld-offen data-k="offen"}
+[Verwendung]{.gf-art} [Übrige Zwecke, noch nicht ausgegeben]{.gf-name}
+
+[rund 25 %]{.zahl} [der Einnahmen der Staaten 2024, rund 6,1 Mrd. €]{.zahl-text}
+
+Weitere Zwecke oder Geld, das noch nicht ausgegeben war [@ec_progress_2025_ets].
+:::
+
+::: {.gf-karte #geld-fonds data-k="fonds"}
+[Verwendung · EU-Ebene]{.gf-art} [Innovations- und Modernisierungsfonds]{.gf-name}
+
+[14,4 Mrd. €]{.zahl} [2024, eigene Rechnung]{.zahl-text}
+
+- **Innovationsfonds:** rund 40 Mrd. € von 2020 bis 2030 für emissionsarme Technologien in Industrie und Energie [@consilium_finanzierung]
+- **Wasserstoffbank:** dritte Auktion 2026 mit 1,09 Mrd. € für 9 Projekte, bezahlt über den Innovationsfonds [@ec_ehb3_2026]
+- **Modernisierungsfonds:** Energiesysteme in Mitgliedstaaten mit geringerem Einkommen [@consilium_finanzierung]
+:::
+
+::: {.gf-karte #geld-scf data-k="scf"}
+[Weiterer Topf · ab 2026]{.gf-art} [Klima-Sozialfonds]{.gf-name}
+
+[≥ 86,7 Mrd. €]{.zahl} [mit nationaler Kofinanzierung, bis zu 65 Mrd. € EU-Mittel]{.zahl-text}
+
+Entlastet Haushalte und Kleinunternehmen beim CO₂-Preis auf Heizen und Verkehr. Weil der ETS 2 erst 2028 startet, sinkt die Obergrenze der EU-Mittel auf 54,6 Mrd. € [@eu_scf; @eu_scf_leitfaden].
+:::
+
+::: {.gf-karte #geld-rrf data-k="rrf"}
+[Weiterer Topf · Corona-Wiederaufbau]{.gf-art} [Aufbau- und Resilienzfazilität]{.gf-name}
+
+[≥ 37 %]{.zahl} [jedes Aufbauplans für Klimaziele]{.zahl-text}
+
+- Nachhaltige Mobilität: 30 %
+- Energieeffizienz: 29 %
+- Erneuerbare und Netze: 23 %
+- Grüne Forschung und Innovation: 7 %
+- Anpassung an den Klimawandel: 4 %
+- übrige Bereiche: 8 %
+
+Anteile an den Klimaausgaben der Aufbaupläne, Scoreboard der Kommission [@ec_rrf_green].
+:::
+
+::: {.gf-karte #geld-haushalt data-k="haushalt"}
+[Weiterer Topf · 2021–2027]{.gf-art} [EU-Haushalt]{.gf-name}
+
+[662 Mrd. €]{.zahl} [für Klimaziele vorgesehen]{.zahl-text}
+
+Klimaschutz läuft als Querschnitt durch alle Programme des mehrjährigen Finanzrahmens [@ec_capr_news_2025].
+:::
 
 :::
 
 ::: {.belege}
-**Belege** · Anteile laut Fortschrittsbericht der Kommission; die übrigen rund 25 % verteilen sich auf weitere Zwecke oder waren noch nicht ausgegeben – 2024 wurden 16,4 Mrd. € als ausgezahlt gemeldet [@ec_progress_2025_ets]. Strompreiskompensation: 3,2 von 24,4 Mrd. €, eigene Rechnung.
+**Belege** · Erlöse und Verteilung 2024 [@ec_cmr_2025]; Verwendung durch die Mitgliedstaaten [@ec_progress_2025_ets]. Mrd.-€-Werte der Verwendungen eigene Rechnung aus den Anteilen an 24,4 Mrd. €; EU-Fonds = 38,8 − 24,4 Mrd. €. Die weiteren Töpfe laufen über mehrere Jahre und sind deshalb nicht maßstäblich.
 :::
 
-Dazu kommt der Corona-Wiederaufbaufonds, die **Aufbau- und Resilienzfazilität**: Jeder Mitgliedstaat muss mindestens 37 % seines Aufbauplans für Klimaziele einsetzen [@ec_rrf_green]. So verteilen sich diese Klimaausgaben:
-
-::: {.balken-vergleich .breit}
-
-[Aufbau- und Resilienzfazilität: Klimaausgaben nach Bereich, Anteil]{.bv-titel}
-
-`<div class="bv-zeile eu"><span class="bv-land">Nachhaltige Mobilität</span><span class="bv-spur"><span style="width:100%"></span></span><span class="bv-wert">30 %</span></div><div class="bv-zeile eu"><span class="bv-land">Energieeffizienz</span><span class="bv-spur"><span style="width:94.7%"></span></span><span class="bv-wert">29 %</span></div><div class="bv-zeile eu"><span class="bv-land">Erneuerbare und Netze</span><span class="bv-spur"><span style="width:75.5%"></span></span><span class="bv-wert">23 %</span></div><div class="bv-zeile eu"><span class="bv-land">Grüne Forschung und Innovation</span><span class="bv-spur"><span style="width:23.2%"></span></span><span class="bv-wert">7 %</span></div><div class="bv-zeile eu"><span class="bv-land">Anpassung an den Klimawandel</span><span class="bv-spur"><span style="width:11.6%"></span></span><span class="bv-wert">4 %</span></div><div class="bv-zeile eu"><span class="bv-land">übrige Bereiche</span><span class="bv-spur"><span style="width:26.2%"></span></span><span class="bv-wert">8 %</span></div>`{=html}
-
-:::
-
-::: {.belege}
-**Belege** · Klimaausgaben der Aufbaupläne nach Politikbereich, Scoreboard der Kommission, Stand 21.10.2026 [@ec_rrf_green]: Mobilität 30,2 %, Effizienz 28,6 %, Erneuerbare und Netze 22,8 %, Forschung 7,0 %, Anpassung 3,5 %; übrige (Kreislaufwirtschaft, Wasser, sonstiger Klimaschutz, Biodiversität, Schadstoffe, grüne Qualifikationen) zusammen 7,9 %. Maßnahmen zählen je nach Klimawirkung zu 100 %, 40 % oder 0 %.
-:::
-
-::: {.sektoren}
-
-::: {.sektor}
-### Wasserstoff: Wasserstoffbank
-[2026: 1,09 Mrd. € für 9 Projekte]{.werte}
-
-Die dritte Auktion der Europäischen Wasserstoffbank fördert die Erzeugung von erneuerbarem Wasserstoff, bezahlt aus ETS-Einnahmen über den Innovationsfonds [@ec_ehb3_2026].
-:::
-
-::: {.sektor}
-### Technik: Innovationsfonds
-[rund 40 Mrd. € von 2020 bis 2030]{.werte}
-
-Fördert emissionsarme Technologien in Industrie und Energie, finanziert aus dem Emissionshandel [@consilium_finanzierung].
-:::
-
-::: {.sektor}
-### Haushalte: Klima-Sozialfonds
-[mindestens 86,7 Mrd. € mit nationaler Kofinanzierung]{.werte}
-
-Entlastet Haushalte und Kleinunternehmen beim CO₂-Preis auf Heizen und Verkehr; wegen des ETS-2-Starts erst 2028 sinkt die Obergrenze der EU-Mittel auf 54,6 Mrd. € [@eu_scf; @eu_scf_leitfaden].
-:::
-
-:::
-
-::: {.einordnung}
-**Einordnung.** Die EU verteilt das Geld vor allem über die Mitgliedstaaten; deren Schwerpunkte – Verkehr, erneuerbare Energien, Effizienz – liegen gleichauf. Wie in Deutschland geht ein spürbarer Teil in die Entlastung energieintensiver Unternehmen bei den Strompreisen.
-:::
+<script src="../skripte/geldfluss.js?v=2"></script>
 
 ## Rechtsrahmen: die wichtigsten Rechtsakte
 
-| Bereich | Rechtsakt | Was er regelt |
-|---|---|---|
-| Rahmen | **Europäisches Klimagesetz** (VO 2021/1119, geändert 2026) | −55 % bis 2030, −90 % bis 2040, Klimaneutralität 2050; Wissenschaftlicher Beirat [@eu_klimagesetz_2021; @eu_klimagesetz_2026] |
-| | **Governance-Verordnung** (VO 2018/1999) | Nationale Energie- und Klimapläne, Berichtspflichten [@eu_governance] |
-| CO₂-Preis | **Emissionshandelsrichtlinie** (RL 2003/87/EG, zuletzt 2023 geändert) | Strom, Industrie, Luft- und Seeverkehr: −62 % bis 2030 gegenüber 2005; zweites System **ETS 2** für Gebäude und Straßenverkehr ab 2028 [@eu_ets_richtlinie; @eu_ets_2023; @icap_2026] |
-| | **CO₂-Grenzausgleich CBAM** (VO 2023/956) | CO₂-Preis auf Importe von Stahl, Zement, Aluminium u. a.; Regelphase seit 2026 [@eu_cbam_2023; @eu_cbam_omnibus_2025] |
-| Lastenteilung | **Effort-Sharing-Verordnung** (VO 2023/857) | Gebäude, Verkehr, Landwirtschaft, Abfall: −40 % bis 2030 gegenüber 2005, aufgeteilt auf nationale Ziele von −10 % bis −50 % [@eu_esr_2023] |
-| Landnutzung | **LULUCF-Verordnung** (VO 2023/839) | Wälder und Böden sollen 2030 netto 310 Mio. t CO₂-Äq. aufnehmen [@eu_lulucf_2023] |
-| Energie | **Erneuerbare-Energien-Richtlinie** (RED III, RL 2023/2413) | mindestens 42,5 % erneuerbare Energien am Endenergieverbrauch 2030, angestrebt 45 % [@eu_red3] |
-| | **Energieeffizienzrichtlinie** (RL 2023/1791) | Endenergieverbrauch 2030 um 11,7 % unter der Referenzprognose von 2020 [@eu_eed] |
-| | **Methan-Verordnung** (VO 2024/1787) | Messung und Verringerung von Methanemissionen im Energiesektor [@eu_methan] |
-| Gebäude | **Gebäuderichtlinie** (EPBD, RL 2024/1275) | Neubauten als Nullemissionsgebäude: öffentliche ab 2028, alle ab 2030 [@eu_epbd] |
-| Verkehr | **CO₂-Flottengrenzwerte** (VO 2023/851) | neue Pkw ab 2035 −100 % CO₂; ein Vorschlag der Kommission von 12/2025 senkt dies auf −90 %, das Verfahren läuft [@eu_co2_pkw; @ep_autopaket] |
-| Soziales | **Klima-Sozialfonds** (VO 2023/955) | Ausgleich für den CO₂-Preis auf Heizen und Verkehr [@eu_scf] |
-| Produkte & Kreislauf | **Ökodesign-Verordnung** (ESPR, VO 2024/1781), **Batterieverordnung** (VO 2023/1542) | Anforderungen an Haltbarkeit, Reparierbarkeit und CO₂-Fußabdruck von Produkten und Batterien [@eu_espr; @eu_batterien] |
+Vierzehn Rechtsakte und der neue ETS 2 tragen die EU-Klimapolitik. **Verordnungen** gelten in allen Mitgliedstaaten direkt, **Richtlinien** müssen die Staaten erst in eigenes Recht übertragen. Man kann sie auf drei Arten ordnen: **nach Bereich**, **nach Wirkweise** (Ziel, Preis, Pflicht, Geld oder Plan) und **nach Betroffenen**. Ein Klick auf einen Rechtsakt zeigt, was er regelt.
 
-: {tbl-colwidths="[16,30,54]"}
+```{=html}
+<div class="gn" id="gesetzesnavigator" role="region" aria-label="Die Architektur des EU-Klimarechts">
+<div class="gn-kopf">
+ <div><span class="gn-kicker">Rechtsrahmen</span><span class="gn-titel">Die Architektur des EU-Klimarechts</span></div>
+ <div class="gn-linsen" role="tablist" aria-label="Blickwinkel">
+  <button type="button" role="tab" data-linse="sektor" aria-selected="true">Nach Bereich</button>
+  <button type="button" role="tab" data-linse="wirkweise" aria-selected="false">Nach Wirkweise</button>
+  <button type="button" role="tab" data-linse="wer" aria-selected="false">Wer ist betroffen?</button>
+ </div>
+</div>
+
+<div class="gn-filter" data-linse="sektor">
+ <button type="button" data-f="s:strom" style="--w:#81749e">Energie</button><button type="button" data-f="s:waerme" style="--w:#c77b5a">Gebäude</button><button type="button" data-f="s:verkehr" style="--w:#6689aa">Verkehr</button><button type="button" data-f="s:kreislauf" style="--w:#6d9b86">Produkte &amp; Land</button>
+ <span class="gn-hinweis">Farbe = Säule</span>
+</div>
+<div class="gn-filter" data-linse="wirkweise" hidden>
+ <button type="button" data-f="w:ziel" style="--w:#24634f">Ziel &amp; Kontrolle</button><button type="button" data-f="w:preis" style="--w:#c5a15d">Preis</button><button type="button" data-f="w:pflicht" style="--w:#a8675b">Pflicht</button><button type="button" data-f="w:geld" style="--w:#5f9a7a">Förderung &amp; Ausgleich</button><button type="button" data-f="w:plan" style="--w:#5d7896">Plan &amp; Bericht</button>
+ <span class="gn-hinweis">Farbe = Instrument</span>
+</div>
+<div class="gn-filter" data-linse="wer" hidden>
+ <button type="button" data-f="p:haus" style="--w:#9a7e9e">Hauseigentümer</button><button type="button" data-f="p:mobil" style="--w:#5f9aa8">Autofahrende</button><button type="button" data-f="p:firma" style="--w:#7a80a8">Unternehmen</button><button type="button" data-f="p:staat" style="--w:#8a9b5e">Mitgliedstaaten</button>
+ <span class="gn-hinweis">eigene Zuordnung</span>
+</div>
+
+<div class="gn-buehne">
+<div class="gn-haus">
+<svg class="gn-breit" viewBox="0 0 900 602" role="group" aria-label="Architektur des EU-Klimarechts: Klimagesetz als Dach, Rahmenregeln, Rechtsakte in vier Bereichen, CO₂-Preis als Fundament">
+<g class="gn-g gn-ksg" data-g="klimagesetz" data-s="alle" data-w="ziel" data-p="" tabindex="0" role="button" aria-label="Europäisches Klimagesetz"><rect x="0" y="0" width="900" height="78" rx="8" class="gn-ksg-flaeche"/><text x="18" y="47" class="gn-ksg-t">Europäisches Klimagesetz</text><path d="M560 16V62" class="gn-ksg-trenn"/><text x="612" y="27" text-anchor="middle" class="gn-ksg-jahr">2030</text><text x="612" y="57" text-anchor="middle" class="gn-ksg-z">−55 %</text><text x="712" y="27" text-anchor="middle" class="gn-ksg-jahr">2040</text><text x="712" y="57" text-anchor="middle" class="gn-ksg-z">−90 %</text><text x="822" y="27" text-anchor="middle" class="gn-ksg-jahr">2050</text><text x="822" y="57" text-anchor="middle" class="gn-ksg-z">Netto-Null</text></g>
+<path d="M450 78V96" class="gn-verbinder"/>
+<g class="gn-saeule gn-fundament" data-s="alle"><rect x="0" y="120" width="900" height="84" rx="4" class="gn-spalte"/><rect x="0" y="120" width="900" height="3" class="gn-linie"/><text x="0" y="110" class="gn-spaltenkopf">RAHMEN — PLANEN, BERICHTEN, LASTEN TEILEN</text></g>
+<g class="gn-g" data-g="governance" data-s="alle" data-w="plan" data-p="staat" tabindex="0" role="button" aria-label="Governance-VO: Governance-Verordnung"><rect x="4" y="130" width="444" height="64" rx="4" class="gn-hit"/><rect x="18" y="147" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="34" y="157" class="gn-k">Governance-VO</text><text x="34" y="178" class="gn-s">Klimapläne und Berichte</text></g>
+<g class="gn-g" data-g="esr" data-s="alle" data-w="ziel" data-p="staat" tabindex="0" role="button" aria-label="Lastenteilung (ESR): Effort-Sharing-Verordnung"><rect x="452" y="130" width="444" height="64" rx="4" class="gn-hit"/><rect x="466" y="147" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="482" y="157" class="gn-k">Lastenteilung (ESR)</text><text x="482" y="178" class="gn-s">nationale Ziele −10 bis −50 %</text></g>
+<g class="gn-saeule" data-s="strom"><rect x="0.0" y="244" width="213.0" height="232" rx="4" class="gn-spalte"/><rect x="0.0" y="244" width="213.0" height="3" class="gn-linie"/><text x="0.0" y="234" class="gn-spaltenkopf">01 — ENERGIE</text></g>
+<g class="gn-g" data-g="red3" data-s="strom" data-w="ziel" data-p="staat firma" tabindex="0" role="button" aria-label="RED III: Erneuerbare-Energien-Richtlinie"><rect x="4.0" y="254" width="205.0" height="64" rx="4" class="gn-hit"/><rect x="18.0" y="271" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="34.0" y="281" class="gn-k">RED III</text><text x="34.0" y="302" class="gn-s">42,5 % Erneuerbare</text></g>
+<g class="gn-g" data-g="eed" data-s="strom" data-w="pflicht" data-p="staat firma" tabindex="0" role="button" aria-label="Effizienz-RL: Energieeffizienzrichtlinie"><rect x="4.0" y="328" width="205.0" height="64" rx="4" class="gn-hit"/><rect x="18.0" y="345" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="34.0" y="355" class="gn-k">Effizienz-RL</text><text x="34.0" y="376" class="gn-s">Energieverbrauch senken</text></g>
+<g class="gn-g" data-g="methan" data-s="strom" data-w="pflicht" data-p="firma" tabindex="0" role="button" aria-label="Methan-VO: Methan-Verordnung"><rect x="4.0" y="402" width="205.0" height="64" rx="4" class="gn-hit"/><rect x="18.0" y="419" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="34.0" y="429" class="gn-k">Methan-VO</text><text x="34.0" y="450" class="gn-s">Lecks finden und stopfen</text></g>
+<g class="gn-saeule" data-s="waerme"><rect x="229.0" y="244" width="213.0" height="232" rx="4" class="gn-spalte"/><rect x="229.0" y="244" width="213.0" height="3" class="gn-linie"/><text x="229.0" y="234" class="gn-spaltenkopf">02 — GEBÄUDE</text></g>
+<g class="gn-g" data-g="epbd" data-s="waerme" data-w="pflicht" data-p="haus staat" tabindex="0" role="button" aria-label="EPBD: Gebäuderichtlinie"><rect x="233.0" y="254" width="205.0" height="64" rx="4" class="gn-hit"/><rect x="247.0" y="271" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="263.0" y="281" class="gn-k">EPBD</text><text x="263.0" y="302" class="gn-s">Nullemissions-Neubauten</text></g>
+<g class="gn-saeule" data-s="verkehr"><rect x="458.0" y="244" width="213.0" height="232" rx="4" class="gn-spalte"/><rect x="458.0" y="244" width="213.0" height="3" class="gn-linie"/><text x="458.0" y="234" class="gn-spaltenkopf">03 — VERKEHR</text></g>
+<g class="gn-g" data-g="co2pkw" data-s="verkehr" data-w="pflicht" data-p="mobil firma" tabindex="0" role="button" aria-label="CO₂-Flotten: CO₂-Flottengrenzwerte"><rect x="462.0" y="254" width="205.0" height="64" rx="4" class="gn-hit"/><rect x="476.0" y="271" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="492.0" y="281" class="gn-k">CO₂-Flotten</text><text x="492.0" y="302" class="gn-s">Neuwagen ohne CO₂</text></g>
+<g class="gn-saeule" data-s="kreislauf"><rect x="687.0" y="244" width="213.0" height="232" rx="4" class="gn-spalte"/><rect x="687.0" y="244" width="213.0" height="3" class="gn-linie"/><text x="687.0" y="234" class="gn-spaltenkopf">04 — PRODUKTE &amp; LAND</text></g>
+<g class="gn-g" data-g="espr" data-s="kreislauf" data-w="pflicht" data-p="firma" tabindex="0" role="button" aria-label="Ökodesign (ESPR): Ökodesign-Verordnung"><rect x="691.0" y="254" width="205.0" height="64" rx="4" class="gn-hit"/><rect x="705.0" y="271" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="721.0" y="281" class="gn-k">Ökodesign (ESPR)</text><text x="721.0" y="302" class="gn-s">haltbar, reparierbar</text></g>
+<g class="gn-g" data-g="batterie" data-s="kreislauf" data-w="pflicht" data-p="firma mobil" tabindex="0" role="button" aria-label="Batterie-VO: Batterieverordnung"><rect x="691.0" y="328" width="205.0" height="64" rx="4" class="gn-hit"/><rect x="705.0" y="345" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="721.0" y="355" class="gn-k">Batterie-VO</text><text x="721.0" y="376" class="gn-s">CO₂-Fußabdruck, Recycling</text></g>
+<g class="gn-g" data-g="lulucf" data-s="kreislauf" data-w="ziel" data-p="staat" tabindex="0" role="button" aria-label="LULUCF-VO: LULUCF-Verordnung"><rect x="691.0" y="402" width="205.0" height="64" rx="4" class="gn-hit"/><rect x="705.0" y="419" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="721.0" y="429" class="gn-k">LULUCF-VO</text><text x="721.0" y="450" class="gn-s">Senke 310 Mio. t</text></g>
+<g class="gn-saeule gn-fundament" data-s="alle"><rect x="0" y="516" width="900" height="84" rx="4" class="gn-spalte"/><rect x="0" y="516" width="900" height="3" class="gn-linie"/><text x="0" y="506" class="gn-spaltenkopf">FUNDAMENT — CO₂-PREIS UND AUSGLEICH</text></g>
+<g class="gn-g" data-g="ets1" data-s="alle" data-w="preis" data-p="firma" tabindex="0" role="button" aria-label="EU-ETS 1: Emissionshandel ETS 1"><rect x="4.0" y="526" width="217.0" height="64" rx="4" class="gn-hit"/><rect x="18.0" y="543" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="34.0" y="553" class="gn-k">EU-ETS 1</text><text x="34.0" y="574" class="gn-s">Strom, Industrie, Luft-, Seeverkehr</text></g>
+<g class="gn-g" data-g="ets2" data-s="alle" data-w="preis" data-p="haus mobil firma" tabindex="0" role="button" aria-label="ETS 2 · ab 2028: Emissionshandel ETS 2 für Gebäude und Verkehr"><rect x="229.0" y="526" width="217.0" height="64" rx="4" class="gn-hit"/><rect x="243.0" y="543" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="259.0" y="553" class="gn-k">ETS 2 · ab 2028</text><text x="259.0" y="574" class="gn-s">Heizen und Tanken</text></g>
+<g class="gn-g" data-g="cbam" data-s="alle" data-w="preis" data-p="firma" tabindex="0" role="button" aria-label="CBAM: CO₂-Grenzausgleich"><rect x="454.0" y="526" width="217.0" height="64" rx="4" class="gn-hit"/><rect x="468.0" y="543" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="484.0" y="553" class="gn-k">CBAM</text><text x="484.0" y="574" class="gn-s">CO₂-Preis an der Grenze</text></g>
+<g class="gn-g" data-g="scf" data-s="alle" data-w="geld" data-p="haus mobil staat" tabindex="0" role="button" aria-label="Klima-Sozialfonds: Klima-Sozialfonds"><rect x="679.0" y="526" width="217.0" height="64" rx="4" class="gn-hit"/><rect x="693.0" y="543" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="709.0" y="553" class="gn-k">Klima-Sozialfonds</text><text x="709.0" y="574" class="gn-s">Ausgleich für ETS 2</text></g>
+</svg>
+<svg class="gn-schmal" viewBox="0 0 360 972" role="group" aria-label="Architektur des EU-Klimarechts, Handy-Fassung">
+<g class="gn-g gn-ksg" data-g="klimagesetz" data-s="alle" data-w="ziel" data-p="" tabindex="0" role="button" aria-label="Europäisches Klimagesetz"><rect x="0" y="0" width="360" height="112" rx="8" class="gn-ksg-flaeche"/><text x="14" y="30" class="gn-ksg-t" style="font-size:19px">Europäisches Klimagesetz</text><path d="M14 44H346" class="gn-ksg-trenn"/><text x="62" y="66" text-anchor="middle" class="gn-ksg-jahr">2030</text><text x="62" y="96" text-anchor="middle" class="gn-ksg-z" style="font-size:22px">−55 %</text><text x="180" y="66" text-anchor="middle" class="gn-ksg-jahr">2040</text><text x="180" y="96" text-anchor="middle" class="gn-ksg-z" style="font-size:22px">−90 %</text><text x="298" y="66" text-anchor="middle" class="gn-ksg-jahr">2050</text><text x="298" y="96" text-anchor="middle" class="gn-ksg-z" style="font-size:22px">Netto-Null</text></g>
+<path d="M180 112V124" class="gn-verbinder"/>
+<g class="gn-saeule gn-fundament" data-s="alle"><rect x="0" y="146" width="360" height="72" rx="4" class="gn-spalte"/><rect x="0" y="146" width="360" height="3" class="gn-linie"/><text x="0" y="136" class="gn-spaltenkopf">RAHMEN</text></g>
+<g class="gn-g" data-g="governance" data-s="alle" data-w="plan" data-p="staat" tabindex="0" role="button" aria-label="Governance-VO: Governance-Verordnung"><rect x="3" y="152" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="167" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="30" y="177" class="gn-k">Governance-VO</text><text x="30" y="196" class="gn-s">Klimapläne und Berichte</text></g>
+<g class="gn-g" data-g="esr" data-s="alle" data-w="ziel" data-p="staat" tabindex="0" role="button" aria-label="Lastenteilung (ESR): Effort-Sharing-Verordnung"><rect x="183" y="152" width="174" height="58" rx="4" class="gn-hit"/><rect x="194" y="167" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="210" y="177" class="gn-k">Lastenteilung (ESR)</text><text x="210" y="196" class="gn-s">nationale Ziele −10 bis −50 %</text></g>
+<g class="gn-saeule" data-s="strom"><rect x="0" y="258" width="360" height="136" rx="4" class="gn-spalte"/><rect x="0" y="258" width="360" height="3" class="gn-linie"/><text x="0" y="248" class="gn-spaltenkopf">01 — ENERGIE</text></g>
+<g class="gn-g" data-g="red3" data-s="strom" data-w="ziel" data-p="staat firma" tabindex="0" role="button" aria-label="RED III: Erneuerbare-Energien-Richtlinie"><rect x="3" y="264" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="279" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="30" y="289" class="gn-k">RED III</text><text x="30" y="308" class="gn-s">42,5 % Erneuerbare</text></g>
+<g class="gn-g" data-g="eed" data-s="strom" data-w="pflicht" data-p="staat firma" tabindex="0" role="button" aria-label="Effizienz-RL: Energieeffizienzrichtlinie"><rect x="183" y="264" width="174" height="58" rx="4" class="gn-hit"/><rect x="194" y="279" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="210" y="289" class="gn-k">Effizienz-RL</text><text x="210" y="308" class="gn-s">Energieverbrauch senken</text></g>
+<g class="gn-g" data-g="methan" data-s="strom" data-w="pflicht" data-p="firma" tabindex="0" role="button" aria-label="Methan-VO: Methan-Verordnung"><rect x="3" y="328" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="343" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="30" y="353" class="gn-k">Methan-VO</text><text x="30" y="372" class="gn-s">Lecks finden und stopfen</text></g>
+<g class="gn-saeule" data-s="waerme"><rect x="0" y="434" width="360" height="72" rx="4" class="gn-spalte"/><rect x="0" y="434" width="360" height="3" class="gn-linie"/><text x="0" y="424" class="gn-spaltenkopf">02 — GEBÄUDE</text></g>
+<g class="gn-g" data-g="epbd" data-s="waerme" data-w="pflicht" data-p="haus staat" tabindex="0" role="button" aria-label="EPBD: Gebäuderichtlinie"><rect x="3" y="440" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="455" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="30" y="465" class="gn-k">EPBD</text><text x="30" y="484" class="gn-s">Nullemissions-Neubauten</text></g>
+<g class="gn-saeule" data-s="verkehr"><rect x="0" y="546" width="360" height="72" rx="4" class="gn-spalte"/><rect x="0" y="546" width="360" height="3" class="gn-linie"/><text x="0" y="536" class="gn-spaltenkopf">03 — VERKEHR</text></g>
+<g class="gn-g" data-g="co2pkw" data-s="verkehr" data-w="pflicht" data-p="mobil firma" tabindex="0" role="button" aria-label="CO₂-Flotten: CO₂-Flottengrenzwerte"><rect x="3" y="552" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="567" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="30" y="577" class="gn-k">CO₂-Flotten</text><text x="30" y="596" class="gn-s">Neuwagen ohne CO₂</text></g>
+<g class="gn-saeule" data-s="kreislauf"><rect x="0" y="658" width="360" height="136" rx="4" class="gn-spalte"/><rect x="0" y="658" width="360" height="3" class="gn-linie"/><text x="0" y="648" class="gn-spaltenkopf">04 — PRODUKTE &amp; LAND</text></g>
+<g class="gn-g" data-g="espr" data-s="kreislauf" data-w="pflicht" data-p="firma" tabindex="0" role="button" aria-label="Ökodesign (ESPR): Ökodesign-Verordnung"><rect x="3" y="664" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="679" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="30" y="689" class="gn-k">Ökodesign (ESPR)</text><text x="30" y="708" class="gn-s">haltbar, reparierbar</text></g>
+<g class="gn-g" data-g="batterie" data-s="kreislauf" data-w="pflicht" data-p="firma mobil" tabindex="0" role="button" aria-label="Batterie-VO: Batterieverordnung"><rect x="183" y="664" width="174" height="58" rx="4" class="gn-hit"/><rect x="194" y="679" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="210" y="689" class="gn-k">Batterie-VO</text><text x="210" y="708" class="gn-s">CO₂-Fußabdruck, Recycling</text></g>
+<g class="gn-g" data-g="lulucf" data-s="kreislauf" data-w="ziel" data-p="staat" tabindex="0" role="button" aria-label="LULUCF-VO: LULUCF-Verordnung"><rect x="3" y="728" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="743" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="30" y="753" class="gn-k">LULUCF-VO</text><text x="30" y="772" class="gn-s">Senke 310 Mio. t</text></g>
+<g class="gn-saeule gn-fundament" data-s="alle"><rect x="0" y="834" width="360" height="136" rx="4" class="gn-spalte"/><rect x="0" y="834" width="360" height="3" class="gn-linie"/><text x="0" y="824" class="gn-spaltenkopf">FUNDAMENT — CO₂-PREIS</text></g>
+<g class="gn-g" data-g="ets1" data-s="alle" data-w="preis" data-p="firma" tabindex="0" role="button" aria-label="EU-ETS 1: Emissionshandel ETS 1"><rect x="3" y="840" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="855" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="30" y="865" class="gn-k">EU-ETS 1</text><text x="30" y="884" class="gn-s">Strom, Industrie, Luft-, Seeverkehr</text></g>
+<g class="gn-g" data-g="ets2" data-s="alle" data-w="preis" data-p="haus mobil firma" tabindex="0" role="button" aria-label="ETS 2 · ab 2028: Emissionshandel ETS 2 für Gebäude und Verkehr"><rect x="183" y="840" width="174" height="58" rx="4" class="gn-hit"/><rect x="194" y="855" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="210" y="865" class="gn-k">ETS 2 · ab 2028</text><text x="210" y="884" class="gn-s">Heizen und Tanken</text></g>
+<g class="gn-g" data-g="cbam" data-s="alle" data-w="preis" data-p="firma" tabindex="0" role="button" aria-label="CBAM: CO₂-Grenzausgleich"><rect x="3" y="904" width="174" height="58" rx="4" class="gn-hit"/><rect x="14" y="919" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="30" y="929" class="gn-k">CBAM</text><text x="30" y="948" class="gn-s">CO₂-Preis an der Grenze</text></g>
+<g class="gn-g" data-g="scf" data-s="alle" data-w="geld" data-p="haus mobil staat" tabindex="0" role="button" aria-label="Klima-Sozialfonds: Klima-Sozialfonds"><rect x="183" y="904" width="174" height="58" rx="4" class="gn-hit"/><rect x="194" y="919" width="8" height="8" rx="1.5" class="gn-punkt"/><text x="210" y="929" class="gn-k">Klima-Sozialfonds</text><text x="210" y="948" class="gn-s">Ausgleich für ETS 2</text></g>
+</svg>
+<a class="gn-ktf" href="#klimafinanzierung">Die Erlöse aus dem Emissionshandel: siehe Klimafinanzierung ↑</a>
+</div>
+
+<div class="gn-detail" aria-live="polite">
+ <div class="gn-detail-kopf"><span class="gn-zaehler"></span><span class="gn-blaettern"><button type="button" class="gn-vor" aria-label="Vorheriger Rechtsakt">‹</button><button type="button" class="gn-nach" aria-label="Nächster Rechtsakt">›</button></span></div>
+ <div class="gn-detail-inhalt"></div>
+ <div class="gn-tags"></div>
+ <div class="gn-termine"></div>
+</div>
+</div>
+
+<div class="gn-zeit-titel">Was gilt wann?</div>
+<ol class="gn-zeit">
+ <li class="gn-vorbei"><span class="gn-jahr">2021</span><button type="button" data-g="klimagesetz">Klimagesetz: −55 % und Netto-Null verbindlich</button></li>
+ <li class="gn-vorbei"><span class="gn-jahr">2026</span><button type="button" data-g="cbam">CBAM: Regelphase beginnt</button><button type="button" data-g="scf">Klima-Sozialfonds startet</button><button type="button" data-g="klimagesetz">Zwischenziel 2040 beschlossen</button></li>
+ <li class="gn-heute" aria-label="heute"><span class="gn-jahr">heute</span></li>
+ <li><span class="gn-jahr">2028</span><button type="button" data-g="ets2">ETS 2 startet für Heizen und Tanken</button><button type="button" data-g="epbd">öffentliche Neubauten: null Emissionen</button></li>
+ <li><span class="gn-jahr">2030</span><button type="button" data-g="klimagesetz">−55 % netto</button><button type="button" data-g="ets1">ETS: −62 %</button><button type="button" data-g="esr">Lastenteilung: −40 %</button><button type="button" data-g="red3">42,5 % Erneuerbare</button><button type="button" data-g="eed">−11,7 % Endenergie</button><button type="button" data-g="lulucf">310 Mio. t Senke</button><button type="button" data-g="epbd">alle Neubauten: null Emissionen</button></li>
+ <li><span class="gn-jahr">2035</span><button type="button" data-g="co2pkw">neue Pkw: −100 % CO₂ (Vorschlag: −90 %)</button></li>
+ <li><span class="gn-jahr">2040</span><button type="button" data-g="klimagesetz">−90 % netto</button></li>
+ <li><span class="gn-jahr">2050</span><button type="button" data-g="klimagesetz">Klimaneutralität</button></li>
+</ol>
+<p class="gn-fuss">Zuordnung zu Bereich, Wirkweise und Betroffenen: eigene Einordnung. Belege in den Kurzbeschreibungen.</p>
+</div>
+```
+
+::: {.gesetze .gn-karten}
+
+::: {.gesetz .rahmen #gesetz-klimagesetz data-g="klimagesetz"}
+[Klimagesetz]{.kuerzel} [Europäisches Klimagesetz, VO 2021/1119, geändert 2026]{.name}
+
+[−55 %]{.zahl} [Netto-Treibhausgase bis 2030 gegenüber 1990]{.zahl-text}
+
+−55 % bis 2030, −90 % bis 2040, Klimaneutralität 2050; richtet den Wissenschaftlichen Beirat ein [@eu_klimagesetz_2021; @eu_klimagesetz_2026].
+:::
+
+::: {.gesetz #gesetz-governance data-g="governance"}
+[Governance-VO]{.kuerzel} [Governance-Verordnung, VO 2018/1999]{.name}
+
+[27]{.zahl} [Nationale Energie- und Klimapläne]{.zahl-text}
+
+Jeder Mitgliedstaat legt einen Nationalen Energie- und Klimaplan vor und berichtet regelmäßig über Emissionen und Maßnahmen [@eu_governance].
+:::
+
+::: {.gesetz #gesetz-esr data-g="esr"}
+[ESR]{.kuerzel} [Effort-Sharing-Verordnung, VO 2023/857]{.name}
+
+[−40 %]{.zahl} [Gebäude, Verkehr, Landwirtschaft, Abfall bis 2030 gegenüber 2005]{.zahl-text}
+
+Teilt das Ziel auf nationale Ziele von −10 % bis −50 % auf [@eu_esr_2023].
+:::
+
+::: {.gesetz #gesetz-red3 data-g="red3"}
+[RED III]{.kuerzel} [Erneuerbare-Energien-Richtlinie, RL 2023/2413]{.name}
+
+[42,5 %]{.zahl} [Erneuerbare am Endenergieverbrauch 2030, angestrebt 45 %]{.zahl-text}
+
+Verbindliches EU-Ziel für den Anteil erneuerbarer Energien [@eu_red3].
+:::
+
+::: {.gesetz #gesetz-eed data-g="eed"}
+[EED]{.kuerzel} [Energieeffizienzrichtlinie, RL 2023/1791]{.name}
+
+[−11,7 %]{.zahl} [Endenergieverbrauch 2030 unter der Referenzprognose von 2020]{.zahl-text}
+
+Setzt das EU-Ziel für den Energieverbrauch; die Mitgliedstaaten tragen mit nationalen Beiträgen bei [@eu_eed].
+:::
+
+::: {.gesetz #gesetz-methan data-g="methan"}
+[Methan-VO]{.kuerzel} [Methan-Verordnung, VO 2024/1787]{.name}
+
+[Methan]{.zahl} [Messen und Verringern im Energiesektor]{.zahl-text}
+
+Pflichten zur Messung und Verringerung von Methanemissionen bei Öl, Gas und Kohle [@eu_methan].
+:::
+
+::: {.gesetz #gesetz-epbd data-g="epbd"}
+[EPBD]{.kuerzel} [Gebäuderichtlinie, RL 2024/1275]{.name}
+
+[2028 / 2030]{.zahl} [Nullemissions-Neubauten: öffentliche / alle]{.zahl-text}
+
+Neubauten müssen Nullemissionsgebäude sein: öffentliche ab 2028, alle ab 2030 [@eu_epbd].
+:::
+
+::: {.gesetz #gesetz-co2pkw data-g="co2pkw"}
+[CO₂-Flotten]{.kuerzel} [CO₂-Flottengrenzwerte, VO 2023/851]{.name}
+
+[−100 %]{.zahl} [CO₂ neuer Pkw ab 2035]{.zahl-text}
+
+Ein Vorschlag der Kommission von 12/2025 senkt dies auf −90 %; das Verfahren läuft [@eu_co2_pkw; @ep_autopaket].
+:::
+
+::: {.gesetz #gesetz-espr data-g="espr"}
+[ESPR]{.kuerzel} [Ökodesign-Verordnung, VO 2024/1781]{.name}
+
+[Ökodesign]{.zahl} [Haltbarkeit, Reparierbarkeit, CO₂-Fußabdruck]{.zahl-text}
+
+Anforderungen an Produkte, damit sie länger halten und sich reparieren lassen [@eu_espr].
+:::
+
+::: {.gesetz #gesetz-batterie data-g="batterie"}
+[Batterie-VO]{.kuerzel} [Batterieverordnung, VO 2023/1542]{.name}
+
+[Batterien]{.zahl} [CO₂-Fußabdruck, Haltbarkeit, Recycling]{.zahl-text}
+
+Anforderungen an Batterien über den ganzen Lebenszyklus [@eu_batterien].
+:::
+
+::: {.gesetz #gesetz-lulucf data-g="lulucf"}
+[LULUCF-VO]{.kuerzel} [LULUCF-Verordnung, VO 2023/839]{.name}
+
+[310 Mio. t]{.zahl} [Netto-Aufnahme durch Wälder und Böden 2030]{.zahl-text}
+
+Wälder und Böden sollen 2030 netto 310 Mio. t CO₂-Äq. aufnehmen [@eu_lulucf_2023].
+:::
+
+::: {.gesetz #gesetz-ets1 data-g="ets1"}
+[EU-ETS 1]{.kuerzel} [Emissionshandelsrichtlinie, RL 2003/87/EG, zuletzt 2023 geändert]{.name}
+
+[−62 %]{.zahl} [bis 2030 gegenüber 2005]{.zahl-text}
+
+Strom, Industrie, Luft- und Seeverkehr brauchen für jede Tonne CO₂ ein Zertifikat; die Menge sinkt jedes Jahr [@eu_ets_richtlinie; @eu_ets_2023].
+:::
+
+::: {.gesetz #gesetz-ets2 data-g="ets2"}
+[ETS 2]{.kuerzel} [Zweiter Emissionshandel für Gebäude und Straßenverkehr]{.name}
+
+[2028]{.zahl} [Start, ein Jahr später als geplant]{.zahl-text}
+
+Ein eigenes System für Brennstoffe in Gebäuden und im Straßenverkehr; in Deutschland ersetzt es den nationalen CO₂-Preis nach dem BEHG [@eu_ets_2023; @icap_2026].
+:::
+
+::: {.gesetz #gesetz-cbam data-g="cbam"}
+[CBAM]{.kuerzel} [CO₂-Grenzausgleich, VO 2023/956]{.name}
+
+[2026]{.zahl} [Regelphase seit 1. Januar]{.zahl-text}
+
+CO₂-Preis auf Importe von Stahl, Zement, Aluminium und weiteren Gütern, damit Produktion nicht ins Ausland abwandert [@eu_cbam_2023; @eu_cbam_omnibus_2025]. Mehr: [CBAM – Grundlagen](../wissen/cbam.qmd).
+:::
+
+::: {.gesetz #gesetz-scf data-g="scf"}
+[Klima-Sozialfonds]{.kuerzel} [Klima-Sozialfonds, VO 2023/955]{.name}
+
+[≥ 86,7 Mrd. €]{.zahl} [mit nationaler Kofinanzierung]{.zahl-text}
+
+Gleicht den CO₂-Preis auf Heizen und Verkehr für Haushalte und Kleinunternehmen aus [@eu_scf].
+:::
+
+:::
+
+<script src="../skripte/gesetze.js?v=8"></script>
 
 ## Bereiche: Wo steht die EU?
 
-Die EU teilt ihre Emissionen in drei Systeme mit eigenen Zielen auf: den **Emissionshandel**, die **Lastenteilung** zwischen den Mitgliedstaaten und die **Landnutzung**. Dazu kommen die Energieziele.
+Die EU teilt ihre Emissionen in drei Systeme mit eigenen Zielen auf: den **Emissionshandel**, die **Lastenteilung** zwischen den Mitgliedstaaten und die **Landnutzung**. Dazu kommen die Energieziele. Die Leiste zeigt, welcher Teil des Wegs zum Ziel 2030 geschafft ist; ein Klick öffnet die Karte des Bereichs.
 
-::: {.sektoren}
+```{=html}
+<div class="br" id="bereiche" role="region" aria-label="Wie weit die EU-Bereiche auf dem Weg zum Ziel 2030 sind">
+<div class="br-leiste" role="group" aria-label="Fortschritt je Bereich">
+<div class="br-kopf"><span>Weg zum Ziel 2030 geschafft</span><span class="br-skala"><i style="left:0">0</i><i style="left:90.91%">Ziel</i></span></div>
+<button type="button" class="br-zeile" data-k="ets" style="--s:#3c5a8a" aria-label="Emissionshandel: −50 von −62 %, Projektion −66 %"><span class="br-name">Emissionshandel</span><span class="br-spur"><u style="width:73.31%"></u><s style="left:96.77%" title="Projektion −66 %"></s><em style="left:90.91%"></em></span><span class="br-wert">81 %<small>−50 von −62 %</small></span></button>
+<button type="button" class="br-zeile" data-k="esr" style="--s:#c77b5a" aria-label="Lastenteilung: −20 von −40 %, Projektion −38 %"><span class="br-name">Lastenteilung</span><span class="br-spur"><u style="width:45.45%"></u><s style="left:86.36%" title="Projektion −38 %"></s><em style="left:90.91%"></em></span><span class="br-wert">50 %<small>−20 von −40 %</small></span></button>
+<button type="button" class="br-zeile" data-k="lulucf" style="--s:#4f7d5c" aria-label="Landnutzung: 198 von 310 Mio. t"><span class="br-name">Landnutzung</span><span class="br-spur"><u style="width:58.06%"></u><em style="left:90.91%"></em></span><span class="br-wert">64 %<small>198 von 310 Mio. t</small></span></button>
+<button type="button" class="br-zeile" data-k="ee" style="--s:#81749e" aria-label="Erneuerbare: 26,2 von 42,5 %"><span class="br-name">Erneuerbare</span><span class="br-spur"><u style="width:56.04%"></u><em style="left:90.91%"></em></span><span class="br-wert">62 %<small>26,2 von 42,5 %</small></span></button>
+<div class="br-legende"><span class="ist">erreicht</span><span class="proj">Projektion 2030</span><span class="ziel">Ziel 2030</span></div>
+</div>
+<div class="br-detail" aria-live="polite"></div>
+</div>
+```
 
-::: {.sektor}
+::: {.sektoren .br-karten}
+
+::: {.sektor data-k="ets"}
 ### Emissionshandel (ETS 1)
 [Strom, Wärme, Industrie, Luft- und Seeverkehr]{.werte}
 [−50 % seit 2005 · Ziel −62 % · Projektion −66 %]{.status-chip .plus}
@@ -325,7 +744,7 @@ Die EU teilt ihre Emissionen in drei Systeme mit eigenen Zielen auf: den **Emiss
 Der Emissionshandel ist das wirksamste Instrument der EU: Seit 2005 haben sich die Emissionen der erfassten Anlagen halbiert, den größten Beitrag leistet die Stromerzeugung [@ec_capr_news_2025; @ec_cmr_2025]. Für die ortsfesten Anlagen erwartet die Kommission sogar eine Übererfüllung des Ziels [@ec_capr_swd_2025].
 :::
 
-::: {.sektor}
+::: {.sektor data-k="esr"}
 ### Lastenteilung (Effort Sharing)
 [Gebäude, Straßenverkehr, Landwirtschaft, Abfall]{.werte}
 [rund −20 % seit 2005 · Ziel −40 % · Projektion −38 %]{.status-chip .minus}
@@ -333,7 +752,7 @@ Der Emissionshandel ist das wirksamste Instrument der EU: Seit 2005 haben sich d
 Hier geht es deutlich langsamer voran [@ec_capr_news_2025]; selbst mit allen geplanten Maßnahmen der Mitgliedstaaten bleibt die Projektion für 2030 knapp unter dem Ziel [@ec_capr_swd_2025]. Ab 2028 erfasst der neue **ETS 2** Brennstoffe für Gebäude und Straßenverkehr. Deutschland droht in diesem Bereich bis 2030 eine Lücke von 255 Mio. t ([Deutschland-Seite](deutschland.qmd)).
 :::
 
-::: {.sektor}
+::: {.sektor data-k="lulucf"}
 ### Landnutzung (LULUCF)
 [Wälder, Böden, Moore]{.werte}
 [2023: rund 198 Mio. t Senke · Ziel 310 Mio. t]{.status-chip .minus}
@@ -341,7 +760,7 @@ Hier geht es deutlich langsamer voran [@ec_capr_news_2025]; selbst mit allen gep
 Die natürliche Senke gleicht nur rund 6 % der EU-Emissionen aus [@eea_trends_2025]. Bis 2030 muss sie um gut die Hälfte wachsen [@eu_lulucf_2023].
 :::
 
-::: {.sektor}
+::: {.sektor data-k="ee"}
 ### Erneuerbare Energien
 [Anteil am gesamten Endenergieverbrauch]{.werte}
 [2025: 26,2 % · Ziel 42,5 %]{.status-chip .minus}
@@ -351,8 +770,10 @@ Beim Strom liegen die Erneuerbaren schon bei knapp der Hälfte, bei Wärme und K
 
 :::
 
+<script src="../skripte/bereiche.js?v=1"></script>
+
 ::: {.belege}
-^1^ Eigene Berechnung: von 26,2 % (2025, vorläufig) auf 42,5 % in fünf Jahren ≈ 3,3 Prozentpunkte pro Jahr; 2024 → 2025: +1,0 Prozentpunkte [@eurostat_ee_2026].
+**Belege** · Anteil am Ziel eigene Rechnung: Emissionshandel 50/62, Lastenteilung 20/40, Landnutzung 198/310 Mio. t, Erneuerbare 26,2/42,5 %. ^1^ Eigene Berechnung: von 26,2 % (2025, vorläufig) auf 42,5 % in fünf Jahren ≈ 3,3 Prozentpunkte pro Jahr; 2024 → 2025: +1,0 Prozentpunkte [@eurostat_ee_2026].
 :::
 
 ## Einordnung

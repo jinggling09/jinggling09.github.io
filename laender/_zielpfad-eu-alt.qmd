@@ -1,0 +1,11 @@
+<!-- alte Fassung der EU-Pfad-Grafik (bis 09.11.2026), nicht gerendert -->
+```{=html}
+<figure class="pfad pfad-eu" aria-label="Netto-Treibhausgasemissionen der EU in Millionen Tonnen und im Vergleich zu 1990: Ist-Wert, Ziele und Projektionen">
+  <div class="pfad-zeile"><span class="pfad-jahr">1990</span><span class="pfad-balken referenz" style="width:100%"></span><span class="pfad-wert">4.726 Mio. t · <em>Referenzjahr</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2024</span><span class="pfad-balken ist" style="width:62.8%"></span><span class="pfad-wert">2.970 Mio. t · −37 % <em>Ist</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2030</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:45%"></span><span class="pfad-balken projektion" style="width:46%"></span><span class="pfad-balken projektion bestehend" style="width:53%"></span></span><span class="pfad-wert pfad-wert-gestapelt">2.120 · −55 % <em>Ziel</em><br>≈ 2.170 · −54 % <em>geplant</em><br>≈ 2.500 · −47 % <em>beschlossen</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2040</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:10%"></span><span class="pfad-balken projektion" style="width:31%"></span></span><span class="pfad-wert">≈ 470 · −90 % <em>Ziel</em> · ≈ 1.470 · −69 % <em>geplant</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2050</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:0.6%"></span><span class="pfad-balken projektion" style="width:22%"></span></span><span class="pfad-wert">netto 0 <em>Ziel</em> · ≈ 1.040 · −78 % <em>geplant</em></span></div>
+  <figcaption>Netto-Treibhausgasemissionen der EU in Mio. t CO₂-Äq. und Veränderung gegenüber 1990 (Abgrenzung des Klimagesetzes: mit Landnutzung und internationalem Luft- und Seeverkehr). Werte mit „≈“ rechnerisch aus den Prozentangaben. <span class="pfad-leg ist">Ist</span> <span class="pfad-leg ziel">Ziel nach Klimagesetz</span> <span class="pfad-leg projektion">Projektion mit beschlossenen und geplanten Maßnahmen</span> <span class="pfad-leg projektion bestehend">nur beschlossene Maßnahmen</span></figcaption>
+</figure>
+```
