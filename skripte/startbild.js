@@ -8,10 +8,12 @@
   // EU-27 (ISO 3166-1 numerisch); China einschließlich Taiwan wie auf den übrigen Karten der Website
   var EU = ["040","056","100","191","196","203","208","233","246","250","276","300","348","372","380","428","440","442","470","528","616","620","642","703","705","724","752"];
   var CN = ["156", "158"];
-  var proj = d3.geoOrthographic().scale(250).translate([400, 400]).clipAngle(90).precision(.4);
+  // Flüssiger (Jing, 09.11.2026): nur zeichnen, was im Bild liegt, und Koordinaten auf eine Nachkommastelle runden
+  var proj = d3.geoOrthographic().scale(250).translate([400, 400]).clipAngle(90).clipExtent([[-60, -20], [820, 660]]).precision(.6);
   var pfad = d3.geoPath(proj);
+  if (pfad.digits) pfad.digits(1);
   var basis = [-58, -32, 0], rot = basis.slice();
-  var land, eu, cn, de, punkte;
+  var grob, fein, punkte;   // Kartendaten 1:110 Mio. für die ganze Kugel, 1:50 Mio. erst beim Heranzoomen
   var aktiv = null, groesse = { eu: 24, de: 24, cn: 24 }, weich = true;
   var ruhig = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   var gezogen = false, t0 = performance.now();
@@ -20,11 +22,12 @@
 
   function zeichne() {
     proj.rotate(rot).scale(skala);
-    el("sb-gitter").setAttribute("d", pfad(d3.geoGraticule10()));
-    el("sb-land").setAttribute("d", pfad(land));
-    el("sb-eu").setAttribute("d", pfad(eu));
-    el("sb-cn").setAttribute("d", pfad(cn));
-    el("sb-de").setAttribute("d", pfad(de));
+    var k = fein && skala > 420 && !fliegt ? fein : grob;   // im Flug grob, danach fein
+    el("sb-gitter").setAttribute("d", pfad(gitter) || "");
+    el("sb-land").setAttribute("d", pfad(k.land) || "");
+    el("sb-eu").setAttribute("d", pfad(k.eu) || "");
+    el("sb-cn").setAttribute("d", pfad(k.cn) || "");
+    el("sb-de").setAttribute("d", pfad(k.de) || "");
     // Handelsweg Shanghai → Rotterdam (Großkreis) für den Einstieg „Unternehmen“
     if (el("sb-handel")) el("sb-handel").setAttribute("d", pfad({ type: "LineString", coordinates: [[121.5, 31.2], [4.5, 51.9]] }) || "");
     punkte.forEach(function (p) {
@@ -68,12 +71,20 @@
     });
   }
 
-  fetch("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json").then(function (r) { return r.json(); }).then(function (topo) {
+  var gitter = d3.geoGraticule10();
+  function laden(n) { return fetch("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-" + n + ".json").then(function (r) { return r.json(); }).then(aufbereiten); }
+  function aufbereiten(topo) {
     var alle = topojson.feature(topo, topo.objects.countries).features;
-    land = topojson.merge(topo, topo.objects.countries.geometries);
-    eu = { type: "FeatureCollection", features: alle.filter(function (f) { return EU.indexOf(f.id) >= 0 && f.id !== "276"; }) };
-    cn = { type: "FeatureCollection", features: alle.filter(function (f) { return CN.indexOf(f.id) >= 0; }) };
-    de = { type: "FeatureCollection", features: alle.filter(function (f) { return f.id === "276"; }) };
+    return {
+      land: topojson.merge(topo, topo.objects.countries.geometries),
+      eu: { type: "FeatureCollection", features: alle.filter(function (f) { return EU.indexOf(f.id) >= 0 && f.id !== "276"; }) },
+      cn: { type: "FeatureCollection", features: alle.filter(function (f) { return CN.indexOf(f.id) >= 0; }) },
+      de: { type: "FeatureCollection", features: alle.filter(function (f) { return f.id === "276"; }) }
+    };
+  }
+  laden("110m").then(function (k) {
+    grob = k;
+    laden("50m").then(function (f) { fein = f; }).catch(function () {});
     punkte = [
       { key: "eu", lonlat: [2, 47], dx: -10, dy: 6, anker: "end", farbe: "#3c5a8a" },
       { key: "de", lonlat: [10.4, 51.2], dx: 6, dy: -14, farbe: "#8a6a00" },
@@ -87,7 +98,9 @@
       requestAnimationFrame(schritt);
     }
     if (!ruhig) requestAnimationFrame(schritt); else weich = false;
-    setInterval(function () { if ((gezogen || ruhig || nah || themaErde) && !fliegt) zeichne(); }, 40);
+    // ohne Pendeln nur nachzeichnen, solange eine Beschriftung noch wächst oder schrumpft (sonst ruht die Kugel)
+    function waechst() { return punkte.some(function (p) { return Math.abs(groesse[p.key] - (aktiv === p.key ? 40 : 24)) > .3; }); }
+    setInterval(function () { if ((gezogen || ruhig || nah || themaErde) && !fliegt && waechst()) zeichne(); }, 40);
     var ids = { "sb-eu": "eu", "sb-de": "de", "sb-cn": "cn" };
     Object.keys(ids).forEach(function (id) {
       el(id).addEventListener("pointerenter", function () { setzeAktiv(ids[id]); });
@@ -131,7 +144,7 @@
       // Skala geometrisch, damit das Heranfliegen gleichmäßig wirkt
       skala = aSkala * Math.pow(zSkala / aSkala, e);
       zeichne();
-      if (x < 1) requestAnimationFrame(bild_); else { fliegt = false; if (fertig) fertig(); }
+      if (x < 1) requestAnimationFrame(bild_); else { fliegt = false; zeichne(); if (fertig) fertig(); }   // gelandet: feine Küsten
     }
     requestAnimationFrame(bild_);
   }
