@@ -2,8 +2,9 @@
 // Markup in laender/deutschland.qmd und laender/eu.qmd: div.zp mit Meilenstein-Knöpfen, JSON .zp-daten und der alten
 // Balkengrafik figure.pfad als Ersatz ohne Skript. Ist-Werte aus der CSV in data-quelle (Spalte "spalte").
 // Einstellungen im JSON (Standard = Deutschland): von, bis, ymax, raster, einheit ("mt" oder "index" = % von 1990),
-// spalte, ziele [[jahr, wert, kurz, lang, neben]], projektionen [{name, klasse, punkte}] (oder "projektion" für eine),
-// rest {jahr, wert, text: [Zeile 1, Zeile 2]}, texte {jahr: Kurztext}.
+// spalte, ziele [[jahr, wert, kurz, lang, neben, fett]] (fett ersetzt die Zahl, z. B. eine Spanne), projektionen [{name, klasse, punkte}] (oder "projektion" für eine),
+// rest {jahr, wert, text: [Zeile 1, Zeile 2]} oder null, texte {jahr: Kurztext}, basis (Bezugsjahr für Prozent, sonst "von"),
+// haelfte (false = keine Linie „Hälfte von …“), bereiche [[von, bis, unten, oben, Text]] als Zielspanne.
 // Überfahren zeigt jedes Jahr, Klick oder Meilenstein-Knopf hält es fest; die Grafik wird in Pixelbreite gezeichnet,
 // damit die Schrift auch auf dem Handy lesbar bleibt.
 (function () {
@@ -13,6 +14,7 @@
   var VON = D.von || 1990, BIS = D.bis || 2045, YMAX = D.ymax || 1300, INDEX = D.einheit === "index";
   var RASTER = D.raster || [0, 250, 500, 750, 1000, 1250];
   var PROJ = D.projektionen || [{ name: "Projektion", klasse: "proj", punkte: D.projektion }];
+  var BJ = D.basis || VON;
   var grafik = box.querySelector(".zp-grafik"), detail = box.querySelector(".zp-detail");
   var knoepfe = box.querySelectorAll(".zp-marken button");
   var ns = "http://www.w3.org/2000/svg", ist = {}, BASIS, ISTBIS, wahl, svg, s = {};
@@ -32,7 +34,7 @@
   fetch(box.dataset.quelle).then(function (r) { return r.text(); }).then(function (txt) {
     var zeilen = txt.trim().split("\n"), kopf = zeilen[0].split(","), sp = D.spalte ? kopf.indexOf(D.spalte) : 1;
     zeilen.slice(1).forEach(function (z) { var t = z.split(","); ist[+t[0]] = +t[sp]; });
-    BASIS = ist[VON];
+    BASIS = ist[BJ];
     ISTBIS = Math.max.apply(null, Object.keys(ist).map(Number));
     wahl = ISTBIS;
     // Zielpfad beginnt am letzten Ist-Wert
@@ -71,9 +73,15 @@
 
     // Lücke zwischen Projektion und Ziel
     var jahre = []; for (var j = ISTBIS; j <= BIS; j++) jahre.push(j);
-    var oben = jahre.map(function (j) { return x(j) + "," + y(wert(s.proj, j)); });
-    var unten = jahre.slice().reverse().map(function (j) { return x(j) + "," + y(wert(s.ziel, j)); });
-    el("polygon", { points: oben.concat(unten).join(" "), class: "zp-luecke" });
+    if (s.proj) {
+      var oben = jahre.map(function (j) { return x(j) + "," + y(wert(s.proj, j)); });
+      var unten = jahre.slice().reverse().map(function (j) { return x(j) + "," + y(wert(s.ziel, j)); });
+      el("polygon", { points: oben.concat(unten).join(" "), class: "zp-luecke" });
+    }
+    // Zielspannen (z. B. China 2035: 7–10 % unter dem Höchststand)
+    (D.bereiche || []).forEach(function (b) {
+      el("rect", { x: x(b[0]) - 5, y: y(b[3]), width: x(b[1]) - x(b[0]) + 10, height: y(b[2]) - y(b[3]), rx: 3, class: "zp-spanne" });
+    });
 
     // Ist: Fläche und Linie
     var istJ = Object.keys(ist).map(Number).sort();
@@ -81,8 +89,8 @@
     el("polygon", { points: x(VON) + "," + y(0) + " " + linie + " " + x(ISTBIS) + "," + y(0), class: "zp-ist-flaeche" });
     el("polyline", { points: linie, class: "zp-ist" });
     // Hälfte von 1990 als Orientierung
-    el("line", { x1: L, x2: W - R, y1: y(BASIS / 2), y2: y(BASIS / 2), class: "zp-haelfte" });
-    el("text", { x: x(VON + 1), y: y(BASIS / 2) - 6, class: "zp-notiz" }).textContent = "Hälfte von " + VON;
+    if (D.haelfte !== false) el("line", { x1: L, x2: W - R, y1: y(BASIS / 2), y2: y(BASIS / 2), class: "zp-haelfte" });
+    if (D.haelfte !== false) el("text", { x: x(VON + 1), y: y(BASIS / 2) - 6, class: "zp-notiz" }).textContent = "Hälfte von " + BJ;
 
     // Ziel und Projektion
     s.projs.forEach(function (pr, i) {
@@ -94,12 +102,14 @@
     D.ziele.forEach(function (z) { el("circle", { cx: x(z[0]), cy: y(z[1]), r: 5, class: "zp-ziel-punkt" }); });
 
     // Rest im Zieljahr als Klammer
-    var REST = D.rest || { jahr: 2045, wert: 212.5, text: ["212 Mio. t", "Rest 2045"] };
+    var REST = D.rest === undefined ? { jahr: 2045, wert: 212.5, text: ["212 Mio. t", "Rest 2045"] } : D.rest;
+    if (REST) {
     var xr = x(REST.jahr) + 7;
     el("path", { d: "M" + (xr - 4) + " " + y(REST.wert) + "h4v" + (y(0) - y(REST.wert)) + "h-4", class: "zp-klammer" });
     if (!schmal) {
       el("text", { x: xr + 6, y: (y(REST.wert) + y(0)) / 2 - 4, class: "zp-notiz zp-rot" }).textContent = REST.text[0];
       el("text", { x: xr + 6, y: (y(REST.wert) + y(0)) / 2 + 11, class: "zp-notiz" }).textContent = REST.text[1];
+    }
     }
 
     // Cursor
@@ -130,7 +140,8 @@
     extra = extra || {};
     var etwa = extra.etwa ? "≈ " : "";
     if (INDEX) return '<div class="zp-zeile ' + klasse + '"><dt>' + name + "</dt><dd><b>" + etwa + (extra.text || prozent(v)) + "</b> <span>" + (extra.neben || "") + "</span></dd></div>";
-    return '<div class="zp-zeile ' + klasse + '"><dt>' + name + "</dt><dd><b>" + etwa + zahl(Math.round(v * 10) / 10) + "</b> Mio. t <span>" + (extra.text || prozent(v)) + "</span></dd></div>";
+    var fett = extra.fett ? extra.fett : etwa + zahl(Math.round(v * 10) / 10);
+    return '<div class="zp-zeile ' + klasse + '"><dt>' + name + "</dt><dd><b>" + fett + "</b> Mio. t <span>" + (extra.text || prozent(v)) + "</span></dd></div>";
   }
   function zeige(j) {
     if (!s.cursor) return;
@@ -144,8 +155,8 @@
     var ziel = D.ziele.filter(function (z) { return z[0] === j; })[0];
     var h = '<div class="zp-jahr">' + j + "</div><dl>";
     var istText = D.ist_texte && D.ist_texte[j];
-    if (vi != null) h += zeile("ist", j === VON ? "Ausstoß" : "Ist", vi, istText ? { text: istText[0], neben: istText[1] } : null);
-    if (vz != null) h += zeile("ziel", "Ziel", vz, ziel ? { text: ziel[2], neben: ziel[4] } : { etwa: true });
+    if (vi != null) h += zeile("ist", j === BJ ? "Ausstoß" : "Ist", vi, istText ? { text: istText[0], neben: istText[1] } : null);
+    if (vz != null) h += zeile("ziel", "Ziel", vz, ziel ? { text: ziel[2], neben: ziel[4], fett: ziel[5] } : { etwa: true });
     PROJ.forEach(function (p, i) {
       if (vps[i] == null) return;
       var pt = p.punkte.filter(function (q) { return q[0] === j; })[0];

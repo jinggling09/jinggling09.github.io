@@ -1954,6 +1954,9 @@ figure.esgrad { margin: 1rem 0 .6rem;
   [data-k="erneuerbar"] { --k: #6d9b86; } [data-k="effizienz"] { --k: #c77b5a; } [data-k="kompensation"] { --k: #b0884a; }
   [data-k="offen"] { --k: #9aa39e; } [data-k="fonds"] { --k: #24634f; } [data-k="scf"] { --k: #9a7e9e; }
   [data-k="rrf"] { --k: #5f9aa8; } [data-k="haushalt"] { --k: #8a958f; }
+  /* China (laender/china.qmd) */
+  [data-k="banken"] { --k: #b0412e; } [data-k="pboc"] { --k: #8a6a4a; } [data-k="bestand"] { --k: #b0412e; }
+  [data-k="infra"] { --k: #81749e; } [data-k="energiewende"] { --k: #c5a15d; } [data-k="oeko"] { --k: #6d9b86; } [data-k="uebrige"] { --k: #9aa39e; }
   .gf-stark .gf-ktf-flaeche { fill: var(--k); transition: filter .2s; }
   .gf-mitte-flaeche { fill: var(--k); }
   .gf-stark.gf-an .gf-ktf-flaeche, .gf-stark.gf-an .gf-mitte-flaeche, .gf-stark.gf-wahl .gf-ktf-flaeche, .gf-stark.gf-wahl .gf-mitte-flaeche { filter: brightness(1.12); }
@@ -2097,6 +2100,7 @@ figure.esgrad { margin: 1rem 0 .6rem;
 .startbild .sb-bild .sb-region svg.sm-icon { width: 1.5rem; height: 1.5rem; }
 
 /* Zielpfad Deutschland (Jing, 09.11.2026, skripte/zielpfad.js): Linie Ist, Ziel und Projektion bis 2045 mit Meilensteinen */
+.zp.zp-cn { --ist: #{$spur-cn}; }
 .zp.zp-eu { --ist: #{$spur-eu}; }   /* nicht .eu: das Governance-SVG setzt .eu{stroke} seitenweit */
 .zp { --ist: #{$spur-de}; --ziel: #{$gruen}; --proj: #7d8a84; --rot: #b5604f;
   margin: 1.4rem 0 .6rem; background: #fff; border: 1px solid $linie; border-radius: 10px; padding: 1rem 1.1rem .9rem;
@@ -2128,6 +2132,7 @@ figure.esgrad { margin: 1rem 0 .6rem;
   .zp-proj-punkt.proj2 { fill: #b3bdb8; }
   .zp-c-proj.proj2 { fill: #b3bdb8; }
   .zp-luecke { fill: color-mix(in srgb, var(--rot) 16%, transparent); }
+  .zp-spanne { fill: color-mix(in srgb, var(--ziel) 14%, transparent); stroke: var(--ziel); stroke-width: 1; stroke-dasharray: 3 2; }
   .zp-klammer { fill: none; stroke: var(--rot); stroke-width: 1.6; }
   .zp-flaeche { cursor: crosshair; }
   .zp-cursor { pointer-events: none; }
@@ -2141,7 +2146,8 @@ figure.esgrad { margin: 1rem 0 .6rem;
     .ziel::before { border-top: 2.2px dashed var(--ziel); }
     .proj::before { border-top: 2.2px dotted var(--proj); }
     .proj2::before { border-top: 2.4px dotted #b3bdb8; }
-    .luecke::before { height: 10px; background: color-mix(in srgb, var(--rot) 16%, transparent); } }
+    .luecke::before { height: 10px; background: color-mix(in srgb, var(--rot) 16%, transparent); }
+    .spanne::before { width: 12px; height: 10px; border: 1px dashed var(--ziel); background: color-mix(in srgb, var(--ziel) 14%, transparent); } }
   .zp-detail { grid-area: detail; align-self: start; border-left: 1px solid $linie; padding-left: 1.1rem;
     @media (max-width: 860px) { border-left: 0; border-top: 1px solid $linie; padding: .7rem 0 0; }
     dl { margin: .2rem 0 .5rem; }
@@ -2177,6 +2183,7 @@ figure.esgrad { margin: 1rem 0 .6rem;
   &.ueber u { background: #c98474; } &.ueber b { color: #b5604f; }
   &.unter u { background: #6fa486; } &.unter b { color: #3f7a5c; }
   &.wachs u { background: #8fa9c9; } &.wachs b { color: #3c5a8a; }
+  &.rest0 u { background: #d9b3a9; } &.rest0 b { color: $grau; }
   &.summe { font-weight: 700; span::before { display: none; } }
   &.unter.summe { margin-top: .3rem; padding-top: .3rem; border-top: 1px solid $linie; }
   &.rest { margin-top: .3rem; padding-top: .3rem; border-top: 1px solid $linie; font-weight: 700;
@@ -2224,3 +2231,13 @@ figure.esgrad { margin: 1rem 0 .6rem;
 .br-detail { background: #fff; border: 1px solid $linie; border-top: 3px solid var(--s, #{$gruen}); border-radius: 8px; transition: border-color .25s;
   .sektor { border: 0; background: none; padding: .9rem 1.1rem .5rem; }
   .sektor h3 { color: color-mix(in srgb, var(--s) 85%, #000); } }
+/* China: Kennzahlen statt Fortschritt, weil Mengenziele je Bereich fehlen */
+.br-kennzahlen .br-zeile { grid-template-columns: 8.6rem minmax(0, 1fr); }
+.br-kennzahlen .br-zahl .status-chip { display: inline-block; margin-top: .25rem; }
+.br-zahl { line-height: 1.15; b { font-size: 1.05rem; font-variant-numeric: tabular-nums; } small { display: block; font-size: .72rem; color: $grau; } }
+.br-kennzahlen .status-chip { font-size: .68rem; white-space: nowrap; }
+@media (max-width: 480px) {
+  .br-kennzahlen .br-zeile { grid-template-columns: 6.4rem minmax(0, 1fr); }
+  .br-kennzahlen .status-chip { white-space: normal; }
+  .br-name { min-width: 0; overflow-wrap: anywhere; }
+}

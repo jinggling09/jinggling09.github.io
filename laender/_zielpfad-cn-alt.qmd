@@ -1,0 +1,12 @@
+<!-- alte Fassung der China-Pfad-Grafik (bis 09.11.2026), nicht gerendert -->
+```{=html}
+<figure class="pfad pfad-cn" aria-label="Treibhausgasemissionen Chinas in Millionen Tonnen und im Vergleich zu 2005, mit den Zielen">
+  <div class="pfad-zeile"><span class="pfad-jahr">2005</span><span class="pfad-balken referenz" style="width:49.7%"></span><span class="pfad-wert">7.940 Mio. t · <em>Referenzjahr der Intensitätsziele</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2020</span><span class="pfad-balken ist" style="width:91%"></span><span class="pfad-wert">14.535 Mio. t · +83 %</span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2025</span><span class="pfad-balken ist" style="width:100%"></span><span class="pfad-wert">15.981 Mio. t · +101 % <em>Ist</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">vor 2030</span><span class="pfad-ziel-text">Höchststand der CO₂-Emissionen</span><span class="pfad-wert"><em>Ziel</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">2035</span><span class="pfad-ziel-text">Netto-THG −7 bis −10 % unter dem Höchststand</span><span class="pfad-wert"><em>Ziel (NDC)</em></span></div>
+  <div class="pfad-zeile"><span class="pfad-jahr">vor 2060</span><span class="pfad-ziel-text">CO₂-Neutralität</span><span class="pfad-wert"><em>Ziel</em></span></div>
+  <figcaption>Treibhausgase in Mio. t CO₂-Äq. ohne Landnutzung (EDGAR) und Veränderung gegenüber 2005; Balkenlänge im Verhältnis zu 2025. Für die Ziele gibt es keine festen Mengen, weil sie sich auf den noch unbekannten Höchststand oder auf die Wirtschaftsleistung beziehen.</figcaption>
+</figure>
+```

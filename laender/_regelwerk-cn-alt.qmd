@@ -1,0 +1,16 @@
+<!-- alte Fassung Regelwerk China (bis 09.11.2026), nicht gerendert -->
+## Regelwerk: die wichtigsten Gesetze und Pläne
+
+| Bereich | Regelung | Was sie regelt |
+|---|---|---|
+| Ziele | **Leitlinien zur CO₂-Spitze und -Neutralität** (2021) | Höchststand vor 2030, Neutralität vor 2060; Rahmen des „1+N“-Systems [@cn_yijian_2021] |
+| | **Aktionsplan CO₂-Spitze vor 2030** (2021) | CO₂-Intensität −65 % ggü. 2005, nichtfossile Energie rund 25 % bis 2030 [@cn_aktionsplan_2021] |
+| | **NDC 2035** (2025) | Netto-THG −7 bis −10 % unter dem Höchststand, Wind und Solar 3.600 GW [@cn_ndc_2035] |
+| Gesetz | **Ökologie- und Umweltgesetzbuch** (beschlossen 12.03.2026, in Kraft 15.08.2026) | fasst das Umweltrecht zusammen und ersetzt u. a. das Umweltschutzgesetz; eigenes Buch „Grüne kohlenstoffarme Entwicklung“ mit Grundsätzen zu Klimawandel, CO₂-Doppelkontrolle und Emissionshandel [@cn_kodex_2026; @cn_kodex_inhalt; @npc_observer_kodex] |
+| | **Energiegesetz** (in Kraft seit 01.01.2025) | erstes Rahmengesetz für den gesamten Energiesektor; Einzelgesetze wie das Gesetz über erneuerbare Energien gelten weiter [@cn_energiegesetz] |
+| CO₂-Preis | **Vorläufige Verordnung über den Emissionshandel** (Staatsrat, seit 01.05.2024) | rechtliche Grundlage des nationalen Emissionshandels [@cn_ets_verordnung] |
+| | **Arbeitsplan Stahl, Zement, Aluminium** (MEE, 2025) | Ausweitung des Emissionshandels auf drei Industriesektoren [@mee_2025] |
+| Steuerung | **Arbeitsplan CO₂-Doppelkontrolle** (Staatsrat, 2024) | Wechsel von der Steuerung des Energieverbrauchs zur Steuerung der CO₂-Emissionen: 2026–2030 vor allem über die Intensität, nach dem Höchststand über die Gesamtmenge [@cn_doppelkontrolle_2024] |
+
+: {tbl-colwidths="[13,33,54]"}
+

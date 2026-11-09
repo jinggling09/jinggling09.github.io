@@ -169,7 +169,7 @@ Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 
 :::
 
 ```{=html}
-<script src="../skripte/zielpfad.js?v=4"></script>
+<script src="../skripte/zielpfad.js?v=6"></script>
 ```
 
 ## Governance: Wer macht was?
@@ -760,7 +760,7 @@ Nationaler CO₂-Preis auf Heiz- und Kraftstoffe seit 2021: 25 € (2021) bis 55
 
 :::
 
-<script src="../skripte/gesetze.js?v=8"></script>
+<script src="../skripte/gesetze.js?v=9"></script>
 
 ## Sektoren: Wo steht Deutschland?
 

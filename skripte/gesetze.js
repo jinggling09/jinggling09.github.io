@@ -1,5 +1,5 @@
 // Gesetzesnavigator (Jing, 05.11.2026): Haus der Klimagesetze mit drei Blickwinkeln.
-// Markup in laender/deutschland.qmd: section#gesetzesnavigator mit SVG-Gruppen .gn-g[data-g, data-s, data-w, data-p],
+// Seit 09.11.2026 auch laender/eu.qmd und laender/china.qmd. Markup in laender/deutschland.qmd: section#gesetzesnavigator mit SVG-Gruppen .gn-g[data-g, data-s, data-w, data-p],
 // Filterknöpfen [data-f="s:…|w:…|p:…"] je Blickwinkel, Zeitleiste (Knöpfe mit data-g) und den Karten .gn-karten .gesetz[data-g].
 // Das Skript holt die Karten in das Detailfeld und zeigt immer eine; ohne Skript bleiben alle Karten als Liste stehen.
 // Das Haus gibt es zweimal (breit und schmal fürs Handy, per CSS umgeschaltet); jedes Gesetz hat daher bis zu zwei Gruppen.
@@ -75,6 +75,7 @@
     function marke(f, titel) {
       var b = knopf(f);
       // Dach und Fundament haben keinen Sektorknopf: nur als Hinweis, nicht anklickbar
+      if (!b && f === "s:alle" && !nav.querySelector('.gn-linsen [data-linse="sektor"]')) return;   // China: kein Sektor-Blickwinkel
       if (!b && f === "s:alle") { var h = document.createElement("span"); h.className = "gn-tag"; h.style.setProperty("--w", "#c5a15d"); h.innerHTML = "<small>" + titel + "</small> sektorübergreifend"; tags.appendChild(h); return; }
       if (!b) return;
       var m = document.createElement("button"); m.type = "button"; m.className = "gn-tag";
@@ -145,6 +146,6 @@
     if (e.key === "ArrowLeft") blaettern(-1); else if (e.key === "ArrowRight") blaettern(1);
   });
 
-  linseSetzen("sektor");
+  linseSetzen(nav.querySelector(".gn-linsen [data-linse]").dataset.linse);   // erster Blickwinkel (China ohne „Sektor“)
   waehlen(reihe[0]);
 })();

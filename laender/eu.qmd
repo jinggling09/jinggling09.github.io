@@ -125,7 +125,7 @@ Das Europäische Klimagesetz verpflichtet die EU, ihre **Netto-Treibhausgasemiss
   <figcaption>Netto-Treibhausgasemissionen der EU in Mio. t CO₂-Äq. und Veränderung gegenüber 1990 (Abgrenzung des Klimagesetzes: mit Landnutzung und internationalem Luft- und Seeverkehr). Werte mit „≈“ rechnerisch aus den Prozentangaben. <span class="pfad-leg ist">Ist</span> <span class="pfad-leg ziel">Ziel nach Klimagesetz</span> <span class="pfad-leg projektion">Projektion mit beschlossenen und geplanten Maßnahmen</span> <span class="pfad-leg projektion bestehend">nur beschlossene Maßnahmen</span></figcaption>
 </figure>
 </div>
-<script src="../skripte/zielpfad.js?v=4"></script>
+<script src="../skripte/zielpfad.js?v=6"></script>
 ```
 
 ::: {.belege}
@@ -714,7 +714,7 @@ Gleicht den CO₂-Preis auf Heizen und Verkehr für Haushalte und Kleinunternehm
 
 :::
 
-<script src="../skripte/gesetze.js?v=8"></script>
+<script src="../skripte/gesetze.js?v=9"></script>
 
 ## Bereiche: Wo steht die EU?
 
