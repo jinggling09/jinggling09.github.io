@@ -82,6 +82,34 @@ Deutschland hat sein Ziel der Treibhausgasneutralität **2045** gesetzlich festg
 Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 1990 fest: **mindestens −65 % bis 2030**, **−88 % bis 2040**, **Netto-Treibhausgasneutralität bis 2045** und negative Emissionen nach 2050 [§ 3 @ksg]. Zusätzlich muss der Landnutzungssektor (Wälder, Moore, Böden – „LULUCF") bis 2030 netto mindestens 25 Mio. t CO₂-Äq. aufnehmen, bis 2040 35 und bis 2045 40 Mio. t [§ 3a @ksg].
 
 ```{=html}
+<div class="zp" id="zielpfad" data-quelle="../daten/data/de_thg_gesamt.csv?v=1" role="region" aria-label="Zielpfad Deutschlands bis 2045">
+  <div class="zp-kopf">
+    <div class="zp-kicker">Zielpfad · Mio. t CO₂-Äq. ohne LULUCF</div>
+    <div class="zp-titel">Die Hälfte ist geschafft – die schwerere kommt noch</div>
+  </div>
+  <div class="zp-marken" role="tablist" aria-label="Meilensteine">
+    <button type="button" data-j="1990">1990</button>
+    <button type="button" data-j="2025">2025</button>
+    <button type="button" data-j="2030">2030</button>
+    <button type="button" data-j="2040">2040</button>
+    <button type="button" data-j="2045">2045</button>
+  </div>
+  <div class="zp-grafik"></div>
+  <div class="zp-legende"><span class="ist">Ist</span><span class="ziel">Ziel nach KSG</span><span class="proj">Projektion mit bisherigen Maßnahmen</span><span class="luecke">Lücke</span></div>
+  <div class="zp-detail" aria-live="polite"></div>
+  <script type="application/json" class="zp-daten">
+  {
+    "ziele": [[2030, 438, "−65 %", "mindestens −65 % gegenüber 1990"], [2040, 150, "−88 %", "−88 % gegenüber 1990"], [2045, 0, "netto 0", "Netto-Treibhausgasneutralität"]],
+    "projektion": [[2025, 649], [2030, 469, "−63 %"], [2040, 250, "ca. −80 %"], [2045, 212.5, "−83 %"]],
+    "texte": {
+      "1990": "Referenzjahr aller Ziele. Damals stieß Deutschland 1.253 Mio. t aus – fast doppelt so viel wie heute.",
+      "2025": "Knapp die Hälfte ist geschafft (−48 %). Doch der Rückgang stockt: 2025 lagen die Emissionen nur 1 Mio. t unter dem Vorjahr.",
+      "2030": "Für −65 % fehlen nach der Projektion rund 30 Mio. t. Das Budget 2021–2030 hält nur noch knapp.",
+      "2040": "Die Projektion verfehlt das Zwischenziel deutlich: etwa −80 % statt −88 %, rund 100 Mio. t zu viel.",
+      "2045": "Ziel ist netto null. Mit den bisherigen Maßnahmen blieben 212,5 Mio. t Brutto-Restemissionen."
+    }
+  }
+  </script>
 <figure class="pfad" aria-label="Treibhausgasemissionen Deutschlands in Millionen Tonnen und im Vergleich zu 1990: Ist-Werte, Ziele und Projektion">
   <div class="pfad-zeile"><span class="pfad-jahr">1990</span><span class="pfad-balken referenz" style="width:100%"></span><span class="pfad-wert">1.253 Mio. t · <em>Referenzjahr</em></span></div>
   <div class="pfad-zeile"><span class="pfad-jahr">2025</span><span class="pfad-balken ist" style="width:51.8%"></span><span class="pfad-wert">649 Mio. t · −48 % <em>Ist</em></span></div>
@@ -90,15 +118,45 @@ Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 
   <div class="pfad-zeile"><span class="pfad-jahr">2045</span><span class="pfad-doppel"><span class="pfad-balken ziel" style="width:0.6%"></span><span class="pfad-balken projektion" style="width:17%"></span></span><span class="pfad-wert">netto 0 <em>Ziel</em> · 212,5 · −83 % <em>Projektion, brutto</em></span></div>
   <figcaption>Treibhausgase in Mio. t CO₂-Äq. (ohne LULUCF) und Veränderung gegenüber 1990. Werte mit „≈“ rechnerisch aus den Prozentzielen bzw. -projektionen. <span class="pfad-leg ist">Ist</span> <span class="pfad-leg ziel">Ziel nach KSG</span> <span class="pfad-leg projektion">Projektion mit bisherigen Maßnahmen</span> · Projektion: UBA-Projektionsdaten 2026.</figcaption>
 </figure>
+</div>
 ```
 
 ::: {.belege}
 **Belege** · Ist-Werte [@uba_thg] · Projektion 2030: −62,6 % ggü. 1990, Lücke zum 65-%-Ziel rund 30 Mio. t; 2040: ca. −80 %; 2045: 212,5 Mio. t Brutto-Restemissionen [@uba_projektion_2026]
 :::
 
+::: {.zp-karten}
+::: {.zp-karte}
+```{=html}
+<div class="zp-mini zp-puffer" aria-hidden="true">
+  <div class="zp-mini-titel">Puffer im Budget 2021–2030</div>
+  <div class="zp-balkenzeile"><span>Projektion Vorjahr</span><i style="width:100%"></i><b>81 Mio. t</b></div>
+  <div class="zp-balkenzeile jetzt"><span>Projektion 2026</span><i style="width:4.7%"></i><b>3,8 Mio. t</b></div>
+</div>
+```
 **Wie gemessen wird.** Seit der KSG-Novelle 2024 zählt nicht mehr, ob jeder Sektor sein Jahresziel erreicht, sondern ob die **Summe der Emissionen 2021–2030** im erlaubten Gesamtbudget bleibt [§§ 4, 8 @ksg]. 2025 lagen die Emissionen 12,5 Mio. t unter der zulässigen Jahresmenge [@uba_projektion_2026]. Über den ganzen Zeitraum 2021–2030 bleibt laut UBA-Projektion nur noch ein Puffer von **3,8 Mio. t** – im Vorjahr waren es noch rund 81 Mio. t [@uba_projektion_2026].
+:::
 
+::: {.zp-karte}
+```{=html}
+<div class="zp-mini zp-lulucf" aria-hidden="true">
+  <div class="zp-mini-titel">Landnutzung: Senke verlangt, Quelle gemessen</div>
+  <div class="zp-skala">
+    <span class="zp-null" style="left:57.1%"></span>
+    <span class="zp-pkt ziel" style="left:21.4%"><em>Ziel 2030<br><b>−25</b></em></span>
+    <span class="zp-pkt ist" style="left:95.6%"><em>Ist 2025<br><b>+26,9</b></em></span>
+    <span class="zp-pfeil" style="left:21.4%;width:74.2%"></span>
+  </div>
+  <div class="zp-skala-achse"><span>−40 aufnehmen</span><span>0</span><span>+30 ausstoßen</span></div>
+</div>
+```
 **Landnutzung als Schwachstelle.** 2025 war der LULUCF-Sektor mit netto 26,9 Mio. t eine **Quelle** statt der gesetzlich verlangten Senke; nur der Wald nimmt mit −19,3 Mio. t wieder CO₂ auf. Die Projektion verfehlt das LULUCF-Ziel 2030 um knapp 50 Mio. t [@uba_projektion_2026].
+:::
+:::
+
+```{=html}
+<script src="../skripte/zielpfad.js?v=2"></script>
+```
 
 ## Governance: Wer macht was?
 

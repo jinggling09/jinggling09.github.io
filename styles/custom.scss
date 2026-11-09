@@ -2084,3 +2084,78 @@ figure.esgrad { margin: 1rem 0 .6rem;
   @media (max-width: 860px) { &.sb-seite-links { left: auto; } }
 }
 .startbild .sb-bild .sb-region svg.sm-icon { width: 1.5rem; height: 1.5rem; }
+
+/* Zielpfad Deutschland (Jing, 09.11.2026, skripte/zielpfad.js): Linie Ist, Ziel und Projektion bis 2045 mit Meilensteinen */
+.zp { --ist: #{$spur-de}; --ziel: #{$gruen}; --proj: #7d8a84; --rot: #b5604f;
+  margin: 1.4rem 0 .6rem; background: #fff; border: 1px solid $linie; border-radius: 10px; padding: 1rem 1.1rem .9rem;
+  display: grid; grid-template-columns: minmax(0, 1fr) 15.5rem; grid-template-areas: "kopf kopf" "marken marken" "grafik detail" "legende detail"; gap: .5rem 1.2rem;
+  @media (max-width: 860px) { grid-template-columns: minmax(0, 1fr); grid-template-areas: "kopf" "marken" "grafik" "legende" "detail"; }
+  > figure.pfad { grid-column: 1 / -1; margin: 0; }
+  &.zp-js > figure.pfad { display: none; }
+  &:not(.zp-js) > .zp-marken, &:not(.zp-js) > .zp-legende, &:not(.zp-js) > .zp-detail { display: none; }
+  .zp-kopf { grid-area: kopf; }
+  .zp-kicker { font-size: .74rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: $grau; }
+  .zp-titel { font-family: $headings-font-family; font-size: 1.3rem; font-weight: 700; line-height: 1.25; margin-top: .15rem; }
+  .zp-marken { grid-area: marken; display: flex; flex-wrap: wrap; gap: .35rem;
+    button { border: 1px solid $linie; background: #fff; border-radius: 99px; padding: .2rem .8rem; font-size: .88rem; font-variant-numeric: tabular-nums; color: $tinte; cursor: pointer; transition: background .15s, border-color .15s;
+      &:hover { border-color: $gruen; }
+      &[aria-selected="true"] { background: $gruen; border-color: $gruen; color: #fff; font-weight: 700; } } }
+  .zp-grafik { grid-area: grafik; min-width: 0; svg { display: block; width: 100%; height: auto; overflow: visible; font-family: inherit; } }
+  .zp-raster { stroke: #edf1ee; }
+  .zp-achse { font-size: 11.5px; fill: $grau; font-variant-numeric: tabular-nums; }
+  .zp-haelfte { stroke: #c9d2cd; stroke-dasharray: 2 4; }
+  .zp-notiz { font-size: 11.5px; fill: $grau; font-style: italic; }
+  .zp-rot { fill: var(--rot); font-style: normal; font-weight: 700; }
+  .zp-ist-flaeche { fill: color-mix(in srgb, var(--ist) 12%, #fff); }
+  .zp-ist { fill: none; stroke: var(--ist); stroke-width: 2.6; stroke-linejoin: round; }
+  .zp-ziel { fill: none; stroke: var(--ziel); stroke-width: 2.2; stroke-dasharray: 6 4; }
+  .zp-proj { fill: none; stroke: var(--proj); stroke-width: 2.2; stroke-dasharray: 2 3; }
+  .zp-ziel-punkt { fill: #fff; stroke: var(--ziel); stroke-width: 2.2; }
+  .zp-proj-punkt { fill: var(--proj); }
+  .zp-luecke { fill: color-mix(in srgb, var(--rot) 16%, transparent); }
+  .zp-klammer { fill: none; stroke: var(--rot); stroke-width: 1.6; }
+  .zp-flaeche { cursor: crosshair; }
+  .zp-cursor { pointer-events: none; }
+  .zp-cursor-linie { stroke: $tinte; stroke-width: 1; stroke-dasharray: 3 3; opacity: .5; }
+  .zp-c-ist { fill: var(--ist); stroke: #fff; stroke-width: 2; }
+  .zp-c-ziel { fill: var(--ziel); stroke: #fff; stroke-width: 2; }
+  .zp-c-proj { fill: var(--proj); stroke: #fff; stroke-width: 2; }
+  .zp-legende { grid-area: legende; display: flex; flex-wrap: wrap; gap: .3rem 1rem; font-size: .8rem; color: $grau;
+    span::before { content: ""; display: inline-block; width: 18px; margin-right: .35rem; vertical-align: middle; }
+    .ist::before { border-top: 2.6px solid var(--ist); }
+    .ziel::before { border-top: 2.2px dashed var(--ziel); }
+    .proj::before { border-top: 2.2px dotted var(--proj); }
+    .luecke::before { height: 10px; background: color-mix(in srgb, var(--rot) 16%, transparent); } }
+  .zp-detail { grid-area: detail; align-self: start; border-left: 1px solid $linie; padding-left: 1.1rem;
+    @media (max-width: 860px) { border-left: 0; border-top: 1px solid $linie; padding: .7rem 0 0; }
+    dl { margin: .2rem 0 .5rem; }
+    p { margin: 0; } }
+  .zp-jahr { font-family: $headings-font-family; font-size: 2rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+  .zp-zeile { display: grid; grid-template-columns: 5.6rem 1fr; align-items: baseline; padding: .28rem 0; border-bottom: 1px solid #f0f3f1; font-size: .9rem;
+    dt { font-weight: 400; color: $grau; display: flex; align-items: center; gap: .4rem;
+      &::before { content: ""; width: .55rem; height: .55rem; border-radius: 50%; background: var(--c, $grau); } }
+    dd { margin: 0; font-variant-numeric: tabular-nums; b { font-size: 1.05rem; } span { color: $grau; font-size: .82rem; margin-left: .2rem; } }
+    &.ist { --c: var(--ist); } &.ziel { --c: var(--ziel); } &.proj { --c: var(--proj); }
+    &.luecke { --c: var(--rot); dd b { color: var(--rot); } } }
+  .zp-text { font-size: .88rem; line-height: 1.5; margin-top: .5rem; }
+  .zp-leise { color: $grau; font-style: italic; }
+}
+/* Zwei Karten unter dem Zielpfad: Budgetpuffer und Landnutzung, je mit kleiner Grafik über dem Text */
+.zp-karten { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: .8rem 0 1rem; }
+.zp-karte { background: #fff; border: 1px solid $linie; border-radius: 10px; padding: .9rem 1.1rem .4rem; font-size: .93rem; line-height: 1.55; p { margin: .7rem 0 .5rem; } }
+.zp-mini { --rot: #b5604f;
+  .zp-mini-titel { font-size: .74rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: $grau; margin-bottom: .55rem; } }
+.zp-balkenzeile { display: grid; grid-template-columns: 7.2rem minmax(0, 1fr) 4.8rem; align-items: center; gap: .5rem; font-size: .82rem; padding: .2rem 0;
+  span { color: $grau; } b { text-align: right; font-variant-numeric: tabular-nums; }
+  i { display: block; height: 12px; border-radius: 2px; background: #b9c9c0; min-width: 4px; }
+  &.jetzt i { background: var(--rot); } &.jetzt b { color: var(--rot); } }
+.zp-skala { position: relative; height: 54px; margin: 0 .6rem; border-bottom: 2px solid #d7ddd9;
+  background: linear-gradient(90deg, color-mix(in srgb, #1f5f4a 10%, #fff) 57.1%, color-mix(in srgb, #b5604f 10%, #fff) 57.1%);
+  .zp-null { position: absolute; top: 0; bottom: -6px; border-left: 1px solid #8f9a94; }
+  .zp-pfeil { position: absolute; bottom: 9px; height: 0; border-top: 2px dashed #b5604f; }
+  .zp-pkt { position: absolute; bottom: -7px; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; z-index: 1;
+    &.ziel { background: #fff; border: 2.2px solid $gruen; }
+    &.ist { background: $spur-de; border: 2px solid #fff; }
+    em { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); font-style: normal; font-size: .74rem; line-height: 1.2; color: $grau; text-align: center; white-space: nowrap; b { color: $tinte; font-size: .9rem; } }
+    &.ist em { left: auto; right: -4px; transform: none; text-align: right; } } }
+.zp-skala-achse { display: flex; justify-content: space-between; font-size: .72rem; color: $grau; margin: .35rem .6rem 0; }
