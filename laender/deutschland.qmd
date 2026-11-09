@@ -128,10 +128,21 @@ Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 
 ::: {.zp-karten}
 ::: {.zp-karte}
 ```{=html}
-<div class="zp-mini zp-puffer" aria-hidden="true">
-  <div class="zp-mini-titel">Puffer im Budget 2021–2030</div>
-  <div class="zp-balkenzeile"><span>Projektion Vorjahr</span><i style="width:100%"></i><b>81 Mio. t</b></div>
-  <div class="zp-balkenzeile jetzt"><span>Projektion 2026</span><i style="width:4.7%"></i><b>3,8 Mio. t</b></div>
+<div class="zp-mini zp-puffer" role="img" aria-label="Je Sektor Abweichung vom Budget 2021–2030: Energie, Industrie, Abfall und Landwirtschaft bleiben zusammen 301 Mio. t darunter, Gebäude und Verkehr liegen 297 Mio. t darüber. Übrig bleiben 3,8 Mio. t, im Vorjahr 81 Mio. t.">
+  <div class="zp-mini-titel">Budget 2021–2030: gespart und zu viel</div>
+  <div class="zp-wf-kopf"><span class="minus-seite">← gespart</span><span class="plus-seite">zu viel →</span></div>
+  <div class="zp-wf-feld">
+    <div class="zp-wf unter" style="--s:#d9822b"><span>Energie</span><i><u style="left:18.87%;width:31.13%"></u></i><b>−193</b></div>
+    <div class="zp-wf unter" style="--s:#6d6f8f"><span>Industrie</span><i><u style="left:37.97%;width:12.03%"></u></i><b>−74,6</b></div>
+    <div class="zp-wf unter" style="--s:#9aa39e"><span>Abfall</span><i><u style="left:47.26%;width:2.74%"></u></i><b>−17</b></div>
+    <div class="zp-wf unter" style="--s:#7f9a3a"><span>Agrar</span><i><u style="left:47.35%;width:2.65%"></u></i><b>−16,4</b></div>
+    <div class="zp-wf ueber" style="--s:#b0412e"><span>Gebäude</span><i><u style="left:50.0%;width:17.76%"></u></i><b>+110,1</b></div>
+    <div class="zp-wf ueber" style="--s:#3c5a8a"><span>Verkehr</span><i><u style="left:50.0%;width:30.15%"></u></i><b>+186,9</b></div>
+    <div class="zp-wf unter summe"><span>Gespart</span><i><u style="left:1.45%;width:48.55%"></u></i><b>−301</b></div>
+    <div class="zp-wf ueber summe"><span>Zu viel</span><i><u style="left:50.0%;width:47.9%"></u></i><b>+297</b></div>
+    <div class="zp-wf rest"><span>Übrig</span><i><u style="left:49.39%;width:0.61%"></u><s style="left:36.94%"><em>Vorjahr 81</em></s></i><b>3,8</b></div>
+  </div>
+  <div class="zp-wf-fuss">Mio. t CO₂-Äq., Summe 2021–2030 nach UBA-Projektion 2026; Mittellinie = Budget genau eingehalten. Einzelwerte gerundet.</div>
 </div>
 ```
 **Wie gemessen wird.** Seit der KSG-Novelle 2024 zählt nicht mehr, ob jeder Sektor sein Jahresziel erreicht, sondern ob die **Summe der Emissionen 2021–2030** im erlaubten Gesamtbudget bleibt [§§ 4, 8 @ksg]. 2025 lagen die Emissionen 12,5 Mio. t unter der zulässigen Jahresmenge [@uba_projektion_2026]. Über den ganzen Zeitraum 2021–2030 bleibt laut UBA-Projektion nur noch ein Puffer von **3,8 Mio. t** – im Vorjahr waren es noch rund 81 Mio. t [@uba_projektion_2026].

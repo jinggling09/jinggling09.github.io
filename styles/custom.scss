@@ -2145,10 +2145,31 @@ figure.esgrad { margin: 1rem 0 .6rem;
 .zp-karte { background: #fff; border: 1px solid $linie; border-radius: 10px; padding: .9rem 1.1rem .4rem; font-size: .93rem; line-height: 1.55; p { margin: .7rem 0 .5rem; } }
 .zp-mini { --rot: #b5604f;
   .zp-mini-titel { font-size: .74rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: $grau; margin-bottom: .55rem; } }
-.zp-balkenzeile { display: grid; grid-template-columns: 7.2rem minmax(0, 1fr) 4.8rem; align-items: center; gap: .5rem; font-size: .82rem; padding: .2rem 0;
-  span { color: $grau; } b { text-align: right; font-variant-numeric: tabular-nums; }
-  i { display: block; height: 12px; border-radius: 2px; background: #b9c9c0; min-width: 4px; }
-  &.jetzt i { background: var(--rot); } &.jetzt b { color: var(--rot); } }
+/* Puffer um die Budgetlinie (Jing, 09.11.2026): Mitte = Budget genau eingehalten, links gespart (unter Budget),
+   rechts zu viel (über Budget); darunter beide Summen und der Rest */
+.zp-wf-kopf, .zp-wf-feld { position: relative; }
+.zp-wf-kopf { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr) 3.4rem; gap: .5rem; font-size: .72rem; margin-bottom: .2rem;
+  .minus-seite, .plus-seite { grid-column: 2; grid-row: 1; }
+  .minus-seite { color: #3f7a5c; width: 50%; text-align: right; padding-right: .4rem; box-sizing: border-box; white-space: nowrap; }
+  .plus-seite { color: #b5604f; margin-left: 50%; padding-left: .4rem; } }
+.zp-wf { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr) 3.4rem; align-items: center; gap: .5rem; font-size: .82rem; padding: 1px 0;
+  span { display: flex; align-items: center; gap: .3rem; white-space: nowrap; &::before { content: ""; width: .5rem; height: .5rem; border-radius: 2px; background: var(--s, #9aa39e); } }
+  i { position: relative; height: 15px; display: block;
+    &::after { content: ""; position: absolute; left: var(--null); top: -2px; bottom: -2px; border-left: 1.5px solid $tinte; } }
+  u { position: absolute; top: 1px; bottom: 1px; border-radius: 2px; min-width: 3px; }
+  b { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+  &.ueber u { background: #c98474; } &.ueber b { color: #b5604f; }
+  &.unter u { background: #6fa486; } &.unter b { color: #3f7a5c; }
+  &.summe { font-weight: 700; span::before { display: none; } }
+  &.unter.summe { margin-top: .3rem; padding-top: .3rem; border-top: 1px solid $linie; }
+  &.rest { margin-top: .3rem; padding-top: .3rem; border-top: 1px solid $linie; font-weight: 700;
+    span::before { display: none; }
+    u { background: #3f7a5c; }
+    b { color: #3f7a5c; font-size: .95rem; }
+    s { position: absolute; top: -3px; bottom: -3px; border-left: 2px dotted #8f9a94; text-decoration: none;
+      em { position: absolute; right: 5px; top: 50%; transform: translateY(-50%); font-style: normal; font-weight: 400; font-size: .7rem; color: $grau; white-space: nowrap; } } } }
+.zp-wf-feld { --null: 50%; }
+.zp-wf-fuss { font-size: .72rem; color: $grau; margin-top: .4rem; }
 .zp-skala { position: relative; height: 54px; margin: 0 .6rem; border-bottom: 2px solid #d7ddd9;
   background: linear-gradient(90deg, color-mix(in srgb, #1f5f4a 10%, #fff) 57.1%, color-mix(in srgb, #b5604f 10%, #fff) 57.1%);
   .zp-null { position: absolute; top: 0; bottom: -6px; border-left: 1px solid #8f9a94; }
