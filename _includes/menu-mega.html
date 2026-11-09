@@ -83,6 +83,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!toggle || !window.bootstrap) return;
     var dd = bootstrap.Dropdown.getOrCreateInstance(toggle);
     alle.push(dd);
+    // Klick auf den Hauptpunkt (Jing, 09.11.2026): breit öffnet das Feld schon beim Überfahren,
+    // deshalb führt der Klick zur ersten Seite des Menüs (Überblick). Schmal bleibt er der Aufklapp-Knopf.
+    var erste = item.closest(".navbar-nav.me-auto") && item.querySelector(".dropdown-menu a.dropdown-item[href]");
+    if (erste) {
+      toggle.setAttribute("href", erste.getAttribute("href"));
+      toggle.addEventListener("click", function (e) {
+        if (!breit.matches || e.ctrlKey || e.metaKey || e.shiftKey) { if (breit.matches) e.stopPropagation(); return; }
+        e.preventDefault(); e.stopPropagation(); location.href = erste.href;
+      });
+    }
     // beim Wechsel auf einen anderen Hauptpunkt das alte Feld sofort schließen
     item.addEventListener("mouseenter", function () { if (!breit.matches) return; clearTimeout(zu); alle.forEach(function (x) { if (x !== dd) x.hide(); }); oben(); dd.show(); });
     item.addEventListener("mouseleave", function () { if (!breit.matches) return; zu = setTimeout(function () { dd.hide(); }, 180); });

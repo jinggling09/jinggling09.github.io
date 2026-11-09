@@ -999,7 +999,7 @@ figure.gov-diagramm {
   .gk.leg { background: #fbf0dc; } .gk.eu { background: #e6ecf5; } .gk.exe { background: $gruen-hell; } .gk.kon { background: #eef0ef; } .gk.geld { background: #fff4d6; }
 }
 
-/* Literaturverzeichnis zum Aufklappen (Skript: _includes/literatur-toggle.html) */
+/* Literaturverzeichnis und Fußnoten zum Aufklappen (Skript: _includes/literatur-toggle.html) */
 details.literatur {
   > summary {
     cursor: pointer;
@@ -1013,8 +1013,8 @@ details.literatur {
     &:hover .literatur-titel { color: $gruen; }
   }
   &[open] > summary::before { transform: rotate(90deg); }
-  &:not([open]) > #refs { display: none; }   /* Theme überschreibt das Standardverhalten von <details> */
-  #refs { margin-top: .6rem; }
+  &:not([open]) > :not(summary) { display: none; }   /* Theme überschreibt das Standardverhalten von <details> */
+  > #refs, > ol { margin-top: .6rem; }
 }
 
 /* ---------- Über mich (Variante B: einspaltig mit Kopfbereich) ---------- */

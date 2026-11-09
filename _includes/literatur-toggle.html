@@ -1,34 +1,37 @@
 <script>
-/* Literaturverzeichnis am Seitenende zusammenklappen: Überschrift wird zur Aufklapp-Zeile
-   mit Anzahl der Quellen. Sprünge zu einer Quelle (#ref-…) öffnen die Liste automatisch. */
+/* Literaturverzeichnis und Fußnoten am Seitenende zusammenklappen: Überschrift wird zur Aufklapp-Zeile
+   mit Anzahl der Einträge. Sprünge zu einer Quelle (#ref-…) oder Fußnote (#fn…) öffnen die Liste automatisch.
+   Fußnoten seit 09.11.2026 (Jing). */
 (function () {
-  var sec = document.getElementById("quarto-bibliography");
-  var refs = document.getElementById("refs");
-  if (!sec || !refs) return;
-  var h = sec.querySelector(".quarto-appendix-heading");
-  var details = document.createElement("details");
-  details.className = "literatur";
-  var summary = document.createElement("summary");
-  var n = refs.querySelectorAll(".csl-entry").length;
-  summary.innerHTML = '<span class="literatur-titel">' + (h ? h.textContent : "Literatur") +
-                      '</span> <span class="literatur-anzahl">(' + n + ')</span>';
-  details.appendChild(summary);
-  details.appendChild(refs);
-  if (h) h.replaceWith(details); else sec.prepend(details);
+  function klappen(sec, liste, eintraege, praefix, standard) {
+    if (!sec || !liste) return;
+    var h = sec.querySelector(".quarto-appendix-heading");
+    var details = document.createElement("details");
+    details.className = "literatur";
+    var summary = document.createElement("summary");
+    summary.innerHTML = '<span class="literatur-titel">' + (h ? h.textContent : standard) +
+                        '</span> <span class="literatur-anzahl">(' + liste.querySelectorAll(eintraege).length + ')</span>';
+    details.appendChild(summary);
+    details.appendChild(liste);
+    if (h) h.replaceWith(details); else sec.prepend(details);
 
-  function oeffneBeiSprung() {
-    if (location.hash.indexOf("#ref-") === 0) {
-      details.open = true;
-      var ziel = document.getElementById(location.hash.slice(1));
-      if (ziel) ziel.scrollIntoView();
+    function oeffneBeiSprung() {
+      if (location.hash.indexOf("#" + praefix) === 0) {
+        details.open = true;
+        var ziel = document.getElementById(location.hash.slice(1));
+        if (ziel) ziel.scrollIntoView();
+      }
     }
+    window.addEventListener("hashchange", oeffneBeiSprung);
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest('a[href^="#' + praefix + '"]');
+      if (a) details.open = true;
+    });
+    oeffneBeiSprung();
   }
-  window.addEventListener("hashchange", oeffneBeiSprung);
-  document.addEventListener("click", function (e) {
-    var a = e.target.closest && e.target.closest('a[href*="#ref-"]');
-    if (a) details.open = true;
-  });
-  oeffneBeiSprung();
+  klappen(document.getElementById("quarto-bibliography"), document.getElementById("refs"), ".csl-entry", "ref-", "Literatur");
+  var fn = document.getElementById("footnotes");
+  klappen(fn, fn && fn.querySelector(":scope > ol"), ":scope > li", "fn", "Fußnoten");
 })();
 </script>
 <script>
