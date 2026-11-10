@@ -27,6 +27,45 @@ title: "Unternehmen & Klimarecht"
 
 Klimaziele beschließt der Staat – Emissionen entstehen aber in Kraftwerken, Fabriken, Gebäuden und Fahrzeugen. Dazwischen liegen drei Ebenen: Gesetze, die **den Staat selbst binden**; Instrumente, die **ganze Branchen steuern**; und Pflichten, die **einzelne Unternehmen** erfüllen müssen. Dazu kommen **Anreize**, die freiwilliges Handeln lohnend machen sollen. Diese Seite ordnet die wichtigsten Regeln in Deutschland, der EU und China diesen Ebenen zu; der Selbstcheck unten zeigt, welche davon ein bestimmtes Unternehmen betreffen.
 
+
+```{=html}
+<figure class="abdeckung" aria-labelledby="abdeckung-titel">
+  <figcaption id="abdeckung-titel"><strong>Wie viel der Emissionen über Unternehmen bepreist wird</strong><span>Anteil an den gesamten Emissionen, %</span></figcaption>
+  <div class="ab-zeile de">
+    <span class="ab-land">Deutschland <small>2024</small></span>
+    <div class="ab-balken" role="img" aria-label="Deutschland 2024: 42 Prozent Anlagen im EU-Emissionshandel, 45 Prozent Brennstoffe im nationalen Emissionshandel, 13 Prozent ohne CO₂-Preis">
+      <span class="ab-anlage" style="--w:42"><b>42</b> Anlagen</span><span class="ab-brennstoff" style="--w:45"><b>45</b> Brennstoffe</span><span class="ab-ohne" style="--w:13"><b>13</b></span>
+    </div>
+    <span class="ab-summe">87 % mit CO₂-Preis</span>
+  </div>
+  <div class="ab-zeile eu">
+    <span class="ab-land">EU</span>
+    <div class="ab-balken" role="img" aria-label="EU: rund 40 Prozent Anlagen im EU-Emissionshandel, rund 40 Prozent Brennstoffe ab 2028 im zweiten Emissionshandel, rund 20 Prozent ohne CO₂-Preis">
+      <span class="ab-anlage" style="--w:40"><b>≈ 40</b> Anlagen</span><span class="ab-brennstoff ab-kommt" style="--w:40"><b>≈ 40</b> Brennstoffe ab 2028</span><span class="ab-ohne" style="--w:20"><b>≈ 20</b></span>
+    </div>
+    <span class="ab-summe">≈ 80 % ab 2028</span>
+  </div>
+  <div class="ab-zeile cn">
+    <span class="ab-land">China <small>nur CO₂</small></span>
+    <div class="ab-balken" role="img" aria-label="China: über 60 Prozent der CO₂-Emissionen über Anlagen im nationalen Emissionshandel, der Rest ohne nationalen CO₂-Preis">
+      <span class="ab-anlage" style="--w:61"><b>&gt; 60</b> Anlagen</span><span class="ab-ohne" style="--w:39"><b>&lt; 40</b></span>
+    </div>
+    <span class="ab-summe">&gt; 60 % mit CO₂-Preis</span>
+  </div>
+  <div class="ab-legende">
+    <span><i class="ab-anlage"></i>Anlagen: Kraftwerke und Fabriken geben selbst Zertifikate ab</span>
+    <span><i class="ab-brennstoff"></i>Brennstoffe: Händler zahlen, der Preis landet bei Betrieben und Haushalten</span>
+    <span><i class="ab-ohne"></i>ohne CO₂-Preis, vor allem Landwirtschaft</span>
+  </div>
+</figure>
+```
+
+Der größte Teil der Emissionen kommt also nicht über das Klimaschutzgesetz, sondern über den Emissionshandel bei Unternehmen an: In Deutschland unterlagen 2024 rund **87 %** der Emissionen einem CO₂-Preis – 42 % über Anlagen im EU-Emissionshandel, 45 % über Brennstoffe im nationalen Emissionshandel [@uba_nehs_2026].
+
+::: {.belege}
+**Belege** · Deutschland: Gesamtemissionen 2024 rund 650 Mio. t CO₂-Äq., Anteile laut UBA [@uba_nehs_2026]; für 2025 nennt die DEHSt für die Anlagen rund 41 % [@dehst_vet_2025], Daten zum nationalen Emissionshandel 2025 stehen noch aus. EU: Anlagen „rund 40 %“ [@uba_euets_2026], ICAP nennt 35 % (Daten 2023) [@icap_eu_ets]; der zweite Emissionshandel ab 2028 erfasst „rund 40 %“ [@ec_progress_2025_ets]. Rest und Summe eigene Rechnung, gerundet. China: über 60 % der **CO₂**-Emissionen, nicht aller Treibhausgase [@mee_qa_2025].
+:::
+
 ## Wer wird verpflichtet?
 
 ::: {.matrix}

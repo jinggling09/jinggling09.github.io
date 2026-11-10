@@ -2301,3 +2301,32 @@ figure.esgrad { margin: 1rem 0 .6rem;
   .fr-karte .fr-l { display: block; min-width: 0; }
   .fristradar .fr-blaettern { float: none; justify-content: flex-end; margin: 0 0 .3rem; }
 }
+
+/* Abdeckung: Anteil der Emissionen mit CO₂-Preis über Unternehmen (unternehmen/index.qmd, 10.11.2026) */
+.abdeckung {
+  margin: 1.2rem 0 .8rem;
+  figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .2rem 1rem; margin-bottom: .6rem;
+    strong { font-family: $headings-font-family; font-size: 1.1rem; color: $tinte; }
+    span { font-size: .78rem; color: $grau; } }
+  .ab-zeile { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr) 8.5rem; gap: .8rem; align-items: center; padding: .45rem 0; border-top: 1px solid $linie;
+    --c: #{$grau};
+    &.de { --c: #{$spur-de}; } &.eu { --c: #{$spur-eu}; } &.cn { --c: #{$spur-cn}; } }
+  .ab-land { font-size: .8rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--c);
+    small { display: block; font-weight: 400; letter-spacing: 0; text-transform: none; color: $grau; } }
+  .de .ab-land { color: $spur-de-text; }
+  .ab-balken { display: flex; height: 2.1rem; border-radius: 3px; overflow: hidden; background: #f1f2ef;
+    > span { flex: 0 0 calc(var(--w) * 1%); display: flex; align-items: center; gap: .3rem; padding: 0 .45rem; font-size: .74rem; white-space: nowrap; overflow: hidden; color: #fff;
+      b { font-size: .9rem; font-variant-numeric: tabular-nums; } } }
+  .ab-anlage { background: var(--c); }
+  .ab-brennstoff { background: color-mix(in srgb, var(--c) 55%, #fff); color: $tinte !important; }
+  .ab-kommt { background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--c) 40%, #fff) 0 6px, color-mix(in srgb, var(--c) 22%, #fff) 6px 12px); }
+  .ab-ohne { background: #e3e5e1; color: $grau !important; justify-content: center; }
+  .ab-summe { font-size: .82rem; font-weight: 700; color: $tinte; }
+  .ab-legende { display: flex; flex-wrap: wrap; gap: .3rem 1.2rem; padding-top: .55rem; border-top: 1px solid $linie; font-size: .78rem; color: $grau;
+    i { display: inline-block; width: .8rem; height: .8rem; border-radius: 2px; margin-right: .35rem; vertical-align: -.1rem; --c: #5c6560; } }
+  @media (max-width: 640px) {
+    .ab-zeile { grid-template-columns: minmax(0, 1fr) auto; gap: .3rem .6rem; }
+    .ab-balken { grid-column: 1 / -1; grid-row: 2; }
+    .ab-balken > span { font-size: 0; b { font-size: .82rem; } }
+  }
+}
