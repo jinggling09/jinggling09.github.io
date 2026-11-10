@@ -150,21 +150,19 @@ Das Bundes-Klimaschutzgesetz (KSG) legt verbindliche Minderungsziele gegenüber 
 
 ::: {.zp-karte}
 ```{=html}
-<div class="zp-mini zp-puffer zp-lulucf" role="img" aria-label="Landnutzung um die Nulllinie: 2025 nahm der Wald 19,3 Mio. t auf, Moore, Böden und übrige Flächen gaben 46,2 Mio. t ab, netto eine Quelle von 26,9 Mio. t. Verlangt ist für 2030 eine Senke von 25 Mio. t; die Projektion liegt knapp 50 Mio. t daneben.">
-  <div class="zp-mini-titel">Landnutzung: soll speichern, gibt ab</div>
-  <div class="zp-wf-kopf"><span class="minus-seite">← nimmt auf</span><span class="plus-seite">gibt ab →</span></div>
+<div class="zp-mini zp-puffer zp-lulucf" role="img" aria-label="Landnutzung um die Nulllinie: 2025 emittierte die Landnutzung netto 26,9 Mio. t und war damit eine Quelle. Verlangt ist für 2030 eine Senke von 25 Mio. t; die Projektion liegt knapp 50 Mio. t daneben.">
+  <div class="zp-mini-titel">Landnutzung: soll speichern, emittiert</div>
+  <div class="zp-wf-kopf"><span class="minus-seite">← speichert</span><span class="plus-seite">emittiert →</span></div>
   <div class="zp-wf-feld">
-    <div class="zp-wf unter" style="--s:#4f7d5c"><span>Wald</span><i><u style="left:30.7%;width:19.3%"></u></i><b>−19,3</b></div>
-    <div class="zp-wf ueber" style="--s:#8a6a4a"><span>Moore, Böden</span><i><u style="left:50.0%;width:46.2%"></u></i><b>+46,2</b></div>
     <div class="zp-wf ueber summe"><span>Ist 2025</span><i><u style="left:50.0%;width:26.9%"></u></i><b>+26,9</b></div>
     <div class="zp-wf ziel summe"><span>Ziel 2030</span><i><u style="left:25.0%;width:25.0%"></u></i><b>−25</b></div>
     <div class="zp-wf proj"><span>Projektion</span><i><u style="left:50.0%;width:25.0%"></u></i><b>≈ +25</b></div>
     <div class="zp-wf luecke"><span>Lücke 2030</span><i><u style="left:25.0%;width:50.0%"></u></i><b>≈ 50</b></div>
   </div>
-  <div class="zp-wf-fuss">Mio. t CO₂-Äq.; Mittellinie = Fläche nimmt so viel auf, wie sie abgibt. „Moore, Böden“ rechnerisch: Summe 2025 minus Wald, dazu übrige Flächen. Projektion 2030 aus der Lücke zum Ziel abgeleitet.</div>
+  <div class="zp-wf-fuss">Mio. t CO₂-Äq.; Nettowerte; Mittellinie = Fläche speichert so viel, wie sie emittiert. Projektion 2030 aus der Lücke zum Ziel abgeleitet.</div>
 </div>
 ```
-**Landnutzung als Schwachstelle.** 2025 war der LULUCF-Sektor mit netto 26,9 Mio. t eine **Quelle** statt der gesetzlich verlangten Senke; nur der Wald nimmt mit −19,3 Mio. t wieder CO₂ auf. Die Projektion verfehlt das LULUCF-Ziel 2030 um knapp 50 Mio. t [@uba_projektion_2026].
+**Landnutzung als Schwachstelle.** 2025 war der LULUCF-Sektor mit netto 26,9 Mio. t eine **Quelle** statt der gesetzlich verlangten Senke. Der Wald nimmt zwar 19,3 Mio. t CO₂ auf, entwässerte Moore und andere Flächen geben aber mehr ab. Die Projektion verfehlt das LULUCF-Ziel 2030 um knapp 50 Mio. t [@uba_projektion_2026].
 :::
 :::
 
