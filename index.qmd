@@ -181,7 +181,7 @@ title-block-banner: false
     "links": [["China im Überblick", "laender/china.html"], ["Energiewende in Zahlen", "daten/index.html"], ["China und CBAM", "wissen/schnittstellen.html"]]}
 }
 </script>
-<script src="skripte/startbild.js?v=20261109e"></script>
+<script src="skripte/startbild.js?v=20261110a"></script>
 <script type="application/json" id="sb-menue">
 {
   "_zu": "Schließen",

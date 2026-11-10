@@ -2056,9 +2056,9 @@ figure.esgrad { margin: 1rem 0 .6rem;
   .sr-titel { font-family: $hand; font-weight: 700; font-size: 2rem; line-height: 1; color: var(--r); }
   .sr-unter { font-size: .85rem; color: $grau; margin: .15rem 0 .6rem; }
   dl { margin: 0 0 .6rem; }
-  dl > div { display: grid; grid-template-columns: 5.4rem 1fr; gap: .5rem; align-items: baseline; padding: .3rem 0; border-top: 1px dashed color-mix(in srgb, var(--r) 30%, transparent); }
-  dt { font-family: $headings-font-family; font-weight: 700; font-size: 1.15rem; color: var(--r); white-space: nowrap; }
-  dd { margin: 0; font-size: .8rem; line-height: 1.3; color: #34403a; }
+  dl > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .8rem; align-items: baseline; padding: .35rem 0; border-top: 1px dashed color-mix(in srgb, var(--r) 30%, transparent); }
+  dt { font-size: .92rem; font-weight: 700; line-height: 1.3; color: #34403a; }
+  dd { margin: 0; font-family: $headings-font-family; font-weight: 700; font-size: 1.15rem; color: var(--r); white-space: nowrap; text-align: right; }
   ul { list-style: none; margin: 0; padding: 0; }
   a { display: flex; justify-content: space-between; padding: .3rem .4rem; margin: 0 -.4rem; border-radius: 8px; color: $gruen-dunkel; text-decoration: none; font-size: .9rem; font-weight: 600;
     opacity: 0; transform: translateX(-6px); transition: opacity .3s, transform .3s, background .15s; transition-delay: calc(.1s + var(--i) * .05s), calc(.1s + var(--i) * .05s), 0s;

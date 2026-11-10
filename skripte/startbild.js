@@ -197,7 +197,12 @@
     var z = document.createElement("div"); z.className = "sb-region sb-region-" + key; z.setAttribute("role", "dialog"); z.setAttribute("aria-label", r.titel);
     var h = '<button type="button" class="sz-zu" aria-label="' + (regionen._zurueck || "Zurück") + '">×</button>'
       + '<div class="sr-titel">' + r.titel + '</div><div class="sr-unter">' + r.unter + '</div><dl>';
-    r.werte.forEach(function (w) { h += "<div><dt>" + w[0] + "</dt><dd>" + w[1] + "</dd></div>"; });
+    // Kennzahl: Beschriftung links (fett, mit Doppelpunkt), Zahl rechts (Jing, 10.11.2026)
+    var zh = /^zh/.test(document.documentElement.lang);
+    r.werte.forEach(function (w) {
+      var t = w[1].charAt(0).toUpperCase() + w[1].slice(1);
+      h += "<div><dt>" + t + (zh ? "：" : ":") + "</dt><dd>" + w[0] + "</dd></div>";
+    });
     h += "</dl><ul>";
     r.links.forEach(function (l, i) { h += '<li><a href="' + l[1] + '" style="--i:' + i + '">' + l[0] + "</a></li>"; });
     h += "</ul>";
