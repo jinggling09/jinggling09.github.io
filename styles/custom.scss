@@ -2241,3 +2241,63 @@ figure.esgrad { margin: 1rem 0 .6rem;
   .br-kennzahlen .status-chip { white-space: normal; }
   .br-name { min-width: 0; overflow-wrap: anywhere; }
 }
+
+/* Fristen-Radar (unternehmen/index.qmd, 10.11.2026): Zeitachse mit Spuren DE/EU/CN, Detailkarte darunter */
+.fristradar {
+  margin: 1rem 0 .4rem;
+  .fr-filter { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .9rem;
+    button { font: inherit; font-size: .82rem; border: 1px solid $linie; background: #fff; color: $tinte; border-radius: 999px; padding: .2rem .8rem; cursor: pointer;
+      &[aria-pressed="true"] { background: $tinte; border-color: $tinte; color: #fff; } } }
+  .fr-achse { position: relative; padding: 1.6rem 0 .2rem 6.5rem; }
+  .fr-jahre { position: absolute; left: 6.5rem; right: 0; top: 0; bottom: 0; pointer-events: none;
+    span { position: absolute; top: 0; font-size: .74rem; color: $grau; font-variant-numeric: tabular-nums; transform: translateX(-50%);
+      &:first-child { transform: none; }
+      &::after { content: ""; position: absolute; left: 50%; top: 1.3rem; height: 100vh; border-left: 1px dashed rgba(0,0,0,.09); } }
+    overflow: hidden; }
+  .fr-heute { position: absolute; top: 1.15rem; bottom: 0; border-left: 2px solid $ocker; pointer-events: none; z-index: 2;
+    span { position: absolute; top: -1.15rem; left: 3px; font-size: .68rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: $ocker; background: #fff; padding: 0 2px; } }
+  .fr-spur { position: relative; display: flex; align-items: stretch; border-top: 1px solid $linie;
+    &:last-child { border-bottom: 1px solid $linie; }
+    --c: #{$grau};
+    &.de { --c: #{$spur-de}; } &.eu { --c: #{$spur-eu}; } &.cn { --c: #{$spur-cn}; } }
+  .fr-spur-name { position: absolute; left: -6.5rem; width: 6rem; top: 50%; transform: translateY(-50%); font-size: .78rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--c); }
+  .fr-spur.de .fr-spur-name { color: $spur-de-text; }
+  .fr-bahn { position: relative; flex: 1; height: calc(var(--zeilen, 1) * 22px + 16px);
+    &.fr-mit-band { height: calc(var(--zeilen, 1) * 22px + 34px); .fr-punkt:not(.fr-band) { margin-top: 18px; } } }
+  .fr-punkt { position: absolute; top: calc(8px + var(--r, 0) * 22px); width: 16px; height: 16px; margin-left: -8px; padding: 0; border-radius: 50%; border: 2px solid var(--c); background: var(--c); cursor: pointer; z-index: 3;
+    transition: transform .15s, opacity .15s;
+    &.fr-vorbei { background: #fff; }
+    &:hover, &:focus-visible { transform: scale(1.25); z-index: 4; }
+    &.fr-wahl { box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--c); }
+    &.fr-aus { opacity: .18; }
+    &.fr-band { margin-left: 0; height: 10px; top: 7px; border-radius: 2px; border: 0; background: linear-gradient(90deg, var(--c), rgba(60,90,138,.08)); transform: none;
+      &.fr-wahl { box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--c); } } }
+  .fr-tip { position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: .74rem; background: $tinte; color: #fff; border-radius: 3px; padding: .15rem .45rem; pointer-events: none; opacity: 0; transition: opacity .12s; }
+  .fr-punkt:hover .fr-tip, .fr-punkt:focus-visible .fr-tip { opacity: 1; }
+  .fr-band .fr-tip { left: 1rem; transform: none; }
+  .fr-detail { margin-top: 1rem; background: #fff; border: 1px solid $linie; border-left: 4px solid $grau; border-radius: 4px; padding: .9rem 1.1rem 1rem; outline: none;
+    &[data-land="de"] { border-left-color: $spur-de; } &[data-land="eu"] { border-left-color: $spur-eu; } &[data-land="cn"] { border-left-color: $spur-cn; } }
+  .fr-blaettern { float: right; display: flex; align-items: center; gap: .4rem; font-size: .78rem; color: $grau; margin: -.2rem -.3rem 0 .8rem;
+    button { font: inherit; font-size: 1.1rem; line-height: 1; border: 1px solid $linie; background: #fff; border-radius: 50%; width: 1.8rem; height: 1.8rem; cursor: pointer; color: $tinte; } }
+}
+.fr-karte {
+  p { margin: .35rem 0 0; font-size: .93rem; line-height: 1.5; }
+  p:first-of-type strong { display: block; font-family: $headings-font-family; font-size: 1.15rem; color: $tinte; margin: .3rem 0 .2rem; }
+  .fr-l { display: inline-block; min-width: 7.5rem; font-size: .74rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: $grau; }
+  .fr-kopf { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .7rem; font-size: .75rem; }
+  .fr-land { font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    &.de { color: $spur-de-text; } &.eu { color: $spur-eu; } &.cn { color: $spur-cn; } }
+  .fr-art { color: $grau; }
+  .fr-datum { font-weight: 700; color: $tinte; font-variant-numeric: tabular-nums; }
+  .sc-status { font-size: .68rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; border-radius: 999px; padding: .05rem .55rem;
+    &.gilt { background: $gruen-hell; color: $gruen; } &.kommt { background: #fbf0dc; color: #8a5d12; } &.offen { background: #eef1ef; color: $grau; } }
+}
+.fr-karten:not([hidden]) .fr-karte { border-top: 1px solid $linie; padding: .6rem 0; }
+@media (max-width: 640px) {
+  .fristradar .fr-achse { padding-left: 0; padding-top: 1.6rem; }
+  .fristradar .fr-jahre { left: 0; span:nth-child(even) { visibility: hidden; } }
+  .fristradar .fr-spur { padding-top: 1.1rem; }
+  .fristradar .fr-spur-name { left: 0; top: .2rem; transform: none; font-size: .68rem; }
+  .fr-karte .fr-l { display: block; min-width: 0; }
+  .fristradar .fr-blaettern { float: none; justify-content: flex-end; margin: 0 0 .3rem; }
+}

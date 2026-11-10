@@ -10,7 +10,7 @@ title: "Unternehmen & Klimarecht"
 
 [Deutschland, EU und China im Vergleich: Wie werden Klimaziele des Staates zu Pflichten für Unternehmen – und welche treffen ein bestimmtes Unternehmen?]{.tk-sub}
 
-[Stand: 23.10.2026]{.stand}
+[Stand: 10.11.2026]{.stand}
 :::
 :::
 
@@ -115,6 +115,189 @@ Klimaziele beschließt der Staat – Emissionen entstehen aber in Kraftwerken, F
 
 ::: {.belege}
 **Belege** · Eigene Zuordnung zu den Ebenen; beschränkt auf Klima und Energie, Auswahl der wichtigsten Regeln. Die EU-Regeln zu CSRD und CSDDD müssen erst in nationales Recht umgesetzt werden – die Änderungen zur CSRD bis 19. März 2027, die zur CSDDD bis 26. Juli 2028 [Art. 5 @eu_omnibus_2026].
+:::
+
+## Was kommt wann? Fristen bis 2034
+
+Pflichten wirken nicht nur heute. Für die Risikoplanung zählt, **wann** ein CO₂-Preis greift, ein Bericht fällig wird oder ein Schutz ausläuft – und in welche Richtung sich die Regeln bewegen. Die Zeitachse zeigt die wichtigsten Termine für Unternehmen; ein Klick öffnet die Einzelheiten.
+
+```{=html}
+<section class="fristradar" id="fristradar" data-von="2026-01-01" data-bis="2035-01-01" data-heute="2026-11-10" aria-label="Fristen für Unternehmen 2026 bis 2034">
+  <div class="fr-filter" role="group" aria-label="Nach Art filtern">
+    <button type="button" data-art="" aria-pressed="true">Alle</button>
+    <button type="button" data-art="preis" aria-pressed="false">CO₂-Preis</button>
+    <button type="button" data-art="bericht" aria-pressed="false">Berichte</button>
+    <button type="button" data-art="technik" aria-pressed="false">Sorgfalt &amp; Technik</button>
+    <button type="button" data-art="foerderung" aria-pressed="false">Förderung</button>
+  </div>
+  <div class="fr-achse"></div>
+  <div class="fr-detail" tabindex="-1">
+    <div class="fr-blaettern"><button type="button" class="fr-vor" aria-label="Früherer Termin">‹</button><span class="fr-zaehler"></span><button type="button" class="fr-nach" aria-label="Späterer Termin">›</button></div>
+    <div class="fr-detail-inhalt" aria-live="polite"></div>
+  </div>
+</section>
+```
+
+::: {.fr-karten}
+
+::: {.fr-karte data-k="auslauf" data-land="eu" data-art="preis" data-datum="2026-01-01" data-bis="2034-01-01" data-anzeige="2026–2034" data-kurz="Kostenlose Zuteilung für CBAM-Waren läuft aus" data-status="beschlossen"}
+**Der Schutz vor dem CO₂-Preis schmilzt ab**
+
+[Wer]{.fr-l} Hersteller von Stahl, Zement, Aluminium, Düngemitteln und Wasserstoff im EU-Emissionshandel.
+
+[Was]{.fr-l} Der Anteil kostenloser Zertifikate sinkt von 97,5 % (2026) über 51,5 % (2030) auf 0 % ab 2034 [Art. 10a Abs. 1a @eu_ets_richtlinie].
+
+[Warum wichtig]{.fr-l} Aus einem Preissignal wird eine echte Rechnung – schrittweise, aber planbar. [Mehr: CO₂-Preise](anreize.qmd#co2-preise)
+:::
+
+::: {.fr-karte data-k="cn-esg" data-land="cn" data-art="bericht" data-datum="2026-04-30" data-kurz="Erste Pflicht-Nachhaltigkeitsberichte" data-status="in Kraft"}
+**Erste verpflichtende Nachhaltigkeitsberichte**
+
+[Wer]{.fr-l} Rund 430 große börsennotierte Unternehmen (u. a. SSE 180, STAR 50, SZSE 100, ChiNext) und doppelt notierte Unternehmen.
+
+[Was]{.fr-l} Bericht für das Geschäftsjahr 2025, fällig bis 30. April 2026 [@sse_leitlinie_2024; @capco_2026].
+
+[Warum wichtig]{.fr-l} Der Einstieg: Der Kreis soll bis 2030 wachsen. [Mehr: Berichtspflichten](berichtspflichten.qmd)
+:::
+
+::: {.fr-karte data-k="behg" data-land="de" data-art="preis" data-datum="2027-01-01" data-kurz="Brennstoff-CO₂-Preis: letzter Korridor" data-status="im Verfahren"}
+**Letztes Jahr mit gedeckeltem CO₂-Preis auf Brennstoffe**
+
+[Wer]{.fr-l} Unternehmen, die Heizöl, Erdgas, Benzin oder Diesel in Verkehr bringen – über den Preis alle Betriebe und Haushalte.
+
+[Was]{.fr-l} 2026 gilt ein Korridor von 55 bis 65 € je Tonne [§ 10 Abs. 2 @behg]; für 2027 plant die Bundesregierung denselben Korridor [@bt_behg_2026].
+
+[Warum wichtig]{.fr-l} Danach bestimmt der Markt den Preis (siehe ETS 2, 2028). [Mehr: CO₂-Rechner](anreize.qmd)
+:::
+
+::: {.fr-karte data-k="csrd" data-land="eu" data-art="bericht" data-datum="2027-01-01" data-anzeige="Geschäftsjahr 2027" data-kurz="CSRD: erstes Berichtsjahr" data-status="beschlossen"}
+**CSRD: Das erste Berichtsjahr beginnt**
+
+[Wer]{.fr-l} Unternehmen mit mehr als 1.000 Beschäftigten **und** mehr als 450 Mio. € Umsatz.
+
+[Was]{.fr-l} Nachhaltigkeitsbericht nach ESRS im Lagebericht, extern geprüft – erstmals über das Geschäftsjahr 2027 [@eu_omnibus_2026; @eu_esrs_2026].
+
+[Warum wichtig]{.fr-l} Die Daten müssen ab Januar 2027 erfasst werden, nicht erst beim Schreiben 2028. Kleinere Zulieferer sind vor überzogenen Datenanfragen geschützt. [Mehr: Berichtspflichten](berichtspflichten.qmd)
+:::
+
+::: {.fr-karte data-k="cn-ets" data-land="cn" data-art="preis" data-datum="2027-01-01" data-kurz="Emissionshandel: Zuteilung wird knapper" data-status="geplant"}
+**Emissionshandel: Die Zuteilung wird knapper**
+
+[Wer]{.fr-l} Kraftwerke, Stahl-, Zement- und Aluminiumwerke ab 26.000 t CO₂-Äq. im Jahr – seit 2025 rund 1.500 Unternehmen zusätzlich [@mee_2025].
+
+[Was]{.fr-l} Ab 2027 sollen die Gesamtmengen schrittweise sinken [@mee_qa_2025].
+
+[Warum wichtig]{.fr-l} Der heute niedrige Preis kann steigen; wer Zertifikate übrig hat, kann verkaufen. [Mehr: Chinas Emissionshandel](../wissen/china-ets.qmd)
+:::
+
+::: {.fr-karte data-k="csrd-ug" data-land="de" data-art="bericht" data-datum="2027-03-19" data-kurz="Frist: CSRD in deutsches Recht" data-status="im Verfahren"}
+**Frist für die deutsche CSRD-Umsetzung**
+
+[Wer]{.fr-l} Alle Unternehmen, die nach der CSRD berichten müssten.
+
+[Was]{.fr-l} Die Omnibus-Änderungen müssen bis 19. März 2027 umgesetzt sein [Art. 5 @eu_omnibus_2026]; der Gesetzentwurf liegt im Bundestag [@bt_csrd_ug].
+
+[Warum wichtig]{.fr-l} Erst das deutsche Gesetz macht die Pflicht im Inland verbindlich.
+:::
+
+::: {.fr-karte data-k="rz-eu" data-land="eu" data-art="technik" data-datum="2027-05-15" data-anzeige="2. Quartal 2027" data-kurz="Rechenzentren: EU-Vorschlag" data-status="geplant"}
+**Rechenzentren: EU-Mindeststandards angekündigt**
+
+[Wer]{.fr-l} Betreiber von Rechenzentren in der EU.
+
+[Was]{.fr-l} Konsultation bis 14. Dezember 2026, Gesetzesvorschlag für das zweite Quartal 2027 geplant [@ec_rz_2026].
+
+[Warum wichtig]{.fr-l} Bisher gibt es auf EU-Ebene nur Meldepflichten, noch keine Grenzwerte. [Mehr: KI und Rechenzentren](rechenzentren.qmd)
+:::
+
+::: {.fr-karte data-k="rz-de" data-land="de" data-art="technik" data-datum="2027-07-01" data-kurz="Rechenzentren: Effizienz und Ökostrom" data-status="beschlossen"}
+**Rechenzentren: strengere Effizienz, 100 % Ökostrom**
+
+[Wer]{.fr-l} Rechenzentren in Deutschland ab 300 kW Anschlussleistung [§ 3 Nr. 24 @enefg].
+
+[Was]{.fr-l} Ab 2027 bilanziell 100 % erneuerbarer Strom; Bestand ab Juli 2027 mit einer Energieverbrauchseffektivität (PUE) von höchstens 1,5 [§ 11 @enefg]. Eine Lockerung auf 1,6 ist im Verfahren [Frage 101 @bt_7052].
+
+[Warum wichtig]{.fr-l} Ältere Anlagen müssen nachrüsten – wie stark, hängt von der Gesetzesänderung ab. [Mehr: KI und Rechenzentren](rechenzentren.qmd)
+:::
+
+::: {.fr-karte data-k="cbam" data-land="eu" data-art="preis" data-datum="2027-09-30" data-kurz="CBAM: erste Abgabe" data-status="beschlossen"}
+**CBAM: Importe zahlen den CO₂-Preis**
+
+[Wer]{.fr-l} Importeure von mehr als 50 t im Jahr an Eisen, Stahl, Aluminium, Zement oder Düngemitteln – und indirekt ihre Lieferanten außerhalb der EU.
+
+[Was]{.fr-l} Ab 1. Februar 2027 werden CBAM-Zertifikate verkauft; bis 30. September 2027 die erste Jahreserklärung für 2026 und Abgabe der Zertifikate [Art. 6, 20, 22 @eu_cbam_omnibus_2025].
+
+[Warum wichtig]{.fr-l} Wer keine tatsächlichen Emissionsdaten seiner Lieferanten hat, zahlt nach Standardwerten. [Mehr: Pflichten erfüllen](pflichten.qmd)
+:::
+
+::: {.fr-karte data-k="cn-standard" data-land="cn" data-art="bericht" data-datum="2027-07-01" data-anzeige="2027" data-kurz="Nationale Berichtsstandards fertig" data-status="geplant"}
+**Nationale Standards für Klimaberichte**
+
+[Wer]{.fr-l} Zunächst börsennotierte Unternehmen; die Standards gelten vorerst freiwillig.
+
+[Was]{.fr-l} Grundstandard, Klimastandard und Branchenleitfäden sollen 2027 vorliegen [@mof_basis_qa_2024]; Leitfäden für 9 Branchen, darunter Strom, Stahl und Zement, waren bis Oktober 2026 in Konsultation [@mof_branchen_2026].
+
+[Warum wichtig]{.fr-l} Die Standards legen fest, was Unternehmen später verpflichtend messen müssen. [Mehr: Berichtspflichten](berichtspflichten.qmd)
+:::
+
+::: {.fr-karte data-k="cn-refi" data-land="cn" data-art="foerderung" data-datum="2027-12-31" data-anzeige="Ende 2027" data-kurz="Zentralbank-Refinanzierung endet" data-status="befristet"}
+**Günstige Refinanzierung läuft vorerst aus**
+
+[Wer]{.fr-l} Banken und über sie Unternehmen mit Projekten in sauberer Energie, Energiesparen und CO₂-Minderung.
+
+[Was]{.fr-l} Die Zentralbank refinanziert 60 % solcher Kredite zu 1,75 % Zins [@pboc_tool_2021] – verlängert bis Ende 2027 [Nr. 25 @cn_gruen_2024].
+
+[Warum wichtig]{.fr-l} Wird das Instrument nicht erneut verlängert, werden grüne Kredite teurer. [Mehr: Anreize](anreize.qmd)
+:::
+
+::: {.fr-karte data-k="ets2" data-land="eu" data-art="preis" data-datum="2028-01-01" data-kurz="ETS 2 für Gebäude und Verkehr" data-status="beschlossen"}
+**Zweiter Emissionshandel für Gebäude und Verkehr**
+
+[Wer]{.fr-l} Unternehmen, die Brennstoffe in Verkehr bringen; die Kosten tragen Betriebe und Haushalte über den Preis.
+
+[Was]{.fr-l} In Deutschland geht der Brennstoff-Emissionshandel ab 2028 im EU-System auf [§ 7 Abs. 2 @tehg; @eu_klimagesetz_2026].
+
+[Warum wichtig]{.fr-l} Statt Festpreis oder Korridor gilt ein Marktpreis – Heizen und Transport werden schwerer kalkulierbar. [Mehr: Pflichten erfüllen](pflichten.qmd)
+:::
+
+::: {.fr-karte data-k="csrd-dritt" data-land="eu" data-art="bericht" data-datum="2028-01-02" data-anzeige="Geschäftsjahr 2028" data-kurz="CSRD für Konzerne außerhalb der EU" data-status="beschlossen"}
+**CSRD erreicht Konzerne aus Drittstaaten**
+
+[Wer]{.fr-l} Gruppen außerhalb der EU mit mehr als 450 Mio. € Umsatz in der EU und einer EU-Tochter oder Zweigniederlassung mit mehr als 200 Mio. € Umsatz – etwa chinesische Konzerne.
+
+[Was]{.fr-l} Nachhaltigkeitsbericht auf Gruppenebene ab Geschäftsjahr 2028 [Art. 5 @eu_csrd_2022; @eu_omnibus_2026].
+
+[Warum wichtig]{.fr-l} EU-Regeln wirken über den Marktzugang auch außerhalb der EU. [Mehr: Berichtspflichten](berichtspflichten.qmd)
+:::
+
+::: {.fr-karte data-k="csddd" data-land="eu" data-art="technik" data-datum="2029-07-26" data-kurz="Lieferketten-Sorgfaltspflichten (CSDDD)" data-status="beschlossen"}
+**Sorgfaltspflichten in der Lieferkette**
+
+[Wer]{.fr-l} Unternehmen mit mehr als 5.000 Beschäftigten und 1,5 Mrd. € Umsatz.
+
+[Was]{.fr-l} Risiken für Menschenrechte und Umwelt in der Lieferkette ermitteln und abstellen; Umsetzung in nationales Recht bis 26. Juli 2028. Die Pflicht zu einem Klima-Übergangsplan wurde gestrichen [@eu_omnibus_2026].
+
+[Warum wichtig]{.fr-l} Große Kunden geben die Anforderungen an ihre Zulieferer weiter. [Mehr: Pflichten erfüllen](pflichten.qmd)
+:::
+
+::: {.fr-karte data-k="cn-2030" data-land="cn" data-art="bericht" data-datum="2030-12-31" data-anzeige="bis 2030" data-kurz="Einheitliches Berichtssystem, verpflichtend" data-status="geplant"}
+**Einheitliches, verpflichtendes Berichtssystem**
+
+[Wer]{.fr-l} Schrittweise von börsennotierten zu weiteren Unternehmen.
+
+[Was]{.fr-l} Bis 2030 soll ein einheitliches nationales System stehen, das von freiwillig zu verpflichtend übergeht [@mof_basis_qa_2024].
+
+[Warum wichtig]{.fr-l} China bewegt sich in die Gegenrichtung zur EU: mehr Pflichten statt weniger. [Mehr: Berichtspflichten](berichtspflichten.qmd)
+:::
+
+:::
+
+```{=html}
+<script src="../skripte/fristen.js?v=5"></script>
+```
+
+::: {.belege}
+**Belege** · Eigene Auswahl der wichtigsten Termine für Unternehmen; Stand 10.11.2026. „Geplant“ und „im Verfahren“ heißt: Der Termin kann sich noch verschieben. Wiederkehrende Jahresfristen (Emissionsberichte, Abgabe der Zertifikate) stehen im [Fristenkalender](pflichten.qmd#fristenkalender).
 :::
 
 ## Wie eine Pflicht im Betrieb ankommt
