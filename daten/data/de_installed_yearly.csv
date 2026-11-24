@@ -9,21 +9,21 @@ jahr,reihe,art,gw
 2009,Photovoltaik,Ist,10.512
 2010,Photovoltaik,Ist,18.092
 2011,Photovoltaik,Ist,26.07
-2012,Photovoltaik,Ist,32.925
-2013,Photovoltaik,Ist,36.057
-2014,Photovoltaik,Ist,37.822
-2015,Photovoltaik,Ist,39.238
-2016,Photovoltaik,Ist,40.737
-2017,Photovoltaik,Ist,42.406
-2018,Photovoltaik,Ist,45.41
-2019,Photovoltaik,Ist,49.418
-2020,Photovoltaik,Ist,54.558
-2021,Photovoltaik,Ist,60.266
-2022,Photovoltaik,Ist,67.845
-2023,Photovoltaik,Ist,83.307
-2024,Photovoltaik,Ist,100.812
-2025,Photovoltaik,Ist,118.126
-2026,Photovoltaik,Ist,132.707
+2012,Photovoltaik,Ist,32.923
+2013,Photovoltaik,Ist,36.055
+2014,Photovoltaik,Ist,37.82
+2015,Photovoltaik,Ist,39.236
+2016,Photovoltaik,Ist,40.735
+2017,Photovoltaik,Ist,42.404
+2018,Photovoltaik,Ist,45.408
+2019,Photovoltaik,Ist,49.417
+2020,Photovoltaik,Ist,54.557
+2021,Photovoltaik,Ist,60.265
+2022,Photovoltaik,Ist,67.847
+2023,Photovoltaik,Ist,83.309
+2024,Photovoltaik,Ist,100.815
+2025,Photovoltaik,Ist,118.138
+2026,Photovoltaik,Ist,132.957
 2024,Photovoltaik,Ziel,88.0
 2026,Photovoltaik,Ziel,128.0
 2028,Photovoltaik,Ziel,172.0
@@ -40,7 +40,7 @@ jahr,reihe,art,gw
 2011,Wind an Land,Ist,28.579
 2012,Wind an Land,Ist,30.556
 2013,Wind an Land,Ist,32.969
-2014,Wind an Land,Ist,37.621
+2014,Wind an Land,Ist,37.62
 2015,Wind an Land,Ist,41.297
 2016,Wind an Land,Ist,45.283
 2017,Wind an Land,Ist,50.174
@@ -51,8 +51,8 @@ jahr,reihe,art,gw
 2022,Wind an Land,Ist,58.014
 2023,Wind an Land,Ist,61.013
 2024,Wind an Land,Ist,63.589
-2025,Wind an Land,Ist,68.178
-2026,Wind an Land,Ist,71.837
+2025,Wind an Land,Ist,68.179
+2026,Wind an Land,Ist,72.006
 2024,Wind an Land,Ziel,69.0
 2026,Wind an Land,Ziel,84.0
 2028,Wind an Land,Ziel,99.0
@@ -74,5 +74,5 @@ jahr,reihe,art,gw
 2023,Wind auf See,Ist,8.473
 2024,Wind auf See,Ist,9.215
 2025,Wind auf See,Ist,9.733
-2026,Wind auf See,Ist,11.659
+2026,Wind auf See,Ist,11.689
 2030,Wind auf See,Ziel,30.0
