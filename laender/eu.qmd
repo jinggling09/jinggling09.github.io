@@ -462,7 +462,7 @@ Italien und Zypern hatten ihren Bericht zur Verwendung bis November 2026 noch ni
 
 [19,3 Mrd. €]{.zahl} [2025, eigene Rechnung]{.zahl-text}
 
-- **Innovationsfonds:** rund 40 Mrd. € von 2020 bis 2030 für emissionsarme Technologien in Industrie und Energie [@consilium_finanzierung]
+- **Innovationsfonds:** rund 40 Mrd. € von 2020 bis 2030 für emissionsarme Technologien in Industrie und Energie [@consilium_finanzierung]; bisher rund 240 geförderte Projekte [@ec_capr_2026]
 - **Wasserstoffbank:** dritte Auktion 2026 mit 1,09 Mrd. € für 9 Projekte, bezahlt über den Innovationsfonds [@ec_ehb3_2026]
 - **Modernisierungsfonds:** Energiesysteme in Mitgliedstaaten mit geringerem Einkommen [@consilium_finanzierung]
 - **Klima-Sozialfonds und Aufbaufazilität:** erhalten seit 2025 bzw. über REPowerEU ebenfalls Zertifikate [@ec_capr_2026]
@@ -504,6 +504,8 @@ Klimaschutz läuft als Querschnitt durch alle Programme des mehrjährigen Finanz
 ::: {.belege}
 **Belege** · Erlöse, Verteilung und Verwendung 2025 [@ec_capr_2026]. Anteile 40, 18, 13 und 11 % beziehen sich auf die 2025 ausgegebenen 13,5 Mrd. €; Mrd.-€-Werte daraus eigene Rechnung. „Übrige Zwecke, noch nicht ausgegeben“ = 13,5 − 11,1 Mrd. € plus 16,0 − 13,5 Mrd. €; EU-Ebene = 43,2 − 23,9 Mrd. €. Prozente in der Grafik = Anteil an den 23,9 Mrd. € der Staaten; Summen rundungsbedingt. Die weiteren Töpfe laufen über mehrere Jahre und sind deshalb nicht maßstäblich.
 :::
+
+**Öffentliches Geld allein reicht nicht.** Unternehmen investierten 2024 rund **273 Mrd. €** in ökologisch nachhaltige Tätigkeiten, grüne Anleihen erreichten 2025 ein Volumen von **287 Mrd. €** [@ec_capr_2026]. Die Kommission hat zudem eine **Industrielle Dekarbonisierungsbank** vorgeschlagen, die 100 Mrd. € mobilisieren und Investitionen der Industrie in saubere Technologien absichern soll – als Teil der Reform des Emissionshandels; noch ist das ein Vorschlag [@ec_capr_2026].
 
 <script src="../skripte/geldfluss.js?v=3"></script>
 
@@ -739,7 +741,7 @@ Gleicht den CO₂-Preis auf Heizen und Verkehr für Haushalte und Kleinunternehm
 
 ## Bereiche: Wo steht die EU?
 
-Die EU teilt ihre Emissionen in drei Systeme mit eigenen Zielen auf: den **Emissionshandel**, die **Lastenteilung** zwischen den Mitgliedstaaten und die **Landnutzung**. Dazu kommen die Energieziele. Die Leiste zeigt, welcher Teil des Wegs zum Ziel 2030 geschafft ist; ein Klick öffnet die Karte des Bereichs.
+Die EU teilt ihre Emissionen in drei Systeme mit eigenen Zielen auf: den **Emissionshandel**, die **Lastenteilung** zwischen den Mitgliedstaaten und die **Landnutzung**. Dazu kommen die Energieziele. **2025 sanken die Emissionen der EU um rund 1,6 %** gegenüber 2024 – im Emissionshandel um 2 %, in der Lastenteilung blieben sie etwa gleich [@ec_capr_2026]. Der Trend hält, ist aber zu langsam für 2030. Die Leiste zeigt, welcher Teil des Wegs zum Ziel 2030 geschafft ist; ein Klick öffnet die Karte des Bereichs.
 
 ```{=html}
 <div class="br" id="bereiche" role="region" aria-label="Wie weit die EU-Bereiche auf dem Weg zum Ziel 2030 sind">
@@ -770,7 +772,7 @@ Der Emissionshandel ist das wirksamste Instrument der EU: Seit 2005 haben sich d
 [Gebäude, Straßenverkehr, Landwirtschaft, Abfall]{.werte}
 [2025: rund −20,5 % seit 2005 · Ziel −40 % · Projektion −38,5 %]{.status-chip .minus}
 
-Hier stockt es: 2025 blieben die Emissionen auf dem Stand von 2024 und lagen 5 % über der erlaubten Menge. Selbst mit allen geplanten Maßnahmen erreicht die EU 2030 nur −38,5 %, mit den beschlossenen −31,7 %. Neun Staaten, darunter **Deutschland**, müssen deshalb einen Korrekturplan vorlegen [@ec_capr_2026]. Ab 2028 erfasst der neue **ETS 2** Brennstoffe für Gebäude und Straßenverkehr. Deutschland droht in diesem Bereich bis 2030 eine Lücke von 255 Mio. t ([Deutschland-Seite](deutschland.qmd)).
+Hier stockt es: 2025 blieben die Emissionen auf dem Stand von 2024 und lagen 5 % über der erlaubten Menge. Selbst mit allen geplanten Maßnahmen erreicht die EU 2030 nur −38,5 %, mit den beschlossenen −31,7 %. Neun Staaten, darunter **Deutschland**, müssen deshalb einen Korrekturplan vorlegen [@ec_capr_2026]. Beim Verkehr gibt es Bewegung: 2025 wurden 1,9 Mio. reine Elektroautos neu zugelassen, etwa jedes sechste neue Auto [@ec_capr_2026]. Ab 2028 erfasst der neue **ETS 2** Brennstoffe für Gebäude und Straßenverkehr. Deutschland droht in diesem Bereich bis 2030 eine Lücke von 255 Mio. t ([Deutschland-Seite](deutschland.qmd)).
 :::
 
 ::: {.sektor data-k="lulucf"}
@@ -786,7 +788,7 @@ Zuvor war die Senke ein Jahrzehnt lang geschrumpft, vor allem durch mehr Holzein
 [Anteil am gesamten Endenergieverbrauch]{.werte}
 [2025: 26,2 % · Ziel 42,5 %]{.status-chip .minus}
 
-Beim Strom liegen die Erneuerbaren schon bei knapp der Hälfte, bei Wärme und Kälte bei 27 % und im Verkehr bei 11 % (2024) [@eurostat_ee_2026]. Für 42,5 % im Jahr 2030 müsste der Anteil um gut 3 Prozentpunkte pro Jahr steigen – mehr als dreimal so schnell wie zuletzt.^1^
+Beim Strom liegen die Erneuerbaren schon bei knapp der Hälfte, bei Wärme und Kälte bei 27 % und im Verkehr bei 11 % (2024) [@eurostat_ee_2026]. Für 42,5 % im Jahr 2030 müsste der Anteil um gut 3 Prozentpunkte pro Jahr steigen – mehr als dreimal so schnell wie zuletzt.^1^ Wind- und Solaranlagen erreichten 2025 zusammen **611 GW** Leistung; seit 2021 kamen rund 260 GW hinzu [@ec_capr_2026].
 :::
 
 :::
@@ -797,6 +799,21 @@ Beim Strom liegen die Erneuerbaren schon bei knapp der Hälfte, bei Wärme und K
 **Belege** · Anteil am Ziel eigene Rechnung: Emissionshandel 50/62, Lastenteilung 20,5/40, Landnutzung 231/310 Mio. t, Erneuerbare 26,2/42,5 %. ^1^ Eigene Berechnung: von 26,2 % (2025, vorläufig) auf 42,5 % in fünf Jahren ≈ 3,3 Prozentpunkte pro Jahr; 2024 → 2025: +1,0 Prozentpunkte [@eurostat_ee_2026].
 :::
 
+## Anpassung: Vorsorge für die Folgen
+
+Klimaschutz senkt die Emissionen, Anpassung begrenzt die Schäden. 2025 trafen Europa schwere Hitzewellen, Dürre, Waldbrände und Rekordtemperaturen im Meer; erste Daten deuten für 2026 auf noch stärkere Folgen hin [@ec_capr_2026].
+
+- **Schäden:** Wetter- und klimabedingte Extremereignisse haben in der EU seit 1980 Verluste von **822 Mrd. €** verursacht.
+- **Bedarf:** Für die Anpassung sind bis 2050 schätzungsweise rund **69 Mrd. € pro Jahr** an Investitionen nötig.
+- **Stand:** Alle Mitgliedstaaten haben inzwischen eine nationale Anpassungspolitik, sie sind aber unterschiedlich gut vorbereitet.
+- **Neu:** Der **EU-Rahmen für Klimaresilienz** bringt ein gemeinsames Temperatur-Referenzszenario für die Planung, klare Zuständigkeiten der nationalen Behörden und Werkzeuge zur Risikobewertung. Dazu hat die Kommission erstmals ein **Europäisches Klimaresilienzgesetz** vorgeschlagen.
+
+Mehr zu Hitze, Dürre und Schäden: [Folgen und Klimarisiken](../klimawandel/folgen.qmd).
+
+::: {.belege}
+**Belege** · Alle Zahlen und der Resilienzrahmen [@ec_capr_2026]. Das Klimaresilienzgesetz ist erst ein Vorschlag der Kommission.
+:::
+
 ## Einordnung
 
 ::: {.einordnung}
@@ -805,6 +822,8 @@ Beim Strom liegen die Erneuerbaren schon bei knapp der Hälfte, bei Wärme und K
 **Ein starkes und zwei schwache Systeme.** Der Emissionshandel liefert, Lastenteilung und Landnutzung hinken hinterher. Genau dort liegen die Bereiche, die Bürgerinnen und Bürger direkt spüren – Heizen und Autofahren. Mit dem ETS 2 ab 2028 bekommen sie einen CO₂-Preis; der Klima-Sozialfonds soll die Belastung abfedern.
 
 **Zeichen der Lockerung.** Der ETS 2 startet ein Jahr später, das Ziel 2040 erlaubt erstmals internationale Gutschriften, und für Neuwagen wird über eine Abschwächung des Ziels 2035 verhandelt [@icap_2026; @ep_autopaket]. Für Deutschland heißt das: Der EU-Rahmen bleibt verbindlich, wird aber flexibler – umso wichtiger werden die nationalen Gesetze.
+
+**Aber auch neue Werkzeuge.** Gleichzeitig baut die EU den Rahmen aus: ein verbindliches Ziel für 2040, Vorschläge für eine Dekarbonisierungsbank der Industrie und ein erstes Klimaresilienzgesetz [@ec_capr_2026]. Das Argument hat sich verschoben – von Klimaschutz allein zu Versorgungssicherheit und Wettbewerbsfähigkeit: Weil die Preise für fossile Brennstoffe stark stiegen, zahlte die EU 2026 rund 100 Mrd. € mehr für ihre Importe, ohne dafür mehr Energie zu bekommen [@ec_capr_2026].
 :::
 
 ## Weiterlesen
