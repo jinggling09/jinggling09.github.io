@@ -13,7 +13,7 @@ Dieses Modul erklärt die drei Instrumente, die für Lieferketten zwischen China
 | Seite | Worum es geht |
 |---|---|
 | [Chinas nationaler Emissionshandel](china-ets.qmd) | Aufbau, Erweiterung auf Stahl, Zement und Aluminium 2025 |
-| [EU-ETS, ETS 2 & BEHG](eu-ets.qmd) | EU-Emissionshandel, Verschiebung des ETS 2 auf 2028, nationaler Brennstoffemissionshandel |
+| [EU-ETS, ETS 2 & BEHG](eu-ets.qmd) | So funktioniert der EU-Emissionshandel, was er bewirkt, ETS 2 ab 2028, Reformvorschlag 2026, Übergang vom BEHG |
 | [CBAM](cbam.qmd) | Geltungsbereich, Phasen, Änderungen durch die Omnibus-Verordnung 2025 |
 | [Schnittstelle China ↔ CBAM](schnittstellen.qmd) | Wann ein in China gezahlter CO₂-Preis auf CBAM angerechnet werden kann |
 | [THG-Emissionen Deutschland](emissionen-de.qmd) | Interaktives Dashboard auf Basis der UBA-Inventardaten |

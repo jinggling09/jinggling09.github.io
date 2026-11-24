@@ -2330,3 +2330,107 @@ figure.esgrad { margin: 1rem 0 .6rem;
     .ab-balken > span { font-size: 0; b { font-size: .82rem; } }
   }
 }
+
+/* ---------- Wissen: EU-Emissionshandel (wissen/eu-ets.qmd, skripte/ets.js; Jing, 24.11.2026) ---------- */
+.kennzahlen-leiste.ets-zahlen { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin-bottom: 1rem;
+  .zahl { font-size: 1.6rem; color: $spur-eu; white-space: nowrap; } }
+
+.ets-kreis { margin: 1rem 0 .6rem; background: #fff; border: 1px solid $linie; border-radius: 8px; padding: 1rem 1.1rem;
+  .ets-schritte { list-style: none; margin: 0; padding: 0; display: grid; gap: .8rem; }
+  .ets-knopf { display: grid; grid-template-columns: auto 1fr; column-gap: .6rem; align-items: center; width: 100%; text-align: left;
+    background: none; border: 0; padding: 0; color: $tinte; cursor: default;
+    strong { font-family: $headings-font-family; font-size: 1.05rem; line-height: 1.2; }
+    small { grid-column: 2; font-size: .78rem; color: $grau; } }
+  .ets-nr { grid-row: span 2; display: inline-grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%;
+    background: $gruen-hell; color: $spur-eu; font-weight: 700; font-family: $headings-font-family; }
+  .ets-text { margin: .4rem 0 0 2.6rem; font-size: .95rem; p { margin: 0 0 .4rem; } }
+  .ets-bsp { background: #f6f3ea; border-left: 3px solid $ocker; padding: .4rem .7rem; border-radius: 0 4px 4px 0; font-size: .9rem;
+    span { display: block; font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: $ocker; } }
+  .ets-schleife { display: none; }
+  .ets-detail:empty { display: none; }
+}
+.ets-kreis.ets-js {
+  .ets-schritte { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .5rem; position: relative; }
+  .ets-schritte > li { position: relative; }
+  .ets-schritte > li + li::before { content: "→"; position: absolute; left: -.55rem; top: 1rem; transform: translateX(-50%); color: #b9c1bc; font-size: .9rem; }
+  .ets-knopf { cursor: pointer; grid-template-columns: 1fr; justify-items: center; text-align: center; padding: .6rem .3rem .55rem; border-radius: 8px;
+    border: 1.5px solid transparent; transition: background .2s, border-color .2s;
+    small { grid-column: 1; }
+    &:hover { background: $gruen-hell; }
+    &:focus-visible { outline: 2px solid $spur-eu; outline-offset: 2px; } }
+  .ets-nr { grid-row: auto; margin-bottom: .3rem; transition: background .2s, color .2s; }
+  .ets-wahl .ets-knopf { background: color-mix(in srgb, #{$spur-eu} 8%, #fff); border-color: color-mix(in srgb, #{$spur-eu} 45%, #fff); }
+  .ets-wahl .ets-nr { background: $spur-eu; color: #fff; }
+  .ets-schleife { display: block; margin: .5rem 0 0; text-align: center; font-size: .8rem; font-style: italic; color: $grau; }
+  .ets-detail { margin-top: .7rem; border-top: 1px solid $linie; padding-top: .8rem; min-height: 8.5rem; }
+  .ets-text { margin: 0; animation: dk-ein .25s ease; }
+}
+@media (max-width: 640px) {
+  .ets-kreis.ets-js {
+    .ets-schritte { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .25rem; }
+    .ets-schritte > li + li::before { display: none; }
+    .ets-knopf { padding: .45rem .1rem; strong, small { display: none; } }
+    .ets-detail::before { content: attr(data-n) ". " attr(data-titel); display: block; font-family: $headings-font-family; font-weight: 700; font-size: 1.05rem; color: $spur-eu; margin-bottom: .35rem; }
+    .ets-nr { width: 1.7rem; height: 1.7rem; }
+  }
+}
+@media (prefers-reduced-motion: reduce) { .ets-kreis.ets-js .ets-text { animation: none; } }
+
+.ets-kurve { margin: 1rem 0 .8rem;
+  .ets-zeile { display: grid; grid-template-columns: 3.2rem 1fr 9rem; align-items: center; gap: .7rem; margin: .35rem 0; }
+  .ets-jahr { font-weight: 700; color: $tinte; font-variant-numeric: tabular-nums; }
+  .ets-spur { height: 1.3rem; background: #f1f3f2; border-radius: 3px; overflow: hidden; i { display: block; height: 100%; border-radius: 3px; } }
+  i.ist { background: $spur-eu; }
+  i.ziel { background: repeating-linear-gradient(135deg, $spur-eu 0 3px, color-mix(in srgb, #{$spur-eu} 30%, #fff) 3px 7px); }
+  .ets-wert { font-family: $headings-font-family; font-weight: 700; font-size: 1.05rem; color: $spur-eu;
+    em { font-family: $font-family-sans-serif; font-style: normal; font-weight: 400; font-size: .82rem; color: $grau; margin-left: .25rem; } }
+  figcaption { font-size: .8rem; color: $grau; margin-top: .3rem; }
+}
+@media (max-width: 576px) { .ets-kurve .ets-zeile { grid-template-columns: 2.8rem 1fr 6.8rem; } }
+
+.ets-hebel { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: .8rem 0 1.4rem;
+  > div, > section { background: #fff; border: 1px solid $linie; border-top: 3px solid $spur-eu; border-radius: 8px; padding: .9rem 1.1rem .7rem; font-size: .95rem; }
+  h3 { font-size: 1.15rem; margin: 0 0 .2rem; }
+  .ets-frage { display: block; font-style: italic; color: $grau; margin-bottom: .6rem; font-size: .9rem; }
+  ul { padding-left: 1.1rem; margin-bottom: .6rem; }
+  p:last-child { margin-bottom: .2rem; }
+}
+.ets-abbau { margin: .4rem 0 .6rem;
+  > div { display: grid; grid-template-columns: 2.6rem 1fr 3.4rem; align-items: center; gap: .5rem; margin: .25rem 0; font-size: .85rem; }
+  span { color: $grau; font-variant-numeric: tabular-nums; }
+  i { display: block; height: .8rem; background: $ocker; border-radius: 2px; min-width: 2px; }
+  b { text-align: right; color: $tinte; font-variant-numeric: tabular-nums; }
+}
+
+.ets-zeit { list-style: none; margin: 1rem 0 1rem; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); position: relative;
+  &::before { content: ""; position: absolute; left: 0; right: 0; top: 1.05rem; height: 2px; background: $linie; }
+  li { position: relative; padding: 0 .6rem 0 0; }
+  li::before { content: ""; display: block; width: .85rem; height: .85rem; border-radius: 50%; background: #fff; border: 2px solid $spur-eu; margin: .65rem 0 .5rem; position: relative; }
+  li.vorbei::before { background: $spur-eu; }
+  li.start::before { width: 1.15rem; height: 1.15rem; margin-top: .5rem; margin-bottom: .35rem; background: $ocker; border-color: $ocker; }
+  .ets-zj { position: absolute; top: -.6rem; left: 0; font-weight: 700; font-size: .85rem; color: $spur-eu; }
+  li.start .ets-zj { color: $ocker; }
+  p { margin: 0; font-size: .88rem; line-height: 1.4; }
+}
+@media (max-width: 640px) {
+  .ets-zeit { grid-template-columns: 1fr; padding-left: 1.4rem;
+    &::before { left: .4rem; right: auto; top: .3rem; bottom: .3rem; width: 2px; height: auto; }
+    li { padding: 0 0 .8rem; }
+    li::before { position: absolute; left: -1.4rem; top: .2rem; margin: 0; }
+    li.start::before { left: -1.55rem; margin: 0; }
+    .ets-zj { position: static; display: block; } }
+}
+
+.ets-reform ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .5rem .9rem; }
+.ets-reform li { background: #fff; border: 1px dashed #c9d0cc; border-radius: 6px; padding: .5rem .75rem; font-size: .92rem; margin: 0; }
+
+.ets-preise { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: .35rem; margin: .8rem 0 1rem;
+  > div { background: #fff; border: 1px solid $linie; border-radius: 6px; padding: .45rem .3rem; text-align: center; display: flex; flex-direction: column; }
+  span { font-size: .78rem; color: $grau; }
+  b { font-family: $headings-font-family; font-size: 1.05rem; color: $tinte; white-space: nowrap; }
+  small { font-size: .7rem; color: $grau; }
+  .korridor { background: #f6f3ea; border-color: #e4d6b5; }
+  .geplant { border-style: dashed; }
+  .markt { background: color-mix(in srgb, #{$spur-eu} 10%, #fff); border-color: color-mix(in srgb, #{$spur-eu} 40%, #fff); b { color: $spur-eu; } }
+}
+@media (max-width: 640px) { .ets-preise { grid-template-columns: repeat(4, minmax(0, 1fr)); } }

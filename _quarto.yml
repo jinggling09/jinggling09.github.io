@@ -61,7 +61,7 @@ website:
           - href: wissen/china-ets.qmd
             text: "Chinas nationaler Emissionshandel"
           - href: wissen/eu-ets.qmd
-            text: "EU-ETS, ETS 2 & BEHG"
+            text: "EU-Emissionshandel (ETS 1 & 2)"
           - href: wissen/cbam.qmd
             text: "CBAM – Grundlagen"
           - text: "Energiewende"

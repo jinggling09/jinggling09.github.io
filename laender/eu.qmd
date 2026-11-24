@@ -706,7 +706,7 @@ Wälder und Böden sollen 2030 netto 310 Mio. t CO₂-Äq. aufnehmen [@eu_lulucf
 
 [−62 %]{.zahl} [bis 2030 gegenüber 2005]{.zahl-text}
 
-Strom, Industrie, Luft- und Seeverkehr brauchen für jede Tonne CO₂ ein Zertifikat; die Menge sinkt jedes Jahr [@eu_ets_richtlinie; @eu_ets_2023].
+Strom, Industrie, Luft- und Seeverkehr brauchen für jede Tonne CO₂ ein Zertifikat; die Menge sinkt jedes Jahr [@eu_ets_richtlinie; @eu_ets_2023]. [So funktioniert der Emissionshandel →](../wissen/eu-ets.qmd)
 :::
 
 ::: {.gesetz #gesetz-ets2 data-g="ets2"}
@@ -714,7 +714,7 @@ Strom, Industrie, Luft- und Seeverkehr brauchen für jede Tonne CO₂ ein Zertif
 
 [2028]{.zahl} [Start, ein Jahr später als geplant]{.zahl-text}
 
-Ein eigenes System für Brennstoffe in Gebäuden und im Straßenverkehr; in Deutschland ersetzt es den nationalen CO₂-Preis nach dem BEHG [@eu_ets_2023; @icap_2026].
+Ein eigenes System für Brennstoffe in Gebäuden und im Straßenverkehr; in Deutschland ersetzt es den nationalen CO₂-Preis nach dem BEHG [@eu_ets_2023; @icap_2026]. [Zeitplan und Preisbremse →](../wissen/eu-ets.qmd#ets2)
 :::
 
 ::: {.gesetz #gesetz-cbam data-g="cbam"}
@@ -762,7 +762,7 @@ Die EU teilt ihre Emissionen in drei Systeme mit eigenen Zielen auf: den **Emiss
 [Strom, Wärme, Industrie, Luft- und Seeverkehr]{.werte}
 [−50 % seit 2005 · Ziel −62 % · Projektion −66 %]{.status-chip .plus}
 
-Der Emissionshandel ist das wirksamste Instrument der EU: Seit 2005 haben sich die Emissionen der erfassten Anlagen halbiert, den größten Beitrag leistet die Stromerzeugung; 2025 sanken sie um 2,0 % [@ec_capr_2026; @ec_cmr_2025]. Für die ortsfesten Anlagen erwartet die Kommission sogar eine Übererfüllung des Ziels [@ec_capr_swd_2025].
+Der Emissionshandel ist das wirksamste Instrument der EU: Seit 2005 haben sich die Emissionen der erfassten Anlagen halbiert, den größten Beitrag leistet die Stromerzeugung; 2025 sanken sie um 2,0 % [@ec_capr_2026; @ec_cmr_2025]. Für die ortsfesten Anlagen erwartet die Kommission sogar eine Übererfüllung des Ziels [@ec_capr_swd_2025]. [Der Emissionshandel einfach erklärt →](../wissen/eu-ets.qmd)
 :::
 
 ::: {.sektor data-k="esr"}
@@ -811,5 +811,5 @@ Beim Strom liegen die Erneuerbaren schon bei knapp der Hälfte, bei Wärme und K
 
 - [Deutschland: Klimaschutz im Überblick](deutschland.qmd)
 - [Klimaziele im Vergleich: EU, Deutschland, China](../ziele/index.qmd)
-- [EU-ETS, ETS 2 & BEHG](../wissen/eu-ets.qmd)
+- [EU-Emissionshandel: das Wichtigste](../wissen/eu-ets.qmd) – Funktionsweise, ETS 2, Reform 2026
 - [CBAM – Grundlagen](../wissen/cbam.qmd)

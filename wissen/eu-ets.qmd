@@ -1,25 +1,227 @@
 ---
-title: "EU-ETS, ETS 2 & BEHG"
+title: "EU-Emissionshandel: das Wichtigste"
+description: "Wie der EU-Emissionshandel funktioniert, was er bisher bewirkt hat und was mit dem ETS 2 ab 2028 auf Heizen und Tanken zukommt."
 ---
 
 ::: {.stand}
-Stand: 13.10.2026
+Stand: 24.11.2026
 :::
 
-## EU-ETS (ETS 1)
+**In einem Satz:** Die EU legt fest, wie viel CO₂ Kraftwerke, Fabriken, Flugzeuge und Schiffe insgesamt noch ausstoßen dürfen, und verkauft dafür Zertifikate. Wer eine Tonne ausstößt, muss ein Zertifikat abgeben. Weil die Menge jedes Jahr sinkt, wird Ausstoß teurer und Einsparen lohnender.
 
-Das EU-Emissionshandelssystem ist ein Cap-and-Trade-System für Energieerzeugung, energieintensive Industrie, Luft- und Seeverkehr. Rechtsgrundlage ist die Richtlinie 2003/87/EG in ihrer jeweils geltenden Fassung [@eu_ets_richtlinie].
+::: {.kennzahlen-leiste .ets-zahlen}
+::: {}
+[seit 2005]{.zahl}
+[erster internationaler Emissionshandel der Welt]{.was}
+:::
+::: {}
+[≈ 40 %]{.zahl}
+[der EU-Treibhausgase sind erfasst]{.was}
+:::
+::: {}
+[−50 %]{.zahl}
+[Emissionen der erfassten Anlagen seit 2005, Ziel 2030: −62 %]{.was}
+:::
+::: {}
+[43,2 Mrd. €]{.zahl}
+[Erlöse 2025, seit 2013 über 288 Mrd. €]{.was}
+:::
+::: {}
+[74 € / t]{.zahl}
+[Ø Auktionspreis 2025]{.was}
+:::
+:::
 
-## ETS 2: Start verschoben auf 2028
+::: {.belege}
+**Belege** · Start und Abdeckung [@ec_ets_about]; Halbierung seit 2005, Ziel 2030 und Erlöse [@ec_capr_2026]; Preis: 73,86 € im Durchschnitt der Auktionen 2025 [@dehst_erloese_2025]. Erfasst sind die 27 EU-Staaten sowie Island, Liechtenstein und Norwegen; mit dem Schweizer System ist der Handel seit 2020 verknüpft [@ec_ets_about].
+:::
 
-Der zweite Emissionshandel für **Gebäude, Straßenverkehr und weitere Sektoren** sollte ursprünglich 2027 starten. Mit der Änderung des Europäischen Klimagesetzes wurde der Start auf **2028** verschoben [@eu_klimagesetz_2026, Art. 2]. Dieselbe Verordnung legt das verbindliche EU-Zwischenziel von **−90 % Netto-THG-Emissionen bis 2040** (gegenüber 1990) fest [@eu_klimagesetz_2026].
+## So funktioniert es: fünf Schritte, jedes Jahr {#kreislauf}
 
-## Deutschland: Brennstoffemissionshandel (BEHG)
+Das Prinzip heißt **Cap and Trade**: Erst wird eine Obergrenze festgelegt (Cap), dann wird gehandelt (Trade). Ein Rechenbeispiel mit einem Zementwerk zieht sich durch alle Schritte.
 
-Deutschland bepreist CO₂ aus Brennstoffen in Wärme und Verkehr bereits national über das Brennstoffemissionshandelsgesetz [@behg]. Mit dem Start des ETS 2 geht dieser Bereich in das EU-System über.
+```{=html}
+<section class="ets-kreis" id="ets-kreis" aria-label="Die fünf Schritte des Emissionshandels">
+ <ol class="ets-schritte">
+  <li data-n="1">
+   <button type="button" class="ets-knopf"><span class="ets-nr">1</span><strong>Obergrenze</strong><small>Cap</small></button>
+   <div class="ets-text">
+    <p><strong>Die EU legt fest, wie viele Zertifikate es insgesamt gibt.</strong> Ein Zertifikat erlaubt den Ausstoß von einer Tonne CO₂-Äquivalent. 2024 waren es rund 1.386 Mio. Zertifikate; die Menge sinkt jedes Jahr.</p>
+    <p class="ets-bsp"><span>Rechenbeispiel</span> Das Zementwerk stößt im Jahr 1 Mio. t CO₂ aus – es braucht also 1 Mio. Zertifikate.</p>
+   </div>
+  </li>
+  <li data-n="2">
+   <button type="button" class="ets-knopf"><span class="ets-nr">2</span><strong>Verteilen</strong><small>Auktion oder kostenlos</small></button>
+   <div class="ets-text">
+    <p><strong>Die meisten Zertifikate werden versteigert.</strong> Stromerzeuger müssen seit 2013 alle kaufen. Industrie, die sonst ins Ausland abwandern könnte, bekommt einen Teil kostenlos – so viel, wie die saubersten 10 % der Anlagen ihrer Branche brauchen würden.</p>
+    <p class="ets-bsp"><span>Rechenbeispiel</span> Das Zementwerk erhält 800.000 Zertifikate kostenlos. 200.000 fehlen ihm.</p>
+   </div>
+  </li>
+  <li data-n="3">
+   <button type="button" class="ets-knopf"><span class="ets-nr">3</span><strong>Messen</strong><small>bis 31. März</small></button>
+   <div class="ets-text">
+    <p><strong>Jedes Unternehmen meldet seinen Ausstoß des Vorjahres.</strong> Unabhängige, zugelassene Prüfer kontrollieren den Bericht. Alle Zertifikate und Abgaben stehen in einem gemeinsamen EU-Register.</p>
+    <p class="ets-bsp"><span>Rechenbeispiel</span> Geprüft und bestätigt: 1 Mio. t.</p>
+   </div>
+  </li>
+  <li data-n="4">
+   <button type="button" class="ets-knopf"><span class="ets-nr">4</span><strong>Abgeben</strong><small>bis 30. September</small></button>
+   <div class="ets-text">
+    <p><strong>Für jede Tonne muss ein Zertifikat abgegeben werden.</strong> Wer zu wenige hat, zahlt 100 € Strafe je Tonne (an die Inflation angepasst) und muss die Zertifikate trotzdem nachreichen.</p>
+    <p class="ets-bsp"><span>Rechenbeispiel</span> Das Werk kauft die fehlenden 200.000 Zertifikate zu: bei 74 € rund 15 Mio. €.</p>
+   </div>
+  </li>
+  <li data-n="5">
+   <button type="button" class="ets-knopf"><span class="ets-nr">5</span><strong>Handeln</strong><small>Preis vom Markt</small></button>
+   <div class="ets-text">
+    <p><strong>Wer weniger ausstößt, kann übrige Zertifikate verkaufen oder aufheben.</strong> Den Preis bestimmen Angebot und Nachfrage. Weil das Angebot jedes Jahr sinkt, lohnt sich Einsparen immer mehr.</p>
+    <p class="ets-bsp"><span>Rechenbeispiel</span> Mit einem neuen Ofen sinkt der Ausstoß auf 900.000 t. Statt 15 Mio. € kosten die Zukäufe nur noch rund 7,4 Mio. € im Jahr.</p>
+   </div>
+  </li>
+ </ol>
+ <p class="ets-schleife" aria-hidden="true">↻ jedes Jahr von vorn – mit weniger Zertifikaten</p>
+ <div class="ets-detail" aria-live="polite"></div>
+</section>
+<script src="../skripte/ets.js?v=2"></script>
+```
 
-<!-- TODO: Preispfad BEHG 2021–2027 und Übergangsregelung nach BEHG-Novelle (Primärquelle: gesetze-im-internet.de / DEHSt) -->
+::: {.belege}
+**Belege** · Cap 2024 [@ec_ets_cap]; Ablauf, Auktion und Register [@ec_ets_about]; kostenlose Zuteilung nach Benchmarks, Meldung bis 31. März, Abgabe bis 30. September, Strafe 100 € je Tonne [Art. 10a, 12, 14, 16 @eu_ets_richtlinie]. Rechenbeispiel frei gewählt; Kosten eigene Rechnung mit 73,86 € je Zertifikat.
+:::
 
-## Bezug zum Klimaschutzgesetz
+## Wirkt er? Halbiert, aber langsamer {#wirkung}
 
-Der nationale Rahmen mit dem Ziel der Treibhausgasneutralität 2045 ist im Bundes-Klimaschutzgesetz festgelegt [@ksg]. Die Entwicklung der Emissionen zeigt das [Dashboard](emissionen-de.qmd).
+```{=html}
+<figure class="ets-kurve" aria-label="Emissionen der vom EU-Emissionshandel erfassten Anlagen, 2005 = 100: 2025 rund 50, Ziel 2030: 38">
+ <div class="ets-zeile"><span class="ets-jahr">2005</span><span class="ets-spur"><i class="ist" style="width:100%"></i></span><span class="ets-wert">100 <em>Start</em></span></div>
+ <div class="ets-zeile"><span class="ets-jahr">2025</span><span class="ets-spur"><i class="ist" style="width:50%"></i></span><span class="ets-wert">≈ 50 <em>halbiert</em></span></div>
+ <div class="ets-zeile"><span class="ets-jahr">2030</span><span class="ets-spur"><i class="ziel" style="width:38%"></i></span><span class="ets-wert">38 <em>Ziel −62 %</em></span></div>
+ <figcaption>Emissionen der erfassten Anlagen, 2005 = 100.</figcaption>
+</figure>
+```
+
+Den größten Beitrag hat der Stromsektor geleistet [@ec_capr_news_2025]. 2025 sanken die Emissionen nur noch um 2,0 %, unter anderem weil bei Spitzenlast mehr Gas eingesetzt wurde [@ec_capr_2026].
+
+Dass das Ziel trotzdem erreichbar bleibt, liegt an der Obergrenze: Sie sinkt von 2024 bis 2027 jedes Jahr um 4,3 % und ab 2028 um 4,4 % einer festen Bezugsmenge. Zusätzlich wurde sie 2024 einmalig um 90 Mio. und 2026 um 27 Mio. Zertifikate gekürzt. Für den Seeverkehr kamen 2024 rund 78 Mio. Zertifikate hinzu [@ec_ets_cap].
+
+::: {.belege}
+**Belege** · Halbierung seit 2005 und Ziel 2030 [@ec_capr_2026]; Grafik als Index, 2025 gerundet. Obergrenze [@ec_ets_cap].
+:::
+
+## Drei Stellschrauben {#stellschrauben}
+
+::: {.ets-hebel}
+::: {}
+### Kostenlose Zertifikate
+[Warum schenkt die EU Zertifikate her?]{.ets-frage}
+
+Damit Stahl-, Zement- oder Chemiewerke nicht in Länder ohne CO₂-Preis abwandern. Seit 2026 schützt stattdessen der [CBAM](cbam.qmd) – ein CO₂-Preis auf Importe. Deshalb laufen die Gratis-Zertifikate für diese Waren aus:
+
+```{=html}
+<div class="ets-abbau" role="img" aria-label="Anteil kostenloser Zertifikate für CBAM-Waren: 2026 97,5 Prozent, 2030 51,5 Prozent, 2034 null Prozent">
+ <div><span>2026</span><i style="width:97.5%"></i><b>97,5 %</b></div>
+ <div><span>2030</span><i style="width:51.5%"></i><b>51,5 %</b></div>
+ <div><span>2034</span><i style="width:0"></i><b>0 %</b></div>
+</div>
+```
+
+[Art. 10a Abs. 1a @eu_ets_richtlinie]
+:::
+
+::: {}
+### Marktstabilitätsreserve
+[Was passiert, wenn zu viele Zertifikate im Umlauf sind?]{.ets-frage}
+
+Dann wäre der Preis zu niedrig, um etwas zu bewirken. Die Reserve wirkt wie ein **Puffer**:
+
+- **mehr als 833 Mio.** übrige Zertifikate im Markt: Die EU versteigert entsprechend weniger.
+- **weniger als 400 Mio.:** 100 Mio. Zertifikate kommen aus der Reserve zurück.
+
+Die Regeln laufen automatisch, ohne politische Entscheidung im Einzelfall [@ec_ets_msr].
+:::
+
+::: {}
+### Erlöse
+[Wohin fließt das Geld?]{.ets-frage}
+
+2025 kamen 43,2 Mrd. € zusammen. 23,9 Mrd. € gingen an die Mitgliedstaaten. Sie müssen alles für Klimaschutz und Energiewende ausgeben. Einzige Ausnahme: Entlastung stromintensiver Unternehmen von CO₂-Kosten im Strompreis. Der Rest finanziert EU-Fonds für Innovation und Modernisierung [@ec_capr_2026].
+
+[Zum Geldfluss auf der EU-Seite →](../laender/eu.qmd#klimafinanzierung)
+:::
+:::
+
+## ETS 2: Heizen und Tanken ab 2028 {#ets2}
+
+Ein **zweiter, getrennter Emissionshandel** erfasst CO₂ aus Brennstoffen für Gebäude, Straßenverkehr und kleinere Industrie. Haushalte kaufen keine Zertifikate: Pflichtig sind die **Lieferanten von Heizöl, Gas, Benzin und Diesel**. Sie geben den Preis an der Zapfsäule und über die Heizkostenrechnung weiter. Ziel: −42 % bis 2030 gegenüber 2005 [@ec_ets2_seite].
+
+```{=html}
+<ol class="ets-zeit" aria-label="Zeitplan ETS 2">
+ <li class="vorbei"><span class="ets-zj">2025</span><p>Lieferanten brauchen eine Genehmigung und melden ihre Emissionen.</p></li>
+ <li class="vorbei"><span class="ets-zj">2026</span><p>Unabhängige Prüfer kontrollieren die Meldungen.</p></li>
+ <li><span class="ets-zj">2027</span><p>Erste Auktionen – der Preis wird sichtbar.</p></li>
+ <li class="start"><span class="ets-zj">2028</span><p><strong>Start:</strong> Pflicht zur Abgabe für jede Tonne. Für 2028 kommen 30 % mehr Zertifikate auf den Markt.</p></li>
+ <li><span class="ets-zj">2029</span><p>Bis 31. Mai erste Abgabe der Zertifikate für 2028.</p></li>
+</ol>
+```
+
+**Sicherungen gegen Preissprünge:** Steigt der Preis in den ersten Jahren über **45 €** (Preise von 2020, an die Inflation angepasst) oder zu schnell, gibt eine eigene Reserve zusätzliche Zertifikate frei. Der **Klima-Sozialfonds** soll von 2026 bis 2032 mindestens 86,7 Mrd. € für Haushalte, Pendler und Kleinbetriebe mobilisieren [@ec_ets2_seite]. Über die Europäische Investitionsbank können Staaten schon vorab bis zu 3 Mrd. € aus künftigen ETS-2-Erlösen nutzen [@ec_capr_2026].
+
+::: {.belege}
+**Belege** · Zeitplan, Mengen, Preisgrenze und Klima-Sozialfonds [@ec_ets2_seite]; Auktionen ab 2027 [@ec_capr_2026]; Verschiebung auf 2028 [@eu_klimagesetz_2026, Art. 2].
+:::
+
+## Was 2026 neu auf dem Tisch liegt {#reform}
+
+Am 17. Juli 2026 hat die Kommission eine Überarbeitung des ETS 1 vorgeschlagen, passend zum neuen Ziel −90 % bis 2040 [@ec_ets_seite]. Noch ist nichts beschlossen; Parlament und Rat verhandeln.
+
+::: {.ets-reform}
+- **Langsamer nach 2030:** Die Obergrenze soll nach 2030 weniger steil sinken – mehr Zeit für die Industrie.
+- **Gratis-Zertifikate über 2030 hinaus:** aber nur, wenn Unternehmen nachweisbar in ihre Dekarbonisierung investieren.
+- **CO₂-Entnahme zählt:** Dauerhafte Entnahmen aus der Atmosphäre sollen ins System kommen.
+- **Industrie-Dekarbonisierungsbank:** Ziel 100 Mrd. €, Start mit 400 Mio. Zertifikaten (rund 30 Mrd. €) bis 2030.
+- **Mindestens 50 % der Erlöse** der Staaten sollen in die Dekarbonisierung der ETS-Sektoren fließen.
+- **Mehr Flüge:** ab 2029 auch Flüge bis 5.000 km ab dem EU-Raum.
+:::
+
+Schon im April 2026 schlug die Kommission vor, überschüssige Zertifikate in der Marktstabilitätsreserve nicht mehr zu löschen, sondern als Puffer zu behalten [@ec_ets_msr].
+
+::: {.belege}
+**Belege** · Inhalte des Vorschlags [@ec_capr_2026; @ec_ets_seite].
+:::
+
+## Deutschland: vom BEHG zum ETS 2 {#deutschland}
+
+Deutschland bepreist CO₂ aus Heiz- und Kraftstoffen schon seit 2021 national, über das Brennstoffemissionshandelsgesetz (BEHG). Bisher mit Festpreisen, 2026 mit einem Korridor [§ 10 Abs. 2 @behg]:
+
+```{=html}
+<div class="ets-preise" role="img" aria-label="CO₂-Preis nach BEHG je Tonne: 2021 25 Euro, 2022 30, 2023 30, 2024 45, 2025 55, 2026 55 bis 65, 2027 geplant 55 bis 65, ab 2028 Marktpreis im ETS 2">
+ <div><span>2021</span><b>25 €</b></div>
+ <div><span>2022</span><b>30 €</b></div>
+ <div><span>2023</span><b>30 €</b></div>
+ <div><span>2024</span><b>45 €</b></div>
+ <div><span>2025</span><b>55 €</b></div>
+ <div class="korridor"><span>2026</span><b>55–65 €</b></div>
+ <div class="korridor geplant"><span>2027</span><b>55–65 €</b><small>geplant</small></div>
+ <div class="markt"><span>ab 2028</span><b>Markt</b><small>ETS 2</small></div>
+</div>
+```
+
+Für 2027 plant die Bundesregierung denselben Korridor [@bt_behg_2026]. Ab 2028 geht das BEHG im ETS 2 auf [§ 7 Abs. 2 @tehg]. Was Unternehmen dafür tun müssen, steht unter [Pflichten erfüllen](../unternehmen/pflichten.qmd).
+
+## Einordnung
+
+::: {.einordnung}
+**Das zentrale Klimainstrument der EU.** Die erfassten Emissionen haben sich seit 2005 halbiert, vor allem im Stromsektor. Für 2030 hält die Kommission das Ziel für erreichbar, weil die Obergrenze fest vorgegeben ist.
+
+**Der Schutz der Industrie wird umgebaut, nicht abgeschafft.** Gratis-Zertifikate weichen dem CBAM; der Reformvorschlag von 2026 will sie nach 2030 aber an Investitionen gebunden weiterführen. Für Unternehmen heißt das: Der CO₂-Preis wird zur echten Rechnung, die Hilfen werden an Bedingungen geknüpft.
+
+**Der ETS 2 ist die politisch heikle Stufe.** Er trifft Haushalte direkt beim Heizen und Tanken. Deshalb gibt es Preisbremse, Klima-Sozialfonds und den verschobenen Start. Ob der Preis 2028 nahe 45 € bleibt, entscheidet über die Akzeptanz.
+:::
+
+## Weiterlesen
+
+- [EU: Klimaschutz im Überblick](../laender/eu.qmd) – Ziele, Geldfluss, Bereiche
+- [CBAM – Grundlagen](cbam.qmd)
+- [Chinas nationaler Emissionshandel](china-ets.qmd)
+- [Unternehmen: Pflichten erfüllen](../unternehmen/pflichten.qmd)
+- Kommission: [Carbon markets](https://climate.ec.europa.eu/areas-action/carbon-markets_en) (Originalseiten, sehr ausführlich)
