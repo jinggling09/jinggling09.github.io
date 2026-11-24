@@ -203,7 +203,7 @@ Im **Übereinkommen von Paris** haben sich die Staaten 2015 verpflichtet, die Er
 
 ::: {.weiter-ebenen}
 [[Ziele](../ziele/index.qmd) – Was wurde versprochen?]{}
-[[CO₂-Preis und Märkte](../wissen/index.qmd) – Womit soll es erreicht werden?]{}
+[[Instrumente: CO₂ bepreisen](../wissen/index.qmd) – Womit soll es erreicht werden?]{}
 [[Energiewende](../daten/index.qmd) – Was wird gebaut?]{}
 [[Emissionen heute](../wissen/emissionen-de.qmd) – Was ist tatsächlich passiert?]{}
 :::
