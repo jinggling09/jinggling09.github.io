@@ -8,7 +8,7 @@ reference-location: document
 {{< include _wahl.md >}}
 
 ::: {.stand}
-Stand: 21.10.2026
+Stand: 24.11.2026
 :::
 
 [Länderüberblick · [Ziele im Vergleich](../ziele/index.qmd) · [EU-ETS & BEHG](../wissen/eu-ets.qmd) · [THG-Dashboard](../wissen/emissionen-de.qmd)]{.ebenen-pfad}
@@ -799,7 +799,7 @@ Ringgröße nach Emissionen 2025 [@uba_projektion_2026], Instrumente nach dem Kl
 
 **Zwei Sektoren tragen, zwei bremsen.** Das Budget bis 2030 hält rechnerisch nur, weil Energiewirtschaft und Industrie ihre Mengen deutlich unterschreiten – in der Industrie zuletzt auch wegen Produktionsrückgängen, nicht allein durch Umbau [@uba_projektion_2026]. **Gebäude und Verkehr** verfehlen ihre Budgets zusammen um fast 300 Mio. t. Mit dem Wegfall der 65-%-Regel ist offen, ob die Wärmewende schneller oder langsamer wird.
 
-**EU-Pflichten als Kostenrisiko.** Nach der europäischen Lastenteilung droht bis 2030 eine Lücke von 255 Mio. t [@uba_projektion_2026]. Ohne Gegensteuern müsste Deutschland Emissionsrechte von anderen Mitgliedstaaten zukaufen – das KSG will genau das vermeiden [@bmukn_ksp_2026].
+**EU-Pflichten als Kostenrisiko.** Nach der europäischen Lastenteilung droht bis 2030 eine Lücke von 255 Mio. t [@uba_projektion_2026]. Ohne Gegensteuern müsste Deutschland Emissionsrechte von anderen Mitgliedstaaten zukaufen – das KSG will genau das vermeiden [@bmukn_ksp_2026]. Die EU-Kommission zählt Deutschland im November 2026 zu neun Staaten, die bei der Lastenteilung nicht ausreichend vorankommen: Ab 2026 drohen Überschreitungen der zugeteilten Mengen. Deutschland gehört mit Irland und Malta zu den Staaten mit den größten Lücken und muss nun einen Korrekturplan vorlegen [Art. 8 @eu_esr_2023; @ec_capr_2026].
 :::
 
 ## Weiterlesen

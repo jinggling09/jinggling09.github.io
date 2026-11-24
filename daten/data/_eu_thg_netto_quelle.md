@@ -10,3 +10,5 @@ Netto-Treibhausgasemissionen der EU-27 je Jahr, Mio. t CO₂-Äq., für den Ziel
 
 Die Abgrenzung kommt der des Europäischen Klimagesetzes nahe, ist aber nicht identisch (dort zählt auch ein Teil des Seeverkehrs):
 amtlich 1990 4.726 / 2024 2.970 Mio. t (−37 %), hier 4.663 / 2.916 Mio. t (−37,5 %). Die Grafik zeigt deshalb den Index (1990 = 100).
+
+**2025 (vorläufig, Zeile ergänzt am 24.11.2026):** Eurostat hat 2025 noch nicht. Der Fortschrittsbericht 2026 der Kommission (COM(2026) 601) meldet −1,6 % gegenüber 2024 und −39 % gegenüber 1990 (EU-Zielabgrenzung). Hier: summe 2024 × 0,984 = 2.869,5 Mio. t, Index 61,5; netto_inland und int_luftverkehr leer.

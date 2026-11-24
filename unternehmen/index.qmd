@@ -63,7 +63,7 @@ Klimaziele beschließt der Staat – Emissionen entstehen aber in Kraftwerken, F
 Der größte Teil der Emissionen kommt also nicht über das Klimaschutzgesetz, sondern über den Emissionshandel bei Unternehmen an: In Deutschland unterlagen 2024 rund **87 %** der Emissionen einem CO₂-Preis – 42 % über Anlagen im EU-Emissionshandel, 45 % über Brennstoffe im nationalen Emissionshandel [@uba_nehs_2026].
 
 ::: {.belege}
-**Belege** · Deutschland: Gesamtemissionen 2024 rund 650 Mio. t CO₂-Äq., Anteile laut UBA [@uba_nehs_2026]; für 2025 nennt die DEHSt für die Anlagen rund 41 % [@dehst_vet_2025], Daten zum nationalen Emissionshandel 2025 stehen noch aus. EU: Anlagen „rund 40 %“ [@uba_euets_2026], ICAP nennt 35 % (Daten 2023) [@icap_eu_ets]; der zweite Emissionshandel ab 2028 erfasst „rund 40 %“ [@ec_progress_2025_ets]. Rest und Summe eigene Rechnung, gerundet. China: über 60 % der **CO₂**-Emissionen, nicht aller Treibhausgase [@mee_qa_2025].
+**Belege** · Deutschland: Gesamtemissionen 2024 rund 650 Mio. t CO₂-Äq., Anteile laut UBA [@uba_nehs_2026]; für 2025 nennt die DEHSt für die Anlagen rund 41 % [@dehst_vet_2025], Daten zum nationalen Emissionshandel 2025 stehen noch aus. EU: Anlagen „rund 40 %“ [@uba_euets_2026], ICAP nennt 35 % (Daten 2023) [@icap_eu_ets]; der zweite Emissionshandel ab 2028 erfasst „rund 40 %“ [@ec_capr_2026]. Rest und Summe eigene Rechnung, gerundet. China: über 60 % der **CO₂**-Emissionen, nicht aller Treibhausgase [@mee_qa_2025].
 :::
 
 ## Wer wird verpflichtet?
@@ -294,7 +294,7 @@ Pflichten wirken nicht nur heute. Für die Risikoplanung zählt, **wann** ein CO
 
 [Wer]{.fr-l} Unternehmen, die Brennstoffe in Verkehr bringen; die Kosten tragen Betriebe und Haushalte über den Preis.
 
-[Was]{.fr-l} In Deutschland geht der Brennstoff-Emissionshandel ab 2028 im EU-System auf [§ 7 Abs. 2 @tehg; @eu_klimagesetz_2026].
+[Was]{.fr-l} In Deutschland geht der Brennstoff-Emissionshandel ab 2028 im EU-System auf [§ 7 Abs. 2 @tehg; @eu_klimagesetz_2026]. Versteigert wird schon ab 2027, die erste Abgabe der Zertifikate ist 2029 für 2028 fällig [@ec_capr_2026].
 
 [Warum wichtig]{.fr-l} Statt Festpreis oder Korridor gilt ein Marktpreis – Heizen und Transport werden schwerer kalkulierbar. [Mehr: Pflichten erfüllen](pflichten.qmd)
 :::
